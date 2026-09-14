@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #060d1b;
+  color: #f1f5f9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1528;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e3a6a;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #274c8b;
+}
+
+.custom-leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: #0f1c35 !important;
+  color: #f8fafc !important;
+  border: 1px solid #274c8b !important;
+  border-radius: 8px !important;
+}
+.custom-leaflet-popup .leaflet-popup-tip {
+  background-color: #0f1c35 !important;
+}
