@@ -1,0 +1,94 @@
+# ==============================================================================
+# Gujarat Police CCTV Intelligence Platform — .gitignore
+# ==============================================================================
+
+# 1. Environment & Secrets (CRITICAL: Never commit credentials or API keys)
+.env
+*.env
+*.pem
+*.key
+.env.local
+.env.*.local
+
+# 2. Python Build & Runtime Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 3. Frontend / Node (Saves ~200MB)
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.vite/
+.npm/
+
+# 4. Large Datasets & Video Files (Prevents GitHub 100MB limit & multi-GB uploads)
+Synthetic Dataset/
+Synthetic Dataset_result/
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.webm
+
+# 5. Generated Snapshots, Detection Crops & Inspection Logs (Saves ~10+ GB)
+data/snapshots/
+data/detections/
+data/footage/
+data/anpr/*/debug/
+data/anpr/*/raw_results/
+data/evaluation/**/results/
+data/evaluation/**/false_recognitions/
+data/cam01_first_frame.jpg
+logs/
+*.log
+
+# 6. Local SQLite Databases (Preserve schemas in database/schema.sql)
+*.db
+*.sqlite
+*.sqlite3
+data/*.db
+
+# 7. Archives & Temporary Exports
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# 8. IDE & Operating System Artifacts
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# 9. Whitelisted Metadata & Schemas (Ensure essential structure is tracked)
+!data/catalogue/normalized/cameras.json
+!data/watchlist/vehicles/watchlist.json
+!data/watchlist/vehicles/watchlist.schema.json

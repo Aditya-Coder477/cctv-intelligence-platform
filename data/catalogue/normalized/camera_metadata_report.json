@@ -1,0 +1,472 @@
+{
+  "_generated_at_utc": "2026-09-01T10:58:10.767336+00:00",
+  "_description": "Camera metadata availability report for Step 11.1",
+  "total_cameras": 30,
+  "cameras_with_latitude": 0,
+  "cameras_with_longitude": 0,
+  "cameras_with_timezone": 0,
+  "cameras_with_wall_time_anchor": 0,
+  "cameras_with_server_epoch": 0,
+  "cameras_with_coordinates": 0,
+  "source_time_resolvable_cameras": 0,
+  "per_camera": [
+    {
+      "camera_id": "cam01",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam02",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam03",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam04",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam05",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam06",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam07",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam08",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam09",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam10",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam11",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam12",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam13",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam14",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam15",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam16",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam17",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam18",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam19",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam20",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam21",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam22",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam23",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam24",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam25",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam26",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam27",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam28",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam29",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    },
+    {
+      "camera_id": "cam30",
+      "anchor_fields_present": [],
+      "anchor_fields_missing": [
+        "wall_time",
+        "server_epoch",
+        "slot_offset",
+        "slot_seconds",
+        "offset"
+      ],
+      "has_timezone": false,
+      "has_coordinates": false,
+      "resolvable": false,
+      "resolution_blocked_reason": "No time anchor fields in camera catalogue"
+    }
+  ],
+  "limitations": [
+    "All 30 cameras have latitude=null in cameras.json",
+    "All 30 cameras have longitude=null in cameras.json",
+    "All 30 cameras have timezone=null in cameras.json",
+    "Raw Sentinel catalogue provides only id and name per camera",
+    "No wall_time, server_epoch, slot_offset or any time anchor available",
+    "SourceTimeResolver always returns NOT_RESOLVED until enrichment data is provided"
+  ]
+}

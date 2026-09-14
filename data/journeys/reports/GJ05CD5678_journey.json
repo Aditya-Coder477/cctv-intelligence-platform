@@ -1,0 +1,65 @@
+{
+  "journey_id": "JRN-GJ05CD5678",
+  "vehicle_id": "VEH-000002",
+  "registration_number": "GJ05CD5678",
+  "normalized_registration_number": "GJ05CD5678",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000002-cam07-TRK-0020",
+      "vehicle_id": "VEH-000002",
+      "registration_number": "GJ05CD5678",
+      "normalized_registration_number": "GJ05CD5678",
+      "camera_id": "cam07",
+      "track_id": "TRK-0020",
+      "first_seen_pts_ms": 52100.0,
+      "recognition_pts_ms": 52500.0,
+      "last_seen_pts_ms": 53400.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "PROBABLE",
+      "consensus_score": 0.81,
+      "ocr_confidence": 0.84,
+      "camera_name": "07 hero-showroom-gir-somnath",
+      "camera_latitude": null,
+      "camera_longitude": null,
+      "evidence_image": "data/snapshots/cam07/plates/sample_cd.jpg",
+      "evidence_filename_pts_status": "UNKNOWN",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam07-TRK-0020-52500"
+      ]
+    }
+  ],
+  "legs": [],
+  "confidence_score": {
+    "overall_score": 0.5477,
+    "recognition_quality": 0.822,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 0.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only",
+      "No geographic coordinates found for cameras in catalogue"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.810, avg_ocr=0.840 \u2192 score=0.822 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 0 cameras have verified coordinates \u2192 score=0.0 (weight 15%). NOTE: camera_name text is NOT used as a coordinate substitute.",
+      "Plausibility: no legs (single segment or no sequence) \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": null,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "UNAVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue.",
+    "Camera geographic coordinates are unavailable \u2014 straight-line distances and implied speeds cannot be calculated.",
+    "Only one camera observation segment \u2014 no cross-camera journey legs can be formed."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-01T11:26:31.454548+00:00"
+}

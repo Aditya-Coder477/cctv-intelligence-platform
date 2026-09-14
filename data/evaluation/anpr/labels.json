@@ -1,0 +1,50 @@
+[
+  {
+    "track_id": "TRK-sample_001",
+    "image": "data/evaluation/anpr/images/sample_001.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "clear"
+  },
+  {
+    "track_id": "TRK-sample_002",
+    "image": "data/evaluation/anpr/images/sample_002.jpg",
+    "ground_truth": "GJ05XY7812",
+    "condition": "clear"
+  },
+  {
+    "track_id": "TRK-sample_003",
+    "image": "data/evaluation/anpr/images/sample_003.jpg",
+    "ground_truth": "MH12DE5678",
+    "condition": "night"
+  },
+  {
+    "track_id": "TRK-sample_004",
+    "image": "data/evaluation/anpr/images/sample_004.jpg",
+    "ground_truth": "DL03CC4422",
+    "condition": "blur"
+  },
+  {
+    "track_id": "TRK-sample_005",
+    "image": "data/evaluation/anpr/images/sample_005.jpg",
+    "ground_truth": "GJ27AF9001",
+    "condition": "glare"
+  },
+  {
+    "track_id": "TRK-sample_006",
+    "image": "data/evaluation/anpr/images/sample_006.jpg",
+    "ground_truth": "GJ01CD3344",
+    "condition": "small_plate"
+  },
+  {
+    "track_id": "TRK-sample_007",
+    "image": "data/evaluation/anpr/images/sample_007.jpg",
+    "ground_truth": "22BH1234AA",
+    "condition": "clear"
+  },
+  {
+    "track_id": "TRK-sample_008",
+    "image": "data/evaluation/anpr/images/sample_008.jpg",
+    "ground_truth": "GJ06K5566",
+    "condition": "angled"
+  }
+]

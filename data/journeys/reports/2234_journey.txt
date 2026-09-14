@@ -1,0 +1,30 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               2234
+VEHICLE ID:            VEH-000005
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        1
+TOTAL LEGS:            0
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.42 (Engineering Indicator)
+  - Recognition Quality:  0.45
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   0.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+    * No geographic coordinates found for cameras in catalogue
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam06 (06 Timbavadi gate-Junagadh) | Track: TRK-0012 | Coords: No Coordinates
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 100920.0 ms / 100920.0 ms / 101040.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.47, OCR: 0.43)
+   Evidence Image:       data\snapshots\cam06\plates_processed\contrast\cam06_TRK-0012_frame000825_pts100920_plate01.jpg
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

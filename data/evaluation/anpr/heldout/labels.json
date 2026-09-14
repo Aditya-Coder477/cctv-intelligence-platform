@@ -1,0 +1,102 @@
+[
+  {
+    "image": "images/ctrl_heldout_01.jpg",
+    "ground_truth": "GJ01ZX1234",
+    "condition": "clear",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_01",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  },
+  {
+    "image": "images/ctrl_heldout_02.jpg",
+    "ground_truth": "GJ05WV5678",
+    "condition": "clear",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_02",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  },
+  {
+    "image": "images/ctrl_heldout_03.jpg",
+    "ground_truth": "MH02TS9012",
+    "condition": "night",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_03",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  },
+  {
+    "image": "images/ctrl_heldout_04.jpg",
+    "ground_truth": "DL01RQ3456",
+    "condition": "night",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_04",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  },
+  {
+    "image": "images/ctrl_heldout_05.jpg",
+    "ground_truth": "GJ03PO7890",
+    "condition": "blur",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_05",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  },
+  {
+    "image": "images/ctrl_heldout_06.jpg",
+    "ground_truth": "GJ06NM1234",
+    "condition": "motion_blur",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_06",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  },
+  {
+    "image": "images/ctrl_heldout_07.jpg",
+    "ground_truth": "GJ18LK5678",
+    "condition": "glare",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_07",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  },
+  {
+    "image": "images/ctrl_heldout_08.jpg",
+    "ground_truth": "GJ01JI9012",
+    "condition": "small_plate",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_08",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  },
+  {
+    "image": "images/ctrl_heldout_09.jpg",
+    "ground_truth": "22BH9999ZZ",
+    "condition": "clear",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_09",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  },
+  {
+    "image": "images/ctrl_heldout_10.jpg",
+    "ground_truth": "GJ02HG3456",
+    "condition": "angled",
+    "source": "controlled",
+    "camera_id": "cam_heldout",
+    "track_id": "TRK-HELDOUT-ctrl_heldout_10",
+    "frame_id": 1,
+    "pts_ms": 2000.0
+  }
+]

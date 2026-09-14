@@ -1,0 +1,32 @@
+catalogue:
+  url: "https://cctv.corp8.cloud/cameras.json"
+  source: "live"  # "live" or "local"
+  local_path: "data/catalogue/normalized/cameras.json"
+  timeout_seconds: 15
+  login_url: "https://cctv.corp8.cloud/auth/login"
+
+streaming:
+  default_camera_id: "cam01"
+  force_tcp: true
+  reconnect:
+    initial_backoff: 2.0
+    backoff_factor: 2.0
+    max_backoff: 30.0
+    max_retries: 10
+    stable_connection_threshold_frames: 30
+  discontinuity:
+    backward_threshold_ms: 0.0
+    forward_threshold_ms: 5000.0
+  display:
+    enabled: true
+    window_name: "Gujarat Police Sentinel CCTV Stream"
+
+storage:
+  raw_catalogue_dir: "data/catalogue/raw"
+  normalized_catalogue_dir: "data/catalogue/normalized"
+  snapshots_dir: "data/snapshots"
+  detections_dir: "data/detections"
+  evidence_dir: "data/evidence"
+
+logging:
+  level: "INFO"

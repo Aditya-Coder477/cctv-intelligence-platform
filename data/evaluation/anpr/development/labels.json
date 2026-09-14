@@ -1,0 +1,342 @@
+[
+  {
+    "image": "images/ctrl_dev_01.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "clear",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_01",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_02.jpg",
+    "ground_truth": "GJ05CD5678",
+    "condition": "clear",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_02",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_03.jpg",
+    "ground_truth": "GJ27XY9999",
+    "condition": "clear",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_03",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_04.jpg",
+    "ground_truth": "MH12DE1122",
+    "condition": "night",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_04",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_05.jpg",
+    "ground_truth": "DL04EF3344",
+    "condition": "night",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_05",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_06.jpg",
+    "ground_truth": "GJ03GH5566",
+    "condition": "blur",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_06",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_07.jpg",
+    "ground_truth": "GJ06IJ7788",
+    "condition": "blur",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_07",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_08.jpg",
+    "ground_truth": "GJ18KL9900",
+    "condition": "motion_blur",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_08",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_09.jpg",
+    "ground_truth": "GJ01MN1111",
+    "condition": "glare",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_09",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_10.jpg",
+    "ground_truth": "GJ02OP2222",
+    "condition": "glare",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_10",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_11.jpg",
+    "ground_truth": "GJ04QR3333",
+    "condition": "small_plate",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_11",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_12.jpg",
+    "ground_truth": "GJ05ST4444",
+    "condition": "small_plate",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_12",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_13.jpg",
+    "ground_truth": "22BH1234AA",
+    "condition": "clear",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_13",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_14.jpg",
+    "ground_truth": "GJ01UV5555",
+    "condition": "low_contrast",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_14",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_15.jpg",
+    "ground_truth": "GJ08WX6666",
+    "condition": "compression",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_15",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/ctrl_dev_16.jpg",
+    "ground_truth": "GJ10YZ7777",
+    "condition": "angled",
+    "source": "controlled",
+    "camera_id": "cam_calibration",
+    "track_id": "TRK-CALIB-ctrl_dev_16",
+    "frame_id": 1,
+    "pts_ms": 1000.0
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000006_pts1084_plate01.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000006_pts1084_plate01.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000006_pts1084_plate02.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000006_pts1084_plate02.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000006_pts1084_plate03.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000006_pts1084_plate03.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000009_pts1284_plate04.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000009_pts1284_plate04.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000009_pts1284_plate05.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000009_pts1284_plate05.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000018_pts1120_plate16.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "compression",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000018_pts1120_plate16.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000018_pts1120_plate17.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000018_pts1120_plate17.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000018_pts1120_plate18.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000018_pts1120_plate18.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000024_pts1520_plate08.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "blur",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000024_pts1520_plate08.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000024_pts1520_plate09.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000024_pts1520_plate09.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000024_pts1520_plate10.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000024_pts1520_plate10.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000024_pts1520_plate11.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000024_pts1520_plate11.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000027_pts1720_plate12.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "blur",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000027_pts1720_plate12.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000027_pts1720_plate13.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000027_pts1720_plate13.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000027_pts1720_plate14.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000027_pts1720_plate14.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000027_pts1720_plate15.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000027_pts1720_plate15.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000030_pts1920_plate04.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "blur",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000030_pts1920_plate04.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000030_pts1920_plate05.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000030_pts1920_plate05.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000030_pts1920_plate06.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000030_pts1920_plate06.jpg"
+  },
+  {
+    "image": "images/cam01_TRK-0001_frame000030_pts1920_plate07.jpg",
+    "ground_truth": "GJ01AB1234",
+    "condition": "small_plate",
+    "source": "sentinel",
+    "camera_id": "cam01",
+    "track_id": "TRK-0001",
+    "original_source_path": "data/snapshots/cam01/plates/cam01_TRK-0001_frame000030_pts1920_plate07.jpg"
+  }
+]

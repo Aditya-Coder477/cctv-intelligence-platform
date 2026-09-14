@@ -1,0 +1,30 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               GJ05CD5678
+VEHICLE ID:            VEH-000002
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        1
+TOTAL LEGS:            0
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.55 (Engineering Indicator)
+  - Recognition Quality:  0.82
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   0.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+    * No geographic coordinates found for cameras in catalogue
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam07 (07 hero-showroom-gir-somnath) | Track: TRK-0020 | Coords: No Coordinates
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 52100.0 ms / 52500.0 ms / 53400.0 ms
+   Status / Consensus:   PROBABLE (Score: 0.81, OCR: 0.84)
+   Evidence Image:       data/snapshots/cam07/plates/sample_cd.jpg
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

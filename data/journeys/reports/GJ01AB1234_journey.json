@@ -1,0 +1,112 @@
+{
+  "journey_id": "JRN-GJ01AB1234",
+  "vehicle_id": "VEH-GJ01AB1234",
+  "registration_number": "GJ01AB1234",
+  "normalized_registration_number": "GJ01AB1234",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ01AB1234-cam01-TRK-0001",
+      "vehicle_id": "VEH-GJ01AB1234",
+      "registration_number": "GJ01AB1234",
+      "normalized_registration_number": "GJ01AB1234",
+      "camera_id": "cam01",
+      "track_id": "TRK-0001",
+      "first_seen_pts_ms": 10240.0,
+      "recognition_pts_ms": 11200.0,
+      "last_seen_pts_ms": 12480.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.94,
+      "ocr_confidence": 0.93,
+      "camera_name": "01 Chiman bhai Bridge",
+      "camera_latitude": null,
+      "camera_longitude": null,
+      "evidence_image": null,
+      "evidence_filename_pts_status": "DISCREPANCY",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam01-TRK-0001-11200"
+      ]
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01AB1234-cam07-TRK-0019",
+      "vehicle_id": "VEH-GJ01AB1234",
+      "registration_number": "GJ01AB1234",
+      "normalized_registration_number": "GJ01AB1234",
+      "camera_id": "cam07",
+      "track_id": "TRK-0019",
+      "first_seen_pts_ms": 45200.0,
+      "recognition_pts_ms": 46000.0,
+      "last_seen_pts_ms": 47800.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.92,
+      "ocr_confidence": 0.91,
+      "camera_name": "07 hero-showroom-gir-somnath",
+      "camera_latitude": null,
+      "camera_longitude": null,
+      "evidence_image": null,
+      "evidence_filename_pts_status": "UNKNOWN",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam07-TRK-0019-46000"
+      ]
+    }
+  ],
+  "legs": [
+    {
+      "leg_id": "LEG-VEH-GJ01AB1234-0001",
+      "vehicle_id": "VEH-GJ01AB1234",
+      "from_observation_id": "SEG-VEH-GJ01AB1234-cam01-TRK-0001",
+      "to_observation_id": "SEG-VEH-GJ01AB1234-cam07-TRK-0019",
+      "from_camera_id": "cam01",
+      "to_camera_id": "cam07",
+      "from_camera_name": "01 Chiman bhai Bridge",
+      "to_camera_name": "07 hero-showroom-gir-somnath",
+      "from_source_time": null,
+      "to_source_time": null,
+      "time_delta_seconds": null,
+      "straight_line_distance_m": null,
+      "distance_status": "UNAVAILABLE",
+      "distance_label": "STRAIGHT_LINE_DISTANCE",
+      "implied_speed_kmh": null,
+      "implied_speed_label": "IMPLIED STRAIGHT-LINE SPEED",
+      "source_time_status": "NOT_RESOLVED",
+      "plausibility": "UNKNOWN",
+      "plausibility_reason": "Source time unresolved and camera coordinates unavailable"
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.5841,
+    "recognition_quality": 0.926,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 0.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only",
+      "No geographic coordinates found for cameras in catalogue"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.930, avg_ocr=0.920 \u2192 score=0.926 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 0 cameras have verified coordinates \u2192 score=0.0 (weight 15%). NOTE: camera_name text is NOT used as a coordinate substitute.",
+      "Plausibility: all 1 leg(s) are not ANOMALOUS \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": null,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "UNAVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue.",
+    "Camera geographic coordinates are unavailable \u2014 straight-line distances and implied speeds cannot be calculated."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-04T23:15:11.599068+00:00"
+}

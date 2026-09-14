@@ -1,0 +1,48 @@
+{
+  "generated_at_utc": "2026-09-01T11:26:31.527804+00:00",
+  "source_files": {
+    "observations": "data\\observed\\vehicles\\observations.jsonl",
+    "uncertain_observations": "data\\observed\\vehicles\\uncertain_observations.jsonl"
+  },
+  "observations_summary": {
+    "unique_vehicles": 2,
+    "total_observations": 3,
+    "cameras_used": [
+      "cam01",
+      "cam07"
+    ],
+    "cameras_used_count": 2,
+    "multi_camera_vehicles": 1,
+    "multi_camera_vehicle_registrations": [
+      "GJ01AB1234"
+    ],
+    "confirmed_count": 2,
+    "probable_count": 1
+  },
+  "uncertain_observations_summary": {
+    "total": 17,
+    "uncertain_count": 3,
+    "unreadable_count": 14,
+    "cameras_seen": [
+      "cam01"
+    ]
+  },
+  "coverage": {
+    "sentinel_cameras_total": 30,
+    "cameras_with_any_observation": 2,
+    "cameras_with_confirmed_or_probable": 2,
+    "coverage_percent": 6.7
+  },
+  "data_quality": {
+    "all_source_times_resolved": false,
+    "source_time_anchor_available": false,
+    "all_coordinates_available": false,
+    "coordinate_source": "NOT_AVAILABLE",
+    "limitations": [
+      "Source/calendar time is NOT_RESOLVED for all observations \u2014 no time anchor in Sentinel catalogue",
+      "Camera coordinates are unavailable \u2014 spatial analysis not possible",
+      "Dataset covers only cameras that have been ingested through the ANPR pipeline"
+    ]
+  },
+  "expansion_instructions": "To expand the dataset, run: python scripts/run_anpr.py --camera <camera_id> then python scripts/build_observed_vehicle_db.py. DO NOT fabricate vehicle observations."
+}

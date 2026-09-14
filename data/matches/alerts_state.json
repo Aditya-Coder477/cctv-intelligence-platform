@@ -1,0 +1,40 @@
+{
+  "MATCH-cam01-TRK-1257-664827": {
+    "status": "ACKNOWLEDGED",
+    "operator_notes": "Dispatched unit 4",
+    "acknowledged_by": "Officer Patel",
+    "acknowledged_at": "2026-09-04T23:23:29.112334+00:00",
+    "audit_history": [
+      {
+        "timestamp": "2026-09-04T23:13:51.086524+00:00",
+        "action": "TRIGGERED",
+        "operator": "SYSTEM (AI Watchlist Matcher)",
+        "notes": "Match detected with score 1.00"
+      },
+      {
+        "timestamp": "2026-09-04T23:23:29.112334+00:00",
+        "action": "ACKNOWLEDGE",
+        "operator": "Officer Patel",
+        "notes": "Dispatched unit 4"
+      },
+      {
+        "timestamp": "2026-09-04T23:23:39.758498+00:00",
+        "action": "ACKNOWLEDGE",
+        "operator": "Officer Patel",
+        "notes": "Dispatched unit 4"
+      },
+      {
+        "timestamp": "2026-09-04T23:23:47.262803+00:00",
+        "action": "ACKNOWLEDGE",
+        "operator": "Officer Patel",
+        "notes": "Dispatched unit 4"
+      },
+      {
+        "timestamp": "2026-09-04T23:29:41.519849+00:00",
+        "action": "ACKNOWLEDGE",
+        "operator": "Officer Patel",
+        "notes": "Dispatched unit 4"
+      }
+    ]
+  }
+}

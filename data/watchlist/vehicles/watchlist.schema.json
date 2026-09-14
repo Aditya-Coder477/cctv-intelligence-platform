@@ -1,0 +1,72 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SyntheticWatchlistVehicle",
+  "description": "Schema for representative synthetic vehicle watchlist records (Step 8)",
+  "type": "object",
+  "required": [
+    "watchlist_id",
+    "entity_type",
+    "registration_number",
+    "normalized_registration_number",
+    "category",
+    "priority",
+    "status",
+    "source",
+    "synthetic"
+  ],
+  "properties": {
+    "watchlist_id": {
+      "type": "string",
+      "pattern": "^WL-VEH-\\d{6}$"
+    },
+    "entity_type": {
+      "type": "string",
+      "enum": ["vehicle"]
+    },
+    "registration_number": {
+      "type": "string"
+    },
+    "normalized_registration_number": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "DEMO_STOLEN_VEHICLE",
+        "DEMO_BLACKLISTED_VEHICLE",
+        "DEMO_VEHICLE_OF_INTEREST",
+        "DEMO_MISSING_VEHICLE"
+      ]
+    },
+    "priority": {
+      "type": "string",
+      "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]
+    },
+    "status": {
+      "type": "string",
+      "enum": ["ACTIVE", "INACTIVE", "EXPIRED"]
+    },
+    "source": {
+      "type": "string",
+      "enum": ["SYNTHETIC_DEMO"]
+    },
+    "synthetic": {
+      "type": "boolean",
+      "enum": [true]
+    },
+    "description": {
+      "type": "string"
+    },
+    "notes": {
+      "type": ["string", "null"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

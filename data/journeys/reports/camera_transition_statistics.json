@@ -1,0 +1,23 @@
+{
+  "total_cameras_in_graph": 2,
+  "total_edges": 1,
+  "total_shared_vehicle_instances": 1,
+  "edges": [
+    {
+      "camera_a": "cam01",
+      "camera_b": "cam07",
+      "shared_vehicles": [
+        "GJ01AB1234"
+      ],
+      "observation_id_pairs": [
+        [
+          "OBS-cam01-TRK-0001-11200",
+          "OBS-cam07-TRK-0019-46000"
+        ]
+      ],
+      "temporal_order_known": false,
+      "vehicle_count": 1
+    }
+  ],
+  "generated_at_utc": "2026-09-01T10:58:21.433375+00:00"
+}

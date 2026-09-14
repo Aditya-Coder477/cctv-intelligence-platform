@@ -1,0 +1,14 @@
+[
+  {
+    "watchlist_id": "WL-PERSON-000001",
+    "entity_type": "person",
+    "synthetic": true,
+    "source": "SYNTHETIC_DEMO",
+    "category": "DEMO_PERSON_OF_INTEREST",
+    "priority": "HIGH",
+    "status": "ACTIVE",
+    "description": "Synthetic demonstration record (No real PII)",
+    "created_at": "2026-09-01T00:00:00+00:00",
+    "updated_at": "2026-09-01T00:00:00+00:00"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "journey_id": "JRN-IG8U",
+  "vehicle_id": "VEH-000004",
+  "registration_number": "IG8U",
+  "normalized_registration_number": "IG8U",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000004-cam06-TRK-0004",
+      "vehicle_id": "VEH-000004",
+      "registration_number": "IG8U",
+      "normalized_registration_number": "IG8U",
+      "camera_id": "cam06",
+      "track_id": "TRK-0004",
+      "first_seen_pts_ms": 2440.0,
+      "recognition_pts_ms": 3040.0,
+      "last_seen_pts_ms": 3040.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.3657,
+      "ocr_confidence": 0.1664,
+      "camera_name": "06 Timbavadi gate-Junagadh",
+      "camera_latitude": null,
+      "camera_longitude": null,
+      "evidence_image": "data\\snapshots\\cam06\\plates_processed\\contrast\\cam06_TRK-0004_frame000075_pts3040_plate07.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam06-TRK-0004-3040"
+      ]
+    }
+  ],
+  "legs": [],
+  "confidence_score": {
+    "overall_score": 0.3601,
+    "recognition_quality": 0.286,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 0.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only",
+      "No geographic coordinates found for cameras in catalogue"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.366, avg_ocr=0.166 \u2192 score=0.286 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 0 cameras have verified coordinates \u2192 score=0.0 (weight 15%). NOTE: camera_name text is NOT used as a coordinate substitute.",
+      "Plausibility: no legs (single segment or no sequence) \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": null,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "UNAVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue.",
+    "Camera geographic coordinates are unavailable \u2014 straight-line distances and implied speeds cannot be calculated.",
+    "Only one camera observation segment \u2014 no cross-camera journey legs can be formed."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-04T23:15:11.603706+00:00"
+}

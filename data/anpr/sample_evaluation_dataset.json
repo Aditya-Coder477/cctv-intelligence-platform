@@ -1,0 +1,22 @@
+[
+  {
+    "track_id": "TRK-0001",
+    "image_path": "data\\snapshots\\cam01\\plates\\cam01_TRK-0001_frame000006_pts1084_plate01.jpg",
+    "ground_truth": "GJ01AB1234"
+  },
+  {
+    "track_id": "TRK-0001",
+    "image_path": "data\\snapshots\\cam01\\plates\\cam01_TRK-0001_frame000006_pts1084_plate02.jpg",
+    "ground_truth": "GJ01AB1234"
+  },
+  {
+    "track_id": "TRK-0002",
+    "image_path": "data\\snapshots\\cam01\\plates\\cam01_TRK-0001_frame000006_pts1084_plate03.jpg",
+    "ground_truth": "GJ05CD5678"
+  },
+  {
+    "track_id": "TRK-0002",
+    "image_path": "data\\snapshots\\cam01\\plates\\cam01_TRK-0001_frame000009_pts1284_plate04.jpg",
+    "ground_truth": "GJ05CD5678"
+  }
+]

@@ -1,0 +1,44 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               GJ01AB1234
+VEHICLE ID:            VEH-GJ01AB1234
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        2
+TOTAL LEGS:            1
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.58 (Engineering Indicator)
+  - Recognition Quality:  0.93
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   0.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+    * No geographic coordinates found for cameras in catalogue
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam01 (01 Chiman bhai Bridge) | Track: TRK-0001 | Coords: No Coordinates
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 10240.0 ms / 11200.0 ms / 12480.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.94, OCR: 0.93)
+   Evidence Image:       None
+
+2. Camera: cam07 (07 hero-showroom-gir-somnath) | Track: TRK-0019 | Coords: No Coordinates
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 45200.0 ms / 46000.0 ms / 47800.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.92, OCR: 0.91)
+   Evidence Image:       None
+
+----------------------------------------------------------------------
+JOURNEY LEGS (Cross-Camera Transit):
+----------------------------------------------------------------------
+Leg 1: cam01 (01 Chiman bhai Bridge) -> cam07 (07 hero-showroom-gir-somnath)
+  Time Delta:             UNRESOLVED (Media PTS not comparable)
+  Approx Distance:        UNAVAILABLE (missing camera coordinates)
+  Plausibility:           UNKNOWN (Source time unresolved and camera coordinates unavailable)
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================
