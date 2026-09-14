@@ -11,11 +11,17 @@ import {
   AnalyticsData
 } from "../types"
 
-const API_BASE = ""
+export const API_BASE = (import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "")
+
+export function getEvidenceUrl(url?: string): string | undefined {
+  if (!url) return undefined
+  if (url.startsWith("http://") || url.startsWith("https://")) return url
+  return `${API_BASE}${url}`
+}
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${endpoint}`, {
-    credentials: "same-origin",
+    credentials: API_BASE ? "include" : "same-origin",
     headers: {
       "Content-Type": "application/json",
       ...options?.headers,

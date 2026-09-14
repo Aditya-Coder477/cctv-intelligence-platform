@@ -26,7 +26,8 @@ export const HlsPlayer: React.FC<HlsPlayerProps> = ({
   const [ptsDisplay, setPtsDisplay] = useState<string>("00:00:00")
   const [isLive, setIsLive] = useState(false)
 
-  const defaultStreamUrl = streamUrl || `/api/cameras/${cameraId}/hls/index.m3u8`
+  const apiBase = (import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "")
+  const defaultStreamUrl = streamUrl || `${apiBase}/api/cameras/${cameraId}/hls/index.m3u8`
 
   const initHls = () => {
     setError(null)
