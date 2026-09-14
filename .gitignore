@@ -58,6 +58,16 @@ Synthetic Dataset_result/
 data/snapshots/
 data/detections/
 data/footage/
+data/synthetic_cache/
+*.jpg
+*.jpeg
+*.png
+!frontend/src/**/*.png
+!frontend/src/**/*.jpg
+!frontend/public/**/*.png
+!frontend/public/**/*.jpg
+!frontend/public/**/*.svg
+patch_synthetic_labels.py
 data/anpr/*/debug/
 data/anpr/*/raw_results/
 data/evaluation/**/results/

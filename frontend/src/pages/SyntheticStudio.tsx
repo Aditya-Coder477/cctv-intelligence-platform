@@ -25,6 +25,7 @@ import {
   Eye,
   X
 } from "lucide-react"
+import { API_BASE, getEvidenceUrl } from "../services/api"
 
 interface VideoItem {
   id: string
@@ -43,6 +44,7 @@ interface VideoItem {
 
 interface DetectedVehicle {
   track_id: string
+  display_id?: string
   vehicle_type: string
   vehicle_confidence: number
   plate_number: string | null
@@ -62,6 +64,7 @@ interface AlertItem {
   alert_id: string
   video: string
   track_id: string
+  display_id?: string
   registration_number: string
   category: string
   priority: string
@@ -127,7 +130,7 @@ export const SyntheticStudio: React.FC = () => {
 
   const fetchVideos = async () => {
     try {
-      const res = await fetch("/api/synthetic/videos")
+      const res = await fetch(`${API_BASE}/api/synthetic/videos`)
       if (res.ok) {
         const data: VideoItem[] = await res.json()
         setVideos(data)
@@ -147,8 +150,8 @@ export const SyntheticStudio: React.FC = () => {
     const fetchAll = async () => {
       try {
         const [detRes, alertRes] = await Promise.all([
-          fetch(`/api/synthetic/detections?video=${encodeURIComponent(selectedVideo)}`),
-          fetch(`/api/synthetic/alerts?video=${encodeURIComponent(selectedVideo)}`)
+          fetch(`${API_BASE}/api/synthetic/detections?video=${encodeURIComponent(selectedVideo)}`),
+          fetch(`${API_BASE}/api/synthetic/alerts?video=${encodeURIComponent(selectedVideo)}`)
         ])
         if (detRes.ok) {
           const data = await detRes.json()
@@ -157,12 +160,20 @@ export const SyntheticStudio: React.FC = () => {
         }
         if (alertRes.ok) {
           const alertData: AlertItem[] = await alertRes.json()
+          // Strict deduplication by normalized plate / alert key (1 alert per vehicle)
+          const seenPlates = new Set<string>()
+          const uniqueAlerts = alertData.filter((a) => {
+            const key = (a.registration_number || a.alert_id).replace(/\s+/g, "").toUpperCase()
+            if (seenPlates.has(key)) return false
+            seenPlates.add(key)
+            return true
+          })
           // Auto-switch to alerts tab when new alert arrives
-          if (alertData.length > prevAlertCount.current) {
+          if (uniqueAlerts.length > prevAlertCount.current) {
             setActiveTab("alerts")
           }
-          prevAlertCount.current = alertData.length
-          setAlerts(alertData)
+          prevAlertCount.current = uniqueAlerts.length
+          setAlerts(uniqueAlerts)
         }
       } catch (e) {
         console.error("Failed to poll feed", e)
@@ -175,6 +186,7 @@ export const SyntheticStudio: React.FC = () => {
   }, [selectedVideo, isPlaying, streamKey])
 
   const handleSelectVideo = (filename: string) => {
+    fetch(`${API_BASE}/api/synthetic/reset-session?video=${encodeURIComponent(filename)}`, { method: "POST" }).catch(() => {})
     setSelectedVideo(filename)
     setIsPlaying(true)
     setStreamKey(Date.now())
@@ -192,7 +204,7 @@ export const SyntheticStudio: React.FC = () => {
     const formData = new FormData()
     formData.append("file", file)
     try {
-      const res = await fetch("/api/synthetic/upload", { method: "POST", body: formData })
+      const res = await fetch(`${API_BASE}/api/synthetic/upload`, { method: "POST", body: formData })
       if (!res.ok) {
         const err = await res.json()
         throw new Error(err.detail || "Upload failed")
@@ -212,7 +224,7 @@ export const SyntheticStudio: React.FC = () => {
 
   const handleAcknowledge = async (alertId: string) => {
     try {
-      await fetch(`/api/synthetic/alerts/${alertId}/acknowledge?operator=Operator`, { method: "POST" })
+      await fetch(`${API_BASE}/api/synthetic/alerts/${alertId}/acknowledge?operator=Operator`, { method: "POST" })
       setAlerts((prev) =>
         prev.map((a) => a.alert_id === alertId ? { ...a, status: "ACKNOWLEDGED" } : a)
       )
@@ -240,7 +252,7 @@ export const SyntheticStudio: React.FC = () => {
     URL.revokeObjectURL(url)
   }
 
-  const streamUrl = `/api/synthetic/stream?video=${encodeURIComponent(selectedVideo)}&detector_interval=${detectorInterval}&conf=${conf}&plate_conf=${plateConf}&resize_w=720&_t=${streamKey}`
+  const streamUrl = `${API_BASE}/api/synthetic/stream?video=${encodeURIComponent(selectedVideo)}&detector_interval=${detectorInterval}&conf=${conf}&plate_conf=${plateConf}&resize_w=720&_t=${streamKey}`
 
   const filteredDetections = detections.filter((d) => {
     if (!searchQuery) return true
@@ -363,7 +375,7 @@ export const SyntheticStudio: React.FC = () => {
                 }`}
               >
                 <div className="aspect-video w-full bg-slate-900 relative">
-                  <img src={vid.thumbnail_url} alt={vid.display_name} className="w-full h-full object-cover" onError={(e) => { ;(e.target as HTMLElement).style.display = "none" }} />
+                  <img src={getEvidenceUrl(vid.thumbnail_url)} alt={vid.display_name} className="w-full h-full object-cover" onError={(e) => { ;(e.target as HTMLElement).style.display = "none" }} />
                   {isSelected && <span className="absolute top-1 left-1 px-1.5 py-0.5 bg-cyan-500 text-[9px] font-bold text-black rounded uppercase tracking-wider">ACTIVE</span>}
                   <span className="absolute bottom-1 right-1 px-1 bg-black/80 text-[9px] font-mono text-slate-200 rounded">{vid.duration_sec}s</span>
                 </div>
@@ -555,10 +567,9 @@ export const SyntheticStudio: React.FC = () => {
                     >
                       <div className="flex items-center justify-between">
                         <div className="flex items-center gap-2">
-                          <span className={`px-2 py-0.5 rounded text-[11px] font-mono font-bold border ${isMatch ? "bg-red-950 text-red-300 border-red-700" : "bg-cyan-950/90 text-cyan-400 border-cyan-800"}`}>
-                            {veh.track_id}
+                          <span className={`px-2.5 py-1 rounded text-xs font-bold border ${isMatch ? "bg-red-950 text-red-300 border-red-700" : "bg-cyan-950/90 text-cyan-300 border-cyan-800"}`}>
+                            {veh.display_id || `${veh.vehicle_type} #${veh.track_id.replace('TRK-', '').replace(/^0+/, '')}`}
                           </span>
-                          <span className="text-xs font-semibold text-white capitalize">{veh.vehicle_type}</span>
                         </div>
                         <div className="flex items-center gap-1.5">
                           {isMatch && catStyle && (
@@ -581,8 +592,8 @@ export const SyntheticStudio: React.FC = () => {
                               {veh.plate_number}
                             </span>
                           ) : (
-                            <span className="text-[11px] text-amber-400/80 italic font-mono flex items-center gap-1">
-                              <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse"></span>Scanning...
+                            <span className="text-[10px] text-slate-500 font-mono">
+                              No plate detected
                             </span>
                           )}
                         </div>
@@ -602,12 +613,12 @@ export const SyntheticStudio: React.FC = () => {
                         <div className="flex items-center gap-2 pt-1 border-t border-police-800/60">
                           {veh.vehicle_snapshot_url && (
                             <div onClick={() => setSelectedSnapshot(veh.vehicle_snapshot_url)} className="cursor-pointer overflow-hidden rounded border border-police-700/80 hover:border-cyan-400 w-14 h-9 bg-black">
-                              <img src={veh.vehicle_snapshot_url} alt="Vehicle crop" className="w-full h-full object-cover" />
+                              <img src={getEvidenceUrl(veh.vehicle_snapshot_url)} alt="Vehicle crop" className="w-full h-full object-cover" />
                             </div>
                           )}
                           {veh.plate_snapshot_url && (
                             <div onClick={() => setSelectedSnapshot(veh.plate_snapshot_url)} className={`cursor-pointer overflow-hidden rounded border hover:border-emerald-400 w-16 h-7 bg-black flex items-center justify-center ${isMatch ? "border-red-700" : "border-emerald-600"}`}>
-                              <img src={veh.plate_snapshot_url} alt="Plate crop" className="w-full h-full object-contain" />
+                              <img src={getEvidenceUrl(veh.plate_snapshot_url)} alt="Plate crop" className="w-full h-full object-contain" />
                             </div>
                           )}
                           <span className="text-[9px] text-slate-500 ml-auto">Click crop to zoom</span>
@@ -700,7 +711,7 @@ export const SyntheticStudio: React.FC = () => {
             </button>
             <h4 className="text-sm font-bold text-white">High-Resolution Crop Snapshot</h4>
             <div className="rounded-lg overflow-hidden border border-police-800 bg-black">
-              <img src={selectedSnapshot} alt="Snapshot preview" className="w-full object-contain max-h-[70vh]" />
+              <img src={getEvidenceUrl(selectedSnapshot)} alt="Snapshot preview" className="w-full object-contain max-h-[70vh]" />
             </div>
           </div>
         </div>

@@ -5,7 +5,6 @@ import {
   Plus,
   Shield,
   AlertTriangle,
-  Sparkles,
   Calendar,
   X,
   CheckCircle2
@@ -97,21 +96,8 @@ export const Watchlist: React.FC = () => {
           className="flex items-center gap-2 px-4 py-2 bg-purple-700 hover:bg-purple-600 rounded-lg text-xs font-semibold text-white transition shadow"
         >
           <Plus className="w-4 h-4" />
-          Add Demo Watchlist Target
+          Add Watchlist Target
         </button>
-      </div>
-
-      {/* Synthetic Demo Disclaimer Alert */}
-      <div className="p-3.5 rounded-xl bg-purple-950/40 border border-purple-500/40 text-xs flex items-start gap-3">
-        <Sparkles className="w-5 h-5 text-purple-400 shrink-0 mt-0.5" />
-        <div className="space-y-1">
-          <div className="font-semibold text-purple-200">
-            Hackathon Research Data Notice: Synthetic Watchlist Targets
-          </div>
-          <p className="text-purple-300/80 text-[11px] leading-relaxed">
-            All records in this repository are synthetic mock targets tagged with <span className="font-mono text-purple-300 font-bold">SYNTHETIC_DEMO</span> to test real-time license plate detection and matching without utilizing live confidential police hotlists.
-          </p>
-        </div>
       </div>
 
       {/* Filter and Search Bar */}

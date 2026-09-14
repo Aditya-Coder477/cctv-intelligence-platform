@@ -1,45 +1,65 @@
 {
-  "MATCH-cam01-TRK-1257-664827": {
+  "MATCH-cam01-TRK-5259-2728966": {
     "status": "ACKNOWLEDGED",
     "operator_notes": "Dispatched unit 4",
     "acknowledged_by": "Officer Patel",
-    "acknowledged_at": "2026-09-04T23:23:29.112334+00:00",
+    "acknowledged_at": "2026-09-14T15:21:28.337172+00:00",
     "audit_history": [
       {
-        "timestamp": "2026-09-04T23:13:51.086524+00:00",
+        "timestamp": "2026-09-14T13:32:22.921981+00:00",
         "action": "TRIGGERED",
         "operator": "SYSTEM (AI Watchlist Matcher)",
         "notes": "Match detected with score 1.00"
       },
       {
-        "timestamp": "2026-09-04T23:23:29.112334+00:00",
+        "timestamp": "2026-09-14T15:21:28.337172+00:00",
         "action": "ACKNOWLEDGE",
         "operator": "Officer Patel",
         "notes": "Dispatched unit 4"
-      },
+      }
+    ]
+  },
+  "ALT-8-TRK-0002-1": {
+    "status": "NEW",
+    "audit_history": [
       {
-        "timestamp": "2026-09-04T23:23:39.758498+00:00",
-        "action": "ACKNOWLEDGE",
-        "operator": "Officer Patel",
-        "notes": "Dispatched unit 4"
-      },
+        "timestamp": "2026-09-14T17:18:43.550116+00:00",
+        "action": "TRIGGERED",
+        "operator": "AI Synthetic Surveillance Engine",
+        "notes": "Match detected with score 1.00 via EXACT_MATCH (STOLEN_VEHICLE)"
+      }
+    ]
+  },
+  "ALT-5-TRK-0001-7": {
+    "status": "NEW",
+    "audit_history": [
       {
-        "timestamp": "2026-09-04T23:23:47.262803+00:00",
-        "action": "ACKNOWLEDGE",
-        "operator": "Officer Patel",
-        "notes": "Dispatched unit 4"
-      },
+        "timestamp": "2026-09-14T17:46:31.777100+00:00",
+        "action": "TRIGGERED",
+        "operator": "AI Synthetic Surveillance Engine",
+        "notes": "Match detected with score 1.00 via EXACT_MATCH (SUSPECT_VEHICLE)"
+      }
+    ]
+  },
+  "ALT-1-TRK-0001-11": {
+    "status": "NEW",
+    "audit_history": [
       {
-        "timestamp": "2026-09-04T23:29:41.519849+00:00",
-        "action": "ACKNOWLEDGE",
-        "operator": "Officer Patel",
-        "notes": "Dispatched unit 4"
-      },
+        "timestamp": "2026-09-14T17:53:06.497982+00:00",
+        "action": "TRIGGERED",
+        "operator": "AI Synthetic Surveillance Engine",
+        "notes": "Match detected with score 1.00 via EXACT_MATCH (BLACKLISTED_VEHICLE)"
+      }
+    ]
+  },
+  "ALT-8-KA02MN1826": {
+    "status": "NEW",
+    "audit_history": [
       {
-        "timestamp": "2026-09-14T13:09:05.172222+00:00",
-        "action": "ACKNOWLEDGE",
-        "operator": "Officer Patel",
-        "notes": "Dispatched unit 4"
+        "timestamp": "2026-09-14T18:16:26.248398+00:00",
+        "action": "TRIGGERED",
+        "operator": "AI Synthetic Surveillance Engine",
+        "notes": "Match detected with score 1.00 via EXACT_MATCH (STOLEN_VEHICLE)"
       }
     ]
   }

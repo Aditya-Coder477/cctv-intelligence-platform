@@ -423,5 +423,22 @@
     "jurisdiction": "Control Benchmark",
     "created_at": "2026-09-14T14:19:06.448042+00:00",
     "updated_at": "2026-09-14T14:19:06.448042+00:00"
+  },
+  {
+    "watchlist_id": "WL-SYN-000026",
+    "registration_number": "KA02MN1826",
+    "normalized_registration_number": "KA02MN1826",
+    "category": "STOLEN_VEHICLE",
+    "priority": "CRITICAL",
+    "status": "ACTIVE",
+    "entity_type": "vehicle",
+    "source": "SYNTHETIC_DEMO",
+    "synthetic": true,
+    "description": "2024 Black Volvo SUV reported stolen in armed carjacking (FIR #KA-2026-1826).",
+    "notes": "Identified on Synthetic CCTV Video 8. Carries high-priority interception notice.",
+    "case_number": "FIR-KA-2026-1826",
+    "jurisdiction": "Gujarat / Karnataka Police",
+    "created_at": "2026-09-14T17:08:32.520137+00:00",
+    "updated_at": "2026-09-14T17:08:32.520137+00:00"
   }
 ]
