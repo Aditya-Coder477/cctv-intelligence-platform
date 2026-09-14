@@ -1,105 +1,165 @@
 [
   {
     "vehicle_id": "VEH-000001",
-    "registration_number": "CMA66",
-    "normalized_registration_number": "CMA66",
+    "registration_number": "CHME",
+    "normalized_registration_number": "CHME",
     "first_seen": {
       "camera_id": "cam01",
-      "pts_ms": 276517.0,
+      "pts_ms": 17966.0,
       "source_time": null,
       "source_time_status": "NOT_RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam01",
-      "pts_ms": 280527.0,
+      "camera_id": "cam04",
+      "pts_ms": 441466.0,
       "source_time": null,
       "source_time_status": "NOT_RESOLVED"
     },
-    "camera_count": 1,
+    "camera_count": 3,
     "cameras": [
-      "cam01"
+      "cam01",
+      "cam02",
+      "cam04"
     ],
-    "observation_count": 1,
-    "track_count": 1,
-    "best_consensus_score": 0.5709,
-    "average_consensus_score": 0.5709,
+    "observation_count": 3,
+    "track_count": 2,
+    "best_consensus_score": 0.87,
+    "average_consensus_score": 0.7598,
     "status": "OBSERVED",
     "timeline": [
       {
         "camera_id": "cam01",
-        "track_id": "TRK-0687",
-        "first_seen_pts_ms": 276517.0,
-        "recognition_pts_ms": 276517.0,
-        "last_seen_pts_ms": 280527.0,
+        "track_id": "TRK-0047",
+        "first_seen_pts_ms": 17966.0,
+        "recognition_pts_ms": 22966.0,
+        "last_seen_pts_ms": 22966.0,
         "source_time": null,
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
-        "consensus_score": 0.5709,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-0687_frame007320_pts276517_plate01.jpg",
+        "consensus_score": 0.5394,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-0047_frame000690_pts22966_plate01.jpg",
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-04T23:06:25.009254+00:00"
+        "ingested_at_utc": "2026-09-14T13:32:02.800754+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0864",
+        "first_seen_pts_ms": 440466.0,
+        "recognition_pts_ms": 440466.0,
+        "last_seen_pts_ms": 441466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.87,
+        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-0864_frame013215_pts440466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.978197+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-0864",
+        "first_seen_pts_ms": 440466.0,
+        "recognition_pts_ms": 440466.0,
+        "last_seen_pts_ms": 441466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.87,
+        "evidence_image": "data\\snapshots\\cam04\\plates\\cam04_TRK-0864_frame013215_pts440466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.188469+00:00"
       }
     ],
-    "ingested_at_utc": "2026-09-04T23:10:57.853200+00:00",
-    "updated_at_utc": "2026-09-04T23:10:57.853200+00:00"
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
   },
   {
     "vehicle_id": "VEH-000002",
-    "registration_number": "CH0BHBGE",
-    "normalized_registration_number": "CH0BHBGE",
+    "registration_number": "CHBHB9ECSITM",
+    "normalized_registration_number": "CHBHB9ECSITM",
     "first_seen": {
       "camera_id": "cam01",
-      "pts_ms": 664827.0,
+      "pts_ms": 48966.0,
       "source_time": null,
       "source_time_status": "NOT_RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam01",
-      "pts_ms": 664827.0,
+      "camera_id": "cam04",
+      "pts_ms": 49966.0,
       "source_time": null,
       "source_time_status": "NOT_RESOLVED"
     },
-    "camera_count": 1,
+    "camera_count": 3,
     "cameras": [
-      "cam01"
+      "cam01",
+      "cam02",
+      "cam04"
     ],
-    "observation_count": 1,
+    "observation_count": 3,
     "track_count": 1,
-    "best_consensus_score": 0.4939,
-    "average_consensus_score": 0.4939,
+    "best_consensus_score": 0.7629,
+    "average_consensus_score": 0.7629,
     "status": "OBSERVED",
     "timeline": [
       {
         "camera_id": "cam01",
-        "track_id": "TRK-1257",
-        "first_seen_pts_ms": 664827.0,
-        "recognition_pts_ms": 664827.0,
-        "last_seen_pts_ms": 664827.0,
+        "track_id": "TRK-0117",
+        "first_seen_pts_ms": 48966.0,
+        "recognition_pts_ms": 48966.0,
+        "last_seen_pts_ms": 49966.0,
         "source_time": null,
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
-        "consensus_score": 0.4939,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-1257_frame013140_pts664827_plate01.jpg",
+        "consensus_score": 0.7629,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-0117_frame001470_pts48966_plate01.jpg",
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-04T23:06:25.021513+00:00"
+        "ingested_at_utc": "2026-09-14T13:32:02.801798+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0117",
+        "first_seen_pts_ms": 48966.0,
+        "recognition_pts_ms": 48966.0,
+        "last_seen_pts_ms": 49966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7629,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-0117_frame001470_pts48966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.961122+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-0117",
+        "first_seen_pts_ms": 48966.0,
+        "recognition_pts_ms": 48966.0,
+        "last_seen_pts_ms": 49966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7629,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\contrast\\cam04_TRK-0117_frame001470_pts48966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.179441+00:00"
       }
     ],
-    "ingested_at_utc": "2026-09-04T23:10:57.855721+00:00",
-    "updated_at_utc": "2026-09-04T23:10:57.855721+00:00"
+    "ingested_at_utc": "2026-09-14T13:32:03.262679+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.262679+00:00"
   },
   {
     "vehicle_id": "VEH-000003",
-    "registration_number": "BHBE",
-    "normalized_registration_number": "BHBE",
+    "registration_number": "CHMABHB9ECS",
+    "normalized_registration_number": "CHMABHB9ECS",
     "first_seen": {
       "camera_id": "cam01",
-      "pts_ms": 365507.0,
+      "pts_ms": 170437.0,
       "source_time": null,
       "source_time_status": "NOT_RESOLVED"
     },
     "last_seen": {
       "camera_id": "cam01",
-      "pts_ms": 365507.0,
+      "pts_ms": 172437.0,
       "source_time": null,
       "source_time_status": "NOT_RESOLVED"
     },
@@ -109,30 +169,2549 @@
     ],
     "observation_count": 1,
     "track_count": 1,
-    "best_consensus_score": 0.7001,
-    "average_consensus_score": 0.7001,
+    "best_consensus_score": 0.5015,
+    "average_consensus_score": 0.5015,
     "status": "OBSERVED",
     "timeline": [
       {
         "camera_id": "cam01",
-        "track_id": "TRK-1987",
-        "first_seen_pts_ms": 365507.0,
-        "recognition_pts_ms": 365507.0,
-        "last_seen_pts_ms": 365507.0,
+        "track_id": "TRK-0538",
+        "first_seen_pts_ms": 170437.0,
+        "recognition_pts_ms": 170437.0,
+        "last_seen_pts_ms": 172437.0,
         "source_time": null,
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
-        "consensus_score": 0.7001,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-1987_frame020610_pts365507_plate01.jpg",
+        "consensus_score": 0.5015,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-0538_frame005730_pts170437_plate01.jpg",
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-04T23:06:25.043755+00:00"
+        "ingested_at_utc": "2026-09-14T13:32:02.811339+00:00"
       }
     ],
-    "ingested_at_utc": "2026-09-04T23:10:57.857774+00:00",
-    "updated_at_utc": "2026-09-04T23:10:57.857774+00:00"
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
   },
   {
     "vehicle_id": "VEH-000004",
+    "registration_number": "SODH",
+    "normalized_registration_number": "SODH",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 318466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 319966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.7967,
+    "average_consensus_score": 0.7967,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-0657",
+        "first_seen_pts_ms": 318466.0,
+        "recognition_pts_ms": 319966.0,
+        "last_seen_pts_ms": 319966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7967,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-0657_frame009600_pts319966_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.815066+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000005",
+    "registration_number": "5632PT",
+    "normalized_registration_number": "5632PT",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 366966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 366966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.5585,
+    "average_consensus_score": 0.5585,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-0736",
+        "first_seen_pts_ms": 366966.0,
+        "recognition_pts_ms": 366966.0,
+        "last_seen_pts_ms": 366966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.5585,
+        "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-0736_frame011010_pts366966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.819399+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0736",
+        "first_seen_pts_ms": 366966.0,
+        "recognition_pts_ms": 366966.0,
+        "last_seen_pts_ms": 366966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.5585,
+        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-0736_frame011010_pts366966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.973998+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-0736",
+        "first_seen_pts_ms": 366966.0,
+        "recognition_pts_ms": 366966.0,
+        "last_seen_pts_ms": 366966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.5585,
+        "evidence_image": "data\\snapshots\\cam04\\plates\\cam04_TRK-0736_frame011010_pts366966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.184743+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.262679+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.262679+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000006",
+    "registration_number": "CHBHE",
+    "normalized_registration_number": "CHBHE",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 402966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 403966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.709,
+    "average_consensus_score": 0.709,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-0791",
+        "first_seen_pts_ms": 402966.0,
+        "recognition_pts_ms": 403466.0,
+        "last_seen_pts_ms": 403966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.709,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-0791_frame012105_pts403466_plate03.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.823927+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0791",
+        "first_seen_pts_ms": 402966.0,
+        "recognition_pts_ms": 403466.0,
+        "last_seen_pts_ms": 403966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.709,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-0791_frame012105_pts403466_plate03.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.976629+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-0791",
+        "first_seen_pts_ms": 402966.0,
+        "recognition_pts_ms": 403466.0,
+        "last_seen_pts_ms": 403966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.709,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\contrast\\cam04_TRK-0791_frame012105_pts403466_plate03.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.186878+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.262679+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.262679+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000007",
+    "registration_number": "CHMBHBE",
+    "normalized_registration_number": "CHMBHBE",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 437466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 439466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.539,
+    "average_consensus_score": 0.539,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-0854",
+        "first_seen_pts_ms": 437466.0,
+        "recognition_pts_ms": 438466.0,
+        "last_seen_pts_ms": 439466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.539,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-0854_frame013155_pts438466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.828790+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000008",
+    "registration_number": "CHMAL",
+    "normalized_registration_number": "CHMAL",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 440966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 441466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.6093,
+    "average_consensus_score": 0.6093,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-0864",
+        "first_seen_pts_ms": 440966.0,
+        "recognition_pts_ms": 441466.0,
+        "last_seen_pts_ms": 441466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6093,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-0864_frame013245_pts441466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.830430+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000009",
+    "registration_number": "MS32",
+    "normalized_registration_number": "MS32",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 465466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 467466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.7353,
+    "average_consensus_score": 0.7353,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-0924",
+        "first_seen_pts_ms": 465466.0,
+        "recognition_pts_ms": 465466.0,
+        "last_seen_pts_ms": 467466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7353,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-0924_frame013965_pts465466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.835339+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000010",
+    "registration_number": "7IA4E",
+    "normalized_registration_number": "7IA4E",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 497466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 499966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.4855,
+    "average_consensus_score": 0.4855,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-0994",
+        "first_seen_pts_ms": 497466.0,
+        "recognition_pts_ms": 497466.0,
+        "last_seen_pts_ms": 499966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.4855,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-0994_frame014925_pts497466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.836936+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000011",
+    "registration_number": "0BHB",
+    "normalized_registration_number": "0BHB",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 612790.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 616793.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.4827,
+    "average_consensus_score": 0.4827,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-1230",
+        "first_seen_pts_ms": 612790.0,
+        "recognition_pts_ms": 614793.0,
+        "last_seen_pts_ms": 616793.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.4827,
+        "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-1230_frame012390_pts614793_plate03.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.840640+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000012",
+    "registration_number": "TMS32",
+    "normalized_registration_number": "TMS32",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 627966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 628466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.9119,
+    "average_consensus_score": 0.9119,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-1291",
+        "first_seen_pts_ms": 627966.0,
+        "recognition_pts_ms": 627966.0,
+        "last_seen_pts_ms": 628466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.9119,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-1291_frame018840_pts627966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.841174+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-1291",
+        "first_seen_pts_ms": 627966.0,
+        "recognition_pts_ms": 627966.0,
+        "last_seen_pts_ms": 628466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.9119,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\grayscale\\cam02_TRK-1291_frame018840_pts627966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.987573+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-1291",
+        "first_seen_pts_ms": 627966.0,
+        "recognition_pts_ms": 627966.0,
+        "last_seen_pts_ms": 628466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.9119,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\grayscale\\cam04_TRK-1291_frame018840_pts627966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.194914+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000013",
+    "registration_number": "332PTZ2",
+    "normalized_registration_number": "332PTZ2",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 870466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 870466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.5656,
+    "average_consensus_score": 0.5656,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-1848",
+        "first_seen_pts_ms": 870466.0,
+        "recognition_pts_ms": 870466.0,
+        "last_seen_pts_ms": 870466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.5656,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-1848_frame026115_pts870466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.857946+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-1848",
+        "first_seen_pts_ms": 870466.0,
+        "recognition_pts_ms": 870466.0,
+        "last_seen_pts_ms": 870466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.5656,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\sharpened\\cam02_TRK-1848_frame026115_pts870466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.003915+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-1848",
+        "first_seen_pts_ms": 870466.0,
+        "recognition_pts_ms": 870466.0,
+        "last_seen_pts_ms": 870466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.5656,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\sharpened\\cam04_TRK-1848_frame026115_pts870466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.206693+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000014",
+    "registration_number": "CHMBHB",
+    "normalized_registration_number": "CHMBHB",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1094466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1095466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.6587,
+    "average_consensus_score": 0.6587,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-2311",
+        "first_seen_pts_ms": 1094466.0,
+        "recognition_pts_ms": 1095466.0,
+        "last_seen_pts_ms": 1095466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6587,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-2311_frame032865_pts1095466_plate05.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.870531+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000015",
+    "registration_number": "CBHBI",
+    "normalized_registration_number": "CBHBI",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1160966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 1161966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.9596,
+    "average_consensus_score": 0.9596,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-2462",
+        "first_seen_pts_ms": 1160966.0,
+        "recognition_pts_ms": 1161466.0,
+        "last_seen_pts_ms": 1161966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.9596,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-2462_frame034845_pts1161466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.876308+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-2462",
+        "first_seen_pts_ms": 1160966.0,
+        "recognition_pts_ms": 1161466.0,
+        "last_seen_pts_ms": 1161966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.9596,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-2462_frame034845_pts1161466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.031353+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-2462",
+        "first_seen_pts_ms": 1160966.0,
+        "recognition_pts_ms": 1161466.0,
+        "last_seen_pts_ms": 1161966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.9596,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\upscaled\\cam04_TRK-2462_frame034845_pts1161466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.223862+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000016",
+    "registration_number": "CHBH",
+    "normalized_registration_number": "CHBH",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1208466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1211966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.6021,
+    "average_consensus_score": 0.6021,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-2548",
+        "first_seen_pts_ms": 1208466.0,
+        "recognition_pts_ms": 1208466.0,
+        "last_seen_pts_ms": 1211966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6021,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-2548_frame036255_pts1208466_plate04.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.878401+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000017",
+    "registration_number": "CH1BHBG",
+    "normalized_registration_number": "CH1BHBG",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1238966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 1238966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.4635,
+    "average_consensus_score": 0.4635,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-2600",
+        "first_seen_pts_ms": 1238966.0,
+        "recognition_pts_ms": 1238966.0,
+        "last_seen_pts_ms": 1238966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.4635,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-2600_frame037170_pts1238966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.879441+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-2600",
+        "first_seen_pts_ms": 1238966.0,
+        "recognition_pts_ms": 1238966.0,
+        "last_seen_pts_ms": 1238966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.4635,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-2600_frame037170_pts1238966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.035099+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-2600",
+        "first_seen_pts_ms": 1238966.0,
+        "recognition_pts_ms": 1238966.0,
+        "last_seen_pts_ms": 1238966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.4635,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\upscaled\\cam04_TRK-2600_frame037170_pts1238966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.225993+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000018",
+    "registration_number": "CHM6",
+    "normalized_registration_number": "CHM6",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1329466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 1330466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.8846,
+    "average_consensus_score": 0.8179,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-2745",
+        "first_seen_pts_ms": 1329466.0,
+        "recognition_pts_ms": 1329466.0,
+        "last_seen_pts_ms": 1330466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6846,
+        "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-2745_frame039885_pts1329466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.881592+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-2745",
+        "first_seen_pts_ms": 1320966.0,
+        "recognition_pts_ms": 1329466.0,
+        "last_seen_pts_ms": 1330466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.8846,
+        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-2745_frame039885_pts1329466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.037742+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-2745",
+        "first_seen_pts_ms": 1320966.0,
+        "recognition_pts_ms": 1329466.0,
+        "last_seen_pts_ms": 1330466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.8846,
+        "evidence_image": "data\\snapshots\\cam04\\plates\\cam04_TRK-2745_frame039885_pts1329466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.228128+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000019",
+    "registration_number": "31TA",
+    "normalized_registration_number": "31TA",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1460466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 1460966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.2196,
+    "average_consensus_score": 0.2196,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-3020",
+        "first_seen_pts_ms": 1460466.0,
+        "recognition_pts_ms": 1460966.0,
+        "last_seen_pts_ms": 1460966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.2196,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-3020_frame043830_pts1460966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.883704+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-3020",
+        "first_seen_pts_ms": 1460466.0,
+        "recognition_pts_ms": 1460966.0,
+        "last_seen_pts_ms": 1460966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.2196,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-3020_frame043830_pts1460966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.039311+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-3020",
+        "first_seen_pts_ms": 1460466.0,
+        "recognition_pts_ms": 1460966.0,
+        "last_seen_pts_ms": 1460966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.2196,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\upscaled\\cam04_TRK-3020_frame043830_pts1460966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.229190+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000020",
+    "registration_number": "CHMBH",
+    "normalized_registration_number": "CHMBH",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1744466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 1746966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.8243,
+    "average_consensus_score": 0.8243,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-3538",
+        "first_seen_pts_ms": 1744466.0,
+        "recognition_pts_ms": 1744466.0,
+        "last_seen_pts_ms": 1746966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.8243,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-3538_frame052335_pts1744466_plate04.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.887865+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000021",
+    "registration_number": "CHABHB",
+    "normalized_registration_number": "CHABHB",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2029966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2030466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.5895,
+    "average_consensus_score": 0.5895,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-4013",
+        "first_seen_pts_ms": 2029966.0,
+        "recognition_pts_ms": 2029966.0,
+        "last_seen_pts_ms": 2030466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.5895,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-4013_frame060900_pts2029966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.891546+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000022",
+    "registration_number": "J3EGECSITMS3",
+    "normalized_registration_number": "J3EGECSITMS3",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2439966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2440466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.3858,
+    "average_consensus_score": 0.3858,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-4765",
+        "first_seen_pts_ms": 2439966.0,
+        "recognition_pts_ms": 2439966.0,
+        "last_seen_pts_ms": 2440466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.3858,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-4765_frame073200_pts2439966_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.894666+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000023",
+    "registration_number": "AUD2",
+    "normalized_registration_number": "AUD2",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2529466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2530466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.1788,
+    "average_consensus_score": 0.1788,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-4913",
+        "first_seen_pts_ms": 2529466.0,
+        "recognition_pts_ms": 2529466.0,
+        "last_seen_pts_ms": 2530466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.1788,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-4913_frame075885_pts2529466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.896265+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000024",
+    "registration_number": "TMS32P",
+    "normalized_registration_number": "TMS32P",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2528466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 2528466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.6168,
+    "average_consensus_score": 0.6168,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-4914",
+        "first_seen_pts_ms": 2528466.0,
+        "recognition_pts_ms": 2528466.0,
+        "last_seen_pts_ms": 2528466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6168,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-4914_frame075855_pts2528466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.896265+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-4914",
+        "first_seen_pts_ms": 2528466.0,
+        "recognition_pts_ms": 2528466.0,
+        "last_seen_pts_ms": 2528466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6168,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-4914_frame075855_pts2528466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.047638+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-4914",
+        "first_seen_pts_ms": 2528466.0,
+        "recognition_pts_ms": 2528466.0,
+        "last_seen_pts_ms": 2528466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6168,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\contrast\\cam04_TRK-4914_frame075855_pts2528466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.239337+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000025",
+    "registration_number": "3B2CSITN",
+    "normalized_registration_number": "3B2CSITN",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2717966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2718966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.4943,
+    "average_consensus_score": 0.4943,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-5251",
+        "first_seen_pts_ms": 2717966.0,
+        "recognition_pts_ms": 2718466.0,
+        "last_seen_pts_ms": 2718966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.4943,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-5251_frame081555_pts2718466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.901476+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000026",
+    "registration_number": "JEETMS32",
+    "normalized_registration_number": "JEETMS32",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2726466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2728966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.5378,
+    "average_consensus_score": 0.5378,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-5259",
+        "first_seen_pts_ms": 2726466.0,
+        "recognition_pts_ms": 2728966.0,
+        "last_seen_pts_ms": 2728966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.5378,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-5259_frame081870_pts2728966_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.901999+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000027",
+    "registration_number": "CSMS",
+    "normalized_registration_number": "CSMS",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2731966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2733466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.8385,
+    "average_consensus_score": 0.8385,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-5267",
+        "first_seen_pts_ms": 2731966.0,
+        "recognition_pts_ms": 2732966.0,
+        "last_seen_pts_ms": 2733466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.8385,
+        "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-5267_frame081990_pts2732966_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.902514+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000028",
+    "registration_number": "VS32F",
+    "normalized_registration_number": "VS32F",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2835966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 2835966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.574,
+    "average_consensus_score": 0.574,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-5440",
+        "first_seen_pts_ms": 2835966.0,
+        "recognition_pts_ms": 2835966.0,
+        "last_seen_pts_ms": 2835966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.574,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-5440_frame085080_pts2835966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.907228+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-5440",
+        "first_seen_pts_ms": 2835966.0,
+        "recognition_pts_ms": 2835966.0,
+        "last_seen_pts_ms": 2835966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.574,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-5440_frame085080_pts2835966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.055981+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-5440",
+        "first_seen_pts_ms": 2835966.0,
+        "recognition_pts_ms": 2835966.0,
+        "last_seen_pts_ms": 2835966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.574,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\contrast\\cam04_TRK-5440_frame085080_pts2835966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.248319+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000029",
+    "registration_number": "GS1T6",
+    "normalized_registration_number": "GS1T6",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2911466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2911466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.4509,
+    "average_consensus_score": 0.4509,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-5570",
+        "first_seen_pts_ms": 2911466.0,
+        "recognition_pts_ms": 2911466.0,
+        "last_seen_pts_ms": 2911466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.4509,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-5570_frame087345_pts2911466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.908288+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.925642+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000030",
+    "registration_number": "MS3R",
+    "normalized_registration_number": "MS3R",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 2978966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 2978966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.823,
+    "average_consensus_score": 0.823,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-5675",
+        "first_seen_pts_ms": 2978966.0,
+        "recognition_pts_ms": 2978966.0,
+        "last_seen_pts_ms": 2978966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.823,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-5675_frame089370_pts2978966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.909328+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-5675",
+        "first_seen_pts_ms": 2978966.0,
+        "recognition_pts_ms": 2978966.0,
+        "last_seen_pts_ms": 2978966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.823,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\grayscale\\cam02_TRK-5675_frame089370_pts2978966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.057546+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-5675",
+        "first_seen_pts_ms": 2978966.0,
+        "recognition_pts_ms": 2978966.0,
+        "last_seen_pts_ms": 2978966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.823,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\grayscale\\cam04_TRK-5675_frame089370_pts2978966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.249899+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000031",
+    "registration_number": "7Z08I9E633",
+    "normalized_registration_number": "7Z08I9E633",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 3073466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 3073466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.4226,
+    "average_consensus_score": 0.4226,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-5860",
+        "first_seen_pts_ms": 3073466.0,
+        "recognition_pts_ms": 3073466.0,
+        "last_seen_pts_ms": 3073466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.4226,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-5860_frame092205_pts3073466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.910885+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.926183+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.926183+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000032",
+    "registration_number": "1CSITIE",
+    "normalized_registration_number": "1CSITIE",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 3539966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 3539966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.477,
+    "average_consensus_score": 0.477,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-6814",
+        "first_seen_pts_ms": 3539966.0,
+        "recognition_pts_ms": 3539966.0,
+        "last_seen_pts_ms": 3539966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.477,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-6814_frame106200_pts3539966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.919909+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-6814",
+        "first_seen_pts_ms": 3539966.0,
+        "recognition_pts_ms": 3539966.0,
+        "last_seen_pts_ms": 3539966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.477,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\sharpened\\cam02_TRK-6814_frame106200_pts3539966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.069643+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-6814",
+        "first_seen_pts_ms": 3539966.0,
+        "recognition_pts_ms": 3539966.0,
+        "last_seen_pts_ms": 3539966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.477,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\sharpened\\cam04_TRK-6814_frame106200_pts3539966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.259996+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000033",
+    "registration_number": "IIUF",
+    "normalized_registration_number": "IIUF",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 3728966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 3728966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam01"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.2452,
+    "average_consensus_score": 0.2452,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-7191",
+        "first_seen_pts_ms": 3728966.0,
+        "recognition_pts_ms": 3728966.0,
+        "last_seen_pts_ms": 3728966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.2452,
+        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-7191_frame111870_pts3728966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.923039+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:02.926183+00:00",
+    "updated_at_utc": "2026-09-14T13:32:02.926183+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000034",
+    "registration_number": "SITMS32",
+    "normalized_registration_number": "SITMS32",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 3804966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 3804966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam01",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 1,
+    "best_consensus_score": 0.7172,
+    "average_consensus_score": 0.7172,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-7350",
+        "first_seen_pts_ms": 3804966.0,
+        "recognition_pts_ms": 3804966.0,
+        "last_seen_pts_ms": 3804966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7172,
+        "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-7350_frame114150_pts3804966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.924593+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-7350",
+        "first_seen_pts_ms": 3804966.0,
+        "recognition_pts_ms": 3804966.0,
+        "last_seen_pts_ms": 3804966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7172,
+        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-7350_frame114150_pts3804966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.072310+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-7350",
+        "first_seen_pts_ms": 3804966.0,
+        "recognition_pts_ms": 3804966.0,
+        "last_seen_pts_ms": 3804966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7172,
+        "evidence_image": "data\\snapshots\\cam04\\plates\\cam04_TRK-7350_frame114150_pts3804966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.261600+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000035",
+    "registration_number": "JRAWAR",
+    "normalized_registration_number": "JRAWAR",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 72466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 72466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 2,
+    "track_count": 1,
+    "best_consensus_score": 0.6494,
+    "average_consensus_score": 0.6494,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0161",
+        "first_seen_pts_ms": 72466.0,
+        "recognition_pts_ms": 72466.0,
+        "last_seen_pts_ms": 72466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6494,
+        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-0161_frame002175_pts72466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.961648+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-0161",
+        "first_seen_pts_ms": 72466.0,
+        "recognition_pts_ms": 72466.0,
+        "last_seen_pts_ms": 72466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6494,
+        "evidence_image": "data\\snapshots\\cam04\\plates\\cam04_TRK-0161_frame002175_pts72466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.179970+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.262679+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.262679+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000036",
+    "registration_number": "JAHTC51M5",
+    "normalized_registration_number": "JAHTC51M5",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 239466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 240466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam02"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.7927,
+    "average_consensus_score": 0.7927,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0281",
+        "first_seen_pts_ms": 239466.0,
+        "recognition_pts_ms": 239466.0,
+        "last_seen_pts_ms": 240466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7927,
+        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-0281_frame007185_pts239466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.964251+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.074662+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.074662+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000037",
+    "registration_number": "J13IS",
+    "normalized_registration_number": "J13IS",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 251966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 252466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam02"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.1491,
+    "average_consensus_score": 0.1491,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0297",
+        "first_seen_pts_ms": 251966.0,
+        "recognition_pts_ms": 251966.0,
+        "last_seen_pts_ms": 252466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.1491,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-0297_frame007560_pts251966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.964772+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.074662+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.074662+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000038",
+    "registration_number": "3LOR2E1",
+    "normalized_registration_number": "3LOR2E1",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 284966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 285466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam02"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.2008,
+    "average_consensus_score": 0.2008,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0323",
+        "first_seen_pts_ms": 284966.0,
+        "recognition_pts_ms": 285466.0,
+        "last_seen_pts_ms": 285466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.2008,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-0323_frame008565_pts285466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.965831+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.074662+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.074662+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000039",
+    "registration_number": "CHMBHBIC",
+    "normalized_registration_number": "CHMBHBIC",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 171966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 172466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 2,
+    "track_count": 1,
+    "best_consensus_score": 0.64,
+    "average_consensus_score": 0.64,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0336",
+        "first_seen_pts_ms": 171966.0,
+        "recognition_pts_ms": 171966.0,
+        "last_seen_pts_ms": 172466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.64,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\grayscale\\cam02_TRK-0336_frame005160_pts171966_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.966348+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-0336",
+        "first_seen_pts_ms": 171966.0,
+        "recognition_pts_ms": 171966.0,
+        "last_seen_pts_ms": 172466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.64,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\grayscale\\cam04_TRK-0336_frame005160_pts171966_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.182627+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.262679+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.262679+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000040",
+    "registration_number": "SODHE",
+    "normalized_registration_number": "SODHE",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 319466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 319966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 2,
+    "track_count": 1,
+    "best_consensus_score": 0.6775,
+    "average_consensus_score": 0.6775,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-0657",
+        "first_seen_pts_ms": 319466.0,
+        "recognition_pts_ms": 319966.0,
+        "last_seen_pts_ms": 319966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6775,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-0657_frame009600_pts319966_plate03.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.971617+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-0657",
+        "first_seen_pts_ms": 319466.0,
+        "recognition_pts_ms": 319966.0,
+        "last_seen_pts_ms": 319966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6775,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\upscaled\\cam04_TRK-0657_frame009600_pts319966_plate03.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.184214+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.262679+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.262679+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000041",
+    "registration_number": "JPHT",
+    "normalized_registration_number": "JPHT",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 857466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 858466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam02"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.6904,
+    "average_consensus_score": 0.6904,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-1042",
+        "first_seen_pts_ms": 857466.0,
+        "recognition_pts_ms": 857966.0,
+        "last_seen_pts_ms": 858466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6904,
+        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-1042_frame025740_pts857966_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:02.983924+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.074662+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.074662+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000042",
+    "registration_number": "22111",
+    "normalized_registration_number": "22111",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 1564466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 1565466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam02"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.2095,
+    "average_consensus_score": 0.2095,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-1949",
+        "first_seen_pts_ms": 1564466.0,
+        "recognition_pts_ms": 1565466.0,
+        "last_seen_pts_ms": 1565466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.2095,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-1949_frame046965_pts1565466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.009706+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.074662+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.074662+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000043",
+    "registration_number": "P1Z2",
+    "normalized_registration_number": "P1Z2",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 1599966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 1599966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam02"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.6043,
+    "average_consensus_score": 0.6043,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-1983",
+        "first_seen_pts_ms": 1599966.0,
+        "recognition_pts_ms": 1599966.0,
+        "last_seen_pts_ms": 1599966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6043,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-1983_frame048000_pts1599966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.010755+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.074662+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.074662+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000044",
+    "registration_number": "JHCS",
+    "normalized_registration_number": "JHCS",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 1896966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 1897966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam02"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.626,
+    "average_consensus_score": 0.626,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-2408",
+        "first_seen_pts_ms": 1896966.0,
+        "recognition_pts_ms": 1896966.0,
+        "last_seen_pts_ms": 1897966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.626,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-2408_frame056910_pts1896966_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.028154+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.074662+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.074662+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000045",
+    "registration_number": "JTHTC51TM",
+    "normalized_registration_number": "JTHTC51TM",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 1927466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 1927466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 1,
+    "cameras": [
+      "cam02"
+    ],
+    "observation_count": 1,
+    "track_count": 1,
+    "best_consensus_score": 0.6732,
+    "average_consensus_score": 0.6732,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-2464",
+        "first_seen_pts_ms": 1927466.0,
+        "recognition_pts_ms": 1927466.0,
+        "last_seen_pts_ms": 1927466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6732,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\sharpened\\cam02_TRK-2464_frame057825_pts1927466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.031353+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.074662+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.074662+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000046",
+    "registration_number": "CHMABH86E",
+    "normalized_registration_number": "CHMABH86E",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 1744466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 1746966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 2,
+    "track_count": 1,
+    "best_consensus_score": 0.7552,
+    "average_consensus_score": 0.7552,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-3538",
+        "first_seen_pts_ms": 1744466.0,
+        "recognition_pts_ms": 1746466.0,
+        "last_seen_pts_ms": 1746966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7552,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\grayscale\\cam02_TRK-3538_frame052395_pts1746466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.041404+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-3538",
+        "first_seen_pts_ms": 1744466.0,
+        "recognition_pts_ms": 1746466.0,
+        "last_seen_pts_ms": 1746966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7552,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\grayscale\\cam04_TRK-3538_frame052395_pts1746466_plate01.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.231843+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000047",
+    "registration_number": "VUSE",
+    "normalized_registration_number": "VUSE",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 2779966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 2780966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 2,
+    "track_count": 1,
+    "best_consensus_score": 0.177,
+    "average_consensus_score": 0.177,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-5343",
+        "first_seen_pts_ms": 2779966.0,
+        "recognition_pts_ms": 2780966.0,
+        "last_seen_pts_ms": 2780966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.177,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-5343_frame083430_pts2780966_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.053909+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-5343",
+        "first_seen_pts_ms": 2779966.0,
+        "recognition_pts_ms": 2780966.0,
+        "last_seen_pts_ms": 2780966.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.177,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\contrast\\cam04_TRK-5343_frame083430_pts2780966_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.246197+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000048",
+    "registration_number": "GSRTC",
+    "normalized_registration_number": "GSRTC",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 2878966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 2883466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 2,
+    "track_count": 1,
+    "best_consensus_score": 0.7828,
+    "average_consensus_score": 0.7828,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-5457",
+        "first_seen_pts_ms": 2878966.0,
+        "recognition_pts_ms": 2883466.0,
+        "last_seen_pts_ms": 2883466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7828,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\sharpened\\cam02_TRK-5457_frame086505_pts2883466_plate03.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.055981+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-5457",
+        "first_seen_pts_ms": 2878966.0,
+        "recognition_pts_ms": 2883466.0,
+        "last_seen_pts_ms": 2883466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.7828,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\sharpened\\cam04_TRK-5457_frame086505_pts2883466_plate03.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.248847+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000049",
+    "registration_number": "BSRTE",
+    "normalized_registration_number": "BSRTE",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 2909466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 2911466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 2,
+    "track_count": 1,
+    "best_consensus_score": 0.6316,
+    "average_consensus_score": 0.6316,
+    "status": "OBSERVED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-5570",
+        "first_seen_pts_ms": 2909466.0,
+        "recognition_pts_ms": 2909466.0,
+        "last_seen_pts_ms": 2911466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6316,
+        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\grayscale\\cam02_TRK-5570_frame087285_pts2909466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.056503+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-5570",
+        "first_seen_pts_ms": 2909466.0,
+        "recognition_pts_ms": 2909466.0,
+        "last_seen_pts_ms": 2911466.0,
+        "source_time": null,
+        "source_time_status": "NOT_RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.6316,
+        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\grayscale\\cam04_TRK-5570_frame087285_pts2909466_plate02.jpg",
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-14T13:32:03.249369+00:00"
+      }
+    ],
+    "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.263209+00:00"
+  },
+  {
+    "vehicle_id": "VEH-000050",
     "registration_number": "IG8U",
     "normalized_registration_number": "IG8U",
     "first_seen": {
@@ -169,14 +2748,14 @@
         "consensus_score": 0.3657,
         "evidence_image": "data\\snapshots\\cam06\\plates_processed\\contrast\\cam06_TRK-0004_frame000075_pts3040_plate07.jpg",
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-04T23:06:25.097325+00:00"
+        "ingested_at_utc": "2026-09-14T13:32:03.394578+00:00"
       }
     ],
-    "ingested_at_utc": "2026-09-04T23:10:58.078673+00:00",
-    "updated_at_utc": "2026-09-04T23:10:58.078673+00:00"
+    "ingested_at_utc": "2026-09-14T13:32:03.400325+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.400325+00:00"
   },
   {
-    "vehicle_id": "VEH-000005",
+    "vehicle_id": "VEH-000051",
     "registration_number": "2234",
     "normalized_registration_number": "2234",
     "first_seen": {
@@ -213,14 +2792,14 @@
         "consensus_score": 0.4721,
         "evidence_image": "data\\snapshots\\cam06\\plates_processed\\contrast\\cam06_TRK-0012_frame000825_pts100920_plate01.jpg",
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-04T23:06:25.123455+00:00"
+        "ingested_at_utc": "2026-09-14T13:32:03.397193+00:00"
       }
     ],
-    "ingested_at_utc": "2026-09-04T23:10:58.079672+00:00",
-    "updated_at_utc": "2026-09-04T23:10:58.079672+00:00"
+    "ingested_at_utc": "2026-09-14T13:32:03.400325+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.400325+00:00"
   },
   {
-    "vehicle_id": "VEH-000006",
+    "vehicle_id": "VEH-000052",
     "registration_number": "3D3I",
     "normalized_registration_number": "3D3I",
     "first_seen": {
@@ -257,10 +2836,10 @@
         "consensus_score": 0.325,
         "evidence_image": "data\\snapshots\\cam06\\plates\\cam06_TRK-0018_frame000231_pts2_plate02.jpg",
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-04T23:06:25.135544+00:00"
+        "ingested_at_utc": "2026-09-14T13:32:03.398238+00:00"
       }
     ],
-    "ingested_at_utc": "2026-09-04T23:10:58.081675+00:00",
-    "updated_at_utc": "2026-09-04T23:10:58.081675+00:00"
+    "ingested_at_utc": "2026-09-14T13:32:03.400325+00:00",
+    "updated_at_utc": "2026-09-14T13:32:03.400325+00:00"
   }
 ]

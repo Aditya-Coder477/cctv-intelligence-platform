@@ -16,6 +16,7 @@ import { Watchlist } from "./pages/Watchlist"
 import { Alerts } from "./pages/Alerts"
 import { AlertDetails } from "./pages/AlertDetails"
 import { HealthView } from "./pages/HealthView"
+import { SyntheticStudio } from "./pages/SyntheticStudio"
 
 export const App: React.FC = () => {
   return (
@@ -28,6 +29,7 @@ export const App: React.FC = () => {
             <Route path="cameras/:id" element={<CameraDetails />} />
             <Route path="map" element={<CameraMap />} />
             <Route path="videowall" element={<VideoWall />} />
+            <Route path="synthetic" element={<SyntheticStudio />} />
             <Route path="vehicles" element={<Vehicles />} />
             <Route path="vehicles/:reg" element={<VehicleDetails />} />
             <Route path="journey/:reg" element={<JourneyView />} />

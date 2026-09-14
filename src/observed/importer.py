@@ -175,7 +175,7 @@ class ANPRStep6Importer:
                 observation_count=max(1, len(evidence_chain)),
                 loop_instance=loop_inst,
             )
-            self.repo.save_track(track_record)
+            self.repo.save_track(track_record, flush=False)
             tracks_saved += 1
 
             # 2. Check if Status is Promoted to Definitive Vehicle Identity
@@ -255,10 +255,13 @@ class ANPRStep6Importer:
                 vehicle_index=idx,
             )
             if aggregated:
-                self.repo.save_vehicle(aggregated)
+                self.repo.save_vehicle(aggregated, flush=False)
                 vehicles_updated += 1
                 if not existing:
                     curr_vehicle_count += 1
+
+        if hasattr(self.repo, "flush"):
+            self.repo.flush()
 
         summary = {
             "source_file": str(file_path),

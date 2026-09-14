@@ -10,7 +10,8 @@ import {
   AlertOctagon,
   Activity,
   Layers,
-  ChevronRight
+  ChevronRight,
+  Sparkles
 } from "lucide-react"
 import clsx from "clsx"
 
@@ -27,6 +28,7 @@ export const Sidebar: React.FC = () => {
     { to: "/cameras", label: "Camera Inventory", icon: Camera },
     { to: "/map", label: "GIS Surveillance Map", icon: MapPin },
     { to: "/videowall", label: "Live Video Wall", icon: LayoutGrid, badge: "LIVE" },
+    { to: "/synthetic", label: "Synthetic AI Studio", icon: Sparkles, badge: "AI HUD" },
     { to: "/vehicles", label: "Vehicle Intelligence", icon: Car },
     { to: "/watchlist", label: "Watchlist Targets", icon: BookmarkCheck, badge: "DEMO" },
     { to: "/alerts", label: "Alerts & Dispatches", icon: AlertOctagon },

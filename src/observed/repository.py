@@ -93,6 +93,25 @@ class ObservedVehicleRepository(abc.ABC):
         pass
 
 
+def _safe_replace(src: Path, dst: Path, max_retries: int = 5) -> None:
+    import shutil
+    import time
+    for attempt in range(max_retries):
+        try:
+            src.replace(dst)
+            return
+        except (PermissionError, OSError):
+            if attempt == max_retries - 1:
+                try:
+                    shutil.copyfile(src, dst)
+                    if src.exists():
+                        src.unlink()
+                except Exception:
+                    pass
+                return
+            time.sleep(0.05 * (attempt + 1))
+
+
 class JSONObservedVehicleRepository(ObservedVehicleRepository):
     """Concrete file-based storage using JSONL and JSON files.
 
@@ -220,10 +239,11 @@ class JSONObservedVehicleRepository(ObservedVehicleRepository):
             f.write(json.dumps(observation.to_dict()) + "\n")
         return True
 
-    def save_vehicle(self, vehicle: ObservedVehicle) -> None:
+    def save_vehicle(self, vehicle: ObservedVehicle, flush: bool = True) -> None:
         """Save or update an aggregated vehicle record in memory and sync vehicles.json."""
         self._vehicles[vehicle.normalized_registration_number] = vehicle
-        self._flush_vehicles()
+        if flush:
+            self._flush_vehicles()
 
     def _flush_vehicles(self) -> None:
         """Write all vehicles to vehicles.json atomically."""
@@ -231,12 +251,13 @@ class JSONObservedVehicleRepository(ObservedVehicleRepository):
         payload = [v.to_dict() for v in self._vehicles.values()]
         with open(tmp_file, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2)
-        tmp_file.replace(self.vehicles_file)
+        _safe_replace(tmp_file, self.vehicles_file)
 
-    def save_track(self, track: VehicleTrackRecord) -> None:
+    def save_track(self, track: VehicleTrackRecord, flush: bool = True) -> None:
         """Save or update a track record in memory and sync tracks.json."""
         self._tracks[f"{track.camera_id}_{track.track_id}"] = track
-        self._flush_tracks()
+        if flush:
+            self._flush_tracks()
 
     def _flush_tracks(self) -> None:
         """Write all tracks to tracks.json atomically."""
@@ -244,7 +265,12 @@ class JSONObservedVehicleRepository(ObservedVehicleRepository):
         payload = [t.to_dict() for t in self._tracks.values()]
         with open(tmp_file, "w", encoding="utf-8") as f:
             json.dump(payload, f, indent=2)
-        tmp_file.replace(self.tracks_file)
+        _safe_replace(tmp_file, self.tracks_file)
+
+    def flush(self) -> None:
+        """Flush both vehicles and tracks to disk."""
+        self._flush_tracks()
+        self._flush_vehicles()
 
     def get_vehicle(self, normalized_registration: str) -> Optional[ObservedVehicle]:
         return self._vehicles.get(normalized_registration)
