@@ -19,6 +19,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Dict, Generator, List, Optional, Tuple
+from concurrent.futures import ThreadPoolExecutor
 
 import numpy as np
 from fastapi import APIRouter, File, Form, HTTPException, Query, UploadFile
@@ -49,6 +50,7 @@ MATCHES_FILE.parent.mkdir(parents=True, exist_ok=True)
 _yolo_veh_model: Optional[YOLO] = None
 _yolo_lp_model: Optional[YOLO] = None
 _ocr_reader = None
+_AI_EXECUTOR = ThreadPoolExecutor(max_workers=2, thread_name_prefix="synthetic_ai_worker")
 
 def get_yolo_veh() -> YOLO:
     global _yolo_veh_model
@@ -487,24 +489,137 @@ def reset_session(video: str = Query(...)):
 
 # ─── Live MJPEG Video Stream with AI Annotations & Watchlist Matching ────────
 
+def _async_plate_worker(
+    video: str,
+    trk_id: int,
+    cls_name: str,
+    v_conf: float,
+    veh_crop: np.ndarray,
+    current_time_sec: float,
+    cx1: int,
+    cy1: int,
+    plate_cache: dict,
+    session_data: dict,
+    session_alerts: list,
+    alerted_tracks: set,
+    plate_conf: float,
+):
+    """Background AI worker for plate detection, EasyOCR, and watchlist correlation."""
+    try:
+        yolo_lp = get_yolo_lp()
+        ocr_engine = get_ocr()
+        detected_text = ""
+        ocr_score = 0.5
+        plate_coords = None
+        veh_snap_name = f"{video}_TRK_{trk_id:04d}_veh.jpg"
+        plt_snap_name = f"{video}_TRK_{trk_id:04d}_plt.jpg"
+
+        if yolo_lp is not None and veh_crop.size > 0:
+            lp_res = yolo_lp(veh_crop, conf=plate_conf, imgsz=320, verbose=False)[0]
+            if len(lp_res.boxes) > 0:
+                best_lp = max(lp_res.boxes, key=lambda b: float(b.conf[0]))
+                lpx1, lpy1, lpx2, lpy2 = map(int, best_lp.xyxy[0].tolist())
+                lp_score = float(best_lp.conf[0])
+                plate_crop = veh_crop[lpy1:lpy2, lpx1:lpx2]
+                plate_coords = (cx1 + lpx1, cy1 + lpy1, cx1 + lpx2, cy1 + lpy2)
+
+                if ocr_engine is not None and plate_crop.size > 0 and (lpx2 - lpx1) > 15:
+                    try:
+                        gray = cv2.cvtColor(plate_crop, cv2.COLOR_BGR2GRAY)
+                        gray = cv2.resize(gray, (0, 0), fx=2.0, fy=2.0, interpolation=cv2.INTER_CUBIC)
+                        ocr_res = ocr_engine.readtext(gray, detail=1, allowlist="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
+                        if ocr_res:
+                            raw_tokens = [r[1].upper() for r in ocr_res if len(r[1]) >= 2]
+                            detected_text = "".join(raw_tokens).replace(" ", "")
+                            ocr_score = max([r[2] for r in ocr_res])
+                    except Exception as e:
+                        logger.debug(f"OCR error on track {trk_id}: {e}")
+
+                # Save crops to disk asynchronously in background worker
+                try:
+                    cv2.imwrite(str(SNAPSHOT_DIR / veh_snap_name), veh_crop)
+                    if plate_crop.size > 0:
+                        cv2.imwrite(str(SNAPSHOT_DIR / plt_snap_name), plate_crop)
+                except Exception as e:
+                    logger.debug(f"Snapshot write error: {e}")
+
+        if not detected_text or len(detected_text) < 3:
+            detected_text = f"PLT-{trk_id:04d}"
+
+        # Correlate with classified watchlist
+        match_res = correlate_plate(detected_text)
+        is_match = match_res is not None
+
+        # Update cache for live stream overlay (atomic dictionary update in CPython)
+        plate_cache[trk_id] = (detected_text, ocr_score, plate_coords, match_res)
+
+        # Update session data
+        track_key = f"TRK-{trk_id:04d}"
+        session_data[track_key] = {
+            "track_id": track_key,
+            "vehicle_type": cls_name,
+            "vehicle_confidence": round(v_conf, 2),
+            "plate_number": detected_text,
+            "plate_confidence": round(ocr_score, 2),
+            "is_watchlist_match": is_match,
+            "watchlist_category": match_res[0].get("category") if is_match else None,
+            "watchlist_priority": match_res[0].get("priority") if is_match else None,
+            "case_number": match_res[0].get("case_number") if is_match else None,
+            "watchlist_description": match_res[0].get("description") if is_match else None,
+            "first_seen_sec": current_time_sec,
+            "last_seen_sec": current_time_sec,
+            "vehicle_snapshot_url": f"/api/synthetic/snapshot/{veh_snap_name}",
+            "plate_snapshot_url": f"/api/synthetic/snapshot/{plt_snap_name}",
+        }
+
+        # Real-time alert generation upon successful match
+        if is_match and trk_id not in alerted_tracks:
+            alerted_tracks.add(trk_id)
+            target_entry, m_score, m_type = match_res
+            alert_id = f"ALT-{video.split('.')[0]}-{track_key}-{int(current_time_sec * 10)}"
+            new_alert = {
+                "alert_id": alert_id,
+                "video": video,
+                "track_id": track_key,
+                "registration_number": detected_text,
+                "watchlist_id": target_entry.get("watchlist_id"),
+                "category": target_entry.get("category", "SUSPECT_VEHICLE"),
+                "priority": target_entry.get("priority", "HIGH"),
+                "description": target_entry.get("description", "Watchlist target match identified"),
+                "case_number": target_entry.get("case_number", "CASE-SYN"),
+                "jurisdiction": target_entry.get("jurisdiction", "Gujarat Police Command Centre"),
+                "match_type": m_type,
+                "match_score": m_score,
+                "detected_at_sec": current_time_sec,
+                "timestamp_iso": datetime.now(timezone.utc).isoformat(),
+                "vehicle_snapshot_url": f"/api/synthetic/snapshot/{veh_snap_name}",
+                "plate_snapshot_url": f"/api/synthetic/snapshot/{plt_snap_name}",
+                "status": "NEW"
+            }
+            session_alerts.append(new_alert)
+            persist_alert_match(new_alert)
+            logger.info(f"🚨 REAL-TIME ALERT: {detected_text} -> {target_entry.get('category')} ({target_entry.get('priority')})")
+    except Exception as e:
+        logger.warning(f"Error in _async_plate_worker for track {trk_id}: {e}")
+
+
 @router.get("/stream")
 def stream_synthetic_video(
     video: str = Query(..., description="Filename e.g. 1.mp4 or upload_foo.mp4"),
-    detector_interval: int = Query(2, ge=1, le=10, description="Run YOLO every N frames"),
+    detector_interval: int = Query(3, ge=1, le=10, description="Run YOLO every N frames"),
     conf: float = Query(0.25, ge=0.05, le=0.9, description="Vehicle confidence threshold"),
     plate_conf: float = Query(0.15, ge=0.05, le=0.9, description="Plate confidence threshold"),
-    target_fps: int = Query(24, ge=5, le=60, description="Target streaming framerate"),
-    resize_w: int = Query(1280, ge=640, le=1920, description="Output streaming width"),
+    target_fps: int = Query(20, ge=5, le=60, description="Target streaming framerate"),
+    resize_w: int = Query(720, ge=480, le=1920, description="Output streaming width"),
     loop: bool = Query(True, description="Loop video automatically"),
 ):
-    """Real-time MJPEG video stream with YOLOv8 tracking + license plate detection + watchlist matching."""
+    """High-performance real-time MJPEG stream with non-blocking async AI pipeline."""
     video_path = SYNTHETIC_DIR / video
     if not video_path.exists():
         video_path = UPLOADS_DIR / video
     if not video_path.exists():
         raise HTTPException(status_code=404, detail=f"Video '{video}' not found.")
 
-    # Ensure watchlist is loaded
     get_watchlist_index()
 
     def frame_generator() -> Generator[bytes, None, None]:
@@ -515,8 +630,6 @@ def stream_synthetic_video(
 
         tracker = SimpleVehicleTracker(max_disappeared=20, iou_threshold=0.25)
         yolo_veh = get_yolo_veh()
-        yolo_lp = get_yolo_lp()
-        ocr_engine = get_ocr()
 
         # Session stores
         if video not in _SESSION_DETECTIONS:
@@ -528,57 +641,69 @@ def stream_synthetic_video(
 
         frame_idx = 0
         prev_rects = []
-        video_fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
+        video_fps = cap.get(cv2.CAP_PROP_FPS) or 25.0
         frame_delay = 1.0 / target_fps
+        stream_start_wall = time.time()
 
-        # Color Palette (BGR)
-        CYAN = (255, 240, 0)          # Normal Vehicle Box & Reticles
-        EMERALD = (118, 230, 0)       # Normal Confirmed License Plate
-        AMBER = (0, 191, 255)         # Scanning / Low Conf Plate
-        ALERT_RED = (25, 25, 255)     # CRITICAL / HIGH WATCHLIST MATCH
-        ALERT_BG = (20, 10, 80)       # Translucent Red-Purple Alert Badge
-        BG_DARK = (18, 18, 24)        # Translucent Standard Badge
+        # Palette (BGR)
+        CYAN = (255, 240, 0)
+        EMERALD = (118, 230, 0)
+        AMBER = (0, 191, 255)
+        ALERT_RED = (25, 25, 255)
+        ALERT_BG = (20, 10, 80)
+        BG_DARK = (18, 18, 24)
 
         VEH_CLASSES = [2, 3, 5, 7]
         CLASS_NAMES = {2: "Car", 3: "Motorcycle", 5: "Bus", 7: "Truck"}
 
-        # Plate text cache per track_id:
-        # { track_id: (plate_text, conf, (px1, py1, px2, py2), match_info: Optional[Tuple[Dict, float, str]]) }
+        # Plate text cache per track_id
         plate_cache: Dict[int, Tuple[str, float, Optional[Tuple[int, int, int, int]], Optional[Tuple[Dict, float, str]]]] = {}
-        alerted_tracks = set()
+        pending_plates: set = set()
+        alerted_tracks: set = set()
 
         try:
             while True:
                 t_frame_start = time.time()
+
+                # Wall-clock real-time synchronization: skip frames if previous AI cycle took longer
+                wall_elapsed = time.time() - stream_start_wall
+                target_video_frame = int(wall_elapsed * video_fps)
+                frames_to_skip = target_video_frame - frame_idx
+                if frames_to_skip > 0:
+                    for _ in range(min(frames_to_skip, 12)):
+                        cap.grab()
+                        frame_idx += 1
+
                 ret, frame = cap.read()
-                
                 if not ret or frame is None:
                     if loop:
                         cap.set(cv2.CAP_PROP_POS_FRAMES, 0)
                         frame_idx = 0
+                        stream_start_wall = time.time()
                         continue
                     else:
                         break
 
+                frame_idx += 1
                 orig_h, orig_w = frame.shape[:2]
 
-                # Resize for smooth web streaming
+                # Fast bilinear resize to target width (720p / 640p)
                 target_w = resize_w
                 if orig_w > target_w:
                     scale = target_w / float(orig_w)
                     out_h = int(orig_h * scale)
                     out_w = target_w
-                    stream_frame = cv2.resize(frame, (out_w, out_h))
+                    stream_frame = cv2.resize(frame, (out_w, out_h), interpolation=cv2.INTER_LINEAR)
                 else:
                     out_h, out_w = orig_h, orig_w
                     stream_frame = frame.copy()
 
                 current_time_sec = round(frame_idx / video_fps, 2)
 
-                # ── 1. Vehicle Detection (Run every N frames) ───────────────────
-                if frame_idx % detector_interval == 0:
+                # ── 1. Vehicle Detection (Fast imgsz=384, runs every N frames) ──
+                if (frame_idx % detector_interval) == 0:
                     rects = []
-                    results = yolo_veh(stream_frame, classes=VEH_CLASSES, conf=conf, verbose=False)[0]
+                    results = yolo_veh(stream_frame, classes=VEH_CLASSES, conf=conf, imgsz=384, verbose=False)[0]
                     for box in results.boxes:
                         bx1, by1, bx2, by2 = map(int, box.xyxy[0].tolist())
                         cls_id = int(box.cls[0])
@@ -589,124 +714,51 @@ def stream_synthetic_video(
                 else:
                     rects = prev_rects
 
-                # ── 2. Track Matching ──────────────────────────────────────────
+                # ── 2. Fast IoU Tracking (< 1ms) ──────────────────────────────
                 tracked_vehicles = tracker.update(rects, current_time_sec)
 
-                # ── 3. License Plate Detection + OCR + Watchlist Correlation ───
+                # ── 3. Non-Blocking Async Plate Detection & OCR Dispatch ──────
                 active_alert_in_frame = None
 
                 for (trk_id, vx1, vy1, vx2, vy2, cls_name, v_conf) in tracked_vehicles:
                     vw = vx2 - vx1
                     vh = vy2 - vy1
 
-                    # If plate not yet detected for this track, run plate detector
-                    if trk_id not in plate_cache and yolo_lp is not None and vw >= 50 and vh >= 40:
+                    if trk_id not in plate_cache and trk_id not in pending_plates and vw >= 40 and vh >= 30:
+                        pending_plates.add(trk_id)
+                        plate_cache[trk_id] = (None, 0.0, None, None)  # Mark as scanning
+
                         pad_x = int(vw * 0.05)
                         pad_y = int(vh * 0.05)
                         cx1 = max(0, vx1 - pad_x)
                         cy1 = max(0, vy1 - pad_y)
                         cx2 = min(out_w, vx2 + pad_x)
                         cy2 = min(out_h, vy2 + pad_y)
-                        
-                        veh_crop = stream_frame[cy1:cy2, cx1:cx2]
-                        
-                        if veh_crop.size > 0:
-                            lp_res = yolo_lp(veh_crop, conf=plate_conf, verbose=False)[0]
-                            if len(lp_res.boxes) > 0:
-                                best_lp_box = max(lp_res.boxes, key=lambda b: float(b.conf[0]))
-                                lpx1, lpy1, lpx2, lpy2 = map(int, best_lp_box.xyxy[0].tolist())
-                                lp_score = float(best_lp_box.conf[0])
+                        veh_crop = stream_frame[cy1:cy2, cx1:cx2].copy()
 
-                                plate_crop = veh_crop[lpy1:lpy2, lpx1:lpx2]
-                                detected_text = ""
-                                ocr_score = lp_score
+                        # Offload to background worker thread (STREAM NEVER WAITS FOR OCR)
+                        _AI_EXECUTOR.submit(
+                            _async_plate_worker,
+                            video,
+                            trk_id,
+                            cls_name,
+                            v_conf,
+                            veh_crop,
+                            current_time_sec,
+                            cx1,
+                            cy1,
+                            plate_cache,
+                            session_data,
+                            session_alerts,
+                            alerted_tracks,
+                            plate_conf,
+                        )
 
-                                if ocr_engine is not None and plate_crop.size > 0 and (lpx2 - lpx1) > 20:
-                                    try:
-                                        gray_plate = cv2.cvtColor(plate_crop, cv2.COLOR_BGR2GRAY)
-                                        gray_plate = cv2.resize(gray_plate, (0, 0), fx=2.0, fy=2.0, interpolation=cv2.INTER_CUBIC)
-                                        ocr_res = ocr_engine.readtext(gray_plate, detail=1, allowlist="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789")
-                                        if ocr_res:
-                                            raw_tokens = [r[1].upper() for r in ocr_res if len(r[1]) >= 2]
-                                            detected_text = "".join(raw_tokens).replace(" ", "")
-                                            ocr_score = max([r[2] for r in ocr_res])
-                                    except Exception as e:
-                                        logger.debug(f"OCR error on track {trk_id}: {e}")
-
-                                if not detected_text or len(detected_text) < 3:
-                                    detected_text = f"PLT-{trk_id:04d}"
-
-                                abs_px1 = cx1 + lpx1
-                                abs_py1 = cy1 + lpy1
-                                abs_px2 = cx1 + lpx2
-                                abs_py2 = cy1 + lpy2
-
-                                # ── CORRELATE WITH WATCHLIST DATABASE ───────────
-                                match_res = correlate_plate(detected_text)
-
-                                plate_cache[trk_id] = (detected_text, ocr_score, (abs_px1, abs_py1, abs_px2, abs_py2), match_res)
-
-                                # Save snapshot images
-                                veh_snap_name = f"{video}_TRK_{trk_id:04d}_veh.jpg"
-                                plt_snap_name = f"{video}_TRK_{trk_id:04d}_plt.jpg"
-                                cv2.imwrite(str(SNAPSHOT_DIR / veh_snap_name), veh_crop)
-                                if plate_crop.size > 0:
-                                    cv2.imwrite(str(SNAPSHOT_DIR / plt_snap_name), plate_crop)
-
-                                track_key = f"TRK-{trk_id:04d}"
-                                is_match = match_res is not None
-
-                                session_data[track_key] = {
-                                    "track_id": track_key,
-                                    "vehicle_type": cls_name,
-                                    "vehicle_confidence": round(v_conf, 2),
-                                    "plate_number": detected_text,
-                                    "plate_confidence": round(ocr_score, 2),
-                                    "is_watchlist_match": is_match,
-                                    "watchlist_category": match_res[0].get("category") if is_match else None,
-                                    "watchlist_priority": match_res[0].get("priority") if is_match else None,
-                                    "case_number": match_res[0].get("case_number") if is_match else None,
-                                    "first_seen_sec": tracker.first_seen.get(trk_id, current_time_sec),
-                                    "last_seen_sec": current_time_sec,
-                                    "vehicle_snapshot_url": f"/api/synthetic/snapshot/{veh_snap_name}",
-                                    "plate_snapshot_url": f"/api/synthetic/snapshot/{plt_snap_name}"
-                                }
-
-                                # ── GENERATE REAL-TIME ALERT UPON MATCH ─────────
-                                if is_match and trk_id not in alerted_tracks:
-                                    alerted_tracks.add(trk_id)
-                                    target_entry, m_score, m_type = match_res
-                                    alert_id = f"ALT-{video.split('.')[0]}-{track_key}-{int(current_time_sec * 10)}"
-                                    
-                                    new_alert = {
-                                        "alert_id": alert_id,
-                                        "video": video,
-                                        "track_id": track_key,
-                                        "registration_number": detected_text,
-                                        "watchlist_id": target_entry.get("watchlist_id"),
-                                        "category": target_entry.get("category", "SUSPECT_VEHICLE"),
-                                        "priority": target_entry.get("priority", "HIGH"),
-                                        "description": target_entry.get("description", "Watchlist target match identified"),
-                                        "case_number": target_entry.get("case_number", "CASE-SYN"),
-                                        "jurisdiction": target_entry.get("jurisdiction", "Gujarat Police Command Centre"),
-                                        "match_type": m_type,
-                                        "match_score": m_score,
-                                        "detected_at_sec": current_time_sec,
-                                        "timestamp_iso": datetime.now(timezone.utc).isoformat(),
-                                        "vehicle_snapshot_url": f"/api/synthetic/snapshot/{veh_snap_name}",
-                                        "plate_snapshot_url": f"/api/synthetic/snapshot/{plt_snap_name}",
-                                        "status": "NEW"
-                                    }
-                                    session_alerts.append(new_alert)
-                                    persist_alert_match(new_alert)
-                                    logger.info(f"🚨 REAL-TIME ALERT: {detected_text} -> {target_entry.get('category')} ({target_entry.get('priority')}) in {video}")
-
-                    # Update last seen
                     track_key = f"TRK-{trk_id:04d}"
                     if track_key in session_data:
                         session_data[track_key]["last_seen_sec"] = current_time_sec
 
-                # ── 4. Draw Surveillance HUD Overlays with Visual Alerts ───────
+                # ── 4. Render Surveillance HUD Overlays ───────────────────────
                 for (trk_id, vx1, vy1, vx2, vy2, cls_name, v_conf) in tracked_vehicles:
                     plate_info = plate_cache.get(trk_id)
                     plate_text = plate_info[0] if plate_info else None
@@ -717,32 +769,27 @@ def stream_synthetic_video(
                     if is_match:
                         active_alert_in_frame = match_info
 
-                    # Box Color: Red if Watchlist Match, Cyan otherwise
                     box_color = ALERT_RED if is_match else CYAN
                     box_thickness = 3 if is_match else 2
 
                     # A. Main Vehicle Box
                     cv2.rectangle(stream_frame, (vx1, vy1), (vx2, vy2), box_color, box_thickness)
 
-                    # B. Corner Bracket Reticles (L-Shapes)
-                    corner_len = min(25, max(10, (vx2 - vx1) // 5))
-                    reticle_thickness = 4 if is_match else 3
-                    # Top-Left
+                    # B. Corner Bracket Reticles
+                    corner_len = min(22, max(8, (vx2 - vx1) // 5))
+                    reticle_thickness = 3 if is_match else 2
                     cv2.line(stream_frame, (vx1, vy1), (vx1 + corner_len, vy1), box_color, reticle_thickness)
                     cv2.line(stream_frame, (vx1, vy1), (vx1, vy1 + corner_len), box_color, reticle_thickness)
-                    # Top-Right
                     cv2.line(stream_frame, (vx2, vy1), (vx2 - corner_len, vy1), box_color, reticle_thickness)
                     cv2.line(stream_frame, (vx2, vy1), (vx2, vy1 + corner_len), box_color, reticle_thickness)
-                    # Bottom-Left
                     cv2.line(stream_frame, (vx1, vy2), (vx1 + corner_len, vy2), box_color, reticle_thickness)
                     cv2.line(stream_frame, (vx1, vy2), (vx1, vy2 - corner_len), box_color, reticle_thickness)
-                    # Bottom-Right
                     cv2.line(stream_frame, (vx2, vy2), (vx2 - corner_len, vy2), box_color, reticle_thickness)
                     cv2.line(stream_frame, (vx2, vy2), (vx2, vy2 - corner_len), box_color, reticle_thickness)
 
-                    # C. Vehicle ID & Plate HUD Badge (Above Vehicle)
-                    badge_h = 56 if is_match else 42
-                    badge_w = 260 if is_match else 230
+                    # C. Vehicle ID & Plate HUD Badge
+                    badge_h = 54 if is_match else 40
+                    badge_w = 250 if is_match else 220
                     by1 = max(45, vy1 - badge_h)
                     by2 = vy1
                     bx1 = max(5, vx1)
@@ -757,29 +804,23 @@ def stream_synthetic_video(
                         cv2.rectangle(stream_frame, (bx1, by1), (bx2, by2), box_color, 1)
 
                     if is_match:
-                        # MATCH ALERT BADGE (3 Lines)
                         target_entry, m_score, _ = match_info
                         cat_label = target_entry.get("category", "MATCH").replace("_", " ")
                         prio_label = target_entry.get("priority", "HIGH")
-                        
-                        # Line 1: Alert Classification
-                        cv2.putText(stream_frame, f"ALERT: {cat_label} [{prio_label}]", (bx1 + 8, by1 + 17), cv2.FONT_HERSHEY_SIMPLEX, 0.42, (255, 255, 255), 1, cv2.LINE_AA)
-                        # Line 2: ID + Plate
-                        cv2.putText(stream_frame, f"ID: TRK-{trk_id:04d} | PLATE: {plate_text}", (bx1 + 8, by1 + 34), cv2.FONT_HERSHEY_SIMPLEX, 0.48, (0, 255, 255), 1, cv2.LINE_AA)
-                        # Line 3: Case Ref
+                        cv2.putText(stream_frame, f"ALERT: {cat_label} [{prio_label}]", (bx1 + 6, by1 + 16), cv2.FONT_HERSHEY_SIMPLEX, 0.40, (255, 255, 255), 1, cv2.LINE_AA)
+                        cv2.putText(stream_frame, f"ID: TRK-{trk_id:04d} | {plate_text}", (bx1 + 6, by1 + 32), cv2.FONT_HERSHEY_SIMPLEX, 0.45, (0, 255, 255), 1, cv2.LINE_AA)
                         case_ref = target_entry.get("case_number", "")
-                        cv2.putText(stream_frame, f"CASE: {case_ref}", (bx1 + 8, by1 + 49), cv2.FONT_HERSHEY_SIMPLEX, 0.38, (200, 200, 255), 1, cv2.LINE_AA)
+                        cv2.putText(stream_frame, f"CASE: {case_ref}", (bx1 + 6, by1 + 47), cv2.FONT_HERSHEY_SIMPLEX, 0.36, (200, 200, 255), 1, cv2.LINE_AA)
                     else:
-                        # STANDARD BADGE (2 Lines)
                         txt_id = f"ID: TRK-{trk_id:04d} | {cls_name.upper()}"
-                        cv2.putText(stream_frame, txt_id, (bx1 + 8, by1 + 17), cv2.FONT_HERSHEY_SIMPLEX, 0.44, (255, 255, 255), 1, cv2.LINE_AA)
+                        cv2.putText(stream_frame, txt_id, (bx1 + 6, by1 + 16), cv2.FONT_HERSHEY_SIMPLEX, 0.42, (255, 255, 255), 1, cv2.LINE_AA)
                         if plate_text:
                             txt_plt = f"PLATE: {plate_text}"
                             col_plt = EMERALD
                         else:
                             txt_plt = "PLATE: SCANNING..."
                             col_plt = AMBER
-                        cv2.putText(stream_frame, txt_plt, (bx1 + 8, by1 + 35), cv2.FONT_HERSHEY_SIMPLEX, 0.48, col_plt, 1, cv2.LINE_AA)
+                        cv2.putText(stream_frame, txt_plt, (bx1 + 6, by1 + 33), cv2.FONT_HERSHEY_SIMPLEX, 0.44, col_plt, 1, cv2.LINE_AA)
 
                     # D. License Plate Target Box
                     if plate_coords:
@@ -788,39 +829,36 @@ def stream_synthetic_video(
                         cv2.rectangle(stream_frame, (px1, py1), (px2, py2), lp_box_col, 2)
                         cv2.putText(stream_frame, f"LP: {plate_text}", (px1, max(15, py1 - 4)), cv2.FONT_HERSHEY_SIMPLEX, 0.38, lp_box_col, 1, cv2.LINE_AA)
 
-                # ── 5. Top Telemetry HUD Overlay Bar with Emergency Banner ─────
-                hud_overlay = stream_frame[0:42, 0:out_w].copy()
+                # ── 5. Top Telemetry HUD Overlay Bar ──────────────────────────
+                hud_overlay = stream_frame[0:40, 0:out_w].copy()
                 hud_bg_color = (15, 10, 60) if active_alert_in_frame else (12, 16, 24)
-                cv2.rectangle(hud_overlay, (0, 0), (out_w, 42), hud_bg_color, -1)
-                cv2.addWeighted(hud_overlay, 0.88, stream_frame[0:42, 0:out_w], 0.12, 0, stream_frame[0:42, 0:out_w])
-                
+                cv2.rectangle(hud_overlay, (0, 0), (out_w, 40), hud_bg_color, -1)
+                cv2.addWeighted(hud_overlay, 0.88, stream_frame[0:40, 0:out_w], 0.12, 0, stream_frame[0:40, 0:out_w])
+
                 banner_line_color = ALERT_RED if active_alert_in_frame else CYAN
-                cv2.line(stream_frame, (0, 42), (out_w, 42), banner_line_color, 2 if active_alert_in_frame else 1)
+                cv2.line(stream_frame, (0, 40), (out_w, 40), banner_line_color, 2 if active_alert_in_frame else 1)
 
                 active_count = len(tracked_vehicles)
-                locked_plates = sum(1 for (tid, *_) in tracked_vehicles if tid in plate_cache)
-                pts_str = time.strftime('%M:%S', time.gmtime(current_time_sec)) + f".{int((current_time_sec % 1)*1000):03d}"
+                locked_plates = sum(1 for (tid, *_) in tracked_vehicles if tid in plate_cache and plate_cache[tid][0])
+                pts_str = time.strftime('%M:%S', time.gmtime(current_time_sec)) + f".{int((current_time_sec % 1)*100):02d}"
 
                 if active_alert_in_frame:
                     tgt, _, _ = active_alert_in_frame
-                    hud_left = f"[🚨 POLICE WATCHLIST ALERT] MATCH: {tgt.get('registration_number')} | {tgt.get('category')} ({tgt.get('priority')})"
+                    hud_left = f"[🚨 ALERT] {tgt.get('registration_number')} | {tgt.get('category')} ({tgt.get('priority')})"
                     hud_right = f"PTS: {pts_str} | ALERTS: {len(session_alerts)}"
-                    cv2.putText(stream_frame, hud_left, (15, 26), cv2.FONT_HERSHEY_SIMPLEX, 0.52, (0, 255, 255), 1, cv2.LINE_AA)
-                    cv2.putText(stream_frame, hud_right, (out_w - 320, 26), cv2.FONT_HERSHEY_SIMPLEX, 0.48, (255, 255, 255), 1, cv2.LINE_AA)
+                    cv2.putText(stream_frame, hud_left, (12, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.48, (0, 255, 255), 1, cv2.LINE_AA)
+                    cv2.putText(stream_frame, hud_right, (max(12, out_w - 270), 25), cv2.FONT_HERSHEY_SIMPLEX, 0.44, (255, 255, 255), 1, cv2.LINE_AA)
                 else:
-                    hud_left = f"[CCTV AI HUD] FEED: {video.upper()} | RES: {out_w}x{out_h}"
-                    hud_right = f"PTS: {pts_str} | ACTIVE: {active_count} | LOCKED: {locked_plates} | ALERTS: {len(session_alerts)}"
-                    cv2.putText(stream_frame, hud_left, (15, 26), cv2.FONT_HERSHEY_SIMPLEX, 0.48, CYAN, 1, cv2.LINE_AA)
-                    cv2.putText(stream_frame, hud_right, (out_w - 490, 26), cv2.FONT_HERSHEY_SIMPLEX, 0.48, (220, 240, 255), 1, cv2.LINE_AA)
+                    hud_left = f"[CCTV AI HUD] FEED: {video.upper()} | {out_w}x{out_h}"
+                    hud_right = f"PTS: {pts_str} | TRACKS: {active_count} | LOCKED: {locked_plates} | ALERTS: {len(session_alerts)}"
+                    cv2.putText(stream_frame, hud_left, (12, 25), cv2.FONT_HERSHEY_SIMPLEX, 0.44, CYAN, 1, cv2.LINE_AA)
+                    cv2.putText(stream_frame, hud_right, (max(12, out_w - 420), 25), cv2.FONT_HERSHEY_SIMPLEX, 0.42, (220, 240, 255), 1, cv2.LINE_AA)
 
-                # ── 6. Encode JPEG and Yield Multipart Chunk ───────────────────
-                _, buffer = cv2.imencode(".jpg", stream_frame, [int(cv2.IMWRITE_JPEG_QUALITY), 80])
-                frame_bytes = buffer.tobytes()
-
+                # ── 6. Encode JPEG and Yield (Quality 70 = Fast & Crisp) ───────
+                _, buffer = cv2.imencode(".jpg", stream_frame, [int(cv2.IMWRITE_JPEG_QUALITY), 70])
                 yield (b"--frame\r\n"
-                       b"Content-Type: image/jpeg\r\n\r\n" + frame_bytes + b"\r\n")
+                       b"Content-Type: image/jpeg\r\n\r\n" + buffer.tobytes() + b"\r\n")
 
-                frame_idx += 1
                 elapsed = time.time() - t_frame_start
                 if elapsed < frame_delay:
                     time.sleep(frame_delay - elapsed)

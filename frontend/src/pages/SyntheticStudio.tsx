@@ -105,7 +105,7 @@ export const SyntheticStudio: React.FC = () => {
   const [videos, setVideos] = useState<VideoItem[]>([])
   const [selectedVideo, setSelectedVideo] = useState<string>("2.mp4")
   const [isPlaying, setIsPlaying] = useState<boolean>(true)
-  const [detectorInterval, setDetectorInterval] = useState<number>(2)
+  const [detectorInterval, setDetectorInterval] = useState<number>(3)
   const [conf, setConf] = useState<number>(0.25)
   const [plateConf, setPlateConf] = useState<number>(0.15)
   const [detections, setDetections] = useState<DetectedVehicle[]>([])
@@ -240,7 +240,7 @@ export const SyntheticStudio: React.FC = () => {
     URL.revokeObjectURL(url)
   }
 
-  const streamUrl = `/api/synthetic/stream?video=${encodeURIComponent(selectedVideo)}&detector_interval=${detectorInterval}&conf=${conf}&plate_conf=${plateConf}&_t=${streamKey}`
+  const streamUrl = `/api/synthetic/stream?video=${encodeURIComponent(selectedVideo)}&detector_interval=${detectorInterval}&conf=${conf}&plate_conf=${plateConf}&resize_w=720&_t=${streamKey}`
 
   const filteredDetections = detections.filter((d) => {
     if (!searchQuery) return true
@@ -443,9 +443,10 @@ export const SyntheticStudio: React.FC = () => {
                     onChange={(e) => { setDetectorInterval(Number(e.target.value)); setStreamKey(Date.now()) }}
                     className="bg-police-900 border border-police-700 text-white rounded px-2 py-1 text-xs outline-none focus:border-cyan-500"
                   >
-                    <option value={1}>Every 1 Frame (Max)</option>
+                    <option value={1}>Every 1 Frame (Max Accurate)</option>
                     <option value={2}>Every 2 Frames (Balanced)</option>
-                    <option value={3}>Every 3 Frames (Fast)</option>
+                    <option value={3}>Every 3 Frames (Recommended - Smooth)</option>
+                    <option value={4}>Every 4 Frames (High FPS)</option>
                     <option value={5}>Every 5 Frames (Fastest)</option>
                   </select>
                 </div>
