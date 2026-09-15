@@ -45,14 +45,16 @@ dist/
 .vite/
 .npm/
 
-# 4. Large Datasets & Video Files (Prevents GitHub 100MB limit & multi-GB uploads)
-Synthetic Dataset/
+# 4. Large Datasets & Video Files
 Synthetic Dataset_result/
-*.mp4
 *.avi
 *.mkv
 *.mov
 *.webm
+*.mp4
+# Allow the 8 optimized sample CCTV feeds for cloud deployment (all < 70MB)
+!Synthetic Dataset/
+!Synthetic Dataset/*.mp4
 
 # 5. Generated Snapshots, Detection Crops & Inspection Logs (Saves ~10+ GB)
 data/snapshots/
