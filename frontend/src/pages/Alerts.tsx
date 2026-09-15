@@ -15,6 +15,7 @@ import { api } from "../services/api"
 import { Alert } from "../types"
 import { StatusBadge } from "../components/common/StatusBadge"
 import { useAuth } from "../context/AuthContext"
+import { FALLBACK_ALERTS } from "../data/fallbackData"
 
 export const Alerts: React.FC = () => {
   const [alerts, setAlerts] = useState<Alert[]>([])
@@ -32,9 +33,18 @@ export const Alerts: React.FC = () => {
         status: statusFilter || undefined,
         priority: priorityFilter || undefined,
       })
-      setAlerts(data)
+      if (Array.isArray(data) && data.length > 0) {
+        setAlerts(data)
+      } else if (!search && !statusFilter && !priorityFilter) {
+        setAlerts(FALLBACK_ALERTS)
+      } else {
+        setAlerts([])
+      }
     } catch (err) {
-      console.error("Error loading alerts:", err)
+      console.error("Error loading alerts, using fallback:", err)
+      if (!search && !statusFilter && !priorityFilter) {
+        setAlerts(FALLBACK_ALERTS)
+      }
     } finally {
       setLoading(false)
     }

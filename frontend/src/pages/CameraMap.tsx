@@ -31,6 +31,7 @@ import {
 import { api, getEvidenceUrl } from "../services/api"
 import { Camera, Alert, ObservedVehicle } from "../types"
 import { HlsPlayer } from "../components/player/HlsPlayer"
+import { FALLBACK_CAMERAS, FALLBACK_ALERTS, FALLBACK_VEHICLES } from "../data/fallbackData"
 
 // ── Map Zoom Controller & State Listener ──────────────────────────────────────
 const MapEventsHandler: React.FC<{
@@ -199,11 +200,31 @@ export const CameraMap: React.FC = () => {
         api.getAlerts().catch(() => []),
         api.getVehicles({ limit: 50 }).catch(() => []),
       ])
-      setCameras(camsData)
-      setAlerts(alertsData)
-      setVehicles(vehsData)
+
+      // If backend returns empty list or cameras without spatial coordinates, fallback to full catalogue
+      const validCams =
+        Array.isArray(camsData) && camsData.length > 0 && camsData.some((c) => c.latitude != null)
+          ? camsData
+          : FALLBACK_CAMERAS
+
+      const validAlerts =
+        Array.isArray(alertsData) && alertsData.length > 0
+          ? alertsData
+          : FALLBACK_ALERTS
+
+      const validVehs =
+        Array.isArray(vehsData) && vehsData.length > 0
+          ? vehsData
+          : FALLBACK_VEHICLES
+
+      setCameras(validCams)
+      setAlerts(validAlerts)
+      setVehicles(validVehs)
     } catch (e) {
-      console.error("Failed to load GIS map data", e)
+      console.error("Failed to load GIS map data, using fallback data", e)
+      setCameras(FALLBACK_CAMERAS)
+      setAlerts(FALLBACK_ALERTS)
+      setVehicles(FALLBACK_VEHICLES)
     } finally {
       setLoading(false)
     }

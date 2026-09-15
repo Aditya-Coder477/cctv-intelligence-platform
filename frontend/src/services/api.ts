@@ -11,7 +11,13 @@ import {
   AnalyticsData
 } from "../types"
 
-export const API_BASE = (import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || "").replace(/\/$/, "")
+export const API_BASE = (
+  import.meta.env.VITE_API_URL ||
+  import.meta.env.VITE_API_BASE_URL ||
+  (typeof window !== "undefined" && window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1"
+    ? "https://cctv-intelligence-platform-backend.onrender.com"
+    : "")
+).replace(/\/$/, "")
 
 export function getEvidenceUrl(url?: string): string | undefined {
   if (!url) return undefined
@@ -32,6 +38,11 @@ async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
   if (!res.ok) {
     const errorText = await res.text().catch(() => res.statusText)
     throw new Error(`API error ${res.status}: ${errorText}`)
+  }
+
+  const contentType = res.headers.get("content-type") || ""
+  if (contentType.includes("text/html")) {
+    throw new Error(`API returned HTML document instead of JSON for ${endpoint}`)
   }
 
   return res.json()

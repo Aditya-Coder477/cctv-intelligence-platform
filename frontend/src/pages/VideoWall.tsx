@@ -11,6 +11,7 @@ import {
 import { api } from "../services/api"
 import { Camera } from "../types"
 import { HlsPlayer } from "../components/player/HlsPlayer"
+import { FALLBACK_CAMERAS } from "../data/fallbackData"
 
 type GridSize = "1x1" | "2x2" | "3x3"
 
@@ -34,9 +35,14 @@ export const VideoWall: React.FC = () => {
     const fetchCameras = async () => {
       try {
         const data = await api.getCameras()
-        setCameras(data)
+        if (Array.isArray(data) && data.length > 0) {
+          setCameras(data)
+        } else {
+          setCameras(FALLBACK_CAMERAS)
+        }
       } catch (err) {
-        console.error("Error fetching cameras:", err)
+        console.error("Error fetching cameras, using fallback:", err)
+        setCameras(FALLBACK_CAMERAS)
       } finally {
         setLoading(false)
       }

@@ -14,6 +14,7 @@ import {
 import { api } from "../services/api"
 import { ObservedVehicle } from "../types"
 import { StatusBadge } from "../components/common/StatusBadge"
+import { FALLBACK_VEHICLES } from "../data/fallbackData"
 
 export const Vehicles: React.FC = () => {
   const [vehicles, setVehicles] = useState<ObservedVehicle[]>([])
@@ -29,9 +30,18 @@ export const Vehicles: React.FC = () => {
           search: search || undefined,
           minConsensus: minConsensus > 0 ? minConsensus : undefined,
         })
-        setVehicles(data)
+        if (Array.isArray(data) && data.length > 0) {
+          setVehicles(data)
+        } else if (!search && minConsensus === 0) {
+          setVehicles(FALLBACK_VEHICLES)
+        } else {
+          setVehicles([])
+        }
       } catch (err) {
-        console.error("Error fetching vehicles:", err)
+        console.error("Error fetching vehicles, using fallback:", err)
+        if (!search && minConsensus === 0) {
+          setVehicles(FALLBACK_VEHICLES)
+        }
       } finally {
         setLoading(false)
       }
