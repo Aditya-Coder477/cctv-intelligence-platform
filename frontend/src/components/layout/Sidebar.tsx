@@ -9,7 +9,6 @@ import {
   BookmarkCheck,
   AlertOctagon,
   Activity,
-  Layers,
   ChevronRight,
   Sparkles
 } from "lucide-react"
@@ -72,28 +71,6 @@ export const Sidebar: React.FC = () => {
               )
             })}
           </nav>
-        </div>
-
-        {/* System Architecture Reference Card */}
-        <div className="p-3 rounded-lg bg-police-900/60 border border-police-800 text-xs">
-          <div className="flex items-center gap-2 text-police-300 font-semibold mb-1">
-            <Layers className="w-3.5 h-3.5 text-police-400" />
-            <span>Architecture</span>
-          </div>
-          <div className="text-[11px] text-slate-400 space-y-1">
-            <div className="flex justify-between">
-              <span>Integration</span>
-              <span className="text-police-300 font-mono">Hybrid Model 5</span>
-            </div>
-            <div className="flex justify-between">
-              <span>Catalogue</span>
-              <span className="text-police-300 font-mono">30 Cameras</span>
-            </div>
-            <div className="flex justify-between">
-              <span>ANPR Engine</span>
-              <span className="text-police-300 font-mono">YOLOv8 + EasyOCR</span>
-            </div>
-          </div>
         </div>
       </div>
 
