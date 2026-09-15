@@ -4,7 +4,6 @@ import {
   CheckCircle2,
   AlertTriangle,
   Server,
-  Layers,
   Database,
   Radio,
   Cpu,
@@ -13,6 +12,7 @@ import {
 import { api } from "../services/api"
 import { Camera, CameraHealth } from "../types"
 import { StatusBadge } from "../components/common/StatusBadge"
+import { FALLBACK_CAMERAS } from "../data/fallbackData"
 
 export const HealthView: React.FC = () => {
   const [cameras, setCameras] = useState<Camera[]>([])
@@ -21,9 +21,14 @@ export const HealthView: React.FC = () => {
   const loadData = async () => {
     try {
       const c = await api.getCameras()
-      setCameras(c)
+      if (Array.isArray(c) && c.length > 0) {
+        setCameras(c)
+      } else {
+        setCameras(FALLBACK_CAMERAS)
+      }
     } catch (err) {
-      console.error("Health fetch error:", err)
+      console.error("Health fetch error, using fallback:", err)
+      setCameras(FALLBACK_CAMERAS)
     } finally {
       setLoading(false)
     }
@@ -32,19 +37,6 @@ export const HealthView: React.FC = () => {
   useEffect(() => {
     loadData()
   }, [])
-
-  const pipelineStages = [
-    { step: "Step 1", name: "Sentinel Access & Session Auth", status: "ONLINE", details: "Cookie auth verified against cctv.corp8.cloud" },
-    { step: "Step 2", name: "Catalogue Normalization", status: "ONLINE", details: "30 cameras parsed & normalized" },
-    { step: "Step 3", name: "HLS Stream Proxy & Ingestion", status: "ONLINE", details: "Authenticated proxy on :8000/api/cameras/{id}/hls" },
-    { step: "Step 4", name: "Vehicle Detection & Tracking", status: "ONLINE", details: "YOLOv8 vehicle detection + ByteTrack" },
-    { step: "Step 5-6", name: "Plate OCR & Multi-Frame Consensus", status: "ONLINE", details: "EasyOCR + Character consensus engine" },
-    { step: "Step 7-9", name: "Observed Vehicles & Watchlist Match", status: "ONLINE", details: "Fuzzy & exact normalized plate matcher" },
-    { step: "Step 10", name: "Event Pipeline Broker", status: "ONLINE", details: "In-memory event bus (12.28 ms event speed)" },
-    { step: "Step 11-12", name: "Multi-Camera Correlation & Journeys", status: "ONLINE", details: "Dossier reconstruction engine" },
-    { step: "Step 13", name: "PostgreSQL/PostGIS + GIS Layer", status: "ONLINE", details: "Spatial DDL + spatial SQLite database" },
-    { step: "Step 14", name: "React Command Centre", status: "ONLINE", details: "Vite + React 18 + Tailwind + Leaflet" },
-  ]
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto">
@@ -104,31 +96,6 @@ export const HealthView: React.FC = () => {
         </div>
       </div>
 
-      {/* Platform Architecture & Stage Status */}
-      <div className="p-4 rounded-xl bg-police-900/60 border border-police-800">
-        <h3 className="text-sm font-bold uppercase tracking-wider text-slate-200 mb-4 flex items-center gap-2">
-          <Layers className="w-4 h-4 text-police-400" />
-          End-to-End Pipeline Health (Steps 1 through 14)
-        </h3>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          {pipelineStages.map((stage) => (
-            <div
-              key={stage.step}
-              className="p-3 rounded-lg bg-police-950/80 border border-police-800 flex items-start justify-between gap-3"
-            >
-              <div className="space-y-0.5">
-                <div className="flex items-center gap-2">
-                  <span className="font-mono text-xs font-bold text-police-400">{stage.step}</span>
-                  <span className="text-xs font-semibold text-white">{stage.name}</span>
-                </div>
-                <div className="text-[11px] text-slate-400">{stage.details}</div>
-              </div>
-              <StatusBadge type="health" value={stage.status} size="sm" />
-            </div>
-          ))}
-        </div>
-      </div>
 
       {/* 30-Camera Stream Telemetry Matrix */}
       <div className="p-4 rounded-xl bg-police-900/60 border border-police-800">
