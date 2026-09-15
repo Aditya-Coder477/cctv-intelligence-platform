@@ -21,6 +21,10 @@ class CameraSchema(BaseModel):
     webrtc_url: Optional[str] = None
     department: str = "Gujarat Police"
     is_spatial: bool = False
+    camera_type: Optional[str] = "Fixed"
+    ai_capabilities: Optional[List[str]] = Field(default_factory=list)
+    alert_count: int = 0
+    observation_count: int = 0
 
 
 class CameraHealthSchema(BaseModel):

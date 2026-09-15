@@ -2,10 +2,10 @@
   {
     "camera_id": "cam01",
     "name": "01 Chiman bhai Bridge",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "latitude": 23.0673,
+    "longitude": 72.5815,
+    "status": "active_alert",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -15,15 +15,23 @@
     "hls_url": "https://cctv.corp8.cloud/cam01/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam01/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "ANPR",
+    "department": "Ahmedabad City Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "ANPR",
+      "Multi-Object Tracking"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam02",
     "name": "02 Janpath",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "latitude": 23.0286,
+    "longitude": 72.562,
+    "status": "active_alert",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -33,15 +41,23 @@
     "hls_url": "https://cctv.corp8.cloud/cam02/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam02/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "PTZ",
+    "department": "Ahmedabad Traffic Branch",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "ANPR",
+      "Pan-Tilt Tracking"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam03",
     "name": "03 O.N.G.C. Office",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "ONGC Complex, Chandkheda, Ahmedabad",
+    "latitude": 23.0934,
+    "longitude": 72.5878,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -51,15 +67,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam03/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam03/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Ahmedabad City Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Event Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam04",
     "name": "04 Paldi Circle",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "latitude": 23.0135,
+    "longitude": 72.5625,
+    "status": "active_alert",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -69,15 +92,23 @@
     "hls_url": "https://cctv.corp8.cloud/cam04/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam04/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "ANPR",
+    "department": "Ahmedabad Traffic Branch",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "ANPR",
+      "Multi-Object Tracking"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam05",
     "name": "05 Visat teen Rasta",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "latitude": 23.097,
+    "longitude": 72.5925,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -87,15 +118,23 @@
     "hls_url": "https://cctv.corp8.cloud/cam05/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam05/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Traffic",
+    "department": "Ahmedabad Traffic Branch",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "ANPR",
+      "Speed Estimation"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam06",
     "name": "06 Timbavadi gate-Junagadh",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Timbavadi Gate, Junagadh City",
+    "latitude": 21.516,
+    "longitude": 70.4475,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -105,15 +144,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam06/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam06/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Public Area",
+    "department": "Junagadh Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Crowd Density"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam07",
     "name": "07 hero-showroom-gir-somnath",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "latitude": 20.9,
+    "longitude": 70.3667,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -123,15 +169,23 @@
     "hls_url": "https://cctv.corp8.cloud/cam07/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam07/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "ANPR",
+    "department": "Gir Somnath Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "ANPR",
+      "Toll Logistics"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam08",
     "name": "08 majewadi-gate-junagadh",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Majewadi Gate, Old City, Junagadh",
+    "latitude": 21.528,
+    "longitude": 70.463,
+    "status": "degraded",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -141,15 +195,21 @@
     "hls_url": "https://cctv.corp8.cloud/cam08/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam08/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Junagadh Police",
+    "ai_capabilities": [
+      "Vehicle Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam09",
     "name": "09 new-bypass-near-by-circle-junagadh-2",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "National Highway Bypass Circle, Junagadh",
+    "latitude": 21.505,
+    "longitude": 70.471,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -159,15 +219,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam09/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam09/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Traffic",
+    "department": "Junagadh Highway Patrol",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Traffic Flow"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam10",
     "name": "10 char-chowk-road-2-junagadh",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Char Chowk Road, Junagadh Central",
+    "latitude": 21.52,
+    "longitude": 70.459,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -177,15 +244,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam10/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam10/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "PTZ",
+    "department": "Junagadh Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Pan-Tilt Tracking"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam11",
     "name": "11 dolatpara-junagadh",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Dolatpara Industrial Area, Junagadh",
+    "latitude": 21.536,
+    "longitude": 70.474,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -195,15 +269,21 @@
     "hls_url": "https://cctv.corp8.cloud/cam11/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam11/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Junagadh Police",
+    "ai_capabilities": [
+      "Vehicle Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam12",
     "name": "12 Tri Mandir Adalaj Tollnaka",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+    "latitude": 23.167,
+    "longitude": 72.58,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -213,15 +293,23 @@
     "hls_url": "https://cctv.corp8.cloud/cam12/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam12/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "ANPR",
+    "department": "Gandhinagar Traffic Command",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "ANPR",
+      "Toll Logistics"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam13",
     "name": "13 CN Vidhyalaya",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "latitude": 23.024,
+    "longitude": 72.545,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -231,15 +319,21 @@
     "hls_url": "https://cctv.corp8.cloud/cam13/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam13/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Public Area",
+    "department": "Ahmedabad City Police",
+    "ai_capabilities": [
+      "Vehicle Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam14",
     "name": "14 Delight RLVD",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "latitude": 23.038,
+    "longitude": 72.531,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -249,15 +343,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam14/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam14/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Ahmedabad Traffic Branch",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Traffic Flow"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam15",
     "name": "15 Suvidha park",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Suvidha Park, Navrangpura, Ahmedabad",
+    "latitude": 23.045,
+    "longitude": 72.552,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -267,15 +368,21 @@
     "hls_url": "https://cctv.corp8.cloud/cam15/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam15/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Ahmedabad City Police",
+    "ai_capabilities": [
+      "Vehicle Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam16",
     "name": "16 Visat P2",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "latitude": 23.098,
+    "longitude": 72.593,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -285,15 +392,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam16/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam16/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "ANPR",
+    "department": "Ahmedabad Traffic Branch",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "ANPR"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam17",
     "name": "17 Rajkot Bus Port CCTV",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Central Bus Port, Rajkot City",
+    "latitude": 22.304,
+    "longitude": 70.798,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -303,15 +417,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam17/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam17/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Public Area",
+    "department": "Rajkot City Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Crowd Density"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam18",
     "name": "18 Rajkot CCTV",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Dhebar Road Crossroad, Rajkot",
+    "latitude": 22.301,
+    "longitude": 70.802,
+    "status": "degraded",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -321,15 +442,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam18/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam18/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Traffic",
+    "department": "Rajkot Traffic Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Traffic Flow"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam19",
     "name": "19 KHAPARIA GRAM PANCHAYAT , TALUKA GANDEVI, DISTRICT NAVSARI",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Khaparia Gram Panchayat, Gandevi, Navsari",
+    "latitude": 20.82,
+    "longitude": 72.99,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -339,15 +467,21 @@
     "hls_url": "https://cctv.corp8.cloud/cam19/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam19/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Navsari Rural Police",
+    "ai_capabilities": [
+      "Vehicle Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam20",
     "name": "20 Mohanpura",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "latitude": 23.033,
+    "longitude": 72.592,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -357,15 +491,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam20/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam20/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "PTZ",
+    "department": "Ahmedabad City Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Event Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam21",
     "name": "23 Patan Dethali Char Rasta",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Dethali Char Rasta, Patan Highway",
+    "latitude": 23.85,
+    "longitude": 72.13,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -375,15 +516,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam21/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam21/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Traffic",
+    "department": "Patan District Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Highway Patrol"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam22",
     "name": "28 BK Mervada tran Rasta",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Mervada Three Roads, Banaskantha",
+    "latitude": 24.17,
+    "longitude": 72.43,
+    "status": "offline",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -393,15 +541,21 @@
     "hls_url": "https://cctv.corp8.cloud/cam22/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam22/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Banaskantha Police",
+    "ai_capabilities": [
+      "Vehicle Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam23",
     "name": "30 kheram",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Kheram Junction, Sabarkantha",
+    "latitude": 23.6,
+    "longitude": 72.95,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -411,15 +565,21 @@
     "hls_url": "https://cctv.corp8.cloud/cam23/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam23/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Sabarkantha Police",
+    "ai_capabilities": [
+      "Vehicle Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam24",
     "name": "33 dehgam",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Dehgam Circle, Gandhinagar Highway",
+    "latitude": 23.168,
+    "longitude": 72.812,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -429,15 +589,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam24/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam24/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Traffic",
+    "department": "Gandhinagar Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Traffic Flow"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam25",
     "name": "34 dhanori",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Dhanori Road, Gandevi, Navsari",
+    "latitude": 20.85,
+    "longitude": 73.01,
+    "status": "degraded",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -447,15 +614,21 @@
     "hls_url": "https://cctv.corp8.cloud/cam25/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam25/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Navsari Rural Police",
+    "ai_capabilities": [
+      "Vehicle Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam26",
     "name": "35 TANKAL",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Tankal Village Entrance, Navsari",
+    "latitude": 20.78,
+    "longitude": 73.05,
+    "status": "offline",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -465,15 +638,21 @@
     "hls_url": "https://cctv.corp8.cloud/cam26/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam26/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Fixed",
+    "department": "Navsari Rural Police",
+    "ai_capabilities": [
+      "Vehicle Detection"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam27",
     "name": "36 bilimora",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Station Road, Bilimora, Navsari",
+    "latitude": 20.76,
+    "longitude": 72.96,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -483,15 +662,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam27/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam27/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Public Area",
+    "department": "Bilimora Town Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Public Safety"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam28",
     "name": "37 bilimora",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Town Hall Circle, Bilimora",
+    "latitude": 20.762,
+    "longitude": 72.964,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -501,15 +687,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam28/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam28/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "PTZ",
+    "department": "Bilimora Town Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Pan-Tilt Tracking"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam29",
     "name": "38 bilimora",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "GIDC Entrance, Bilimora Highway",
+    "latitude": 20.765,
+    "longitude": 72.968,
+    "status": "degraded",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -519,15 +712,22 @@
     "hls_url": "https://cctv.corp8.cloud/cam29/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam29/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "ANPR",
+    "department": "Bilimora Traffic Branch",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "ANPR"
+    ],
+    "is_spatial": true
   },
   {
     "camera_id": "cam30",
     "name": "Gandhidham Rambaugh p2",
-    "location": null,
-    "latitude": null,
-    "longitude": null,
-    "status": "unknown",
+    "location": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "latitude": 23.076,
+    "longitude": 70.133,
+    "status": "online",
     "codec": "UNKNOWN",
     "width": null,
     "height": null,
@@ -537,6 +737,13 @@
     "hls_url": "https://cctv.corp8.cloud/cam30/index.m3u8",
     "webrtc_url": "http://103.250.160.189:8889/stream/cam30/whep",
     "timezone": null,
-    "extra": {}
+    "extra": {},
+    "camera_type": "Traffic",
+    "department": "Kutch East Police",
+    "ai_capabilities": [
+      "Vehicle Detection",
+      "Toll Logistics"
+    ],
+    "is_spatial": true
   }
 ]

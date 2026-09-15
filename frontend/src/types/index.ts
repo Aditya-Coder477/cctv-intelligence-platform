@@ -15,6 +15,10 @@ export interface Camera {
   webrtc_url?: string
   department: string
   is_spatial: boolean
+  camera_type?: string
+  ai_capabilities?: string[]
+  alert_count?: number
+  observation_count?: number
 }
 
 export interface CameraHealth {

@@ -26,6 +26,42 @@ def _load_cameras() -> List[dict]:
         return json.load(f)
 
 
+MATCHES_FILE = Path("data/matches/confirmed/matches.jsonl")
+OBSERVATIONS_FILE = Path("data/observed/vehicles/observations.jsonl")
+
+
+def _get_camera_stats():
+    alert_counts = {}
+    if MATCHES_FILE.exists():
+        try:
+            with open(MATCHES_FILE, "r", encoding="utf-8") as f:
+                for line in f:
+                    if not line.strip():
+                        continue
+                    m = json.loads(line)
+                    cid = m.get("camera_id")
+                    if cid:
+                        alert_counts[cid] = alert_counts.get(cid, 0) + 1
+        except Exception:
+            pass
+
+    obs_counts = {}
+    if OBSERVATIONS_FILE.exists():
+        try:
+            with open(OBSERVATIONS_FILE, "r", encoding="utf-8") as f:
+                for line in f:
+                    if not line.strip():
+                        continue
+                    o = json.loads(line)
+                    cid = o.get("camera_id")
+                    if cid:
+                        obs_counts[cid] = obs_counts.get(cid, 0) + 1
+        except Exception:
+            pass
+
+    return alert_counts, obs_counts
+
+
 @router.get("", response_model=List[CameraSchema])
 def get_cameras(
     department: Optional[str] = None,
@@ -34,17 +70,19 @@ def get_cameras(
 ):
     """Return list of registered CCTV cameras."""
     cameras = _load_cameras()
+    alert_counts, obs_counts = _get_camera_stats()
     result = []
     for c in cameras:
+        cid = c.get("camera_id") or c.get("id")
         is_spatial = c.get("latitude") is not None and c.get("longitude") is not None
         if spatial_only and not is_spatial:
             continue
-        c_status = c.get("status", "active")
+        c_status = c.get("status", "online")
         if status and c_status.lower() != status.lower():
             continue
 
         item = CameraSchema(
-            camera_id=c.get("camera_id") or c.get("id"),
+            camera_id=cid,
             name=c.get("name", "Unknown Camera"),
             location=c.get("location"),
             latitude=c.get("latitude"),
@@ -60,6 +98,10 @@ def get_cameras(
             webrtc_url=c.get("webrtc_url"),
             department=c.get("department", "Gujarat Police Command"),
             is_spatial=is_spatial,
+            camera_type=c.get("camera_type", "Fixed"),
+            ai_capabilities=c.get("ai_capabilities", ["Vehicle Detection", "ANPR"]),
+            alert_count=alert_counts.get(cid, 0),
+            observation_count=obs_counts.get(cid, 0),
         )
         result.append(item)
     return result
@@ -69,6 +111,7 @@ def get_cameras(
 def get_camera(camera_id: str):
     """Return single camera metadata."""
     cameras = _load_cameras()
+    alert_counts, obs_counts = _get_camera_stats()
     for c in cameras:
         cid = c.get("camera_id") or c.get("id")
         if cid and cid.lower() == camera_id.lower():
@@ -79,7 +122,7 @@ def get_camera(camera_id: str):
                 location=c.get("location"),
                 latitude=c.get("latitude"),
                 longitude=c.get("longitude"),
-                status=c.get("status", "active"),
+                status=c.get("status", "online"),
                 codec=c.get("codec", "H264"),
                 width=c.get("width") or 1920,
                 height=c.get("height") or 1080,
@@ -90,6 +133,10 @@ def get_camera(camera_id: str):
                 webrtc_url=c.get("webrtc_url"),
                 department=c.get("department", "Gujarat Police Command"),
                 is_spatial=is_spatial,
+                camera_type=c.get("camera_type", "Fixed"),
+                ai_capabilities=c.get("ai_capabilities", ["Vehicle Detection", "ANPR"]),
+                alert_count=alert_counts.get(cid, 0),
+                observation_count=obs_counts.get(cid, 0),
             )
     raise HTTPException(status_code=404, detail=f"Camera {camera_id} not found")
 
