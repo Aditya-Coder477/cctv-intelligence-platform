@@ -2,23 +2,22 @@
 VEHICLE JOURNEY / OBSERVATION REPORT
 ======================================================================
 VEHICLE:               2234
-VEHICLE ID:            VEH-000005
+VEHICLE ID:            VEH-000064
 ORDERING MODE:         CAMERA_LOCAL
 STATUS:                OBSERVATION_SEQUENCE_ONLY
 TOTAL SEGMENTS:        1
 TOTAL LEGS:            0
 ----------------------------------------------------------------------
-CONFIDENCE SCORE:      0.42 (Engineering Indicator)
+CONFIDENCE SCORE:      0.57 (Engineering Indicator)
   - Recognition Quality:  0.45
   - Temporal Resolution:  0.20
-  - Spatial Resolution:   0.00
+  - Spatial Resolution:   1.00
   - Plausibility:         1.00
     * Source time unresolved; camera-local media PTS only
-    * No geographic coordinates found for cameras in catalogue
 ----------------------------------------------------------------------
 OBSERVATION SEGMENTS:
 ----------------------------------------------------------------------
-1. Camera: cam06 (06 Timbavadi gate-Junagadh) | Track: TRK-0012 | Coords: No Coordinates
+1. Camera: cam06 (06 Timbavadi gate-Junagadh) | Track: TRK-0012 | Coords: 21.51600, 70.44750
    Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
    PTS First / Rec / Last: 100920.0 ms / 100920.0 ms / 101040.0 ms
    Status / Consensus:   CONFIRMED (Score: 0.47, OCR: 0.43)

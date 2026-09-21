@@ -1,0 +1,68 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               17575083008
+VEHICLE ID:            VEH-000051
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        4
+TOTAL LEGS:            3
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.68 (Engineering Indicator)
+  - Recognition Quality:  0.77
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   1.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam05 (05 Visat teen Rasta) | Track: TRK-0398 | Coords: 23.09700, 72.59250
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 137633.0 ms / 138300.0 ms / 138300.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.64, OCR: 0.83)
+   Evidence Image:       data\snapshots\cam05\plates_processed\upscaled\cam05_TRK-0398_frame004150_pts138300_plate03.jpg
+
+2. Camera: cam05 (05 Visat teen Rasta) | Track: TRK-5099 | Coords: 23.09700, 72.59250
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 1669966.0 ms / 1670966.0 ms / 1670966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.94, OCR: 0.84)
+   Evidence Image:       data\snapshots\cam05\plates\cam05_TRK-5099_frame050130_pts1670966_plate05.jpg
+
+3. Camera: cam05 (05 Visat teen Rasta) | Track: TRK-4244 | Coords: 23.09700, 72.59250
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 2804966.0 ms / 2805966.0 ms / 2805966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.76, OCR: 0.93)
+   Evidence Image:       data\snapshots\cam05\plates_processed\upscaled\cam05_TRK-4244_frame084180_pts2805966_plate06.jpg
+
+4. Camera: cam05 (05 Visat teen Rasta) | Track: TRK-4507 | Coords: 23.09700, 72.59250
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 2930633.0 ms / 2930633.0 ms / 2930633.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.58, OCR: 0.70)
+   Evidence Image:       data\snapshots\cam05\plates_processed\grayscale\cam05_TRK-4507_frame087920_pts2930633_plate01.jpg
+
+----------------------------------------------------------------------
+JOURNEY LEGS (Cross-Camera Transit):
+----------------------------------------------------------------------
+Leg 1: cam05 (05 Visat teen Rasta) -> cam05 (05 Visat teen Rasta)
+  Time Delta:             UNRESOLVED (Media PTS not comparable)
+  Approx Distance:        0.0 m (straight-line)
+  Implied Speed:          0.0 km/h (straight-line indicator)
+  Plausibility:           PLAUSIBLE (Consecutive observation on same camera)
+
+Leg 2: cam05 (05 Visat teen Rasta) -> cam05 (05 Visat teen Rasta)
+  Time Delta:             UNRESOLVED (Media PTS not comparable)
+  Approx Distance:        0.0 m (straight-line)
+  Implied Speed:          0.0 km/h (straight-line indicator)
+  Plausibility:           PLAUSIBLE (Consecutive observation on same camera)
+
+Leg 3: cam05 (05 Visat teen Rasta) -> cam05 (05 Visat teen Rasta)
+  Time Delta:             UNRESOLVED (Media PTS not comparable)
+  Approx Distance:        0.0 m (straight-line)
+  Implied Speed:          0.0 km/h (straight-line indicator)
+  Plausibility:           PLAUSIBLE (Consecutive observation on same camera)
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

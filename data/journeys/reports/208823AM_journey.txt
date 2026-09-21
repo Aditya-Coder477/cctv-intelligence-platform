@@ -1,0 +1,29 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               208823AM
+VEHICLE ID:            VEH-000106
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        1
+TOTAL LEGS:            0
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.60 (Engineering Indicator)
+  - Recognition Quality:  0.53
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   1.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam18 (18 Rajkot CCTV) | Track: TRK-0858 | Coords: 22.30100, 70.80200
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 632966.0 ms / 633966.0 ms / 633966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.51, OCR: 0.57)
+   Evidence Image:       data\snapshots\cam18\plates_processed\grayscale\cam18_TRK-0858_frame019020_pts633966_plate06.jpg
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

@@ -1,37 +1,2569 @@
 {
   "camera_id": "cam17",
-  "total_tracks_processed": 1,
-  "total_plate_candidates_loaded": 5,
-  "candidates_eligible_for_ocr": 5,
+  "total_tracks_processed": 80,
+  "total_plate_candidates_loaded": 167,
+  "candidates_eligible_for_ocr": 167,
   "candidates_rejected_before_ocr": 0,
   "rejection_reasons": {},
-  "total_ocr_invocations": 25,
-  "ocr_empty_count": 25,
-  "ocr_low_confidence_count": 0,
-  "ocr_valid_count": 0,
+  "total_ocr_invocations": 835,
+  "ocr_empty_count": 790,
+  "ocr_low_confidence_count": 7,
+  "ocr_valid_count": 38,
   "recognition_counts": {
-    "CONFIRMED": 0,
+    "CONFIRMED": 1,
     "PROBABLE": 0,
-    "UNCERTAIN": 0,
-    "UNREADABLE": 1
+    "UNCERTAIN": 18,
+    "UNREADABLE": 61
   },
-  "confirmed_count": 0,
+  "confirmed_count": 1,
   "probable_count": 0,
-  "uncertain_count": 0,
-  "unreadable_count": 1,
-  "avg_ocr_latency_ms": 63.12,
+  "uncertain_count": 18,
+  "unreadable_count": 61,
+  "avg_ocr_latency_ms": 58.29,
   "tracks": [
     {
       "camera_id": "cam17",
       "track_id": "TRK-0001",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.4996,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 1300.0,
+      "last_seen_pts_ms": 1300.0,
+      "supporting_frame_ids": [
+        40
+      ],
+      "candidate_scores": {
+        "74": 0.4996
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0001",
+          "frame_id": 40,
+          "pts_ms": 1300.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15496.843,
+          "plate_bbox": [
+            0,
+            188,
+            43,
+            228
+          ],
+          "plate_detection_confidence": 0.2074,
+          "plate_quality_score": 0.7601,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "74",
+            "confidence": 0.7363,
+            "character_confidences": [
+              0.7363
+            ],
+            "processing_time_ms": 110.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "74",
+            "normalized_text": "74",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4996,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\contrast\\cam17_TRK-0001_frame000040_pts1300_plate02.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0001",
+          "frame_id": 40,
+          "pts_ms": 1300.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15496.843,
+          "plate_bbox": [
+            0,
+            188,
+            43,
+            228
+          ],
+          "plate_detection_confidence": 0.2074,
+          "plate_quality_score": 0.7601,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "74",
+            "confidence": 0.6169,
+            "character_confidences": [
+              0.6169
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "74",
+            "normalized_text": "74",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4519,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0001_frame000040_pts1300_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0004",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 11966.0,
+      "last_seen_pts_ms": 11966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0005",
       "final_registration_number": null,
       "recognition_status": "UNREADABLE",
       "consensus_score": 0.0,
       "supporting_frame_count": 0,
       "total_frames_examined": 3,
       "total_observations_examined": 25,
-      "first_seen_pts_ms": 7165.0,
-      "last_seen_pts_ms": 9927.0,
+      "first_seen_pts_ms": 1633.0,
+      "last_seen_pts_ms": 2966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0007",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 3966.0,
+      "last_seen_pts_ms": 3966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0008",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.3083,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 7966.0,
+      "last_seen_pts_ms": 8300.0,
+      "supporting_frame_ids": [
+        240
+      ],
+      "candidate_scores": {
+        "VD": 0.3083
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0008",
+          "frame_id": 240,
+          "pts_ms": 7966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15499.968,
+          "plate_bbox": [
+            151,
+            450,
+            197,
+            469
+          ],
+          "plate_detection_confidence": 0.6836,
+          "plate_quality_score": 0.8522,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "VD",
+            "confidence": 0.0449,
+            "character_confidences": [
+              0.0449
+            ],
+            "processing_time_ms": 141.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "VD",
+            "normalized_text": "VD",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3083,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0008_frame000240_pts7966_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0015",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 14300.0,
+      "last_seen_pts_ms": 14300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0016",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 15966.0,
+      "last_seen_pts_ms": 16300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0017",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 25,
+      "first_seen_pts_ms": 27966.0,
+      "last_seen_pts_ms": 31300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0019",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 20966.0,
+      "last_seen_pts_ms": 20966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0020",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 24633.0,
+      "last_seen_pts_ms": 24966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0021",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.2002,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 26633.0,
+      "last_seen_pts_ms": 26633.0,
+      "supporting_frame_ids": [
+        800
+      ],
+      "candidate_scores": {
+        "2": 0.2002
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0021",
+          "frame_id": 800,
+          "pts_ms": 26633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15504.015,
+          "plate_bbox": [
+            128,
+            664,
+            161,
+            717
+          ],
+          "plate_detection_confidence": 0.1425,
+          "plate_quality_score": 0.724,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "2",
+            "confidence": 0.0256,
+            "character_confidences": [
+              0.0256
+            ],
+            "processing_time_ms": 93.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "2",
+            "normalized_text": "2",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2002,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\upscaled\\cam17_TRK-0021_frame000800_pts26633_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0024",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 34966.0,
+      "last_seen_pts_ms": 34966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0028",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.2956,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 32633.0,
+      "last_seen_pts_ms": 32633.0,
+      "supporting_frame_ids": [
+        980
+      ],
+      "candidate_scores": {
+        "4": 0.2956
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0028",
+          "frame_id": 980,
+          "pts_ms": 32633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15505.703,
+          "plate_bbox": [
+            1,
+            449,
+            22,
+            465
+          ],
+          "plate_detection_confidence": 0.2377,
+          "plate_quality_score": 0.8485,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "4",
+            "confidence": 0.1816,
+            "character_confidences": [
+              0.1816
+            ],
+            "processing_time_ms": 46.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "4",
+            "normalized_text": "4",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2956,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0028_frame000980_pts32633_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0038",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 4,
+      "total_observations_examined": 20,
+      "first_seen_pts_ms": 53966.0,
+      "last_seen_pts_ms": 56300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0039",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 59633.0,
+      "last_seen_pts_ms": 59633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0040",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 4,
+      "total_observations_examined": 25,
+      "first_seen_pts_ms": 59633.0,
+      "last_seen_pts_ms": 61300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0041",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 57300.0,
+      "last_seen_pts_ms": 58633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0042",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 73300.0,
+      "last_seen_pts_ms": 73966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0043",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 64633.0,
+      "last_seen_pts_ms": 69633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0044",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 65300.0,
+      "last_seen_pts_ms": 65966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0045",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.282,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 4,
+      "total_observations_examined": 25,
+      "first_seen_pts_ms": 66300.0,
+      "last_seen_pts_ms": 74966.0,
+      "supporting_frame_ids": [
+        2040
+      ],
+      "candidate_scores": {
+        "A4": 0.236,
+        "UM": 0.282
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0045",
+          "frame_id": 2040,
+          "pts_ms": 67966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15512.093,
+          "plate_bbox": [
+            329,
+            670,
+            356,
+            713
+          ],
+          "plate_detection_confidence": 0.1085,
+          "plate_quality_score": 0.9614,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "UM",
+            "confidence": 0.1538,
+            "character_confidences": [
+              0.012,
+              0.2957
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "UM",
+            "normalized_text": "UM",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.282,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\contrast\\cam17_TRK-0045_frame002040_pts67966_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0046",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 67633.0,
+      "last_seen_pts_ms": 68633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0047",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.3128,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 74300.0,
+      "last_seen_pts_ms": 74300.0,
+      "supporting_frame_ids": [
+        2230
+      ],
+      "candidate_scores": {
+        "6": 0.3128,
+        "44": 0.2622,
+        "S4": 0.252
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0047",
+          "frame_id": 2230,
+          "pts_ms": 74300.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15513.265,
+          "plate_bbox": [
+            751,
+            782,
+            779,
+            822
+          ],
+          "plate_detection_confidence": 0.1206,
+          "plate_quality_score": 0.9715,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "6",
+            "confidence": 0.2225,
+            "character_confidences": [
+              0.2225
+            ],
+            "processing_time_ms": 47.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "6",
+            "normalized_text": "6",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3128,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\upscaled\\cam17_TRK-0047_frame002230_pts74300_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0049",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.5777,
+      "supporting_frame_count": 2,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 74300.0,
+      "last_seen_pts_ms": 77300.0,
+      "supporting_frame_ids": [
+        2230,
+        2320
+      ],
+      "candidate_scores": {
+        "4": 0.5777,
+        "0": 0.4311
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0049",
+          "frame_id": 2320,
+          "pts_ms": 77300.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15513.656,
+          "plate_bbox": [
+            596,
+            982,
+            661,
+            1045
+          ],
+          "plate_detection_confidence": 0.3465,
+          "plate_quality_score": 0.8763,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "4",
+            "confidence": 0.5856,
+            "character_confidences": [
+              0.5856
+            ],
+            "processing_time_ms": 110.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "4",
+            "normalized_text": "4",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4777,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0049_frame002320_pts77300_plate03.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0049",
+          "frame_id": 2230,
+          "pts_ms": 74300.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15513.609,
+          "plate_bbox": [
+            597,
+            983,
+            658,
+            1030
+          ],
+          "plate_detection_confidence": 0.2097,
+          "plate_quality_score": 0.9231,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "0",
+            "confidence": 0.5029,
+            "character_confidences": [
+              0.5029
+            ],
+            "processing_time_ms": 63.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "0",
+            "normalized_text": "0",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4311,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0049_frame002230_pts74300_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0050",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.4147,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 75300.0,
+      "last_seen_pts_ms": 75966.0,
+      "supporting_frame_ids": [
+        2280
+      ],
+      "candidate_scores": {
+        "4": 0.4147,
+        "3": 0.199,
+        "S": 0.1969
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0050",
+          "frame_id": 2280,
+          "pts_ms": 75966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15514.281,
+          "plate_bbox": [
+            229,
+            822,
+            319,
+            836
+          ],
+          "plate_detection_confidence": 0.1067,
+          "plate_quality_score": 0.7804,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "4",
+            "confidence": 0.0541,
+            "character_confidences": [
+              0.0541
+            ],
+            "processing_time_ms": 156.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "4",
+            "normalized_text": "4",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2147,
+          "image_crop_path": "data\\snapshots\\cam17\\plates\\cam17_TRK-0050_frame002280_pts75966_plate04.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0050",
+          "frame_id": 2280,
+          "pts_ms": 75966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15514.281,
+          "plate_bbox": [
+            229,
+            822,
+            319,
+            836
+          ],
+          "plate_detection_confidence": 0.1067,
+          "plate_quality_score": 0.7804,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "3",
+            "confidence": 0.0148,
+            "character_confidences": [
+              0.0148
+            ],
+            "processing_time_ms": 125.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "3",
+            "normalized_text": "3",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.199,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\grayscale\\cam17_TRK-0050_frame002280_pts75966_plate04.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0050",
+          "frame_id": 2280,
+          "pts_ms": 75966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15514.281,
+          "plate_bbox": [
+            229,
+            822,
+            319,
+            836
+          ],
+          "plate_detection_confidence": 0.1067,
+          "plate_quality_score": 0.7804,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "S",
+            "confidence": 0.0096,
+            "character_confidences": [
+              0.0096
+            ],
+            "processing_time_ms": 125.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "S",
+            "normalized_text": "S",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.1969,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\upscaled\\cam17_TRK-0050_frame002280_pts75966_plate04.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0055",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 79966.0,
+      "last_seen_pts_ms": 84966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0060",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 88300.0,
+      "last_seen_pts_ms": 88300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0063",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 92966.0,
+      "last_seen_pts_ms": 95966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0064",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.4307,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 97966.0,
+      "last_seen_pts_ms": 99300.0,
+      "supporting_frame_ids": [
+        2940
+      ],
+      "candidate_scores": {
+        "H": 0.3017,
+        "V": 0.4307
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0064",
+          "frame_id": 2940,
+          "pts_ms": 97966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15516.937,
+          "plate_bbox": [
+            305,
+            668,
+            356,
+            717
+          ],
+          "plate_detection_confidence": 0.6714,
+          "plate_quality_score": 0.9053,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "H",
+            "confidence": 0.0131,
+            "character_confidences": [
+              0.0131
+            ],
+            "processing_time_ms": 109.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "H",
+            "normalized_text": "H",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3017,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\contrast\\cam17_TRK-0064_frame002940_pts97966_plate04.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0064",
+          "frame_id": 2940,
+          "pts_ms": 97966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15516.937,
+          "plate_bbox": [
+            305,
+            668,
+            356,
+            717
+          ],
+          "plate_detection_confidence": 0.6714,
+          "plate_quality_score": 0.9053,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "V",
+            "confidence": 0.0854,
+            "character_confidences": [
+              0.0854
+            ],
+            "processing_time_ms": 109.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "V",
+            "normalized_text": "V",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3307,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0064_frame002940_pts97966_plate04.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0068",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 99300.0,
+      "last_seen_pts_ms": 99966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0070",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 20,
+      "first_seen_pts_ms": 99966.0,
+      "last_seen_pts_ms": 100966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0072",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 25,
+      "first_seen_pts_ms": 101966.0,
+      "last_seen_pts_ms": 102966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0073",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 102633.0,
+      "last_seen_pts_ms": 104300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0075",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 104633.0,
+      "last_seen_pts_ms": 107966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0076",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 106300.0,
+      "last_seen_pts_ms": 106300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0078",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.4421,
+      "supporting_frame_count": 2,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 111633.0,
+      "last_seen_pts_ms": 113633.0,
+      "supporting_frame_ids": [
+        3350,
+        3410
+      ],
+      "candidate_scores": {
+        "08": 0.2666,
+        "0": 0.4421
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0078",
+          "frame_id": 3350,
+          "pts_ms": 111633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15522.109,
+          "plate_bbox": [
+            598,
+            984,
+            657,
+            1045
+          ],
+          "plate_detection_confidence": 0.2451,
+          "plate_quality_score": 0.8651,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "08",
+            "confidence": 0.1002,
+            "character_confidences": [
+              0.1002
+            ],
+            "processing_time_ms": 125.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "08",
+            "normalized_text": "08",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2666,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0078_frame003350_pts111633_plate03.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0078",
+          "frame_id": 3410,
+          "pts_ms": 113633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15522.046,
+          "plate_bbox": [
+            598,
+            982,
+            659,
+            1045
+          ],
+          "plate_detection_confidence": 0.155,
+          "plate_quality_score": 0.8568,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "0",
+            "confidence": 0.3259,
+            "character_confidences": [
+              0.3259
+            ],
+            "processing_time_ms": 141.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "0",
+            "normalized_text": "0",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3421,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0078_frame003410_pts113633_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0083",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.5834,
+      "supporting_frame_count": 2,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 115300.0,
+      "last_seen_pts_ms": 121300.0,
+      "supporting_frame_ids": [
+        3560,
+        3640
+      ],
+      "candidate_scores": {
+        "40": 0.2259,
+        "6": 0.5834,
+        "3": 0.2577,
+        "91": 0.2486,
+        "68": 0.2541
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0083",
+          "frame_id": 3640,
+          "pts_ms": 121300.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15522.718,
+          "plate_bbox": [
+            595,
+            981,
+            661,
+            1012
+          ],
+          "plate_detection_confidence": 0.2039,
+          "plate_quality_score": 0.8632,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "6",
+            "confidence": 0.3128,
+            "character_confidences": [
+              0.3128
+            ],
+            "processing_time_ms": 63.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "6",
+            "normalized_text": "6",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3452,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0083_frame003640_pts121300_plate05.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0083",
+          "frame_id": 3560,
+          "pts_ms": 118633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15522.671,
+          "plate_bbox": [
+            599,
+            988,
+            656,
+            1013
+          ],
+          "plate_detection_confidence": 0.1058,
+          "plate_quality_score": 0.9164,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "3",
+            "confidence": 0.1108,
+            "character_confidences": [
+              0.1108
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "3",
+            "normalized_text": "3",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2577,
+          "image_crop_path": "data\\snapshots\\cam17\\plates\\cam17_TRK-0083_frame003560_pts118633_plate04.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0083",
+          "frame_id": 3560,
+          "pts_ms": 118633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15522.671,
+          "plate_bbox": [
+            599,
+            988,
+            656,
+            1013
+          ],
+          "plate_detection_confidence": 0.1058,
+          "plate_quality_score": 0.9164,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "3",
+            "confidence": 0.0574,
+            "character_confidences": [
+              0.0574
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "3",
+            "normalized_text": "3",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2363,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\grayscale\\cam17_TRK-0083_frame003560_pts118633_plate04.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0083",
+          "frame_id": 3560,
+          "pts_ms": 118633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15522.671,
+          "plate_bbox": [
+            599,
+            988,
+            656,
+            1013
+          ],
+          "plate_detection_confidence": 0.1058,
+          "plate_quality_score": 0.9164,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "6",
+            "confidence": 0.2706,
+            "character_confidences": [
+              0.2706
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "6",
+            "normalized_text": "6",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3216,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\upscaled\\cam17_TRK-0083_frame003560_pts118633_plate04.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0083",
+          "frame_id": 3560,
+          "pts_ms": 118633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15522.671,
+          "plate_bbox": [
+            599,
+            988,
+            656,
+            1013
+          ],
+          "plate_detection_confidence": 0.1058,
+          "plate_quality_score": 0.9164,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "68",
+            "confidence": 0.1019,
+            "character_confidences": [
+              0.1019
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "68",
+            "normalized_text": "68",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2541,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0083_frame003560_pts118633_plate04.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0086",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.5635,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 118300.0,
+      "last_seen_pts_ms": 119300.0,
+      "supporting_frame_ids": [
+        3550
+      ],
+      "candidate_scores": {
+        "4": 0.5635,
+        "91": 0.3118
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0086",
+          "frame_id": 3550,
+          "pts_ms": 118300.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15523.656,
+          "plate_bbox": [
+            598,
+            986,
+            657,
+            1041
+          ],
+          "plate_detection_confidence": 0.1418,
+          "plate_quality_score": 0.9032,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "4",
+            "confidence": 0.8668,
+            "character_confidences": [
+              0.8668
+            ],
+            "processing_time_ms": 109.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "4",
+            "normalized_text": "4",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.5635,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0086_frame003550_pts118300_plate04.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0092",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.4979,
+      "supporting_frame_count": 2,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 120966.0,
+      "last_seen_pts_ms": 122300.0,
+      "supporting_frame_ids": [
+        3630,
+        3650
+      ],
+      "candidate_scores": {
+        "G": 0.4979,
+        "60": 0.3011,
+        "34": 0.396,
+        "0": 0.2839,
+        "48": 0.3292
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0092",
+          "frame_id": 3650,
+          "pts_ms": 121633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15524.812,
+          "plate_bbox": [
+            598,
+            988,
+            657,
+            1044
+          ],
+          "plate_detection_confidence": 0.4538,
+          "plate_quality_score": 0.9089,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "G",
+            "confidence": 0.3337,
+            "character_confidences": [
+              0.3337
+            ],
+            "processing_time_ms": 110.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "G",
+            "normalized_text": "G",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3979,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\contrast\\cam17_TRK-0092_frame003650_pts121633_plate03.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0092",
+          "frame_id": 3630,
+          "pts_ms": 120966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15524.765,
+          "plate_bbox": [
+            598,
+            986,
+            658,
+            1044
+          ],
+          "plate_detection_confidence": 0.1589,
+          "plate_quality_score": 0.8926,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "0",
+            "confidence": 0.1655,
+            "character_confidences": [
+              0.1655
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "0",
+            "normalized_text": "0",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2839,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\contrast\\cam17_TRK-0092_frame003630_pts120966_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0093",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 4,
+      "total_observations_examined": 20,
+      "first_seen_pts_ms": 130300.0,
+      "last_seen_pts_ms": 131300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0102",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 144633.0,
+      "last_seen_pts_ms": 145300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0103",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 136633.0,
+      "last_seen_pts_ms": 137300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0104",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 141633.0,
+      "last_seen_pts_ms": 141633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0106",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 286966.0,
+      "last_seen_pts_ms": 286966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0109",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.234,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 140300.0,
+      "last_seen_pts_ms": 140300.0,
+      "supporting_frame_ids": [
+        4210
+      ],
+      "candidate_scores": {
+        "H": 0.234
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0109",
+          "frame_id": 4210,
+          "pts_ms": 140300.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15529.546,
+          "plate_bbox": [
+            309,
+            671,
+            356,
+            714
+          ],
+          "plate_detection_confidence": 0.1827,
+          "plate_quality_score": 0.9283,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "H",
+            "confidence": 0.0185,
+            "character_confidences": [
+              0.0185
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "H",
+            "normalized_text": "H",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.234,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0109_frame004210_pts140300_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0110",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 142966.0,
+      "last_seen_pts_ms": 143966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0111",
+      "final_registration_number": "CGAX",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.2333,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 144966.0,
+      "last_seen_pts_ms": 145633.0,
+      "supporting_frame_ids": [
+        4350
+      ],
+      "candidate_scores": {
+        "CGAX": 0.2333
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0111",
+          "frame_id": 4350,
+          "pts_ms": 144966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15530.39,
+          "plate_bbox": [
+            315,
+            670,
+            354,
+            714
+          ],
+          "plate_detection_confidence": 0.1559,
+          "plate_quality_score": 0.9391,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "CGAX",
+            "confidence": 0.0227,
+            "character_confidences": [
+              0.0071,
+              0.04,
+              0.021
+            ],
+            "processing_time_ms": 156.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "CGAX",
+            "normalized_text": "CGAX",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2333,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0111_frame004350_pts144966_plate04.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0113",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.4461,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 147966.0,
+      "last_seen_pts_ms": 148966.0,
+      "supporting_frame_ids": [
+        4470
+      ],
+      "candidate_scores": {
+        "M": 0.4461
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0113",
+          "frame_id": 4470,
+          "pts_ms": 148966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15530.906,
+          "plate_bbox": [
+            307,
+            668,
+            355,
+            716
+          ],
+          "plate_detection_confidence": 0.3404,
+          "plate_quality_score": 0.9264,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "M",
+            "confidence": 0.4903,
+            "character_confidences": [
+              0.4903
+            ],
+            "processing_time_ms": 62.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "M",
+            "normalized_text": "M",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4461,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\sharpened\\cam17_TRK-0113_frame004470_pts148966_plate04.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0115",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 20,
+      "first_seen_pts_ms": 151966.0,
+      "last_seen_pts_ms": 159633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0116",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 154633.0,
+      "last_seen_pts_ms": 157300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0119",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 191633.0,
+      "last_seen_pts_ms": 191633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0122",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 160633.0,
+      "last_seen_pts_ms": 161966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0123",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 161633.0,
+      "last_seen_pts_ms": 162633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0125",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 166300.0,
+      "last_seen_pts_ms": 168300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0126",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 167966.0,
+      "last_seen_pts_ms": 168633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0127",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 170300.0,
+      "last_seen_pts_ms": 170300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0128",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 173300.0,
+      "last_seen_pts_ms": 198300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0129",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 177966.0,
+      "last_seen_pts_ms": 177966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0130",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 179633.0,
+      "last_seen_pts_ms": 180633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0133",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 203966.0,
+      "last_seen_pts_ms": 203966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0134",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 204633.0,
+      "last_seen_pts_ms": 204633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0137",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 217633.0,
+      "last_seen_pts_ms": 217633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0143",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 287300.0,
+      "last_seen_pts_ms": 288300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0145",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 290633.0,
+      "last_seen_pts_ms": 291633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0147",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 366633.0,
+      "last_seen_pts_ms": 367633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0148",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 298966.0,
+      "last_seen_pts_ms": 298966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0154",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 326633.0,
+      "last_seen_pts_ms": 326633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0155",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.2695,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 329633.0,
+      "last_seen_pts_ms": 329633.0,
+      "supporting_frame_ids": [
+        9890
+      ],
+      "candidate_scores": {
+        "SS": 0.2402,
+        "O": 0.2695
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0155",
+          "frame_id": 9890,
+          "pts_ms": 329633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15546.843,
+          "plate_bbox": [
+            551,
+            619,
+            645,
+            707
+          ],
+          "plate_detection_confidence": 0.1464,
+          "plate_quality_score": 0.7494,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "O",
+            "confidence": 0.1878,
+            "character_confidences": [
+              0.1878
+            ],
+            "processing_time_ms": 110.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "O",
+            "normalized_text": "O",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2695,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\grayscale\\cam17_TRK-0155_frame009890_pts329633_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0158",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 340300.0,
+      "last_seen_pts_ms": 340300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0160",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 359966.0,
+      "last_seen_pts_ms": 361300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0163",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 360633.0,
+      "last_seen_pts_ms": 360633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0170",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.3809,
+      "supporting_frame_count": 2,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 381300.0,
+      "last_seen_pts_ms": 381966.0,
+      "supporting_frame_ids": [
+        11440,
+        11460
+      ],
+      "candidate_scores": {
+        "A7KVU6": 0.1948,
+        "00F": 0.1977,
+        "00": 0.3809
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0170",
+          "frame_id": 11440,
+          "pts_ms": 381300.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15551.265,
+          "plate_bbox": [
+            548,
+            650,
+            650,
+            709
+          ],
+          "plate_detection_confidence": 0.1871,
+          "plate_quality_score": 0.4441,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "00F",
+            "confidence": 0.1075,
+            "character_confidences": [
+              0.2053,
+              0.0096
+            ],
+            "processing_time_ms": 204.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "00F",
+            "normalized_text": "00F",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.1977,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\grayscale\\cam17_TRK-0170_frame011440_pts381300_plate03.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0170",
+          "frame_id": 11460,
+          "pts_ms": 381966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15551.234,
+          "plate_bbox": [
+            549,
+            650,
+            650,
+            708
+          ],
+          "plate_detection_confidence": 0.1302,
+          "plate_quality_score": 0.4811,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "00",
+            "confidence": 0.3081,
+            "character_confidences": [
+              0.3081
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "00",
+            "normalized_text": "00",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2749,
+          "image_crop_path": "data\\snapshots\\cam17\\plates\\cam17_TRK-0170_frame011460_pts381966_plate02.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0170",
+          "frame_id": 11460,
+          "pts_ms": 381966.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15551.234,
+          "plate_bbox": [
+            549,
+            650,
+            650,
+            708
+          ],
+          "plate_detection_confidence": 0.1302,
+          "plate_quality_score": 0.4811,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "00",
+            "confidence": 0.3229,
+            "character_confidences": [
+              0.3229
+            ],
+            "processing_time_ms": 63.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "00",
+            "normalized_text": "00",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2809,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\grayscale\\cam17_TRK-0170_frame011460_pts381966_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0172",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 389633.0,
+      "last_seen_pts_ms": 389633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0173",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 388966.0,
+      "last_seen_pts_ms": 388966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0179",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 400633.0,
+      "last_seen_pts_ms": 400633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0183",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.3192,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 409633.0,
+      "last_seen_pts_ms": 409633.0,
+      "supporting_frame_ids": [
+        12290
+      ],
+      "candidate_scores": {
+        "3": 0.3192,
+        "5": 0.2071,
+        "11": 0.2059
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0183",
+          "frame_id": 12290,
+          "pts_ms": 409633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15554.39,
+          "plate_bbox": [
+            14,
+            698,
+            34,
+            718
+          ],
+          "plate_detection_confidence": 0.132,
+          "plate_quality_score": 0.7977,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "3",
+            "confidence": 0.0493,
+            "character_confidences": [
+              0.0493
+            ],
+            "processing_time_ms": 109.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "3",
+            "normalized_text": "3",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2192,
+          "image_crop_path": "data\\snapshots\\cam17\\plates\\cam17_TRK-0183_frame012290_pts409633_plate01.jpg"
+        },
+        {
+          "camera_id": "cam17",
+          "track_id": "TRK-0183",
+          "frame_id": 12290,
+          "pts_ms": 409633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 15554.39,
+          "plate_bbox": [
+            14,
+            698,
+            34,
+            718
+          ],
+          "plate_detection_confidence": 0.132,
+          "plate_quality_score": 0.7977,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "5",
+            "confidence": 0.0191,
+            "character_confidences": [
+              0.0191
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "5",
+            "normalized_text": "5",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2071,
+          "image_crop_path": "data\\snapshots\\cam17\\plates_processed\\grayscale\\cam17_TRK-0183_frame012290_pts409633_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0186",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 417300.0,
+      "last_seen_pts_ms": 417300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0198",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 435300.0,
+      "last_seen_pts_ms": 435300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0204",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 485633.0,
+      "last_seen_pts_ms": 485633.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam17",
+      "track_id": "TRK-0236",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 592966.0,
+      "last_seen_pts_ms": 592966.0,
       "supporting_frame_ids": [],
       "candidate_scores": {},
       "evidence_chain": []

@@ -1,0 +1,44 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               ZUZD
+VEHICLE ID:            VEH-000086
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        2
+TOTAL LEGS:            1
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.67 (Engineering Indicator)
+  - Recognition Quality:  0.75
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   1.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam18 (18 Rajkot CCTV) | Track: TRK-0099 | Coords: 22.30100, 70.80200
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 72633.0 ms / 72966.0 ms / 72966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.49, OCR: 0.66)
+   Evidence Image:       data\snapshots\cam18\plates_processed\upscaled\cam18_TRK-0099_frame002190_pts72966_plate02.jpg
+
+2. Camera: cam18 (18 Rajkot CCTV) | Track: TRK-0723 | Coords: 22.30100, 70.80200
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 491633.0 ms / 492633.0 ms / 492633.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.95, OCR: 0.95)
+   Evidence Image:       data\snapshots\cam18\plates_processed\upscaled\cam18_TRK-0723_frame014780_pts492633_plate08.jpg
+
+----------------------------------------------------------------------
+JOURNEY LEGS (Cross-Camera Transit):
+----------------------------------------------------------------------
+Leg 1: cam18 (18 Rajkot CCTV) -> cam18 (18 Rajkot CCTV)
+  Time Delta:             UNRESOLVED (Media PTS not comparable)
+  Approx Distance:        0.0 m (straight-line)
+  Implied Speed:          0.0 km/h (straight-line indicator)
+  Plausibility:           PLAUSIBLE (Consecutive observation on same camera)
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

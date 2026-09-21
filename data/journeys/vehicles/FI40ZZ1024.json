@@ -1,0 +1,63 @@
+{
+  "journey_id": "JRN-FI40ZZ1024",
+  "vehicle_id": "VEH-000107",
+  "registration_number": "FI40ZZ1024",
+  "normalized_registration_number": "FI40ZZ1024",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000107-cam18-TRK-0930",
+      "vehicle_id": "VEH-000107",
+      "registration_number": "FI40ZZ1024",
+      "normalized_registration_number": "FI40ZZ1024",
+      "camera_id": "cam18",
+      "track_id": "TRK-0930",
+      "first_seen_pts_ms": 748300.0,
+      "recognition_pts_ms": 748300.0,
+      "last_seen_pts_ms": 749300.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.5343,
+      "ocr_confidence": 0.1115,
+      "camera_name": "18 Rajkot CCTV",
+      "camera_latitude": 22.301,
+      "camera_longitude": 70.802,
+      "evidence_image": "data\\snapshots\\cam18\\plates_processed\\upscaled\\cam18_TRK-0930_frame022450_pts748300_plate04.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam18-TRK-0930-748300"
+      ]
+    }
+  ],
+  "legs": [],
+  "confidence_score": {
+    "overall_score": 0.5378,
+    "recognition_quality": 0.3652,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 1.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.534, avg_ocr=0.112 \u2192 score=0.3652 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 1/1 cameras have coordinates \u2192 score=1.0 (weight 15%)",
+      "Plausibility: no legs (single segment or no sequence) \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": null,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "AVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue.",
+    "Only one camera observation segment \u2014 no cross-camera journey legs can be formed."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-21T18:48:58.646653+00:00"
+}

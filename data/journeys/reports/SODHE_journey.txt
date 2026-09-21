@@ -1,0 +1,43 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               SODHE
+VEHICLE ID:            VEH-000040
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        2
+TOTAL LEGS:            1
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.68 (Engineering Indicator)
+  - Recognition Quality:  0.78
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   1.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam02 (02 Janpath) | Track: TRK-0657 | Coords: 23.02860, 72.56200
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 319466.0 ms / 319966.0 ms / 319966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.68, OCR: 0.94)
+   Evidence Image:       data\snapshots\cam02\plates_processed\upscaled\cam02_TRK-0657_frame009600_pts319966_plate03.jpg
+
+2. Camera: cam04 (04 Paldi Circle) | Track: TRK-0657 | Coords: 23.01350, 72.56250
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 319466.0 ms / 319966.0 ms / 319966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.68, OCR: 0.94)
+   Evidence Image:       data\snapshots\cam04\plates_processed\upscaled\cam04_TRK-0657_frame009600_pts319966_plate03.jpg
+
+----------------------------------------------------------------------
+JOURNEY LEGS (Cross-Camera Transit):
+----------------------------------------------------------------------
+Leg 1: cam02 (02 Janpath) -> cam04 (04 Paldi Circle)
+  Time Delta:             UNRESOLVED (Media PTS not comparable)
+  Approx Distance:        1679.8 m (straight-line)
+  Plausibility:           UNKNOWN (Source time unresolved; distance known but speed cannot be calculated)
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

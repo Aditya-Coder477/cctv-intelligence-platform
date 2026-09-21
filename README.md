@@ -364,6 +364,77 @@ Designed for statewide and multi-city surveillance scaling (up to 80,000+ camera
 
 ---
 
+## 🚗 Step 11 — Cross-Camera Vehicle Correlation & Journey Reconstruction
+
+Step 11 correlates recognized vehicle sightings across the integrated CCTV network into an observation history and journey timeline, adhering to the **Common-Clock Rule**:
+
+### Key Principles
+- **No Global PTS Assumption:** Camera-local PTS values are never subtracted across different cameras to fabricate travel durations or speeds.
+- **Strict Timing Separation:**
+  - `source_time_status == "RESOLVED"`: Chronological timeline with Haversine distance, travel time delta, and straight-line implied speed.
+  - `source_time_status == "NOT_RESOLVED"`: Output is explicitly labeled as **`CAMERA-LOCAL OBSERVATION SEQUENCE`** (not a validated route). Cross-camera time deltas are marked unresolved.
+- **Plausibility State Machine:**
+  - `PLAUSIBLE`: Implied speed $\le 120\text{ km/h}$.
+  - `POSSIBLE`: Implied speed between $120\text{ km/h}$ and $200\text{ km/h}$ (warning).
+  - `ANOMALOUS`: Implied speed $> 200\text{ km/h}$ or negative time delta (flagged for review).
+  - `UNKNOWN`: Insufficient temporal or spatial data to compute speed.
+- **Confidence Scoring:** Transparent multi-factor score: Recognition Quality (35%), Temporal Resolution (25%), Spatial Resolution (20%), Plausibility (20%).
+
+### Usage CLI
+```bash
+# Build journeys for all observed vehicles
+python scripts/build_vehicle_journey.py --all
+
+# Query journey for a specific vehicle registration
+python scripts/query_vehicle_journey.py --registration CHME
+
+# Audit journey integrity and Common-Clock rule compliance
+python scripts/validate_journey.py --registration CHME
+
+# Find vehicles observed across multiple distinct cameras
+python scripts/find_multicamera_vehicles.py --min-cameras 2
+```
+
+---
+
+## 🗺️ Step 12 — PostgreSQL + PostGIS + GIS Data Layer
+
+Step 12 establishes PostgreSQL + PostGIS as the authoritative spatial and relational data store for the platform.
+
+### Architecture Highlights
+- **Spatial Indexing:** PostGIS `geometry(Point, 4326)` with GIST indexing on cameras.
+- **Radial & Distance Queries:** High-performance spatial lookups using `ST_DistanceSphere` and `ST_MakeEnvelope`.
+- **Zero Coordinate Fabrication:** Unverified cameras have `geom = NULL`.
+- **Media Timing Integrity:** PTS (`recognition_pts_ms`) and wall-clock `source_time` remain strictly separated.
+- **Evidence Provenance:** Raw OCR text and evidence image crop paths are preserved in `anpr_observations`.
+- **Alembic Migrations:** Versioned schema management with automatic PostGIS extension provisioning.
+
+### Database Setup & Operations
+```bash
+# 1. Initialize database and enable PostGIS extension
+python scripts/init_database.py
+
+# 2. Execute idempotent JSON/JSONL migration
+python scripts/migrate_json_to_postgres.py
+
+# 3. Audit database health and row counts
+python scripts/verify_database.py
+
+# 4. Run database & spatial test suite
+pytest tests/test_database.py -v
+```
+
+### Environment Configuration (.env)
+```env
+DATABASE_HOST=localhost
+DATABASE_PORT=5432
+DATABASE_NAME=cctv_platform
+DATABASE_USER=cctv_user
+DATABASE_PASSWORD=your_password
+```
+
+---
+
 ## 📄 License
 This project is distributed under the **MIT License**. See `LICENSE` for details.
 

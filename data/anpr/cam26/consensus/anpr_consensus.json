@@ -1,0 +1,24 @@
+{
+  "camera_id": "cam26",
+  "total_tracks_processed": 0,
+  "total_plate_candidates_loaded": 0,
+  "candidates_eligible_for_ocr": 0,
+  "candidates_rejected_before_ocr": 0,
+  "rejection_reasons": {},
+  "total_ocr_invocations": 0,
+  "ocr_empty_count": 0,
+  "ocr_low_confidence_count": 0,
+  "ocr_valid_count": 0,
+  "recognition_counts": {
+    "CONFIRMED": 0,
+    "PROBABLE": 0,
+    "UNCERTAIN": 0,
+    "UNREADABLE": 0
+  },
+  "confirmed_count": 0,
+  "probable_count": 0,
+  "uncertain_count": 0,
+  "unreadable_count": 0,
+  "avg_ocr_latency_ms": 0.0,
+  "tracks": []
+}

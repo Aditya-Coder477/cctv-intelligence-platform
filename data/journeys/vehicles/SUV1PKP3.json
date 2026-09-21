@@ -1,0 +1,63 @@
+{
+  "journey_id": "JRN-SUV1PKP3",
+  "vehicle_id": "VEH-000079",
+  "registration_number": "SUV1PKP3",
+  "normalized_registration_number": "SUV1PKP3",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000079-cam15-TRK-0906",
+      "vehicle_id": "VEH-000079",
+      "registration_number": "SUV1PKP3",
+      "normalized_registration_number": "SUV1PKP3",
+      "camera_id": "cam15",
+      "track_id": "TRK-0906",
+      "first_seen_pts_ms": 803300.0,
+      "recognition_pts_ms": 805300.0,
+      "last_seen_pts_ms": 813300.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.9456,
+      "ocr_confidence": 0.4387,
+      "camera_name": "15 Suvidha park",
+      "camera_latitude": 23.045,
+      "camera_longitude": 72.552,
+      "evidence_image": "data\\snapshots\\cam15\\plates_processed\\contrast\\cam15_TRK-0906_frame024160_pts805300_plate05.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam15-TRK-0906-805300"
+      ]
+    }
+  ],
+  "legs": [],
+  "confidence_score": {
+    "overall_score": 0.67,
+    "recognition_quality": 0.7428,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 1.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.946, avg_ocr=0.439 \u2192 score=0.7428 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 1/1 cameras have coordinates \u2192 score=1.0 (weight 15%)",
+      "Plausibility: no legs (single segment or no sequence) \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": null,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "AVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue.",
+    "Only one camera observation segment \u2014 no cross-camera journey legs can be formed."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-21T18:48:58.971355+00:00"
+}

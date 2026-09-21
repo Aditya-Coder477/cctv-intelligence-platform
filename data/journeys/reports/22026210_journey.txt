@@ -1,0 +1,29 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               22026210
+VEHICLE ID:            VEH-000075
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        1
+TOTAL LEGS:            0
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.63 (Engineering Indicator)
+  - Recognition Quality:  0.64
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   1.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam15 (15 Suvidha park) | Track: TRK-0517 | Coords: 23.04500, 72.55200
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 470300.0 ms / 470300.0 ms / 474966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.53, OCR: 0.79)
+   Evidence Image:       data\snapshots\cam15\plates_processed\contrast\cam15_TRK-0517_frame014110_pts470300_plate03.jpg
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

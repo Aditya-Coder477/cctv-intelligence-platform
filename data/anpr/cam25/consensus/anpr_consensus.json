@@ -1,0 +1,70 @@
+{
+  "camera_id": "cam25",
+  "total_tracks_processed": 3,
+  "total_plate_candidates_loaded": 3,
+  "candidates_eligible_for_ocr": 3,
+  "candidates_rejected_before_ocr": 0,
+  "rejection_reasons": {},
+  "total_ocr_invocations": 15,
+  "ocr_empty_count": 15,
+  "ocr_low_confidence_count": 0,
+  "ocr_valid_count": 0,
+  "recognition_counts": {
+    "CONFIRMED": 0,
+    "PROBABLE": 0,
+    "UNCERTAIN": 0,
+    "UNREADABLE": 3
+  },
+  "confirmed_count": 0,
+  "probable_count": 0,
+  "uncertain_count": 0,
+  "unreadable_count": 3,
+  "avg_ocr_latency_ms": 100.0,
+  "tracks": [
+    {
+      "camera_id": "cam25",
+      "track_id": "TRK-0169",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 19966.0,
+      "last_seen_pts_ms": 19966.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam25",
+      "track_id": "TRK-0373",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 44300.0,
+      "last_seen_pts_ms": 44300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "cam25",
+      "track_id": "TRK-0389",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 46300.0,
+      "last_seen_pts_ms": 46300.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    }
+  ]
+}

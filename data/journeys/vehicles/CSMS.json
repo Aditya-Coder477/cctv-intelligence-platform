@@ -1,0 +1,63 @@
+{
+  "journey_id": "JRN-CSMS",
+  "vehicle_id": "VEH-000027",
+  "registration_number": "CSMS",
+  "normalized_registration_number": "CSMS",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000027-cam01-TRK-5267",
+      "vehicle_id": "VEH-000027",
+      "registration_number": "CSMS",
+      "normalized_registration_number": "CSMS",
+      "camera_id": "cam01",
+      "track_id": "TRK-5267",
+      "first_seen_pts_ms": 2731966.0,
+      "recognition_pts_ms": 2732966.0,
+      "last_seen_pts_ms": 2733466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.8385,
+      "ocr_confidence": 0.9812,
+      "camera_name": "01 Chiman bhai Bridge",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-5267_frame081990_pts2732966_plate02.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam01-TRK-5267-2732966"
+      ]
+    }
+  ],
+  "legs": [],
+  "confidence_score": {
+    "overall_score": 0.7235,
+    "recognition_quality": 0.8956,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 1.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.839, avg_ocr=0.981 \u2192 score=0.8956 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 1/1 cameras have coordinates \u2192 score=1.0 (weight 15%)",
+      "Plausibility: no legs (single segment or no sequence) \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": null,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "AVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue.",
+    "Only one camera observation segment \u2014 no cross-camera journey legs can be formed."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-21T18:48:58.610008+00:00"
+}

@@ -1,0 +1,54 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               MS3R
+VEHICLE ID:            VEH-000030
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        3
+TOTAL LEGS:            2
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.72 (Engineering Indicator)
+  - Recognition Quality:  0.88
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   1.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam01 (01 Chiman bhai Bridge) | Track: TRK-5675 | Coords: 23.06730, 72.58150
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 2978966.0 ms / 2978966.0 ms / 2978966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.82, OCR: 0.97)
+   Evidence Image:       data\snapshots\cam01\plates_processed\grayscale\cam01_TRK-5675_frame089370_pts2978966_plate01.jpg
+
+2. Camera: cam02 (02 Janpath) | Track: TRK-5675 | Coords: 23.02860, 72.56200
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 2978966.0 ms / 2978966.0 ms / 2978966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.82, OCR: 0.97)
+   Evidence Image:       data\snapshots\cam02\plates_processed\grayscale\cam02_TRK-5675_frame089370_pts2978966_plate01.jpg
+
+3. Camera: cam04 (04 Paldi Circle) | Track: TRK-5675 | Coords: 23.01350, 72.56250
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 2978966.0 ms / 2978966.0 ms / 2978966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.82, OCR: 0.97)
+   Evidence Image:       data\snapshots\cam04\plates_processed\grayscale\cam04_TRK-5675_frame089370_pts2978966_plate01.jpg
+
+----------------------------------------------------------------------
+JOURNEY LEGS (Cross-Camera Transit):
+----------------------------------------------------------------------
+Leg 1: cam01 (01 Chiman bhai Bridge) -> cam02 (02 Janpath)
+  Time Delta:             UNRESOLVED (Media PTS not comparable)
+  Approx Distance:        4743.3 m (straight-line)
+  Plausibility:           UNKNOWN (Source time unresolved; distance known but speed cannot be calculated)
+
+Leg 2: cam02 (02 Janpath) -> cam04 (04 Paldi Circle)
+  Time Delta:             UNRESOLVED (Media PTS not comparable)
+  Approx Distance:        1679.8 m (straight-line)
+  Plausibility:           UNKNOWN (Source time unresolved; distance known but speed cannot be calculated)
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

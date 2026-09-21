@@ -1,0 +1,110 @@
+{
+  "journey_id": "JRN-ZUZD",
+  "vehicle_id": "VEH-000086",
+  "registration_number": "ZUZD",
+  "normalized_registration_number": "ZUZD",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000086-cam18-TRK-0099",
+      "vehicle_id": "VEH-000086",
+      "registration_number": "ZUZD",
+      "normalized_registration_number": "ZUZD",
+      "camera_id": "cam18",
+      "track_id": "TRK-0099",
+      "first_seen_pts_ms": 72633.0,
+      "recognition_pts_ms": 72966.0,
+      "last_seen_pts_ms": 72966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.4898,
+      "ocr_confidence": 0.6575,
+      "camera_name": "18 Rajkot CCTV",
+      "camera_latitude": 22.301,
+      "camera_longitude": 70.802,
+      "evidence_image": "data\\snapshots\\cam18\\plates_processed\\upscaled\\cam18_TRK-0099_frame002190_pts72966_plate02.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam18-TRK-0099-72966"
+      ]
+    },
+    {
+      "segment_id": "SEG-VEH-000086-cam18-TRK-0723",
+      "vehicle_id": "VEH-000086",
+      "registration_number": "ZUZD",
+      "normalized_registration_number": "ZUZD",
+      "camera_id": "cam18",
+      "track_id": "TRK-0723",
+      "first_seen_pts_ms": 491633.0,
+      "recognition_pts_ms": 492633.0,
+      "last_seen_pts_ms": 492633.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.9458,
+      "ocr_confidence": 0.9496,
+      "camera_name": "18 Rajkot CCTV",
+      "camera_latitude": 22.301,
+      "camera_longitude": 70.802,
+      "evidence_image": "data\\snapshots\\cam18\\plates_processed\\upscaled\\cam18_TRK-0723_frame014780_pts492633_plate08.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam18-TRK-0723-492633"
+      ]
+    }
+  ],
+  "legs": [
+    {
+      "leg_id": "LEG-VEH-000086-0001",
+      "vehicle_id": "VEH-000086",
+      "from_observation_id": "SEG-VEH-000086-cam18-TRK-0099",
+      "to_observation_id": "SEG-VEH-000086-cam18-TRK-0723",
+      "from_camera_id": "cam18",
+      "to_camera_id": "cam18",
+      "from_camera_name": "18 Rajkot CCTV",
+      "to_camera_name": "18 Rajkot CCTV",
+      "from_source_time": null,
+      "to_source_time": null,
+      "time_delta_seconds": null,
+      "straight_line_distance_m": 0.0,
+      "distance_status": "AVAILABLE",
+      "distance_label": "STRAIGHT_LINE_DISTANCE",
+      "implied_speed_kmh": 0.0,
+      "implied_speed_label": "IMPLIED STRAIGHT-LINE SPEED",
+      "source_time_status": "NOT_RESOLVED",
+      "plausibility": "PLAUSIBLE",
+      "plausibility_reason": "Consecutive observation on same camera"
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.6732,
+    "recognition_quality": 0.7521,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 1.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.718, avg_ocr=0.804 \u2192 score=0.7521 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 2/2 cameras have coordinates \u2192 score=1.0 (weight 15%)",
+      "Plausibility: all 1 leg(s) are not ANOMALOUS \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": 0.0,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "AVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-21T18:48:59.119112+00:00"
+}

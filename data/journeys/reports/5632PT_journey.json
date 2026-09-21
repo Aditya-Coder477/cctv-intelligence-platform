@@ -1,0 +1,157 @@
+{
+  "journey_id": "JRN-5632PT",
+  "vehicle_id": "VEH-000005",
+  "registration_number": "5632PT",
+  "normalized_registration_number": "5632PT",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000005-cam01-TRK-0736",
+      "vehicle_id": "VEH-000005",
+      "registration_number": "5632PT",
+      "normalized_registration_number": "5632PT",
+      "camera_id": "cam01",
+      "track_id": "TRK-0736",
+      "first_seen_pts_ms": 366966.0,
+      "recognition_pts_ms": 366966.0,
+      "last_seen_pts_ms": 366966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.5585,
+      "ocr_confidence": 0.6095,
+      "camera_name": "01 Chiman bhai Bridge",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-0736_frame011010_pts366966_plate01.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam01-TRK-0736-366966"
+      ]
+    },
+    {
+      "segment_id": "SEG-VEH-000005-cam02-TRK-0736",
+      "vehicle_id": "VEH-000005",
+      "registration_number": "5632PT",
+      "normalized_registration_number": "5632PT",
+      "camera_id": "cam02",
+      "track_id": "TRK-0736",
+      "first_seen_pts_ms": 366966.0,
+      "recognition_pts_ms": 366966.0,
+      "last_seen_pts_ms": 366966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.5585,
+      "ocr_confidence": 0.6095,
+      "camera_name": "02 Janpath",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-0736_frame011010_pts366966_plate01.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam02-TRK-0736-366966"
+      ]
+    },
+    {
+      "segment_id": "SEG-VEH-000005-cam04-TRK-0736",
+      "vehicle_id": "VEH-000005",
+      "registration_number": "5632PT",
+      "normalized_registration_number": "5632PT",
+      "camera_id": "cam04",
+      "track_id": "TRK-0736",
+      "first_seen_pts_ms": 366966.0,
+      "recognition_pts_ms": 366966.0,
+      "last_seen_pts_ms": 366966.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.5585,
+      "ocr_confidence": 0.6095,
+      "camera_name": "04 Paldi Circle",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "evidence_image": "data\\snapshots\\cam04\\plates\\cam04_TRK-0736_frame011010_pts366966_plate01.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam04-TRK-0736-366966"
+      ]
+    }
+  ],
+  "legs": [
+    {
+      "leg_id": "LEG-VEH-000005-0001",
+      "vehicle_id": "VEH-000005",
+      "from_observation_id": "SEG-VEH-000005-cam01-TRK-0736",
+      "to_observation_id": "SEG-VEH-000005-cam02-TRK-0736",
+      "from_camera_id": "cam01",
+      "to_camera_id": "cam02",
+      "from_camera_name": "01 Chiman bhai Bridge",
+      "to_camera_name": "02 Janpath",
+      "from_source_time": null,
+      "to_source_time": null,
+      "time_delta_seconds": null,
+      "straight_line_distance_m": 4743.3,
+      "distance_status": "AVAILABLE",
+      "distance_label": "STRAIGHT_LINE_DISTANCE",
+      "implied_speed_kmh": null,
+      "implied_speed_label": "IMPLIED STRAIGHT-LINE SPEED",
+      "source_time_status": "NOT_RESOLVED",
+      "plausibility": "UNKNOWN",
+      "plausibility_reason": "Source time unresolved; distance known but speed cannot be calculated"
+    },
+    {
+      "leg_id": "LEG-VEH-000005-0002",
+      "vehicle_id": "VEH-000005",
+      "from_observation_id": "SEG-VEH-000005-cam02-TRK-0736",
+      "to_observation_id": "SEG-VEH-000005-cam04-TRK-0736",
+      "from_camera_id": "cam02",
+      "to_camera_id": "cam04",
+      "from_camera_name": "02 Janpath",
+      "to_camera_name": "04 Paldi Circle",
+      "from_source_time": null,
+      "to_source_time": null,
+      "time_delta_seconds": null,
+      "straight_line_distance_m": 1679.8,
+      "distance_status": "AVAILABLE",
+      "distance_label": "STRAIGHT_LINE_DISTANCE",
+      "implied_speed_kmh": null,
+      "implied_speed_label": "IMPLIED STRAIGHT-LINE SPEED",
+      "source_time_status": "NOT_RESOLVED",
+      "plausibility": "UNKNOWN",
+      "plausibility_reason": "Source time unresolved; distance known but speed cannot be calculated"
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.6126,
+    "recognition_quality": 0.5789,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 1.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.558, avg_ocr=0.610 \u2192 score=0.5789 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 3/3 cameras have coordinates \u2192 score=1.0 (weight 15%)",
+      "Plausibility: all 2 leg(s) are not ANOMALOUS \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": 6423.1,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "AVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-21T18:48:58.305636+00:00"
+}

@@ -1,0 +1,29 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               CHABHB
+VEHICLE ID:            VEH-000021
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        1
+TOTAL LEGS:            0
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.65 (Engineering Indicator)
+  - Recognition Quality:  0.69
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   1.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam01 (01 Chiman bhai Bridge) | Track: TRK-4013 | Coords: 23.06730, 72.58150
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 2029966.0 ms / 2029966.0 ms / 2030466.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.59, OCR: 0.84)
+   Evidence Image:       data\snapshots\cam01\plates_processed\grayscale\cam01_TRK-4013_frame060900_pts2029966_plate01.jpg
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

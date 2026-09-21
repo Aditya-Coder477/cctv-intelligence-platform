@@ -1,0 +1,26 @@
+# Gujarat Police Innovation Hackathon 2026 - CCTV Intelligence Platform
+# Database Configuration Example
+# Copy to config/database.yaml or use environment variables.
+
+database:
+  host: ${DATABASE_HOST:-localhost}
+  port: ${DATABASE_PORT:-5432}
+  name: ${DATABASE_NAME:-cctv_platform}
+  user: ${DATABASE_USER:-cctv_user}
+  password: ${DATABASE_PASSWORD:-}
+  sslmode: ${DATABASE_SSLMODE:-prefer}
+  pool_size: 10
+  max_overflow: 20
+  pool_timeout: 30
+  pool_recycle: 1800
+
+# Spatial / GIS Settings
+gis:
+  srid: 4326
+  default_search_radius_meters: 5000
+  enable_postgis: true
+
+# Audit & Logging
+logging:
+  echo_sql: false
+  mask_credentials: true

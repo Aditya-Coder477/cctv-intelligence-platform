@@ -1,0 +1,110 @@
+{
+  "journey_id": "JRN-CHMBHBIC",
+  "vehicle_id": "VEH-000039",
+  "registration_number": "CHMBHBIC",
+  "normalized_registration_number": "CHMBHBIC",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000039-cam02-TRK-0336",
+      "vehicle_id": "VEH-000039",
+      "registration_number": "CHMBHBIC",
+      "normalized_registration_number": "CHMBHBIC",
+      "camera_id": "cam02",
+      "track_id": "TRK-0336",
+      "first_seen_pts_ms": 171966.0,
+      "recognition_pts_ms": 171966.0,
+      "last_seen_pts_ms": 172466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.64,
+      "ocr_confidence": 0.7858,
+      "camera_name": "02 Janpath",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "evidence_image": "data\\snapshots\\cam02\\plates_processed\\grayscale\\cam02_TRK-0336_frame005160_pts171966_plate02.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam02-TRK-0336-171966"
+      ]
+    },
+    {
+      "segment_id": "SEG-VEH-000039-cam04-TRK-0336",
+      "vehicle_id": "VEH-000039",
+      "registration_number": "CHMBHBIC",
+      "normalized_registration_number": "CHMBHBIC",
+      "camera_id": "cam04",
+      "track_id": "TRK-0336",
+      "first_seen_pts_ms": 171966.0,
+      "recognition_pts_ms": 171966.0,
+      "last_seen_pts_ms": 172466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.64,
+      "ocr_confidence": 0.7858,
+      "camera_name": "04 Paldi Circle",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "evidence_image": "data\\snapshots\\cam04\\plates_processed\\grayscale\\cam04_TRK-0336_frame005160_pts171966_plate02.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam04-TRK-0336-171966"
+      ]
+    }
+  ],
+  "legs": [
+    {
+      "leg_id": "LEG-VEH-000039-0001",
+      "vehicle_id": "VEH-000039",
+      "from_observation_id": "SEG-VEH-000039-cam02-TRK-0336",
+      "to_observation_id": "SEG-VEH-000039-cam04-TRK-0336",
+      "from_camera_id": "cam02",
+      "to_camera_id": "cam04",
+      "from_camera_name": "02 Janpath",
+      "to_camera_name": "04 Paldi Circle",
+      "from_source_time": null,
+      "to_source_time": null,
+      "time_delta_seconds": null,
+      "straight_line_distance_m": 1679.8,
+      "distance_status": "AVAILABLE",
+      "distance_label": "STRAIGHT_LINE_DISTANCE",
+      "implied_speed_kmh": null,
+      "implied_speed_label": "IMPLIED STRAIGHT-LINE SPEED",
+      "source_time_status": "NOT_RESOLVED",
+      "plausibility": "UNKNOWN",
+      "plausibility_reason": "Source time unresolved; distance known but speed cannot be calculated"
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.6544,
+    "recognition_quality": 0.6983,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 1.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.640, avg_ocr=0.786 \u2192 score=0.6983 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 2/2 cameras have coordinates \u2192 score=1.0 (weight 15%)",
+      "Plausibility: all 1 leg(s) are not ANOMALOUS \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": 1679.8,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "AVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-21T18:48:58.568795+00:00"
+}

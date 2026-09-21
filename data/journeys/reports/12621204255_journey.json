@@ -1,0 +1,63 @@
+{
+  "journey_id": "JRN-12621204255",
+  "vehicle_id": "VEH-000066",
+  "registration_number": "12621204255",
+  "normalized_registration_number": "12621204255",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000066-cam13-TRK-0431",
+      "vehicle_id": "VEH-000066",
+      "registration_number": "12621204255",
+      "normalized_registration_number": "12621204255",
+      "camera_id": "cam13",
+      "track_id": "TRK-0431",
+      "first_seen_pts_ms": 118966.0,
+      "recognition_pts_ms": 118966.0,
+      "last_seen_pts_ms": 120300.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.523,
+      "ocr_confidence": 0.4728,
+      "camera_name": "13 CN Vidhyalaya",
+      "camera_latitude": 23.024,
+      "camera_longitude": 72.545,
+      "evidence_image": "data\\snapshots\\cam13\\plates_processed\\contrast\\cam13_TRK-0431_frame003570_pts118966_plate01.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam13-TRK-0431-118966"
+      ]
+    }
+  ],
+  "legs": [],
+  "confidence_score": {
+    "overall_score": 0.586,
+    "recognition_quality": 0.5029,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 1.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.523, avg_ocr=0.473 \u2192 score=0.5029 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 1/1 cameras have coordinates \u2192 score=1.0 (weight 15%)",
+      "Plausibility: no legs (single segment or no sequence) \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": null,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "AVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue.",
+    "Only one camera observation segment \u2014 no cross-camera journey legs can be formed."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-21T18:48:58.106027+00:00"
+}

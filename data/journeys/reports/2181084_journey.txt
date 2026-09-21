@@ -1,0 +1,29 @@
+======================================================================
+VEHICLE JOURNEY / OBSERVATION REPORT
+======================================================================
+VEHICLE:               2181084
+VEHICLE ID:            VEH-000070
+ORDERING MODE:         CAMERA_LOCAL
+STATUS:                OBSERVATION_SEQUENCE_ONLY
+TOTAL SEGMENTS:        1
+TOTAL LEGS:            0
+----------------------------------------------------------------------
+CONFIDENCE SCORE:      0.70 (Engineering Indicator)
+  - Recognition Quality:  0.82
+  - Temporal Resolution:  0.20
+  - Spatial Resolution:   1.00
+  - Plausibility:         1.00
+    * Source time unresolved; camera-local media PTS only
+----------------------------------------------------------------------
+OBSERVATION SEGMENTS:
+----------------------------------------------------------------------
+1. Camera: cam14 (14 Delight RLVD) | Track: TRK-0911 | Coords: 23.03800, 72.53100
+   Time Basis:           CAMERA-LOCAL MEDIA PTS (not globally comparable)
+   PTS First / Rec / Last: 228966.0 ms / 229633.0 ms / 232966.0 ms
+   Status / Consensus:   CONFIRMED (Score: 0.71, OCR: 0.98)
+   Evidence Image:       data\snapshots\cam14\plates\cam14_TRK-0911_frame006890_pts229633_plate03.jpg
+
+======================================================================
+NOTICE: Camera-local PTS values are not globally comparable across cameras.
+This output represents an unverified camera-local observation sequence, NOT a validated route.
+======================================================================

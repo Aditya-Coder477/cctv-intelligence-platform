@@ -1,0 +1,63 @@
+{
+  "journey_id": "JRN-22111",
+  "vehicle_id": "VEH-000042",
+  "registration_number": "22111",
+  "normalized_registration_number": "22111",
+  "ordering_mode": "CAMERA_LOCAL",
+  "status": "OBSERVATION_SEQUENCE_ONLY",
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-000042-cam02-TRK-1949",
+      "vehicle_id": "VEH-000042",
+      "registration_number": "22111",
+      "normalized_registration_number": "22111",
+      "camera_id": "cam02",
+      "track_id": "TRK-1949",
+      "first_seen_pts_ms": 1564466.0,
+      "recognition_pts_ms": 1565466.0,
+      "last_seen_pts_ms": 1565466.0,
+      "source_time": null,
+      "source_time_status": "NOT_RESOLVED",
+      "loop_instance": null,
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.2095,
+      "ocr_confidence": 0.0663,
+      "camera_name": "02 Janpath",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-1949_frame046965_pts1565466_plate02.jpg",
+      "evidence_filename_pts_status": "MATCH",
+      "supporting_observation_count": 1,
+      "observation_ids": [
+        "OBS-cam02-TRK-1949-1565466"
+      ]
+    }
+  ],
+  "legs": [],
+  "confidence_score": {
+    "overall_score": 0.4633,
+    "recognition_quality": 0.1522,
+    "temporal_resolution": 0.2,
+    "spatial_resolution": 1.0,
+    "plausibility_consistency": 1.0,
+    "notes": [
+      "Source time unresolved; camera-local media PTS only"
+    ],
+    "explanations": [
+      "Recognition quality: avg_consensus=0.209, avg_ocr=0.066 \u2192 score=0.1522 (weight 35%)",
+      "Temporal resolution: 0 segments have RESOLVED source time \u2192 score=0.2 (minimum floor; weight 30%). ingested_at_utc is NOT used \u2014 only a verified calendar anchor qualifies.",
+      "Spatial resolution: 1/1 cameras have coordinates \u2192 score=1.0 (weight 15%)",
+      "Plausibility: no legs (single segment or no sequence) \u2192 score=1.0 (weight 20%)"
+    ]
+  },
+  "total_distance_m": null,
+  "total_duration_seconds": null,
+  "time_resolution": "NOT_RESOLVED",
+  "spatial_resolution": "AVAILABLE",
+  "limitations": [
+    "Source/calendar time is unresolved \u2014 journey uses camera-local media PTS only. No time anchor (wall_time, server_epoch) found in Sentinel camera catalogue.",
+    "Only one camera observation segment \u2014 no cross-camera journey legs can be formed."
+  ],
+  "media_session_id": null,
+  "created_at": "2026-09-21T18:48:58.220221+00:00"
+}
