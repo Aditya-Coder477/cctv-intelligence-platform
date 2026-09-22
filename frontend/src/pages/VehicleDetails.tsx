@@ -150,6 +150,7 @@ export const VehicleDetails: React.FC = () => {
                       src={item.evidence_url}
                       alt="Plate Crop"
                       className="w-full h-full object-contain"
+                      onError={(e) => { (e.currentTarget as HTMLElement).style.display = 'none'; }}
                     />
                     <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
                       <Image className="w-4 h-4 text-white" />

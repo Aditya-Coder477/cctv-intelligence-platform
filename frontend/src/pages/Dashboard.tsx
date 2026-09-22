@@ -237,6 +237,7 @@ export const Dashboard: React.FC = () => {
                           src={obs.evidence_url}
                           alt="Plate Evidence"
                           className="w-10 h-6 object-cover rounded border border-police-700"
+                          onError={(e) => { (e.currentTarget as HTMLElement).style.display = 'none'; }}
                         />
                       ) : (
                         <div className="w-10 h-6 bg-police-900 rounded border border-police-700 flex items-center justify-center text-[10px] font-mono text-slate-500">

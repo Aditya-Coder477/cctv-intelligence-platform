@@ -131,39 +131,54 @@ export const Vehicles: React.FC = () => {
                     <StatusBadge type="recognition" value="CONFIRMED" size="sm" />
                   </div>
 
-                  {/* Evidence Snapshot (if available) */}
-                  {firstObs?.evidence_url ? (
-                    <div className="mb-3 h-28 w-full rounded-lg overflow-hidden border border-police-800 bg-black flex items-center justify-center">
-                      <img
-                        src={firstObs.evidence_url}
-                        alt="Plate crop"
-                        className="h-full w-full object-contain group-hover:scale-105 transition-transform duration-300"
-                      />
+                  {/* Recognition & Telemetry Card */}
+                  <div className="p-3 bg-police-950/80 border border-police-800/80 rounded-lg space-y-2.5 mb-3">
+                    <div>
+                      <div className="flex justify-between text-xs mb-1">
+                        <span className="text-slate-400">OCR Consensus:</span>
+                        <span className="text-emerald-400 font-mono font-bold">
+                          {(veh.best_consensus_score * 100).toFixed(1)}%
+                        </span>
+                      </div>
+                      <div className="w-full bg-police-900 h-1.5 rounded-full overflow-hidden">
+                        <div
+                          className="bg-emerald-500 h-full rounded-full transition-all"
+                          style={{ width: `${Math.min(Math.max(veh.best_consensus_score * 100, 10), 100)}%` }}
+                        />
+                      </div>
                     </div>
-                  ) : (
-                    <div className="mb-3 h-28 w-full rounded-lg border border-police-800 bg-police-950/80 flex flex-col items-center justify-center text-slate-500 text-xs">
-                      <Car className="w-8 h-8 mb-1 opacity-40" />
-                      <span>No plate snapshot</span>
-                    </div>
-                  )}
 
-                  {/* Telemetry info */}
-                  <div className="space-y-1.5 text-xs text-slate-400">
-                    <div className="flex justify-between">
-                      <span>Best Consensus Score:</span>
-                      <span className="text-emerald-400 font-mono font-bold">
-                        {(veh.best_consensus_score * 100).toFixed(1)}%
+                    <div className="flex items-center justify-between text-xs pt-1 border-t border-police-800/60">
+                      <span className="text-slate-400">Sightings / Nodes:</span>
+                      <span className="text-slate-200 font-mono font-semibold">
+                        {veh.observation_count} sighting{veh.observation_count > 1 ? "s" : ""} · {veh.camera_count} cam{veh.camera_count > 1 ? "s" : ""}
                       </span>
                     </div>
-                    <div className="flex justify-between">
-                      <span>Sightings / Cameras:</span>
-                      <span className="text-slate-200 font-mono">
-                        {veh.observation_count} sightings across {veh.camera_count} camera(s)
-                      </span>
+
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-slate-400">Cameras:</span>
+                      <div className="flex gap-1 flex-wrap justify-end">
+                        {veh.cameras && veh.cameras.length > 0 ? (
+                          veh.cameras.slice(0, 3).map((cam) => (
+                            <span
+                              key={cam}
+                              className="px-1.5 py-0.5 rounded bg-police-800 text-[10px] font-mono text-police-300 uppercase"
+                            >
+                              {cam}
+                            </span>
+                          ))
+                        ) : (
+                          <span className="text-slate-500 text-[10px] font-mono">cam01</span>
+                        )}
+                        {veh.cameras && veh.cameras.length > 3 && (
+                          <span className="text-slate-500 text-[10px] font-mono">+{veh.cameras.length - 3}</span>
+                        )}
+                      </div>
                     </div>
-                    <div className="flex justify-between">
-                      <span>Source PTS:</span>
-                      <span className="text-slate-300 font-mono">
+
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-slate-400">Source PTS:</span>
+                      <span className="text-slate-300 font-mono text-[11px]">
                         {firstObs?.first_seen_pts_ms ? `${(firstObs.first_seen_pts_ms / 1000).toFixed(1)}s` : "Local"}
                       </span>
                     </div>
@@ -171,7 +186,7 @@ export const Vehicles: React.FC = () => {
                 </div>
 
                 {/* Bottom action */}
-                <div className="mt-4 pt-3 border-t border-police-800/80 flex items-center justify-between text-xs text-police-400 group-hover:text-white font-medium">
+                <div className="mt-2 pt-3 border-t border-police-800/80 flex items-center justify-between text-xs text-police-400 group-hover:text-white font-medium">
                   <span>Open Vehicle Dossier & Journey</span>
                   <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </div>

@@ -117,6 +117,7 @@ export const AlertDetails: React.FC = () => {
                   src={alert.evidence_url}
                   alt="Evidence"
                   className="w-48 h-28 object-cover rounded-lg border border-police-700 bg-black shrink-0"
+                  onError={(e) => { (e.currentTarget as HTMLElement).style.display = 'none'; }}
                 />
               ) : (
                 <div className="w-48 h-28 bg-police-950 border border-police-800 rounded-lg flex items-center justify-center text-xs text-slate-600 font-mono shrink-0">

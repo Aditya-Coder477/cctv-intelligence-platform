@@ -26,9 +26,11 @@ def _format_evidence_url(image_path: Optional[str]) -> Optional[str]:
     if not image_path:
         return None
     p = image_path.replace("\\", "/").strip()
-    if p.startswith("data/"):
-        return f"/api/evidence/{p[5:]}"
-    return f"/api/evidence/{p}"
+    rel = p[5:] if p.startswith("data/") else p
+    disk_file = PROJECT_ROOT / "data" / rel
+    if not disk_file.exists():
+        return None
+    return f"/api/evidence/{rel}"
 
 
 def _load_state():

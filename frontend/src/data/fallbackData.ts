@@ -770,8 +770,8 @@ export const FALLBACK_ALERTS: Alert[] = ([
     "recognition_pts_ms": 2728966.0,
     "source_time": null,
     "source_time_status": "NOT_RESOLVED",
-    "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-5259_frame081870_pts2728966_plate02.jpg",
-    "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/grayscale/cam01_TRK-5259_frame081870_pts2728966_plate02.jpg",
+    "evidence_image": null,
+    "evidence_url": null,
     "matched_at_utc": "2026-09-14T13:32:22.921981+00:00",
     "acknowledged_by": "Officer Patel",
     "acknowledged_at": "2026-09-14T15:21:28.337172+00:00",
@@ -810,8 +810,8 @@ export const FALLBACK_ALERTS: Alert[] = ([
     "recognition_pts_ms": 171966.0,
     "source_time": null,
     "source_time_status": "NOT_RESOLVED",
-    "evidence_image": "data\\snapshots\\cam02\\plates_processed\\grayscale\\cam02_TRK-0336_frame005160_pts171966_plate02.jpg",
-    "evidence_url": "/api/evidence/snapshots/cam02/plates_processed/grayscale/cam02_TRK-0336_frame005160_pts171966_plate02.jpg",
+    "evidence_image": null,
+    "evidence_url": null,
     "matched_at_utc": "2026-09-14T13:32:22.932227+00:00",
     "acknowledged_by": null,
     "acknowledged_at": null,
@@ -844,8 +844,8 @@ export const FALLBACK_ALERTS: Alert[] = ([
     "recognition_pts_ms": 171966.0,
     "source_time": null,
     "source_time_status": "NOT_RESOLVED",
-    "evidence_image": "data\\snapshots\\cam04\\plates_processed\\grayscale\\cam04_TRK-0336_frame005160_pts171966_plate02.jpg",
-    "evidence_url": "/api/evidence/snapshots/cam04/plates_processed/grayscale/cam04_TRK-0336_frame005160_pts171966_plate02.jpg",
+    "evidence_image": null,
+    "evidence_url": null,
     "matched_at_utc": "2026-09-14T13:32:22.952727+00:00",
     "acknowledged_by": null,
     "acknowledged_at": null,
@@ -1036,10 +1036,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.5394,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-0047_frame000690_pts22966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.800754+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/sharpened/cam01_TRK-0047_frame000690_pts22966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -1051,10 +1051,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.87,
-        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-0864_frame013215_pts440466_plate02.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.978197+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates/cam02_TRK-0864_frame013215_pts440466_plate02.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -1066,10 +1066,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.87,
-        "evidence_image": "data\\snapshots\\cam04\\plates\\cam04_TRK-0864_frame013215_pts440466_plate02.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.188469+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates/cam04_TRK-0864_frame013215_pts440466_plate02.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
@@ -1113,10 +1113,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.7629,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-0117_frame001470_pts48966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.801798+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/contrast/cam01_TRK-0117_frame001470_pts48966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -1128,10 +1128,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.7629,
-        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-0117_frame001470_pts48966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.961122+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates_processed/contrast/cam02_TRK-0117_frame001470_pts48966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -1143,10 +1143,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.7629,
-        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\contrast\\cam04_TRK-0117_frame001470_pts48966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.179441+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates_processed/contrast/cam04_TRK-0117_frame001470_pts48966_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.262679+00:00",
@@ -1188,10 +1188,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.5015,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-0538_frame005730_pts170437_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.811339+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/grayscale/cam01_TRK-0538_frame005730_pts170437_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -1233,10 +1233,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.7967,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-0657_frame009600_pts319966_plate02.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.815066+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/upscaled/cam01_TRK-0657_frame009600_pts319966_plate02.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -1280,10 +1280,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.5585,
-        "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-0736_frame011010_pts366966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.819399+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates/cam01_TRK-0736_frame011010_pts366966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -1295,10 +1295,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.5585,
-        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-0736_frame011010_pts366966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.973998+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates/cam02_TRK-0736_frame011010_pts366966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -1310,10 +1310,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.5585,
-        "evidence_image": "data\\snapshots\\cam04\\plates\\cam04_TRK-0736_frame011010_pts366966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.184743+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates/cam04_TRK-0736_frame011010_pts366966_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.262679+00:00",
@@ -1357,10 +1357,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.709,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-0791_frame012105_pts403466_plate03.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.823927+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/contrast/cam01_TRK-0791_frame012105_pts403466_plate03.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -1372,10 +1372,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.709,
-        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-0791_frame012105_pts403466_plate03.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.976629+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates_processed/contrast/cam02_TRK-0791_frame012105_pts403466_plate03.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -1387,10 +1387,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.709,
-        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\contrast\\cam04_TRK-0791_frame012105_pts403466_plate03.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.186878+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates_processed/contrast/cam04_TRK-0791_frame012105_pts403466_plate03.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.262679+00:00",
@@ -1432,10 +1432,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.539,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-0854_frame013155_pts438466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.828790+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/grayscale/cam01_TRK-0854_frame013155_pts438466_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -1477,10 +1477,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.6093,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-0864_frame013245_pts441466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.830430+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/grayscale/cam01_TRK-0864_frame013245_pts441466_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -1522,10 +1522,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.7353,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-0924_frame013965_pts465466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.835339+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/sharpened/cam01_TRK-0924_frame013965_pts465466_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -1567,10 +1567,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.4855,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-0994_frame014925_pts497466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.836936+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/contrast/cam01_TRK-0994_frame014925_pts497466_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -1612,10 +1612,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.4827,
-        "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-1230_frame012390_pts614793_plate03.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.840640+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates/cam01_TRK-1230_frame012390_pts614793_plate03.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -1659,10 +1659,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.9119,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-1291_frame018840_pts627966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.841174+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/grayscale/cam01_TRK-1291_frame018840_pts627966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -1674,10 +1674,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.9119,
-        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\grayscale\\cam02_TRK-1291_frame018840_pts627966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.987573+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates_processed/grayscale/cam02_TRK-1291_frame018840_pts627966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -1689,10 +1689,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.9119,
-        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\grayscale\\cam04_TRK-1291_frame018840_pts627966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.194914+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates_processed/grayscale/cam04_TRK-1291_frame018840_pts627966_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
@@ -1736,10 +1736,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.5656,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-1848_frame026115_pts870466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.857946+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/sharpened/cam01_TRK-1848_frame026115_pts870466_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -1751,10 +1751,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.5656,
-        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\sharpened\\cam02_TRK-1848_frame026115_pts870466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.003915+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates_processed/sharpened/cam02_TRK-1848_frame026115_pts870466_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -1766,10 +1766,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.5656,
-        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\sharpened\\cam04_TRK-1848_frame026115_pts870466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.206693+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates_processed/sharpened/cam04_TRK-1848_frame026115_pts870466_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
@@ -1811,10 +1811,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.6587,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-2311_frame032865_pts1095466_plate05.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.870531+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/grayscale/cam01_TRK-2311_frame032865_pts1095466_plate05.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -1858,10 +1858,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.9596,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-2462_frame034845_pts1161466_plate02.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.876308+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/upscaled/cam01_TRK-2462_frame034845_pts1161466_plate02.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -1873,10 +1873,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.9596,
-        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-2462_frame034845_pts1161466_plate02.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.031353+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates_processed/upscaled/cam02_TRK-2462_frame034845_pts1161466_plate02.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -1888,10 +1888,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.9596,
-        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\upscaled\\cam04_TRK-2462_frame034845_pts1161466_plate02.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.223862+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates_processed/upscaled/cam04_TRK-2462_frame034845_pts1161466_plate02.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
@@ -1933,10 +1933,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.6021,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-2548_frame036255_pts1208466_plate04.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.878401+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/upscaled/cam01_TRK-2548_frame036255_pts1208466_plate04.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -1980,10 +1980,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.4635,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-2600_frame037170_pts1238966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.879441+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/upscaled/cam01_TRK-2600_frame037170_pts1238966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -1995,10 +1995,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.4635,
-        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-2600_frame037170_pts1238966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.035099+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates_processed/upscaled/cam02_TRK-2600_frame037170_pts1238966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -2010,10 +2010,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.4635,
-        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\upscaled\\cam04_TRK-2600_frame037170_pts1238966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.225993+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates_processed/upscaled/cam04_TRK-2600_frame037170_pts1238966_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
@@ -2057,10 +2057,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.6846,
-        "evidence_image": "data\\snapshots\\cam01\\plates\\cam01_TRK-2745_frame039885_pts1329466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.881592+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates/cam01_TRK-2745_frame039885_pts1329466_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -2072,10 +2072,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.8846,
-        "evidence_image": "data\\snapshots\\cam02\\plates\\cam02_TRK-2745_frame039885_pts1329466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.037742+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates/cam02_TRK-2745_frame039885_pts1329466_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -2087,10 +2087,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.8846,
-        "evidence_image": "data\\snapshots\\cam04\\plates\\cam04_TRK-2745_frame039885_pts1329466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.228128+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates/cam04_TRK-2745_frame039885_pts1329466_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
@@ -2134,10 +2134,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.2196,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\upscaled\\cam01_TRK-3020_frame043830_pts1460966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.883704+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/upscaled/cam01_TRK-3020_frame043830_pts1460966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -2149,10 +2149,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.2196,
-        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\upscaled\\cam02_TRK-3020_frame043830_pts1460966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.039311+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates_processed/upscaled/cam02_TRK-3020_frame043830_pts1460966_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -2164,10 +2164,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.2196,
-        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\upscaled\\cam04_TRK-3020_frame043830_pts1460966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.229190+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates_processed/upscaled/cam04_TRK-3020_frame043830_pts1460966_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
@@ -2209,10 +2209,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.8243,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\sharpened\\cam01_TRK-3538_frame052335_pts1744466_plate04.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.887865+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/sharpened/cam01_TRK-3538_frame052335_pts1744466_plate04.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -2254,10 +2254,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.5895,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-4013_frame060900_pts2029966_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.891546+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/grayscale/cam01_TRK-4013_frame060900_pts2029966_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -2299,10 +2299,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.3858,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-4765_frame073200_pts2439966_plate02.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.894666+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/contrast/cam01_TRK-4765_frame073200_pts2439966_plate02.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -2344,10 +2344,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.1788,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-4913_frame075885_pts2529466_plate02.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.896265+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/contrast/cam01_TRK-4913_frame075885_pts2529466_plate02.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
@@ -2391,10 +2391,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.6168,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\contrast\\cam01_TRK-4914_frame075855_pts2528466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.896265+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/contrast/cam01_TRK-4914_frame075855_pts2528466_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam02",
@@ -2406,10 +2406,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.6168,
-        "evidence_image": "data\\snapshots\\cam02\\plates_processed\\contrast\\cam02_TRK-4914_frame075855_pts2528466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.047638+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam02/plates_processed/contrast/cam02_TRK-4914_frame075855_pts2528466_plate01.jpg"
+        "evidence_url": null
       },
       {
         "camera_id": "cam04",
@@ -2421,10 +2421,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.6168,
-        "evidence_image": "data\\snapshots\\cam04\\plates_processed\\contrast\\cam04_TRK-4914_frame075855_pts2528466_plate01.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:03.239337+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam04/plates_processed/contrast/cam04_TRK-4914_frame075855_pts2528466_plate01.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:03.263209+00:00",
@@ -2466,10 +2466,10 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "source_time_status": "NOT_RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.4943,
-        "evidence_image": "data\\snapshots\\cam01\\plates_processed\\grayscale\\cam01_TRK-5251_frame081555_pts2718466_plate02.jpg",
+        "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
         "ingested_at_utc": "2026-09-14T13:32:02.901476+00:00",
-        "evidence_url": "/api/evidence/snapshots/cam01/plates_processed/grayscale/cam01_TRK-5251_frame081555_pts2718466_plate02.jpg"
+        "evidence_url": null
       }
     ],
     "ingested_at_utc": "2026-09-14T13:32:02.925642+00:00",
