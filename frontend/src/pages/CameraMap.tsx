@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useMemo, useRef } from "react"
 import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap, useMapEvents } from "react-leaflet"
 import L from "leaflet"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useSearchParams } from "react-router-dom"
 import {
   MapPin,
   AlertCircle,
@@ -26,7 +26,8 @@ import {
   RefreshCw,
   Compass,
   ArrowRight,
-  Info
+  Info,
+  Navigation
 } from "lucide-react"
 import { api, getEvidenceUrl } from "../services/api"
 import { Camera, Alert, ObservedVehicle } from "../types"
@@ -38,7 +39,8 @@ const MapEventsHandler: React.FC<{
   onZoomChange: (zoom: number) => void
   centerTarget: [number, number] | null
   targetZoom: number | null
-}> = ({ onZoomChange, centerTarget, targetZoom }) => {
+  boundsTarget?: L.LatLngBoundsExpression | null
+}> = ({ onZoomChange, centerTarget, targetZoom, boundsTarget }) => {
   const map = useMapEvents({
     zoomend: () => {
       onZoomChange(map.getZoom())
@@ -46,10 +48,12 @@ const MapEventsHandler: React.FC<{
   })
 
   useEffect(() => {
-    if (centerTarget) {
+    if (boundsTarget) {
+      map.fitBounds(boundsTarget, { padding: [60, 60], maxZoom: 15, animate: true })
+    } else if (centerTarget) {
       map.setView(centerTarget, targetZoom || map.getZoom(), { animate: true })
     }
-  }, [centerTarget, targetZoom, map])
+  }, [centerTarget, targetZoom, boundsTarget, map])
 
   return null
 }
@@ -137,16 +141,24 @@ function createAlertIcon() {
   })
 }
 
-function createSequenceIcon(index: number) {
+function createSequenceIcon(index: number, cameraName?: string) {
   return L.divIcon({
     className: "tactical-sequence-pin",
     html: `
-      <div style="width: 28px; height: 28px; border-radius: 50%; background: #1e3a8a; border: 2px solid #60a5fa; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 10px rgba(96,165,250,0.8); font-family: monospace; font-weight: 900; font-size: 11px; color: #ffffff;">
-        ${index}
+      <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+        <div style="width: 32px; height: 32px; border-radius: 50%; background: #0284c7; border: 2.5px solid #38bdf8; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 14px rgba(56,189,248,0.9); font-family: monospace; font-weight: 900; font-size: 13px; color: #ffffff;">
+          ${index}
+        </div>
+        ${cameraName ? `
+          <div style="margin-top: 2px; padding: 1px 6px; background: rgba(6,13,27,0.95); border: 1px solid #38bdf8; border-radius: 4px; font-size: 9px; font-family: monospace; color: #e0f2fe; white-space: nowrap; box-shadow: 0 2px 6px rgba(0,0,0,0.8);">
+            ${cameraName}
+          </div>
+        ` : ""}
       </div>
     `,
-    iconSize: [28, 28],
-    iconAnchor: [14, 14],
+    iconSize: [100, 52],
+    iconAnchor: [50, 16],
+    popupAnchor: [0, -20],
   })
 }
 
@@ -161,6 +173,7 @@ interface RegionalCluster {
 
 export const CameraMap: React.FC = () => {
   const navigate = useNavigate()
+  const [searchParams] = useSearchParams()
 
   // Data states
   const [cameras, setCameras] = useState<Camera[]>([])
@@ -178,11 +191,17 @@ export const CameraMap: React.FC = () => {
   const [currentZoom, setCurrentZoom] = useState<number>(8)
   const [centerTarget, setCenterTarget] = useState<[number, number] | null>(null)
   const [targetZoom, setTargetZoom] = useState<number | null>(null)
+  const [boundsTarget, setBoundsTarget] = useState<L.LatLngBoundsExpression | null>(null)
 
   // Layer toggles
   const [showFilterPanel, setShowFilterPanel] = useState<boolean>(true)
   const [showAlertsLayer, setShowAlertsLayer] = useState<boolean>(true)
   const [showObservationSequence, setShowObservationSequence] = useState<boolean>(false)
+
+  // Vehicle Tracing & Investigation States
+  const [vehicleSearchQuery, setVehicleSearchQuery] = useState<string>("")
+  const [traceNotice, setTraceNotice] = useState<string | null>(null)
+  const [traceError, setTraceError] = useState<string | null>(null)
 
   // Filter states
   const [search, setSearch] = useState<string>("")
@@ -371,44 +390,76 @@ export const CameraMap: React.FC = () => {
     }
   }, [cameras, cameraAlertsMap])
 
-  // Observation Sequence data calculation
+  // Confirmed vehicles list for quick trace selection
+  const confirmedVehiclesList = useMemo(() => {
+    return vehicles.filter(
+      (v) =>
+        v.status === "CONFIRMED" ||
+        (v.timeline && v.timeline.length >= 2) ||
+        (v.best_consensus_score || 0) >= 0.5
+    )
+  }, [vehicles])
+
+  // Observation Sequence data calculation & Checkpoints
   const sequenceData = useMemo(() => {
     if (!showObservationSequence || !selectedVehicleReg) return null
 
-    const veh = vehicles.find(
-      (v) => v.registration_number === selectedVehicleReg || v.normalized_registration_number === selectedVehicleReg
-    )
-    if (!veh || !veh.timeline || veh.timeline.length < 2) return null
+    const clean = selectedVehicleReg.toUpperCase().replace(/\s+/g, "")
+    const veh = vehicles.find((v) => {
+      const reg = (v.registration_number || "").toUpperCase().replace(/\s+/g, "")
+      const norm = (v.normalized_registration_number || "").toUpperCase().replace(/\s+/g, "")
+      const vid = (v.vehicle_id || "").toUpperCase().replace(/\s+/g, "")
+      return reg === clean || norm === clean || vid === clean
+    })
+    if (!veh) return null
 
-    // Map each timeline observation to its camera coordinates if verified
+    // Map each timeline observation or camera to verified spatial camera coordinates
     const points: Array<{
       camera_id: string
       name: string
       lat: number
       lon: number
       pts_ms?: number
-      track_id: string
+      track_id?: string
       consensus: number
       evidence_image?: string
     }> = []
 
-    veh.timeline.forEach((seg) => {
-      const cam = cameras.find((c) => c.camera_id === seg.camera_id)
-      if (cam && cam.latitude != null && cam.longitude != null) {
-        points.push({
-          camera_id: cam.camera_id,
-          name: cam.name,
-          lat: cam.latitude,
-          lon: cam.longitude,
-          pts_ms: seg.first_seen_pts_ms,
-          track_id: seg.track_id,
-          consensus: seg.consensus_score,
-          evidence_image: seg.evidence_image,
-        })
-      }
-    })
+    if (veh.timeline && veh.timeline.length > 0) {
+      veh.timeline.forEach((seg) => {
+        const cam = cameras.find((c) => c.camera_id === seg.camera_id)
+        if (cam && cam.latitude != null && cam.longitude != null) {
+          points.push({
+            camera_id: cam.camera_id,
+            name: cam.name,
+            lat: cam.latitude,
+            lon: cam.longitude,
+            pts_ms: seg.first_seen_pts_ms || seg.recognition_pts_ms,
+            track_id: seg.track_id,
+            consensus: seg.consensus_score || veh.best_consensus_score || 0.85,
+            evidence_image: seg.evidence_image,
+          })
+        }
+      })
+    } else if (veh.cameras && veh.cameras.length > 0) {
+      veh.cameras.forEach((cid) => {
+        const cam = cameras.find((c) => c.camera_id === cid)
+        if (cam && cam.latitude != null && cam.longitude != null) {
+          points.push({
+            camera_id: cam.camera_id,
+            name: cam.name,
+            lat: cam.latitude,
+            lon: cam.longitude,
+            pts_ms: undefined,
+            track_id: undefined,
+            consensus: veh.best_consensus_score || 0.85,
+            evidence_image: undefined,
+          })
+        }
+      })
+    }
 
-    if (points.length < 2) return null
+    if (points.length === 0) return null
 
     return {
       vehicle: veh,
@@ -416,6 +467,72 @@ export const CameraMap: React.FC = () => {
       polylineCoords: points.map((p) => [p.lat, p.lon] as [number, number]),
     }
   }, [showObservationSequence, selectedVehicleReg, vehicles, cameras])
+
+  // Confirmed vehicle tracing handler
+  const handleTraceVehicle = (query: string) => {
+    if (!query.trim()) return
+    setTraceError(null)
+
+    const clean = query.trim().toUpperCase().replace(/\s+/g, "")
+    const matched = vehicles.find((v) => {
+      const reg = (v.registration_number || "").toUpperCase().replace(/\s+/g, "")
+      const norm = (v.normalized_registration_number || "").toUpperCase().replace(/\s+/g, "")
+      const vid = (v.vehicle_id || "").toUpperCase().replace(/\s+/g, "")
+      return reg === clean || norm === clean || vid === clean
+    })
+
+    if (!matched) {
+      setTraceError(
+        `Vehicle "${query.trim()}" not found in confirmed records. Only confirmed surveillance vehicles can be traced.`
+      )
+      return
+    }
+
+    setSelectedVehicleReg(matched.registration_number)
+    setShowObservationSequence(true)
+    setTraceNotice(
+      `Tracing confirmed vehicle ${matched.registration_number} across ${matched.camera_count} surveillance cameras.`
+    )
+
+    // Extract trajectory points for map fitting
+    const points: [number, number][] = []
+    const camIds =
+      matched.timeline && matched.timeline.length > 0
+        ? matched.timeline.map((t) => t.camera_id)
+        : matched.cameras || []
+
+    camIds.forEach((cid) => {
+      const cam = cameras.find((c) => c.camera_id === cid)
+      if (cam && cam.latitude != null && cam.longitude != null) {
+        points.push([cam.latitude, cam.longitude])
+      }
+    })
+
+    if (points.length >= 2) {
+      setBoundsTarget(L.latLngBounds(points))
+    } else if (points.length === 1) {
+      setCenterTarget(points[0])
+      setTargetZoom(15)
+    }
+  }
+
+  const handleClearTrace = () => {
+    setSelectedVehicleReg(null)
+    setShowObservationSequence(false)
+    setBoundsTarget(null)
+    setTraceNotice(null)
+    setTraceError(null)
+    setVehicleSearchQuery("")
+  }
+
+  // Auto-trace from URL parameters (e.g. ?reg=CHME or ?trace=CHME)
+  useEffect(() => {
+    const regParam = searchParams.get("reg") || searchParams.get("trace")
+    if (regParam && vehicles.length > 0) {
+      setVehicleSearchQuery(regParam)
+      handleTraceVehicle(regParam)
+    }
+  }, [searchParams, vehicles])
 
   // Handlers
   const handleZoomToCamera = (cam: Camera) => {
@@ -541,37 +658,87 @@ export const CameraMap: React.FC = () => {
         </div>
       </div>
 
-      {/* ── 2. Observation Sequence Disclaimer Notice (When Enabled) ──────── */}
-      {showObservationSequence && (
-        <div className="px-4 py-2.5 rounded-xl bg-blue-950/70 border border-blue-600/60 text-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-md shrink-0">
-          <div className="flex items-center gap-2.5">
-            <Route className="w-4 h-4 text-blue-400 shrink-0" />
-            <div>
-              <span className="font-bold text-blue-200 mr-2">Observation Sequence Mode Active:</span>
-              <span className="text-blue-300/80 text-[11px]">
-                Showing camera checkpoints ordered by local media PTS. (Time Basis: Camera-local media PTS — Unverified spatial continuous route. Does not claim a verified physical journey).
-              </span>
+      {/* ── 2. Confirmed Vehicle Tracing & Trajectory Investigation Console ── */}
+      <div className="p-3 rounded-xl bg-police-950/90 border border-police-800 shadow-md flex flex-col gap-2.5 shrink-0">
+        <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-3">
+          {/* Vehicle ID / Plate Search Input */}
+          <div className="flex items-center gap-2.5 flex-1 max-w-xl">
+            <div className="p-2 rounded-lg bg-blue-950/80 border border-blue-500/40 text-blue-400 shrink-0">
+              <Route className="w-4 h-4" />
+            </div>
+            <div className="relative flex-1">
+              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2.5" />
+              <input
+                type="text"
+                value={vehicleSearchQuery}
+                onChange={(e) => setVehicleSearchQuery(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && handleTraceVehicle(vehicleSearchQuery)}
+                placeholder="Enter Confirmed Vehicle ID / Plate (e.g. CHME, VW1292, CMA66)..."
+                className="w-full bg-police-900 border border-police-700/80 rounded-lg pl-8 pr-24 py-1.5 text-xs text-white placeholder-slate-500 font-mono focus:border-cyan-400 focus:outline-none"
+              />
+              <button
+                onClick={() => handleTraceVehicle(vehicleSearchQuery)}
+                className="absolute right-1 top-1 px-3 py-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold text-xs rounded transition cursor-pointer"
+              >
+                Trace
+              </button>
             </div>
           </div>
 
-          <div className="flex items-center gap-2 shrink-0">
-            <span className="text-[11px] text-slate-300 font-mono font-semibold">Select Target:</span>
-            <select
-              value={selectedVehicleReg || ""}
-              onChange={(e) => setSelectedVehicleReg(e.target.value)}
-              className="px-2 py-1 bg-police-950 border border-blue-500/50 rounded text-xs text-white font-mono focus:outline-none"
-            >
-              {vehicles
-                .filter((v) => v.timeline && v.timeline.length >= 2)
-                .map((v) => (
-                  <option key={v.vehicle_id} value={v.registration_number}>
-                    {v.registration_number} ({v.camera_count} Cameras)
-                  </option>
-                ))}
-            </select>
+          {/* Quick Targets Chips from Confirmed Records */}
+          <div className="flex items-center gap-2 overflow-x-auto text-xs py-0.5">
+            <span className="text-[10px] uppercase font-mono text-slate-400 font-bold shrink-0 flex items-center gap-1">
+              <CheckCircle2 className="w-3 h-3 text-emerald-400" />
+              Confirmed Targets:
+            </span>
+            {confirmedVehiclesList.slice(0, 7).map((v) => (
+              <button
+                key={v.vehicle_id}
+                onClick={() => {
+                  setVehicleSearchQuery(v.registration_number)
+                  handleTraceVehicle(v.registration_number)
+                }}
+                className={`px-2 py-0.5 rounded text-[11px] font-mono border transition shrink-0 cursor-pointer ${
+                  selectedVehicleReg === v.registration_number
+                    ? "bg-cyan-950 border-cyan-400 text-cyan-300 font-bold ring-1 ring-cyan-500/50"
+                    : "bg-police-900 border-police-700/80 text-slate-300 hover:border-police-500"
+                }`}
+              >
+                {v.registration_number} ({v.camera_count} Cams)
+              </button>
+            ))}
           </div>
         </div>
-      )}
+
+        {/* Trace Active Notice */}
+        {traceNotice && showObservationSequence && (
+          <div className="px-3 py-1.5 rounded-lg bg-blue-950/60 border border-blue-600/50 text-xs text-blue-200 flex items-center justify-between">
+            <span className="flex items-center gap-2">
+              <Navigation className="w-3.5 h-3.5 text-cyan-400 animate-pulse" />
+              {traceNotice}
+            </span>
+            <button
+              onClick={handleClearTrace}
+              className="text-slate-400 hover:text-white font-mono text-[11px] flex items-center gap-1 cursor-pointer"
+            >
+              <X className="w-3 h-3" /> Clear Trace
+            </button>
+          </div>
+        )}
+
+        {/* Trace Error Notice */}
+        {traceError && (
+          <div className="px-3 py-1.5 rounded-lg bg-red-950/60 border border-red-700/60 text-xs text-red-200 flex items-center justify-between">
+            <span className="flex items-center gap-2">
+              <AlertTriangle className="w-3.5 h-3.5 text-red-400 shrink-0" />
+              {traceError}
+            </span>
+            <button onClick={() => setTraceError(null)} className="text-slate-400 hover:text-white cursor-pointer">
+              <X className="w-3 h-3" />
+            </button>
+          </div>
+        )}
+      </div>
 
       {/* ── 3. Main Workstation Grid: Filter Panel + Map + Intel Drawer ──── */}
       <div className="flex-1 flex overflow-hidden rounded-xl border border-police-800 bg-police-950 relative">
@@ -752,6 +919,7 @@ export const CameraMap: React.FC = () => {
               onZoomChange={setCurrentZoom}
               centerTarget={centerTarget}
               targetZoom={targetZoom}
+              boundsTarget={boundsTarget}
             />
 
             {/* ── A. Regional Clusters (When Zoom < 11) ────────────────────── */}
@@ -888,25 +1056,27 @@ export const CameraMap: React.FC = () => {
             {/* ── D. Observation Sequence Mode Polyline & Checkpoints ─────── */}
             {sequenceData && (
               <>
-                <Polyline
-                  positions={sequenceData.polylineCoords}
-                  pathOptions={{
-                    color: "#3b82f6",
-                    weight: 3.5,
-                    dashArray: "6, 8",
-                    opacity: 0.85,
-                  }}
-                />
+                {sequenceData.polylineCoords.length >= 2 && (
+                  <Polyline
+                    positions={sequenceData.polylineCoords}
+                    pathOptions={{
+                      color: "#00f0ff",
+                      weight: 4,
+                      dashArray: "8, 8",
+                      opacity: 0.9,
+                    }}
+                  />
+                )}
 
                 {sequenceData.points.map((pt, idx) => (
                   <Marker
                     key={`seq-${pt.camera_id}-${idx}`}
                     position={[pt.lat, pt.lon]}
-                    icon={createSequenceIcon(idx + 1)}
+                    icon={createSequenceIcon(idx + 1, pt.name)}
                   >
                     <Popup className="custom-tactical-popup">
                       <div className="p-2 font-sans text-xs space-y-1">
-                        <div className="font-bold text-blue-900 font-mono">
+                        <div className="font-bold text-cyan-900 font-mono">
                           CHECKPOINT #{idx + 1}: {pt.camera_id.toUpperCase()}
                         </div>
                         <div className="text-slate-800 font-medium">{pt.name}</div>
@@ -925,6 +1095,62 @@ export const CameraMap: React.FC = () => {
               </>
             )}
           </MapContainer>
+
+          {/* ── Floating Active Trajectory Dossier Card ─────────────────── */}
+          {sequenceData && (
+            <div className="absolute top-4 right-4 z-20 max-w-xs sm:max-w-sm bg-police-950/95 backdrop-blur-md border border-cyan-500/60 rounded-xl p-3.5 shadow-2xl space-y-2.5">
+              <div className="flex items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <span className="px-1.5 py-0.5 rounded bg-blue-900/60 border border-blue-500 text-[10px] font-mono font-bold text-white">
+                    IND 🇮🇳
+                  </span>
+                  <span className="text-sm font-black font-mono text-white tracking-wider">
+                    {sequenceData.vehicle.registration_number}
+                  </span>
+                </div>
+                <span className="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-700 text-[10px] font-mono font-bold">
+                  CONFIRMED
+                </span>
+              </div>
+
+              <div className="text-[11px] text-slate-300 font-mono space-y-1 bg-police-900/60 p-2 rounded-lg border border-police-800">
+                <div className="flex justify-between">
+                  <span className="text-slate-400">Traversed Nodes:</span>
+                  <span className="text-cyan-300 font-bold">{sequenceData.points.length} Cameras</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-400">Route Flow:</span>
+                  <span
+                    className="text-white truncate max-w-[180px] text-[10px]"
+                    title={sequenceData.points.map((p) => p.name).join(" → ")}
+                  >
+                    {sequenceData.points.map((p) => p.camera_id).join(" → ")}
+                  </span>
+                </div>
+                <div className="flex justify-between">
+                  <span className="text-slate-400">Consensus Score:</span>
+                  <span className="text-emerald-400 font-bold">
+                    {Math.round((sequenceData.vehicle.best_consensus_score || 0.85) * 100)}%
+                  </span>
+                </div>
+              </div>
+
+              <div className="flex gap-2 pt-0.5">
+                <button
+                  onClick={handleClearTrace}
+                  className="flex-1 py-1.5 bg-police-800 hover:bg-police-700 text-slate-300 hover:text-white rounded-lg text-xs font-semibold flex items-center justify-center gap-1 transition cursor-pointer"
+                >
+                  <X className="w-3.5 h-3.5" /> Clear
+                </button>
+                <button
+                  onClick={() => navigate(`/vehicles/${encodeURIComponent(sequenceData.vehicle.registration_number)}`)}
+                  className="flex-1 py-1.5 bg-cyan-600 hover:bg-cyan-500 text-black rounded-lg text-xs font-bold flex items-center justify-center gap-1 transition cursor-pointer"
+                >
+                  Dossier <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+              </div>
+            </div>
+          )}
 
           {/* ── Tactical Map Legend (Bottom Right) ───────────────────────── */}
           <div className="absolute bottom-3 right-3 z-10 bg-police-950/90 backdrop-blur border border-police-800 p-2.5 rounded-lg text-[10px] font-mono space-y-1 shadow-xl">
