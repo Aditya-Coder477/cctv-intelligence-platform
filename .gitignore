@@ -55,6 +55,7 @@ Synthetic Dataset_result/
 # Allow the 8 optimized sample CCTV feeds for cloud deployment (all < 70MB)
 !Synthetic Dataset/
 !Synthetic Dataset/*.mp4
+!frontend/public/sample_cctv.mp4
 
 # 5. Generated Snapshots, Detection Crops & Inspection Logs (Saves ~10+ GB)
 data/snapshots/
