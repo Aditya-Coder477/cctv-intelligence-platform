@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react"
-import { Shield, Bell, AlertTriangle, UserCheck, ShieldAlert, Wifi } from "lucide-react"
+import { Shield, Bell, AlertTriangle, UserCheck, ShieldAlert, Wifi, Sun, Moon } from "lucide-react"
 import { useAuth, UserRole } from "../../context/AuthContext"
+import { useTheme } from "../../context/ThemeContext"
 import { api } from "../../services/api"
 import { useNavigate } from "react-router-dom"
 
 export const Navbar: React.FC = () => {
   const { role, operatorName, badgeNumber, setRole } = useAuth()
+  const { theme, toggleTheme } = useTheme()
   const [activeAlertsCount, setActiveAlertsCount] = useState<number>(0)
   const [criticalCount, setCriticalCount] = useState<number>(0)
   const navigate = useNavigate()
@@ -62,12 +64,32 @@ export const Navbar: React.FC = () => {
         <span className="text-purple-400 font-mono text-[11px]">HYBRID MODEL 5</span>
       </div>
 
-      {/* Right controls: Alerts & Role switcher */}
-      <div className="flex items-center gap-4">
+      {/* Right controls: Theme Toggle, Alerts & Role switcher */}
+      <div className="flex items-center gap-3">
+        {/* Dark / Light Mode Toggle Button */}
+        <button
+          onClick={toggleTheme}
+          aria-label={theme === "dark" ? "Switch to light mode" : "Switch to dark mode"}
+          title={theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-police-900 hover:bg-police-850 border border-police-700/60 text-slate-200 transition cursor-pointer group"
+        >
+          {theme === "dark" ? (
+            <>
+              <Sun className="w-4 h-4 text-amber-400 group-hover:rotate-45 transition-transform" />
+              <span className="text-xs font-semibold hidden sm:inline text-amber-300">Light</span>
+            </>
+          ) : (
+            <>
+              <Moon className="w-4 h-4 text-cyan-400 group-hover:-rotate-12 transition-transform" />
+              <span className="text-xs font-semibold hidden sm:inline text-cyan-300">Dark</span>
+            </>
+          )}
+        </button>
+
         {/* Alerts quick badge */}
         <button
           onClick={() => navigate("/alerts")}
-          className="relative flex items-center gap-2 px-3 py-1.5 rounded-md bg-police-900 hover:bg-police-850 border border-police-700/60 text-slate-200 transition"
+          className="relative flex items-center gap-2 px-3 py-1.5 rounded-md bg-police-900 hover:bg-police-850 border border-police-700/60 text-slate-200 transition cursor-pointer"
         >
           <Bell className="w-4 h-4 text-police-400" />
           <span className="text-xs font-semibold">Alerts</span>
