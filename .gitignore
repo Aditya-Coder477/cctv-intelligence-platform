@@ -46,14 +46,15 @@ dist/
 .npm/
 
 # 4. Large Datasets & Video Files
+# Synthetic data and generated datasets (ignored by default)
 Synthetic Dataset_result/
+Synthetic Dataset/
 *.avi
 *.mkv
 *.mov
 *.webm
 *.mp4
 # Allow the 8 optimized sample CCTV feeds for cloud deployment (all < 70MB)
-!Synthetic Dataset/
 !Synthetic Dataset/*.mp4
 !frontend/public/sample_cctv.mp4
 

@@ -27,12 +27,16 @@ import {
   Compass,
   ArrowRight,
   Info,
-  Navigation
+  Navigation,
+  ArrowLeftRight,
+  Sparkles,
+  Check
 } from "lucide-react"
 import { api, getEvidenceUrl } from "../services/api"
 import { Camera, Alert, ObservedVehicle } from "../types"
 import { HlsPlayer } from "../components/player/HlsPlayer"
 import { FALLBACK_CAMERAS, FALLBACK_ALERTS, FALLBACK_VEHICLES } from "../data/fallbackData"
+import { computeShortestPath, ShortestPathResult, haversineDistanceKm } from "../utils/shortestPath"
 
 // ── Map Zoom Controller & State Listener ──────────────────────────────────────
 const MapEventsHandler: React.FC<{
@@ -40,20 +44,49 @@ const MapEventsHandler: React.FC<{
   centerTarget: [number, number] | null
   targetZoom: number | null
   boundsTarget?: L.LatLngBoundsExpression | null
-}> = ({ onZoomChange, centerTarget, targetZoom, boundsTarget }) => {
+  onClearTargets: () => void
+}> = ({ onZoomChange, centerTarget, targetZoom, boundsTarget, onClearTargets }) => {
   const map = useMapEvents({
     zoomend: () => {
       onZoomChange(map.getZoom())
     },
+    dragstart: () => {
+      // User is manually panning - release programmatic target locks immediately
+      onClearTargets()
+    },
   })
+
+  // Ensure map size is properly calculated in flex containers & on resize
+  useEffect(() => {
+    map.invalidateSize()
+    const timer = setTimeout(() => {
+      map.invalidateSize()
+    }, 250)
+    const handleResize = () => {
+      map.invalidateSize()
+    }
+    window.addEventListener("resize", handleResize)
+    return () => {
+      clearTimeout(timer)
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [map])
 
   useEffect(() => {
     if (boundsTarget) {
       map.fitBounds(boundsTarget, { padding: [60, 60], maxZoom: 15, animate: true })
+      const timer = setTimeout(() => {
+        onClearTargets()
+      }, 500)
+      return () => clearTimeout(timer)
     } else if (centerTarget) {
       map.setView(centerTarget, targetZoom || map.getZoom(), { animate: true })
+      const timer = setTimeout(() => {
+        onClearTargets()
+      }, 500)
+      return () => clearTimeout(timer)
     }
-  }, [centerTarget, targetZoom, boundsTarget, map])
+  }, [centerTarget, targetZoom, boundsTarget, map, onClearTargets])
 
   return null
 }
@@ -162,6 +195,32 @@ function createSequenceIcon(index: number, cameraName?: string) {
   })
 }
 
+function createShortestPathIcon(index: number, total: number, cameraName?: string) {
+  const isStart = index === 1
+  const isEnd = index === total
+  const bg = isStart ? "#059669" : isEnd ? "#e11d48" : "#0284c7"
+  const border = isStart ? "#34d399" : isEnd ? "#fb7185" : "#38bdf8"
+  const label = isStart ? "ORIGIN (A)" : isEnd ? "DESTINATION (B)" : `NODE #${index}`
+
+  return L.divIcon({
+    className: "tactical-shortest-pin",
+    html: `
+      <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+        <div style="width: 30px; height: 30px; border-radius: 50%; background: ${bg}; border: 2.5px solid ${border}; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 16px ${bg}; font-family: monospace; font-weight: 900; font-size: 12px; color: #ffffff;">
+          ${isStart ? "A" : isEnd ? "B" : index}
+        </div>
+        <div style="margin-top: 2px; padding: 2px 6px; background: rgba(6,13,27,0.95); border: 1px solid ${border}; border-radius: 4px; font-size: 9px; font-family: monospace; color: #ffffff; white-space: nowrap; box-shadow: 0 2px 6px rgba(0,0,0,0.8); display: flex; flex-direction: column; align-items: center;">
+          <span style="color: ${border}; font-size: 8px; font-weight: bold; line-height: 1;">${label}</span>
+          ${cameraName ? `<span style="font-weight: 500; font-size: 8px; max-width: 90px; overflow: hidden; text-overflow: ellipsis;">${cameraName}</span>` : ""}
+        </div>
+      </div>
+    `,
+    iconSize: [110, 54],
+    iconAnchor: [55, 15],
+    popupAnchor: [0, -20],
+  })
+}
+
 // ── Region Definitions for Low-Zoom Clustering ────────────────────────────────
 interface RegionalCluster {
   id: string
@@ -180,6 +239,11 @@ export const CameraMap: React.FC = () => {
   const [alerts, setAlerts] = useState<Alert[]>([])
   const [vehicles, setVehicles] = useState<ObservedVehicle[]>([])
   const [loading, setLoading] = useState(true)
+  const [isLiveData, setIsLiveData] = useState(false)
+
+  // Animated vehicle trace state (step-through for random corridor vehicle demo)
+  const [animatedVehicleStep, setAnimatedVehicleStep] = useState(0)
+  const animTimerRef = useRef<ReturnType<typeof setInterval> | null>(null)
 
   // Selection states
   const [selectedCamera, setSelectedCamera] = useState<Camera | null>(null)
@@ -204,6 +268,13 @@ export const CameraMap: React.FC = () => {
   const [traceNotice, setTraceNotice] = useState<string | null>(null)
   const [traceError, setTraceError] = useState<string | null>(null)
 
+  // Two-Camera Shortest Path & Redundancy Pruning States
+  const [shortestOriginCam, setShortestOriginCam] = useState<string>("cam01")
+  const [shortestDestCam, setShortestDestCam] = useState<string>("cam04")
+  const [shortestPathData, setShortestPathData] = useState<ShortestPathResult | null>(null)
+  const [pruneRedundantPaths, setPruneRedundantPaths] = useState<boolean>(true)
+  const [showShortestPathPanel, setShowShortestPathPanel] = useState<boolean>(true)
+
   // Filter states
   const [search, setSearch] = useState<string>("")
   const [statusFilter, setStatusFilter] = useState<string>("ALL")
@@ -222,29 +293,25 @@ export const CameraMap: React.FC = () => {
       ])
 
       // If backend returns empty list or cameras without spatial coordinates, fallback to full catalogue
-      const validCams =
-        Array.isArray(camsData) && camsData.length > 0 && camsData.some((c) => c.latitude != null)
-          ? camsData
-          : FALLBACK_CAMERAS
+      const camsLive = Array.isArray(camsData) && camsData.length > 0 && camsData.some((c) => c.latitude != null)
+      const alertsLive = Array.isArray(alertsData) && alertsData.length > 0
+      const vehsLive = Array.isArray(vehsData) && vehsData.length > 0
 
-      const validAlerts =
-        Array.isArray(alertsData) && alertsData.length > 0
-          ? alertsData
-          : FALLBACK_ALERTS
-
-      const validVehs =
-        Array.isArray(vehsData) && vehsData.length > 0
-          ? vehsData
-          : FALLBACK_VEHICLES
+      const validCams = camsLive ? camsData : FALLBACK_CAMERAS
+      const validAlerts = alertsLive ? alertsData : FALLBACK_ALERTS
+      const validVehs = vehsLive ? vehsData : FALLBACK_VEHICLES
 
       setCameras(validCams)
       setAlerts(validAlerts)
       setVehicles(validVehs)
+      // Mark as live only if ALL three sources returned real API data
+      setIsLiveData(camsLive && alertsLive && vehsLive)
     } catch (e) {
       console.error("Failed to load GIS map data, using fallback data", e)
       setCameras(FALLBACK_CAMERAS)
       setAlerts(FALLBACK_ALERTS)
       setVehicles(FALLBACK_VEHICLES)
+      setIsLiveData(false)
     } finally {
       setLoading(false)
     }
@@ -430,6 +497,88 @@ export const CameraMap: React.FC = () => {
     []
   )
 
+  // Sorted list of all 30 spatial cameras (cam01 to cam30) for selectors & investigation
+  const sortedSpatialCameras = useMemo(() => {
+    return [...cameras]
+      .filter((c) => c.latitude != null && c.longitude != null)
+      .sort((a, b) => a.camera_id.localeCompare(b.camera_id, undefined, { numeric: true }))
+  }, [cameras])
+
+  // Unique non-redundant camera corridors across cameras (1-30)
+  // Ensures strictly ONE shortest edge between any two connected cameras
+  const nonRedundantCorridors = useMemo(() => {
+    if (!showAllPaths) return []
+    const corridorMap = new Map<
+      string,
+      {
+        key: string
+        camA: Camera
+        camB: Camera
+        coords: [number, number][]
+        distanceKm: number
+        vehicles: string[]
+        vehicleCount: number
+        color: string
+      }
+    >()
+
+    vehicles.forEach((v) => {
+      const cids = v.cameras || (v.timeline ? v.timeline.map((t) => t.camera_id) : [])
+      const uniqueCids = cids.filter((c, i) => i === 0 || c !== cids[i - 1])
+
+      for (let i = 0; i < uniqueCids.length - 1; i++) {
+        const u = uniqueCids[i]
+        const w = uniqueCids[i + 1]
+        const camU = cameras.find((c) => c.camera_id === u)
+        const camW = cameras.find((c) => c.camera_id === w)
+        if (
+          camU &&
+          camW &&
+          camU.latitude != null &&
+          camU.longitude != null &&
+          camW.latitude != null &&
+          camW.longitude != null
+        ) {
+          const key = [u, w].sort().join("<->")
+          if (!corridorMap.has(key)) {
+            const d = haversineDistanceKm(
+              camU.latitude,
+              camU.longitude,
+              camW.latitude,
+              camW.longitude
+            )
+            corridorMap.set(key, {
+              key,
+              camA: camU,
+              camB: camW,
+              coords: [
+                [camU.latitude, camU.longitude],
+                [camW.latitude, camW.longitude],
+              ],
+              distanceKm: Math.round(d * 100) / 100,
+              vehicles: [v.registration_number],
+              vehicleCount: 1,
+              color: "#38bdf8",
+            })
+          } else {
+            const entry = corridorMap.get(key)!
+            if (!entry.vehicles.includes(v.registration_number)) {
+              entry.vehicles.push(v.registration_number)
+              entry.vehicleCount += 1
+            }
+          }
+        }
+      }
+    })
+
+    return Array.from(corridorMap.values()).map((c) => {
+      let color = "#38bdf8"
+      if (c.vehicleCount >= 4) color = "#c084fc"
+      else if (c.vehicleCount >= 2) color = "#34d399"
+      return { ...c, color }
+    })
+  }, [showAllPaths, vehicles, cameras])
+
   // Pre-calculate trajectories for all top multi-camera vehicles
   const allRoutesData = useMemo(() => {
     if (!showAllPaths) return []
@@ -466,6 +615,39 @@ export const CameraMap: React.FC = () => {
     })
     return routes
   }, [showAllPaths, multiCameraVehicles, cameras, ROUTE_PALETTE])
+
+  // Pick ONE random vehicle from multi-camera vehicles to animate across corridors
+  // This is the "vehicle in motion" demo shown on top of static corridor lines
+  const animatedVehicleData = useMemo(() => {
+    if (!showAllPaths || multiCameraVehicles.length === 0) return null
+    // Pick the vehicle with the most cameras (best demo), fall back to first
+    const v = multiCameraVehicles[0]
+    const cids = v.cameras || (v.timeline ? v.timeline.map((t) => t.camera_id) : [])
+    const uniqueCids = cids.filter((c, i) => i === 0 || c !== cids[i - 1])
+    const points: Array<{ cid: string; name: string; lat: number; lon: number }> = []
+    uniqueCids.forEach((cid) => {
+      const cam = cameras.find((c) => c.camera_id === cid)
+      if (cam && cam.latitude != null && cam.longitude != null) {
+        points.push({ cid: cam.camera_id, name: cam.name, lat: cam.latitude, lon: cam.longitude })
+      }
+    })
+    if (points.length < 2) return null
+    return { vehicle: v, points }
+  }, [showAllPaths, multiCameraVehicles, cameras])
+
+  // Animate the vehicle step-by-step through camera points every 1.8s
+  useEffect(() => {
+    if (animTimerRef.current) clearInterval(animTimerRef.current)
+    if (!animatedVehicleData) { setAnimatedVehicleStep(0); return }
+    setAnimatedVehicleStep(1)
+    animTimerRef.current = setInterval(() => {
+      setAnimatedVehicleStep((prev) => {
+        const total = animatedVehicleData.points.length
+        return prev >= total ? 1 : prev + 1
+      })
+    }, 1800)
+    return () => { if (animTimerRef.current) clearInterval(animTimerRef.current) }
+  }, [animatedVehicleData])
 
   // Observation Sequence data calculation & Checkpoints
   const sequenceData = useMemo(() => {
@@ -595,14 +777,83 @@ export const CameraMap: React.FC = () => {
     setVehicleSearchQuery("")
   }
 
-  // Auto-trace from URL parameters (e.g. ?reg=CHME or ?trace=CHME)
+  // Two-Camera Shortest Path routing handler
+  const handleFindShortestPath = (fromId?: string, toId?: string) => {
+    const orig = (fromId || shortestOriginCam).toLowerCase()
+    const dest = (toId || shortestDestCam).toLowerCase()
+    if (!orig || !dest) return
+
+    setTraceError(null)
+    const result = computeShortestPath(orig, dest, cameras)
+    if (!result || result.checkpoints.length === 0) {
+      setTraceError(`No camera road network path found between ${orig.toUpperCase()} and ${dest.toUpperCase()}`)
+      return
+    }
+
+    setShortestPathData(result)
+    setSelectedVehicleReg(null)
+    setShowObservationSequence(false)
+
+    setTraceNotice(
+      `Optimal Shortest Path: ${orig.toUpperCase()} ➔ ${dest.toUpperCase()} (${result.total_distance_km} km across ${result.checkpoints.length} cameras). Zero redundant detours.`
+    )
+
+    const pts = result.checkpoints.map((cp) => [cp.latitude, cp.longitude] as [number, number])
+    if (pts.length >= 2) {
+      setBoundsTarget(L.latLngBounds(pts))
+    } else if (pts.length === 1) {
+      setCenterTarget(pts[0])
+      setTargetZoom(15)
+    }
+  }
+
+  const handleSwapShortestPath = () => {
+    const prevOrig = shortestOriginCam
+    const prevDest = shortestDestCam
+    setShortestOriginCam(prevDest)
+    setShortestDestCam(prevOrig)
+    if (shortestPathData) {
+      handleFindShortestPath(prevDest, prevOrig)
+    }
+  }
+
+  const handleClearShortestPath = () => {
+    setShortestPathData(null)
+    setBoundsTarget(null)
+    setTraceNotice(null)
+  }
+
+  const handleClearTargets = () => {
+    setCenterTarget(null)
+    setTargetZoom(null)
+    setBoundsTarget(null)
+  }
+
+  const handleResetMapStateView = () => {
+    setCenterTarget([22.8, 71.8])
+    setTargetZoom(8)
+    setBoundsTarget(null)
+    setSelectedCamera(null)
+    setTraceNotice("Reset view to Gujarat Sector surveillance grid.")
+  }
+
+  // Auto-trace from URL parameters (e.g. ?reg=... or ?camera=...)
   useEffect(() => {
+    const camParam = searchParams.get("camera") || searchParams.get("camera_id") || searchParams.get("cam")
+    if (camParam && cameras.length > 0) {
+      const found = cameras.find((c) => c.camera_id.toLowerCase() === camParam.toLowerCase())
+      if (found && found.latitude != null && found.longitude != null) {
+        handleZoomToCamera(found)
+        setTraceNotice(`Focused on Camera: ${found.name} (${found.camera_id})`)
+      }
+    }
+
     const regParam = searchParams.get("reg") || searchParams.get("trace")
     if (regParam && vehicles.length > 0) {
       setVehicleSearchQuery(regParam)
       handleTraceVehicle(regParam)
     }
-  }, [searchParams, vehicles])
+  }, [searchParams, cameras, vehicles])
 
   // Handlers
   const handleZoomToCamera = (cam: Camera) => {
@@ -619,7 +870,7 @@ export const CameraMap: React.FC = () => {
   }
 
   return (
-    <div className="space-y-3 max-w-[1700px] mx-auto h-[calc(100vh-5.5rem)] flex flex-col">
+    <div className="space-y-2.5 max-w-[1750px] mx-auto h-full flex flex-col min-h-0">
       {/* ── 1. Top Tactical Summary Bar & Command Controls ────────────────── */}
       <div className="flex flex-wrap items-center justify-between gap-3 p-3 bg-police-950/90 border border-police-800 rounded-xl shadow-lg shrink-0">
         <div className="flex items-center gap-3">
@@ -670,6 +921,16 @@ export const CameraMap: React.FC = () => {
           }`}>
             <ShieldAlert className="w-3.5 h-3.5 text-red-400" />
             <span>ALERTS: <strong className="text-red-200">{metrics.activeAlerts}</strong></span>
+          </div>
+
+          {/* Live / Static Data Source Badge */}
+          <div className={`px-3 py-1.5 rounded-lg border flex items-center gap-2 text-[11px] font-mono font-bold ${
+            isLiveData
+              ? "bg-emerald-950/60 border-emerald-500 text-emerald-300"
+              : "bg-amber-950/50 border-amber-600/60 text-amber-300"
+          }`}>
+            <span className={`w-2 h-2 rounded-full ${isLiveData ? "bg-emerald-400 animate-pulse" : "bg-amber-400"}`} />
+            {isLiveData ? "LIVE API" : "STATIC DATA"}
           </div>
         </div>
 
@@ -729,6 +990,15 @@ export const CameraMap: React.FC = () => {
           >
             <Route className="w-3.5 h-3.5 text-purple-400" />
             <span>All Trajectories ({multiCameraVehicles.length})</span>
+          </button>
+
+          <button
+            onClick={handleResetMapStateView}
+            title="Reset View / Fit Entire Gujarat Sector"
+            className="px-2.5 py-1.5 rounded-lg bg-police-900 hover:bg-police-800 text-sky-400 hover:text-white border border-police-700 cursor-pointer flex items-center gap-1.5 text-xs font-semibold"
+          >
+            <Compass className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Reset View</span>
           </button>
 
           <button
@@ -873,6 +1143,133 @@ export const CameraMap: React.FC = () => {
           </div>
         )}
       </div>
+
+      {/* ── 2B. Two-Camera Shortest Path Router & Redundancy Pruning Console ── */}
+      {showShortestPathPanel && (
+        <div className="p-3 rounded-xl bg-police-950/95 border border-emerald-500/40 shadow-lg flex flex-col gap-2.5 shrink-0">
+          <div className="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-3">
+            {/* Left: Origin & Destination Camera Selectors */}
+            <div className="flex flex-wrap items-center gap-2 flex-1">
+              <div className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-emerald-950/80 border border-emerald-600/60 text-emerald-400 font-mono text-[11px] font-bold shrink-0 shadow-sm">
+                <Navigation className="w-3.5 h-3.5" />
+                <span>2-CAMERA SHORTEST PATH:</span>
+              </div>
+
+              {/* Origin Camera Selector */}
+              <div className="flex items-center gap-1">
+                <span className="text-[10px] uppercase font-mono text-emerald-400 font-bold">Start (A):</span>
+                <select
+                  value={shortestOriginCam}
+                  onChange={(e) => setShortestOriginCam(e.target.value)}
+                  aria-label="Select Origin Camera"
+                  className="bg-police-900 border border-emerald-600/70 rounded-lg px-2 py-1 text-xs text-white font-mono focus:border-emerald-400 focus:outline-none cursor-pointer max-w-[210px]"
+                >
+                  {sortedSpatialCameras.map((cam) => (
+                    <option key={`orig-${cam.camera_id}`} value={cam.camera_id} className="bg-police-900 text-white">
+                      {cam.camera_id.toUpperCase()} - {cam.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Swap Button */}
+              <button
+                onClick={handleSwapShortestPath}
+                title="Swap Origin and Destination"
+                className="p-1.5 rounded-lg bg-police-900 hover:bg-police-800 text-emerald-400 border border-police-700 cursor-pointer transition hover:rotate-180"
+              >
+                <ArrowLeftRight className="w-3.5 h-3.5" />
+              </button>
+
+              {/* Destination Camera Selector */}
+              <div className="flex items-center gap-1">
+                <span className="text-[10px] uppercase font-mono text-rose-400 font-bold">End (B):</span>
+                <select
+                  value={shortestDestCam}
+                  onChange={(e) => setShortestDestCam(e.target.value)}
+                  aria-label="Select Destination Camera"
+                  className="bg-police-900 border border-rose-600/70 rounded-lg px-2 py-1 text-xs text-white font-mono focus:border-rose-400 focus:outline-none cursor-pointer max-w-[210px]"
+                >
+                  {sortedSpatialCameras.map((cam) => (
+                    <option key={`dest-${cam.camera_id}`} value={cam.camera_id} className="bg-police-900 text-white">
+                      {cam.camera_id.toUpperCase()} - {cam.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              {/* Find Shortest Path Action Button */}
+              <button
+                onClick={() => handleFindShortestPath()}
+                className="px-3 py-1 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-black font-extrabold text-xs rounded-lg transition shadow-md shadow-emerald-950/60 flex items-center gap-1.5 cursor-pointer"
+              >
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>Calculate Shortest Path</span>
+              </button>
+
+              {shortestPathData && (
+                <button
+                  onClick={handleClearShortestPath}
+                  className="px-2.5 py-1 bg-police-900 hover:bg-police-800 text-slate-400 hover:text-white border border-police-700 rounded-lg text-xs font-mono transition cursor-pointer flex items-center gap-1"
+                >
+                  <X className="w-3 h-3" /> Clear Path
+                </button>
+              )}
+            </div>
+
+            {/* Right: Redundant Path Pruning Mode Badge & Info */}
+            <div className="flex items-center gap-2 text-xs">
+              <label className="flex items-center gap-1.5 px-2.5 py-1 rounded bg-police-900 border border-police-700 text-[11px] font-mono text-slate-300 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  checked={pruneRedundantPaths}
+                  onChange={(e) => setPruneRedundantPaths(e.target.checked)}
+                  className="rounded border-police-600 text-emerald-500 focus:ring-0 cursor-pointer"
+                />
+                <span className="text-emerald-400 font-bold">Prune Redundant Paths</span>
+              </label>
+
+              {shortestPathData && (
+                <span className="px-2.5 py-0.5 rounded bg-emerald-950 border border-emerald-600/70 text-emerald-300 font-mono text-[10px] font-bold flex items-center gap-1">
+                  <Check className="w-3 h-3 text-emerald-400" />
+                  {shortestPathData.total_distance_km} km (Optimal)
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Quick Presets / Corridors across Gujarat (Cameras 1-30) */}
+          <div className="flex items-center gap-1.5 overflow-x-auto text-[11px] font-mono pt-1.5 border-t border-police-900">
+            <span className="text-[10px] uppercase text-slate-500 font-bold shrink-0">Sample Corridors:</span>
+            {[
+              { label: "Ahmedabad: CAM01 ➔ CAM04", from: "cam01", to: "cam04" },
+              { label: "Highway: CAM04 ➔ CAM17", from: "cam04", to: "cam17" },
+              { label: "Saurashtra: CAM17 ➔ CAM07", from: "cam17", to: "cam07" },
+              { label: "Kutch: CAM17 ➔ CAM30", from: "cam17", to: "cam30" },
+              { label: "Navsari: CAM27 ➔ CAM19", from: "cam27", to: "cam19" },
+              { label: "North: CAM12 ➔ CAM22", from: "cam12", to: "cam22" },
+            ].map((p, idx) => (
+              <button
+                key={`preset-${idx}`}
+                onClick={() => {
+                  setShortestOriginCam(p.from)
+                  setShortestDestCam(p.to)
+                  handleFindShortestPath(p.from, p.to)
+                }}
+                className={`px-2 py-0.5 rounded border transition shrink-0 cursor-pointer ${
+                  shortestPathData &&
+                  shortestPathData.origin === p.from &&
+                  shortestPathData.destination === p.to
+                    ? "bg-emerald-950 border-emerald-400 text-emerald-300 font-bold ring-1 ring-emerald-500/40"
+                    : "bg-police-900/90 border-police-800 text-slate-300 hover:border-emerald-600/60 hover:text-white"
+                }`}
+              >
+                {p.label}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* ── 3. Main Workstation Grid: Filter Panel + Map + Intel Drawer ──── */}
       <div className="flex-1 flex overflow-hidden rounded-xl border border-police-800 bg-police-950 relative">
@@ -1037,7 +1434,7 @@ export const CameraMap: React.FC = () => {
         )}
 
         {/* ── Map Canvas ─────────────────────────────────────────────────── */}
-        <div className="flex-1 h-full relative">
+        <div className="flex-1 min-h-[500px] h-full relative">
           <MapContainer
             center={[22.8, 71.8]} // Centered on Gujarat
             zoom={8}
@@ -1054,6 +1451,7 @@ export const CameraMap: React.FC = () => {
               centerTarget={centerTarget}
               targetZoom={targetZoom}
               boundsTarget={boundsTarget}
+              onClearTargets={handleClearTargets}
             />
 
             {/* ── A. Regional Clusters (When Zoom < 11) ────────────────────── */}
@@ -1131,6 +1529,26 @@ export const CameraMap: React.FC = () => {
                             Dossier
                           </button>
                         </div>
+                        <div className="pt-1.5 flex gap-1 border-t border-slate-200">
+                          <button
+                            onClick={() => {
+                              setShortestOriginCam(cam.camera_id)
+                              handleFindShortestPath(cam.camera_id, shortestDestCam)
+                            }}
+                            className="flex-1 py-0.5 bg-emerald-100 hover:bg-emerald-200 text-emerald-900 border border-emerald-400 rounded text-[9px] font-bold font-mono cursor-pointer"
+                          >
+                            📌 Start (A)
+                          </button>
+                          <button
+                            onClick={() => {
+                              setShortestDestCam(cam.camera_id)
+                              handleFindShortestPath(shortestOriginCam, cam.camera_id)
+                            }}
+                            className="flex-1 py-0.5 bg-rose-100 hover:bg-rose-200 text-rose-900 border border-rose-400 rounded text-[9px] font-bold font-mono cursor-pointer"
+                          >
+                            🎯 End (B)
+                          </button>
+                        </div>
                       </div>
                     </Popup>
                   </Marker>
@@ -1187,52 +1605,316 @@ export const CameraMap: React.FC = () => {
                   )
                 })}
 
-            {/* ── All Multi-Camera Simulated Trajectories Layer ──────── */}
+            {/* ── All Multi-Camera Corridors / Trajectories Layer ──────── */}
             {showAllPaths &&
-              allRoutesData.map((route, rIdx) => (
-                <Polyline
-                  key={`all-route-${route.vehicle.registration_number}-${rIdx}`}
-                  positions={route.coords}
-                  pathOptions={{
-                    color: route.color,
-                    weight: selectedVehicleReg === route.vehicle.registration_number ? 5 : 3.5,
-                    dashArray: "6, 8",
-                    opacity: selectedVehicleReg === route.vehicle.registration_number ? 1 : 0.75,
-                  }}
-                  eventHandlers={{
-                    click: () => {
-                      setVehicleSearchQuery(route.vehicle.registration_number)
-                      handleTraceVehicle(route.vehicle.registration_number)
-                    },
-                  }}
-                >
-                  <Popup className="custom-tactical-popup">
-                    <div className="p-2 font-sans text-xs space-y-1">
-                      <div className="font-bold text-white font-mono flex items-center justify-between gap-2">
-                        <span>{route.vehicle.registration_number}</span>
-                        <span className="text-[10px] text-cyan-400 font-bold">{route.vehicle.camera_count} Cameras</span>
-                      </div>
-                      {route.vehicle.vehicle_details?.make_model && (
-                        <div className="text-slate-300 text-[11px] font-semibold">
-                          {route.vehicle.vehicle_details.make_model} ({route.vehicle.vehicle_details.color || "Vehicle"})
+              (pruneRedundantPaths ? (
+                // 1. Non-Redundant Unique Shortest Corridors: Exactly ONE edge per camera pair
+                nonRedundantCorridors.map((corridor) => {
+                  // Get first vehicle's full details for rich popup
+                  const firstReg = corridor.vehicles[0]
+                  const firstVehicle = firstReg ? vehicles.find((v) => v.registration_number === firstReg) : null
+                  return (
+                    <Polyline
+                      key={`corridor-${corridor.key}`}
+                      positions={corridor.coords}
+                      pathOptions={{
+                        color: corridor.color,
+                        weight: 4.5,
+                        dashArray: "6, 8",
+                        opacity: 0.85,
+                      }}
+                    >
+                      <Popup className="custom-tactical-popup">
+                        <div className="p-2 font-sans text-xs space-y-1.5 min-w-[230px]">
+                          {/* Header: Corridor name + distance */}
+                          <div className="font-bold text-white font-mono flex items-center justify-between gap-2 border-b border-police-800 pb-1.5">
+                            <span className="text-cyan-400 text-[11px]">
+                              🛣️ CORRIDOR
+                            </span>
+                            <span className="text-[10px] text-emerald-400 font-bold">{corridor.distanceKm} km</span>
+                          </div>
+
+                          {/* From → To cameras */}
+                          <div className="grid grid-cols-2 gap-1.5 text-[10px]">
+                            <div className="p-1.5 rounded bg-police-900 border border-emerald-600/40">
+                              <span className="text-emerald-400 font-bold block text-[9px] uppercase">From Camera</span>
+                              <span className="text-white font-mono font-bold">{corridor.camA.camera_id.toUpperCase()}</span>
+                              <span className="text-slate-400 block text-[9px] truncate">{corridor.camA.name}</span>
+                            </div>
+                            <div className="p-1.5 rounded bg-police-900 border border-rose-600/40">
+                              <span className="text-rose-400 font-bold block text-[9px] uppercase">To Camera</span>
+                              <span className="text-white font-mono font-bold">{corridor.camB.camera_id.toUpperCase()}</span>
+                              <span className="text-slate-400 block text-[9px] truncate">{corridor.camB.name}</span>
+                            </div>
+                          </div>
+
+                          {/* Sample Vehicle Info (first vehicle traversing this corridor) */}
+                          {firstVehicle && (
+                            <div className="p-1.5 rounded bg-police-900/80 border border-police-700 space-y-0.5">
+                              <span className="text-[9px] text-amber-400 font-bold uppercase block">Sample Vehicle</span>
+                              <div className="flex items-center justify-between">
+                                <span className="text-white font-mono font-black text-[11px]">{firstVehicle.registration_number}</span>
+                                <span className="text-[9px] text-cyan-300 font-mono">{firstVehicle.vehicle_id || ""}</span>
+                              </div>
+                              {firstVehicle.vehicle_details?.make_model && (
+                                <div className="text-[10px] text-slate-300 font-semibold">
+                                  {firstVehicle.vehicle_details.make_model}
+                                  {firstVehicle.vehicle_details?.class ? ` · ${firstVehicle.vehicle_details?.class}` : ""}
+                                </div>
+                              )}
+                              {firstVehicle.vehicle_details?.color && (
+                                <div className="text-[10px] text-slate-400">
+                                  Color: <span className="text-white font-semibold">{firstVehicle.vehicle_details.color}</span>
+                                </div>
+                              )}
+                            </div>
+                          )}
+
+                          {/* Stats row */}
+                          <div className="flex items-center justify-between text-[10px] pt-0.5">
+                            <span className="text-slate-400">Vehicles via this corridor:</span>
+                            <span className="text-amber-300 font-mono font-bold">{corridor.vehicleCount}</span>
+                          </div>
+
+                          {/* Quick trace buttons */}
+                          <div className="flex flex-wrap gap-1 max-w-[220px] max-h-16 overflow-y-auto">
+                            {corridor.vehicles.slice(0, 6).map((reg) => (
+                              <button
+                                key={reg}
+                                onClick={() => {
+                                  setVehicleSearchQuery(reg)
+                                  handleTraceVehicle(reg)
+                                }}
+                                className="px-1.5 py-0.5 rounded bg-police-800 hover:bg-cyan-700 text-white font-mono text-[9px] cursor-pointer"
+                              >
+                                {reg}
+                              </button>
+                            ))}
+                          </div>
+                          <button
+                            onClick={() => {
+                              setShortestOriginCam(corridor.camA.camera_id)
+                              setShortestDestCam(corridor.camB.camera_id)
+                              handleFindShortestPath(corridor.camA.camera_id, corridor.camB.camera_id)
+                            }}
+                            className="w-full py-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold text-[10px] rounded cursor-pointer mt-1"
+                          >
+                            Isolate Shortest Path (A ➔ B)
+                          </button>
                         </div>
-                      )}
-                      <div className="text-[10px] text-slate-400 truncate max-w-[200px]">
-                        {route.cameraNames.join(" → ")}
+                      </Popup>
+                    </Polyline>
+                  )
+                })
+              ) : (
+                // 2. Raw Vehicle Overlays Fallback (When Pruning is toggled off)
+                allRoutesData.map((route, rIdx) => (
+                  <Polyline
+                    key={`all-route-${route.vehicle.registration_number}-${rIdx}`}
+                    positions={route.coords}
+                    pathOptions={{
+                      color: route.color,
+                      weight: selectedVehicleReg === route.vehicle.registration_number ? 5 : 3.5,
+                      dashArray: "6, 8",
+                      opacity: selectedVehicleReg === route.vehicle.registration_number ? 1 : 0.75,
+                    }}
+                    eventHandlers={{
+                      click: () => {
+                        setVehicleSearchQuery(route.vehicle.registration_number)
+                        handleTraceVehicle(route.vehicle.registration_number)
+                      },
+                    }}
+                  >
+                    <Popup className="custom-tactical-popup">
+                      <div className="p-2 font-sans text-xs space-y-1.5 min-w-[230px]">
+                        {/* Header */}
+                        <div className="font-bold text-white font-mono flex items-center justify-between gap-2 border-b border-police-800 pb-1.5">
+                          <span className="text-cyan-400 font-black text-[13px]">{route.vehicle.registration_number}</span>
+                          <span className="text-[10px] px-1.5 py-0.5 rounded bg-cyan-900/60 border border-cyan-600 text-cyan-300 font-bold">
+                            {route.vehicle.camera_count || route.cameraNames.length} Cams
+                          </span>
+                        </div>
+
+                        {/* Vehicle details */}
+                        <div className="p-1.5 rounded bg-police-900/80 border border-police-700 space-y-0.5">
+                          {route.vehicle.vehicle_details?.make_model && (
+                            <div className="text-[11px] text-slate-200 font-semibold">
+                              {route.vehicle.vehicle_details.make_model}
+                              {route.vehicle.vehicle_details?.class ? ` · ${route.vehicle.vehicle_details?.class}` : ""}
+                            </div>
+                          )}
+                          {route.vehicle.vehicle_details?.color && (
+                            <div className="text-[10px] text-slate-400">
+                              Color: <span className="text-white font-semibold">{route.vehicle.vehicle_details.color}</span>
+                            </div>
+                          )}
+                          {route.vehicle.vehicle_id && (
+                            <div className="text-[10px] text-slate-400">
+                              Vehicle ID: <span className="text-cyan-300 font-mono">{route.vehicle.vehicle_id}</span>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* From → To camera */}
+                        <div className="grid grid-cols-2 gap-1.5 text-[10px]">
+                          <div className="p-1.5 rounded bg-police-900 border border-emerald-600/40">
+                            <span className="text-emerald-400 font-bold block text-[9px]">FROM</span>
+                            <span className="text-white font-mono font-bold">{route.cameraNames[0] || "—"}</span>
+                          </div>
+                          <div className="p-1.5 rounded bg-police-900 border border-rose-600/40">
+                            <span className="text-rose-400 font-bold block text-[9px]">TO</span>
+                            <span className="text-white font-mono font-bold">{route.cameraNames[route.cameraNames.length - 1] || "—"}</span>
+                          </div>
+                        </div>
+
+                        {/* Full path */}
+                        <div className="text-[10px] text-slate-400 leading-relaxed">
+                          <span className="text-slate-500">Route: </span>
+                          <span className="text-slate-300">{route.cameraNames.join(" → ")}</span>
+                        </div>
+
+                        <button
+                          onClick={() => {
+                            setVehicleSearchQuery(route.vehicle.registration_number)
+                            handleTraceVehicle(route.vehicle.registration_number)
+                          }}
+                          className="w-full mt-1 py-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold text-[10px] rounded cursor-pointer"
+                        >
+                          Trace Full Route
+                        </button>
                       </div>
-                      <button
-                        onClick={() => {
-                          setVehicleSearchQuery(route.vehicle.registration_number)
-                          handleTraceVehicle(route.vehicle.registration_number)
-                        }}
-                        className="w-full mt-1 py-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold text-[10px] rounded cursor-pointer"
-                      >
-                        Trace Full Route
-                      </button>
-                    </div>
-                  </Popup>
-                </Polyline>
+                    </Popup>
+                  </Polyline>
+                ))
               ))}
+
+            {/* ── F. Animated Vehicle In-Motion Layer ─────────────────────── */}
+            {/* Shows ONE vehicle traversing camera-to-camera corridors step by step */}
+            {showAllPaths && animatedVehicleData && animatedVehicleStep >= 2 && (() => {
+              const pts = animatedVehicleData.points.slice(0, animatedVehicleStep)
+              const coords: [number, number][] = pts.map((p) => [p.lat, p.lon])
+              const currentPt = pts[pts.length - 1]
+              const v = animatedVehicleData.vehicle
+              return (
+                <>
+                  {/* Glowing animated trail */}
+                  <Polyline
+                    positions={coords}
+                    pathOptions={{
+                      color: "#facc15",
+                      weight: 5,
+                      opacity: 1,
+                    }}
+                  />
+                  {/* Current position marker */}
+                  <Marker
+                    key={`anim-vehicle-${animatedVehicleStep}`}
+                    position={[currentPt.lat, currentPt.lon]}
+                    icon={L.divIcon({
+                      className: "animated-vehicle-pin",
+                      html: `
+                        <div style="position:relative;display:flex;flex-direction:column;align-items:center;">
+                          <div style="width:36px;height:36px;border-radius:50%;background:rgba(250,204,21,0.15);border:2.5px solid #facc15;display:flex;align-items:center;justify-content:center;box-shadow:0 0 18px #facc15;animation:ping 1s cubic-bezier(0,0,0.2,1) infinite;">
+                            <span style="font-size:16px;">🚗</span>
+                          </div>
+                          <div style="margin-top:3px;padding:2px 6px;background:rgba(6,13,27,0.97);border:1.5px solid #facc15;border-radius:4px;font-family:monospace;font-size:9px;color:#facc15;white-space:nowrap;font-weight:900;">
+                            ${v.registration_number}
+                          </div>
+                        </div>
+                      `,
+                      iconSize: [120, 54],
+                      iconAnchor: [60, 18],
+                      popupAnchor: [0, -20],
+                    })}
+                    zIndexOffset={2000}
+                  >
+                    <Popup className="custom-tactical-popup">
+                      <div className="p-2 font-sans text-xs space-y-1.5 min-w-[220px]">
+                        <div className="flex items-center justify-between gap-2 border-b border-yellow-700/60 pb-1.5">
+                          <span className="text-yellow-400 font-black font-mono text-[13px]">{v.registration_number}</span>
+                          <span className="px-1.5 py-0.5 rounded bg-yellow-900/60 border border-yellow-600 text-yellow-300 text-[9px] font-bold font-mono animate-pulse">
+                            IN MOTION
+                          </span>
+                        </div>
+                        {v.vehicle_details?.make_model && (
+                          <div className="text-[11px] text-slate-200 font-semibold">
+                            {v.vehicle_details.make_model}
+                            {v.vehicle_details?.class ? ` · ${v.vehicle_details?.class}` : ""}
+                          </div>
+                        )}
+                        {v.vehicle_details?.color && (
+                          <div className="text-[10px] text-slate-400">
+                            Color: <span className="text-white font-semibold">{v.vehicle_details.color}</span>
+                          </div>
+                        )}
+                        {v.vehicle_id && (
+                          <div className="text-[10px] text-slate-400">
+                            Vehicle ID: <span className="text-cyan-300 font-mono">{v.vehicle_id}</span>
+                          </div>
+                        )}
+                        <div className="text-[10px] text-slate-400">
+                          Now at: <span className="text-yellow-300 font-semibold">{currentPt.name}</span>
+                        </div>
+                        <div className="text-[10px] text-slate-400">
+                          Progress: <span className="text-white font-mono">{animatedVehicleStep}/{animatedVehicleData.points.length} cameras</span>
+                        </div>
+                        <button
+                          onClick={() => { setVehicleSearchQuery(v.registration_number); handleTraceVehicle(v.registration_number) }}
+                          className="w-full py-1 bg-yellow-600 hover:bg-yellow-500 text-black font-bold text-[10px] rounded cursor-pointer mt-1"
+                        >
+                          Trace Full Journey
+                        </button>
+                      </div>
+                    </Popup>
+                  </Marker>
+                </>
+              )
+            })()}
+
+
+
+            {/* ── E. Two-Camera Direct Shortest Path Layer (Dijkstra) ─────── */}
+            {shortestPathData && shortestPathData.checkpoints.length >= 2 && (
+              <>
+                <Polyline
+                  positions={shortestPathData.checkpoints.map((cp) => [cp.latitude, cp.longitude])}
+                  pathOptions={{
+                    color: "#10b981",
+                    weight: 6,
+                    dashArray: "8, 6",
+                    opacity: 0.95,
+                  }}
+                />
+
+                {shortestPathData.checkpoints.map((cp, idx) => (
+                  <Marker
+                    key={`shortest-cp-${cp.camera_id}-${idx}`}
+                    position={[cp.latitude, cp.longitude]}
+                    icon={createShortestPathIcon(idx + 1, shortestPathData.checkpoints.length, cp.name)}
+                    zIndexOffset={1000}
+                  >
+                    <Popup className="custom-tactical-popup">
+                      <div className="p-2 font-sans text-xs space-y-1">
+                        <div className="font-bold text-emerald-400 font-mono">
+                          CHECKPOINT #{idx + 1}: {cp.camera_id.toUpperCase()}
+                        </div>
+                        <div className="text-white font-medium">{cp.name}</div>
+                        <div className="text-[10px] text-cyan-300 font-mono">
+                          {idx === 0
+                            ? "🚀 Journey Origin (Start)"
+                            : idx === shortestPathData.checkpoints.length - 1
+                            ? "🏁 Journey Destination (End)"
+                            : "📍 Optimal Road Node"}
+                        </div>
+                        <div className="text-[10px] text-slate-400 font-mono">
+                          Coordinates: {cp.latitude.toFixed(4)}, {cp.longitude.toFixed(4)}
+                        </div>
+                      </div>
+                    </Popup>
+                  </Marker>
+                ))}
+              </>
+            )}
 
             {/* ── D. Observation Sequence Mode Polyline & Checkpoints ─────── */}
             {sequenceData && (
@@ -1277,8 +1959,70 @@ export const CameraMap: React.FC = () => {
             )}
           </MapContainer>
 
+          {/* ── Floating Shortest Path Route Dossier Card ────────────────── */}
+          {shortestPathData && (
+            <div className="absolute top-4 right-4 z-20 max-w-xs sm:max-w-sm bg-police-950/95 backdrop-blur-md border border-emerald-500/60 rounded-xl p-3.5 shadow-2xl space-y-2.5">
+              <div className="flex items-center justify-between gap-3 border-b border-police-800 pb-2">
+                <div className="flex items-center gap-1.5 text-xs font-bold text-white font-mono">
+                  <Navigation className="w-4 h-4 text-emerald-400" />
+                  <span>OPTIMAL SHORTEST ROUTE</span>
+                </div>
+                <span className="px-2 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-700 text-[10px] font-mono font-bold">
+                  0 REDUNDANT PATHS
+                </span>
+              </div>
+
+              <div className="text-[11px] text-slate-300 font-mono space-y-1 bg-police-900/60 p-2.5 rounded-lg border border-police-800">
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-400">Origin (Start A):</span>
+                  <span className="text-emerald-300 font-bold uppercase">{shortestPathData.origin}</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-400">Destination (End B):</span>
+                  <span className="text-rose-400 font-bold uppercase">{shortestPathData.destination}</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-400">Optimal Distance:</span>
+                  <span className="text-amber-300 font-bold">{shortestPathData.total_distance_km} km</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-400">Transit Duration:</span>
+                  <span className="text-cyan-300 font-bold">~{shortestPathData.estimated_transit_minutes} mins</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-slate-400">Camera Checkpoints:</span>
+                  <span className="text-white font-bold">{shortestPathData.checkpoints.length} Nodes</span>
+                </div>
+                <div className="pt-1 border-t border-police-800/80">
+                  <span className="text-slate-400 block text-[10px]">Optimal Progression:</span>
+                  <div
+                    className="text-white text-[10px] font-mono font-semibold truncate"
+                    title={shortestPathData.shortest_path.join(" ➔ ")}
+                  >
+                    {shortestPathData.shortest_path.join(" ➔ ")}
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex gap-2 pt-0.5">
+                <button
+                  onClick={handleClearShortestPath}
+                  className="flex-1 py-1.5 bg-police-800 hover:bg-police-700 text-slate-300 hover:text-white rounded-lg text-xs font-semibold flex items-center justify-center gap-1 transition cursor-pointer"
+                >
+                  <X className="w-3.5 h-3.5" /> Clear Route
+                </button>
+                <button
+                  onClick={handleSwapShortestPath}
+                  className="flex-1 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-black rounded-lg text-xs font-bold flex items-center justify-center gap-1 transition cursor-pointer"
+                >
+                  <ArrowLeftRight className="w-3.5 h-3.5" /> Swap A ⇄ B
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* ── Floating Active Trajectory Dossier Card ─────────────────── */}
-          {sequenceData && (
+          {sequenceData && !shortestPathData && (
             <div className="absolute top-4 right-4 z-20 max-w-xs sm:max-w-sm bg-police-950/95 backdrop-blur-md border border-cyan-500/60 rounded-xl p-3.5 shadow-2xl space-y-2.5">
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2">
@@ -1383,6 +2127,18 @@ export const CameraMap: React.FC = () => {
               <div className="flex items-center gap-1.5 text-blue-300">
                 <span className="text-blue-400 font-bold font-mono">---</span>
                 <span>Obs Sequence</span>
+              </div>
+              <div className="flex items-center gap-1.5 text-emerald-300">
+                <span className="text-emerald-400 font-bold font-mono">===</span>
+                <span>Shortest Path (A➔B)</span>
+              </div>
+              <div className="flex items-center gap-1.5 text-cyan-300">
+                <span className="text-cyan-400 font-bold font-mono">- -</span>
+                <span>Pruned Corridor</span>
+              </div>
+              <div className="flex items-center gap-1.5 text-yellow-300 col-span-2 pt-0.5 border-t border-police-800/60">
+                <span className="text-yellow-400 font-bold">🚗</span>
+                <span className="text-yellow-300">Animated Vehicle (Live Demo)</span>
               </div>
             </div>
           </div>
@@ -1529,6 +2285,27 @@ export const CameraMap: React.FC = () => {
                   >
                     <ShieldAlert className="w-3.5 h-3.5 text-amber-400" />
                     View Alerts
+                  </button>
+                </div>
+
+                <div className="grid grid-cols-2 gap-2 pt-1 border-t border-police-800">
+                  <button
+                    onClick={() => {
+                      setShortestOriginCam(selectedCamera.camera_id)
+                      handleFindShortestPath(selectedCamera.camera_id, shortestDestCam)
+                    }}
+                    className="py-1.5 bg-emerald-950 hover:bg-emerald-900 border border-emerald-600/70 text-emerald-300 rounded-lg text-xs font-mono font-bold transition flex items-center justify-center gap-1 cursor-pointer"
+                  >
+                    📌 Set Origin (A)
+                  </button>
+                  <button
+                    onClick={() => {
+                      setShortestDestCam(selectedCamera.camera_id)
+                      handleFindShortestPath(shortestOriginCam, selectedCamera.camera_id)
+                    }}
+                    className="py-1.5 bg-rose-950 hover:bg-rose-900 border border-rose-600/70 text-rose-300 rounded-lg text-xs font-mono font-bold transition flex items-center justify-center gap-1 cursor-pointer"
+                  >
+                    🎯 Set Dest (B)
                   </button>
                 </div>
               </div>
