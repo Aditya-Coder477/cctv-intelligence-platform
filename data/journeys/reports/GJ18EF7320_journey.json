@@ -1,0 +1,131 @@
+{
+  "journey_id": "JRN-GJ18EF7320",
+  "vehicle_id": "VEH-GJ18EF7320",
+  "registration_number": "GJ18EF7320",
+  "normalized_registration_number": "GJ18EF7320",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 4,
+  "total_distance_km": 783.11,
+  "avg_speed_kmh": 42.7,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ18EF7320-cam22",
+      "vehicle_id": "VEH-GJ18EF7320",
+      "registration_number": "GJ18EF7320",
+      "camera_id": "cam22",
+      "camera_name": "Mervada Three Roads, Banaskantha",
+      "camera_latitude": 24.17,
+      "camera_longitude": 72.43,
+      "source_time": "2026-09-26T15:10:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 50.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18EF7320-cam30",
+      "vehicle_id": "VEH-GJ18EF7320",
+      "registration_number": "GJ18EF7320",
+      "camera_id": "cam30",
+      "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "camera_latitude": 23.076,
+      "camera_longitude": 70.133,
+      "source_time": "2026-09-26T23:21:41.914095+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 32.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18EF7320-cam08",
+      "vehicle_id": "VEH-GJ18EF7320",
+      "registration_number": "GJ18EF7320",
+      "camera_id": "cam08",
+      "camera_name": "Majewadi Gate, Old City, Junagadh",
+      "camera_latitude": 21.528,
+      "camera_longitude": 70.463,
+      "source_time": "2026-09-27T03:07:25.699261+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18EF7320-cam23",
+      "vehicle_id": "VEH-GJ18EF7320",
+      "registration_number": "GJ18EF7320",
+      "camera_id": "cam23",
+      "camera_name": "Kheram Junction, Sabarkantha",
+      "camera_latitude": 23.6,
+      "camera_longitude": 72.95,
+      "source_time": "2026-09-27T09:31:55.964006+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 53.7
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam22",
+      "to_camera_id": "cam30",
+      "from_camera_name": "Mervada Three Roads, Banaskantha",
+      "to_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 32.2
+    },
+    {
+      "from_camera_id": "cam30",
+      "to_camera_id": "cam08",
+      "from_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "to_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.6
+    },
+    {
+      "from_camera_id": "cam08",
+      "to_camera_id": "cam23",
+      "from_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "to_camera_name": "Kheram Junction, Sabarkantha",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 53.7
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.43,
+        24.17
+      ],
+      [
+        70.133,
+        23.076
+      ],
+      [
+        70.463,
+        21.528
+      ],
+      [
+        72.95,
+        23.6
+      ]
+    ]
+  }
+}

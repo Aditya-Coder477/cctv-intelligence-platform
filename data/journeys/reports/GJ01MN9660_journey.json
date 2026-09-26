@@ -1,0 +1,131 @@
+{
+  "journey_id": "JRN-GJ01MN9660",
+  "vehicle_id": "VEH-GJ01MN9660",
+  "registration_number": "GJ01MN9660",
+  "normalized_registration_number": "GJ01MN9660",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 4,
+  "total_distance_km": 810.64,
+  "avg_speed_kmh": 46.4,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ01MN9660-cam28",
+      "vehicle_id": "VEH-GJ01MN9660",
+      "registration_number": "GJ01MN9660",
+      "camera_id": "cam28",
+      "camera_name": "Town Hall Circle, Bilimora",
+      "camera_latitude": 20.762,
+      "camera_longitude": 72.964,
+      "source_time": "2026-09-26T14:11:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN9660-cam06",
+      "vehicle_id": "VEH-GJ01MN9660",
+      "registration_number": "GJ01MN9660",
+      "camera_id": "cam06",
+      "camera_name": "Timbavadi Gate, Junagadh City",
+      "camera_latitude": 21.516,
+      "camera_longitude": 70.4475,
+      "source_time": "2026-09-26T18:57:03.188563+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN9660-cam27",
+      "vehicle_id": "VEH-GJ01MN9660",
+      "registration_number": "GJ01MN9660",
+      "camera_id": "cam27",
+      "camera_name": "Station Road, Bilimora, Navsari",
+      "camera_latitude": 20.76,
+      "camera_longitude": 72.96,
+      "source_time": "2026-09-27T00:48:26.989649+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN9660-cam16",
+      "vehicle_id": "VEH-GJ01MN9660",
+      "registration_number": "GJ01MN9660",
+      "camera_id": "cam16",
+      "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.098,
+      "camera_longitude": 72.593,
+      "source_time": "2026-09-27T07:40:12.771531+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 38.3
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam28",
+      "to_camera_id": "cam06",
+      "from_camera_name": "Town Hall Circle, Bilimora",
+      "to_camera_name": "Timbavadi Gate, Junagadh City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.6
+    },
+    {
+      "from_camera_id": "cam06",
+      "to_camera_id": "cam27",
+      "from_camera_name": "Timbavadi Gate, Junagadh City",
+      "to_camera_name": "Station Road, Bilimora, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.8
+    },
+    {
+      "from_camera_id": "cam27",
+      "to_camera_id": "cam16",
+      "from_camera_name": "Station Road, Bilimora, Navsari",
+      "to_camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 38.3
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.964,
+        20.762
+      ],
+      [
+        70.4475,
+        21.516
+      ],
+      [
+        72.96,
+        20.76
+      ],
+      [
+        72.593,
+        23.098
+      ]
+    ]
+  }
+}

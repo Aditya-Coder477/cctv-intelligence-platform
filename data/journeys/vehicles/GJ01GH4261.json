@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ01GH4261",
+  "vehicle_id": "VEH-GJ01GH4261",
+  "registration_number": "GJ01GH4261",
+  "normalized_registration_number": "GJ01GH4261",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 529.99,
+  "avg_speed_kmh": 37.4,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ01GH4261-cam08",
+      "vehicle_id": "VEH-GJ01GH4261",
+      "registration_number": "GJ01GH4261",
+      "camera_id": "cam08",
+      "camera_name": "Majewadi Gate, Old City, Junagadh",
+      "camera_latitude": 21.528,
+      "camera_longitude": 70.463,
+      "source_time": "2026-09-26T14:10:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 50.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01GH4261-cam28",
+      "vehicle_id": "VEH-GJ01GH4261",
+      "registration_number": "GJ01GH4261",
+      "camera_id": "cam28",
+      "camera_name": "Town Hall Circle, Bilimora",
+      "camera_latitude": 20.762,
+      "camera_longitude": 72.964,
+      "source_time": "2026-09-26T22:24:37.299899+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 33.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01GH4261-cam14",
+      "vehicle_id": "VEH-GJ01GH4261",
+      "registration_number": "GJ01GH4261",
+      "camera_id": "cam14",
+      "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "camera_latitude": 23.038,
+      "camera_longitude": 72.531,
+      "source_time": "2026-09-27T04:20:13.074840+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 43.4
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam08",
+      "to_camera_id": "cam28",
+      "from_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "to_camera_name": "Town Hall Circle, Bilimora",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 33.2
+    },
+    {
+      "from_camera_id": "cam28",
+      "to_camera_id": "cam14",
+      "from_camera_name": "Town Hall Circle, Bilimora",
+      "to_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 43.4
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        70.463,
+        21.528
+      ],
+      [
+        72.964,
+        20.762
+      ],
+      [
+        72.531,
+        23.038
+      ]
+    ]
+  }
+}

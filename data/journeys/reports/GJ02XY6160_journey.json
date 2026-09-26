@@ -1,0 +1,212 @@
+{
+  "journey_id": "JRN-GJ02XY6160",
+  "vehicle_id": "VEH-GJ02XY6160",
+  "registration_number": "GJ02XY6160",
+  "normalized_registration_number": "GJ02XY6160",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 7,
+  "total_distance_km": 875.87,
+  "avg_speed_kmh": 52.6,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ02XY6160-cam08",
+      "vehicle_id": "VEH-GJ02XY6160",
+      "registration_number": "GJ02XY6160",
+      "camera_id": "cam08",
+      "camera_name": "Majewadi Gate, Old City, Junagadh",
+      "camera_latitude": 21.528,
+      "camera_longitude": 70.463,
+      "source_time": "2026-09-26T14:49:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 49.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02XY6160-cam13",
+      "vehicle_id": "VEH-GJ02XY6160",
+      "registration_number": "GJ02XY6160",
+      "camera_id": "cam13",
+      "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "camera_latitude": 23.024,
+      "camera_longitude": 72.545,
+      "source_time": "2026-09-26T19:33:30.475563+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02XY6160-cam20",
+      "vehicle_id": "VEH-GJ02XY6160",
+      "registration_number": "GJ02XY6160",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-26T19:40:23.893739+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 42.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02XY6160-cam17",
+      "vehicle_id": "VEH-GJ02XY6160",
+      "registration_number": "GJ02XY6160",
+      "camera_id": "cam17",
+      "camera_name": "Central Bus Port, Rajkot City",
+      "camera_latitude": 22.304,
+      "camera_longitude": 70.798,
+      "source_time": "2026-09-26T23:24:15.546642+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 53.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02XY6160-cam10",
+      "vehicle_id": "VEH-GJ02XY6160",
+      "registration_number": "GJ02XY6160",
+      "camera_id": "cam10",
+      "camera_name": "Char Chowk Road, Junagadh Central",
+      "camera_latitude": 21.52,
+      "camera_longitude": 70.459,
+      "source_time": "2026-09-27T01:20:06.806761+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 48.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02XY6160-cam03",
+      "vehicle_id": "VEH-GJ02XY6160",
+      "registration_number": "GJ02XY6160",
+      "camera_id": "cam03",
+      "camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+      "camera_latitude": 23.0934,
+      "camera_longitude": 72.5878,
+      "source_time": "2026-09-27T06:55:24.024676+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 50.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02XY6160-cam24",
+      "vehicle_id": "VEH-GJ02XY6160",
+      "registration_number": "GJ02XY6160",
+      "camera_id": "cam24",
+      "camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "camera_latitude": 23.168,
+      "camera_longitude": 72.812,
+      "source_time": "2026-09-27T07:29:11.394047+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 43.3
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam08",
+      "to_camera_id": "cam13",
+      "from_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "to_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.3
+    },
+    {
+      "from_camera_id": "cam13",
+      "to_camera_id": "cam20",
+      "from_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "to_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 42.8
+    },
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam17",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Central Bus Port, Rajkot City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 53.9
+    },
+    {
+      "from_camera_id": "cam17",
+      "to_camera_id": "cam10",
+      "from_camera_name": "Central Bus Port, Rajkot City",
+      "to_camera_name": "Char Chowk Road, Junagadh Central",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 48.6
+    },
+    {
+      "from_camera_id": "cam10",
+      "to_camera_id": "cam03",
+      "from_camera_name": "Char Chowk Road, Junagadh Central",
+      "to_camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 50.2
+    },
+    {
+      "from_camera_id": "cam03",
+      "to_camera_id": "cam24",
+      "from_camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+      "to_camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 43.3
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        70.463,
+        21.528
+      ],
+      [
+        72.545,
+        23.024
+      ],
+      [
+        72.592,
+        23.033
+      ],
+      [
+        70.798,
+        22.304
+      ],
+      [
+        70.459,
+        21.52
+      ],
+      [
+        72.5878,
+        23.0934
+      ],
+      [
+        72.812,
+        23.168
+      ]
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "journey_id": "JRN-GJ02PQ5614",
+  "vehicle_id": "VEH-GJ02PQ5614",
+  "registration_number": "GJ02PQ5614",
+  "normalized_registration_number": "GJ02PQ5614",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 5,
+  "total_distance_km": 892.5,
+  "avg_speed_kmh": 44.4,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ02PQ5614-cam28",
+      "vehicle_id": "VEH-GJ02PQ5614",
+      "registration_number": "GJ02PQ5614",
+      "camera_id": "cam28",
+      "camera_name": "Town Hall Circle, Bilimora",
+      "camera_latitude": 20.762,
+      "camera_longitude": 72.964,
+      "source_time": "2026-09-26T14:27:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02PQ5614-cam18",
+      "vehicle_id": "VEH-GJ02PQ5614",
+      "registration_number": "GJ02PQ5614",
+      "camera_id": "cam18",
+      "camera_name": "Dhebar Road Crossroad, Rajkot",
+      "camera_latitude": 22.301,
+      "camera_longitude": 70.802,
+      "source_time": "2026-09-26T20:19:21.348580+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 48.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02PQ5614-cam23",
+      "vehicle_id": "VEH-GJ02PQ5614",
+      "registration_number": "GJ02PQ5614",
+      "camera_id": "cam23",
+      "camera_name": "Kheram Junction, Sabarkantha",
+      "camera_latitude": 23.6,
+      "camera_longitude": 72.95,
+      "source_time": "2026-09-27T02:54:03.076691+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02PQ5614-cam05",
+      "vehicle_id": "VEH-GJ02PQ5614",
+      "registration_number": "GJ02PQ5614",
+      "camera_id": "cam05",
+      "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.097,
+      "camera_longitude": 72.5925,
+      "source_time": "2026-09-27T04:18:13.086408+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 47.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02PQ5614-cam09",
+      "vehicle_id": "VEH-GJ02PQ5614",
+      "registration_number": "GJ02PQ5614",
+      "camera_id": "cam09",
+      "camera_name": "National Highway Bypass Circle, Junagadh",
+      "camera_latitude": 21.505,
+      "camera_longitude": 70.471,
+      "source_time": "2026-09-27T10:33:17.354329+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 45.0
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam28",
+      "to_camera_id": "cam18",
+      "from_camera_name": "Town Hall Circle, Bilimora",
+      "to_camera_name": "Dhebar Road Crossroad, Rajkot",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 48.0
+    },
+    {
+      "from_camera_id": "cam18",
+      "to_camera_id": "cam23",
+      "from_camera_name": "Dhebar Road Crossroad, Rajkot",
+      "to_camera_name": "Kheram Junction, Sabarkantha",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.0
+    },
+    {
+      "from_camera_id": "cam23",
+      "to_camera_id": "cam05",
+      "from_camera_name": "Kheram Junction, Sabarkantha",
+      "to_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 47.6
+    },
+    {
+      "from_camera_id": "cam05",
+      "to_camera_id": "cam09",
+      "from_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "to_camera_name": "National Highway Bypass Circle, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 45.0
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.964,
+        20.762
+      ],
+      [
+        70.802,
+        22.301
+      ],
+      [
+        72.95,
+        23.6
+      ],
+      [
+        72.5925,
+        23.097
+      ],
+      [
+        70.471,
+        21.505
+      ]
+    ]
+  }
+}

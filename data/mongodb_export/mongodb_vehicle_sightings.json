@@ -1,0 +1,5854 @@
+[
+  {
+    "sighting_id": "SGT-cam28-GJ02PQ5614-1790432862",
+    "vehicle_id": "VEH-GJ02PQ5614",
+    "registration_number": "GJ02PQ5614",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-26T14:27:42.176418+00:00",
+    "timestamp_epoch_ms": 1790432862176,
+    "speed_kmh": 57.6,
+    "confidence_score": 0.97,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam18-GJ02PQ5614-1790453961",
+    "vehicle_id": "VEH-GJ02PQ5614",
+    "registration_number": "GJ02PQ5614",
+    "camera_id": "cam18",
+    "camera_name": "Dhebar Road Crossroad, Rajkot",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.802,
+        22.301
+      ]
+    },
+    "timestamp": "2026-09-26T20:19:21.348580+00:00",
+    "timestamp_epoch_ms": 1790453961348,
+    "speed_kmh": 48.0,
+    "confidence_score": 0.9,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam23-GJ02PQ5614-1790477643",
+    "vehicle_id": "VEH-GJ02PQ5614",
+    "registration_number": "GJ02PQ5614",
+    "camera_id": "cam23",
+    "camera_name": "Kheram Junction, Sabarkantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.95,
+        23.6
+      ]
+    },
+    "timestamp": "2026-09-27T02:54:03.076691+00:00",
+    "timestamp_epoch_ms": 1790477643076,
+    "speed_kmh": 40.0,
+    "confidence_score": 0.99,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam05-GJ02PQ5614-1790482693",
+    "vehicle_id": "VEH-GJ02PQ5614",
+    "registration_number": "GJ02PQ5614",
+    "camera_id": "cam05",
+    "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5925,
+        23.097
+      ]
+    },
+    "timestamp": "2026-09-27T04:18:13.086408+00:00",
+    "timestamp_epoch_ms": 1790482693086,
+    "speed_kmh": 47.6,
+    "confidence_score": 0.97,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ02PQ5614-1790505197",
+    "vehicle_id": "VEH-GJ02PQ5614",
+    "registration_number": "GJ02PQ5614",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-27T10:33:17.354329+00:00",
+    "timestamp_epoch_ms": 1790505197354,
+    "speed_kmh": 45.0,
+    "confidence_score": 0.96,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ01MN8487-1790426982",
+    "vehicle_id": "VEH-GJ01MN8487",
+    "registration_number": "GJ01MN8487",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-26T12:49:42.176418+00:00",
+    "timestamp_epoch_ms": 1790426982176,
+    "speed_kmh": 44.5,
+    "confidence_score": 0.99,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam22-GJ01MN8487-1790437707",
+    "vehicle_id": "VEH-GJ01MN8487",
+    "registration_number": "GJ01MN8487",
+    "camera_id": "cam22",
+    "camera_name": "Mervada Three Roads, Banaskantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.43,
+        24.17
+      ]
+    },
+    "timestamp": "2026-09-26T15:48:27.849979+00:00",
+    "timestamp_epoch_ms": 1790437707849,
+    "speed_kmh": 42.8,
+    "confidence_score": 0.99,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ01MN8487-1790466593",
+    "vehicle_id": "VEH-GJ01MN8487",
+    "registration_number": "GJ01MN8487",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-26T23:49:53.393592+00:00",
+    "timestamp_epoch_ms": 1790466593393,
+    "speed_kmh": 47.7,
+    "confidence_score": 0.97,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam12-GJ01MN8487-1790493815",
+    "vehicle_id": "VEH-GJ01MN8487",
+    "registration_number": "GJ01MN8487",
+    "camera_id": "cam12",
+    "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.58,
+        23.167
+      ]
+    },
+    "timestamp": "2026-09-27T07:23:35.070072+00:00",
+    "timestamp_epoch_ms": 1790493815070,
+    "speed_kmh": 35.8,
+    "confidence_score": 0.98,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam02-GJ18CD6790-1790425602",
+    "vehicle_id": "VEH-GJ18CD6790",
+    "registration_number": "GJ18CD6790",
+    "camera_id": "cam02",
+    "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.562,
+        23.0286
+      ]
+    },
+    "timestamp": "2026-09-26T12:26:42.176418+00:00",
+    "timestamp_epoch_ms": 1790425602176,
+    "speed_kmh": 50.9,
+    "confidence_score": 0.9,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam12-GJ18CD6790-1790426868",
+    "vehicle_id": "VEH-GJ18CD6790",
+    "registration_number": "GJ18CD6790",
+    "camera_id": "cam12",
+    "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.58,
+        23.167
+      ]
+    },
+    "timestamp": "2026-09-26T12:47:48.596637+00:00",
+    "timestamp_epoch_ms": 1790426868596,
+    "speed_kmh": 44.1,
+    "confidence_score": 0.93,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ18CD6790-1790428510",
+    "vehicle_id": "VEH-GJ18CD6790",
+    "registration_number": "GJ18CD6790",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-26T13:15:10.872592+00:00",
+    "timestamp_epoch_ms": 1790428510872,
+    "speed_kmh": 33.3,
+    "confidence_score": 0.94,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ18CD6790-1790428660",
+    "vehicle_id": "VEH-GJ18CD6790",
+    "registration_number": "GJ18CD6790",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-26T13:17:40.872592+00:00",
+    "timestamp_epoch_ms": 1790428660872,
+    "speed_kmh": 55.2,
+    "confidence_score": 0.98,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ18CD6790-1790429256",
+    "vehicle_id": "VEH-GJ18CD6790",
+    "registration_number": "GJ18CD6790",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-26T13:27:36.411759+00:00",
+    "timestamp_epoch_ms": 1790429256411,
+    "speed_kmh": 57.9,
+    "confidence_score": 0.92,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam06-GJ18CD6790-1790452584",
+    "vehicle_id": "VEH-GJ18CD6790",
+    "registration_number": "GJ18CD6790",
+    "camera_id": "cam06",
+    "camera_name": "Timbavadi Gate, Junagadh City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.4475,
+        21.516
+      ]
+    },
+    "timestamp": "2026-09-26T19:56:24.382220+00:00",
+    "timestamp_epoch_ms": 1790452584382,
+    "speed_kmh": 43.6,
+    "confidence_score": 0.88,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ18CD6790-1790480183",
+    "vehicle_id": "VEH-GJ18CD6790",
+    "registration_number": "GJ18CD6790",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-27T03:36:23.476055+00:00",
+    "timestamp_epoch_ms": 1790480183476,
+    "speed_kmh": 36.4,
+    "confidence_score": 0.92,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ02MN4836-1790429022",
+    "vehicle_id": "VEH-GJ02MN4836",
+    "registration_number": "GJ02MN4836",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-26T13:23:42.176418+00:00",
+    "timestamp_epoch_ms": 1790429022176,
+    "speed_kmh": 41.7,
+    "confidence_score": 0.97,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ02MN4836-1790429432",
+    "vehicle_id": "VEH-GJ02MN4836",
+    "registration_number": "GJ02MN4836",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-26T13:30:32.771468+00:00",
+    "timestamp_epoch_ms": 1790429432771,
+    "speed_kmh": 32.6,
+    "confidence_score": 0.98,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam12-GJ02MN4836-1790430837",
+    "vehicle_id": "VEH-GJ02MN4836",
+    "registration_number": "GJ02MN4836",
+    "camera_id": "cam12",
+    "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.58,
+        23.167
+      ]
+    },
+    "timestamp": "2026-09-26T13:53:57.878047+00:00",
+    "timestamp_epoch_ms": 1790430837878,
+    "speed_kmh": 38.3,
+    "confidence_score": 0.97,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam07-GJ02MN4836-1790455342",
+    "vehicle_id": "VEH-GJ02MN4836",
+    "registration_number": "GJ02MN4836",
+    "camera_id": "cam07",
+    "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.3667,
+        20.9
+      ]
+    },
+    "timestamp": "2026-09-26T20:42:22.922691+00:00",
+    "timestamp_epoch_ms": 1790455342922,
+    "speed_kmh": 49.9,
+    "confidence_score": 0.93,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ02MN4836-1790465478",
+    "vehicle_id": "VEH-GJ02MN4836",
+    "registration_number": "GJ02MN4836",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-26T23:31:18.882465+00:00",
+    "timestamp_epoch_ms": 1790465478882,
+    "speed_kmh": 57.7,
+    "confidence_score": 0.96,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ02MN4836-1790473905",
+    "vehicle_id": "VEH-GJ02MN4836",
+    "registration_number": "GJ02MN4836",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-27T01:51:45.405345+00:00",
+    "timestamp_epoch_ms": 1790473905405,
+    "speed_kmh": 40.6,
+    "confidence_score": 0.89,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ01GH4048-1790425662",
+    "vehicle_id": "VEH-GJ01GH4048",
+    "registration_number": "GJ01GH4048",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-26T12:27:42.176418+00:00",
+    "timestamp_epoch_ms": 1790425662176,
+    "speed_kmh": 56.4,
+    "confidence_score": 0.92,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam08-GJ01GH4048-1790445510",
+    "vehicle_id": "VEH-GJ01GH4048",
+    "registration_number": "GJ01GH4048",
+    "camera_id": "cam08",
+    "camera_name": "Majewadi Gate, Old City, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.463,
+        21.528
+      ]
+    },
+    "timestamp": "2026-09-26T17:58:30.859738+00:00",
+    "timestamp_epoch_ms": 1790445510859,
+    "speed_kmh": 49.5,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ01GH4048-1790445730",
+    "vehicle_id": "VEH-GJ01GH4048",
+    "registration_number": "GJ01GH4048",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-26T18:02:10.299181+00:00",
+    "timestamp_epoch_ms": 1790445730299,
+    "speed_kmh": 44.1,
+    "confidence_score": 0.9,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam11-GJ01GH4048-1790446028",
+    "vehicle_id": "VEH-GJ01GH4048",
+    "registration_number": "GJ01GH4048",
+    "camera_id": "cam11",
+    "camera_name": "Dolatpara Industrial Area, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.474,
+        21.536
+      ]
+    },
+    "timestamp": "2026-09-26T18:07:08.083631+00:00",
+    "timestamp_epoch_ms": 1790446028083,
+    "speed_kmh": 41.8,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam18-GJ01GH4048-1790454303",
+    "vehicle_id": "VEH-GJ01GH4048",
+    "registration_number": "GJ01GH4048",
+    "camera_id": "cam18",
+    "camera_name": "Dhebar Road Crossroad, Rajkot",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.802,
+        22.301
+      ]
+    },
+    "timestamp": "2026-09-26T20:25:03.636909+00:00",
+    "timestamp_epoch_ms": 1790454303636,
+    "speed_kmh": 39.8,
+    "confidence_score": 0.97,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ01GH4048-1790471634",
+    "vehicle_id": "VEH-GJ01GH4048",
+    "registration_number": "GJ01GH4048",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-27T01:13:54.754187+00:00",
+    "timestamp_epoch_ms": 1790471634754,
+    "speed_kmh": 40.7,
+    "confidence_score": 0.95,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam24-GJ01GH4048-1790474287",
+    "vehicle_id": "VEH-GJ01GH4048",
+    "registration_number": "GJ01GH4048",
+    "camera_id": "cam24",
+    "camera_name": "Dehgam Circle, Gandhinagar Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.812,
+        23.168
+      ]
+    },
+    "timestamp": "2026-09-27T01:58:07.022444+00:00",
+    "timestamp_epoch_ms": 1790474287022,
+    "speed_kmh": 43.0,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ01GH4048-1790495115",
+    "vehicle_id": "VEH-GJ01GH4048",
+    "registration_number": "GJ01GH4048",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-27T07:45:15.714387+00:00",
+    "timestamp_epoch_ms": 1790495115714,
+    "speed_kmh": 46.1,
+    "confidence_score": 0.99,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ18ZZ1755-1790426502",
+    "vehicle_id": "VEH-GJ18ZZ1755",
+    "registration_number": "GJ18ZZ1755",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-26T12:41:42.176418+00:00",
+    "timestamp_epoch_ms": 1790426502176,
+    "speed_kmh": 35.0,
+    "confidence_score": 0.89,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ18ZZ1755-1790447233",
+    "vehicle_id": "VEH-GJ18ZZ1755",
+    "registration_number": "GJ18ZZ1755",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-26T18:27:13.880974+00:00",
+    "timestamp_epoch_ms": 1790447233880,
+    "speed_kmh": 48.8,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ18ZZ1755-1790447464",
+    "vehicle_id": "VEH-GJ18ZZ1755",
+    "registration_number": "GJ18ZZ1755",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-26T18:31:04.801329+00:00",
+    "timestamp_epoch_ms": 1790447464801,
+    "speed_kmh": 32.4,
+    "confidence_score": 0.98,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ05RS7663-1790429682",
+    "vehicle_id": "VEH-GJ05RS7663",
+    "registration_number": "GJ05RS7663",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-26T13:34:42.176418+00:00",
+    "timestamp_epoch_ms": 1790429682176,
+    "speed_kmh": 49.7,
+    "confidence_score": 0.91,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ05RS7663-1790444961",
+    "vehicle_id": "VEH-GJ05RS7663",
+    "registration_number": "GJ05RS7663",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-26T17:49:21.349535+00:00",
+    "timestamp_epoch_ms": 1790444961349,
+    "speed_kmh": 48.1,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ05RS7663-1790467027",
+    "vehicle_id": "VEH-GJ05RS7663",
+    "registration_number": "GJ05RS7663",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-26T23:57:07.817576+00:00",
+    "timestamp_epoch_ms": 1790467027817,
+    "speed_kmh": 46.0,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam05-GJ05RS7663-1790485295",
+    "vehicle_id": "VEH-GJ05RS7663",
+    "registration_number": "GJ05RS7663",
+    "camera_id": "cam05",
+    "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5925,
+        23.097
+      ]
+    },
+    "timestamp": "2026-09-27T05:01:35.354294+00:00",
+    "timestamp_epoch_ms": 1790485295354,
+    "speed_kmh": 51.7,
+    "confidence_score": 0.96,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ05RS7663-1790503549",
+    "vehicle_id": "VEH-GJ05RS7663",
+    "registration_number": "GJ05RS7663",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-27T10:05:49.033319+00:00",
+    "timestamp_epoch_ms": 1790503549033,
+    "speed_kmh": 55.4,
+    "confidence_score": 0.89,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam07-GJ06EF4473-1790425482",
+    "vehicle_id": "VEH-GJ06EF4473",
+    "registration_number": "GJ06EF4473",
+    "camera_id": "cam07",
+    "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.3667,
+        20.9
+      ]
+    },
+    "timestamp": "2026-09-26T12:24:42.176418+00:00",
+    "timestamp_epoch_ms": 1790425482176,
+    "speed_kmh": 52.8,
+    "confidence_score": 0.98,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ06EF4473-1790442546",
+    "vehicle_id": "VEH-GJ06EF4473",
+    "registration_number": "GJ06EF4473",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-26T17:09:06.186703+00:00",
+    "timestamp_epoch_ms": 1790442546186,
+    "speed_kmh": 51.3,
+    "confidence_score": 0.92,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ06EF4473-1790453815",
+    "vehicle_id": "VEH-GJ06EF4473",
+    "registration_number": "GJ06EF4473",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-26T20:16:55.043693+00:00",
+    "timestamp_epoch_ms": 1790453815043,
+    "speed_kmh": 56.9,
+    "confidence_score": 0.96,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam02-GJ06EF4473-1790478094",
+    "vehicle_id": "VEH-GJ06EF4473",
+    "registration_number": "GJ06EF4473",
+    "camera_id": "cam02",
+    "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.562,
+        23.0286
+      ]
+    },
+    "timestamp": "2026-09-27T03:01:34.594662+00:00",
+    "timestamp_epoch_ms": 1790478094594,
+    "speed_kmh": 40.6,
+    "confidence_score": 0.93,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ06EF4473-1790494327",
+    "vehicle_id": "VEH-GJ06EF4473",
+    "registration_number": "GJ06EF4473",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-27T07:32:07.376623+00:00",
+    "timestamp_epoch_ms": 1790494327376,
+    "speed_kmh": 56.6,
+    "confidence_score": 0.91,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam23-GJ03JK8085-1790425122",
+    "vehicle_id": "VEH-GJ03JK8085",
+    "registration_number": "GJ03JK8085",
+    "camera_id": "cam23",
+    "camera_name": "Kheram Junction, Sabarkantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.95,
+        23.6
+      ]
+    },
+    "timestamp": "2026-09-26T12:18:42.176418+00:00",
+    "timestamp_epoch_ms": 1790425122176,
+    "speed_kmh": 46.6,
+    "confidence_score": 0.91,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ03JK8085-1790448908",
+    "vehicle_id": "VEH-GJ03JK8085",
+    "registration_number": "GJ03JK8085",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-26T18:55:08.154684+00:00",
+    "timestamp_epoch_ms": 1790448908154,
+    "speed_kmh": 52.2,
+    "confidence_score": 0.9,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam24-GJ03JK8085-1790473533",
+    "vehicle_id": "VEH-GJ03JK8085",
+    "registration_number": "GJ03JK8085",
+    "camera_id": "cam24",
+    "camera_name": "Dehgam Circle, Gandhinagar Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.812,
+        23.168
+      ]
+    },
+    "timestamp": "2026-09-27T01:45:33.688549+00:00",
+    "timestamp_epoch_ms": 1790473533688,
+    "speed_kmh": 44.4,
+    "confidence_score": 0.91,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ03JK8085-1790475767",
+    "vehicle_id": "VEH-GJ03JK8085",
+    "registration_number": "GJ03JK8085",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-27T02:22:47.765853+00:00",
+    "timestamp_epoch_ms": 1790475767765,
+    "speed_kmh": 38.2,
+    "confidence_score": 0.9,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ03JK8085-1790503110",
+    "vehicle_id": "VEH-GJ03JK8085",
+    "registration_number": "GJ03JK8085",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-27T09:58:30.543649+00:00",
+    "timestamp_epoch_ms": 1790503110543,
+    "speed_kmh": 34.6,
+    "confidence_score": 0.93,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ18GH7957-1790433402",
+    "vehicle_id": "VEH-GJ18GH7957",
+    "registration_number": "GJ18GH7957",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-26T14:36:42.176418+00:00",
+    "timestamp_epoch_ms": 1790433402176,
+    "speed_kmh": 42.0,
+    "confidence_score": 0.91,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ18GH7957-1790462281",
+    "vehicle_id": "VEH-GJ18GH7957",
+    "registration_number": "GJ18GH7957",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-26T22:38:01.420866+00:00",
+    "timestamp_epoch_ms": 1790462281420,
+    "speed_kmh": 34.8,
+    "confidence_score": 0.94,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ18GH7957-1790487321",
+    "vehicle_id": "VEH-GJ18GH7957",
+    "registration_number": "GJ18GH7957",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-27T05:35:21.694785+00:00",
+    "timestamp_epoch_ms": 1790487321694,
+    "speed_kmh": 37.2,
+    "confidence_score": 0.98,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam08-GJ18GH7957-1790512486",
+    "vehicle_id": "VEH-GJ18GH7957",
+    "registration_number": "GJ18GH7957",
+    "camera_id": "cam08",
+    "camera_name": "Majewadi Gate, Old City, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.463,
+        21.528
+      ]
+    },
+    "timestamp": "2026-09-27T12:34:46.858428+00:00",
+    "timestamp_epoch_ms": 1790512486858,
+    "speed_kmh": 39.6,
+    "confidence_score": 0.93,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ18GH7957-1790531371",
+    "vehicle_id": "VEH-GJ18GH7957",
+    "registration_number": "GJ18GH7957",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-27T17:49:31.341239+00:00",
+    "timestamp_epoch_ms": 1790531371341,
+    "speed_kmh": 52.0,
+    "confidence_score": 0.95,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ18GH7957-1790553935",
+    "vehicle_id": "VEH-GJ18GH7957",
+    "registration_number": "GJ18GH7957",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-28T00:05:35.070323+00:00",
+    "timestamp_epoch_ms": 1790553935070,
+    "speed_kmh": 41.9,
+    "confidence_score": 0.99,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam11-GJ05GH4882-1790432022",
+    "vehicle_id": "VEH-GJ05GH4882",
+    "registration_number": "GJ05GH4882",
+    "camera_id": "cam11",
+    "camera_name": "Dolatpara Industrial Area, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.474,
+        21.536
+      ]
+    },
+    "timestamp": "2026-09-26T14:13:42.176418+00:00",
+    "timestamp_epoch_ms": 1790432022176,
+    "speed_kmh": 53.9,
+    "confidence_score": 0.9,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam08-GJ05GH4882-1790432184",
+    "vehicle_id": "VEH-GJ05GH4882",
+    "registration_number": "GJ05GH4882",
+    "camera_id": "cam08",
+    "camera_name": "Majewadi Gate, Old City, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.463,
+        21.528
+      ]
+    },
+    "timestamp": "2026-09-26T14:16:24.025499+00:00",
+    "timestamp_epoch_ms": 1790432184025,
+    "speed_kmh": 32.1,
+    "confidence_score": 0.88,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam29-GJ05GH4882-1790454941",
+    "vehicle_id": "VEH-GJ05GH4882",
+    "registration_number": "GJ05GH4882",
+    "camera_id": "cam29",
+    "camera_name": "GIDC Entrance, Bilimora Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.968,
+        20.765
+      ]
+    },
+    "timestamp": "2026-09-26T20:35:41.880862+00:00",
+    "timestamp_epoch_ms": 1790454941880,
+    "speed_kmh": 43.2,
+    "confidence_score": 0.97,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ05GH4882-1790455091",
+    "vehicle_id": "VEH-GJ05GH4882",
+    "registration_number": "GJ05GH4882",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-26T20:38:11.880862+00:00",
+    "timestamp_epoch_ms": 1790455091880,
+    "speed_kmh": 55.2,
+    "confidence_score": 0.92,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam02-GJ05GH4882-1790480425",
+    "vehicle_id": "VEH-GJ05GH4882",
+    "registration_number": "GJ05GH4882",
+    "camera_id": "cam02",
+    "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.562,
+        23.0286
+      ]
+    },
+    "timestamp": "2026-09-27T03:40:25.424528+00:00",
+    "timestamp_epoch_ms": 1790480425424,
+    "speed_kmh": 36.3,
+    "confidence_score": 0.91,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ05GH4882-1790499947",
+    "vehicle_id": "VEH-GJ05GH4882",
+    "registration_number": "GJ05GH4882",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-27T09:05:47.711956+00:00",
+    "timestamp_epoch_ms": 1790499947711,
+    "speed_kmh": 36.5,
+    "confidence_score": 0.97,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ03JK2359-1790432982",
+    "vehicle_id": "VEH-GJ03JK2359",
+    "registration_number": "GJ03JK2359",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-26T14:29:42.176418+00:00",
+    "timestamp_epoch_ms": 1790432982176,
+    "speed_kmh": 57.7,
+    "confidence_score": 0.93,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ03JK2359-1790439035",
+    "vehicle_id": "VEH-GJ03JK2359",
+    "registration_number": "GJ03JK2359",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-26T16:10:35.309952+00:00",
+    "timestamp_epoch_ms": 1790439035309,
+    "speed_kmh": 56.5,
+    "confidence_score": 0.9,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ03JK2359-1790439230",
+    "vehicle_id": "VEH-GJ03JK2359",
+    "registration_number": "GJ03JK2359",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-26T16:13:50.379251+00:00",
+    "timestamp_epoch_ms": 1790439230379,
+    "speed_kmh": 38.4,
+    "confidence_score": 0.89,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam23-GJ03JK2359-1790462427",
+    "vehicle_id": "VEH-GJ03JK2359",
+    "registration_number": "GJ03JK2359",
+    "camera_id": "cam23",
+    "camera_name": "Kheram Junction, Sabarkantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.95,
+        23.6
+      ]
+    },
+    "timestamp": "2026-09-26T22:40:27.360249+00:00",
+    "timestamp_epoch_ms": 1790462427360,
+    "speed_kmh": 53.5,
+    "confidence_score": 0.92,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam12-GJ03JK2359-1790467597",
+    "vehicle_id": "VEH-GJ03JK2359",
+    "registration_number": "GJ03JK2359",
+    "camera_id": "cam12",
+    "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.58,
+        23.167
+      ]
+    },
+    "timestamp": "2026-09-27T00:06:37.598223+00:00",
+    "timestamp_epoch_ms": 1790467597598,
+    "speed_kmh": 42.6,
+    "confidence_score": 0.94,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam15-GJ03JK2359-1790468528",
+    "vehicle_id": "VEH-GJ03JK2359",
+    "registration_number": "GJ03JK2359",
+    "camera_id": "cam15",
+    "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.552,
+        23.045
+      ]
+    },
+    "timestamp": "2026-09-27T00:22:08.447980+00:00",
+    "timestamp_epoch_ms": 1790468528447,
+    "speed_kmh": 53.6,
+    "confidence_score": 0.95,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ03JK2359-1790492717",
+    "vehicle_id": "VEH-GJ03JK2359",
+    "registration_number": "GJ03JK2359",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-27T07:05:17.558459+00:00",
+    "timestamp_epoch_ms": 1790492717558,
+    "speed_kmh": 38.3,
+    "confidence_score": 0.89,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam05-GJ02GH8181-1790431062",
+    "vehicle_id": "VEH-GJ02GH8181",
+    "registration_number": "GJ02GH8181",
+    "camera_id": "cam05",
+    "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5925,
+        23.097
+      ]
+    },
+    "timestamp": "2026-09-26T13:57:42.176418+00:00",
+    "timestamp_epoch_ms": 1790431062176,
+    "speed_kmh": 50.9,
+    "confidence_score": 0.89,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ02GH8181-1790455414",
+    "vehicle_id": "VEH-GJ02GH8181",
+    "registration_number": "GJ02GH8181",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-26T20:43:34.056632+00:00",
+    "timestamp_epoch_ms": 1790455414056,
+    "speed_kmh": 38.8,
+    "confidence_score": 0.96,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam08-GJ02GH8181-1790476437",
+    "vehicle_id": "VEH-GJ02GH8181",
+    "registration_number": "GJ02GH8181",
+    "camera_id": "cam08",
+    "camera_name": "Majewadi Gate, Old City, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.463,
+        21.528
+      ]
+    },
+    "timestamp": "2026-09-27T02:33:57.318081+00:00",
+    "timestamp_epoch_ms": 1790476437318,
+    "speed_kmh": 46.7,
+    "confidence_score": 0.88,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ02GH8181-1790493420",
+    "vehicle_id": "VEH-GJ02GH8181",
+    "registration_number": "GJ02GH8181",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-27T07:17:00.819717+00:00",
+    "timestamp_epoch_ms": 1790493420819,
+    "speed_kmh": 57.9,
+    "confidence_score": 0.88,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam21-GJ02GH8181-1790520974",
+    "vehicle_id": "VEH-GJ02GH8181",
+    "registration_number": "GJ02GH8181",
+    "camera_id": "cam21",
+    "camera_name": "Dethali Char Rasta, Patan Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.13,
+        23.85
+      ]
+    },
+    "timestamp": "2026-09-27T14:56:14.654235+00:00",
+    "timestamp_epoch_ms": 1790520974654,
+    "speed_kmh": 46.2,
+    "confidence_score": 0.98,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam25-GJ02GH8181-1790554649",
+    "vehicle_id": "VEH-GJ02GH8181",
+    "registration_number": "GJ02GH8181",
+    "camera_id": "cam25",
+    "camera_name": "Dhanori Road, Gandevi, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.01,
+        20.85
+      ]
+    },
+    "timestamp": "2026-09-28T00:17:29.309334+00:00",
+    "timestamp_epoch_ms": 1790554649309,
+    "speed_kmh": 37.0,
+    "confidence_score": 0.94,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam24-GJ02GH8181-1790582566",
+    "vehicle_id": "VEH-GJ02GH8181",
+    "registration_number": "GJ02GH8181",
+    "camera_id": "cam24",
+    "camera_name": "Dehgam Circle, Gandhinagar Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.812,
+        23.168
+      ]
+    },
+    "timestamp": "2026-09-28T08:02:46.692632+00:00",
+    "timestamp_epoch_ms": 1790582566692,
+    "speed_kmh": 33.3,
+    "confidence_score": 0.88,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ02GH8181-1790605959",
+    "vehicle_id": "VEH-GJ02GH8181",
+    "registration_number": "GJ02GH8181",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-28T14:32:39.901242+00:00",
+    "timestamp_epoch_ms": 1790605959901,
+    "speed_kmh": 41.0,
+    "confidence_score": 0.93,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ02GH4534-1790428122",
+    "vehicle_id": "VEH-GJ02GH4534",
+    "registration_number": "GJ02GH4534",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-26T13:08:42.176418+00:00",
+    "timestamp_epoch_ms": 1790428122176,
+    "speed_kmh": 51.8,
+    "confidence_score": 0.91,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ02GH4534-1790446971",
+    "vehicle_id": "VEH-GJ02GH4534",
+    "registration_number": "GJ02GH4534",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-26T18:22:51.989735+00:00",
+    "timestamp_epoch_ms": 1790446971989,
+    "speed_kmh": 53.7,
+    "confidence_score": 0.92,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ02GH4534-1790453708",
+    "vehicle_id": "VEH-GJ02GH4534",
+    "registration_number": "GJ02GH4534",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-26T20:15:08.984486+00:00",
+    "timestamp_epoch_ms": 1790453708984,
+    "speed_kmh": 50.2,
+    "confidence_score": 0.92,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam29-GJ02CD9519-1790426022",
+    "vehicle_id": "VEH-GJ02CD9519",
+    "registration_number": "GJ02CD9519",
+    "camera_id": "cam29",
+    "camera_name": "GIDC Entrance, Bilimora Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.968,
+        20.765
+      ]
+    },
+    "timestamp": "2026-09-26T12:33:42.176418+00:00",
+    "timestamp_epoch_ms": 1790426022176,
+    "speed_kmh": 42.4,
+    "confidence_score": 0.91,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ02CD9519-1790449059",
+    "vehicle_id": "VEH-GJ02CD9519",
+    "registration_number": "GJ02CD9519",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-26T18:57:39.594619+00:00",
+    "timestamp_epoch_ms": 1790449059594,
+    "speed_kmh": 39.6,
+    "confidence_score": 0.96,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ02CD9519-1790469857",
+    "vehicle_id": "VEH-GJ02CD9519",
+    "registration_number": "GJ02CD9519",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-27T00:44:17.489516+00:00",
+    "timestamp_epoch_ms": 1790469857489,
+    "speed_kmh": 44.0,
+    "confidence_score": 0.9,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam08-GJ02XY6160-1790434182",
+    "vehicle_id": "VEH-GJ02XY6160",
+    "registration_number": "GJ02XY6160",
+    "camera_id": "cam08",
+    "camera_name": "Majewadi Gate, Old City, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.463,
+        21.528
+      ]
+    },
+    "timestamp": "2026-09-26T14:49:42.176418+00:00",
+    "timestamp_epoch_ms": 1790434182176,
+    "speed_kmh": 49.1,
+    "confidence_score": 0.94,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ02XY6160-1790451210",
+    "vehicle_id": "VEH-GJ02XY6160",
+    "registration_number": "GJ02XY6160",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-26T19:33:30.475563+00:00",
+    "timestamp_epoch_ms": 1790451210475,
+    "speed_kmh": 57.3,
+    "confidence_score": 0.92,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ02XY6160-1790451623",
+    "vehicle_id": "VEH-GJ02XY6160",
+    "registration_number": "GJ02XY6160",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-26T19:40:23.893739+00:00",
+    "timestamp_epoch_ms": 1790451623893,
+    "speed_kmh": 42.8,
+    "confidence_score": 0.96,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ02XY6160-1790465055",
+    "vehicle_id": "VEH-GJ02XY6160",
+    "registration_number": "GJ02XY6160",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-26T23:24:15.546642+00:00",
+    "timestamp_epoch_ms": 1790465055546,
+    "speed_kmh": 53.9,
+    "confidence_score": 0.98,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ02XY6160-1790472006",
+    "vehicle_id": "VEH-GJ02XY6160",
+    "registration_number": "GJ02XY6160",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-27T01:20:06.806761+00:00",
+    "timestamp_epoch_ms": 1790472006806,
+    "speed_kmh": 48.6,
+    "confidence_score": 0.89,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam03-GJ02XY6160-1790492124",
+    "vehicle_id": "VEH-GJ02XY6160",
+    "registration_number": "GJ02XY6160",
+    "camera_id": "cam03",
+    "camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5878,
+        23.0934
+      ]
+    },
+    "timestamp": "2026-09-27T06:55:24.024676+00:00",
+    "timestamp_epoch_ms": 1790492124024,
+    "speed_kmh": 50.2,
+    "confidence_score": 0.97,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam24-GJ02XY6160-1790494151",
+    "vehicle_id": "VEH-GJ02XY6160",
+    "registration_number": "GJ02XY6160",
+    "camera_id": "cam24",
+    "camera_name": "Dehgam Circle, Gandhinagar Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.812,
+        23.168
+      ]
+    },
+    "timestamp": "2026-09-27T07:29:11.394047+00:00",
+    "timestamp_epoch_ms": 1790494151394,
+    "speed_kmh": 43.3,
+    "confidence_score": 0.95,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam02-GJ05EF7572-1790433462",
+    "vehicle_id": "VEH-GJ05EF7572",
+    "registration_number": "GJ05EF7572",
+    "camera_id": "cam02",
+    "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.562,
+        23.0286
+      ]
+    },
+    "timestamp": "2026-09-26T14:37:42.176418+00:00",
+    "timestamp_epoch_ms": 1790433462176,
+    "speed_kmh": 57.5,
+    "confidence_score": 0.91,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ05EF7572-1790451342",
+    "vehicle_id": "VEH-GJ05EF7572",
+    "registration_number": "GJ05EF7572",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-26T19:35:42.927038+00:00",
+    "timestamp_epoch_ms": 1790451342927,
+    "speed_kmh": 55.1,
+    "confidence_score": 0.94,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ05EF7572-1790472920",
+    "vehicle_id": "VEH-GJ05EF7572",
+    "registration_number": "GJ05EF7572",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-27T01:35:20.588147+00:00",
+    "timestamp_epoch_ms": 1790472920588,
+    "speed_kmh": 46.4,
+    "confidence_score": 0.97,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ05EF7572-1790473519",
+    "vehicle_id": "VEH-GJ05EF7572",
+    "registration_number": "GJ05EF7572",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-27T01:45:19.469391+00:00",
+    "timestamp_epoch_ms": 1790473519469,
+    "speed_kmh": 36.7,
+    "confidence_score": 0.91,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ05EF7572-1790491023",
+    "vehicle_id": "VEH-GJ05EF7572",
+    "registration_number": "GJ05EF7572",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-27T06:37:03.280923+00:00",
+    "timestamp_epoch_ms": 1790491023280,
+    "speed_kmh": 52.9,
+    "confidence_score": 0.89,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ05EF7572-1790518280",
+    "vehicle_id": "VEH-GJ05EF7572",
+    "registration_number": "GJ05EF7572",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-27T14:11:20.654826+00:00",
+    "timestamp_epoch_ms": 1790518280654,
+    "speed_kmh": 35.8,
+    "confidence_score": 0.9,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam22-GJ05ZZ2940-1790429262",
+    "vehicle_id": "VEH-GJ05ZZ2940",
+    "registration_number": "GJ05ZZ2940",
+    "camera_id": "cam22",
+    "camera_name": "Mervada Three Roads, Banaskantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.43,
+        24.17
+      ]
+    },
+    "timestamp": "2026-09-26T13:27:42.176418+00:00",
+    "timestamp_epoch_ms": 1790429262176,
+    "speed_kmh": 54.6,
+    "confidence_score": 0.9,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam12-GJ05ZZ2940-1790436923",
+    "vehicle_id": "VEH-GJ05ZZ2940",
+    "registration_number": "GJ05ZZ2940",
+    "camera_id": "cam12",
+    "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.58,
+        23.167
+      ]
+    },
+    "timestamp": "2026-09-26T15:35:23.266711+00:00",
+    "timestamp_epoch_ms": 1790436923266,
+    "speed_kmh": 52.9,
+    "confidence_score": 0.95,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ05ZZ2940-1790460097",
+    "vehicle_id": "VEH-GJ05ZZ2940",
+    "registration_number": "GJ05ZZ2940",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-26T22:01:37.201197+00:00",
+    "timestamp_epoch_ms": 1790460097201,
+    "speed_kmh": 44.3,
+    "confidence_score": 0.97,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam25-GJ05ZZ2940-1790487465",
+    "vehicle_id": "VEH-GJ05ZZ2940",
+    "registration_number": "GJ05ZZ2940",
+    "camera_id": "cam25",
+    "camera_name": "Dhanori Road, Gandevi, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.01,
+        20.85
+      ]
+    },
+    "timestamp": "2026-09-27T05:37:45.513023+00:00",
+    "timestamp_epoch_ms": 1790487465513,
+    "speed_kmh": 35.9,
+    "confidence_score": 0.93,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam29-GJ05ZZ2940-1790488127",
+    "vehicle_id": "VEH-GJ05ZZ2940",
+    "registration_number": "GJ05ZZ2940",
+    "camera_id": "cam29",
+    "camera_name": "GIDC Entrance, Bilimora Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.968,
+        20.765
+      ]
+    },
+    "timestamp": "2026-09-27T05:48:47.637615+00:00",
+    "timestamp_epoch_ms": 1790488127637,
+    "speed_kmh": 56.6,
+    "confidence_score": 0.92,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ27JK9798-1790428242",
+    "vehicle_id": "VEH-GJ27JK9798",
+    "registration_number": "GJ27JK9798",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-26T13:10:42.176418+00:00",
+    "timestamp_epoch_ms": 1790428242176,
+    "speed_kmh": 47.1,
+    "confidence_score": 0.92,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam24-GJ27JK9798-1790430106",
+    "vehicle_id": "VEH-GJ27JK9798",
+    "registration_number": "GJ27JK9798",
+    "camera_id": "cam24",
+    "camera_name": "Dehgam Circle, Gandhinagar Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.812,
+        23.168
+      ]
+    },
+    "timestamp": "2026-09-26T13:41:46.272812+00:00",
+    "timestamp_epoch_ms": 1790430106272,
+    "speed_kmh": 45.8,
+    "confidence_score": 0.89,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ27JK9798-1790454131",
+    "vehicle_id": "VEH-GJ27JK9798",
+    "registration_number": "GJ27JK9798",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-26T20:22:11.394319+00:00",
+    "timestamp_epoch_ms": 1790454131394,
+    "speed_kmh": 40.2,
+    "confidence_score": 0.98,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam25-GJ05AB2699-1790432322",
+    "vehicle_id": "VEH-GJ05AB2699",
+    "registration_number": "GJ05AB2699",
+    "camera_id": "cam25",
+    "camera_name": "Dhanori Road, Gandevi, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.01,
+        20.85
+      ]
+    },
+    "timestamp": "2026-09-26T14:18:42.176418+00:00",
+    "timestamp_epoch_ms": 1790432322176,
+    "speed_kmh": 54.1,
+    "confidence_score": 0.99,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ05AB2699-1790452447",
+    "vehicle_id": "VEH-GJ05AB2699",
+    "registration_number": "GJ05AB2699",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-26T19:54:07.222467+00:00",
+    "timestamp_epoch_ms": 1790452447222,
+    "speed_kmh": 50.1,
+    "confidence_score": 0.96,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam22-GJ05AB2699-1790471664",
+    "vehicle_id": "VEH-GJ05AB2699",
+    "registration_number": "GJ05AB2699",
+    "camera_id": "cam22",
+    "camera_name": "Mervada Three Roads, Banaskantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.43,
+        24.17
+      ]
+    },
+    "timestamp": "2026-09-27T01:14:24.502707+00:00",
+    "timestamp_epoch_ms": 1790471664502,
+    "speed_kmh": 49.9,
+    "confidence_score": 0.93,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam21-GJ05AB2699-1790474671",
+    "vehicle_id": "VEH-GJ05AB2699",
+    "registration_number": "GJ05AB2699",
+    "camera_id": "cam21",
+    "camera_name": "Dethali Char Rasta, Patan Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.13,
+        23.85
+      ]
+    },
+    "timestamp": "2026-09-27T02:04:31.430980+00:00",
+    "timestamp_epoch_ms": 1790474671430,
+    "speed_kmh": 56.1,
+    "confidence_score": 0.91,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ05AB2699-1790481948",
+    "vehicle_id": "VEH-GJ05AB2699",
+    "registration_number": "GJ05AB2699",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-27T04:05:48.347824+00:00",
+    "timestamp_epoch_ms": 1790481948347,
+    "speed_kmh": 50.9,
+    "confidence_score": 0.97,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam15-GJ05AB2699-1790482331",
+    "vehicle_id": "VEH-GJ05AB2699",
+    "registration_number": "GJ05AB2699",
+    "camera_id": "cam15",
+    "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.552,
+        23.045
+      ]
+    },
+    "timestamp": "2026-09-27T04:12:11.755542+00:00",
+    "timestamp_epoch_ms": 1790482331755,
+    "speed_kmh": 34.4,
+    "confidence_score": 0.92,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam21-GJ01ZZ3937-1790429802",
+    "vehicle_id": "VEH-GJ01ZZ3937",
+    "registration_number": "GJ01ZZ3937",
+    "camera_id": "cam21",
+    "camera_name": "Dethali Char Rasta, Patan Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.13,
+        23.85
+      ]
+    },
+    "timestamp": "2026-09-26T13:36:42.176418+00:00",
+    "timestamp_epoch_ms": 1790429802176,
+    "speed_kmh": 36.5,
+    "confidence_score": 0.98,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ01ZZ3937-1790458089",
+    "vehicle_id": "VEH-GJ01ZZ3937",
+    "registration_number": "GJ01ZZ3937",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-26T21:28:09.401262+00:00",
+    "timestamp_epoch_ms": 1790458089401,
+    "speed_kmh": 45.1,
+    "confidence_score": 0.9,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam05-GJ01ZZ3937-1790474711",
+    "vehicle_id": "VEH-GJ01ZZ3937",
+    "registration_number": "GJ01ZZ3937",
+    "camera_id": "cam05",
+    "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5925,
+        23.097
+      ]
+    },
+    "timestamp": "2026-09-27T02:05:11.266758+00:00",
+    "timestamp_epoch_ms": 1790474711266,
+    "speed_kmh": 56.7,
+    "confidence_score": 0.96,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ01ZZ3937-1790475441",
+    "vehicle_id": "VEH-GJ01ZZ3937",
+    "registration_number": "GJ01ZZ3937",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-27T02:17:21.476327+00:00",
+    "timestamp_epoch_ms": 1790475441476,
+    "speed_kmh": 46.6,
+    "confidence_score": 0.9,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam29-GJ27ZZ8665-1790425242",
+    "vehicle_id": "VEH-GJ27ZZ8665",
+    "registration_number": "GJ27ZZ8665",
+    "camera_id": "cam29",
+    "camera_name": "GIDC Entrance, Bilimora Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.968,
+        20.765
+      ]
+    },
+    "timestamp": "2026-09-26T12:20:42.176418+00:00",
+    "timestamp_epoch_ms": 1790425242176,
+    "speed_kmh": 55.2,
+    "confidence_score": 0.89,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam02-GJ27ZZ8665-1790443735",
+    "vehicle_id": "VEH-GJ27ZZ8665",
+    "registration_number": "GJ27ZZ8665",
+    "camera_id": "cam02",
+    "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.562,
+        23.0286
+      ]
+    },
+    "timestamp": "2026-09-26T17:28:55.435033+00:00",
+    "timestamp_epoch_ms": 1790443735435,
+    "speed_kmh": 49.7,
+    "confidence_score": 0.96,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam15-GJ27ZZ8665-1790443930",
+    "vehicle_id": "VEH-GJ27ZZ8665",
+    "registration_number": "GJ27ZZ8665",
+    "camera_id": "cam15",
+    "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.552,
+        23.045
+      ]
+    },
+    "timestamp": "2026-09-26T17:32:10.028165+00:00",
+    "timestamp_epoch_ms": 1790443930028,
+    "speed_kmh": 38.7,
+    "confidence_score": 0.9,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ27ZZ8665-1790457910",
+    "vehicle_id": "VEH-GJ27ZZ8665",
+    "registration_number": "GJ27ZZ8665",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-26T21:25:10.913445+00:00",
+    "timestamp_epoch_ms": 1790457910913,
+    "speed_kmh": 51.0,
+    "confidence_score": 0.92,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ27ZZ8665-1790470992",
+    "vehicle_id": "VEH-GJ27ZZ8665",
+    "registration_number": "GJ27ZZ8665",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-27T01:03:12.786266+00:00",
+    "timestamp_epoch_ms": 1790470992786,
+    "speed_kmh": 56.2,
+    "confidence_score": 0.97,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam07-GJ27ZZ8665-1790496646",
+    "vehicle_id": "VEH-GJ27ZZ8665",
+    "registration_number": "GJ27ZZ8665",
+    "camera_id": "cam07",
+    "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.3667,
+        20.9
+      ]
+    },
+    "timestamp": "2026-09-27T08:10:46.767901+00:00",
+    "timestamp_epoch_ms": 1790496646767,
+    "speed_kmh": 47.0,
+    "confidence_score": 0.88,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam19-GJ27ZZ8665-1790517283",
+    "vehicle_id": "VEH-GJ27ZZ8665",
+    "registration_number": "GJ27ZZ8665",
+    "camera_id": "cam19",
+    "camera_name": "Khaparia Gram Panchayat, Gandevi, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.99,
+        20.82
+      ]
+    },
+    "timestamp": "2026-09-27T13:54:43.554037+00:00",
+    "timestamp_epoch_ms": 1790517283554,
+    "speed_kmh": 47.6,
+    "confidence_score": 0.89,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam29-GJ05CD2776-1790434842",
+    "vehicle_id": "VEH-GJ05CD2776",
+    "registration_number": "GJ05CD2776",
+    "camera_id": "cam29",
+    "camera_name": "GIDC Entrance, Bilimora Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.968,
+        20.765
+      ]
+    },
+    "timestamp": "2026-09-26T15:00:42.176418+00:00",
+    "timestamp_epoch_ms": 1790434842176,
+    "speed_kmh": 54.2,
+    "confidence_score": 0.99,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam02-GJ05CD2776-1790458586",
+    "vehicle_id": "VEH-GJ05CD2776",
+    "registration_number": "GJ05CD2776",
+    "camera_id": "cam02",
+    "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.562,
+        23.0286
+      ]
+    },
+    "timestamp": "2026-09-26T21:36:26.685364+00:00",
+    "timestamp_epoch_ms": 1790458586685,
+    "speed_kmh": 38.7,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam12-GJ05CD2776-1790459806",
+    "vehicle_id": "VEH-GJ05CD2776",
+    "registration_number": "GJ05CD2776",
+    "camera_id": "cam12",
+    "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.58,
+        23.167
+      ]
+    },
+    "timestamp": "2026-09-26T21:56:46.223289+00:00",
+    "timestamp_epoch_ms": 1790459806223,
+    "speed_kmh": 45.8,
+    "confidence_score": 0.91,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam25-GJ05CD2776-1790480646",
+    "vehicle_id": "VEH-GJ05CD2776",
+    "registration_number": "GJ05CD2776",
+    "camera_id": "cam25",
+    "camera_name": "Dhanori Road, Gandevi, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.01,
+        20.85
+      ]
+    },
+    "timestamp": "2026-09-27T03:44:06.966932+00:00",
+    "timestamp_epoch_ms": 1790480646966,
+    "speed_kmh": 45.2,
+    "confidence_score": 0.98,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ05CD2776-1790503888",
+    "vehicle_id": "VEH-GJ05CD2776",
+    "registration_number": "GJ05CD2776",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-27T10:11:28.383215+00:00",
+    "timestamp_epoch_ms": 1790503888383,
+    "speed_kmh": 42.6,
+    "confidence_score": 0.98,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ05CD2776-1790533834",
+    "vehicle_id": "VEH-GJ05CD2776",
+    "registration_number": "GJ05CD2776",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-27T18:30:34.195699+00:00",
+    "timestamp_epoch_ms": 1790533834195,
+    "speed_kmh": 33.8,
+    "confidence_score": 0.96,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam23-GJ05CD2776-1790540751",
+    "vehicle_id": "VEH-GJ05CD2776",
+    "registration_number": "GJ05CD2776",
+    "camera_id": "cam23",
+    "camera_name": "Kheram Junction, Sabarkantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.95,
+        23.6
+      ]
+    },
+    "timestamp": "2026-09-27T20:25:51.198007+00:00",
+    "timestamp_epoch_ms": 1790540751198,
+    "speed_kmh": 34.7,
+    "confidence_score": 0.88,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ03EF2971-1790434062",
+    "vehicle_id": "VEH-GJ03EF2971",
+    "registration_number": "GJ03EF2971",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-26T14:47:42.176418+00:00",
+    "timestamp_epoch_ms": 1790434062176,
+    "speed_kmh": 48.2,
+    "confidence_score": 0.89,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam15-GJ03EF2971-1790434307",
+    "vehicle_id": "VEH-GJ03EF2971",
+    "registration_number": "GJ03EF2971",
+    "camera_id": "cam15",
+    "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.552,
+        23.045
+      ]
+    },
+    "timestamp": "2026-09-26T14:51:47.354432+00:00",
+    "timestamp_epoch_ms": 1790434307354,
+    "speed_kmh": 57.4,
+    "confidence_score": 0.93,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam18-GJ03EF2971-1790454626",
+    "vehicle_id": "VEH-GJ03EF2971",
+    "registration_number": "GJ03EF2971",
+    "camera_id": "cam18",
+    "camera_name": "Dhebar Road Crossroad, Rajkot",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.802,
+        22.301
+      ]
+    },
+    "timestamp": "2026-09-26T20:30:26.304645+00:00",
+    "timestamp_epoch_ms": 1790454626304,
+    "speed_kmh": 35.0,
+    "confidence_score": 0.96,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam22-GJ03EF2971-1790471730",
+    "vehicle_id": "VEH-GJ03EF2971",
+    "registration_number": "GJ03EF2971",
+    "camera_id": "cam22",
+    "camera_name": "Mervada Three Roads, Banaskantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.43,
+        24.17
+      ]
+    },
+    "timestamp": "2026-09-27T01:15:30.177215+00:00",
+    "timestamp_epoch_ms": 1790471730177,
+    "speed_kmh": 56.0,
+    "confidence_score": 0.88,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ03EF2971-1790504902",
+    "vehicle_id": "VEH-GJ03EF2971",
+    "registration_number": "GJ03EF2971",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-27T10:28:22.770546+00:00",
+    "timestamp_epoch_ms": 1790504902770,
+    "speed_kmh": 41.6,
+    "confidence_score": 0.88,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ05PQ4905-1790426982",
+    "vehicle_id": "VEH-GJ05PQ4905",
+    "registration_number": "GJ05PQ4905",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-26T12:49:42.176418+00:00",
+    "timestamp_epoch_ms": 1790426982176,
+    "speed_kmh": 47.0,
+    "confidence_score": 0.97,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ05PQ4905-1790427454",
+    "vehicle_id": "VEH-GJ05PQ4905",
+    "registration_number": "GJ05PQ4905",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-26T12:57:34.900963+00:00",
+    "timestamp_epoch_ms": 1790427454900,
+    "speed_kmh": 46.4,
+    "confidence_score": 0.97,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ05PQ4905-1790427896",
+    "vehicle_id": "VEH-GJ05PQ4905",
+    "registration_number": "GJ05PQ4905",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-26T13:04:56.642235+00:00",
+    "timestamp_epoch_ms": 1790427896642,
+    "speed_kmh": 49.8,
+    "confidence_score": 0.93,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ05GH7382-1790430042",
+    "vehicle_id": "VEH-GJ05GH7382",
+    "registration_number": "GJ05GH7382",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-26T13:40:42.176418+00:00",
+    "timestamp_epoch_ms": 1790430042176,
+    "speed_kmh": 52.3,
+    "confidence_score": 0.92,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ05GH7382-1790453218",
+    "vehicle_id": "VEH-GJ05GH7382",
+    "registration_number": "GJ05GH7382",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-26T20:06:58.775323+00:00",
+    "timestamp_epoch_ms": 1790453218775,
+    "speed_kmh": 44.7,
+    "confidence_score": 0.92,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ05GH7382-1790469699",
+    "vehicle_id": "VEH-GJ05GH7382",
+    "registration_number": "GJ05GH7382",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-27T00:41:39.296148+00:00",
+    "timestamp_epoch_ms": 1790469699296,
+    "speed_kmh": 56.6,
+    "confidence_score": 0.93,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ03XY7402-1790429502",
+    "vehicle_id": "VEH-GJ03XY7402",
+    "registration_number": "GJ03XY7402",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-26T13:31:42.176418+00:00",
+    "timestamp_epoch_ms": 1790429502176,
+    "speed_kmh": 46.1,
+    "confidence_score": 0.89,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ03XY7402-1790451670",
+    "vehicle_id": "VEH-GJ03XY7402",
+    "registration_number": "GJ03XY7402",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-26T19:41:10.136710+00:00",
+    "timestamp_epoch_ms": 1790451670136,
+    "speed_kmh": 41.2,
+    "confidence_score": 0.91,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam11-GJ03XY7402-1790473614",
+    "vehicle_id": "VEH-GJ03XY7402",
+    "registration_number": "GJ03XY7402",
+    "camera_id": "cam11",
+    "camera_name": "Dolatpara Industrial Area, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.474,
+        21.536
+      ]
+    },
+    "timestamp": "2026-09-27T01:46:54.300153+00:00",
+    "timestamp_epoch_ms": 1790473614300,
+    "speed_kmh": 44.4,
+    "confidence_score": 0.92,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ03XY7402-1790495065",
+    "vehicle_id": "VEH-GJ03XY7402",
+    "registration_number": "GJ03XY7402",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-27T07:44:25.382866+00:00",
+    "timestamp_epoch_ms": 1790495065382,
+    "speed_kmh": 46.0,
+    "confidence_score": 0.89,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam02-GJ03XY7402-1790495394",
+    "vehicle_id": "VEH-GJ03XY7402",
+    "registration_number": "GJ03XY7402",
+    "camera_id": "cam02",
+    "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.562,
+        23.0286
+      ]
+    },
+    "timestamp": "2026-09-27T07:49:54.777622+00:00",
+    "timestamp_epoch_ms": 1790495394777,
+    "speed_kmh": 34.0,
+    "confidence_score": 0.91,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam29-GJ03XY7402-1790514309",
+    "vehicle_id": "VEH-GJ03XY7402",
+    "registration_number": "GJ03XY7402",
+    "camera_id": "cam29",
+    "camera_name": "GIDC Entrance, Bilimora Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.968,
+        20.765
+      ]
+    },
+    "timestamp": "2026-09-27T13:05:09.487958+00:00",
+    "timestamp_epoch_ms": 1790514309487,
+    "speed_kmh": 48.6,
+    "confidence_score": 0.98,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ06MN8615-1790431242",
+    "vehicle_id": "VEH-GJ06MN8615",
+    "registration_number": "GJ06MN8615",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-26T14:00:42.176418+00:00",
+    "timestamp_epoch_ms": 1790431242176,
+    "speed_kmh": 36.8,
+    "confidence_score": 0.97,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ06MN8615-1790458881",
+    "vehicle_id": "VEH-GJ06MN8615",
+    "registration_number": "GJ06MN8615",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-26T21:41:21.873664+00:00",
+    "timestamp_epoch_ms": 1790458881873,
+    "speed_kmh": 35.5,
+    "confidence_score": 0.98,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ06MN8615-1790475980",
+    "vehicle_id": "VEH-GJ06MN8615",
+    "registration_number": "GJ06MN8615",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-27T02:26:20.494898+00:00",
+    "timestamp_epoch_ms": 1790475980494,
+    "speed_kmh": 37.1,
+    "confidence_score": 0.94,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ06MN8615-1790500944",
+    "vehicle_id": "VEH-GJ06MN8615",
+    "registration_number": "GJ06MN8615",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-27T09:22:24.521017+00:00",
+    "timestamp_epoch_ms": 1790500944521,
+    "speed_kmh": 35.6,
+    "confidence_score": 0.96,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ06MN8615-1790526052",
+    "vehicle_id": "VEH-GJ06MN8615",
+    "registration_number": "GJ06MN8615",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-27T16:20:52.921655+00:00",
+    "timestamp_epoch_ms": 1790526052921,
+    "speed_kmh": 36.6,
+    "confidence_score": 0.94,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam11-GJ06MN8615-1790556353",
+    "vehicle_id": "VEH-GJ06MN8615",
+    "registration_number": "GJ06MN8615",
+    "camera_id": "cam11",
+    "camera_name": "Dolatpara Industrial Area, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.474,
+        21.536
+      ]
+    },
+    "timestamp": "2026-09-28T00:45:53.712888+00:00",
+    "timestamp_epoch_ms": 1790556353712,
+    "speed_kmh": 32.3,
+    "confidence_score": 0.98,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ06MN8615-1790578265",
+    "vehicle_id": "VEH-GJ06MN8615",
+    "registration_number": "GJ06MN8615",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-28T06:51:05.832488+00:00",
+    "timestamp_epoch_ms": 1790578265832,
+    "speed_kmh": 45.1,
+    "confidence_score": 0.93,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam05-GJ06MN8615-1790578819",
+    "vehicle_id": "VEH-GJ06MN8615",
+    "registration_number": "GJ06MN8615",
+    "camera_id": "cam05",
+    "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5925,
+        23.097
+      ]
+    },
+    "timestamp": "2026-09-28T07:00:19.226919+00:00",
+    "timestamp_epoch_ms": 1790578819226,
+    "speed_kmh": 46.3,
+    "confidence_score": 0.88,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam24-GJ01MN8778-1790431242",
+    "vehicle_id": "VEH-GJ01MN8778",
+    "registration_number": "GJ01MN8778",
+    "camera_id": "cam24",
+    "camera_name": "Dehgam Circle, Gandhinagar Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.812,
+        23.168
+      ]
+    },
+    "timestamp": "2026-09-26T14:00:42.176418+00:00",
+    "timestamp_epoch_ms": 1790431242176,
+    "speed_kmh": 53.6,
+    "confidence_score": 0.96,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam06-GJ01MN8778-1790453607",
+    "vehicle_id": "VEH-GJ01MN8778",
+    "registration_number": "GJ01MN8778",
+    "camera_id": "cam06",
+    "camera_name": "Timbavadi Gate, Junagadh City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.4475,
+        21.516
+      ]
+    },
+    "timestamp": "2026-09-26T20:13:27.856502+00:00",
+    "timestamp_epoch_ms": 1790453607856,
+    "speed_kmh": 49.1,
+    "confidence_score": 0.95,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam05-GJ01MN8778-1790471414",
+    "vehicle_id": "VEH-GJ01MN8778",
+    "registration_number": "GJ01MN8778",
+    "camera_id": "cam05",
+    "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5925,
+        23.097
+      ]
+    },
+    "timestamp": "2026-09-27T01:10:14.325821+00:00",
+    "timestamp_epoch_ms": 1790471414325,
+    "speed_kmh": 57.0,
+    "confidence_score": 0.95,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam29-GJ01MN8778-1790494978",
+    "vehicle_id": "VEH-GJ01MN8778",
+    "registration_number": "GJ01MN8778",
+    "camera_id": "cam29",
+    "camera_name": "GIDC Entrance, Bilimora Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.968,
+        20.765
+      ]
+    },
+    "timestamp": "2026-09-27T07:42:58.660372+00:00",
+    "timestamp_epoch_ms": 1790494978660,
+    "speed_kmh": 40.1,
+    "confidence_score": 0.98,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ01MN8778-1790521240",
+    "vehicle_id": "VEH-GJ01MN8778",
+    "registration_number": "GJ01MN8778",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-27T15:00:40.100505+00:00",
+    "timestamp_epoch_ms": 1790521240100,
+    "speed_kmh": 35.5,
+    "confidence_score": 0.97,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ01MN8778-1790521776",
+    "vehicle_id": "VEH-GJ01MN8778",
+    "registration_number": "GJ01MN8778",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-27T15:09:36.415444+00:00",
+    "timestamp_epoch_ms": 1790521776415,
+    "speed_kmh": 40.9,
+    "confidence_score": 0.92,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam02-GJ01MN8778-1790521926",
+    "vehicle_id": "VEH-GJ01MN8778",
+    "registration_number": "GJ01MN8778",
+    "camera_id": "cam02",
+    "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.562,
+        23.0286
+      ]
+    },
+    "timestamp": "2026-09-27T15:12:06.415444+00:00",
+    "timestamp_epoch_ms": 1790521926415,
+    "speed_kmh": 45.2,
+    "confidence_score": 0.98,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam11-GJ01AB7554-1790431962",
+    "vehicle_id": "VEH-GJ01AB7554",
+    "registration_number": "GJ01AB7554",
+    "camera_id": "cam11",
+    "camera_name": "Dolatpara Industrial Area, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.474,
+        21.536
+      ]
+    },
+    "timestamp": "2026-09-26T14:12:42.176418+00:00",
+    "timestamp_epoch_ms": 1790431962176,
+    "speed_kmh": 49.8,
+    "confidence_score": 0.93,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ01AB7554-1790457769",
+    "vehicle_id": "VEH-GJ01AB7554",
+    "registration_number": "GJ01AB7554",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-26T21:22:49.352102+00:00",
+    "timestamp_epoch_ms": 1790457769352,
+    "speed_kmh": 38.3,
+    "confidence_score": 0.99,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ01AB7554-1790483412",
+    "vehicle_id": "VEH-GJ01AB7554",
+    "registration_number": "GJ01AB7554",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-27T04:30:12.155163+00:00",
+    "timestamp_epoch_ms": 1790483412155,
+    "speed_kmh": 35.3,
+    "confidence_score": 0.94,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ01AB7554-1790503252",
+    "vehicle_id": "VEH-GJ01AB7554",
+    "registration_number": "GJ01AB7554",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-27T10:00:52.666304+00:00",
+    "timestamp_epoch_ms": 1790503252666,
+    "speed_kmh": 32.3,
+    "confidence_score": 0.97,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam15-GJ01AB7554-1790532537",
+    "vehicle_id": "VEH-GJ01AB7554",
+    "registration_number": "GJ01AB7554",
+    "camera_id": "cam15",
+    "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.552,
+        23.045
+      ]
+    },
+    "timestamp": "2026-09-27T18:08:57.510098+00:00",
+    "timestamp_epoch_ms": 1790532537510,
+    "speed_kmh": 33.7,
+    "confidence_score": 0.93,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam07-GJ01AB7554-1790555588",
+    "vehicle_id": "VEH-GJ01AB7554",
+    "registration_number": "GJ01AB7554",
+    "camera_id": "cam07",
+    "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.3667,
+        20.9
+      ]
+    },
+    "timestamp": "2026-09-28T00:33:08.621516+00:00",
+    "timestamp_epoch_ms": 1790555588621,
+    "speed_kmh": 51.2,
+    "confidence_score": 0.93,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam03-GJ01AB7554-1790581587",
+    "vehicle_id": "VEH-GJ01AB7554",
+    "registration_number": "GJ01AB7554",
+    "camera_id": "cam03",
+    "camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5878,
+        23.0934
+      ]
+    },
+    "timestamp": "2026-09-28T07:46:27.265557+00:00",
+    "timestamp_epoch_ms": 1790581587265,
+    "speed_kmh": 46.3,
+    "confidence_score": 0.9,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ01MN9660-1790431902",
+    "vehicle_id": "VEH-GJ01MN9660",
+    "registration_number": "GJ01MN9660",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-26T14:11:42.176418+00:00",
+    "timestamp_epoch_ms": 1790431902176,
+    "speed_kmh": 46.7,
+    "confidence_score": 0.93,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam06-GJ01MN9660-1790449023",
+    "vehicle_id": "VEH-GJ01MN9660",
+    "registration_number": "GJ01MN9660",
+    "camera_id": "cam06",
+    "camera_name": "Timbavadi Gate, Junagadh City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.4475,
+        21.516
+      ]
+    },
+    "timestamp": "2026-09-26T18:57:03.188563+00:00",
+    "timestamp_epoch_ms": 1790449023188,
+    "speed_kmh": 57.6,
+    "confidence_score": 0.91,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ01MN9660-1790470106",
+    "vehicle_id": "VEH-GJ01MN9660",
+    "registration_number": "GJ01MN9660",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-27T00:48:26.989649+00:00",
+    "timestamp_epoch_ms": 1790470106989,
+    "speed_kmh": 46.8,
+    "confidence_score": 0.94,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ01MN9660-1790494812",
+    "vehicle_id": "VEH-GJ01MN9660",
+    "registration_number": "GJ01MN9660",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-27T07:40:12.771531+00:00",
+    "timestamp_epoch_ms": 1790494812771,
+    "speed_kmh": 38.3,
+    "confidence_score": 0.89,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam15-GJ03XY1299-1790433402",
+    "vehicle_id": "VEH-GJ03XY1299",
+    "registration_number": "GJ03XY1299",
+    "camera_id": "cam15",
+    "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.552,
+        23.045
+      ]
+    },
+    "timestamp": "2026-09-26T14:36:42.176418+00:00",
+    "timestamp_epoch_ms": 1790433402176,
+    "speed_kmh": 49.5,
+    "confidence_score": 0.95,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam22-GJ03XY1299-1790443116",
+    "vehicle_id": "VEH-GJ03XY1299",
+    "registration_number": "GJ03XY1299",
+    "camera_id": "cam22",
+    "camera_name": "Mervada Three Roads, Banaskantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.43,
+        24.17
+      ]
+    },
+    "timestamp": "2026-09-26T17:18:36.109424+00:00",
+    "timestamp_epoch_ms": 1790443116109,
+    "speed_kmh": 46.6,
+    "confidence_score": 0.95,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam08-GJ03XY1299-1790467767",
+    "vehicle_id": "VEH-GJ03XY1299",
+    "registration_number": "GJ03XY1299",
+    "camera_id": "cam08",
+    "camera_name": "Majewadi Gate, Old City, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.463,
+        21.528
+      ]
+    },
+    "timestamp": "2026-09-27T00:09:27.301340+00:00",
+    "timestamp_epoch_ms": 1790467767301,
+    "speed_kmh": 52.0,
+    "confidence_score": 0.95,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ03XY1299-1790491555",
+    "vehicle_id": "VEH-GJ03XY1299",
+    "registration_number": "GJ03XY1299",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-27T06:45:55.059036+00:00",
+    "timestamp_epoch_ms": 1790491555059,
+    "speed_kmh": 41.0,
+    "confidence_score": 0.98,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ03XY1299-1790509708",
+    "vehicle_id": "VEH-GJ03XY1299",
+    "registration_number": "GJ03XY1299",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-27T11:48:28.732237+00:00",
+    "timestamp_epoch_ms": 1790509708732,
+    "speed_kmh": 53.9,
+    "confidence_score": 0.99,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ27EF3422-1790425902",
+    "vehicle_id": "VEH-GJ27EF3422",
+    "registration_number": "GJ27EF3422",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-26T12:31:42.176418+00:00",
+    "timestamp_epoch_ms": 1790425902176,
+    "speed_kmh": 46.1,
+    "confidence_score": 0.92,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ27EF3422-1790445486",
+    "vehicle_id": "VEH-GJ27EF3422",
+    "registration_number": "GJ27EF3422",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-26T17:58:06.366633+00:00",
+    "timestamp_epoch_ms": 1790445486366,
+    "speed_kmh": 51.4,
+    "confidence_score": 0.9,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ27EF3422-1790462464",
+    "vehicle_id": "VEH-GJ27EF3422",
+    "registration_number": "GJ27EF3422",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-26T22:41:04.750767+00:00",
+    "timestamp_epoch_ms": 1790462464750,
+    "speed_kmh": 57.5,
+    "confidence_score": 0.97,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ27EF3422-1790481752",
+    "vehicle_id": "VEH-GJ27EF3422",
+    "registration_number": "GJ27EF3422",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-27T04:02:32.106431+00:00",
+    "timestamp_epoch_ms": 1790481752106,
+    "speed_kmh": 47.4,
+    "confidence_score": 0.91,
+    "vehicle_type": "SUV",
+    "color": "Black",
+    "model": "Mahindra Scorpio-N",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam08-GJ01GH4261-1790431842",
+    "vehicle_id": "VEH-GJ01GH4261",
+    "registration_number": "GJ01GH4261",
+    "camera_id": "cam08",
+    "camera_name": "Majewadi Gate, Old City, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.463,
+        21.528
+      ]
+    },
+    "timestamp": "2026-09-26T14:10:42.176418+00:00",
+    "timestamp_epoch_ms": 1790431842176,
+    "speed_kmh": 50.8,
+    "confidence_score": 0.95,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ01GH4261-1790461477",
+    "vehicle_id": "VEH-GJ01GH4261",
+    "registration_number": "GJ01GH4261",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-26T22:24:37.299899+00:00",
+    "timestamp_epoch_ms": 1790461477299,
+    "speed_kmh": 33.2,
+    "confidence_score": 0.97,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ01GH4261-1790482813",
+    "vehicle_id": "VEH-GJ01GH4261",
+    "registration_number": "GJ01GH4261",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-27T04:20:13.074840+00:00",
+    "timestamp_epoch_ms": 1790482813074,
+    "speed_kmh": 43.4,
+    "confidence_score": 0.94,
+    "vehicle_type": "MPV",
+    "color": "White",
+    "model": "Toyota Innova Crysta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ06XY8816-1790429022",
+    "vehicle_id": "VEH-GJ06XY8816",
+    "registration_number": "GJ06XY8816",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-26T13:23:42.176418+00:00",
+    "timestamp_epoch_ms": 1790429022176,
+    "speed_kmh": 47.9,
+    "confidence_score": 0.91,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ06XY8816-1790454575",
+    "vehicle_id": "VEH-GJ06XY8816",
+    "registration_number": "GJ06XY8816",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-26T20:29:35.816047+00:00",
+    "timestamp_epoch_ms": 1790454575816,
+    "speed_kmh": 54.8,
+    "confidence_score": 0.89,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ06XY8816-1790479103",
+    "vehicle_id": "VEH-GJ06XY8816",
+    "registration_number": "GJ06XY8816",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-27T03:18:23.951585+00:00",
+    "timestamp_epoch_ms": 1790479103951,
+    "speed_kmh": 37.2,
+    "confidence_score": 0.97,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam05-GJ01RS3321-1790433102",
+    "vehicle_id": "VEH-GJ01RS3321",
+    "registration_number": "GJ01RS3321",
+    "camera_id": "cam05",
+    "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5925,
+        23.097
+      ]
+    },
+    "timestamp": "2026-09-26T14:31:42.176418+00:00",
+    "timestamp_epoch_ms": 1790433102176,
+    "speed_kmh": 39.6,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ01RS3321-1790448906",
+    "vehicle_id": "VEH-GJ01RS3321",
+    "registration_number": "GJ01RS3321",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-26T18:55:06.446006+00:00",
+    "timestamp_epoch_ms": 1790448906446,
+    "speed_kmh": 46.5,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ01RS3321-1790463186",
+    "vehicle_id": "VEH-GJ01RS3321",
+    "registration_number": "GJ01RS3321",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-26T22:53:06.998725+00:00",
+    "timestamp_epoch_ms": 1790463186998,
+    "speed_kmh": 50.7,
+    "confidence_score": 0.89,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ01GH3445-1790430042",
+    "vehicle_id": "VEH-GJ01GH3445",
+    "registration_number": "GJ01GH3445",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-26T13:40:42.176418+00:00",
+    "timestamp_epoch_ms": 1790430042176,
+    "speed_kmh": 44.9,
+    "confidence_score": 0.89,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ01GH3445-1790430396",
+    "vehicle_id": "VEH-GJ01GH3445",
+    "registration_number": "GJ01GH3445",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-26T13:46:36.668913+00:00",
+    "timestamp_epoch_ms": 1790430396668,
+    "speed_kmh": 42.9,
+    "confidence_score": 0.89,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ01GH3445-1790430847",
+    "vehicle_id": "VEH-GJ01GH3445",
+    "registration_number": "GJ01GH3445",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-26T13:54:07.835104+00:00",
+    "timestamp_epoch_ms": 1790430847835,
+    "speed_kmh": 50.2,
+    "confidence_score": 0.96,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam15-GJ01GH3445-1790431184",
+    "vehicle_id": "VEH-GJ01GH3445",
+    "registration_number": "GJ01GH3445",
+    "camera_id": "cam15",
+    "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.552,
+        23.045
+      ]
+    },
+    "timestamp": "2026-09-26T13:59:44.874462+00:00",
+    "timestamp_epoch_ms": 1790431184874,
+    "speed_kmh": 41.7,
+    "confidence_score": 0.94,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam18-GJ01GH3445-1790452237",
+    "vehicle_id": "VEH-GJ01GH3445",
+    "registration_number": "GJ01GH3445",
+    "camera_id": "cam18",
+    "camera_name": "Dhebar Road Crossroad, Rajkot",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.802,
+        22.301
+      ]
+    },
+    "timestamp": "2026-09-26T19:50:37.882010+00:00",
+    "timestamp_epoch_ms": 1790452237882,
+    "speed_kmh": 33.8,
+    "confidence_score": 0.88,
+    "vehicle_type": "Hatchback",
+    "color": "Silver",
+    "model": "Maruti Suzuki Swift",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam26-GJ03JK9705-1790431542",
+    "vehicle_id": "VEH-GJ03JK9705",
+    "registration_number": "GJ03JK9705",
+    "camera_id": "cam26",
+    "camera_name": "Tankal Village Entrance, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.05,
+        20.78
+      ]
+    },
+    "timestamp": "2026-09-26T14:05:42.176418+00:00",
+    "timestamp_epoch_ms": 1790431542176,
+    "speed_kmh": 52.6,
+    "confidence_score": 0.98,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ03JK9705-1790450074",
+    "vehicle_id": "VEH-GJ03JK9705",
+    "registration_number": "GJ03JK9705",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-26T19:14:34.057515+00:00",
+    "timestamp_epoch_ms": 1790450074057,
+    "speed_kmh": 49.2,
+    "confidence_score": 0.94,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam02-GJ03JK9705-1790450224",
+    "vehicle_id": "VEH-GJ03JK9705",
+    "registration_number": "GJ03JK9705",
+    "camera_id": "cam02",
+    "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.562,
+        23.0286
+      ]
+    },
+    "timestamp": "2026-09-26T19:17:04.057515+00:00",
+    "timestamp_epoch_ms": 1790450224057,
+    "speed_kmh": 52.8,
+    "confidence_score": 0.89,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ03JK9705-1790450553",
+    "vehicle_id": "VEH-GJ03JK9705",
+    "registration_number": "GJ03JK9705",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-26T19:22:33.658791+00:00",
+    "timestamp_epoch_ms": 1790450553658,
+    "speed_kmh": 36.5,
+    "confidence_score": 0.95,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam03-GJ03JK9705-1790451191",
+    "vehicle_id": "VEH-GJ03JK9705",
+    "registration_number": "GJ03JK9705",
+    "camera_id": "cam03",
+    "camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5878,
+        23.0934
+      ]
+    },
+    "timestamp": "2026-09-26T19:33:11.637515+00:00",
+    "timestamp_epoch_ms": 1790451191637,
+    "speed_kmh": 47.8,
+    "confidence_score": 0.89,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam16-GJ03JK9705-1790451341",
+    "vehicle_id": "VEH-GJ03JK9705",
+    "registration_number": "GJ03JK9705",
+    "camera_id": "cam16",
+    "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.593,
+        23.098
+      ]
+    },
+    "timestamp": "2026-09-26T19:35:41.637515+00:00",
+    "timestamp_epoch_ms": 1790451341637,
+    "speed_kmh": 39.5,
+    "confidence_score": 0.89,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam29-GJ03JK9705-1790477964",
+    "vehicle_id": "VEH-GJ03JK9705",
+    "registration_number": "GJ03JK9705",
+    "camera_id": "cam29",
+    "camera_name": "GIDC Entrance, Bilimora Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.968,
+        20.765
+      ]
+    },
+    "timestamp": "2026-09-27T02:59:24.821376+00:00",
+    "timestamp_epoch_ms": 1790477964821,
+    "speed_kmh": 35.5,
+    "confidence_score": 0.98,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ03JK9705-1790504681",
+    "vehicle_id": "VEH-GJ03JK9705",
+    "registration_number": "GJ03JK9705",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-27T10:24:41.463832+00:00",
+    "timestamp_epoch_ms": 1790504681463,
+    "speed_kmh": 36.8,
+    "confidence_score": 0.99,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ03AB4259-1790427342",
+    "vehicle_id": "VEH-GJ03AB4259",
+    "registration_number": "GJ03AB4259",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-26T12:55:42.176418+00:00",
+    "timestamp_epoch_ms": 1790427342176,
+    "speed_kmh": 36.1,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ03AB4259-1790450423",
+    "vehicle_id": "VEH-GJ03AB4259",
+    "registration_number": "GJ03AB4259",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-26T19:20:23.073437+00:00",
+    "timestamp_epoch_ms": 1790450423073,
+    "speed_kmh": 39.1,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam03-GJ03AB4259-1790450699",
+    "vehicle_id": "VEH-GJ03AB4259",
+    "registration_number": "GJ03AB4259",
+    "camera_id": "cam03",
+    "camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5878,
+        23.0934
+      ]
+    },
+    "timestamp": "2026-09-26T19:24:59.269914+00:00",
+    "timestamp_epoch_ms": 1790450699269,
+    "speed_kmh": 38.7,
+    "confidence_score": 0.91,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ03AB4259-1790451276",
+    "vehicle_id": "VEH-GJ03AB4259",
+    "registration_number": "GJ03AB4259",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-26T19:34:36.769729+00:00",
+    "timestamp_epoch_ms": 1790451276769,
+    "speed_kmh": 52.8,
+    "confidence_score": 0.99,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam07-GJ03AB4259-1790477220",
+    "vehicle_id": "VEH-GJ03AB4259",
+    "registration_number": "GJ03AB4259",
+    "camera_id": "cam07",
+    "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.3667,
+        20.9
+      ]
+    },
+    "timestamp": "2026-09-27T02:47:00.064927+00:00",
+    "timestamp_epoch_ms": 1790477220064,
+    "speed_kmh": 45.2,
+    "confidence_score": 0.98,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ03AB4259-1790506314",
+    "vehicle_id": "VEH-GJ03AB4259",
+    "registration_number": "GJ03AB4259",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-27T10:51:54.507422+00:00",
+    "timestamp_epoch_ms": 1790506314507,
+    "speed_kmh": 40.8,
+    "confidence_score": 0.91,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam12-GJ03AB4259-1790507702",
+    "vehicle_id": "VEH-GJ03AB4259",
+    "registration_number": "GJ03AB4259",
+    "camera_id": "cam12",
+    "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.58,
+        23.167
+      ]
+    },
+    "timestamp": "2026-09-27T11:15:02.122158+00:00",
+    "timestamp_epoch_ms": 1790507702122,
+    "speed_kmh": 38.8,
+    "confidence_score": 0.91,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam15-GJ03AB4259-1790508715",
+    "vehicle_id": "VEH-GJ03AB4259",
+    "registration_number": "GJ03AB4259",
+    "camera_id": "cam15",
+    "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.552,
+        23.045
+      ]
+    },
+    "timestamp": "2026-09-27T11:31:55.755567+00:00",
+    "timestamp_epoch_ms": 1790508715755,
+    "speed_kmh": 49.2,
+    "confidence_score": 0.89,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam18-GJ05EF1227-1790428182",
+    "vehicle_id": "VEH-GJ05EF1227",
+    "registration_number": "GJ05EF1227",
+    "camera_id": "cam18",
+    "camera_name": "Dhebar Road Crossroad, Rajkot",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.802,
+        22.301
+      ]
+    },
+    "timestamp": "2026-09-26T13:09:42.176418+00:00",
+    "timestamp_epoch_ms": 1790428182176,
+    "speed_kmh": 43.0,
+    "confidence_score": 0.96,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ05EF1227-1790447486",
+    "vehicle_id": "VEH-GJ05EF1227",
+    "registration_number": "GJ05EF1227",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-26T18:31:26.011141+00:00",
+    "timestamp_epoch_ms": 1790447486011,
+    "speed_kmh": 52.5,
+    "confidence_score": 0.98,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam07-GJ05EF1227-1790471003",
+    "vehicle_id": "VEH-GJ05EF1227",
+    "registration_number": "GJ05EF1227",
+    "camera_id": "cam07",
+    "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.3667,
+        20.9
+      ]
+    },
+    "timestamp": "2026-09-27T01:03:23.109783+00:00",
+    "timestamp_epoch_ms": 1790471003109,
+    "speed_kmh": 41.3,
+    "confidence_score": 0.96,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam05-GJ05EF1227-1790495103",
+    "vehicle_id": "VEH-GJ05EF1227",
+    "registration_number": "GJ05EF1227",
+    "camera_id": "cam05",
+    "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5925,
+        23.097
+      ]
+    },
+    "timestamp": "2026-09-27T07:45:03.831188+00:00",
+    "timestamp_epoch_ms": 1790495103831,
+    "speed_kmh": 50.1,
+    "confidence_score": 0.95,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam17-GJ05EF1227-1790517696",
+    "vehicle_id": "VEH-GJ05EF1227",
+    "registration_number": "GJ05EF1227",
+    "camera_id": "cam17",
+    "camera_name": "Central Bus Port, Rajkot City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.798,
+        22.304
+      ]
+    },
+    "timestamp": "2026-09-27T14:01:36.762924+00:00",
+    "timestamp_epoch_ms": 1790517696762,
+    "speed_kmh": 32.5,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ05XY2681-1790426142",
+    "vehicle_id": "VEH-GJ05XY2681",
+    "registration_number": "GJ05XY2681",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-26T12:35:42.176418+00:00",
+    "timestamp_epoch_ms": 1790426142176,
+    "speed_kmh": 37.0,
+    "confidence_score": 0.93,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ05XY2681-1790426717",
+    "vehicle_id": "VEH-GJ05XY2681",
+    "registration_number": "GJ05XY2681",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-26T12:45:17.401647+00:00",
+    "timestamp_epoch_ms": 1790426717401,
+    "speed_kmh": 38.1,
+    "confidence_score": 0.96,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ05XY2681-1790444137",
+    "vehicle_id": "VEH-GJ05XY2681",
+    "registration_number": "GJ05XY2681",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-26T17:35:37.340947+00:00",
+    "timestamp_epoch_ms": 1790444137340,
+    "speed_kmh": 51.8,
+    "confidence_score": 0.97,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ05XY2681-1790472804",
+    "vehicle_id": "VEH-GJ05XY2681",
+    "registration_number": "GJ05XY2681",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-27T01:33:24.829567+00:00",
+    "timestamp_epoch_ms": 1790472804829,
+    "speed_kmh": 48.9,
+    "confidence_score": 0.94,
+    "vehicle_type": "Sedan",
+    "color": "Grey",
+    "model": "Honda City",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ05CD3261-1790431782",
+    "vehicle_id": "VEH-GJ05CD3261",
+    "registration_number": "GJ05CD3261",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-26T14:09:42.176418+00:00",
+    "timestamp_epoch_ms": 1790431782176,
+    "speed_kmh": 51.2,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ05CD3261-1790466568",
+    "vehicle_id": "VEH-GJ05CD3261",
+    "registration_number": "GJ05CD3261",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-26T23:49:28.959046+00:00",
+    "timestamp_epoch_ms": 1790466568959,
+    "speed_kmh": 40.3,
+    "confidence_score": 0.96,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam06-GJ05CD3261-1790497112",
+    "vehicle_id": "VEH-GJ05CD3261",
+    "registration_number": "GJ05CD3261",
+    "camera_id": "cam06",
+    "camera_name": "Timbavadi Gate, Junagadh City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.4475,
+        21.516
+      ]
+    },
+    "timestamp": "2026-09-27T08:18:32.086306+00:00",
+    "timestamp_epoch_ms": 1790497112086,
+    "speed_kmh": 32.3,
+    "confidence_score": 0.89,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ05CD3261-1790522628",
+    "vehicle_id": "VEH-GJ05CD3261",
+    "registration_number": "GJ05CD3261",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-27T15:23:48.498465+00:00",
+    "timestamp_epoch_ms": 1790522628498,
+    "speed_kmh": 39.2,
+    "confidence_score": 0.9,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam22-GJ18EF7320-1790435442",
+    "vehicle_id": "VEH-GJ18EF7320",
+    "registration_number": "GJ18EF7320",
+    "camera_id": "cam22",
+    "camera_name": "Mervada Three Roads, Banaskantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.43,
+        24.17
+      ]
+    },
+    "timestamp": "2026-09-26T15:10:42.176418+00:00",
+    "timestamp_epoch_ms": 1790435442176,
+    "speed_kmh": 50.9,
+    "confidence_score": 0.91,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ18EF7320-1790464901",
+    "vehicle_id": "VEH-GJ18EF7320",
+    "registration_number": "GJ18EF7320",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-26T23:21:41.914095+00:00",
+    "timestamp_epoch_ms": 1790464901914,
+    "speed_kmh": 32.2,
+    "confidence_score": 0.89,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam08-GJ18EF7320-1790478445",
+    "vehicle_id": "VEH-GJ18EF7320",
+    "registration_number": "GJ18EF7320",
+    "camera_id": "cam08",
+    "camera_name": "Majewadi Gate, Old City, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.463,
+        21.528
+      ]
+    },
+    "timestamp": "2026-09-27T03:07:25.699261+00:00",
+    "timestamp_epoch_ms": 1790478445699,
+    "speed_kmh": 46.6,
+    "confidence_score": 0.94,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam23-GJ18EF7320-1790501515",
+    "vehicle_id": "VEH-GJ18EF7320",
+    "registration_number": "GJ18EF7320",
+    "camera_id": "cam23",
+    "camera_name": "Kheram Junction, Sabarkantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.95,
+        23.6
+      ]
+    },
+    "timestamp": "2026-09-27T09:31:55.964006+00:00",
+    "timestamp_epoch_ms": 1790501515964,
+    "speed_kmh": 53.7,
+    "confidence_score": 0.9,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ05JK1205-1790427822",
+    "vehicle_id": "VEH-GJ05JK1205",
+    "registration_number": "GJ05JK1205",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-26T13:03:42.176418+00:00",
+    "timestamp_epoch_ms": 1790427822176,
+    "speed_kmh": 53.5,
+    "confidence_score": 0.88,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ05JK1205-1790440541",
+    "vehicle_id": "VEH-GJ05JK1205",
+    "registration_number": "GJ05JK1205",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-26T16:35:41.867703+00:00",
+    "timestamp_epoch_ms": 1790440541867,
+    "speed_kmh": 50.4,
+    "confidence_score": 0.98,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam22-GJ05JK1205-1790459292",
+    "vehicle_id": "VEH-GJ05JK1205",
+    "registration_number": "GJ05JK1205",
+    "camera_id": "cam22",
+    "camera_name": "Mervada Three Roads, Banaskantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.43,
+        24.17
+      ]
+    },
+    "timestamp": "2026-09-26T21:48:12.341637+00:00",
+    "timestamp_epoch_ms": 1790459292341,
+    "speed_kmh": 50.6,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam12-GJ05JK1205-1790470932",
+    "vehicle_id": "VEH-GJ05JK1205",
+    "registration_number": "GJ05JK1205",
+    "camera_id": "cam12",
+    "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.58,
+        23.167
+      ]
+    },
+    "timestamp": "2026-09-27T01:02:12.832478+00:00",
+    "timestamp_epoch_ms": 1790470932832,
+    "speed_kmh": 34.8,
+    "confidence_score": 0.95,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam25-GJ05MN3408-1790429682",
+    "vehicle_id": "VEH-GJ05MN3408",
+    "registration_number": "GJ05MN3408",
+    "camera_id": "cam25",
+    "camera_name": "Dhanori Road, Gandevi, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.01,
+        20.85
+      ]
+    },
+    "timestamp": "2026-09-26T13:34:42.176418+00:00",
+    "timestamp_epoch_ms": 1790429682176,
+    "speed_kmh": 57.2,
+    "confidence_score": 0.92,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam28-GJ05MN3408-1790430420",
+    "vehicle_id": "VEH-GJ05MN3408",
+    "registration_number": "GJ05MN3408",
+    "camera_id": "cam28",
+    "camera_name": "Town Hall Circle, Bilimora",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.964,
+        20.762
+      ]
+    },
+    "timestamp": "2026-09-26T13:47:00.816800+00:00",
+    "timestamp_epoch_ms": 1790430420816,
+    "speed_kmh": 53.1,
+    "confidence_score": 0.97,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam23-GJ05MN3408-1790460464",
+    "vehicle_id": "VEH-GJ05MN3408",
+    "registration_number": "GJ05MN3408",
+    "camera_id": "cam23",
+    "camera_name": "Kheram Junction, Sabarkantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.95,
+        23.6
+      ]
+    },
+    "timestamp": "2026-09-26T22:07:44.738234+00:00",
+    "timestamp_epoch_ms": 1790460464738,
+    "speed_kmh": 37.8,
+    "confidence_score": 0.95,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ05MN3408-1790465854",
+    "vehicle_id": "VEH-GJ05MN3408",
+    "registration_number": "GJ05MN3408",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-26T23:37:34.181863+00:00",
+    "timestamp_epoch_ms": 1790465854181,
+    "speed_kmh": 48.7,
+    "confidence_score": 0.92,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam07-GJ05MN3408-1790486681",
+    "vehicle_id": "VEH-GJ05MN3408",
+    "registration_number": "GJ05MN3408",
+    "camera_id": "cam07",
+    "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.3667,
+        20.9
+      ]
+    },
+    "timestamp": "2026-09-27T05:24:41.806254+00:00",
+    "timestamp_epoch_ms": 1790486681806,
+    "speed_kmh": 57.0,
+    "confidence_score": 0.9,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam11-GJ05MN3408-1790492927",
+    "vehicle_id": "VEH-GJ05MN3408",
+    "registration_number": "GJ05MN3408",
+    "camera_id": "cam11",
+    "camera_name": "Dolatpara Industrial Area, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.474,
+        21.536
+      ]
+    },
+    "timestamp": "2026-09-27T07:08:47.739666+00:00",
+    "timestamp_epoch_ms": 1790492927739,
+    "speed_kmh": 41.3,
+    "confidence_score": 0.88,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ05MN3408-1790511153",
+    "vehicle_id": "VEH-GJ05MN3408",
+    "registration_number": "GJ05MN3408",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-27T12:12:33.394656+00:00",
+    "timestamp_epoch_ms": 1790511153394,
+    "speed_kmh": 53.3,
+    "confidence_score": 0.88,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ05MN3408-1790511303",
+    "vehicle_id": "VEH-GJ05MN3408",
+    "registration_number": "GJ05MN3408",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-27T12:15:03.394656+00:00",
+    "timestamp_epoch_ms": 1790511303394,
+    "speed_kmh": 56.8,
+    "confidence_score": 0.9,
+    "vehicle_type": "Bus",
+    "color": "Orange-White",
+    "model": "GSRTC Express Bus",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam13-GJ02EF6403-1790428062",
+    "vehicle_id": "VEH-GJ02EF6403",
+    "registration_number": "GJ02EF6403",
+    "camera_id": "cam13",
+    "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.545,
+        23.024
+      ]
+    },
+    "timestamp": "2026-09-26T13:07:42.176418+00:00",
+    "timestamp_epoch_ms": 1790428062176,
+    "speed_kmh": 50.6,
+    "confidence_score": 0.93,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam10-GJ02EF6403-1790447218",
+    "vehicle_id": "VEH-GJ02EF6403",
+    "registration_number": "GJ02EF6403",
+    "camera_id": "cam10",
+    "camera_name": "Char Chowk Road, Junagadh Central",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.459,
+        21.52
+      ]
+    },
+    "timestamp": "2026-09-26T18:26:58.485883+00:00",
+    "timestamp_epoch_ms": 1790447218485,
+    "speed_kmh": 51.1,
+    "confidence_score": 0.96,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ02EF6403-1790447407",
+    "vehicle_id": "VEH-GJ02EF6403",
+    "registration_number": "GJ02EF6403",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-26T18:30:07.169721+00:00",
+    "timestamp_epoch_ms": 1790447407169,
+    "speed_kmh": 39.7,
+    "confidence_score": 0.95,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam19-GJ02EF6403-1790464545",
+    "vehicle_id": "VEH-GJ02EF6403",
+    "registration_number": "GJ02EF6403",
+    "camera_id": "cam19",
+    "camera_name": "Khaparia Gram Panchayat, Gandevi, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.99,
+        20.82
+      ]
+    },
+    "timestamp": "2026-09-26T23:15:45.472688+00:00",
+    "timestamp_epoch_ms": 1790464545472,
+    "speed_kmh": 57.2,
+    "confidence_score": 0.89,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam07-GJ02EF6403-1790482394",
+    "vehicle_id": "VEH-GJ02EF6403",
+    "registration_number": "GJ02EF6403",
+    "camera_id": "cam07",
+    "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.3667,
+        20.9
+      ]
+    },
+    "timestamp": "2026-09-27T04:13:14.959281+00:00",
+    "timestamp_epoch_ms": 1790482394959,
+    "speed_kmh": 55.0,
+    "confidence_score": 0.92,
+    "vehicle_type": "Two-Wheeler",
+    "color": "Black",
+    "model": "Royal Enfield Classic 350",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam15-GJ27EF2788-1790432142",
+    "vehicle_id": "VEH-GJ27EF2788",
+    "registration_number": "GJ27EF2788",
+    "camera_id": "cam15",
+    "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.552,
+        23.045
+      ]
+    },
+    "timestamp": "2026-09-26T14:15:42.176418+00:00",
+    "timestamp_epoch_ms": 1790432142176,
+    "speed_kmh": 47.2,
+    "confidence_score": 0.92,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ27EF2788-1790432390",
+    "vehicle_id": "VEH-GJ27EF2788",
+    "registration_number": "GJ27EF2788",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-26T14:19:50.875315+00:00",
+    "timestamp_epoch_ms": 1790432390875,
+    "speed_kmh": 33.1,
+    "confidence_score": 0.94,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ27EF2788-1790433056",
+    "vehicle_id": "VEH-GJ27EF2788",
+    "registration_number": "GJ27EF2788",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-26T14:30:56.270326+00:00",
+    "timestamp_epoch_ms": 1790433056270,
+    "speed_kmh": 33.0,
+    "confidence_score": 0.97,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ27EF2788-1790433533",
+    "vehicle_id": "VEH-GJ27EF2788",
+    "registration_number": "GJ27EF2788",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-26T14:38:53.948185+00:00",
+    "timestamp_epoch_ms": 1790433533948,
+    "speed_kmh": 47.4,
+    "confidence_score": 0.95,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam25-GJ27EF2788-1790448921",
+    "vehicle_id": "VEH-GJ27EF2788",
+    "registration_number": "GJ27EF2788",
+    "camera_id": "cam25",
+    "camera_name": "Dhanori Road, Gandevi, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        73.01,
+        20.85
+      ]
+    },
+    "timestamp": "2026-09-26T18:55:21.852070+00:00",
+    "timestamp_epoch_ms": 1790448921852,
+    "speed_kmh": 57.3,
+    "confidence_score": 0.97,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ27EF2788-1790476209",
+    "vehicle_id": "VEH-GJ27EF2788",
+    "registration_number": "GJ27EF2788",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-27T02:30:09.937237+00:00",
+    "timestamp_epoch_ms": 1790476209937,
+    "speed_kmh": 51.0,
+    "confidence_score": 0.93,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam09-GJ27EF2788-1790488491",
+    "vehicle_id": "VEH-GJ27EF2788",
+    "registration_number": "GJ27EF2788",
+    "camera_id": "cam09",
+    "camera_name": "National Highway Bypass Circle, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.471,
+        21.505
+      ]
+    },
+    "timestamp": "2026-09-27T05:54:51.926868+00:00",
+    "timestamp_epoch_ms": 1790488491926,
+    "speed_kmh": 52.2,
+    "confidence_score": 0.91,
+    "vehicle_type": "Hatchback",
+    "color": "White",
+    "model": "Maruti Suzuki Baleno",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam11-GJ05RS4588-1790433942",
+    "vehicle_id": "VEH-GJ05RS4588",
+    "registration_number": "GJ05RS4588",
+    "camera_id": "cam11",
+    "camera_name": "Dolatpara Industrial Area, Junagadh",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.474,
+        21.536
+      ]
+    },
+    "timestamp": "2026-09-26T14:45:42.176418+00:00",
+    "timestamp_epoch_ms": 1790433942176,
+    "speed_kmh": 40.7,
+    "confidence_score": 0.98,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam05-GJ05RS4588-1790456975",
+    "vehicle_id": "VEH-GJ05RS4588",
+    "registration_number": "GJ05RS4588",
+    "camera_id": "cam05",
+    "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5925,
+        23.097
+      ]
+    },
+    "timestamp": "2026-09-26T21:09:35.544076+00:00",
+    "timestamp_epoch_ms": 1790456975544,
+    "speed_kmh": 43.5,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ05RS4588-1790473848",
+    "vehicle_id": "VEH-GJ05RS4588",
+    "registration_number": "GJ05RS4588",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-27T01:50:48.572937+00:00",
+    "timestamp_epoch_ms": 1790473848572,
+    "speed_kmh": 56.0,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam03-GJ05RS4588-1790497536",
+    "vehicle_id": "VEH-GJ05RS4588",
+    "registration_number": "GJ05RS4588",
+    "camera_id": "cam03",
+    "camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5878,
+        23.0934
+      ]
+    },
+    "timestamp": "2026-09-27T08:25:36.524523+00:00",
+    "timestamp_epoch_ms": 1790497536524,
+    "speed_kmh": 39.9,
+    "confidence_score": 0.88,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam14-GJ05RS4588-1790498125",
+    "vehicle_id": "VEH-GJ05RS4588",
+    "registration_number": "GJ05RS4588",
+    "camera_id": "cam14",
+    "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.531,
+        23.038
+      ]
+    },
+    "timestamp": "2026-09-27T08:35:25.752687+00:00",
+    "timestamp_epoch_ms": 1790498125752,
+    "speed_kmh": 51.7,
+    "confidence_score": 0.99,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ05RS4588-1790498686",
+    "vehicle_id": "VEH-GJ05RS4588",
+    "registration_number": "GJ05RS4588",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-27T08:44:46.372168+00:00",
+    "timestamp_epoch_ms": 1790498686372,
+    "speed_kmh": 40.2,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "White",
+    "model": "Hyundai Creta",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam19-GJ05AB1303-1790426802",
+    "vehicle_id": "VEH-GJ05AB1303",
+    "registration_number": "GJ05AB1303",
+    "camera_id": "cam19",
+    "camera_name": "Khaparia Gram Panchayat, Gandevi, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.99,
+        20.82
+      ]
+    },
+    "timestamp": "2026-09-26T12:46:42.176418+00:00",
+    "timestamp_epoch_ms": 1790426802176,
+    "speed_kmh": 56.3,
+    "confidence_score": 0.92,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam30-GJ05AB1303-1790453597",
+    "vehicle_id": "VEH-GJ05AB1303",
+    "registration_number": "GJ05AB1303",
+    "camera_id": "cam30",
+    "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.133,
+        23.076
+      ]
+    },
+    "timestamp": "2026-09-26T20:13:17.208562+00:00",
+    "timestamp_epoch_ms": 1790453597208,
+    "speed_kmh": 52.0,
+    "confidence_score": 0.88,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam06-GJ05AB1303-1790472156",
+    "vehicle_id": "VEH-GJ05AB1303",
+    "registration_number": "GJ05AB1303",
+    "camera_id": "cam06",
+    "camera_name": "Timbavadi Gate, Junagadh City",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.4475,
+        21.516
+      ]
+    },
+    "timestamp": "2026-09-27T01:22:36.323897+00:00",
+    "timestamp_epoch_ms": 1790472156323,
+    "speed_kmh": 34.2,
+    "confidence_score": 0.98,
+    "vehicle_type": "Compact SUV",
+    "color": "Blue",
+    "model": "Tata Nexon",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam29-GJ27PQ8500-1790429562",
+    "vehicle_id": "VEH-GJ27PQ8500",
+    "registration_number": "GJ27PQ8500",
+    "camera_id": "cam29",
+    "camera_name": "GIDC Entrance, Bilimora Highway",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.968,
+        20.765
+      ]
+    },
+    "timestamp": "2026-09-26T13:32:42.176418+00:00",
+    "timestamp_epoch_ms": 1790429562176,
+    "speed_kmh": 38.3,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam07-GJ27PQ8500-1790448310",
+    "vehicle_id": "VEH-GJ27PQ8500",
+    "registration_number": "GJ27PQ8500",
+    "camera_id": "cam07",
+    "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.3667,
+        20.9
+      ]
+    },
+    "timestamp": "2026-09-26T18:45:10.097478+00:00",
+    "timestamp_epoch_ms": 1790448310097,
+    "speed_kmh": 52.0,
+    "confidence_score": 0.95,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam04-GJ27PQ8500-1790470825",
+    "vehicle_id": "VEH-GJ27PQ8500",
+    "registration_number": "GJ27PQ8500",
+    "camera_id": "cam04",
+    "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5625,
+        23.0135
+      ]
+    },
+    "timestamp": "2026-09-27T01:00:25.846535+00:00",
+    "timestamp_epoch_ms": 1790470825846,
+    "speed_kmh": 52.2,
+    "confidence_score": 0.99,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam23-GJ27PQ8500-1790476391",
+    "vehicle_id": "VEH-GJ27PQ8500",
+    "registration_number": "GJ27PQ8500",
+    "camera_id": "cam23",
+    "camera_name": "Kheram Junction, Sabarkantha",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.95,
+        23.6
+      ]
+    },
+    "timestamp": "2026-09-27T02:33:11.023144+00:00",
+    "timestamp_epoch_ms": 1790476391023,
+    "speed_kmh": 49.3,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam20-GJ27PQ8500-1790483309",
+    "vehicle_id": "VEH-GJ27PQ8500",
+    "registration_number": "GJ27PQ8500",
+    "camera_id": "cam20",
+    "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.592,
+        23.033
+      ]
+    },
+    "timestamp": "2026-09-27T04:28:29.504038+00:00",
+    "timestamp_epoch_ms": 1790483309504,
+    "speed_kmh": 37.9,
+    "confidence_score": 0.89,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam01-GJ27PQ8500-1790483609",
+    "vehicle_id": "VEH-GJ27PQ8500",
+    "registration_number": "GJ27PQ8500",
+    "camera_id": "cam01",
+    "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.5815,
+        23.0673
+      ]
+    },
+    "timestamp": "2026-09-27T04:33:29.104848+00:00",
+    "timestamp_epoch_ms": 1790483609104,
+    "speed_kmh": 47.6,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam27-GJ27PQ8500-1790506302",
+    "vehicle_id": "VEH-GJ27PQ8500",
+    "registration_number": "GJ27PQ8500",
+    "camera_id": "cam27",
+    "camera_name": "Station Road, Bilimora, Navsari",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        72.96,
+        20.76
+      ]
+    },
+    "timestamp": "2026-09-27T10:51:42.486554+00:00",
+    "timestamp_epoch_ms": 1790506302486,
+    "speed_kmh": 41.2,
+    "confidence_score": 0.93,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  },
+  {
+    "sighting_id": "SGT-cam18-GJ27PQ8500-1790528123",
+    "vehicle_id": "VEH-GJ27PQ8500",
+    "registration_number": "GJ27PQ8500",
+    "camera_id": "cam18",
+    "camera_name": "Dhebar Road Crossroad, Rajkot",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        70.802,
+        22.301
+      ]
+    },
+    "timestamp": "2026-09-27T16:55:23.871620+00:00",
+    "timestamp_epoch_ms": 1790528123871,
+    "speed_kmh": 46.4,
+    "confidence_score": 0.94,
+    "vehicle_type": "SUV",
+    "color": "Red",
+    "model": "Kia Seltos",
+    "status": "CONFIRMED"
+  }
+]

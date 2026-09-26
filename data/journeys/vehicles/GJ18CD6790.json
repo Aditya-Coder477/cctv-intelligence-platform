@@ -1,0 +1,212 @@
+{
+  "journey_id": "JRN-GJ18CD6790",
+  "vehicle_id": "VEH-GJ18CD6790",
+  "registration_number": "GJ18CD6790",
+  "normalized_registration_number": "GJ18CD6790",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 7,
+  "total_distance_km": 603.83,
+  "avg_speed_kmh": 39.8,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ18CD6790-cam02",
+      "vehicle_id": "VEH-GJ18CD6790",
+      "registration_number": "GJ18CD6790",
+      "camera_id": "cam02",
+      "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "source_time": "2026-09-26T12:26:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 50.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18CD6790-cam12",
+      "vehicle_id": "VEH-GJ18CD6790",
+      "registration_number": "GJ18CD6790",
+      "camera_id": "cam12",
+      "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "camera_latitude": 23.167,
+      "camera_longitude": 72.58,
+      "source_time": "2026-09-26T12:47:48.596637+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 44.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18CD6790-cam14",
+      "vehicle_id": "VEH-GJ18CD6790",
+      "registration_number": "GJ18CD6790",
+      "camera_id": "cam14",
+      "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "camera_latitude": 23.038,
+      "camera_longitude": 72.531,
+      "source_time": "2026-09-26T13:15:10.872592+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 33.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18CD6790-cam13",
+      "vehicle_id": "VEH-GJ18CD6790",
+      "registration_number": "GJ18CD6790",
+      "camera_id": "cam13",
+      "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "camera_latitude": 23.024,
+      "camera_longitude": 72.545,
+      "source_time": "2026-09-26T13:17:40.872592+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 55.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18CD6790-cam16",
+      "vehicle_id": "VEH-GJ18CD6790",
+      "registration_number": "GJ18CD6790",
+      "camera_id": "cam16",
+      "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.098,
+      "camera_longitude": 72.593,
+      "source_time": "2026-09-26T13:27:36.411759+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18CD6790-cam06",
+      "vehicle_id": "VEH-GJ18CD6790",
+      "registration_number": "GJ18CD6790",
+      "camera_id": "cam06",
+      "camera_name": "Timbavadi Gate, Junagadh City",
+      "camera_latitude": 21.516,
+      "camera_longitude": 70.4475,
+      "source_time": "2026-09-26T19:56:24.382220+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 43.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18CD6790-cam01",
+      "vehicle_id": "VEH-GJ18CD6790",
+      "registration_number": "GJ18CD6790",
+      "camera_id": "cam01",
+      "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "source_time": "2026-09-27T03:36:23.476055+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 36.4
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam02",
+      "to_camera_id": "cam12",
+      "from_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "to_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 44.1
+    },
+    {
+      "from_camera_id": "cam12",
+      "to_camera_id": "cam14",
+      "from_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "to_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 33.3
+    },
+    {
+      "from_camera_id": "cam14",
+      "to_camera_id": "cam13",
+      "from_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "to_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 55.2
+    },
+    {
+      "from_camera_id": "cam13",
+      "to_camera_id": "cam16",
+      "from_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "to_camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.9
+    },
+    {
+      "from_camera_id": "cam16",
+      "to_camera_id": "cam06",
+      "from_camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "to_camera_name": "Timbavadi Gate, Junagadh City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 43.6
+    },
+    {
+      "from_camera_id": "cam06",
+      "to_camera_id": "cam01",
+      "from_camera_name": "Timbavadi Gate, Junagadh City",
+      "to_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 36.4
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.562,
+        23.0286
+      ],
+      [
+        72.58,
+        23.167
+      ],
+      [
+        72.531,
+        23.038
+      ],
+      [
+        72.545,
+        23.024
+      ],
+      [
+        72.593,
+        23.098
+      ],
+      [
+        70.4475,
+        21.516
+      ],
+      [
+        72.5815,
+        23.0673
+      ]
+    ]
+  }
+}

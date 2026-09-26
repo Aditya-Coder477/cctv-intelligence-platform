@@ -1,0 +1,212 @@
+{
+  "journey_id": "JRN-GJ01MN8778",
+  "vehicle_id": "VEH-GJ01MN8778",
+  "registration_number": "GJ01MN8778",
+  "normalized_registration_number": "GJ01MN8778",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 7,
+  "total_distance_km": 1116.05,
+  "avg_speed_kmh": 44.3,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ01MN8778-cam24",
+      "vehicle_id": "VEH-GJ01MN8778",
+      "registration_number": "GJ01MN8778",
+      "camera_id": "cam24",
+      "camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "camera_latitude": 23.168,
+      "camera_longitude": 72.812,
+      "source_time": "2026-09-26T14:00:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 53.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN8778-cam06",
+      "vehicle_id": "VEH-GJ01MN8778",
+      "registration_number": "GJ01MN8778",
+      "camera_id": "cam06",
+      "camera_name": "Timbavadi Gate, Junagadh City",
+      "camera_latitude": 21.516,
+      "camera_longitude": 70.4475,
+      "source_time": "2026-09-26T20:13:27.856502+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 49.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN8778-cam05",
+      "vehicle_id": "VEH-GJ01MN8778",
+      "registration_number": "GJ01MN8778",
+      "camera_id": "cam05",
+      "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.097,
+      "camera_longitude": 72.5925,
+      "source_time": "2026-09-27T01:10:14.325821+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN8778-cam29",
+      "vehicle_id": "VEH-GJ01MN8778",
+      "registration_number": "GJ01MN8778",
+      "camera_id": "cam29",
+      "camera_name": "GIDC Entrance, Bilimora Highway",
+      "camera_latitude": 20.765,
+      "camera_longitude": 72.968,
+      "source_time": "2026-09-27T07:42:58.660372+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN8778-cam01",
+      "vehicle_id": "VEH-GJ01MN8778",
+      "registration_number": "GJ01MN8778",
+      "camera_id": "cam01",
+      "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "source_time": "2026-09-27T15:00:40.100505+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 35.5
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN8778-cam13",
+      "vehicle_id": "VEH-GJ01MN8778",
+      "registration_number": "GJ01MN8778",
+      "camera_id": "cam13",
+      "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "camera_latitude": 23.024,
+      "camera_longitude": 72.545,
+      "source_time": "2026-09-27T15:09:36.415444+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN8778-cam02",
+      "vehicle_id": "VEH-GJ01MN8778",
+      "registration_number": "GJ01MN8778",
+      "camera_id": "cam02",
+      "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "source_time": "2026-09-27T15:12:06.415444+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 45.2
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam24",
+      "to_camera_id": "cam06",
+      "from_camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "to_camera_name": "Timbavadi Gate, Junagadh City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 49.1
+    },
+    {
+      "from_camera_id": "cam06",
+      "to_camera_id": "cam05",
+      "from_camera_name": "Timbavadi Gate, Junagadh City",
+      "to_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.0
+    },
+    {
+      "from_camera_id": "cam05",
+      "to_camera_id": "cam29",
+      "from_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "to_camera_name": "GIDC Entrance, Bilimora Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.1
+    },
+    {
+      "from_camera_id": "cam29",
+      "to_camera_id": "cam01",
+      "from_camera_name": "GIDC Entrance, Bilimora Highway",
+      "to_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 35.5
+    },
+    {
+      "from_camera_id": "cam01",
+      "to_camera_id": "cam13",
+      "from_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "to_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.9
+    },
+    {
+      "from_camera_id": "cam13",
+      "to_camera_id": "cam02",
+      "from_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "to_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 45.2
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.812,
+        23.168
+      ],
+      [
+        70.4475,
+        21.516
+      ],
+      [
+        72.5925,
+        23.097
+      ],
+      [
+        72.968,
+        20.765
+      ],
+      [
+        72.5815,
+        23.0673
+      ],
+      [
+        72.545,
+        23.024
+      ],
+      [
+        72.562,
+        23.0286
+      ]
+    ]
+  }
+}

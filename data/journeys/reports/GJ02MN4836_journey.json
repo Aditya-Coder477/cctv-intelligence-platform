@@ -1,0 +1,185 @@
+{
+  "journey_id": "JRN-GJ02MN4836",
+  "vehicle_id": "VEH-GJ02MN4836",
+  "registration_number": "GJ02MN4836",
+  "normalized_registration_number": "GJ02MN4836",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 6,
+  "total_distance_km": 616.03,
+  "avg_speed_kmh": 49.4,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ02MN4836-cam04",
+      "vehicle_id": "VEH-GJ02MN4836",
+      "registration_number": "GJ02MN4836",
+      "camera_id": "cam04",
+      "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "source_time": "2026-09-26T13:23:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 41.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02MN4836-cam20",
+      "vehicle_id": "VEH-GJ02MN4836",
+      "registration_number": "GJ02MN4836",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-26T13:30:32.771468+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 32.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02MN4836-cam12",
+      "vehicle_id": "VEH-GJ02MN4836",
+      "registration_number": "GJ02MN4836",
+      "camera_id": "cam12",
+      "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "camera_latitude": 23.167,
+      "camera_longitude": 72.58,
+      "source_time": "2026-09-26T13:53:57.878047+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 38.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02MN4836-cam07",
+      "vehicle_id": "VEH-GJ02MN4836",
+      "registration_number": "GJ02MN4836",
+      "camera_id": "cam07",
+      "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "camera_latitude": 20.9,
+      "camera_longitude": 70.3667,
+      "source_time": "2026-09-26T20:42:22.922691+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 49.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02MN4836-cam17",
+      "vehicle_id": "VEH-GJ02MN4836",
+      "registration_number": "GJ02MN4836",
+      "camera_id": "cam17",
+      "camera_name": "Central Bus Port, Rajkot City",
+      "camera_latitude": 22.304,
+      "camera_longitude": 70.798,
+      "source_time": "2026-09-26T23:31:18.882465+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02MN4836-cam09",
+      "vehicle_id": "VEH-GJ02MN4836",
+      "registration_number": "GJ02MN4836",
+      "camera_id": "cam09",
+      "camera_name": "National Highway Bypass Circle, Junagadh",
+      "camera_latitude": 21.505,
+      "camera_longitude": 70.471,
+      "source_time": "2026-09-27T01:51:45.405345+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.6
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam04",
+      "to_camera_id": "cam20",
+      "from_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "to_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 32.6
+    },
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam12",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 38.3
+    },
+    {
+      "from_camera_id": "cam12",
+      "to_camera_id": "cam07",
+      "from_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "to_camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 49.9
+    },
+    {
+      "from_camera_id": "cam07",
+      "to_camera_id": "cam17",
+      "from_camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "to_camera_name": "Central Bus Port, Rajkot City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.7
+    },
+    {
+      "from_camera_id": "cam17",
+      "to_camera_id": "cam09",
+      "from_camera_name": "Central Bus Port, Rajkot City",
+      "to_camera_name": "National Highway Bypass Circle, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.6
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.5625,
+        23.0135
+      ],
+      [
+        72.592,
+        23.033
+      ],
+      [
+        72.58,
+        23.167
+      ],
+      [
+        70.3667,
+        20.9
+      ],
+      [
+        70.798,
+        22.304
+      ],
+      [
+        70.471,
+        21.505
+      ]
+    ]
+  }
+}

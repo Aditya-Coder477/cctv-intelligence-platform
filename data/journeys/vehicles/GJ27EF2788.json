@@ -1,0 +1,212 @@
+{
+  "journey_id": "JRN-GJ27EF2788",
+  "vehicle_id": "VEH-GJ27EF2788",
+  "registration_number": "GJ27EF2788",
+  "normalized_registration_number": "GJ27EF2788",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 7,
+  "total_distance_km": 824.11,
+  "avg_speed_kmh": 52.6,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ27EF2788-cam15",
+      "vehicle_id": "VEH-GJ27EF2788",
+      "registration_number": "GJ27EF2788",
+      "camera_id": "cam15",
+      "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "camera_latitude": 23.045,
+      "camera_longitude": 72.552,
+      "source_time": "2026-09-26T14:15:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 47.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27EF2788-cam14",
+      "vehicle_id": "VEH-GJ27EF2788",
+      "registration_number": "GJ27EF2788",
+      "camera_id": "cam14",
+      "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "camera_latitude": 23.038,
+      "camera_longitude": 72.531,
+      "source_time": "2026-09-26T14:19:50.875315+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 33.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27EF2788-cam01",
+      "vehicle_id": "VEH-GJ27EF2788",
+      "registration_number": "GJ27EF2788",
+      "camera_id": "cam01",
+      "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "source_time": "2026-09-26T14:30:56.270326+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 33.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27EF2788-cam04",
+      "vehicle_id": "VEH-GJ27EF2788",
+      "registration_number": "GJ27EF2788",
+      "camera_id": "cam04",
+      "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "source_time": "2026-09-26T14:38:53.948185+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 47.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27EF2788-cam25",
+      "vehicle_id": "VEH-GJ27EF2788",
+      "registration_number": "GJ27EF2788",
+      "camera_id": "cam25",
+      "camera_name": "Dhanori Road, Gandevi, Navsari",
+      "camera_latitude": 20.85,
+      "camera_longitude": 73.01,
+      "source_time": "2026-09-26T18:55:21.852070+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27EF2788-cam30",
+      "vehicle_id": "VEH-GJ27EF2788",
+      "registration_number": "GJ27EF2788",
+      "camera_id": "cam30",
+      "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "camera_latitude": 23.076,
+      "camera_longitude": 70.133,
+      "source_time": "2026-09-27T02:30:09.937237+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 51.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27EF2788-cam09",
+      "vehicle_id": "VEH-GJ27EF2788",
+      "registration_number": "GJ27EF2788",
+      "camera_id": "cam09",
+      "camera_name": "National Highway Bypass Circle, Junagadh",
+      "camera_latitude": 21.505,
+      "camera_longitude": 70.471,
+      "source_time": "2026-09-27T05:54:51.926868+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.2
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam15",
+      "to_camera_id": "cam14",
+      "from_camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "to_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 33.1
+    },
+    {
+      "from_camera_id": "cam14",
+      "to_camera_id": "cam01",
+      "from_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "to_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 33.0
+    },
+    {
+      "from_camera_id": "cam01",
+      "to_camera_id": "cam04",
+      "from_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "to_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 47.4
+    },
+    {
+      "from_camera_id": "cam04",
+      "to_camera_id": "cam25",
+      "from_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "to_camera_name": "Dhanori Road, Gandevi, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.3
+    },
+    {
+      "from_camera_id": "cam25",
+      "to_camera_id": "cam30",
+      "from_camera_name": "Dhanori Road, Gandevi, Navsari",
+      "to_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 51.0
+    },
+    {
+      "from_camera_id": "cam30",
+      "to_camera_id": "cam09",
+      "from_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "to_camera_name": "National Highway Bypass Circle, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 52.2
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.552,
+        23.045
+      ],
+      [
+        72.531,
+        23.038
+      ],
+      [
+        72.5815,
+        23.0673
+      ],
+      [
+        72.5625,
+        23.0135
+      ],
+      [
+        73.01,
+        20.85
+      ],
+      [
+        70.133,
+        23.076
+      ],
+      [
+        70.471,
+        21.505
+      ]
+    ]
+  }
+}

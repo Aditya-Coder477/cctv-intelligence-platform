@@ -101,8 +101,16 @@ export interface ObservedVehicle {
     evidence_filename_pts_status?: string
     ingested_at_utc: string
   }>
-  ingested_at_utc: string
-  updated_at_utc: string
+  ingested_at_utc?: string
+  updated_at_utc?: string
+  vehicle_details?: {
+    make_model?: string
+    color?: string
+    class?: string
+  }
+  total_distance_km?: number
+  avg_speed_kmh?: number
+  is_watchlist_match?: boolean
 }
 
 export interface WatchlistEntry {

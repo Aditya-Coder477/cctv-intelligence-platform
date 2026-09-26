@@ -1,0 +1,158 @@
+{
+  "journey_id": "JRN-GJ05RS7663",
+  "vehicle_id": "VEH-GJ05RS7663",
+  "registration_number": "GJ05RS7663",
+  "normalized_registration_number": "GJ05RS7663",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 5,
+  "total_distance_km": 1029.68,
+  "avg_speed_kmh": 50.2,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05RS7663-cam16",
+      "vehicle_id": "VEH-GJ05RS7663",
+      "registration_number": "GJ05RS7663",
+      "camera_id": "cam16",
+      "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.098,
+      "camera_longitude": 72.593,
+      "source_time": "2026-09-26T13:34:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 49.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05RS7663-cam17",
+      "vehicle_id": "VEH-GJ05RS7663",
+      "registration_number": "GJ05RS7663",
+      "camera_id": "cam17",
+      "camera_name": "Central Bus Port, Rajkot City",
+      "camera_latitude": 22.304,
+      "camera_longitude": 70.798,
+      "source_time": "2026-09-26T17:49:21.349535+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 48.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05RS7663-cam28",
+      "vehicle_id": "VEH-GJ05RS7663",
+      "registration_number": "GJ05RS7663",
+      "camera_id": "cam28",
+      "camera_name": "Town Hall Circle, Bilimora",
+      "camera_latitude": 20.762,
+      "camera_longitude": 72.964,
+      "source_time": "2026-09-26T23:57:07.817576+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05RS7663-cam05",
+      "vehicle_id": "VEH-GJ05RS7663",
+      "registration_number": "GJ05RS7663",
+      "camera_id": "cam05",
+      "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.097,
+      "camera_longitude": 72.5925,
+      "source_time": "2026-09-27T05:01:35.354294+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 51.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05RS7663-cam10",
+      "vehicle_id": "VEH-GJ05RS7663",
+      "registration_number": "GJ05RS7663",
+      "camera_id": "cam10",
+      "camera_name": "Char Chowk Road, Junagadh Central",
+      "camera_latitude": 21.52,
+      "camera_longitude": 70.459,
+      "source_time": "2026-09-27T10:05:49.033319+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 55.4
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam16",
+      "to_camera_id": "cam17",
+      "from_camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "to_camera_name": "Central Bus Port, Rajkot City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 48.1
+    },
+    {
+      "from_camera_id": "cam17",
+      "to_camera_id": "cam28",
+      "from_camera_name": "Central Bus Port, Rajkot City",
+      "to_camera_name": "Town Hall Circle, Bilimora",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.0
+    },
+    {
+      "from_camera_id": "cam28",
+      "to_camera_id": "cam05",
+      "from_camera_name": "Town Hall Circle, Bilimora",
+      "to_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 51.7
+    },
+    {
+      "from_camera_id": "cam05",
+      "to_camera_id": "cam10",
+      "from_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "to_camera_name": "Char Chowk Road, Junagadh Central",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 55.4
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.593,
+        23.098
+      ],
+      [
+        70.798,
+        22.304
+      ],
+      [
+        72.964,
+        20.762
+      ],
+      [
+        72.5925,
+        23.097
+      ],
+      [
+        70.459,
+        21.52
+      ]
+    ]
+  }
+}

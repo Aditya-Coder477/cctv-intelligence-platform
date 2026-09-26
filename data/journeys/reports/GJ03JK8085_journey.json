@@ -1,0 +1,158 @@
+{
+  "journey_id": "JRN-GJ03JK8085",
+  "vehicle_id": "VEH-GJ03JK8085",
+  "registration_number": "GJ03JK8085",
+  "normalized_registration_number": "GJ03JK8085",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 5,
+  "total_distance_km": 934.79,
+  "avg_speed_kmh": 43.2,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ03JK8085-cam23",
+      "vehicle_id": "VEH-GJ03JK8085",
+      "registration_number": "GJ03JK8085",
+      "camera_id": "cam23",
+      "camera_name": "Kheram Junction, Sabarkantha",
+      "camera_latitude": 23.6,
+      "camera_longitude": 72.95,
+      "source_time": "2026-09-26T12:18:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03JK8085-cam10",
+      "vehicle_id": "VEH-GJ03JK8085",
+      "registration_number": "GJ03JK8085",
+      "camera_id": "cam10",
+      "camera_name": "Char Chowk Road, Junagadh Central",
+      "camera_latitude": 21.52,
+      "camera_longitude": 70.459,
+      "source_time": "2026-09-26T18:55:08.154684+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03JK8085-cam24",
+      "vehicle_id": "VEH-GJ03JK8085",
+      "registration_number": "GJ03JK8085",
+      "camera_id": "cam24",
+      "camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "camera_latitude": 23.168,
+      "camera_longitude": 72.812,
+      "source_time": "2026-09-27T01:45:33.688549+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 44.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03JK8085-cam16",
+      "vehicle_id": "VEH-GJ03JK8085",
+      "registration_number": "GJ03JK8085",
+      "camera_id": "cam16",
+      "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.098,
+      "camera_longitude": 72.593,
+      "source_time": "2026-09-27T02:22:47.765853+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 38.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03JK8085-cam27",
+      "vehicle_id": "VEH-GJ03JK8085",
+      "registration_number": "GJ03JK8085",
+      "camera_id": "cam27",
+      "camera_name": "Station Road, Bilimora, Navsari",
+      "camera_latitude": 20.76,
+      "camera_longitude": 72.96,
+      "source_time": "2026-09-27T09:58:30.543649+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 34.6
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam23",
+      "to_camera_id": "cam10",
+      "from_camera_name": "Kheram Junction, Sabarkantha",
+      "to_camera_name": "Char Chowk Road, Junagadh Central",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 52.2
+    },
+    {
+      "from_camera_id": "cam10",
+      "to_camera_id": "cam24",
+      "from_camera_name": "Char Chowk Road, Junagadh Central",
+      "to_camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 44.4
+    },
+    {
+      "from_camera_id": "cam24",
+      "to_camera_id": "cam16",
+      "from_camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "to_camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 38.2
+    },
+    {
+      "from_camera_id": "cam16",
+      "to_camera_id": "cam27",
+      "from_camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "to_camera_name": "Station Road, Bilimora, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 34.6
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.95,
+        23.6
+      ],
+      [
+        70.459,
+        21.52
+      ],
+      [
+        72.812,
+        23.168
+      ],
+      [
+        72.593,
+        23.098
+      ],
+      [
+        72.96,
+        20.76
+      ]
+    ]
+  }
+}

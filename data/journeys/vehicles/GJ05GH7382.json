@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ05GH7382",
+  "vehicle_id": "VEH-GJ05GH7382",
+  "registration_number": "GJ05GH7382",
+  "normalized_registration_number": "GJ05GH7382",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 546.92,
+  "avg_speed_kmh": 49.6,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05GH7382-cam17",
+      "vehicle_id": "VEH-GJ05GH7382",
+      "registration_number": "GJ05GH7382",
+      "camera_id": "cam17",
+      "camera_name": "Central Bus Port, Rajkot City",
+      "camera_latitude": 22.304,
+      "camera_longitude": 70.798,
+      "source_time": "2026-09-26T13:40:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05GH7382-cam26",
+      "vehicle_id": "VEH-GJ05GH7382",
+      "registration_number": "GJ05GH7382",
+      "camera_id": "cam26",
+      "camera_name": "Tankal Village Entrance, Navsari",
+      "camera_latitude": 20.78,
+      "camera_longitude": 73.05,
+      "source_time": "2026-09-26T20:06:58.775323+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 44.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05GH7382-cam01",
+      "vehicle_id": "VEH-GJ05GH7382",
+      "registration_number": "GJ05GH7382",
+      "camera_id": "cam01",
+      "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "source_time": "2026-09-27T00:41:39.296148+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.6
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam17",
+      "to_camera_id": "cam26",
+      "from_camera_name": "Central Bus Port, Rajkot City",
+      "to_camera_name": "Tankal Village Entrance, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 44.7
+    },
+    {
+      "from_camera_id": "cam26",
+      "to_camera_id": "cam01",
+      "from_camera_name": "Tankal Village Entrance, Navsari",
+      "to_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 56.6
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        70.798,
+        22.304
+      ],
+      [
+        73.05,
+        20.78
+      ],
+      [
+        72.5815,
+        23.0673
+      ]
+    ]
+  }
+}

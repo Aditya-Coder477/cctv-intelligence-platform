@@ -1,0 +1,239 @@
+{
+  "journey_id": "JRN-GJ02GH8181",
+  "vehicle_id": "VEH-GJ02GH8181",
+  "registration_number": "GJ02GH8181",
+  "normalized_registration_number": "GJ02GH8181",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 8,
+  "total_distance_km": 2033.07,
+  "avg_speed_kmh": 41.8,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ02GH8181-cam05",
+      "vehicle_id": "VEH-GJ02GH8181",
+      "registration_number": "GJ02GH8181",
+      "camera_id": "cam05",
+      "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.097,
+      "camera_longitude": 72.5925,
+      "source_time": "2026-09-26T13:57:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 50.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02GH8181-cam27",
+      "vehicle_id": "VEH-GJ02GH8181",
+      "registration_number": "GJ02GH8181",
+      "camera_id": "cam27",
+      "camera_name": "Station Road, Bilimora, Navsari",
+      "camera_latitude": 20.76,
+      "camera_longitude": 72.96,
+      "source_time": "2026-09-26T20:43:34.056632+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 38.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02GH8181-cam08",
+      "vehicle_id": "VEH-GJ02GH8181",
+      "registration_number": "GJ02GH8181",
+      "camera_id": "cam08",
+      "camera_name": "Majewadi Gate, Old City, Junagadh",
+      "camera_latitude": 21.528,
+      "camera_longitude": 70.463,
+      "source_time": "2026-09-27T02:33:57.318081+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02GH8181-cam28",
+      "vehicle_id": "VEH-GJ02GH8181",
+      "registration_number": "GJ02GH8181",
+      "camera_id": "cam28",
+      "camera_name": "Town Hall Circle, Bilimora",
+      "camera_latitude": 20.762,
+      "camera_longitude": 72.964,
+      "source_time": "2026-09-27T07:17:00.819717+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02GH8181-cam21",
+      "vehicle_id": "VEH-GJ02GH8181",
+      "registration_number": "GJ02GH8181",
+      "camera_id": "cam21",
+      "camera_name": "Dethali Char Rasta, Patan Highway",
+      "camera_latitude": 23.85,
+      "camera_longitude": 72.13,
+      "source_time": "2026-09-27T14:56:14.654235+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02GH8181-cam25",
+      "vehicle_id": "VEH-GJ02GH8181",
+      "registration_number": "GJ02GH8181",
+      "camera_id": "cam25",
+      "camera_name": "Dhanori Road, Gandevi, Navsari",
+      "camera_latitude": 20.85,
+      "camera_longitude": 73.01,
+      "source_time": "2026-09-28T00:17:29.309334+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 37.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02GH8181-cam24",
+      "vehicle_id": "VEH-GJ02GH8181",
+      "registration_number": "GJ02GH8181",
+      "camera_id": "cam24",
+      "camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "camera_latitude": 23.168,
+      "camera_longitude": 72.812,
+      "source_time": "2026-09-28T08:02:46.692632+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 33.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02GH8181-cam26",
+      "vehicle_id": "VEH-GJ02GH8181",
+      "registration_number": "GJ02GH8181",
+      "camera_id": "cam26",
+      "camera_name": "Tankal Village Entrance, Navsari",
+      "camera_latitude": 20.78,
+      "camera_longitude": 73.05,
+      "source_time": "2026-09-28T14:32:39.901242+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 41.0
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam05",
+      "to_camera_id": "cam27",
+      "from_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "to_camera_name": "Station Road, Bilimora, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 38.8
+    },
+    {
+      "from_camera_id": "cam27",
+      "to_camera_id": "cam08",
+      "from_camera_name": "Station Road, Bilimora, Navsari",
+      "to_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.7
+    },
+    {
+      "from_camera_id": "cam08",
+      "to_camera_id": "cam28",
+      "from_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "to_camera_name": "Town Hall Circle, Bilimora",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.9
+    },
+    {
+      "from_camera_id": "cam28",
+      "to_camera_id": "cam21",
+      "from_camera_name": "Town Hall Circle, Bilimora",
+      "to_camera_name": "Dethali Char Rasta, Patan Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.2
+    },
+    {
+      "from_camera_id": "cam21",
+      "to_camera_id": "cam25",
+      "from_camera_name": "Dethali Char Rasta, Patan Highway",
+      "to_camera_name": "Dhanori Road, Gandevi, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 37.0
+    },
+    {
+      "from_camera_id": "cam25",
+      "to_camera_id": "cam24",
+      "from_camera_name": "Dhanori Road, Gandevi, Navsari",
+      "to_camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 33.3
+    },
+    {
+      "from_camera_id": "cam24",
+      "to_camera_id": "cam26",
+      "from_camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "to_camera_name": "Tankal Village Entrance, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 41.0
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.5925,
+        23.097
+      ],
+      [
+        72.96,
+        20.76
+      ],
+      [
+        70.463,
+        21.528
+      ],
+      [
+        72.964,
+        20.762
+      ],
+      [
+        72.13,
+        23.85
+      ],
+      [
+        73.01,
+        20.85
+      ],
+      [
+        72.812,
+        23.168
+      ],
+      [
+        73.05,
+        20.78
+      ]
+    ]
+  }
+}

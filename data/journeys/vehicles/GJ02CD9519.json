@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ02CD9519",
+  "vehicle_id": "VEH-GJ02CD9519",
+  "registration_number": "GJ02CD9519",
+  "normalized_registration_number": "GJ02CD9519",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 507.41,
+  "avg_speed_kmh": 41.7,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ02CD9519-cam29",
+      "vehicle_id": "VEH-GJ02CD9519",
+      "registration_number": "GJ02CD9519",
+      "camera_id": "cam29",
+      "camera_name": "GIDC Entrance, Bilimora Highway",
+      "camera_latitude": 20.765,
+      "camera_longitude": 72.968,
+      "source_time": "2026-09-26T12:33:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 42.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02CD9519-cam04",
+      "vehicle_id": "VEH-GJ02CD9519",
+      "registration_number": "GJ02CD9519",
+      "camera_id": "cam04",
+      "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "source_time": "2026-09-26T18:57:39.594619+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 39.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02CD9519-cam27",
+      "vehicle_id": "VEH-GJ02CD9519",
+      "registration_number": "GJ02CD9519",
+      "camera_id": "cam27",
+      "camera_name": "Station Road, Bilimora, Navsari",
+      "camera_latitude": 20.76,
+      "camera_longitude": 72.96,
+      "source_time": "2026-09-27T00:44:17.489516+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 44.0
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam29",
+      "to_camera_id": "cam04",
+      "from_camera_name": "GIDC Entrance, Bilimora Highway",
+      "to_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 39.6
+    },
+    {
+      "from_camera_id": "cam04",
+      "to_camera_id": "cam27",
+      "from_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "to_camera_name": "Station Road, Bilimora, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 44.0
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.968,
+        20.765
+      ],
+      [
+        72.5625,
+        23.0135
+      ],
+      [
+        72.96,
+        20.76
+      ]
+    ]
+  }
+}

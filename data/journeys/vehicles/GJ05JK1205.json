@@ -1,0 +1,131 @@
+{
+  "journey_id": "JRN-GJ05JK1205",
+  "vehicle_id": "VEH-GJ05JK1205",
+  "registration_number": "GJ05JK1205",
+  "normalized_registration_number": "GJ05JK1205",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 4,
+  "total_distance_km": 554.42,
+  "avg_speed_kmh": 46.3,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05JK1205-cam09",
+      "vehicle_id": "VEH-GJ05JK1205",
+      "registration_number": "GJ05JK1205",
+      "camera_id": "cam09",
+      "camera_name": "National Highway Bypass Circle, Junagadh",
+      "camera_latitude": 21.505,
+      "camera_longitude": 70.471,
+      "source_time": "2026-09-26T13:03:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 53.5
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05JK1205-cam30",
+      "vehicle_id": "VEH-GJ05JK1205",
+      "registration_number": "GJ05JK1205",
+      "camera_id": "cam30",
+      "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "camera_latitude": 23.076,
+      "camera_longitude": 70.133,
+      "source_time": "2026-09-26T16:35:41.867703+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 50.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05JK1205-cam22",
+      "vehicle_id": "VEH-GJ05JK1205",
+      "registration_number": "GJ05JK1205",
+      "camera_id": "cam22",
+      "camera_name": "Mervada Three Roads, Banaskantha",
+      "camera_latitude": 24.17,
+      "camera_longitude": 72.43,
+      "source_time": "2026-09-26T21:48:12.341637+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 50.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05JK1205-cam12",
+      "vehicle_id": "VEH-GJ05JK1205",
+      "registration_number": "GJ05JK1205",
+      "camera_id": "cam12",
+      "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "camera_latitude": 23.167,
+      "camera_longitude": 72.58,
+      "source_time": "2026-09-27T01:02:12.832478+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 34.8
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam09",
+      "to_camera_id": "cam30",
+      "from_camera_name": "National Highway Bypass Circle, Junagadh",
+      "to_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 50.4
+    },
+    {
+      "from_camera_id": "cam30",
+      "to_camera_id": "cam22",
+      "from_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "to_camera_name": "Mervada Three Roads, Banaskantha",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 50.6
+    },
+    {
+      "from_camera_id": "cam22",
+      "to_camera_id": "cam12",
+      "from_camera_name": "Mervada Three Roads, Banaskantha",
+      "to_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 34.8
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        70.471,
+        21.505
+      ],
+      [
+        70.133,
+        23.076
+      ],
+      [
+        72.43,
+        24.17
+      ],
+      [
+        72.58,
+        23.167
+      ]
+    ]
+  }
+}

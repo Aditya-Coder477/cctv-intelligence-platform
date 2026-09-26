@@ -1,0 +1,239 @@
+{
+  "journey_id": "JRN-GJ27PQ8500",
+  "vehicle_id": "VEH-GJ27PQ8500",
+  "registration_number": "GJ27PQ8500",
+  "normalized_registration_number": "GJ27PQ8500",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 8,
+  "total_distance_km": 1291.13,
+  "avg_speed_kmh": 47.2,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ27PQ8500-cam29",
+      "vehicle_id": "VEH-GJ27PQ8500",
+      "registration_number": "GJ27PQ8500",
+      "camera_id": "cam29",
+      "camera_name": "GIDC Entrance, Bilimora Highway",
+      "camera_latitude": 20.765,
+      "camera_longitude": 72.968,
+      "source_time": "2026-09-26T13:32:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 38.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27PQ8500-cam07",
+      "vehicle_id": "VEH-GJ27PQ8500",
+      "registration_number": "GJ27PQ8500",
+      "camera_id": "cam07",
+      "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "camera_latitude": 20.9,
+      "camera_longitude": 70.3667,
+      "source_time": "2026-09-26T18:45:10.097478+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27PQ8500-cam04",
+      "vehicle_id": "VEH-GJ27PQ8500",
+      "registration_number": "GJ27PQ8500",
+      "camera_id": "cam04",
+      "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "source_time": "2026-09-27T01:00:25.846535+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27PQ8500-cam23",
+      "vehicle_id": "VEH-GJ27PQ8500",
+      "registration_number": "GJ27PQ8500",
+      "camera_id": "cam23",
+      "camera_name": "Kheram Junction, Sabarkantha",
+      "camera_latitude": 23.6,
+      "camera_longitude": 72.95,
+      "source_time": "2026-09-27T02:33:11.023144+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 49.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27PQ8500-cam20",
+      "vehicle_id": "VEH-GJ27PQ8500",
+      "registration_number": "GJ27PQ8500",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-27T04:28:29.504038+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 37.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27PQ8500-cam01",
+      "vehicle_id": "VEH-GJ27PQ8500",
+      "registration_number": "GJ27PQ8500",
+      "camera_id": "cam01",
+      "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "source_time": "2026-09-27T04:33:29.104848+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 47.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27PQ8500-cam27",
+      "vehicle_id": "VEH-GJ27PQ8500",
+      "registration_number": "GJ27PQ8500",
+      "camera_id": "cam27",
+      "camera_name": "Station Road, Bilimora, Navsari",
+      "camera_latitude": 20.76,
+      "camera_longitude": 72.96,
+      "source_time": "2026-09-27T10:51:42.486554+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 41.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27PQ8500-cam18",
+      "vehicle_id": "VEH-GJ27PQ8500",
+      "registration_number": "GJ27PQ8500",
+      "camera_id": "cam18",
+      "camera_name": "Dhebar Road Crossroad, Rajkot",
+      "camera_latitude": 22.301,
+      "camera_longitude": 70.802,
+      "source_time": "2026-09-27T16:55:23.871620+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.4
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam29",
+      "to_camera_id": "cam07",
+      "from_camera_name": "GIDC Entrance, Bilimora Highway",
+      "to_camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 52.0
+    },
+    {
+      "from_camera_id": "cam07",
+      "to_camera_id": "cam04",
+      "from_camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "to_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 52.2
+    },
+    {
+      "from_camera_id": "cam04",
+      "to_camera_id": "cam23",
+      "from_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "to_camera_name": "Kheram Junction, Sabarkantha",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 49.3
+    },
+    {
+      "from_camera_id": "cam23",
+      "to_camera_id": "cam20",
+      "from_camera_name": "Kheram Junction, Sabarkantha",
+      "to_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 37.9
+    },
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam01",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 47.6
+    },
+    {
+      "from_camera_id": "cam01",
+      "to_camera_id": "cam27",
+      "from_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "to_camera_name": "Station Road, Bilimora, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 41.2
+    },
+    {
+      "from_camera_id": "cam27",
+      "to_camera_id": "cam18",
+      "from_camera_name": "Station Road, Bilimora, Navsari",
+      "to_camera_name": "Dhebar Road Crossroad, Rajkot",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.4
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.968,
+        20.765
+      ],
+      [
+        70.3667,
+        20.9
+      ],
+      [
+        72.5625,
+        23.0135
+      ],
+      [
+        72.95,
+        23.6
+      ],
+      [
+        72.592,
+        23.033
+      ],
+      [
+        72.5815,
+        23.0673
+      ],
+      [
+        72.96,
+        20.76
+      ],
+      [
+        70.802,
+        22.301
+      ]
+    ]
+  }
+}

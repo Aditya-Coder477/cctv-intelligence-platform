@@ -1,0 +1,212 @@
+{
+  "journey_id": "JRN-GJ05CD2776",
+  "vehicle_id": "VEH-GJ05CD2776",
+  "registration_number": "GJ05CD2776",
+  "normalized_registration_number": "GJ05CD2776",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 7,
+  "total_distance_km": 1154.55,
+  "avg_speed_kmh": 39.2,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05CD2776-cam29",
+      "vehicle_id": "VEH-GJ05CD2776",
+      "registration_number": "GJ05CD2776",
+      "camera_id": "cam29",
+      "camera_name": "GIDC Entrance, Bilimora Highway",
+      "camera_latitude": 20.765,
+      "camera_longitude": 72.968,
+      "source_time": "2026-09-26T15:00:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 54.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05CD2776-cam02",
+      "vehicle_id": "VEH-GJ05CD2776",
+      "registration_number": "GJ05CD2776",
+      "camera_id": "cam02",
+      "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "source_time": "2026-09-26T21:36:26.685364+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 38.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05CD2776-cam12",
+      "vehicle_id": "VEH-GJ05CD2776",
+      "registration_number": "GJ05CD2776",
+      "camera_id": "cam12",
+      "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "camera_latitude": 23.167,
+      "camera_longitude": 72.58,
+      "source_time": "2026-09-26T21:56:46.223289+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 45.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05CD2776-cam25",
+      "vehicle_id": "VEH-GJ05CD2776",
+      "registration_number": "GJ05CD2776",
+      "camera_id": "cam25",
+      "camera_name": "Dhanori Road, Gandevi, Navsari",
+      "camera_latitude": 20.85,
+      "camera_longitude": 73.01,
+      "source_time": "2026-09-27T03:44:06.966932+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 45.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05CD2776-cam10",
+      "vehicle_id": "VEH-GJ05CD2776",
+      "registration_number": "GJ05CD2776",
+      "camera_id": "cam10",
+      "camera_name": "Char Chowk Road, Junagadh Central",
+      "camera_latitude": 21.52,
+      "camera_longitude": 70.459,
+      "source_time": "2026-09-27T10:11:28.383215+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 42.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05CD2776-cam16",
+      "vehicle_id": "VEH-GJ05CD2776",
+      "registration_number": "GJ05CD2776",
+      "camera_id": "cam16",
+      "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.098,
+      "camera_longitude": 72.593,
+      "source_time": "2026-09-27T18:30:34.195699+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 33.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05CD2776-cam23",
+      "vehicle_id": "VEH-GJ05CD2776",
+      "registration_number": "GJ05CD2776",
+      "camera_id": "cam23",
+      "camera_name": "Kheram Junction, Sabarkantha",
+      "camera_latitude": 23.6,
+      "camera_longitude": 72.95,
+      "source_time": "2026-09-27T20:25:51.198007+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 34.7
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam29",
+      "to_camera_id": "cam02",
+      "from_camera_name": "GIDC Entrance, Bilimora Highway",
+      "to_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 38.7
+    },
+    {
+      "from_camera_id": "cam02",
+      "to_camera_id": "cam12",
+      "from_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "to_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 45.8
+    },
+    {
+      "from_camera_id": "cam12",
+      "to_camera_id": "cam25",
+      "from_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "to_camera_name": "Dhanori Road, Gandevi, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 45.2
+    },
+    {
+      "from_camera_id": "cam25",
+      "to_camera_id": "cam10",
+      "from_camera_name": "Dhanori Road, Gandevi, Navsari",
+      "to_camera_name": "Char Chowk Road, Junagadh Central",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 42.6
+    },
+    {
+      "from_camera_id": "cam10",
+      "to_camera_id": "cam16",
+      "from_camera_name": "Char Chowk Road, Junagadh Central",
+      "to_camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 33.8
+    },
+    {
+      "from_camera_id": "cam16",
+      "to_camera_id": "cam23",
+      "from_camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "to_camera_name": "Kheram Junction, Sabarkantha",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 34.7
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.968,
+        20.765
+      ],
+      [
+        72.562,
+        23.0286
+      ],
+      [
+        72.58,
+        23.167
+      ],
+      [
+        73.01,
+        20.85
+      ],
+      [
+        70.459,
+        21.52
+      ],
+      [
+        72.593,
+        23.098
+      ],
+      [
+        72.95,
+        23.6
+      ]
+    ]
+  }
+}

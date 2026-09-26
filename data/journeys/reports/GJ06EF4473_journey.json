@@ -1,0 +1,158 @@
+{
+  "journey_id": "JRN-GJ06EF4473",
+  "vehicle_id": "VEH-GJ06EF4473",
+  "registration_number": "GJ06EF4473",
+  "normalized_registration_number": "GJ06EF4473",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 5,
+  "total_distance_km": 950.17,
+  "avg_speed_kmh": 49.7,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ06EF4473-cam07",
+      "vehicle_id": "VEH-GJ06EF4473",
+      "registration_number": "GJ06EF4473",
+      "camera_id": "cam07",
+      "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "camera_latitude": 20.9,
+      "camera_longitude": 70.3667,
+      "source_time": "2026-09-26T12:24:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06EF4473-cam30",
+      "vehicle_id": "VEH-GJ06EF4473",
+      "registration_number": "GJ06EF4473",
+      "camera_id": "cam30",
+      "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "camera_latitude": 23.076,
+      "camera_longitude": 70.133,
+      "source_time": "2026-09-26T17:09:06.186703+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 51.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06EF4473-cam09",
+      "vehicle_id": "VEH-GJ06EF4473",
+      "registration_number": "GJ06EF4473",
+      "camera_id": "cam09",
+      "camera_name": "National Highway Bypass Circle, Junagadh",
+      "camera_latitude": 21.505,
+      "camera_longitude": 70.471,
+      "source_time": "2026-09-26T20:16:55.043693+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06EF4473-cam02",
+      "vehicle_id": "VEH-GJ06EF4473",
+      "registration_number": "GJ06EF4473",
+      "camera_id": "cam02",
+      "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "source_time": "2026-09-27T03:01:34.594662+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06EF4473-cam26",
+      "vehicle_id": "VEH-GJ06EF4473",
+      "registration_number": "GJ06EF4473",
+      "camera_id": "cam26",
+      "camera_name": "Tankal Village Entrance, Navsari",
+      "camera_latitude": 20.78,
+      "camera_longitude": 73.05,
+      "source_time": "2026-09-27T07:32:07.376623+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.6
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam07",
+      "to_camera_id": "cam30",
+      "from_camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "to_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 51.3
+    },
+    {
+      "from_camera_id": "cam30",
+      "to_camera_id": "cam09",
+      "from_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "to_camera_name": "National Highway Bypass Circle, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 56.9
+    },
+    {
+      "from_camera_id": "cam09",
+      "to_camera_id": "cam02",
+      "from_camera_name": "National Highway Bypass Circle, Junagadh",
+      "to_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.6
+    },
+    {
+      "from_camera_id": "cam02",
+      "to_camera_id": "cam26",
+      "from_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "to_camera_name": "Tankal Village Entrance, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 56.6
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        70.3667,
+        20.9
+      ],
+      [
+        70.133,
+        23.076
+      ],
+      [
+        70.471,
+        21.505
+      ],
+      [
+        72.562,
+        23.0286
+      ],
+      [
+        73.05,
+        20.78
+      ]
+    ]
+  }
+}

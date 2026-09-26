@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ05PQ4905",
+  "vehicle_id": "VEH-GJ05PQ4905",
+  "registration_number": "GJ05PQ4905",
+  "normalized_registration_number": "GJ05PQ4905",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 12.2,
+  "avg_speed_kmh": 48.0,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05PQ4905-cam13",
+      "vehicle_id": "VEH-GJ05PQ4905",
+      "registration_number": "GJ05PQ4905",
+      "camera_id": "cam13",
+      "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "camera_latitude": 23.024,
+      "camera_longitude": 72.545,
+      "source_time": "2026-09-26T12:49:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 47.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05PQ4905-cam01",
+      "vehicle_id": "VEH-GJ05PQ4905",
+      "registration_number": "GJ05PQ4905",
+      "camera_id": "cam01",
+      "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "source_time": "2026-09-26T12:57:34.900963+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05PQ4905-cam14",
+      "vehicle_id": "VEH-GJ05PQ4905",
+      "registration_number": "GJ05PQ4905",
+      "camera_id": "cam14",
+      "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "camera_latitude": 23.038,
+      "camera_longitude": 72.531,
+      "source_time": "2026-09-26T13:04:56.642235+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 49.8
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam13",
+      "to_camera_id": "cam01",
+      "from_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "to_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.4
+    },
+    {
+      "from_camera_id": "cam01",
+      "to_camera_id": "cam14",
+      "from_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "to_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 49.8
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.545,
+        23.024
+      ],
+      [
+        72.5815,
+        23.0673
+      ],
+      [
+        72.531,
+        23.038
+      ]
+    ]
+  }
+}

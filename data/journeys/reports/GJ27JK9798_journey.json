@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ27JK9798",
+  "vehicle_id": "VEH-GJ27JK9798",
+  "registration_number": "GJ27JK9798",
+  "normalized_registration_number": "GJ27JK9798",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 291.9,
+  "avg_speed_kmh": 40.6,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ27JK9798-cam16",
+      "vehicle_id": "VEH-GJ27JK9798",
+      "registration_number": "GJ27JK9798",
+      "camera_id": "cam16",
+      "camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.098,
+      "camera_longitude": 72.593,
+      "source_time": "2026-09-26T13:10:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 47.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27JK9798-cam24",
+      "vehicle_id": "VEH-GJ27JK9798",
+      "registration_number": "GJ27JK9798",
+      "camera_id": "cam24",
+      "camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "camera_latitude": 23.168,
+      "camera_longitude": 72.812,
+      "source_time": "2026-09-26T13:41:46.272812+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 45.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27JK9798-cam27",
+      "vehicle_id": "VEH-GJ27JK9798",
+      "registration_number": "GJ27JK9798",
+      "camera_id": "cam27",
+      "camera_name": "Station Road, Bilimora, Navsari",
+      "camera_latitude": 20.76,
+      "camera_longitude": 72.96,
+      "source_time": "2026-09-26T20:22:11.394319+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.2
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam16",
+      "to_camera_id": "cam24",
+      "from_camera_name": "Visat Toll Point 2, Sabarmati, Ahmedabad",
+      "to_camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 45.8
+    },
+    {
+      "from_camera_id": "cam24",
+      "to_camera_id": "cam27",
+      "from_camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "to_camera_name": "Station Road, Bilimora, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.2
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.593,
+        23.098
+      ],
+      [
+        72.812,
+        23.168
+      ],
+      [
+        72.96,
+        20.76
+      ]
+    ]
+  }
+}

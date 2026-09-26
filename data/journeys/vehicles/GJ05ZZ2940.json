@@ -1,0 +1,158 @@
+{
+  "journey_id": "JRN-GJ05ZZ2940",
+  "vehicle_id": "VEH-GJ05ZZ2940",
+  "registration_number": "GJ05ZZ2940",
+  "normalized_registration_number": "GJ05ZZ2940",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 5,
+  "total_distance_km": 681.08,
+  "avg_speed_kmh": 41.7,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05ZZ2940-cam22",
+      "vehicle_id": "VEH-GJ05ZZ2940",
+      "registration_number": "GJ05ZZ2940",
+      "camera_id": "cam22",
+      "camera_name": "Mervada Three Roads, Banaskantha",
+      "camera_latitude": 24.17,
+      "camera_longitude": 72.43,
+      "source_time": "2026-09-26T13:27:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 54.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05ZZ2940-cam12",
+      "vehicle_id": "VEH-GJ05ZZ2940",
+      "registration_number": "GJ05ZZ2940",
+      "camera_id": "cam12",
+      "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "camera_latitude": 23.167,
+      "camera_longitude": 72.58,
+      "source_time": "2026-09-26T15:35:23.266711+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05ZZ2940-cam09",
+      "vehicle_id": "VEH-GJ05ZZ2940",
+      "registration_number": "GJ05ZZ2940",
+      "camera_id": "cam09",
+      "camera_name": "National Highway Bypass Circle, Junagadh",
+      "camera_latitude": 21.505,
+      "camera_longitude": 70.471,
+      "source_time": "2026-09-26T22:01:37.201197+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 44.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05ZZ2940-cam25",
+      "vehicle_id": "VEH-GJ05ZZ2940",
+      "registration_number": "GJ05ZZ2940",
+      "camera_id": "cam25",
+      "camera_name": "Dhanori Road, Gandevi, Navsari",
+      "camera_latitude": 20.85,
+      "camera_longitude": 73.01,
+      "source_time": "2026-09-27T05:37:45.513023+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 35.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05ZZ2940-cam29",
+      "vehicle_id": "VEH-GJ05ZZ2940",
+      "registration_number": "GJ05ZZ2940",
+      "camera_id": "cam29",
+      "camera_name": "GIDC Entrance, Bilimora Highway",
+      "camera_latitude": 20.765,
+      "camera_longitude": 72.968,
+      "source_time": "2026-09-27T05:48:47.637615+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.6
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam22",
+      "to_camera_id": "cam12",
+      "from_camera_name": "Mervada Three Roads, Banaskantha",
+      "to_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 52.9
+    },
+    {
+      "from_camera_id": "cam12",
+      "to_camera_id": "cam09",
+      "from_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "to_camera_name": "National Highway Bypass Circle, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 44.3
+    },
+    {
+      "from_camera_id": "cam09",
+      "to_camera_id": "cam25",
+      "from_camera_name": "National Highway Bypass Circle, Junagadh",
+      "to_camera_name": "Dhanori Road, Gandevi, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 35.9
+    },
+    {
+      "from_camera_id": "cam25",
+      "to_camera_id": "cam29",
+      "from_camera_name": "Dhanori Road, Gandevi, Navsari",
+      "to_camera_name": "GIDC Entrance, Bilimora Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 56.6
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.43,
+        24.17
+      ],
+      [
+        72.58,
+        23.167
+      ],
+      [
+        70.471,
+        21.505
+      ],
+      [
+        73.01,
+        20.85
+      ],
+      [
+        72.968,
+        20.765
+      ]
+    ]
+  }
+}

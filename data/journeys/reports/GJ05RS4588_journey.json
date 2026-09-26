@@ -1,0 +1,185 @@
+{
+  "journey_id": "JRN-GJ05RS4588",
+  "vehicle_id": "VEH-GJ05RS4588",
+  "registration_number": "GJ05RS4588",
+  "normalized_registration_number": "GJ05RS4588",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 6,
+  "total_distance_km": 818.23,
+  "avg_speed_kmh": 45.5,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05RS4588-cam11",
+      "vehicle_id": "VEH-GJ05RS4588",
+      "registration_number": "GJ05RS4588",
+      "camera_id": "cam11",
+      "camera_name": "Dolatpara Industrial Area, Junagadh",
+      "camera_latitude": 21.536,
+      "camera_longitude": 70.474,
+      "source_time": "2026-09-26T14:45:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05RS4588-cam05",
+      "vehicle_id": "VEH-GJ05RS4588",
+      "registration_number": "GJ05RS4588",
+      "camera_id": "cam05",
+      "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.097,
+      "camera_longitude": 72.5925,
+      "source_time": "2026-09-26T21:09:35.544076+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 43.5
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05RS4588-cam27",
+      "vehicle_id": "VEH-GJ05RS4588",
+      "registration_number": "GJ05RS4588",
+      "camera_id": "cam27",
+      "camera_name": "Station Road, Bilimora, Navsari",
+      "camera_latitude": 20.76,
+      "camera_longitude": 72.96,
+      "source_time": "2026-09-27T01:50:48.572937+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05RS4588-cam03",
+      "vehicle_id": "VEH-GJ05RS4588",
+      "registration_number": "GJ05RS4588",
+      "camera_id": "cam03",
+      "camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+      "camera_latitude": 23.0934,
+      "camera_longitude": 72.5878,
+      "source_time": "2026-09-27T08:25:36.524523+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 39.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05RS4588-cam14",
+      "vehicle_id": "VEH-GJ05RS4588",
+      "registration_number": "GJ05RS4588",
+      "camera_id": "cam14",
+      "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "camera_latitude": 23.038,
+      "camera_longitude": 72.531,
+      "source_time": "2026-09-27T08:35:25.752687+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 51.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05RS4588-cam20",
+      "vehicle_id": "VEH-GJ05RS4588",
+      "registration_number": "GJ05RS4588",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-27T08:44:46.372168+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.2
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam11",
+      "to_camera_id": "cam05",
+      "from_camera_name": "Dolatpara Industrial Area, Junagadh",
+      "to_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 43.5
+    },
+    {
+      "from_camera_id": "cam05",
+      "to_camera_id": "cam27",
+      "from_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "to_camera_name": "Station Road, Bilimora, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 56.0
+    },
+    {
+      "from_camera_id": "cam27",
+      "to_camera_id": "cam03",
+      "from_camera_name": "Station Road, Bilimora, Navsari",
+      "to_camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 39.9
+    },
+    {
+      "from_camera_id": "cam03",
+      "to_camera_id": "cam14",
+      "from_camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+      "to_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 51.7
+    },
+    {
+      "from_camera_id": "cam14",
+      "to_camera_id": "cam20",
+      "from_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "to_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.2
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        70.474,
+        21.536
+      ],
+      [
+        72.5925,
+        23.097
+      ],
+      [
+        72.96,
+        20.76
+      ],
+      [
+        72.5878,
+        23.0934
+      ],
+      [
+        72.531,
+        23.038
+      ],
+      [
+        72.592,
+        23.033
+      ]
+    ]
+  }
+}

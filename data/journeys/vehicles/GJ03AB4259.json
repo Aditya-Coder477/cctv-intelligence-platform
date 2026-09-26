@@ -1,0 +1,239 @@
+{
+  "journey_id": "JRN-GJ03AB4259",
+  "vehicle_id": "VEH-GJ03AB4259",
+  "registration_number": "GJ03AB4259",
+  "normalized_registration_number": "GJ03AB4259",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 8,
+  "total_distance_km": 946.81,
+  "avg_speed_kmh": 41.9,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ03AB4259-cam30",
+      "vehicle_id": "VEH-GJ03AB4259",
+      "registration_number": "GJ03AB4259",
+      "camera_id": "cam30",
+      "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "camera_latitude": 23.076,
+      "camera_longitude": 70.133,
+      "source_time": "2026-09-26T12:55:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 36.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03AB4259-cam01",
+      "vehicle_id": "VEH-GJ03AB4259",
+      "registration_number": "GJ03AB4259",
+      "camera_id": "cam01",
+      "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "source_time": "2026-09-26T19:20:23.073437+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 39.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03AB4259-cam03",
+      "vehicle_id": "VEH-GJ03AB4259",
+      "registration_number": "GJ03AB4259",
+      "camera_id": "cam03",
+      "camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+      "camera_latitude": 23.0934,
+      "camera_longitude": 72.5878,
+      "source_time": "2026-09-26T19:24:59.269914+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 38.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03AB4259-cam14",
+      "vehicle_id": "VEH-GJ03AB4259",
+      "registration_number": "GJ03AB4259",
+      "camera_id": "cam14",
+      "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "camera_latitude": 23.038,
+      "camera_longitude": 72.531,
+      "source_time": "2026-09-26T19:34:36.769729+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03AB4259-cam07",
+      "vehicle_id": "VEH-GJ03AB4259",
+      "registration_number": "GJ03AB4259",
+      "camera_id": "cam07",
+      "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "camera_latitude": 20.9,
+      "camera_longitude": 70.3667,
+      "source_time": "2026-09-27T02:47:00.064927+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 45.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03AB4259-cam20",
+      "vehicle_id": "VEH-GJ03AB4259",
+      "registration_number": "GJ03AB4259",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-27T10:51:54.507422+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03AB4259-cam12",
+      "vehicle_id": "VEH-GJ03AB4259",
+      "registration_number": "GJ03AB4259",
+      "camera_id": "cam12",
+      "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "camera_latitude": 23.167,
+      "camera_longitude": 72.58,
+      "source_time": "2026-09-27T11:15:02.122158+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 38.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03AB4259-cam15",
+      "vehicle_id": "VEH-GJ03AB4259",
+      "registration_number": "GJ03AB4259",
+      "camera_id": "cam15",
+      "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "camera_latitude": 23.045,
+      "camera_longitude": 72.552,
+      "source_time": "2026-09-27T11:31:55.755567+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 49.2
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam30",
+      "to_camera_id": "cam01",
+      "from_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "to_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 39.1
+    },
+    {
+      "from_camera_id": "cam01",
+      "to_camera_id": "cam03",
+      "from_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "to_camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 38.7
+    },
+    {
+      "from_camera_id": "cam03",
+      "to_camera_id": "cam14",
+      "from_camera_name": "ONGC Complex, Chandkheda, Ahmedabad",
+      "to_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 52.8
+    },
+    {
+      "from_camera_id": "cam14",
+      "to_camera_id": "cam07",
+      "from_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "to_camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 45.2
+    },
+    {
+      "from_camera_id": "cam07",
+      "to_camera_id": "cam20",
+      "from_camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "to_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.8
+    },
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam12",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 38.8
+    },
+    {
+      "from_camera_id": "cam12",
+      "to_camera_id": "cam15",
+      "from_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "to_camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 49.2
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        70.133,
+        23.076
+      ],
+      [
+        72.5815,
+        23.0673
+      ],
+      [
+        72.5878,
+        23.0934
+      ],
+      [
+        72.531,
+        23.038
+      ],
+      [
+        70.3667,
+        20.9
+      ],
+      [
+        72.592,
+        23.033
+      ],
+      [
+        72.58,
+        23.167
+      ],
+      [
+        72.552,
+        23.045
+      ]
+    ]
+  }
+}

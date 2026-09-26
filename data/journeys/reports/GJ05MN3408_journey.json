@@ -1,0 +1,239 @@
+{
+  "journey_id": "JRN-GJ05MN3408",
+  "vehicle_id": "VEH-GJ05MN3408",
+  "registration_number": "GJ05MN3408",
+  "normalized_registration_number": "GJ05MN3408",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 8,
+  "total_distance_km": 1072.65,
+  "avg_speed_kmh": 47.3,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05MN3408-cam25",
+      "vehicle_id": "VEH-GJ05MN3408",
+      "registration_number": "GJ05MN3408",
+      "camera_id": "cam25",
+      "camera_name": "Dhanori Road, Gandevi, Navsari",
+      "camera_latitude": 20.85,
+      "camera_longitude": 73.01,
+      "source_time": "2026-09-26T13:34:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05MN3408-cam28",
+      "vehicle_id": "VEH-GJ05MN3408",
+      "registration_number": "GJ05MN3408",
+      "camera_id": "cam28",
+      "camera_name": "Town Hall Circle, Bilimora",
+      "camera_latitude": 20.762,
+      "camera_longitude": 72.964,
+      "source_time": "2026-09-26T13:47:00.816800+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 53.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05MN3408-cam23",
+      "vehicle_id": "VEH-GJ05MN3408",
+      "registration_number": "GJ05MN3408",
+      "camera_id": "cam23",
+      "camera_name": "Kheram Junction, Sabarkantha",
+      "camera_latitude": 23.6,
+      "camera_longitude": 72.95,
+      "source_time": "2026-09-26T22:07:44.738234+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 37.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05MN3408-cam20",
+      "vehicle_id": "VEH-GJ05MN3408",
+      "registration_number": "GJ05MN3408",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-26T23:37:34.181863+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 48.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05MN3408-cam07",
+      "vehicle_id": "VEH-GJ05MN3408",
+      "registration_number": "GJ05MN3408",
+      "camera_id": "cam07",
+      "camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "camera_latitude": 20.9,
+      "camera_longitude": 70.3667,
+      "source_time": "2026-09-27T05:24:41.806254+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05MN3408-cam11",
+      "vehicle_id": "VEH-GJ05MN3408",
+      "registration_number": "GJ05MN3408",
+      "camera_id": "cam11",
+      "camera_name": "Dolatpara Industrial Area, Junagadh",
+      "camera_latitude": 21.536,
+      "camera_longitude": 70.474,
+      "source_time": "2026-09-27T07:08:47.739666+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 41.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05MN3408-cam14",
+      "vehicle_id": "VEH-GJ05MN3408",
+      "registration_number": "GJ05MN3408",
+      "camera_id": "cam14",
+      "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "camera_latitude": 23.038,
+      "camera_longitude": 72.531,
+      "source_time": "2026-09-27T12:12:33.394656+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 53.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05MN3408-cam13",
+      "vehicle_id": "VEH-GJ05MN3408",
+      "registration_number": "GJ05MN3408",
+      "camera_id": "cam13",
+      "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "camera_latitude": 23.024,
+      "camera_longitude": 72.545,
+      "source_time": "2026-09-27T12:15:03.394656+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.8
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam25",
+      "to_camera_id": "cam28",
+      "from_camera_name": "Dhanori Road, Gandevi, Navsari",
+      "to_camera_name": "Town Hall Circle, Bilimora",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 53.1
+    },
+    {
+      "from_camera_id": "cam28",
+      "to_camera_id": "cam23",
+      "from_camera_name": "Town Hall Circle, Bilimora",
+      "to_camera_name": "Kheram Junction, Sabarkantha",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 37.8
+    },
+    {
+      "from_camera_id": "cam23",
+      "to_camera_id": "cam20",
+      "from_camera_name": "Kheram Junction, Sabarkantha",
+      "to_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 48.7
+    },
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam07",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.0
+    },
+    {
+      "from_camera_id": "cam07",
+      "to_camera_id": "cam11",
+      "from_camera_name": "Somnath Bypass Road, Veraval, Gir Somnath",
+      "to_camera_name": "Dolatpara Industrial Area, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 41.3
+    },
+    {
+      "from_camera_id": "cam11",
+      "to_camera_id": "cam14",
+      "from_camera_name": "Dolatpara Industrial Area, Junagadh",
+      "to_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 53.3
+    },
+    {
+      "from_camera_id": "cam14",
+      "to_camera_id": "cam13",
+      "from_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "to_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 56.8
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        73.01,
+        20.85
+      ],
+      [
+        72.964,
+        20.762
+      ],
+      [
+        72.95,
+        23.6
+      ],
+      [
+        72.592,
+        23.033
+      ],
+      [
+        70.3667,
+        20.9
+      ],
+      [
+        70.474,
+        21.536
+      ],
+      [
+        72.531,
+        23.038
+      ],
+      [
+        72.545,
+        23.024
+      ]
+    ]
+  }
+}

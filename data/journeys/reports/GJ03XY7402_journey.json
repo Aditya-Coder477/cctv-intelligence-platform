@@ -1,0 +1,185 @@
+{
+  "journey_id": "JRN-GJ03XY7402",
+  "vehicle_id": "VEH-GJ03XY7402",
+  "registration_number": "GJ03XY7402",
+  "normalized_registration_number": "GJ03XY7402",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 6,
+  "total_distance_km": 1056.38,
+  "avg_speed_kmh": 44.8,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ03XY7402-cam26",
+      "vehicle_id": "VEH-GJ03XY7402",
+      "registration_number": "GJ03XY7402",
+      "camera_id": "cam26",
+      "camera_name": "Tankal Village Entrance, Navsari",
+      "camera_latitude": 20.78,
+      "camera_longitude": 73.05,
+      "source_time": "2026-09-26T13:31:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03XY7402-cam04",
+      "vehicle_id": "VEH-GJ03XY7402",
+      "registration_number": "GJ03XY7402",
+      "camera_id": "cam04",
+      "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "source_time": "2026-09-26T19:41:10.136710+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 41.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03XY7402-cam11",
+      "vehicle_id": "VEH-GJ03XY7402",
+      "registration_number": "GJ03XY7402",
+      "camera_id": "cam11",
+      "camera_name": "Dolatpara Industrial Area, Junagadh",
+      "camera_latitude": 21.536,
+      "camera_longitude": 70.474,
+      "source_time": "2026-09-27T01:46:54.300153+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 44.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03XY7402-cam20",
+      "vehicle_id": "VEH-GJ03XY7402",
+      "registration_number": "GJ03XY7402",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-27T07:44:25.382866+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03XY7402-cam02",
+      "vehicle_id": "VEH-GJ03XY7402",
+      "registration_number": "GJ03XY7402",
+      "camera_id": "cam02",
+      "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "source_time": "2026-09-27T07:49:54.777622+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 34.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03XY7402-cam29",
+      "vehicle_id": "VEH-GJ03XY7402",
+      "registration_number": "GJ03XY7402",
+      "camera_id": "cam29",
+      "camera_name": "GIDC Entrance, Bilimora Highway",
+      "camera_latitude": 20.765,
+      "camera_longitude": 72.968,
+      "source_time": "2026-09-27T13:05:09.487958+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 48.6
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam26",
+      "to_camera_id": "cam04",
+      "from_camera_name": "Tankal Village Entrance, Navsari",
+      "to_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 41.2
+    },
+    {
+      "from_camera_id": "cam04",
+      "to_camera_id": "cam11",
+      "from_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "to_camera_name": "Dolatpara Industrial Area, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 44.4
+    },
+    {
+      "from_camera_id": "cam11",
+      "to_camera_id": "cam20",
+      "from_camera_name": "Dolatpara Industrial Area, Junagadh",
+      "to_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.0
+    },
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam02",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 34.0
+    },
+    {
+      "from_camera_id": "cam02",
+      "to_camera_id": "cam29",
+      "from_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "to_camera_name": "GIDC Entrance, Bilimora Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 48.6
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        73.05,
+        20.78
+      ],
+      [
+        72.5625,
+        23.0135
+      ],
+      [
+        70.474,
+        21.536
+      ],
+      [
+        72.592,
+        23.033
+      ],
+      [
+        72.562,
+        23.0286
+      ],
+      [
+        72.968,
+        20.765
+      ]
+    ]
+  }
+}

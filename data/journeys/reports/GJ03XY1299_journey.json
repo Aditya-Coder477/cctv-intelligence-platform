@@ -1,0 +1,158 @@
+{
+  "journey_id": "JRN-GJ03XY1299",
+  "vehicle_id": "VEH-GJ03XY1299",
+  "registration_number": "GJ03XY1299",
+  "normalized_registration_number": "GJ03XY1299",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 5,
+  "total_distance_km": 1025.01,
+  "avg_speed_kmh": 48.4,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ03XY1299-cam15",
+      "vehicle_id": "VEH-GJ03XY1299",
+      "registration_number": "GJ03XY1299",
+      "camera_id": "cam15",
+      "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "camera_latitude": 23.045,
+      "camera_longitude": 72.552,
+      "source_time": "2026-09-26T14:36:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 49.5
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03XY1299-cam22",
+      "vehicle_id": "VEH-GJ03XY1299",
+      "registration_number": "GJ03XY1299",
+      "camera_id": "cam22",
+      "camera_name": "Mervada Three Roads, Banaskantha",
+      "camera_latitude": 24.17,
+      "camera_longitude": 72.43,
+      "source_time": "2026-09-26T17:18:36.109424+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03XY1299-cam08",
+      "vehicle_id": "VEH-GJ03XY1299",
+      "registration_number": "GJ03XY1299",
+      "camera_id": "cam08",
+      "camera_name": "Majewadi Gate, Old City, Junagadh",
+      "camera_latitude": 21.528,
+      "camera_longitude": 70.463,
+      "source_time": "2026-09-27T00:09:27.301340+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03XY1299-cam14",
+      "vehicle_id": "VEH-GJ03XY1299",
+      "registration_number": "GJ03XY1299",
+      "camera_id": "cam14",
+      "camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "camera_latitude": 23.038,
+      "camera_longitude": 72.531,
+      "source_time": "2026-09-27T06:45:55.059036+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 41.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03XY1299-cam09",
+      "vehicle_id": "VEH-GJ03XY1299",
+      "registration_number": "GJ03XY1299",
+      "camera_id": "cam09",
+      "camera_name": "National Highway Bypass Circle, Junagadh",
+      "camera_latitude": 21.505,
+      "camera_longitude": 70.471,
+      "source_time": "2026-09-27T11:48:28.732237+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 53.9
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam15",
+      "to_camera_id": "cam22",
+      "from_camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "to_camera_name": "Mervada Three Roads, Banaskantha",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.6
+    },
+    {
+      "from_camera_id": "cam22",
+      "to_camera_id": "cam08",
+      "from_camera_name": "Mervada Three Roads, Banaskantha",
+      "to_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 52.0
+    },
+    {
+      "from_camera_id": "cam08",
+      "to_camera_id": "cam14",
+      "from_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "to_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 41.0
+    },
+    {
+      "from_camera_id": "cam14",
+      "to_camera_id": "cam09",
+      "from_camera_name": "Drive-In Road Junction, Vastrapur, Ahmedabad",
+      "to_camera_name": "National Highway Bypass Circle, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 53.9
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.552,
+        23.045
+      ],
+      [
+        72.43,
+        24.17
+      ],
+      [
+        70.463,
+        21.528
+      ],
+      [
+        72.531,
+        23.038
+      ],
+      [
+        70.471,
+        21.505
+      ]
+    ]
+  }
+}

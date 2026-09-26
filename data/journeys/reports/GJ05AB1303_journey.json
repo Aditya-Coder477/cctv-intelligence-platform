@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ05AB1303",
+  "vehicle_id": "VEH-GJ05AB1303",
+  "registration_number": "GJ05AB1303",
+  "normalized_registration_number": "GJ05AB1303",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 563.41,
+  "avg_speed_kmh": 44.7,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05AB1303-cam19",
+      "vehicle_id": "VEH-GJ05AB1303",
+      "registration_number": "GJ05AB1303",
+      "camera_id": "cam19",
+      "camera_name": "Khaparia Gram Panchayat, Gandevi, Navsari",
+      "camera_latitude": 20.82,
+      "camera_longitude": 72.99,
+      "source_time": "2026-09-26T12:46:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05AB1303-cam30",
+      "vehicle_id": "VEH-GJ05AB1303",
+      "registration_number": "GJ05AB1303",
+      "camera_id": "cam30",
+      "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "camera_latitude": 23.076,
+      "camera_longitude": 70.133,
+      "source_time": "2026-09-26T20:13:17.208562+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 52.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05AB1303-cam06",
+      "vehicle_id": "VEH-GJ05AB1303",
+      "registration_number": "GJ05AB1303",
+      "camera_id": "cam06",
+      "camera_name": "Timbavadi Gate, Junagadh City",
+      "camera_latitude": 21.516,
+      "camera_longitude": 70.4475,
+      "source_time": "2026-09-27T01:22:36.323897+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 34.2
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam19",
+      "to_camera_id": "cam30",
+      "from_camera_name": "Khaparia Gram Panchayat, Gandevi, Navsari",
+      "to_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 52.0
+    },
+    {
+      "from_camera_id": "cam30",
+      "to_camera_id": "cam06",
+      "from_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "to_camera_name": "Timbavadi Gate, Junagadh City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 34.2
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.99,
+        20.82
+      ],
+      [
+        70.133,
+        23.076
+      ],
+      [
+        70.4475,
+        21.516
+      ]
+    ]
+  }
+}

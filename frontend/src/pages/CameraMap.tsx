@@ -197,6 +197,7 @@ export const CameraMap: React.FC = () => {
   const [showFilterPanel, setShowFilterPanel] = useState<boolean>(true)
   const [showAlertsLayer, setShowAlertsLayer] = useState<boolean>(true)
   const [showObservationSequence, setShowObservationSequence] = useState<boolean>(false)
+  const [showAllPaths, setShowAllPaths] = useState<boolean>(false)
 
   // Vehicle Tracing & Investigation States
   const [vehicleSearchQuery, setVehicleSearchQuery] = useState<string>("")
@@ -217,7 +218,7 @@ export const CameraMap: React.FC = () => {
       const [camsData, alertsData, vehsData] = await Promise.all([
         api.getCameras().catch(() => []),
         api.getAlerts().catch(() => []),
-        api.getVehicles({ limit: 50 }).catch(() => []),
+        api.getVehicles({ limit: 100 }).catch(() => []),
       ])
 
       // If backend returns empty list or cameras without spatial coordinates, fallback to full catalogue
@@ -400,6 +401,72 @@ export const CameraMap: React.FC = () => {
     )
   }, [vehicles])
 
+  // Multi-camera vehicles (sorted by camera_count descending)
+  const multiCameraVehicles = useMemo(() => {
+    return vehicles
+      .filter(
+        (v) =>
+          (v.camera_count && v.camera_count >= 2) ||
+          (v.cameras && v.cameras.length >= 2) ||
+          (v.timeline && v.timeline.length >= 2)
+      )
+      .sort((a, b) => (b.camera_count || 0) - (a.camera_count || 0))
+  }, [vehicles])
+
+  // Distinct vibrant palette for multi-vehicle paths
+  const ROUTE_PALETTE = useMemo(
+    () => [
+      { stroke: "#00f0ff", name: "Cyan" },
+      { stroke: "#f59e0b", name: "Amber" },
+      { stroke: "#10b981", name: "Emerald" },
+      { stroke: "#a855f7", name: "Purple" },
+      { stroke: "#f43f5e", name: "Rose" },
+      { stroke: "#3b82f6", name: "Blue" },
+      { stroke: "#eab308", name: "Yellow" },
+      { stroke: "#14b8a6", name: "Teal" },
+      { stroke: "#ec4899", name: "Pink" },
+      { stroke: "#6366f1", name: "Indigo" },
+    ],
+    []
+  )
+
+  // Pre-calculate trajectories for all top multi-camera vehicles
+  const allRoutesData = useMemo(() => {
+    if (!showAllPaths) return []
+    const routes: Array<{
+      vehicle: ObservedVehicle
+      color: string
+      coords: [number, number][]
+      cameraNames: string[]
+    }> = []
+
+    multiCameraVehicles.slice(0, 15).forEach((v, vIdx) => {
+      const color = ROUTE_PALETTE[vIdx % ROUTE_PALETTE.length].stroke
+      const coords: [number, number][] = []
+      const camNames: string[] = []
+      const cids = v.cameras || (v.timeline ? v.timeline.map((t) => t.camera_id) : [])
+      const uniqueCids = cids.filter((c, i) => i === 0 || c !== cids[i - 1])
+
+      uniqueCids.forEach((cid) => {
+        const cam = cameras.find((c) => c.camera_id === cid)
+        if (cam && cam.latitude != null && cam.longitude != null) {
+          coords.push([cam.latitude, cam.longitude])
+          camNames.push(cam.name)
+        }
+      })
+
+      if (coords.length >= 2) {
+        routes.push({
+          vehicle: v,
+          color,
+          coords,
+          cameraNames: camNames,
+        })
+      }
+    })
+    return routes
+  }, [showAllPaths, multiCameraVehicles, cameras, ROUTE_PALETTE])
+
   // Observation Sequence data calculation & Checkpoints
   const sequenceData = useMemo(() => {
     if (!showObservationSequence || !selectedVehicleReg) return null
@@ -459,12 +526,15 @@ export const CameraMap: React.FC = () => {
       })
     }
 
-    if (points.length === 0) return null
+    // Filter consecutive duplicates to create clean sequence of camera transitions
+    const uniquePoints = points.filter((p, i) => i === 0 || p.camera_id !== points[i - 1].camera_id)
+
+    if (uniquePoints.length === 0) return null
 
     return {
       vehicle: veh,
-      points,
-      polylineCoords: points.map((p) => [p.lat, p.lon] as [number, number]),
+      points: uniquePoints,
+      polylineCoords: uniquePoints.map((p) => [p.lat, p.lon] as [number, number]),
     }
   }, [showObservationSequence, selectedVehicleReg, vehicles, cameras])
 
@@ -638,7 +708,7 @@ export const CameraMap: React.FC = () => {
                 if (candidate) setSelectedVehicleReg(candidate.registration_number)
               }
             }}
-            className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition border ${
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition border cursor-pointer ${
               showObservationSequence
                 ? "bg-blue-950 text-blue-300 border-blue-500 shadow"
                 : "bg-police-900 text-slate-400 border-police-700 hover:text-white"
@@ -648,10 +718,23 @@ export const CameraMap: React.FC = () => {
             <span>Observation Sequence</span>
           </button>
 
+          {/* Show All Multi-Camera Trajectories Toggle */}
+          <button
+            onClick={() => setShowAllPaths(!showAllPaths)}
+            className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 transition border cursor-pointer ${
+              showAllPaths
+                ? "bg-purple-950 text-purple-300 border-purple-500 shadow-md shadow-purple-900/50 ring-1 ring-purple-400/40"
+                : "bg-police-900 text-slate-400 border-police-700 hover:text-white"
+            }`}
+          >
+            <Route className="w-3.5 h-3.5 text-purple-400" />
+            <span>All Trajectories ({multiCameraVehicles.length})</span>
+          </button>
+
           <button
             onClick={loadMapData}
             title="Refresh GIS Feeds"
-            className="p-1.5 rounded-lg bg-police-900 hover:bg-police-800 text-slate-400 hover:text-white border border-police-700"
+            className="p-1.5 rounded-lg bg-police-900 hover:bg-police-800 text-slate-400 hover:text-white border border-police-700 cursor-pointer"
           >
             <RefreshCw className={`w-4 h-4 ${loading ? "animate-spin" : ""}`} />
           </button>
@@ -673,7 +756,7 @@ export const CameraMap: React.FC = () => {
                 value={vehicleSearchQuery}
                 onChange={(e) => setVehicleSearchQuery(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleTraceVehicle(vehicleSearchQuery)}
-                placeholder="Enter Confirmed Vehicle ID / Plate (e.g. CHME, VW1292, CMA66)..."
+                placeholder="Enter Confirmed Vehicle ID / Plate (e.g. GJ02PQ5614, GJ01AB1234, CHME)..."
                 className="w-full bg-police-900 border border-police-700/80 rounded-lg pl-8 pr-24 py-1.5 text-xs text-white placeholder-slate-500 font-mono focus:border-cyan-400 focus:outline-none"
               />
               <button
@@ -702,6 +785,57 @@ export const CameraMap: React.FC = () => {
                   selectedVehicleReg === v.registration_number
                     ? "bg-cyan-950 border-cyan-400 text-cyan-300 font-bold ring-1 ring-cyan-500/50"
                     : "bg-police-900 border-police-700/80 text-slate-300 hover:border-police-500"
+                }`}
+              >
+                {v.registration_number} ({v.camera_count} Cams)
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Multi-Camera Simulated Vehicle Routes Selector */}
+        <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-police-800/80 text-xs">
+          <span className="text-[10px] uppercase font-mono text-cyan-400 font-bold shrink-0 flex items-center gap-1">
+            <Navigation className="w-3.5 h-3.5 text-cyan-400" />
+            Multi-Camera Paths ({multiCameraVehicles.length}):
+          </span>
+
+          <select
+            value={selectedVehicleReg || ""}
+            onChange={(e) => {
+              if (e.target.value) {
+                setVehicleSearchQuery(e.target.value)
+                handleTraceVehicle(e.target.value)
+              } else {
+                handleClearTrace()
+              }
+            }}
+            aria-label="Select simulated multi-camera vehicle route"
+            className="bg-police-900 border border-cyan-600/70 rounded-lg px-2.5 py-1 text-xs text-cyan-300 font-mono focus:border-cyan-400 focus:outline-none cursor-pointer max-w-sm"
+          >
+            <option value="" className="bg-police-900 text-slate-400">
+              -- Choose Simulated Route ({multiCameraVehicles.length} Targets) --
+            </option>
+            {multiCameraVehicles.map((v) => (
+              <option key={v.vehicle_id} value={v.registration_number} className="bg-police-900 text-white">
+                {v.registration_number} ({v.camera_count} Cameras){v.vehicle_details?.make_model ? ` • ${v.vehicle_details.make_model}` : ""}{v.total_distance_km ? ` • ${v.total_distance_km}km` : ""}
+              </option>
+            ))}
+          </select>
+
+          {/* Quick Buttons for Top Multi-Camera Vehicles */}
+          <div className="flex items-center gap-1.5 overflow-x-auto py-0.5">
+            {multiCameraVehicles.slice(0, 8).map((v) => (
+              <button
+                key={v.vehicle_id}
+                onClick={() => {
+                  setVehicleSearchQuery(v.registration_number)
+                  handleTraceVehicle(v.registration_number)
+                }}
+                className={`px-2 py-0.5 rounded text-[11px] font-mono border transition shrink-0 cursor-pointer ${
+                  selectedVehicleReg === v.registration_number
+                    ? "bg-cyan-950 border-cyan-400 text-cyan-300 font-bold ring-1 ring-cyan-500/50"
+                    : "bg-police-900 border-police-700/80 text-slate-300 hover:border-cyan-500 hover:text-white"
                 }`}
               >
                 {v.registration_number} ({v.camera_count} Cams)
@@ -1053,6 +1187,53 @@ export const CameraMap: React.FC = () => {
                   )
                 })}
 
+            {/* ── All Multi-Camera Simulated Trajectories Layer ──────── */}
+            {showAllPaths &&
+              allRoutesData.map((route, rIdx) => (
+                <Polyline
+                  key={`all-route-${route.vehicle.registration_number}-${rIdx}`}
+                  positions={route.coords}
+                  pathOptions={{
+                    color: route.color,
+                    weight: selectedVehicleReg === route.vehicle.registration_number ? 5 : 3.5,
+                    dashArray: "6, 8",
+                    opacity: selectedVehicleReg === route.vehicle.registration_number ? 1 : 0.75,
+                  }}
+                  eventHandlers={{
+                    click: () => {
+                      setVehicleSearchQuery(route.vehicle.registration_number)
+                      handleTraceVehicle(route.vehicle.registration_number)
+                    },
+                  }}
+                >
+                  <Popup className="custom-tactical-popup">
+                    <div className="p-2 font-sans text-xs space-y-1">
+                      <div className="font-bold text-white font-mono flex items-center justify-between gap-2">
+                        <span>{route.vehicle.registration_number}</span>
+                        <span className="text-[10px] text-cyan-400 font-bold">{route.vehicle.camera_count} Cameras</span>
+                      </div>
+                      {route.vehicle.vehicle_details?.make_model && (
+                        <div className="text-slate-300 text-[11px] font-semibold">
+                          {route.vehicle.vehicle_details.make_model} ({route.vehicle.vehicle_details.color || "Vehicle"})
+                        </div>
+                      )}
+                      <div className="text-[10px] text-slate-400 truncate max-w-[200px]">
+                        {route.cameraNames.join(" → ")}
+                      </div>
+                      <button
+                        onClick={() => {
+                          setVehicleSearchQuery(route.vehicle.registration_number)
+                          handleTraceVehicle(route.vehicle.registration_number)
+                        }}
+                        className="w-full mt-1 py-1 bg-cyan-600 hover:bg-cyan-500 text-black font-bold text-[10px] rounded cursor-pointer"
+                      >
+                        Trace Full Route
+                      </button>
+                    </div>
+                  </Popup>
+                </Polyline>
+              ))}
+
             {/* ── D. Observation Sequence Mode Polyline & Checkpoints ─────── */}
             {sequenceData && (
               <>
@@ -1114,10 +1295,30 @@ export const CameraMap: React.FC = () => {
               </div>
 
               <div className="text-[11px] text-slate-300 font-mono space-y-1 bg-police-900/60 p-2 rounded-lg border border-police-800">
+                {sequenceData.vehicle.vehicle_details?.make_model && (
+                  <div className="flex justify-between items-center pb-1 border-b border-police-800/80">
+                    <span className="text-slate-400">Vehicle:</span>
+                    <span className="text-white font-semibold">
+                      {sequenceData.vehicle.vehicle_details.make_model} ({sequenceData.vehicle.vehicle_details.color || ""})
+                    </span>
+                  </div>
+                )}
                 <div className="flex justify-between">
                   <span className="text-slate-400">Traversed Nodes:</span>
                   <span className="text-cyan-300 font-bold">{sequenceData.points.length} Cameras</span>
                 </div>
+                {sequenceData.vehicle.total_distance_km != null && (
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Total Distance:</span>
+                    <span className="text-amber-300 font-bold">{sequenceData.vehicle.total_distance_km} km</span>
+                  </div>
+                )}
+                {sequenceData.vehicle.avg_speed_kmh != null && (
+                  <div className="flex justify-between">
+                    <span className="text-slate-400">Avg Implied Speed:</span>
+                    <span className="text-emerald-300 font-bold">{sequenceData.vehicle.avg_speed_kmh} km/h</span>
+                  </div>
+                )}
                 <div className="flex justify-between items-center">
                   <span className="text-slate-400">Route Flow:</span>
                   <span

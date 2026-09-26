@@ -1,0 +1,239 @@
+{
+  "journey_id": "JRN-GJ06MN8615",
+  "vehicle_id": "VEH-GJ06MN8615",
+  "registration_number": "GJ06MN8615",
+  "normalized_registration_number": "GJ06MN8615",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 8,
+  "total_distance_km": 1504.64,
+  "avg_speed_kmh": 36.7,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ06MN8615-cam04",
+      "vehicle_id": "VEH-GJ06MN8615",
+      "registration_number": "GJ06MN8615",
+      "camera_id": "cam04",
+      "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "source_time": "2026-09-26T14:00:42.176418+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 36.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06MN8615-cam10",
+      "vehicle_id": "VEH-GJ06MN8615",
+      "registration_number": "GJ06MN8615",
+      "camera_id": "cam10",
+      "camera_name": "Char Chowk Road, Junagadh Central",
+      "camera_latitude": 21.52,
+      "camera_longitude": 70.459,
+      "source_time": "2026-09-26T21:41:21.873664+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 35.5
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06MN8615-cam30",
+      "vehicle_id": "VEH-GJ06MN8615",
+      "registration_number": "GJ06MN8615",
+      "camera_id": "cam30",
+      "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "camera_latitude": 23.076,
+      "camera_longitude": 70.133,
+      "source_time": "2026-09-27T02:26:20.494898+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 37.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06MN8615-cam13",
+      "vehicle_id": "VEH-GJ06MN8615",
+      "registration_number": "GJ06MN8615",
+      "camera_id": "cam13",
+      "camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "camera_latitude": 23.024,
+      "camera_longitude": 72.545,
+      "source_time": "2026-09-27T09:22:24.521017+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 35.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06MN8615-cam28",
+      "vehicle_id": "VEH-GJ06MN8615",
+      "registration_number": "GJ06MN8615",
+      "camera_id": "cam28",
+      "camera_name": "Town Hall Circle, Bilimora",
+      "camera_latitude": 20.762,
+      "camera_longitude": 72.964,
+      "source_time": "2026-09-27T16:20:52.921655+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 36.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06MN8615-cam11",
+      "vehicle_id": "VEH-GJ06MN8615",
+      "registration_number": "GJ06MN8615",
+      "camera_id": "cam11",
+      "camera_name": "Dolatpara Industrial Area, Junagadh",
+      "camera_latitude": 21.536,
+      "camera_longitude": 70.474,
+      "source_time": "2026-09-28T00:45:53.712888+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 32.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06MN8615-cam20",
+      "vehicle_id": "VEH-GJ06MN8615",
+      "registration_number": "GJ06MN8615",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-28T06:51:05.832488+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 45.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ06MN8615-cam05",
+      "vehicle_id": "VEH-GJ06MN8615",
+      "registration_number": "GJ06MN8615",
+      "camera_id": "cam05",
+      "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.097,
+      "camera_longitude": 72.5925,
+      "source_time": "2026-09-28T07:00:19.226919+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 46.3
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam04",
+      "to_camera_id": "cam10",
+      "from_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "to_camera_name": "Char Chowk Road, Junagadh Central",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 35.5
+    },
+    {
+      "from_camera_id": "cam10",
+      "to_camera_id": "cam30",
+      "from_camera_name": "Char Chowk Road, Junagadh Central",
+      "to_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 37.1
+    },
+    {
+      "from_camera_id": "cam30",
+      "to_camera_id": "cam13",
+      "from_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "to_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 35.6
+    },
+    {
+      "from_camera_id": "cam13",
+      "to_camera_id": "cam28",
+      "from_camera_name": "CN Vidhyalaya Road, Ambawadi, Ahmedabad",
+      "to_camera_name": "Town Hall Circle, Bilimora",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 36.6
+    },
+    {
+      "from_camera_id": "cam28",
+      "to_camera_id": "cam11",
+      "from_camera_name": "Town Hall Circle, Bilimora",
+      "to_camera_name": "Dolatpara Industrial Area, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 32.3
+    },
+    {
+      "from_camera_id": "cam11",
+      "to_camera_id": "cam20",
+      "from_camera_name": "Dolatpara Industrial Area, Junagadh",
+      "to_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 45.1
+    },
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam05",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 46.3
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.5625,
+        23.0135
+      ],
+      [
+        70.459,
+        21.52
+      ],
+      [
+        70.133,
+        23.076
+      ],
+      [
+        72.545,
+        23.024
+      ],
+      [
+        72.964,
+        20.762
+      ],
+      [
+        70.474,
+        21.536
+      ],
+      [
+        72.592,
+        23.033
+      ],
+      [
+        72.5925,
+        23.097
+      ]
+    ]
+  }
+}
