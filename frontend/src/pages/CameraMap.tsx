@@ -725,11 +725,11 @@ export const CameraMap: React.FC = () => {
     if (!query.trim()) return
     setTraceError(null)
 
-    const clean = query.trim().toUpperCase().replace(/\s+/g, "")
+    const clean = query.trim().toUpperCase().replace(/[\s\-\_\.]/g, "")
     const matched = vehicles.find((v) => {
-      const reg = (v.registration_number || "").toUpperCase().replace(/\s+/g, "")
-      const norm = (v.normalized_registration_number || "").toUpperCase().replace(/\s+/g, "")
-      const vid = (v.vehicle_id || "").toUpperCase().replace(/\s+/g, "")
+      const reg = (v.registration_number || "").toUpperCase().replace(/[\s\-\_\.]/g, "").replace(/^VEH/, "")
+      const norm = (v.normalized_registration_number || "").toUpperCase().replace(/[\s\-\_\.]/g, "").replace(/^VEH/, "")
+      const vid = (v.vehicle_id || "").toUpperCase().replace(/[\s\-\_\.]/g, "").replace(/^VEH/, "")
       return reg === clean || norm === clean || vid === clean
     })
 
