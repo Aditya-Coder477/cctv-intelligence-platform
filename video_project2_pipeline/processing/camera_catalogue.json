@@ -1,0 +1,12 @@
+[
+  {
+    "camera_id": "vp2",
+    "name": "Video Project 2",
+    "rtsp_url": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\Video Project 2.mp4",
+    "codec": "H264",
+    "location": "Gujarat Road Segment",
+    "department": "Gujarat Traffic Police",
+    "status": "online",
+    "is_spatial": false
+  }
+]

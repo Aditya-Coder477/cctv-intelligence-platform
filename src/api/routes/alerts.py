@@ -67,7 +67,7 @@ def _get_all_alerts() -> List[Dict[str, Any]]:
                     alert_id = m.get("match_id", f"ALT-{m.get('observation_id')}")
                     
                     # Watchlist details
-                    wl_meta = m.get("watchlist_metadata", {})
+                    wl_meta = m.get("watchlist_metadata") or {}
                     category = wl_meta.get("category", "SUSPECT_VEHICLE")
                     priority = wl_meta.get("priority", "HIGH")
                     
@@ -92,7 +92,7 @@ def _get_all_alerts() -> List[Dict[str, Any]]:
                         "observation_id": m.get("observation_id", ""),
                         "registration_number": m.get("registration_number", ""),
                         "normalized_registration_number": m.get("normalized_registration_number", ""),
-                        "watchlist_id": m.get("watchlist_id", ""),
+                        "watchlist_id": m.get("watchlist_id") or "",
                         "category": category,
                         "priority": priority,
                         "decision": m.get("decision", "MATCH"),

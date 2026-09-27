@@ -15,8 +15,40 @@ import argparse
 import json
 import math
 import random
+import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+# Add project root to sys.path
+ROOT_DIR = Path(__file__).resolve().parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
+from src.journey.shortest_path import road_network
+
+# Structured realistic surveillance corridors across Gujarat (Cameras 1-30)
+SURVEILLANCE_CORRIDORS = [
+    # 1. Ahmedabad Urban Corridors (East-West & North-South)
+    ("cam01", "cam04"), ("cam03", "cam13"), ("cam05", "cam14"), ("cam16", "cam02"),
+    ("cam20", "cam15"), ("cam12", "cam04"), ("cam14", "cam01"), ("cam04", "cam16"),
+    ("cam13", "cam01"), ("cam02", "cam12"), ("cam01", "cam20"), ("cam15", "cam04"),
+    ("cam03", "cam04"), ("cam16", "cam13"), ("cam05", "cam02"),
+    # 2. Junagadh Urban & Bypass Corridors
+    ("cam06", "cam11"), ("cam07", "cam08"), ("cam09", "cam10"), ("cam06", "cam07"),
+    ("cam11", "cam07"), ("cam10", "cam08"), ("cam08", "cam09"), ("cam11", "cam06"),
+    # 3. Navsari & Bilimora Coastal Highway Corridors
+    ("cam27", "cam19"), ("cam28", "cam25"), ("cam29", "cam26"), ("cam19", "cam27"),
+    ("cam25", "cam29"), ("cam26", "cam28"), ("cam27", "cam26"), ("cam28", "cam19"),
+    # 4. North Gujarat Highway Corridors (Adalaj, Dehgam, Sabarkantha, Patan, Banaskantha)
+    ("cam12", "cam22"), ("cam24", "cam21"), ("cam23", "cam12"), ("cam22", "cam24"),
+    ("cam05", "cam23"), ("cam21", "cam23"), ("cam16", "cam24"),
+    # 5. Rajkot Hub & Kutch Express Corridors
+    ("cam17", "cam18"), ("cam17", "cam30"), ("cam18", "cam30"), ("cam30", "cam17"),
+    # 6. Inter-regional State Highway Corridors
+    ("cam04", "cam18"), ("cam20", "cam17"), ("cam18", "cam06"), ("cam17", "cam07"),
+    ("cam04", "cam19"), ("cam20", "cam27"), ("cam01", "cam08"), ("cam12", "cam30"),
+    ("cam16", "cam17"), ("cam15", "cam18"), ("cam02", "cam30"), ("cam04", "cam06"),
+]
 
 # Common Gujarat RTO codes
 RTO_CODES = ["GJ01", "GJ02", "GJ03", "GJ05", "GJ06", "GJ27", "GJ18"]
@@ -121,11 +153,15 @@ def generate_mongodb_dataset(
         model_info = random.choice(VEHICLE_MODELS)
         make_model, color, v_class = model_info
 
-        # Select a continuous sequence of distinct cameras
-        n_cams = random.randint(min_cameras_per_vehicle, min(max_cameras_per_vehicle, len(cameras_raw)))
-        selected_cameras = random.sample(cameras_raw, n_cams)
+        # Select realistic surveillance corridor and compute exact shortest path sequence
+        cameras_by_id = {c["camera_id"]: c for c in cameras_raw}
+        orig_cid, dest_cid = SURVEILLANCE_CORRIDORS[i % len(SURVEILLANCE_CORRIDORS)]
+        path_info = road_network.find_shortest_path(orig_cid, dest_cid)
+        if path_info and len(path_info["shortest_path"]) >= 2:
+            selected_cameras = [cameras_by_id[cid] for cid in path_info["shortest_path"] if cid in cameras_by_id]
+        else:
+            selected_cameras = [cameras_by_id[orig_cid], cameras_by_id[dest_cid]]
 
-        # Sort cameras logically or create a route
         vehicle_start_time = base_time + timedelta(minutes=random.randint(0, 180))
         current_time = vehicle_start_time
 

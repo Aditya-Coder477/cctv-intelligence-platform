@@ -1,0 +1,131 @@
+{
+  "journey_id": "JRN-GJ02AB9042",
+  "vehicle_id": "VEH-GJ02AB9042",
+  "registration_number": "GJ02AB9042",
+  "normalized_registration_number": "GJ02AB9042",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 4,
+  "total_distance_km": 9.49,
+  "avg_speed_kmh": 37.8,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ02AB9042-cam05",
+      "vehicle_id": "VEH-GJ02AB9042",
+      "registration_number": "GJ02AB9042",
+      "camera_id": "cam05",
+      "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.097,
+      "camera_longitude": 72.5925,
+      "source_time": "2026-09-26T16:06:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 35.5
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02AB9042-cam01",
+      "vehicle_id": "VEH-GJ02AB9042",
+      "registration_number": "GJ02AB9042",
+      "camera_id": "cam01",
+      "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "source_time": "2026-09-26T16:12:08.619498+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02AB9042-cam15",
+      "vehicle_id": "VEH-GJ02AB9042",
+      "registration_number": "GJ02AB9042",
+      "camera_id": "cam15",
+      "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "camera_latitude": 23.045,
+      "camera_longitude": 72.552,
+      "source_time": "2026-09-26T16:19:18.351538+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 32.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ02AB9042-cam02",
+      "vehicle_id": "VEH-GJ02AB9042",
+      "registration_number": "GJ02AB9042",
+      "camera_id": "cam02",
+      "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "source_time": "2026-09-26T16:22:03.691870+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 45.5
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam05",
+      "to_camera_id": "cam01",
+      "from_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "to_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.6
+    },
+    {
+      "from_camera_id": "cam01",
+      "to_camera_id": "cam15",
+      "from_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "to_camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 32.7
+    },
+    {
+      "from_camera_id": "cam15",
+      "to_camera_id": "cam02",
+      "from_camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "to_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 45.5
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.5925,
+        23.097
+      ],
+      [
+        72.5815,
+        23.0673
+      ],
+      [
+        72.552,
+        23.045
+      ],
+      [
+        72.562,
+        23.0286
+      ]
+    ]
+  }
+}

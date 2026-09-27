@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ01MN6809",
+  "vehicle_id": "VEH-GJ01MN6809",
+  "registration_number": "GJ01MN6809",
+  "normalized_registration_number": "GJ01MN6809",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 198.03,
+  "avg_speed_kmh": 48.2,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ01MN6809-cam04",
+      "vehicle_id": "VEH-GJ01MN6809",
+      "registration_number": "GJ01MN6809",
+      "camera_id": "cam04",
+      "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "source_time": "2026-09-26T16:31:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 50.5
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN6809-cam17",
+      "vehicle_id": "VEH-GJ01MN6809",
+      "registration_number": "GJ01MN6809",
+      "camera_id": "cam17",
+      "camera_name": "Central Bus Port, Rajkot City",
+      "camera_latitude": 22.304,
+      "camera_longitude": 70.798,
+      "source_time": "2026-09-26T20:36:12.170989+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 48.5
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01MN6809-cam18",
+      "vehicle_id": "VEH-GJ01MN6809",
+      "registration_number": "GJ01MN6809",
+      "camera_id": "cam18",
+      "camera_name": "Dhebar Road Crossroad, Rajkot",
+      "camera_latitude": 22.301,
+      "camera_longitude": 70.802,
+      "source_time": "2026-09-26T20:38:42.170989+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.4
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam04",
+      "to_camera_id": "cam17",
+      "from_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "to_camera_name": "Central Bus Port, Rajkot City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 48.5
+    },
+    {
+      "from_camera_id": "cam17",
+      "to_camera_id": "cam18",
+      "from_camera_name": "Central Bus Port, Rajkot City",
+      "to_camera_name": "Dhebar Road Crossroad, Rajkot",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.4
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.5625,
+        23.0135
+      ],
+      [
+        70.798,
+        22.304
+      ],
+      [
+        70.802,
+        22.301
+      ]
+    ]
+  }
+}

@@ -1,0 +1,2954 @@
+{
+  "camera_id": "vp2",
+  "total_tracks_examined": 32,
+  "tracks_with_plates": 30,
+  "total_plate_candidates": 55,
+  "total_raw_accepted": 128,
+  "total_raw_rejected": 2,
+  "tracks": [
+    {
+      "track_id": "TRK-0001",
+      "camera_id": "vp2",
+      "plate_candidate_count": 3,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0001",
+        "frame_id": 113,
+        "pts_ms": 3733.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282611.656,
+        "plate_bbox": [
+          513,
+          809,
+          688,
+          894
+        ],
+        "plate_confidence": 0.763,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.386,
+        "plate_width": 175,
+        "plate_height": 85,
+        "sharpness_score": 0.2123,
+        "brightness_score": 0.5312,
+        "contrast_score": 0.5882,
+        "combined_score": 0.5745,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0001",
+          "frame_id": 113,
+          "pts_ms": 3733.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282611.656,
+          "plate_bbox": [
+            513,
+            809,
+            688,
+            894
+          ],
+          "plate_confidence": 0.763,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.386,
+          "plate_width": 175,
+          "plate_height": 85,
+          "sharpness_score": 0.2123,
+          "brightness_score": 0.5312,
+          "contrast_score": 0.5882,
+          "combined_score": 0.5745,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0001_frame000113_pts3733_plate05.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0001",
+          "frame_id": 110,
+          "pts_ms": 3633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282611.484,
+          "plate_bbox": [
+            543,
+            793,
+            719,
+            877
+          ],
+          "plate_confidence": 0.7576,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.3738,
+          "plate_width": 176,
+          "plate_height": 84,
+          "sharpness_score": 0.1936,
+          "brightness_score": 0.5278,
+          "contrast_score": 0.5799,
+          "combined_score": 0.5657,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0001_frame000110_pts3633_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0001_frame000110_pts3633_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0001_frame000110_pts3633_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0001_frame000110_pts3633_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0001_frame000110_pts3633_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0001_frame000110_pts3633_plate02.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0001",
+          "frame_id": 143,
+          "pts_ms": 4733.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282611.468,
+          "plate_bbox": [
+            165,
+            968,
+            337,
+            1077
+          ],
+          "plate_confidence": 0.7258,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.3599,
+          "plate_width": 172,
+          "plate_height": 109,
+          "sharpness_score": 0.174,
+          "brightness_score": 0.5302,
+          "contrast_score": 0.5613,
+          "combined_score": 0.5428,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0001_frame000143_pts4733_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0001_frame000143_pts4733_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0001_frame000143_pts4733_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0001_frame000143_pts4733_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0001_frame000143_pts4733_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0001_frame000143_pts4733_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0002",
+      "camera_id": "vp2",
+      "plate_candidate_count": 4,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0002",
+        "frame_id": 18,
+        "pts_ms": 566.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282612.921,
+        "plate_bbox": [
+          77,
+          400,
+          155,
+          441
+        ],
+        "plate_confidence": 0.7113,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.4421,
+        "plate_width": 78,
+        "plate_height": 41,
+        "sharpness_score": 0.312,
+        "brightness_score": 0.5659,
+        "contrast_score": 0.5788,
+        "combined_score": 0.5767,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0002_frame000018_pts566_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0002",
+          "frame_id": 18,
+          "pts_ms": 566.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282612.921,
+          "plate_bbox": [
+            77,
+            400,
+            155,
+            441
+          ],
+          "plate_confidence": 0.7113,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.4421,
+          "plate_width": 78,
+          "plate_height": 41,
+          "sharpness_score": 0.312,
+          "brightness_score": 0.5659,
+          "contrast_score": 0.5788,
+          "combined_score": 0.5767,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0002_frame000018_pts566_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0002_frame000018_pts566_plate01.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0002",
+          "frame_id": 15,
+          "pts_ms": 466.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282612.953,
+          "plate_bbox": [
+            148,
+            387,
+            222,
+            426
+          ],
+          "plate_confidence": 0.6923,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.411,
+          "plate_width": 74,
+          "plate_height": 39,
+          "sharpness_score": 0.2395,
+          "brightness_score": 0.5688,
+          "contrast_score": 0.5961,
+          "combined_score": 0.5516,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0002_frame000015_pts466_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0002_frame000015_pts466_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0002_frame000015_pts466_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0002_frame000015_pts466_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0002_frame000015_pts466_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0002_frame000015_pts466_plate03.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0002",
+          "frame_id": 14,
+          "pts_ms": 433.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282613.015,
+          "plate_bbox": [
+            181,
+            382,
+            255,
+            419
+          ],
+          "plate_confidence": 0.6932,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.4074,
+          "plate_width": 74,
+          "plate_height": 37,
+          "sharpness_score": 0.2316,
+          "brightness_score": 0.5926,
+          "contrast_score": 0.5738,
+          "combined_score": 0.5503,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0002_frame000014_pts433_plate05.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0002_frame000014_pts433_plate05.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0002_frame000014_pts433_plate05.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0002_frame000014_pts433_plate05.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0002_frame000014_pts433_plate05.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0002_frame000014_pts433_plate05.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0002",
+          "frame_id": 16,
+          "pts_ms": 500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282612.968,
+          "plate_bbox": [
+            111,
+            395,
+            191,
+            434
+          ],
+          "plate_confidence": 0.6808,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.4142,
+          "plate_width": 80,
+          "plate_height": 39,
+          "sharpness_score": 0.2423,
+          "brightness_score": 0.5902,
+          "contrast_score": 0.5822,
+          "combined_score": 0.5475,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0002_frame000016_pts500_plate04.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0002_frame000016_pts500_plate04.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0002_frame000016_pts500_plate04.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0002_frame000016_pts500_plate04.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0002_frame000016_pts500_plate04.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0002_frame000016_pts500_plate04.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0003",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0003",
+        "frame_id": 143,
+        "pts_ms": 4733.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282613.656,
+        "plate_bbox": [
+          894,
+          210,
+          942,
+          237
+        ],
+        "plate_confidence": 0.4712,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.5034,
+        "plate_width": 48,
+        "plate_height": 27,
+        "sharpness_score": 0.433,
+        "brightness_score": 0.63,
+        "contrast_score": 0.5178,
+        "combined_score": 0.4873,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0003",
+          "frame_id": 143,
+          "pts_ms": 4733.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282613.656,
+          "plate_bbox": [
+            894,
+            210,
+            942,
+            237
+          ],
+          "plate_confidence": 0.4712,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5034,
+          "plate_width": 48,
+          "plate_height": 27,
+          "sharpness_score": 0.433,
+          "brightness_score": 0.63,
+          "contrast_score": 0.5178,
+          "combined_score": 0.4873,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0003_frame000143_pts4733_plate02.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0003",
+          "frame_id": 155,
+          "pts_ms": 5133.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282613.625,
+          "plate_bbox": [
+            764,
+            237,
+            809,
+            265
+          ],
+          "plate_confidence": 0.104,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.4087,
+          "plate_width": 45,
+          "plate_height": 28,
+          "sharpness_score": 0.2567,
+          "brightness_score": 0.5887,
+          "contrast_score": 0.5325,
+          "combined_score": 0.2564,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0003_frame000155_pts5133_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0003_frame000155_pts5133_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0003_frame000155_pts5133_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0003_frame000155_pts5133_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0003_frame000155_pts5133_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0003_frame000155_pts5133_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0017",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0017",
+        "frame_id": 126,
+        "pts_ms": 4166.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282618.625,
+        "plate_bbox": [
+          0,
+          2,
+          316,
+          47
+        ],
+        "plate_confidence": 0.1758,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.7586,
+        "plate_width": 316,
+        "plate_height": 45,
+        "sharpness_score": 1.0,
+        "brightness_score": 0.5224,
+        "contrast_score": 0.5121,
+        "combined_score": 0.4672,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0017",
+          "frame_id": 126,
+          "pts_ms": 4166.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282618.625,
+          "plate_bbox": [
+            0,
+            2,
+            316,
+            47
+          ],
+          "plate_confidence": 0.1758,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.7586,
+          "plate_width": 316,
+          "plate_height": 45,
+          "sharpness_score": 1.0,
+          "brightness_score": 0.5224,
+          "contrast_score": 0.5121,
+          "combined_score": 0.4672,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0017_frame000126_pts4166_plate02.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0017",
+          "frame_id": 124,
+          "pts_ms": 4100.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282618.64,
+          "plate_bbox": [
+            114,
+            2,
+            288,
+            28
+          ],
+          "plate_confidence": 0.1244,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.7698,
+          "plate_width": 174,
+          "plate_height": 26,
+          "sharpness_score": 1.0,
+          "brightness_score": 0.4554,
+          "contrast_score": 0.6237,
+          "combined_score": 0.4471,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0017_frame000124_pts4100_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0017_frame000124_pts4100_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0017_frame000124_pts4100_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0017_frame000124_pts4100_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0017_frame000124_pts4100_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0017_frame000124_pts4100_plate03.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0024",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0024",
+        "frame_id": 185,
+        "pts_ms": 6133.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282621.421,
+        "plate_bbox": [
+          783,
+          522,
+          902,
+          582
+        ],
+        "plate_confidence": 0.6938,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.5022,
+        "plate_width": 119,
+        "plate_height": 60,
+        "sharpness_score": 0.4108,
+        "brightness_score": 0.4031,
+        "contrast_score": 0.7839,
+        "combined_score": 0.598,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0024",
+          "frame_id": 185,
+          "pts_ms": 6133.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282621.421,
+          "plate_bbox": [
+            783,
+            522,
+            902,
+            582
+          ],
+          "plate_confidence": 0.6938,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5022,
+          "plate_width": 119,
+          "plate_height": 60,
+          "sharpness_score": 0.4108,
+          "brightness_score": 0.4031,
+          "contrast_score": 0.7839,
+          "combined_score": 0.598,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0026",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0026",
+        "frame_id": 205,
+        "pts_ms": 6800.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282622.437,
+        "plate_bbox": [
+          726,
+          646,
+          870,
+          689
+        ],
+        "plate_confidence": 0.6718,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.6423,
+        "plate_width": 144,
+        "plate_height": 43,
+        "sharpness_score": 0.5649,
+        "brightness_score": 0.5514,
+        "contrast_score": 0.8882,
+        "combined_score": 0.657,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0026",
+          "frame_id": 205,
+          "pts_ms": 6800.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282622.437,
+          "plate_bbox": [
+            726,
+            646,
+            870,
+            689
+          ],
+          "plate_confidence": 0.6718,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.6423,
+          "plate_width": 144,
+          "plate_height": 43,
+          "sharpness_score": 0.5649,
+          "brightness_score": 0.5514,
+          "contrast_score": 0.8882,
+          "combined_score": 0.657,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0026",
+          "frame_id": 208,
+          "pts_ms": 6899.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282622.406,
+          "plate_bbox": [
+            710,
+            671,
+            873,
+            689
+          ],
+          "plate_confidence": 0.1283,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.4947,
+          "plate_width": 163,
+          "plate_height": 18,
+          "sharpness_score": 0.3164,
+          "brightness_score": 0.4858,
+          "contrast_score": 0.8601,
+          "combined_score": 0.3115,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0026_frame000208_pts6899_plate06.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0026_frame000208_pts6899_plate06.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0026_frame000208_pts6899_plate06.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0026_frame000208_pts6899_plate06.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0026_frame000208_pts6899_plate06.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0026_frame000208_pts6899_plate06.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0028",
+      "camera_id": "vp2",
+      "plate_candidate_count": 0,
+      "best_plate_candidate": null,
+      "plate_candidates": []
+    },
+    {
+      "track_id": "TRK-0049",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0049",
+        "frame_id": 331,
+        "pts_ms": 11000.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282631.656,
+        "plate_bbox": [
+          828,
+          566,
+          958,
+          625
+        ],
+        "plate_confidence": 0.7246,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.6216,
+        "plate_width": 130,
+        "plate_height": 59,
+        "sharpness_score": 0.5487,
+        "brightness_score": 0.5458,
+        "contrast_score": 0.8431,
+        "combined_score": 0.6731,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0049",
+          "frame_id": 331,
+          "pts_ms": 11000.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282631.656,
+          "plate_bbox": [
+            828,
+            566,
+            958,
+            625
+          ],
+          "plate_confidence": 0.7246,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.6216,
+          "plate_width": 130,
+          "plate_height": 59,
+          "sharpness_score": 0.5487,
+          "brightness_score": 0.5458,
+          "contrast_score": 0.8431,
+          "combined_score": 0.6731,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0049_frame000331_pts11000_plate03.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0049",
+          "frame_id": 324,
+          "pts_ms": 10766.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282631.609,
+          "plate_bbox": [
+            838,
+            511,
+            960,
+            571
+          ],
+          "plate_confidence": 0.7007,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5968,
+          "plate_width": 122,
+          "plate_height": 60,
+          "sharpness_score": 0.5013,
+          "brightness_score": 0.5598,
+          "contrast_score": 0.8249,
+          "combined_score": 0.6488,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0049_frame000324_pts10766_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0049_frame000324_pts10766_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0049_frame000324_pts10766_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0049_frame000324_pts10766_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0049_frame000324_pts10766_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0049_frame000324_pts10766_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0057",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0057",
+        "frame_id": 373,
+        "pts_ms": 12400.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282635.468,
+        "plate_bbox": [
+          689,
+          853,
+          872,
+          929
+        ],
+        "plate_confidence": 0.6961,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.5402,
+        "plate_width": 183,
+        "plate_height": 76,
+        "sharpness_score": 0.3715,
+        "brightness_score": 0.5515,
+        "contrast_score": 0.8665,
+        "combined_score": 0.6182,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0057",
+          "frame_id": 373,
+          "pts_ms": 12400.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282635.468,
+          "plate_bbox": [
+            689,
+            853,
+            872,
+            929
+          ],
+          "plate_confidence": 0.6961,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5402,
+          "plate_width": 183,
+          "plate_height": 76,
+          "sharpness_score": 0.3715,
+          "brightness_score": 0.5515,
+          "contrast_score": 0.8665,
+          "combined_score": 0.6182,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0073",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0073",
+        "frame_id": 496,
+        "pts_ms": 16500.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282640.5,
+        "plate_bbox": [
+          838,
+          518,
+          959,
+          573
+        ],
+        "plate_confidence": 0.6384,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.801,
+        "plate_width": 121,
+        "plate_height": 55,
+        "sharpness_score": 0.8832,
+        "brightness_score": 0.4733,
+        "contrast_score": 0.9641,
+        "combined_score": 0.7197,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0073",
+          "frame_id": 496,
+          "pts_ms": 16500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282640.5,
+          "plate_bbox": [
+            838,
+            518,
+            959,
+            573
+          ],
+          "plate_confidence": 0.6384,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.801,
+          "plate_width": 121,
+          "plate_height": 55,
+          "sharpness_score": 0.8832,
+          "brightness_score": 0.4733,
+          "contrast_score": 0.9641,
+          "combined_score": 0.7197,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0073_frame000496_pts16500_plate01.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0073",
+          "frame_id": 492,
+          "pts_ms": 16366.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282640.562,
+          "plate_bbox": [
+            843,
+            495,
+            959,
+            546
+          ],
+          "plate_confidence": 0.6335,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.7769,
+          "plate_width": 116,
+          "plate_height": 51,
+          "sharpness_score": 0.8347,
+          "brightness_score": 0.4728,
+          "contrast_score": 0.9655,
+          "combined_score": 0.7052,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0073_frame000492_pts16366_plate04.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0073_frame000492_pts16366_plate04.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0073_frame000492_pts16366_plate04.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0073_frame000492_pts16366_plate04.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0073_frame000492_pts16366_plate04.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0073_frame000492_pts16366_plate04.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0100",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0100",
+        "frame_id": 651,
+        "pts_ms": 21666.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282649.671,
+        "plate_bbox": [
+          789,
+          681,
+          922,
+          728
+        ],
+        "plate_confidence": 0.7348,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.9052,
+        "plate_width": 133,
+        "plate_height": 47,
+        "sharpness_score": 1.0,
+        "brightness_score": 0.6208,
+        "contrast_score": 1.0,
+        "combined_score": 0.82,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0100",
+          "frame_id": 651,
+          "pts_ms": 21666.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282649.671,
+          "plate_bbox": [
+            789,
+            681,
+            922,
+            728
+          ],
+          "plate_confidence": 0.7348,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.9052,
+          "plate_width": 133,
+          "plate_height": 47,
+          "sharpness_score": 1.0,
+          "brightness_score": 0.6208,
+          "contrast_score": 1.0,
+          "combined_score": 0.82,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0104",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0104",
+        "frame_id": 649,
+        "pts_ms": 21600.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282651.968,
+        "plate_bbox": [
+          1290,
+          286,
+          1352,
+          384
+        ],
+        "plate_confidence": 0.6698,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.854,
+        "plate_width": 62,
+        "plate_height": 98,
+        "sharpness_score": 0.9516,
+        "brightness_score": 0.738,
+        "contrast_score": 0.7748,
+        "combined_score": 0.7619,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0104",
+          "frame_id": 649,
+          "pts_ms": 21600.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282651.968,
+          "plate_bbox": [
+            1290,
+            286,
+            1352,
+            384
+          ],
+          "plate_confidence": 0.6698,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.854,
+          "plate_width": 62,
+          "plate_height": 98,
+          "sharpness_score": 0.9516,
+          "brightness_score": 0.738,
+          "contrast_score": 0.7748,
+          "combined_score": 0.7619,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0104_frame000649_pts21600_plate02.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0106",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0106",
+        "frame_id": 678,
+        "pts_ms": 22566.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282653.14,
+        "plate_bbox": [
+          183,
+          329,
+          201,
+          352
+        ],
+        "plate_confidence": 0.2323,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.5394,
+        "plate_width": 18,
+        "plate_height": 23,
+        "sharpness_score": 0.5477,
+        "brightness_score": 0.5075,
+        "contrast_score": 0.5548,
+        "combined_score": 0.3859,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0106",
+          "frame_id": 678,
+          "pts_ms": 22566.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282653.14,
+          "plate_bbox": [
+            183,
+            329,
+            201,
+            352
+          ],
+          "plate_confidence": 0.2323,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5394,
+          "plate_width": 18,
+          "plate_height": 23,
+          "sharpness_score": 0.5477,
+          "brightness_score": 0.5075,
+          "contrast_score": 0.5548,
+          "combined_score": 0.3859,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0106",
+          "frame_id": 673,
+          "pts_ms": 22400.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282653.203,
+          "plate_bbox": [
+            153,
+            341,
+            198,
+            359
+          ],
+          "plate_confidence": 0.1224,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5849,
+          "plate_width": 45,
+          "plate_height": 18,
+          "sharpness_score": 0.6201,
+          "brightness_score": 0.5347,
+          "contrast_score": 0.5649,
+          "combined_score": 0.3537,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0106_frame000673_pts22400_plate06.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0106_frame000673_pts22400_plate06.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0106_frame000673_pts22400_plate06.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0106_frame000673_pts22400_plate06.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0106_frame000673_pts22400_plate06.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0106_frame000673_pts22400_plate06.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0110",
+      "camera_id": "vp2",
+      "plate_candidate_count": 0,
+      "best_plate_candidate": null,
+      "plate_candidates": []
+    },
+    {
+      "track_id": "TRK-0112",
+      "camera_id": "vp2",
+      "plate_candidate_count": 3,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0112",
+        "frame_id": 791,
+        "pts_ms": 26333.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282655.437,
+        "plate_bbox": [
+          1766,
+          714,
+          1854,
+          738
+        ],
+        "plate_confidence": 0.3476,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.6428,
+        "plate_width": 88,
+        "plate_height": 24,
+        "sharpness_score": 0.7009,
+        "brightness_score": 0.4522,
+        "contrast_score": 0.7174,
+        "combined_score": 0.4952,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0112",
+          "frame_id": 791,
+          "pts_ms": 26333.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282655.437,
+          "plate_bbox": [
+            1766,
+            714,
+            1854,
+            738
+          ],
+          "plate_confidence": 0.3476,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.6428,
+          "plate_width": 88,
+          "plate_height": 24,
+          "sharpness_score": 0.7009,
+          "brightness_score": 0.4522,
+          "contrast_score": 0.7174,
+          "combined_score": 0.4952,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0112",
+          "frame_id": 787,
+          "pts_ms": 26200.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282655.39,
+          "plate_bbox": [
+            1742,
+            685,
+            1827,
+            717
+          ],
+          "plate_confidence": 0.3935,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5965,
+          "plate_width": 85,
+          "plate_height": 32,
+          "sharpness_score": 0.6291,
+          "brightness_score": 0.4304,
+          "contrast_score": 0.6974,
+          "combined_score": 0.495,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0112_frame000787_pts26200_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0112_frame000787_pts26200_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0112_frame000787_pts26200_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0112_frame000787_pts26200_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0112_frame000787_pts26200_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0112_frame000787_pts26200_plate03.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0112",
+          "frame_id": 793,
+          "pts_ms": 26400.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282655.375,
+          "plate_bbox": [
+            1780,
+            731,
+            1875,
+            758
+          ],
+          "plate_confidence": 0.2246,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.6246,
+          "plate_width": 95,
+          "plate_height": 27,
+          "sharpness_score": 0.6932,
+          "brightness_score": 0.4296,
+          "contrast_score": 0.6826,
+          "combined_score": 0.4246,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0112_frame000793_pts26400_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0112_frame000793_pts26400_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0112_frame000793_pts26400_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0112_frame000793_pts26400_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0112_frame000793_pts26400_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0112_frame000793_pts26400_plate02.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0116",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0116",
+        "frame_id": 789,
+        "pts_ms": 26266.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282656.468,
+        "plate_bbox": [
+          715,
+          804,
+          887,
+          863
+        ],
+        "plate_confidence": 0.7427,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.8123,
+        "plate_width": 172,
+        "plate_height": 59,
+        "sharpness_score": 0.8517,
+        "brightness_score": 0.6285,
+        "contrast_score": 0.9172,
+        "combined_score": 0.7775,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0116",
+          "frame_id": 789,
+          "pts_ms": 26266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282656.468,
+          "plate_bbox": [
+            715,
+            804,
+            887,
+            863
+          ],
+          "plate_confidence": 0.7427,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.8123,
+          "plate_width": 172,
+          "plate_height": 59,
+          "sharpness_score": 0.8517,
+          "brightness_score": 0.6285,
+          "contrast_score": 0.9172,
+          "combined_score": 0.7775,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0116",
+          "frame_id": 811,
+          "pts_ms": 27000.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282656.484,
+          "plate_bbox": [
+            650,
+            890,
+            844,
+            957
+          ],
+          "plate_confidence": 0.7452,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.6388,
+          "plate_width": 194,
+          "plate_height": 67,
+          "sharpness_score": 0.5173,
+          "brightness_score": 0.6229,
+          "contrast_score": 0.8978,
+          "combined_score": 0.692,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0116_frame000811_pts27000_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0116_frame000811_pts27000_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0116_frame000811_pts27000_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0116_frame000811_pts27000_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0116_frame000811_pts27000_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0116_frame000811_pts27000_plate02.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0121",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0121",
+        "frame_id": 878,
+        "pts_ms": 29233.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282659.0,
+        "plate_bbox": [
+          500,
+          482,
+          533,
+          508
+        ],
+        "plate_confidence": 0.4032,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.3764,
+        "plate_width": 33,
+        "plate_height": 26,
+        "sharpness_score": 0.2739,
+        "brightness_score": 0.4422,
+        "contrast_score": 0.5155,
+        "combined_score": 0.3898,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0121",
+          "frame_id": 878,
+          "pts_ms": 29233.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282659.0,
+          "plate_bbox": [
+            500,
+            482,
+            533,
+            508
+          ],
+          "plate_confidence": 0.4032,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.3764,
+          "plate_width": 33,
+          "plate_height": 26,
+          "sharpness_score": 0.2739,
+          "brightness_score": 0.4422,
+          "contrast_score": 0.5155,
+          "combined_score": 0.3898,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0129",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0129",
+        "frame_id": 976,
+        "pts_ms": 32500.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282660.921,
+        "plate_bbox": [
+          1575,
+          239,
+          1640,
+          273
+        ],
+        "plate_confidence": 0.6378,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.3794,
+        "plate_width": 65,
+        "plate_height": 34,
+        "sharpness_score": 0.1747,
+        "brightness_score": 0.7522,
+        "contrast_score": 0.4158,
+        "combined_score": 0.5086,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0129",
+          "frame_id": 976,
+          "pts_ms": 32500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282660.921,
+          "plate_bbox": [
+            1575,
+            239,
+            1640,
+            273
+          ],
+          "plate_confidence": 0.6378,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.3794,
+          "plate_width": 65,
+          "plate_height": 34,
+          "sharpness_score": 0.1747,
+          "brightness_score": 0.7522,
+          "contrast_score": 0.4158,
+          "combined_score": 0.5086,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0129",
+          "frame_id": 974,
+          "pts_ms": 32433.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282660.968,
+          "plate_bbox": [
+            1650,
+            244,
+            1721,
+            279
+          ],
+          "plate_confidence": 0.5953,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.374,
+          "plate_width": 71,
+          "plate_height": 35,
+          "sharpness_score": 0.1816,
+          "brightness_score": 0.747,
+          "contrast_score": 0.3857,
+          "combined_score": 0.4846,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0129_frame000974_pts32433_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0129_frame000974_pts32433_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0129_frame000974_pts32433_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0129_frame000974_pts32433_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0129_frame000974_pts32433_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0129_frame000974_pts32433_plate03.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0131",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0131",
+        "frame_id": 1119,
+        "pts_ms": 37266.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282661.75,
+        "plate_bbox": [
+          1532,
+          841,
+          1737,
+          1021
+        ],
+        "plate_confidence": 0.726,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.3343,
+        "plate_width": 205,
+        "plate_height": 180,
+        "sharpness_score": 0.1739,
+        "brightness_score": 0.4077,
+        "contrast_score": 0.5817,
+        "combined_score": 0.5302,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0131",
+          "frame_id": 1119,
+          "pts_ms": 37266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282661.75,
+          "plate_bbox": [
+            1532,
+            841,
+            1737,
+            1021
+          ],
+          "plate_confidence": 0.726,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.3343,
+          "plate_width": 205,
+          "plate_height": 180,
+          "sharpness_score": 0.1739,
+          "brightness_score": 0.4077,
+          "contrast_score": 0.5817,
+          "combined_score": 0.5302,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0131_frame001119_pts37266_plate01.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0131",
+          "frame_id": 1104,
+          "pts_ms": 36766.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282661.765,
+          "plate_bbox": [
+            1405,
+            800,
+            1641,
+            998
+          ],
+          "plate_confidence": 0.7431,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.3136,
+          "plate_width": 236,
+          "plate_height": 198,
+          "sharpness_score": 0.1521,
+          "brightness_score": 0.3737,
+          "contrast_score": 0.5765,
+          "combined_score": 0.5283,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0131_frame001104_pts36766_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0131_frame001104_pts36766_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0131_frame001104_pts36766_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0131_frame001104_pts36766_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0131_frame001104_pts36766_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0131_frame001104_pts36766_plate02.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0135",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0135",
+        "frame_id": 1109,
+        "pts_ms": 36933.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282664.546,
+        "plate_bbox": [
+          1656,
+          242,
+          1728,
+          282
+        ],
+        "plate_confidence": 0.6543,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.3834,
+        "plate_width": 72,
+        "plate_height": 40,
+        "sharpness_score": 0.173,
+        "brightness_score": 0.7686,
+        "contrast_score": 0.4192,
+        "combined_score": 0.5189,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0135",
+          "frame_id": 1109,
+          "pts_ms": 36933.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282664.546,
+          "plate_bbox": [
+            1656,
+            242,
+            1728,
+            282
+          ],
+          "plate_confidence": 0.6543,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.3834,
+          "plate_width": 72,
+          "plate_height": 40,
+          "sharpness_score": 0.173,
+          "brightness_score": 0.7686,
+          "contrast_score": 0.4192,
+          "combined_score": 0.5189,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0135",
+          "frame_id": 1107,
+          "pts_ms": 36866.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282664.593,
+          "plate_bbox": [
+            1752,
+            249,
+            1823,
+            283
+          ],
+          "plate_confidence": 0.2994,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.3455,
+          "plate_width": 71,
+          "plate_height": 34,
+          "sharpness_score": 0.1341,
+          "brightness_score": 0.7398,
+          "contrast_score": 0.3739,
+          "combined_score": 0.3225,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0135_frame001107_pts36866_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0135_frame001107_pts36866_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0135_frame001107_pts36866_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0135_frame001107_pts36866_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0135_frame001107_pts36866_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0135_frame001107_pts36866_plate03.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0137",
+      "camera_id": "vp2",
+      "plate_candidate_count": 3,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0137",
+        "frame_id": 1146,
+        "pts_ms": 38166.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282665.421,
+        "plate_bbox": [
+          1221,
+          404,
+          1330,
+          453
+        ],
+        "plate_confidence": 0.7381,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.5513,
+        "plate_width": 109,
+        "plate_height": 49,
+        "sharpness_score": 0.4938,
+        "brightness_score": 0.5565,
+        "contrast_score": 0.6613,
+        "combined_score": 0.6447,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1146,
+          "pts_ms": 38166.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.421,
+          "plate_bbox": [
+            1221,
+            404,
+            1330,
+            453
+          ],
+          "plate_confidence": 0.7381,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5513,
+          "plate_width": 109,
+          "plate_height": 49,
+          "sharpness_score": 0.4938,
+          "brightness_score": 0.5565,
+          "contrast_score": 0.6613,
+          "combined_score": 0.6447,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1151,
+          "pts_ms": 38333.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.453,
+          "plate_bbox": [
+            1198,
+            414,
+            1309,
+            465
+          ],
+          "plate_confidence": 0.7234,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5528,
+          "plate_width": 111,
+          "plate_height": 51,
+          "sharpness_score": 0.498,
+          "brightness_score": 0.5575,
+          "contrast_score": 0.6577,
+          "combined_score": 0.6381,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0137_frame001151_pts38333_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0137_frame001151_pts38333_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0137_frame001151_pts38333_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0137_frame001151_pts38333_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0137_frame001151_pts38333_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0137_frame001151_pts38333_plate03.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1141,
+          "pts_ms": 38000.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.437,
+          "plate_bbox": [
+            1242,
+            395,
+            1348,
+            443
+          ],
+          "plate_confidence": 0.7047,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5544,
+          "plate_width": 106,
+          "plate_height": 48,
+          "sharpness_score": 0.4979,
+          "brightness_score": 0.5554,
+          "contrast_score": 0.6665,
+          "combined_score": 0.6296,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0137_frame001141_pts38000_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0137_frame001141_pts38000_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0137_frame001141_pts38000_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0137_frame001141_pts38000_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0137_frame001141_pts38000_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0137_frame001141_pts38000_plate02.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0138",
+      "camera_id": "vp2",
+      "plate_candidate_count": 3,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0138",
+        "frame_id": 1194,
+        "pts_ms": 39766.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282666.187,
+        "plate_bbox": [
+          27,
+          395,
+          102,
+          430
+        ],
+        "plate_confidence": 0.6663,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.5411,
+        "plate_width": 75,
+        "plate_height": 35,
+        "sharpness_score": 0.3484,
+        "brightness_score": 0.7544,
+        "contrast_score": 0.7134,
+        "combined_score": 0.6037,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0138",
+          "frame_id": 1194,
+          "pts_ms": 39766.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282666.187,
+          "plate_bbox": [
+            27,
+            395,
+            102,
+            430
+          ],
+          "plate_confidence": 0.6663,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5411,
+          "plate_width": 75,
+          "plate_height": 35,
+          "sharpness_score": 0.3484,
+          "brightness_score": 0.7544,
+          "contrast_score": 0.7134,
+          "combined_score": 0.6037,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0138_frame001194_pts39766_plate01.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0138",
+          "frame_id": 1195,
+          "pts_ms": 39800.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282666.25,
+          "plate_bbox": [
+            0,
+            401,
+            61,
+            442
+          ],
+          "plate_confidence": 0.6829,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.4851,
+          "plate_width": 61,
+          "plate_height": 41,
+          "sharpness_score": 0.2694,
+          "brightness_score": 0.6729,
+          "contrast_score": 0.7286,
+          "combined_score": 0.584,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0138_frame001195_pts39800_plate04.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0138_frame001195_pts39800_plate04.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0138_frame001195_pts39800_plate04.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0138_frame001195_pts39800_plate04.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0138_frame001195_pts39800_plate04.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0138_frame001195_pts39800_plate04.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0138",
+          "frame_id": 1191,
+          "pts_ms": 39666.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282666.218,
+          "plate_bbox": [
+            107,
+            377,
+            182,
+            413
+          ],
+          "plate_confidence": 0.5767,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.531,
+          "plate_width": 75,
+          "plate_height": 36,
+          "sharpness_score": 0.309,
+          "brightness_score": 0.7631,
+          "contrast_score": 0.7431,
+          "combined_score": 0.5539,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0138_frame001191_pts39666_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0138_frame001191_pts39666_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0138_frame001191_pts39666_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0138_frame001191_pts39666_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0138_frame001191_pts39666_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0138_frame001191_pts39666_plate03.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0152",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0152",
+        "frame_id": 1159,
+        "pts_ms": 38600.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282670.531,
+        "plate_bbox": [
+          590,
+          71,
+          647,
+          83
+        ],
+        "plate_confidence": 0.1435,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.8167,
+        "plate_width": 57,
+        "plate_height": 12,
+        "sharpness_score": 0.9286,
+        "brightness_score": 0.6276,
+        "contrast_score": 0.7821,
+        "combined_score": 0.4801,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0152",
+          "frame_id": 1159,
+          "pts_ms": 38600.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282670.531,
+          "plate_bbox": [
+            590,
+            71,
+            647,
+            83
+          ],
+          "plate_confidence": 0.1435,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.8167,
+          "plate_width": 57,
+          "plate_height": 12,
+          "sharpness_score": 0.9286,
+          "brightness_score": 0.6276,
+          "contrast_score": 0.7821,
+          "combined_score": 0.4801,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0152_frame001159_pts38600_plate03.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0152",
+          "frame_id": 1174,
+          "pts_ms": 39100.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282670.359,
+          "plate_bbox": [
+            528,
+            71,
+            690,
+            144
+          ],
+          "plate_confidence": 0.1218,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.5568,
+          "plate_width": 162,
+          "plate_height": 73,
+          "sharpness_score": 0.3324,
+          "brightness_score": 0.9849,
+          "contrast_score": 0.5775,
+          "combined_score": 0.3393,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0152_frame001174_pts39100_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0152_frame001174_pts39100_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0152_frame001174_pts39100_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0152_frame001174_pts39100_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0152_frame001174_pts39100_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0152_frame001174_pts39100_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0168",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0168",
+        "frame_id": 1264,
+        "pts_ms": 42100.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282674.703,
+        "plate_bbox": [
+          761,
+          84,
+          910,
+          149
+        ],
+        "plate_confidence": 0.141,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.6073,
+        "plate_width": 149,
+        "plate_height": 65,
+        "sharpness_score": 0.3904,
+        "brightness_score": 0.9829,
+        "contrast_score": 0.6656,
+        "combined_score": 0.3741,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0168",
+          "frame_id": 1264,
+          "pts_ms": 42100.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282674.703,
+          "plate_bbox": [
+            761,
+            84,
+            910,
+            149
+          ],
+          "plate_confidence": 0.141,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.6073,
+          "plate_width": 149,
+          "plate_height": 65,
+          "sharpness_score": 0.3904,
+          "brightness_score": 0.9829,
+          "contrast_score": 0.6656,
+          "combined_score": 0.3741,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0168_frame001264_pts42100_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0177",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0177",
+        "frame_id": 1478,
+        "pts_ms": 49233.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282678.093,
+        "plate_bbox": [
+          788,
+          679,
+          911,
+          722
+        ],
+        "plate_confidence": 0.7396,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.9039,
+        "plate_width": 123,
+        "plate_height": 43,
+        "sharpness_score": 1.0,
+        "brightness_score": 0.6515,
+        "contrast_score": 0.9639,
+        "combined_score": 0.8217,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0177",
+          "frame_id": 1478,
+          "pts_ms": 49233.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282678.093,
+          "plate_bbox": [
+            788,
+            679,
+            911,
+            722
+          ],
+          "plate_confidence": 0.7396,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.9039,
+          "plate_width": 123,
+          "plate_height": 43,
+          "sharpness_score": 1.0,
+          "brightness_score": 0.6515,
+          "contrast_score": 0.9639,
+          "combined_score": 0.8217,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0186",
+      "camera_id": "vp2",
+      "plate_candidate_count": 2,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0186",
+        "frame_id": 1479,
+        "pts_ms": 49266.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282682.062,
+        "plate_bbox": [
+          645,
+          375,
+          706,
+          396
+        ],
+        "plate_confidence": 0.1937,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.9604,
+        "plate_width": 61,
+        "plate_height": 21,
+        "sharpness_score": 1.0,
+        "brightness_score": 0.8415,
+        "contrast_score": 1.0,
+        "combined_score": 0.577,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0186",
+          "frame_id": 1479,
+          "pts_ms": 49266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282682.062,
+          "plate_bbox": [
+            645,
+            375,
+            706,
+            396
+          ],
+          "plate_confidence": 0.1937,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.9604,
+          "plate_width": 61,
+          "plate_height": 21,
+          "sharpness_score": 1.0,
+          "brightness_score": 0.8415,
+          "contrast_score": 1.0,
+          "combined_score": 0.577,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0186_frame001479_pts49266_plate08.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0186",
+          "frame_id": 1479,
+          "pts_ms": 49266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282682.062,
+          "plate_bbox": [
+            592,
+            276,
+            758,
+            395
+          ],
+          "plate_confidence": 0.236,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.9068,
+          "plate_width": 166,
+          "plate_height": 119,
+          "sharpness_score": 1.0,
+          "brightness_score": 0.7662,
+          "contrast_score": 0.8611,
+          "combined_score": 0.5714,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0192",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0192",
+        "frame_id": 1339,
+        "pts_ms": 44600.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282685.421,
+        "plate_bbox": [
+          1523,
+          232,
+          1564,
+          307
+        ],
+        "plate_confidence": 0.135,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.7915,
+        "plate_width": 41,
+        "plate_height": 75,
+        "sharpness_score": 0.7185,
+        "brightness_score": 0.9078,
+        "contrast_score": 0.8211,
+        "combined_score": 0.4633,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0192",
+          "frame_id": 1339,
+          "pts_ms": 44600.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282685.421,
+          "plate_bbox": [
+            1523,
+            232,
+            1564,
+            307
+          ],
+          "plate_confidence": 0.135,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.7915,
+          "plate_width": 41,
+          "plate_height": 75,
+          "sharpness_score": 0.7185,
+          "brightness_score": 0.9078,
+          "contrast_score": 0.8211,
+          "combined_score": 0.4633,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0192_frame001339_pts44600_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0195",
+      "camera_id": "vp2",
+      "plate_candidate_count": 3,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0195",
+        "frame_id": 1379,
+        "pts_ms": 45933.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282686.921,
+        "plate_bbox": [
+          701,
+          256,
+          845,
+          330
+        ],
+        "plate_confidence": 0.262,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.8465,
+        "plate_width": 144,
+        "plate_height": 74,
+        "sharpness_score": 0.9118,
+        "brightness_score": 0.7773,
+        "contrast_score": 0.785,
+        "combined_score": 0.5542,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1379,
+          "pts_ms": 45933.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.921,
+          "plate_bbox": [
+            701,
+            256,
+            845,
+            330
+          ],
+          "plate_confidence": 0.262,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.8465,
+          "plate_width": 144,
+          "plate_height": 74,
+          "sharpness_score": 0.9118,
+          "brightness_score": 0.7773,
+          "contrast_score": 0.785,
+          "combined_score": 0.5542,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1354,
+          "pts_ms": 45100.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.828,
+          "plate_bbox": [
+            712,
+            256,
+            818,
+            307
+          ],
+          "plate_confidence": 0.1206,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.9239,
+          "plate_width": 106,
+          "plate_height": 51,
+          "sharpness_score": 1.0,
+          "brightness_score": 0.6966,
+          "contrast_score": 0.999,
+          "combined_score": 0.5222,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0195_frame001354_pts45100_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0195_frame001354_pts45100_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0195_frame001354_pts45100_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0195_frame001354_pts45100_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0195_frame001354_pts45100_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0195_frame001354_pts45100_plate01.jpg"
+          },
+          "rejection_reason": null
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1366,
+          "pts_ms": 45500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.89,
+          "plate_bbox": [
+            702,
+            249,
+            846,
+            328
+          ],
+          "plate_confidence": 0.1831,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.8339,
+          "plate_width": 144,
+          "plate_height": 79,
+          "sharpness_score": 0.8683,
+          "brightness_score": 0.7986,
+          "contrast_score": 0.8002,
+          "combined_score": 0.5085,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0200",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0200",
+        "frame_id": 1379,
+        "pts_ms": 45933.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282689.328,
+        "plate_bbox": [
+          1616,
+          244,
+          1670,
+          344
+        ],
+        "plate_confidence": 0.19,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.7535,
+        "plate_width": 54,
+        "plate_height": 100,
+        "sharpness_score": 0.6291,
+        "brightness_score": 0.9422,
+        "contrast_score": 0.8135,
+        "combined_score": 0.4717,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0200",
+          "frame_id": 1379,
+          "pts_ms": 45933.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282689.328,
+          "plate_bbox": [
+            1616,
+            244,
+            1670,
+            344
+          ],
+          "plate_confidence": 0.19,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.7535,
+          "plate_width": 54,
+          "plate_height": 100,
+          "sharpness_score": 0.6291,
+          "brightness_score": 0.9422,
+          "contrast_score": 0.8135,
+          "combined_score": 0.4717,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0200_frame001379_pts45933_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0205",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0205",
+        "frame_id": 1400,
+        "pts_ms": 46633.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282690.781,
+        "plate_bbox": [
+          802,
+          291,
+          902,
+          327
+        ],
+        "plate_confidence": 0.139,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.9378,
+        "plate_width": 100,
+        "plate_height": 36,
+        "sharpness_score": 1.0,
+        "brightness_score": 0.757,
+        "contrast_score": 0.9944,
+        "combined_score": 0.5384,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0205",
+          "frame_id": 1400,
+          "pts_ms": 46633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282690.781,
+          "plate_bbox": [
+            802,
+            291,
+            902,
+            327
+          ],
+          "plate_confidence": 0.139,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.9378,
+          "plate_width": 100,
+          "plate_height": 36,
+          "sharpness_score": 1.0,
+          "brightness_score": 0.757,
+          "contrast_score": 0.9944,
+          "combined_score": 0.5384,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0212",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0212",
+        "frame_id": 1413,
+        "pts_ms": 47066.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282693.546,
+        "plate_bbox": [
+          1743,
+          275,
+          1806,
+          386
+        ],
+        "plate_confidence": 0.1063,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.7477,
+        "plate_width": 63,
+        "plate_height": 111,
+        "sharpness_score": 0.5859,
+        "brightness_score": 0.935,
+        "contrast_score": 0.884,
+        "combined_score": 0.427,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0212",
+          "frame_id": 1413,
+          "pts_ms": 47066.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282693.546,
+          "plate_bbox": [
+            1743,
+            275,
+            1806,
+            386
+          ],
+          "plate_confidence": 0.1063,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.7477,
+          "plate_width": 63,
+          "plate_height": 111,
+          "sharpness_score": 0.5859,
+          "brightness_score": 0.935,
+          "contrast_score": 0.884,
+          "combined_score": 0.427,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0212_frame001413_pts47066_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    },
+    {
+      "track_id": "TRK-0230",
+      "camera_id": "vp2",
+      "plate_candidate_count": 1,
+      "best_plate_candidate": {
+        "camera_id": "vp2",
+        "track_id": "TRK-0230",
+        "frame_id": 1508,
+        "pts_ms": 50233.0,
+        "has_valid_pts": true,
+        "local_receive_monotonic": 282699.75,
+        "plate_bbox": [
+          755,
+          709,
+          885,
+          757
+        ],
+        "plate_confidence": 0.7487,
+        "detector_version": "yolo_lp_v1",
+        "plate_quality_score": 0.8651,
+        "plate_width": 130,
+        "plate_height": 48,
+        "sharpness_score": 1.0,
+        "brightness_score": 0.6118,
+        "contrast_score": 0.8484,
+        "combined_score": 0.8069,
+        "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+        "processed_crop_paths": {
+          "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+          "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+          "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+          "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+          "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg"
+        },
+        "rejection_reason": null
+      },
+      "plate_candidates": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0230",
+          "frame_id": 1508,
+          "pts_ms": 50233.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282699.75,
+          "plate_bbox": [
+            755,
+            709,
+            885,
+            757
+          ],
+          "plate_confidence": 0.7487,
+          "detector_version": "yolo_lp_v1",
+          "plate_quality_score": 0.8651,
+          "plate_width": 130,
+          "plate_height": 48,
+          "sharpness_score": 1.0,
+          "brightness_score": 0.6118,
+          "contrast_score": 0.8484,
+          "combined_score": 0.8069,
+          "original_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+          "processed_crop_paths": {
+            "grayscale": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+            "upscaled": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+            "contrast": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+            "sharpened": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg",
+            "denoised": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\denoised\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg"
+          },
+          "rejection_reason": null
+        }
+      ]
+    }
+  ]
+}

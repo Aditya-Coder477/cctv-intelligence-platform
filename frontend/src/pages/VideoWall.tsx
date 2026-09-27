@@ -68,35 +68,29 @@ export const VideoWall: React.FC = () => {
   return (
     <div className="space-y-4 max-w-[1600px] mx-auto">
       {/* Header & Controls */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-3 bg-police-900/60 border border-police-800 rounded-xl">
-        <div className="flex items-center gap-3">
-          <div className="p-2 rounded-lg bg-police-800 text-red-400">
-            <Radio className="w-5 h-5 animate-pulse" />
-          </div>
-          <div>
-            <h2 className="text-base font-bold text-white tracking-tight flex items-center gap-2">
-              <span>Command Control Video Wall</span>
-              <span className="text-[10px] px-2 py-0.5 rounded bg-red-600/20 text-red-400 border border-red-500/30 font-mono font-semibold">
-                ● MATRIX MONITORING
-              </span>
-            </h2>
-            <p className="text-xs text-slate-400">
-              Simultaneous multi-stream HLS monitoring with synchronized PTS timestamps
-            </p>
-          </div>
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#1e3a6a]/60">
+        <div>
+          <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+            <LayoutGrid className="w-5 h-5 text-sky-400" />
+            Live Multi-Stream Video Wall
+          </h1>
+          <p className="text-xs text-slate-400 mt-1">
+            Simultaneous multi-stream HLS monitoring matrix with synchronized playback
+          </p>
         </div>
 
         {/* Layout Grid Buttons */}
         <div className="flex items-center gap-2">
-          <span className="text-xs text-slate-400 font-mono mr-1">Matrix:</span>
+          <span className="text-xs text-slate-400 font-mono mr-1">Matrix Layout:</span>
           {(["1x1", "2x2", "3x3"] as GridSize[]).map((sz) => (
             <button
               key={sz}
+              type="button"
               onClick={() => setGridSize(sz)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition ${
+              className={`px-3 py-1.5 rounded text-xs font-mono font-bold transition cursor-pointer ${
                 gridSize === sz
-                  ? "bg-police-700 text-white border border-police-500 shadow-sm"
-                  : "bg-police-950/80 text-slate-400 hover:text-white border border-police-800"
+                  ? "bg-[#132442] text-white border border-sky-400 shadow-sm"
+                  : "bg-[#0b1528] text-slate-400 hover:text-white border border-[#1e3a6a]"
               }`}
             >
               {sz}

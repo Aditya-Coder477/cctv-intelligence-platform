@@ -1,0 +1,158 @@
+{
+  "journey_id": "JRN-GJ01CD6417",
+  "vehicle_id": "VEH-GJ01CD6417",
+  "registration_number": "GJ01CD6417",
+  "normalized_registration_number": "GJ01CD6417",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 5,
+  "total_distance_km": 95.24,
+  "avg_speed_kmh": 54.4,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ01CD6417-cam18",
+      "vehicle_id": "VEH-GJ01CD6417",
+      "registration_number": "GJ01CD6417",
+      "camera_id": "cam18",
+      "camera_name": "Dhebar Road Crossroad, Rajkot",
+      "camera_latitude": 22.301,
+      "camera_longitude": 70.802,
+      "source_time": "2026-09-26T14:39:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.6
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01CD6417-cam11",
+      "vehicle_id": "VEH-GJ01CD6417",
+      "registration_number": "GJ01CD6417",
+      "camera_id": "cam11",
+      "camera_name": "Dolatpara Industrial Area, Junagadh",
+      "camera_latitude": 21.536,
+      "camera_longitude": 70.474,
+      "source_time": "2026-09-26T16:17:30.416259+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.3
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01CD6417-cam08",
+      "vehicle_id": "VEH-GJ01CD6417",
+      "registration_number": "GJ01CD6417",
+      "camera_id": "cam08",
+      "camera_name": "Majewadi Gate, Old City, Junagadh",
+      "camera_latitude": 21.528,
+      "camera_longitude": 70.463,
+      "source_time": "2026-09-26T16:20:00.416259+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 51.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01CD6417-cam10",
+      "vehicle_id": "VEH-GJ01CD6417",
+      "registration_number": "GJ01CD6417",
+      "camera_id": "cam10",
+      "camera_name": "Char Chowk Road, Junagadh Central",
+      "camera_latitude": 21.52,
+      "camera_longitude": 70.459,
+      "source_time": "2026-09-26T16:22:30.416259+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 34.5
+    },
+    {
+      "segment_id": "SEG-VEH-GJ01CD6417-cam06",
+      "vehicle_id": "VEH-GJ01CD6417",
+      "registration_number": "GJ01CD6417",
+      "camera_id": "cam06",
+      "camera_name": "Timbavadi Gate, Junagadh City",
+      "camera_latitude": 21.516,
+      "camera_longitude": 70.4475,
+      "source_time": "2026-09-26T16:25:00.416259+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 38.0
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam18",
+      "to_camera_id": "cam11",
+      "from_camera_name": "Dhebar Road Crossroad, Rajkot",
+      "to_camera_name": "Dolatpara Industrial Area, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 56.3
+    },
+    {
+      "from_camera_id": "cam11",
+      "to_camera_id": "cam08",
+      "from_camera_name": "Dolatpara Industrial Area, Junagadh",
+      "to_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 51.4
+    },
+    {
+      "from_camera_id": "cam08",
+      "to_camera_id": "cam10",
+      "from_camera_name": "Majewadi Gate, Old City, Junagadh",
+      "to_camera_name": "Char Chowk Road, Junagadh Central",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 34.5
+    },
+    {
+      "from_camera_id": "cam10",
+      "to_camera_id": "cam06",
+      "from_camera_name": "Char Chowk Road, Junagadh Central",
+      "to_camera_name": "Timbavadi Gate, Junagadh City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 38.0
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        70.802,
+        22.301
+      ],
+      [
+        70.474,
+        21.536
+      ],
+      [
+        70.463,
+        21.528
+      ],
+      [
+        70.459,
+        21.52
+      ],
+      [
+        70.4475,
+        21.516
+      ]
+    ]
+  }
+}

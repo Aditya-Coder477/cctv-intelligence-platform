@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ27PQ5473",
+  "vehicle_id": "VEH-GJ27PQ5473",
+  "registration_number": "GJ27PQ5473",
+  "normalized_registration_number": "GJ27PQ5473",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 201.22,
+  "avg_speed_kmh": 43.1,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ27PQ5473-cam20",
+      "vehicle_id": "VEH-GJ27PQ5473",
+      "registration_number": "GJ27PQ5473",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-26T15:11:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 45.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27PQ5473-cam04",
+      "vehicle_id": "VEH-GJ27PQ5473",
+      "registration_number": "GJ27PQ5473",
+      "camera_id": "cam04",
+      "camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "camera_latitude": 23.0135,
+      "camera_longitude": 72.5625,
+      "source_time": "2026-09-26T15:18:21.699403+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 35.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27PQ5473-cam17",
+      "vehicle_id": "VEH-GJ27PQ5473",
+      "registration_number": "GJ27PQ5473",
+      "camera_id": "cam17",
+      "camera_name": "Central Bus Port, Rajkot City",
+      "camera_latitude": 22.304,
+      "camera_longitude": 70.798,
+      "source_time": "2026-09-26T19:52:24.814118+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 43.2
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam04",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 35.0
+    },
+    {
+      "from_camera_id": "cam04",
+      "to_camera_id": "cam17",
+      "from_camera_name": "Paldi Crossroad, Ellisbridge, Ahmedabad",
+      "to_camera_name": "Central Bus Port, Rajkot City",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 43.2
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.592,
+        23.033
+      ],
+      [
+        72.5625,
+        23.0135
+      ],
+      [
+        70.798,
+        22.304
+      ]
+    ]
+  }
+}

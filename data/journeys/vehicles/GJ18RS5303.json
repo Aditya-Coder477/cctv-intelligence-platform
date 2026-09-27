@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ18RS5303",
+  "vehicle_id": "VEH-GJ18RS5303",
+  "registration_number": "GJ18RS5303",
+  "normalized_registration_number": "GJ18RS5303",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 5.2,
+  "avg_speed_kmh": 54.6,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ18RS5303-cam20",
+      "vehicle_id": "VEH-GJ18RS5303",
+      "registration_number": "GJ18RS5303",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-26T17:26:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18RS5303-cam02",
+      "vehicle_id": "VEH-GJ18RS5303",
+      "registration_number": "GJ18RS5303",
+      "camera_id": "cam02",
+      "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "source_time": "2026-09-26T17:30:12.338973+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18RS5303-cam15",
+      "vehicle_id": "VEH-GJ18RS5303",
+      "registration_number": "GJ18RS5303",
+      "camera_id": "cam15",
+      "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "camera_latitude": 23.045,
+      "camera_longitude": 72.552,
+      "source_time": "2026-09-26T17:32:42.338973+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 56.2
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam02",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.9
+    },
+    {
+      "from_camera_id": "cam02",
+      "to_camera_id": "cam15",
+      "from_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "to_camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 56.2
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.592,
+        23.033
+      ],
+      [
+        72.562,
+        23.0286
+      ],
+      [
+        72.552,
+        23.045
+      ]
+    ]
+  }
+}

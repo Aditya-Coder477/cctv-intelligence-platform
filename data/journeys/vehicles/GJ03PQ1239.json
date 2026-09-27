@@ -1,0 +1,77 @@
+{
+  "journey_id": "JRN-GJ03PQ1239",
+  "vehicle_id": "VEH-GJ03PQ1239",
+  "registration_number": "GJ03PQ1239",
+  "normalized_registration_number": "GJ03PQ1239",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 2,
+  "total_distance_km": 87.98,
+  "avg_speed_kmh": 57.9,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ03PQ1239-cam21",
+      "vehicle_id": "VEH-GJ03PQ1239",
+      "registration_number": "GJ03PQ1239",
+      "camera_id": "cam21",
+      "camera_name": "Dethali Char Rasta, Patan Highway",
+      "camera_latitude": 23.85,
+      "camera_longitude": 72.13,
+      "source_time": "2026-09-26T16:41:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03PQ1239-cam23",
+      "vehicle_id": "VEH-GJ03PQ1239",
+      "registration_number": "GJ03PQ1239",
+      "camera_id": "cam23",
+      "camera_name": "Kheram Junction, Sabarkantha",
+      "camera_latitude": 23.6,
+      "camera_longitude": 72.95,
+      "source_time": "2026-09-26T18:13:12.109795+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 57.9
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam21",
+      "to_camera_id": "cam23",
+      "from_camera_name": "Dethali Char Rasta, Patan Highway",
+      "to_camera_name": "Kheram Junction, Sabarkantha",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 57.9
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.13,
+        23.85
+      ],
+      [
+        72.95,
+        23.6
+      ]
+    ]
+  }
+}

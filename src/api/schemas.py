@@ -83,8 +83,8 @@ class ObservedVehicleSchema(BaseModel):
     first_seen: Optional[Dict[str, Any]] = None
     last_seen: Optional[Dict[str, Any]] = None
     timeline: List[Dict[str, Any]] = []
-    ingested_at_utc: str
-    updated_at_utc: str
+    ingested_at_utc: Optional[str] = None
+    updated_at_utc: Optional[str] = None
 
 
 class WatchlistEntrySchema(BaseModel):
@@ -106,7 +106,7 @@ class AlertSchema(BaseModel):
     observation_id: str
     registration_number: str
     normalized_registration_number: str
-    watchlist_id: str
+    watchlist_id: Optional[str] = ""
     category: str
     priority: str
     decision: str

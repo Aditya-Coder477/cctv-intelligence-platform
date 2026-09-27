@@ -107,6 +107,19 @@ def get_cameras(
     return result
 
 
+@router.get("/shortest-path")
+def get_shortest_path(from_camera: str, to_camera: str):
+    """Compute exact shortest path between two cameras, pruning redundant detours."""
+    from src.journey.shortest_path import road_network
+    result = road_network.find_shortest_path(from_camera.lower(), to_camera.lower())
+    if not result:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No shortest path found between camera '{from_camera}' and '{to_camera}'"
+        )
+    return result
+
+
 @router.get("/{camera_id}", response_model=CameraSchema)
 def get_camera(camera_id: str):
     """Return single camera metadata."""

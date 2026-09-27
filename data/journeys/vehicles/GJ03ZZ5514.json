@@ -1,0 +1,158 @@
+{
+  "journey_id": "JRN-GJ03ZZ5514",
+  "vehicle_id": "VEH-GJ03ZZ5514",
+  "registration_number": "GJ03ZZ5514",
+  "normalized_registration_number": "GJ03ZZ5514",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 5,
+  "total_distance_km": 17.37,
+  "avg_speed_kmh": 36.8,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ03ZZ5514-cam02",
+      "vehicle_id": "VEH-GJ03ZZ5514",
+      "registration_number": "GJ03ZZ5514",
+      "camera_id": "cam02",
+      "camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "camera_latitude": 23.0286,
+      "camera_longitude": 72.562,
+      "source_time": "2026-09-26T14:50:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 43.2
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03ZZ5514-cam15",
+      "vehicle_id": "VEH-GJ03ZZ5514",
+      "registration_number": "GJ03ZZ5514",
+      "camera_id": "cam15",
+      "camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "camera_latitude": 23.045,
+      "camera_longitude": 72.552,
+      "source_time": "2026-09-26T14:54:06.796854+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 40.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03ZZ5514-cam01",
+      "vehicle_id": "VEH-GJ03ZZ5514",
+      "registration_number": "GJ03ZZ5514",
+      "camera_id": "cam01",
+      "camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.0673,
+      "camera_longitude": 72.5815,
+      "source_time": "2026-09-26T14:59:27.060966+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 43.9
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03ZZ5514-cam05",
+      "vehicle_id": "VEH-GJ03ZZ5514",
+      "registration_number": "GJ03ZZ5514",
+      "camera_id": "cam05",
+      "camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "camera_latitude": 23.097,
+      "camera_longitude": 72.5925,
+      "source_time": "2026-09-26T15:04:32.583022+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 41.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ03ZZ5514-cam12",
+      "vehicle_id": "VEH-GJ03ZZ5514",
+      "registration_number": "GJ03ZZ5514",
+      "camera_id": "cam12",
+      "camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "camera_latitude": 23.167,
+      "camera_longitude": 72.58,
+      "source_time": "2026-09-26T15:19:19.470668+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 32.0
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam02",
+      "to_camera_id": "cam15",
+      "from_camera_name": "Janpath Crossroad, Ashram Road, Ahmedabad",
+      "to_camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 40.1
+    },
+    {
+      "from_camera_id": "cam15",
+      "to_camera_id": "cam01",
+      "from_camera_name": "Suvidha Park, Navrangpura, Ahmedabad",
+      "to_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 43.9
+    },
+    {
+      "from_camera_id": "cam01",
+      "to_camera_id": "cam05",
+      "from_camera_name": "Chimanbhai Bridge, Sabarmati, Ahmedabad",
+      "to_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 41.1
+    },
+    {
+      "from_camera_id": "cam05",
+      "to_camera_id": "cam12",
+      "from_camera_name": "Visat Three Roads, Sabarmati, Ahmedabad",
+      "to_camera_name": "Tri Mandir Toll Plaza, Adalaj, Gandhinagar",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 32.0
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.562,
+        23.0286
+      ],
+      [
+        72.552,
+        23.045
+      ],
+      [
+        72.5815,
+        23.0673
+      ],
+      [
+        72.5925,
+        23.097
+      ],
+      [
+        72.58,
+        23.167
+      ]
+    ]
+  }
+}

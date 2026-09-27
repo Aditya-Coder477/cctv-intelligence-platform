@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ27MN8049",
+  "vehicle_id": "VEH-GJ27MN8049",
+  "registration_number": "GJ27MN8049",
+  "normalized_registration_number": "GJ27MN8049",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 9.22,
+  "avg_speed_kmh": 38.2,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ27MN8049-cam26",
+      "vehicle_id": "VEH-GJ27MN8049",
+      "registration_number": "GJ27MN8049",
+      "camera_id": "cam26",
+      "camera_name": "Tankal Village Entrance, Navsari",
+      "camera_latitude": 20.78,
+      "camera_longitude": 73.05,
+      "source_time": "2026-09-26T14:49:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 44.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27MN8049-cam29",
+      "vehicle_id": "VEH-GJ27MN8049",
+      "registration_number": "GJ27MN8049",
+      "camera_id": "cam29",
+      "camera_name": "GIDC Entrance, Bilimora Highway",
+      "camera_latitude": 20.765,
+      "camera_longitude": 72.968,
+      "source_time": "2026-09-26T15:01:59.071957+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 43.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ27MN8049-cam28",
+      "vehicle_id": "VEH-GJ27MN8049",
+      "registration_number": "GJ27MN8049",
+      "camera_id": "cam28",
+      "camera_name": "Town Hall Circle, Bilimora",
+      "camera_latitude": 20.762,
+      "camera_longitude": 72.964,
+      "source_time": "2026-09-26T15:04:29.071957+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 42.2
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam26",
+      "to_camera_id": "cam29",
+      "from_camera_name": "Tankal Village Entrance, Navsari",
+      "to_camera_name": "GIDC Entrance, Bilimora Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 43.4
+    },
+    {
+      "from_camera_id": "cam29",
+      "to_camera_id": "cam28",
+      "from_camera_name": "GIDC Entrance, Bilimora Highway",
+      "to_camera_name": "Town Hall Circle, Bilimora",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 42.2
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        73.05,
+        20.78
+      ],
+      [
+        72.968,
+        20.765
+      ],
+      [
+        72.964,
+        20.762
+      ]
+    ]
+  }
+}

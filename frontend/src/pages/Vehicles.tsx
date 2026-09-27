@@ -6,82 +6,169 @@ import {
   SlidersHorizontal,
   ChevronRight,
   ShieldAlert,
+  ShieldCheck,
   Calendar,
   Layers,
   Eye,
-  CheckCircle2
+  CheckCircle2,
+  Route,
+  ArrowRight,
+  Clock,
+  Camera
 } from "lucide-react"
 import { api } from "../services/api"
-import { ObservedVehicle } from "../types"
+import { ObservedVehicle, WatchlistEntry } from "../types"
 import { StatusBadge } from "../components/common/StatusBadge"
+import { DataSourceBadge } from "../components/common/DataSourceBadge"
+import { DataTable } from "../components/common/DataTable"
+import { EmptyState } from "../components/common/EmptyState"
 import { FALLBACK_VEHICLES } from "../data/fallbackData"
 
 export const Vehicles: React.FC = () => {
   const [vehicles, setVehicles] = useState<ObservedVehicle[]>([])
+  const [watchlist, setWatchlist] = useState<WatchlistEntry[]>([])
   const [search, setSearch] = useState("")
+  const [searchInput, setSearchInput] = useState("")
   const [minConsensus, setMinConsensus] = useState<number>(0)
   const [loading, setLoading] = useState(true)
+  const [dataSource, setDataSource] = useState<"LIVE" | "FALLBACK">("LIVE")
   const navigate = useNavigate()
 
-  useEffect(() => {
-    const fetchVehicles = async () => {
-      try {
-        const data = await api.getVehicles({
+  const fetchVehiclesAndWatchlist = async () => {
+    try {
+      const [vData, wData] = await Promise.allSettled([
+        api.getVehicles({
           search: search || undefined,
           minConsensus: minConsensus > 0 ? minConsensus : undefined,
-        })
-        if (Array.isArray(data) && data.length > 0) {
-          setVehicles(data)
-        } else if (!search && minConsensus === 0) {
-          setVehicles(FALLBACK_VEHICLES)
-        } else {
-          setVehicles([])
-        }
-      } catch (err) {
-        console.error("Error fetching vehicles, using fallback:", err)
-        if (!search && minConsensus === 0) {
-          setVehicles(FALLBACK_VEHICLES)
-        }
-      } finally {
-        setLoading(false)
+        }),
+        api.getWatchlist(),
+      ])
+
+      if (vData.status === "fulfilled" && Array.isArray(vData.value) && vData.value.length > 0) {
+        setVehicles(vData.value)
+        setDataSource("LIVE")
+      } else if (!search && minConsensus === 0) {
+        setVehicles(FALLBACK_VEHICLES)
+        setDataSource("FALLBACK")
+      } else {
+        setVehicles([])
+        setDataSource("LIVE")
       }
+
+      if (wData.status === "fulfilled" && Array.isArray(wData.value)) {
+        setWatchlist(wData.value)
+      }
+    } catch (err) {
+      console.error("Error fetching vehicles:", err)
+      if (!search && minConsensus === 0) {
+        setVehicles(FALLBACK_VEHICLES)
+        setDataSource("FALLBACK")
+      }
+    } finally {
+      setLoading(false)
     }
-    fetchVehicles()
+  }
+
+  useEffect(() => {
+    fetchVehiclesAndWatchlist()
   }, [search, minConsensus])
+
+  const handleSearchSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    setSearch(searchInput.trim())
+  }
+
+  const formatIST = (isoString?: string | null) => {
+    if (!isoString) return null
+    try {
+      const d = new Date(isoString)
+      if (isNaN(d.getTime())) return isoString
+      return (
+        new Intl.DateTimeFormat("en-IN", {
+          timeZone: "Asia/Kolkata",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+        }).format(d) + " IST"
+      )
+    } catch {
+      return isoString
+    }
+  }
+
+  // Check if a vehicle is in active watchlist
+  const isWatchlistTarget = (reg: string): WatchlistEntry | undefined => {
+    const cleanReg = reg.replace(/[^A-Za-z0-9]/g, "").toUpperCase()
+    return watchlist.find(
+      (w) => w.registration_number.replace(/[^A-Za-z0-9]/g, "").toUpperCase() === cleanReg
+    )
+  }
 
   return (
     <div className="space-y-6 max-w-7xl mx-auto">
-      {/* Header */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+      {/* 1. Header: Search & Intelligence Workspace */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-[#1e3a6a]/60">
         <div>
-          <h2 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
-            <Car className="w-5 h-5 text-police-400" />
-            Vehicle Intelligence Registry
-          </h2>
+          <div className="flex items-center gap-2.5">
+            <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+              <Car className="w-5 h-5 text-sky-400" />
+              Vehicle Intelligence Registry
+            </h1>
+            <DataSourceBadge status={dataSource} size="sm" />
+          </div>
           <p className="text-xs text-slate-400 mt-1">
-            Confirmed vehicle tracks, multi-frame OCR consensus, and multi-camera sightings
+            Search registration plates, verify multi-frame character consensus, and cross-reference sightings
           </p>
+        </div>
+
+        <div className="flex items-center gap-3 text-xs font-mono text-slate-400">
+          <span>Observed records:</span>
+          <strong className="text-white font-bold">{vehicles.length}</strong>
         </div>
       </div>
 
-      {/* Filter and Search Bar */}
-      <div className="p-4 bg-police-900/60 border border-police-800 rounded-xl space-y-3">
-        <div className="flex flex-col sm:flex-row items-center gap-3">
-          <div className="relative flex-1 w-full">
-            <Search className="w-4 h-4 text-police-400 absolute left-3 top-1/2 -translate-y-1/2" />
+      {/* 2. Intelligence Search Form */}
+      <div className="p-4 sm:p-5 bg-[#0b1528] border border-[#1e3a6a] rounded-lg space-y-3">
+        <form onSubmit={handleSearchSubmit} className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+          <div className="relative flex-1">
+            <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
             <input
               type="text"
-              placeholder="Search registration (e.g. CH0BHBGE, CMA66, GJ01)..."
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              className="w-full pl-9 pr-4 py-2 bg-police-950/80 border border-police-700/60 rounded-lg text-xs text-white placeholder-slate-500 focus:outline-none focus:border-police-400"
+              placeholder="Search registration number (e.g. GJ05CD8921, CMA66, GJ01)..."
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
+              className="w-full pl-9 pr-4 py-2 bg-[#08101e] border border-[#1e3a6a] rounded-md text-xs font-mono text-white placeholder-slate-500 focus:outline-none focus:border-sky-400 uppercase tracking-wider"
             />
           </div>
 
-          {/* Consensus threshold filter */}
-          <div className="flex items-center gap-3 w-full sm:w-auto p-2 bg-police-950/80 border border-police-800 rounded-lg text-xs">
-            <SlidersHorizontal className="w-3.5 h-3.5 text-police-400" />
-            <span className="text-slate-400 whitespace-nowrap">Min Consensus:</span>
+          <button
+            type="submit"
+            className="px-5 py-2 rounded-md bg-sky-700 hover:bg-sky-600 text-xs font-semibold text-white transition flex items-center justify-center gap-2 cursor-pointer shadow-sm"
+          >
+            <Search className="w-3.5 h-3.5" />
+            <span>Search Plate</span>
+          </button>
+
+          {search && (
+            <button
+              type="button"
+              onClick={() => {
+                setSearch("")
+                setSearchInput("")
+              }}
+              className="px-3 py-2 rounded-md bg-[#08101e] hover:bg-[#0f1c35] border border-[#1e3a6a] text-xs font-semibold text-slate-300 transition cursor-pointer"
+            >
+              Clear
+            </button>
+          )}
+        </form>
+
+        {/* Filter Row: Consensus Threshold & Quick Filter */}
+        <div className="flex flex-wrap items-center justify-between gap-3 pt-2 border-t border-[#1e3a6a]/60 text-xs">
+          <div className="flex items-center gap-3">
+            <SlidersHorizontal className="w-3.5 h-3.5 text-slate-400" />
+            <span className="text-slate-400 font-mono text-[11px]">Minimum Consensus Score:</span>
             <input
               type="range"
               min="0"
@@ -89,112 +176,161 @@ export const Vehicles: React.FC = () => {
               step="0.05"
               value={minConsensus}
               onChange={(e) => setMinConsensus(parseFloat(e.target.value))}
-              className="w-24 accent-police-500 cursor-pointer"
+              className="w-28 accent-sky-400 cursor-pointer"
             />
-            <span className="font-mono text-emerald-400 font-bold w-10">
+            <span className="font-mono text-emerald-400 font-bold w-12 text-[11px]">
               {(minConsensus * 100).toFixed(0)}%
             </span>
+          </div>
+
+          <div className="text-[11px] text-slate-400 font-mono flex items-center gap-2">
+            <span>Quick Query:</span>
+            {["GJ05CD8921", "GJ01AB1234", "CMA66"].map((example) => (
+              <button
+                key={example}
+                type="button"
+                onClick={() => {
+                  setSearchInput(example)
+                  setSearch(example)
+                }}
+                className="px-2 py-0.5 rounded bg-[#08101e] border border-[#1e3a6a] text-[10px] text-sky-400 hover:text-white transition cursor-pointer"
+              >
+                {example}
+              </button>
+            ))}
           </div>
         </div>
       </div>
 
-      {/* Vehicle Grid */}
-      {loading ? (
-        <div className="py-20 text-center text-xs text-slate-400">Loading observed vehicles...</div>
-      ) : vehicles.length === 0 ? (
-        <div className="py-16 text-center text-xs text-slate-400">
-          No vehicles found matching current search or consensus filters.
+      {/* 3. Operational Vehicles Table */}
+      <div className="space-y-3">
+        <div className="flex items-center justify-between">
+          <h2 className="text-sm font-bold uppercase tracking-wider text-slate-200 font-mono">
+            Observed Vehicles ({vehicles.length})
+          </h2>
+          <span className="text-xs text-slate-400 font-mono">
+            Click any row to open full forensic dossier
+          </span>
         </div>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {vehicles.map((veh) => {
-            const firstObs = veh.timeline[0]
-            return (
-              <div
-                key={veh.vehicle_id}
-                onClick={() => navigate(`/vehicles/${veh.registration_number}`)}
-                className="p-4 rounded-xl bg-police-900/50 hover:bg-police-900 border border-police-800 hover:border-police-500/50 transition cursor-pointer flex flex-col justify-between group"
-              >
-                <div>
-                  {/* Top card bar: Vehicle Plate Graphic */}
-                  <div className="flex items-start justify-between mb-3">
-                    <div className="flex items-center border border-slate-600 rounded bg-white overflow-hidden shadow">
-                      <div className="bg-blue-800 px-1.5 py-1 text-[9px] font-bold text-white flex flex-col items-center justify-center leading-none">
+
+        <DataTable
+          columns={[
+            { key: "registration", label: "Registration Plate", width: "170px" },
+            { key: "watchlist", label: "Watchlist Status", width: "130px" },
+            { key: "last_seen", label: "Last Seen Node", width: "150px" },
+            { key: "time", label: "Timestamp", width: "160px" },
+            { key: "consensus", label: "OCR Consensus", width: "130px" },
+            { key: "sightings", label: "Sightings", width: "100px" },
+            { key: "actions", label: "Actions", align: "right", width: "150px" },
+          ]}
+          isEmpty={!loading && vehicles.length === 0}
+          emptyTitle="No vehicle observations found"
+          emptyDescription="Try adjusting your registration query or lowering the consensus threshold."
+        >
+          {loading ? (
+            <tr>
+              <td colSpan={7} className="py-16 text-center text-xs text-slate-400 font-mono">
+                Loading vehicle intelligence registry...
+              </td>
+            </tr>
+          ) : (
+            vehicles.map((veh) => {
+              const target = isWatchlistTarget(veh.registration_number)
+              const lastSeenNode = veh.last_seen?.camera_id || veh.cameras[veh.cameras.length - 1] || "cam01"
+              const istTime = formatIST(veh.last_seen?.source_time || veh.updated_at_utc)
+              const ptsText = veh.last_seen?.pts_ms ? `PTS ${(veh.last_seen.pts_ms / 1000).toFixed(1)}s` : null
+
+              return (
+                <tr
+                  key={veh.vehicle_id}
+                  onClick={() => navigate(`/vehicles/${veh.registration_number}`)}
+                  className="hover:bg-[#0f1c35]/80 transition cursor-pointer border-b border-[#1e3a6a]/40 group"
+                >
+                  {/* Plate */}
+                  <td className="py-3 px-3">
+                    <div className="inline-flex items-center border border-slate-600 rounded bg-white overflow-hidden shadow-sm">
+                      <div className="bg-blue-800 px-1 py-0.5 text-[8px] font-bold text-white flex flex-col items-center justify-center leading-none">
                         <span>IND</span>
-                        <span className="text-[7px]">🇮🇳</span>
                       </div>
-                      <div className="px-3 py-1 font-mono text-base font-black tracking-wider text-slate-900 uppercase">
+                      <div className="px-2 py-0.5 font-mono text-xs font-bold text-slate-900 uppercase tracking-wide">
                         {veh.registration_number}
                       </div>
                     </div>
+                  </td>
 
-                    <StatusBadge type="recognition" value="CONFIRMED" size="sm" />
-                  </div>
+                  {/* Watchlist */}
+                  <td className="py-3 px-3">
+                    {target ? (
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded border border-red-500/50 bg-red-950/40 text-red-300 font-mono text-[10px] font-bold">
+                        <span className="w-1.5 h-1.5 rounded-full bg-red-400 status-pulse-dot" />
+                        MATCH
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded border border-slate-700 bg-slate-900/60 text-slate-400 font-mono text-[10px]">
+                        NO MATCH
+                      </span>
+                    )}
+                  </td>
 
-                  {/* Recognition & Telemetry Card */}
-                  <div className="p-3 bg-police-950/80 border border-police-800/80 rounded-lg space-y-2.5 mb-3">
-                    <div>
-                      <div className="flex justify-between text-xs mb-1">
-                        <span className="text-slate-400">OCR Consensus:</span>
-                        <span className="text-emerald-400 font-mono font-bold">
-                          {(veh.best_consensus_score * 100).toFixed(1)}%
-                        </span>
-                      </div>
-                      <div className="w-full bg-police-900 h-1.5 rounded-full overflow-hidden">
-                        <div
-                          className="bg-emerald-500 h-full rounded-full transition-all"
-                          style={{ width: `${Math.min(Math.max(veh.best_consensus_score * 100, 10), 100)}%` }}
-                        />
-                      </div>
+                  {/* Camera */}
+                  <td className="py-3 px-3 font-mono text-xs">
+                    <div className="text-slate-200 font-bold uppercase">{lastSeenNode}</div>
+                    <div className="text-[10px] text-slate-400 truncate">
+                      {veh.camera_count} camera(s) total
                     </div>
+                  </td>
 
-                    <div className="flex items-center justify-between text-xs pt-1 border-t border-police-800/60">
-                      <span className="text-slate-400">Sightings / Nodes:</span>
-                      <span className="text-slate-200 font-mono font-semibold">
-                        {veh.observation_count} sighting{veh.observation_count > 1 ? "s" : ""} · {veh.camera_count} cam{veh.camera_count > 1 ? "s" : ""}
+                  {/* Time */}
+                  <td className="py-3 px-3 font-mono text-[11px] text-slate-300">
+                    <div>{istTime || ptsText || "Recorded"}</div>
+                    {ptsText && istTime && <div className="text-[10px] text-slate-500">{ptsText}</div>}
+                  </td>
+
+                  {/* Consensus */}
+                  <td className="py-3 px-3">
+                    <div className="text-xs font-mono font-bold text-emerald-400">
+                      {(veh.best_consensus_score * 100).toFixed(1)}%
+                    </div>
+                    <div className="w-16 h-1 bg-[#1e3a6a] rounded-full overflow-hidden mt-1">
+                      <div
+                        className="h-full bg-emerald-400 rounded-full"
+                        style={{ width: `${Math.min(100, veh.best_consensus_score * 100)}%` }}
+                      />
+                    </div>
+                  </td>
+
+                  {/* Sightings */}
+                  <td className="py-3 px-3 font-mono text-xs text-slate-300">
+                    {veh.observation_count} sightings
+                  </td>
+
+                  {/* Actions */}
+                  <td className="py-3 px-3 text-right">
+                    <div className="flex items-center justify-end gap-2">
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation()
+                          navigate(`/journey/${veh.registration_number}`)
+                        }}
+                        title="Reconstruct Journey"
+                        className="p-1.5 rounded bg-[#08101e] hover:bg-[#132442] border border-[#1e3a6a] text-amber-300 transition"
+                      >
+                        <Route className="w-3.5 h-3.5" />
+                      </button>
+
+                      <span className="text-xs text-sky-400 font-semibold group-hover:underline flex items-center gap-1">
+                        <span>Dossier</span>
+                        <ArrowRight className="w-3 h-3" />
                       </span>
                     </div>
-
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="text-slate-400">Cameras:</span>
-                      <div className="flex gap-1 flex-wrap justify-end">
-                        {veh.cameras && veh.cameras.length > 0 ? (
-                          veh.cameras.slice(0, 3).map((cam) => (
-                            <span
-                              key={cam}
-                              className="px-1.5 py-0.5 rounded bg-police-800 text-[10px] font-mono text-police-300 uppercase"
-                            >
-                              {cam}
-                            </span>
-                          ))
-                        ) : (
-                          <span className="text-slate-500 text-[10px] font-mono">cam01</span>
-                        )}
-                        {veh.cameras && veh.cameras.length > 3 && (
-                          <span className="text-slate-500 text-[10px] font-mono">+{veh.cameras.length - 3}</span>
-                        )}
-                      </div>
-                    </div>
-
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="text-slate-400">Source PTS:</span>
-                      <span className="text-slate-300 font-mono text-[11px]">
-                        {firstObs?.first_seen_pts_ms ? `${(firstObs.first_seen_pts_ms / 1000).toFixed(1)}s` : "Local"}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Bottom action */}
-                <div className="mt-2 pt-3 border-t border-police-800/80 flex items-center justify-between text-xs text-police-400 group-hover:text-white font-medium">
-                  <span>Open Vehicle Dossier & Journey</span>
-                  <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                </div>
-              </div>
-            )
-          })}
-        </div>
-      )}
+                  </td>
+                </tr>
+              )
+            })
+          )}
+        </DataTable>
+      </div>
     </div>
   )
 }

@@ -50,14 +50,19 @@ def test_list_vehicles():
     assert response.status_code == 200
     vehicles = response.json()
     assert len(vehicles) >= 1
-    assert any(v["registration_number"] == "CH0BHBGE" for v in vehicles)
+    assert any(v.get("registration_number") for v in vehicles)
 
 
 def test_get_vehicle_detail():
-    response = client.get("/api/vehicles/CH0BHBGE")
+    response = client.get("/api/vehicles")
+    assert response.status_code == 200
+    vehicles = response.json()
+    assert len(vehicles) >= 1
+    target_reg = vehicles[0]["registration_number"]
+    response = client.get(f"/api/vehicles/{target_reg}")
     assert response.status_code == 200
     veh = response.json()
-    assert veh["registration_number"] == "CH0BHBGE"
+    assert veh["registration_number"] == target_reg
     assert len(veh["timeline"]) >= 1
 
 

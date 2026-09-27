@@ -1,0 +1,131 @@
+{
+  "journey_id": "JRN-GJ18RS4862",
+  "vehicle_id": "VEH-GJ18RS4862",
+  "registration_number": "GJ18RS4862",
+  "normalized_registration_number": "GJ18RS4862",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 4,
+  "total_distance_km": 184.89,
+  "avg_speed_kmh": 40.5,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ18RS4862-cam22",
+      "vehicle_id": "VEH-GJ18RS4862",
+      "registration_number": "GJ18RS4862",
+      "camera_id": "cam22",
+      "camera_name": "Mervada Three Roads, Banaskantha",
+      "camera_latitude": 24.17,
+      "camera_longitude": 72.43,
+      "source_time": "2026-09-26T16:29:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 51.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18RS4862-cam21",
+      "vehicle_id": "VEH-GJ18RS4862",
+      "registration_number": "GJ18RS4862",
+      "camera_id": "cam21",
+      "camera_name": "Dethali Char Rasta, Patan Highway",
+      "camera_latitude": 23.85,
+      "camera_longitude": 72.13,
+      "source_time": "2026-09-26T17:27:21.805831+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 49.0
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18RS4862-cam23",
+      "vehicle_id": "VEH-GJ18RS4862",
+      "registration_number": "GJ18RS4862",
+      "camera_id": "cam23",
+      "camera_name": "Kheram Junction, Sabarkantha",
+      "camera_latitude": 23.6,
+      "camera_longitude": 72.95,
+      "source_time": "2026-09-26T20:08:42.001761+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 32.7
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18RS4862-cam24",
+      "vehicle_id": "VEH-GJ18RS4862",
+      "registration_number": "GJ18RS4862",
+      "camera_id": "cam24",
+      "camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "camera_latitude": 23.168,
+      "camera_longitude": 72.812,
+      "source_time": "2026-09-26T21:03:42.815037+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 54.6
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam22",
+      "to_camera_id": "cam21",
+      "from_camera_name": "Mervada Three Roads, Banaskantha",
+      "to_camera_name": "Dethali Char Rasta, Patan Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 49.0
+    },
+    {
+      "from_camera_id": "cam21",
+      "to_camera_id": "cam23",
+      "from_camera_name": "Dethali Char Rasta, Patan Highway",
+      "to_camera_name": "Kheram Junction, Sabarkantha",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 32.7
+    },
+    {
+      "from_camera_id": "cam23",
+      "to_camera_id": "cam24",
+      "from_camera_name": "Kheram Junction, Sabarkantha",
+      "to_camera_name": "Dehgam Circle, Gandhinagar Highway",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 54.6
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.43,
+        24.17
+      ],
+      [
+        72.13,
+        23.85
+      ],
+      [
+        72.95,
+        23.6
+      ],
+      [
+        72.812,
+        23.168
+      ]
+    ]
+  }
+}

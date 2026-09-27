@@ -62,5 +62,31 @@
         "notes": "Match detected with score 1.00 via EXACT_MATCH (STOLEN_VEHICLE)"
       }
     ]
+  },
+  "MATCH-cam01-TRK-0047-22966": {
+    "status": "ACKNOWLEDGED",
+    "operator_notes": "Dispatched unit 4",
+    "acknowledged_by": "Officer Patel",
+    "acknowledged_at": "2026-09-26T21:30:28.415558+00:00",
+    "audit_history": [
+      {
+        "timestamp": "2026-09-21T18:41:47.563508+00:00",
+        "action": "TRIGGERED",
+        "operator": "SYSTEM (AI Watchlist Matcher)",
+        "notes": "Match detected with score 0.00"
+      },
+      {
+        "timestamp": "2026-09-26T21:30:28.415558+00:00",
+        "action": "ACKNOWLEDGE",
+        "operator": "Officer Patel",
+        "notes": "Dispatched unit 4"
+      },
+      {
+        "timestamp": "2026-09-26T21:38:00.104987+00:00",
+        "action": "ACKNOWLEDGE",
+        "operator": "Officer Patel",
+        "notes": "Dispatched unit 4"
+      }
+    ]
   }
 }

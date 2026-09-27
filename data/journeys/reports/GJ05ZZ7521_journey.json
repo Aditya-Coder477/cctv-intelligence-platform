@@ -1,0 +1,77 @@
+{
+  "journey_id": "JRN-GJ05ZZ7521",
+  "vehicle_id": "VEH-GJ05ZZ7521",
+  "registration_number": "GJ05ZZ7521",
+  "normalized_registration_number": "GJ05ZZ7521",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 2,
+  "total_distance_km": 109.65,
+  "avg_speed_kmh": 41.1,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ05ZZ7521-cam17",
+      "vehicle_id": "VEH-GJ05ZZ7521",
+      "registration_number": "GJ05ZZ7521",
+      "camera_id": "cam17",
+      "camera_name": "Central Bus Port, Rajkot City",
+      "camera_latitude": 22.304,
+      "camera_longitude": 70.798,
+      "source_time": "2026-09-26T14:33:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 43.8
+    },
+    {
+      "segment_id": "SEG-VEH-GJ05ZZ7521-cam30",
+      "vehicle_id": "VEH-GJ05ZZ7521",
+      "registration_number": "GJ05ZZ7521",
+      "camera_id": "cam30",
+      "camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "camera_latitude": 23.076,
+      "camera_longitude": 70.133,
+      "source_time": "2026-09-26T17:14:00.420783+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 41.1
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam17",
+      "to_camera_id": "cam30",
+      "from_camera_name": "Central Bus Port, Rajkot City",
+      "to_camera_name": "Rambaugh Road, Point 2, Gandhidham, Kutch",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 41.1
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        70.798,
+        22.304
+      ],
+      [
+        70.133,
+        23.076
+      ]
+    ]
+  }
+}

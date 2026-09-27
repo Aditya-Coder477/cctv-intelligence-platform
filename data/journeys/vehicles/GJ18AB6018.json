@@ -1,0 +1,104 @@
+{
+  "journey_id": "JRN-GJ18AB6018",
+  "vehicle_id": "VEH-GJ18AB6018",
+  "registration_number": "GJ18AB6018",
+  "normalized_registration_number": "GJ18AB6018",
+  "ordering_mode": "SOURCE_TIME",
+  "status": "RESOLVED_MULTI_CAMERA_JOURNEY",
+  "camera_count": 3,
+  "total_distance_km": 256.84,
+  "avg_speed_kmh": 50.3,
+  "segments": [
+    {
+      "segment_id": "SEG-VEH-GJ18AB6018-cam20",
+      "vehicle_id": "VEH-GJ18AB6018",
+      "registration_number": "GJ18AB6018",
+      "camera_id": "cam20",
+      "camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "camera_latitude": 23.033,
+      "camera_longitude": 72.592,
+      "source_time": "2026-09-26T15:10:59.213547+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 36.4
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18AB6018-cam19",
+      "vehicle_id": "VEH-GJ18AB6018",
+      "registration_number": "GJ18AB6018",
+      "camera_id": "cam19",
+      "camera_name": "Khaparia Gram Panchayat, Gandevi, Navsari",
+      "camera_latitude": 20.82,
+      "camera_longitude": 72.99,
+      "source_time": "2026-09-26T20:03:55.016363+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 51.1
+    },
+    {
+      "segment_id": "SEG-VEH-GJ18AB6018-cam27",
+      "vehicle_id": "VEH-GJ18AB6018",
+      "registration_number": "GJ18AB6018",
+      "camera_id": "cam27",
+      "camera_name": "Station Road, Bilimora, Navsari",
+      "camera_latitude": 20.76,
+      "camera_longitude": 72.96,
+      "source_time": "2026-09-26T20:17:24.406323+00:00",
+      "source_time_status": "RESOLVED",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.95,
+      "ocr_confidence": 0.95,
+      "speed_kmh": 32.8
+    }
+  ],
+  "legs": [
+    {
+      "from_camera_id": "cam20",
+      "to_camera_id": "cam19",
+      "from_camera_name": "Mohanpura Junction, Kalupur, Ahmedabad",
+      "to_camera_name": "Khaparia Gram Panchayat, Gandevi, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 51.1
+    },
+    {
+      "from_camera_id": "cam19",
+      "to_camera_id": "cam27",
+      "from_camera_name": "Khaparia Gram Panchayat, Gandevi, Navsari",
+      "to_camera_name": "Station Road, Bilimora, Navsari",
+      "plausibility": "PLAUSIBLE",
+      "speed_kmh": 32.8
+    }
+  ],
+  "confidence_score": {
+    "overall_score": 0.94,
+    "recognition_quality": 0.96,
+    "temporal_resolution": 0.92,
+    "spatial_resolution": 0.95,
+    "plausibility_consistency": 0.98,
+    "notes": [
+      "Verified multi-camera GPS trajectory",
+      "Source time synchronized"
+    ]
+  },
+  "trajectory": {
+    "type": "LineString",
+    "coordinates": [
+      [
+        72.592,
+        23.033
+      ],
+      [
+        72.99,
+        20.82
+      ],
+      [
+        72.96,
+        20.76
+      ]
+    ]
+  }
+}

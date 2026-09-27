@@ -999,79 +999,1020 @@ export const FALLBACK_ALERTS: Alert[] = ([
 
 export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
   {
-    "vehicle_id": "VEH-GJ27PQ8500",
-    "registration_number": "GJ27PQ8500",
-    "normalized_registration_number": "GJ27PQ8500",
+    "vehicle_id": "VEH-GJ18AB6018",
+    "registration_number": "GJ18AB6018",
+    "normalized_registration_number": "GJ18AB6018",
     "first_seen": {
-      "camera_id": "cam29",
+      "camera_id": "cam20",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:32:42.176418+00:00",
+      "source_time": "2026-09-26T15:10:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam18",
-      "pts_ms": 420000.0,
-      "source_time": "2026-09-27T16:55:23.871620+00:00",
+      "camera_id": "cam27",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T20:17:24.406323+00:00",
       "source_time_status": "RESOLVED"
     },
-    "camera_count": 8,
+    "camera_count": 3,
     "cameras": [
-      "cam29",
-      "cam07",
-      "cam04",
-      "cam23",
       "cam20",
-      "cam01",
-      "cam27",
-      "cam18"
+      "cam19",
+      "cam27"
     ],
-    "observation_count": 8,
-    "track_count": 8,
+    "observation_count": 3,
+    "track_count": 3,
     "best_consensus_score": 0.98,
     "average_consensus_score": 0.94,
     "status": "CONFIRMED",
     "timeline": [
       {
-        "camera_id": "cam29",
+        "camera_id": "cam20",
         "track_id": "TRK-SIM-0001",
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:32:42.176418+00:00",
+        "source_time": "2026-09-26T15:10:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:32:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T15:10:59.213547+00:00"
       },
       {
-        "camera_id": "cam07",
+        "camera_id": "cam19",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T18:45:10.097478+00:00",
+        "source_time": "2026-09-26T20:03:55.016363+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:45:10.097478+00:00"
+        "ingested_at_utc": "2026-09-26T20:03:55.016363+00:00"
       },
       {
-        "camera_id": "cam04",
+        "camera_id": "cam27",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T01:00:25.846535+00:00",
+        "source_time": "2026-09-26T20:17:24.406323+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:00:25.846535+00:00"
+        "ingested_at_utc": "2026-09-26T20:17:24.406323+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Mahindra Scorpio-N",
+      "color": "Black",
+      "class": "SUV"
+    },
+    "total_distance_km": 256.84,
+    "avg_speed_kmh": 50.3,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ06JK7137",
+    "registration_number": "GJ06JK7137",
+    "normalized_registration_number": "GJ06JK7137",
+    "first_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T17:09:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam19",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T22:51:11.509747+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam04",
+      "cam19"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T17:09:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:09:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam19",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T22:51:11.509747+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T22:51:11.509747+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Toyota Innova Crysta",
+      "color": "White",
+      "class": "MPV"
+    },
+    "total_distance_km": 247.86,
+    "avg_speed_kmh": 43.6,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ03XY4866",
+    "registration_number": "GJ03XY4866",
+    "normalized_registration_number": "GJ03XY4866",
+    "first_seen": {
+      "camera_id": "cam17",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T15:38:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam07",
+      "pts_ms": 300000.0,
+      "source_time": "2026-09-26T19:05:29.313931+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 6,
+    "cameras": [
+      "cam17",
+      "cam11",
+      "cam08",
+      "cam10",
+      "cam09",
+      "cam07"
+    ],
+    "observation_count": 6,
+    "track_count": 6,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam17",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:38:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:38:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam11",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T17:27:07.094651+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:27:07.094651+00:00"
+      },
+      {
+        "camera_id": "cam08",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T17:29:37.094651+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:29:37.094651+00:00"
+      },
+      {
+        "camera_id": "cam10",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T17:32:07.094651+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:32:07.094651+00:00"
+      },
+      {
+        "camera_id": "cam09",
+        "track_id": "TRK-SIM-0005",
+        "first_seen_pts_ms": 240000.0,
+        "recognition_pts_ms": 245000.0,
+        "last_seen_pts_ms": 255000.0,
+        "source_time": "2026-09-26T17:34:50.817716+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.98,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:34:50.817716+00:00"
+      },
+      {
+        "camera_id": "cam07",
+        "track_id": "TRK-SIM-0006",
+        "first_seen_pts_ms": 300000.0,
+        "recognition_pts_ms": 305000.0,
+        "last_seen_pts_ms": 315000.0,
+        "source_time": "2026-09-26T19:05:29.313931+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T19:05:29.313931+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Maruti Suzuki Swift",
+      "color": "Silver",
+      "class": "Hatchback"
+    },
+    "total_distance_km": 164.35,
+    "avg_speed_kmh": 47.8,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ01CD6417",
+    "registration_number": "GJ01CD6417",
+    "normalized_registration_number": "GJ01CD6417",
+    "first_seen": {
+      "camera_id": "cam18",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T14:39:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam06",
+      "pts_ms": 240000.0,
+      "source_time": "2026-09-26T16:25:00.416259+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 5,
+    "cameras": [
+      "cam18",
+      "cam11",
+      "cam08",
+      "cam10",
+      "cam06"
+    ],
+    "observation_count": 5,
+    "track_count": 5,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam18",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T14:39:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T14:39:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam11",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:17:30.416259+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:17:30.416259+00:00"
+      },
+      {
+        "camera_id": "cam08",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T16:20:00.416259+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:20:00.416259+00:00"
+      },
+      {
+        "camera_id": "cam10",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T16:22:30.416259+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:22:30.416259+00:00"
+      },
+      {
+        "camera_id": "cam06",
+        "track_id": "TRK-SIM-0005",
+        "first_seen_pts_ms": 240000.0,
+        "recognition_pts_ms": 245000.0,
+        "last_seen_pts_ms": 255000.0,
+        "source_time": "2026-09-26T16:25:00.416259+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.98,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:25:00.416259+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Maruti Suzuki Baleno",
+      "color": "White",
+      "class": "Hatchback"
+    },
+    "total_distance_km": 95.24,
+    "avg_speed_kmh": 54.4,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ27PQ5473",
+    "registration_number": "GJ27PQ5473",
+    "normalized_registration_number": "GJ27PQ5473",
+    "first_seen": {
+      "camera_id": "cam20",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T15:11:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam17",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T19:52:24.814118+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam20",
+      "cam04",
+      "cam17"
+    ],
+    "observation_count": 3,
+    "track_count": 3,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam20",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:11:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:11:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T15:18:21.699403+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:18:21.699403+00:00"
+      },
+      {
+        "camera_id": "cam17",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T19:52:24.814118+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T19:52:24.814118+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Honda City",
+      "color": "Grey",
+      "class": "Sedan"
+    },
+    "total_distance_km": 201.22,
+    "avg_speed_kmh": 43.1,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ01MN6809",
+    "registration_number": "GJ01MN6809",
+    "normalized_registration_number": "GJ01MN6809",
+    "first_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:31:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam18",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T20:38:42.170989+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam04",
+      "cam17",
+      "cam18"
+    ],
+    "observation_count": 3,
+    "track_count": 3,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:31:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:31:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam17",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T20:36:12.170989+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T20:36:12.170989+00:00"
+      },
+      {
+        "camera_id": "cam18",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T20:38:42.170989+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T20:38:42.170989+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "GSRTC Express Bus",
+      "color": "Orange-White",
+      "class": "Bus"
+    },
+    "total_distance_km": 198.03,
+    "avg_speed_kmh": 48.2,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ27GH8688",
+    "registration_number": "GJ27GH8688",
+    "normalized_registration_number": "GJ27GH8688",
+    "first_seen": {
+      "camera_id": "cam30",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T17:20:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam17",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T20:06:57.257707+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam30",
+      "cam17"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam30",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T17:20:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:20:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam17",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T20:06:57.257707+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T20:06:57.257707+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Hyundai Creta",
+      "color": "White",
+      "class": "SUV"
+    },
+    "total_distance_km": 109.65,
+    "avg_speed_kmh": 39.6,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ05EF4380",
+    "registration_number": "GJ05EF4380",
+    "normalized_registration_number": "GJ05EF4380",
+    "first_seen": {
+      "camera_id": "cam18",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T15:08:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam30",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T18:28:37.814093+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam18",
+      "cam30"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam18",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:08:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:08:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam30",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T18:28:37.814093+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T18:28:37.814093+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "GSRTC Express Bus",
+      "color": "Orange-White",
+      "class": "Bus"
+    },
+    "total_distance_km": 110.17,
+    "avg_speed_kmh": 33.1,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ05ZZ7521",
+    "registration_number": "GJ05ZZ7521",
+    "normalized_registration_number": "GJ05ZZ7521",
+    "first_seen": {
+      "camera_id": "cam17",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T14:33:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam30",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T17:14:00.420783+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam17",
+      "cam30"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam17",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T14:33:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T14:33:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam30",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T17:14:00.420783+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:14:00.420783+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Toyota Innova Crysta",
+      "color": "White",
+      "class": "MPV"
+    },
+    "total_distance_km": 109.65,
+    "avg_speed_kmh": 41.1,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ06CD1095",
+    "registration_number": "GJ06CD1095",
+    "normalized_registration_number": "GJ06CD1095",
+    "first_seen": {
+      "camera_id": "cam17",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:35:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam18",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T16:38:29.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam17",
+      "cam18"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam17",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:35:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:35:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam18",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:38:29.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:38:29.213547+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Toyota Innova Crysta",
+      "color": "White",
+      "class": "MPV"
+    },
+    "total_distance_km": 0.53,
+    "avg_speed_kmh": 12.7,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ27AB1519",
+    "registration_number": "GJ27AB1519",
+    "normalized_registration_number": "GJ27AB1519",
+    "first_seen": {
+      "camera_id": "cam16",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:36:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam24",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T17:14:14.070526+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam16",
+      "cam12",
+      "cam24"
+    ],
+    "observation_count": 3,
+    "track_count": 3,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam16",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:36:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:36:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam12",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:46:47.473360+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:46:47.473360+00:00"
+      },
+      {
+        "camera_id": "cam24",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T17:14:14.070526+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:14:14.070526+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Royal Enfield Classic 350",
+      "color": "Black",
+      "class": "Two-Wheeler"
+    },
+    "total_distance_km": 31.5,
+    "avg_speed_kmh": 50.7,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ03PQ1239",
+    "registration_number": "GJ03PQ1239",
+    "normalized_registration_number": "GJ03PQ1239",
+    "first_seen": {
+      "camera_id": "cam21",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:41:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam23",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T18:13:12.109795+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam21",
+      "cam23"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam21",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:41:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:41:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam23",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T18:13:12.109795+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T18:13:12.109795+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Maruti Suzuki Baleno",
+      "color": "White",
+      "class": "Hatchback"
+    },
+    "total_distance_km": 87.98,
+    "avg_speed_kmh": 57.9,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ02MN7199",
+    "registration_number": "GJ02MN7199",
+    "normalized_registration_number": "GJ02MN7199",
+    "first_seen": {
+      "camera_id": "cam05",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:25:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam23",
+      "pts_ms": 180000.0,
+      "source_time": "2026-09-26T18:28:29.687587+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 4,
+    "cameras": [
+      "cam05",
+      "cam12",
+      "cam24",
+      "cam23"
+    ],
+    "observation_count": 4,
+    "track_count": 4,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam05",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:25:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:25:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam12",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:34:46.443985+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:34:46.443985+00:00"
+      },
+      {
+        "camera_id": "cam24",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T17:13:25.800464+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:13:25.800464+00:00"
       },
       {
         "camera_id": "cam23",
@@ -1079,69 +2020,553 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "first_seen_pts_ms": 180000.0,
         "recognition_pts_ms": 185000.0,
         "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T02:33:11.023144+00:00",
+        "source_time": "2026-09-26T18:28:29.687587+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.965,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:33:11.023144+00:00"
-      },
+        "ingested_at_utc": "2026-09-26T18:28:29.687587+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Royal Enfield Classic 350",
+      "color": "Black",
+      "class": "Two-Wheeler"
+    },
+    "total_distance_km": 81.66,
+    "avg_speed_kmh": 40.0,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ18RS4862",
+    "registration_number": "GJ18RS4862",
+    "normalized_registration_number": "GJ18RS4862",
+    "first_seen": {
+      "camera_id": "cam22",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:29:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam24",
+      "pts_ms": 180000.0,
+      "source_time": "2026-09-26T21:03:42.815037+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 4,
+    "cameras": [
+      "cam22",
+      "cam21",
+      "cam23",
+      "cam24"
+    ],
+    "observation_count": 4,
+    "track_count": 4,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
       {
-        "camera_id": "cam20",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T04:28:29.504038+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T04:28:29.504038+00:00"
-      },
-      {
-        "camera_id": "cam01",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T04:33:29.104848+00:00",
+        "camera_id": "cam22",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:29:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T04:33:29.104848+00:00"
+        "ingested_at_utc": "2026-09-26T16:29:59.213547+00:00"
       },
       {
-        "camera_id": "cam27",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T10:51:42.486554+00:00",
+        "camera_id": "cam21",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T17:27:21.805831+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T10:51:42.486554+00:00"
+        "ingested_at_utc": "2026-09-26T17:27:21.805831+00:00"
       },
       {
-        "camera_id": "cam18",
-        "track_id": "TRK-SIM-0008",
-        "first_seen_pts_ms": 420000.0,
-        "recognition_pts_ms": 425000.0,
-        "last_seen_pts_ms": 435000.0,
-        "source_time": "2026-09-27T16:55:23.871620+00:00",
+        "camera_id": "cam23",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T20:08:42.001761+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T16:55:23.871620+00:00"
+        "ingested_at_utc": "2026-09-26T20:08:42.001761+00:00"
+      },
+      {
+        "camera_id": "cam24",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T21:03:42.815037+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T21:03:42.815037+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Tata Nexon",
+      "color": "Blue",
+      "class": "Compact SUV"
+    },
+    "total_distance_km": 184.89,
+    "avg_speed_kmh": 40.5,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ05PQ2017",
+    "registration_number": "GJ05PQ2017",
+    "normalized_registration_number": "GJ05PQ2017",
+    "first_seen": {
+      "camera_id": "cam23",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T15:48:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam12",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T17:43:47.575639+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam23",
+      "cam24",
+      "cam12"
+    ],
+    "observation_count": 3,
+    "track_count": 3,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam23",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:48:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:48:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam24",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T17:17:32.758205+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:17:32.758205+00:00"
+      },
+      {
+        "camera_id": "cam12",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T17:43:47.575639+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:43:47.575639+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Mahindra Scorpio-N",
+      "color": "Black",
+      "class": "SUV"
+    },
+    "total_distance_km": 73.78,
+    "avg_speed_kmh": 38.6,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ27XY8355",
+    "registration_number": "GJ27XY8355",
+    "normalized_registration_number": "GJ27XY8355",
+    "first_seen": {
+      "camera_id": "cam24",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:05:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam21",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T18:53:21.447467+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam24",
+      "cam23",
+      "cam21"
+    ],
+    "observation_count": 3,
+    "track_count": 3,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam24",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:05:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:05:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam23",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T17:00:21.917904+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:00:21.917904+00:00"
+      },
+      {
+        "camera_id": "cam21",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T18:53:21.447467+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T18:53:21.447467+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Maruti Suzuki Baleno",
+      "color": "White",
+      "class": "Hatchback"
+    },
+    "total_distance_km": 138.04,
+    "avg_speed_kmh": 49.5,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ03MN5689",
+    "registration_number": "GJ03MN5689",
+    "normalized_registration_number": "GJ03MN5689",
+    "first_seen": {
+      "camera_id": "cam12",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:08:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam22",
+      "pts_ms": 240000.0,
+      "source_time": "2026-09-26T20:12:10.775771+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 5,
+    "cameras": [
+      "cam12",
+      "cam24",
+      "cam23",
+      "cam21",
+      "cam22"
+    ],
+    "observation_count": 5,
+    "track_count": 5,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam12",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:08:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:08:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam24",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:37:57.196102+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:37:57.196102+00:00"
+      },
+      {
+        "camera_id": "cam23",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T17:35:13.450414+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:35:13.450414+00:00"
+      },
+      {
+        "camera_id": "cam21",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T19:19:57.677126+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T19:19:57.677126+00:00"
+      },
+      {
+        "camera_id": "cam22",
+        "track_id": "TRK-SIM-0005",
+        "first_seen_pts_ms": 240000.0,
+        "recognition_pts_ms": 245000.0,
+        "last_seen_pts_ms": 255000.0,
+        "source_time": "2026-09-26T20:12:10.775771+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.98,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T20:12:10.775771+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Honda City",
+      "color": "Grey",
+      "class": "Sedan"
+    },
+    "total_distance_km": 208.6,
+    "avg_speed_kmh": 51.5,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ03XY5190",
+    "registration_number": "GJ03XY5190",
+    "normalized_registration_number": "GJ03XY5190",
+    "first_seen": {
+      "camera_id": "cam28",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T15:58:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam19",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T16:09:43.812794+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam28",
+      "cam29",
+      "cam19"
+    ],
+    "observation_count": 3,
+    "track_count": 3,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam28",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:58:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:58:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam29",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:01:29.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:01:29.213547+00:00"
+      },
+      {
+        "camera_id": "cam19",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T16:09:43.812794+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:09:43.812794+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Toyota Innova Crysta",
+      "color": "White",
+      "class": "MPV"
+    },
+    "total_distance_km": 7.06,
+    "avg_speed_kmh": 39.4,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ05CD6308",
+    "registration_number": "GJ05CD6308",
+    "normalized_registration_number": "GJ05CD6308",
+    "first_seen": {
+      "camera_id": "cam27",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:35:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam26",
+      "pts_ms": 180000.0,
+      "source_time": "2026-09-26T16:53:20.858089+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 4,
+    "cameras": [
+      "cam27",
+      "cam28",
+      "cam29",
+      "cam26"
+    ],
+    "observation_count": 4,
+    "track_count": 4,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam27",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:35:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:35:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam28",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:38:29.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:38:29.213547+00:00"
+      },
+      {
+        "camera_id": "cam29",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T16:40:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:40:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam26",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T16:53:20.858089+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:53:20.858089+00:00"
       }
     ],
     "vehicle_details": {
@@ -1149,34 +2574,193 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
       "color": "Red",
       "class": "SUV"
     },
-    "total_distance_km": 1291.13,
-    "avg_speed_kmh": 47.2,
+    "total_distance_km": 9.69,
+    "avg_speed_kmh": 33.5,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ05AB1303",
-    "registration_number": "GJ05AB1303",
-    "normalized_registration_number": "GJ05AB1303",
+    "vehicle_id": "VEH-GJ27MN8049",
+    "registration_number": "GJ27MN8049",
+    "normalized_registration_number": "GJ27MN8049",
     "first_seen": {
-      "camera_id": "cam19",
+      "camera_id": "cam26",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:46:42.176418+00:00",
+      "source_time": "2026-09-26T14:49:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam06",
+      "camera_id": "cam28",
       "pts_ms": 120000.0,
-      "source_time": "2026-09-27T01:22:36.323897+00:00",
+      "source_time": "2026-09-26T15:04:29.071957+00:00",
       "source_time_status": "RESOLVED"
     },
     "camera_count": 3,
     "cameras": [
-      "cam19",
-      "cam30",
-      "cam06"
+      "cam26",
+      "cam29",
+      "cam28"
     ],
     "observation_count": 3,
     "track_count": 3,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam26",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T14:49:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T14:49:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam29",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T15:01:59.071957+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:01:59.071957+00:00"
+      },
+      {
+        "camera_id": "cam28",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T15:04:29.071957+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:04:29.071957+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Royal Enfield Classic 350",
+      "color": "Black",
+      "class": "Two-Wheeler"
+    },
+    "total_distance_km": 9.22,
+    "avg_speed_kmh": 38.2,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ02ZZ4603",
+    "registration_number": "GJ02ZZ4603",
+    "normalized_registration_number": "GJ02ZZ4603",
+    "first_seen": {
+      "camera_id": "cam25",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T15:08:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam29",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T15:25:01.244896+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam25",
+      "cam19",
+      "cam29"
+    ],
+    "observation_count": 3,
+    "track_count": 3,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam25",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:08:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:08:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam19",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T15:15:46.399823+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:15:46.399823+00:00"
+      },
+      {
+        "camera_id": "cam29",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T15:25:01.244896+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:25:01.244896+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Kia Seltos",
+      "color": "Red",
+      "class": "SUV"
+    },
+    "total_distance_km": 10.46,
+    "avg_speed_kmh": 39.1,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ05XY9525",
+    "registration_number": "GJ05XY9525",
+    "normalized_registration_number": "GJ05XY9525",
+    "first_seen": {
+      "camera_id": "cam19",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:06:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam27",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T16:15:51.859778+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam19",
+      "cam27"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
     "best_consensus_score": 0.98,
     "average_consensus_score": 0.94,
     "status": "CONFIRMED",
@@ -1187,41 +2771,252 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:46:42.176418+00:00",
+        "source_time": "2026-09-26T16:06:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:46:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T16:06:59.213547+00:00"
       },
       {
-        "camera_id": "cam30",
+        "camera_id": "cam27",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T20:13:17.208562+00:00",
+        "source_time": "2026-09-26T16:15:51.859778+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:13:17.208562+00:00"
+        "ingested_at_utc": "2026-09-26T16:15:51.859778+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Maruti Suzuki Swift",
+      "color": "Silver",
+      "class": "Hatchback"
+    },
+    "total_distance_km": 7.36,
+    "avg_speed_kmh": 49.8,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ03XY4552",
+    "registration_number": "GJ03XY4552",
+    "normalized_registration_number": "GJ03XY4552",
+    "first_seen": {
+      "camera_id": "cam29",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T15:49:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam26",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T16:03:40.784174+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam29",
+      "cam26"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam29",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:49:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:49:59.213547+00:00"
       },
       {
-        "camera_id": "cam06",
+        "camera_id": "cam26",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:03:40.784174+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:03:40.784174+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Kia Seltos",
+      "color": "Red",
+      "class": "SUV"
+    },
+    "total_distance_km": 8.69,
+    "avg_speed_kmh": 38.1,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ05XY9217",
+    "registration_number": "GJ05XY9217",
+    "normalized_registration_number": "GJ05XY9217",
+    "first_seen": {
+      "camera_id": "cam28",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:22:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam25",
+      "pts_ms": 180000.0,
+      "source_time": "2026-09-26T16:37:52.025782+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 4,
+    "cameras": [
+      "cam28",
+      "cam29",
+      "cam19",
+      "cam25"
+    ],
+    "observation_count": 4,
+    "track_count": 4,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam28",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:22:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:22:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam29",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:25:29.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:25:29.213547+00:00"
+      },
+      {
+        "camera_id": "cam19",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T01:22:36.323897+00:00",
+        "source_time": "2026-09-26T16:33:47.609112+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:22:36.323897+00:00"
+        "ingested_at_utc": "2026-09-26T16:33:47.609112+00:00"
+      },
+      {
+        "camera_id": "cam25",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T16:37:52.025782+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:37:52.025782+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Hyundai Creta",
+      "color": "White",
+      "class": "SUV"
+    },
+    "total_distance_km": 10.99,
+    "avg_speed_kmh": 44.3,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ05XY7666",
+    "registration_number": "GJ05XY7666",
+    "normalized_registration_number": "GJ05XY7666",
+    "first_seen": {
+      "camera_id": "cam27",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T15:12:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam19",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T15:22:20.375573+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam27",
+      "cam19"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam27",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:12:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:12:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam19",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T15:22:20.375573+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:22:20.375573+00:00"
       }
     ],
     "vehicle_details": {
@@ -1229,37 +3024,35 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
       "color": "Blue",
       "class": "Compact SUV"
     },
-    "total_distance_km": 563.41,
-    "avg_speed_kmh": 44.7,
-    "is_watchlist_match": false
+    "total_distance_km": 7.36,
+    "avg_speed_kmh": 47.2,
+    "is_watchlist_match": true
   },
   {
-    "vehicle_id": "VEH-GJ05RS4588",
-    "registration_number": "GJ05RS4588",
-    "normalized_registration_number": "GJ05RS4588",
+    "vehicle_id": "VEH-GJ18MN6718",
+    "registration_number": "GJ18MN6718",
+    "normalized_registration_number": "GJ18MN6718",
     "first_seen": {
       "camera_id": "cam11",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:45:42.176418+00:00",
+      "source_time": "2026-09-26T14:37:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam20",
-      "pts_ms": 300000.0,
-      "source_time": "2026-09-27T08:44:46.372168+00:00",
+      "camera_id": "cam06",
+      "pts_ms": 180000.0,
+      "source_time": "2026-09-26T14:45:29.293114+00:00",
       "source_time_status": "RESOLVED"
     },
-    "camera_count": 6,
+    "camera_count": 4,
     "cameras": [
       "cam11",
-      "cam05",
-      "cam27",
-      "cam03",
-      "cam14",
-      "cam20"
+      "cam08",
+      "cam10",
+      "cam06"
     ],
-    "observation_count": 6,
-    "track_count": 6,
+    "observation_count": 4,
+    "track_count": 4,
     "best_consensus_score": 0.98,
     "average_consensus_score": 0.94,
     "status": "CONFIRMED",
@@ -1270,83 +3063,55 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:45:42.176418+00:00",
+        "source_time": "2026-09-26T14:37:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:45:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T14:37:59.213547+00:00"
       },
       {
-        "camera_id": "cam05",
+        "camera_id": "cam08",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T21:09:35.544076+00:00",
+        "source_time": "2026-09-26T14:40:29.293114+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T21:09:35.544076+00:00"
+        "ingested_at_utc": "2026-09-26T14:40:29.293114+00:00"
       },
       {
-        "camera_id": "cam27",
+        "camera_id": "cam10",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T01:50:48.572937+00:00",
+        "source_time": "2026-09-26T14:42:59.293114+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:50:48.572937+00:00"
+        "ingested_at_utc": "2026-09-26T14:42:59.293114+00:00"
       },
       {
-        "camera_id": "cam03",
+        "camera_id": "cam06",
         "track_id": "TRK-SIM-0004",
         "first_seen_pts_ms": 180000.0,
         "recognition_pts_ms": 185000.0,
         "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T08:25:36.524523+00:00",
+        "source_time": "2026-09-26T14:45:29.293114+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.965,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T08:25:36.524523+00:00"
-      },
-      {
-        "camera_id": "cam14",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T08:35:25.752687+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T08:35:25.752687+00:00"
-      },
-      {
-        "camera_id": "cam20",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T08:44:46.372168+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T08:44:46.372168+00:00"
+        "ingested_at_utc": "2026-09-26T14:45:29.293114+00:00"
       }
     ],
     "vehicle_details": {
@@ -1354,172 +3119,177 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
       "color": "White",
       "class": "SUV"
     },
-    "total_distance_km": 818.23,
-    "avg_speed_kmh": 45.5,
+    "total_distance_km": 3.7,
+    "avg_speed_kmh": 29.6,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ27EF2788",
-    "registration_number": "GJ27EF2788",
-    "normalized_registration_number": "GJ27EF2788",
+    "vehicle_id": "VEH-GJ03RS3485",
+    "registration_number": "GJ03RS3485",
+    "normalized_registration_number": "GJ03RS3485",
     "first_seen": {
-      "camera_id": "cam15",
+      "camera_id": "cam08",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:15:42.176418+00:00",
+      "source_time": "2026-09-26T16:01:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
       "camera_id": "cam09",
-      "pts_ms": 360000.0,
-      "source_time": "2026-09-27T05:54:51.926868+00:00",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T16:07:18.885410+00:00",
       "source_time_status": "RESOLVED"
     },
-    "camera_count": 7,
+    "camera_count": 3,
     "cameras": [
-      "cam15",
-      "cam14",
-      "cam01",
-      "cam04",
-      "cam25",
-      "cam30",
+      "cam08",
+      "cam10",
       "cam09"
     ],
-    "observation_count": 7,
-    "track_count": 7,
+    "observation_count": 3,
+    "track_count": 3,
     "best_consensus_score": 0.98,
     "average_consensus_score": 0.94,
     "status": "CONFIRMED",
     "timeline": [
       {
-        "camera_id": "cam15",
+        "camera_id": "cam08",
         "track_id": "TRK-SIM-0001",
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:15:42.176418+00:00",
+        "source_time": "2026-09-26T16:01:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:15:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T16:01:59.213547+00:00"
       },
       {
-        "camera_id": "cam14",
+        "camera_id": "cam10",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T14:19:50.875315+00:00",
+        "source_time": "2026-09-26T16:04:29.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:19:50.875315+00:00"
+        "ingested_at_utc": "2026-09-26T16:04:29.213547+00:00"
       },
       {
-        "camera_id": "cam01",
+        "camera_id": "cam09",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T14:30:56.270326+00:00",
+        "source_time": "2026-09-26T16:07:18.885410+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:30:56.270326+00:00"
-      },
+        "ingested_at_utc": "2026-09-26T16:07:18.885410+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Toyota Innova Crysta",
+      "color": "White",
+      "class": "MPV"
+    },
+    "total_distance_km": 3.06,
+    "avg_speed_kmh": 34.5,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ03GH3755",
+    "registration_number": "GJ03GH3755",
+    "normalized_registration_number": "GJ03GH3755",
+    "first_seen": {
+      "camera_id": "cam10",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:43:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam08",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T16:46:29.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam10",
+      "cam08"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
       {
-        "camera_id": "cam04",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T14:38:53.948185+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:38:53.948185+00:00"
-      },
-      {
-        "camera_id": "cam25",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-26T18:55:21.852070+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:55:21.852070+00:00"
-      },
-      {
-        "camera_id": "cam30",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T02:30:09.937237+00:00",
+        "camera_id": "cam10",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:43:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:30:09.937237+00:00"
+        "ingested_at_utc": "2026-09-26T16:43:59.213547+00:00"
       },
       {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T05:54:51.926868+00:00",
+        "camera_id": "cam08",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:46:29.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T05:54:51.926868+00:00"
+        "ingested_at_utc": "2026-09-26T16:46:29.213547+00:00"
       }
     ],
     "vehicle_details": {
-      "make_model": "Maruti Suzuki Baleno",
-      "color": "White",
-      "class": "Hatchback"
+      "make_model": "Tata Nexon",
+      "color": "Blue",
+      "class": "Compact SUV"
     },
-    "total_distance_km": 824.11,
-    "avg_speed_kmh": 52.6,
+    "total_distance_km": 0.98,
+    "avg_speed_kmh": 23.5,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ02EF6403",
-    "registration_number": "GJ02EF6403",
-    "normalized_registration_number": "GJ02EF6403",
+    "vehicle_id": "VEH-GJ05GH5034",
+    "registration_number": "GJ05GH5034",
+    "normalized_registration_number": "GJ05GH5034",
     "first_seen": {
-      "camera_id": "cam13",
+      "camera_id": "cam11",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:07:42.176418+00:00",
+      "source_time": "2026-09-26T16:00:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
       "camera_id": "cam07",
       "pts_ms": 240000.0,
-      "source_time": "2026-09-27T04:13:14.959281+00:00",
+      "source_time": "2026-09-26T17:20:29.581528+00:00",
       "source_time_status": "RESOLVED"
     },
     "camera_count": 5,
     "cameras": [
-      "cam13",
+      "cam11",
+      "cam08",
       "cam10",
       "cam09",
-      "cam19",
       "cam07"
     ],
     "observation_count": 5,
@@ -1529,719 +3299,74 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
     "status": "CONFIRMED",
     "timeline": [
       {
-        "camera_id": "cam13",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:07:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:07:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam10",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T18:26:58.485883+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:26:58.485883+00:00"
-      },
-      {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T18:30:07.169721+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:30:07.169721+00:00"
-      },
-      {
-        "camera_id": "cam19",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T23:15:45.472688+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T23:15:45.472688+00:00"
-      },
-      {
-        "camera_id": "cam07",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T04:13:14.959281+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T04:13:14.959281+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Royal Enfield Classic 350",
-      "color": "Black",
-      "class": "Two-Wheeler"
-    },
-    "total_distance_km": 818.98,
-    "avg_speed_kmh": 54.3,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ05MN3408",
-    "registration_number": "GJ05MN3408",
-    "normalized_registration_number": "GJ05MN3408",
-    "first_seen": {
-      "camera_id": "cam25",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:34:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam13",
-      "pts_ms": 420000.0,
-      "source_time": "2026-09-27T12:15:03.394656+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 8,
-    "cameras": [
-      "cam25",
-      "cam28",
-      "cam23",
-      "cam20",
-      "cam07",
-      "cam11",
-      "cam14",
-      "cam13"
-    ],
-    "observation_count": 8,
-    "track_count": 8,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam25",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:34:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:34:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T13:47:00.816800+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:47:00.816800+00:00"
-      },
-      {
-        "camera_id": "cam23",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T22:07:44.738234+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T22:07:44.738234+00:00"
-      },
-      {
-        "camera_id": "cam20",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T23:37:34.181863+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T23:37:34.181863+00:00"
-      },
-      {
-        "camera_id": "cam07",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T05:24:41.806254+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T05:24:41.806254+00:00"
-      },
-      {
         "camera_id": "cam11",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T07:08:47.739666+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:08:47.739666+00:00"
-      },
-      {
-        "camera_id": "cam14",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T12:12:33.394656+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T12:12:33.394656+00:00"
-      },
-      {
-        "camera_id": "cam13",
-        "track_id": "TRK-SIM-0008",
-        "first_seen_pts_ms": 420000.0,
-        "recognition_pts_ms": 425000.0,
-        "last_seen_pts_ms": 435000.0,
-        "source_time": "2026-09-27T12:15:03.394656+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T12:15:03.394656+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "GSRTC Express Bus",
-      "color": "Orange-White",
-      "class": "Bus"
-    },
-    "total_distance_km": 1072.65,
-    "avg_speed_kmh": 47.3,
-    "is_watchlist_match": true
-  },
-  {
-    "vehicle_id": "VEH-GJ05JK1205",
-    "registration_number": "GJ05JK1205",
-    "normalized_registration_number": "GJ05JK1205",
-    "first_seen": {
-      "camera_id": "cam09",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:03:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam12",
-      "pts_ms": 180000.0,
-      "source_time": "2026-09-27T01:02:12.832478+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 4,
-    "cameras": [
-      "cam09",
-      "cam30",
-      "cam22",
-      "cam12"
-    ],
-    "observation_count": 4,
-    "track_count": 4,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam09",
         "track_id": "TRK-SIM-0001",
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:03:42.176418+00:00",
+        "source_time": "2026-09-26T16:00:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:03:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam30",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T16:35:41.867703+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T16:35:41.867703+00:00"
-      },
-      {
-        "camera_id": "cam22",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T21:48:12.341637+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T21:48:12.341637+00:00"
-      },
-      {
-        "camera_id": "cam12",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T01:02:12.832478+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:02:12.832478+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Kia Seltos",
-      "color": "Red",
-      "class": "SUV"
-    },
-    "total_distance_km": 554.42,
-    "avg_speed_kmh": 46.3,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ18EF7320",
-    "registration_number": "GJ18EF7320",
-    "normalized_registration_number": "GJ18EF7320",
-    "first_seen": {
-      "camera_id": "cam22",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T15:10:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam23",
-      "pts_ms": 180000.0,
-      "source_time": "2026-09-27T09:31:55.964006+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 4,
-    "cameras": [
-      "cam22",
-      "cam30",
-      "cam08",
-      "cam23"
-    ],
-    "observation_count": 4,
-    "track_count": 4,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam22",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T15:10:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T15:10:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam30",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T23:21:41.914095+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T23:21:41.914095+00:00"
+        "ingested_at_utc": "2026-09-26T16:00:59.213547+00:00"
       },
       {
         "camera_id": "cam08",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T03:07:25.699261+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T03:07:25.699261+00:00"
-      },
-      {
-        "camera_id": "cam23",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T09:31:55.964006+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T09:31:55.964006+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Maruti Suzuki Baleno",
-      "color": "White",
-      "class": "Hatchback"
-    },
-    "total_distance_km": 783.11,
-    "avg_speed_kmh": 42.7,
-    "is_watchlist_match": true
-  },
-  {
-    "vehicle_id": "VEH-GJ05CD3261",
-    "registration_number": "GJ05CD3261",
-    "normalized_registration_number": "GJ05CD3261",
-    "first_seen": {
-      "camera_id": "cam30",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:09:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam20",
-      "pts_ms": 180000.0,
-      "source_time": "2026-09-27T15:23:48.498465+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 4,
-    "cameras": [
-      "cam30",
-      "cam28",
-      "cam06",
-      "cam20"
-    ],
-    "observation_count": 4,
-    "track_count": 4,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam30",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:09:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:09:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam28",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T23:49:28.959046+00:00",
+        "source_time": "2026-09-26T16:03:29.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T23:49:28.959046+00:00"
+        "ingested_at_utc": "2026-09-26T16:03:29.213547+00:00"
       },
       {
-        "camera_id": "cam06",
+        "camera_id": "cam10",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T08:18:32.086306+00:00",
+        "source_time": "2026-09-26T16:05:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T08:18:32.086306+00:00"
+        "ingested_at_utc": "2026-09-26T16:05:59.213547+00:00"
       },
       {
-        "camera_id": "cam20",
+        "camera_id": "cam09",
         "track_id": "TRK-SIM-0004",
         "first_seen_pts_ms": 180000.0,
         "recognition_pts_ms": 185000.0,
         "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T15:23:48.498465+00:00",
+        "source_time": "2026-09-26T16:08:35.640613+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.965,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T15:23:48.498465+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Kia Seltos",
-      "color": "Red",
-      "class": "SUV"
-    },
-    "total_distance_km": 941.06,
-    "avg_speed_kmh": 37.3,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ05XY2681",
-    "registration_number": "GJ05XY2681",
-    "normalized_registration_number": "GJ05XY2681",
-    "first_seen": {
-      "camera_id": "cam13",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:35:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam28",
-      "pts_ms": 180000.0,
-      "source_time": "2026-09-27T01:33:24.829567+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 4,
-    "cameras": [
-      "cam13",
-      "cam01",
-      "cam30",
-      "cam28"
-    ],
-    "observation_count": 4,
-    "track_count": 4,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam13",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:35:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:35:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam01",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T12:45:17.401647+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:45:17.401647+00:00"
-      },
-      {
-        "camera_id": "cam30",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T17:35:37.340947+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T17:35:37.340947+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T01:33:24.829567+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:33:24.829567+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Honda City",
-      "color": "Grey",
-      "class": "Sedan"
-    },
-    "total_distance_km": 645.77,
-    "avg_speed_kmh": 49.8,
-    "is_watchlist_match": true
-  },
-  {
-    "vehicle_id": "VEH-GJ05EF1227",
-    "registration_number": "GJ05EF1227",
-    "normalized_registration_number": "GJ05EF1227",
-    "first_seen": {
-      "camera_id": "cam18",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:09:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam17",
-      "pts_ms": 240000.0,
-      "source_time": "2026-09-27T14:01:36.762924+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 5,
-    "cameras": [
-      "cam18",
-      "cam27",
-      "cam07",
-      "cam05",
-      "cam17"
-    ],
-    "observation_count": 5,
-    "track_count": 5,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam18",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:09:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:09:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam27",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T18:31:26.011141+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:31:26.011141+00:00"
+        "ingested_at_utc": "2026-09-26T16:08:35.640613+00:00"
       },
       {
         "camera_id": "cam07",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T01:03:23.109783+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:03:23.109783+00:00"
-      },
-      {
-        "camera_id": "cam05",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T07:45:03.831188+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:45:03.831188+00:00"
-      },
-      {
-        "camera_id": "cam17",
         "track_id": "TRK-SIM-0005",
         "first_seen_pts_ms": 240000.0,
         "recognition_pts_ms": 245000.0,
         "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T14:01:36.762924+00:00",
+        "source_time": "2026-09-26T17:20:29.581528+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.98,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T14:01:36.762924+00:00"
+        "ingested_at_utc": "2026-09-26T17:20:29.581528+00:00"
       }
     ],
     "vehicle_details": {
@@ -2249,309 +3374,319 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
       "color": "White",
       "class": "SUV"
     },
-    "total_distance_km": 1090.62,
-    "avg_speed_kmh": 43.9,
+    "total_distance_km": 72.64,
+    "avg_speed_kmh": 54.8,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ03AB4259",
-    "registration_number": "GJ03AB4259",
-    "normalized_registration_number": "GJ03AB4259",
+    "vehicle_id": "VEH-GJ18GH3280",
+    "registration_number": "GJ18GH3280",
+    "normalized_registration_number": "GJ18GH3280",
     "first_seen": {
-      "camera_id": "cam30",
+      "camera_id": "cam06",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:55:42.176418+00:00",
+      "source_time": "2026-09-26T16:02:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam15",
-      "pts_ms": 420000.0,
-      "source_time": "2026-09-27T11:31:55.755567+00:00",
+      "camera_id": "cam07",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T17:22:44.901967+00:00",
       "source_time_status": "RESOLVED"
     },
-    "camera_count": 8,
+    "camera_count": 2,
     "cameras": [
-      "cam30",
-      "cam01",
-      "cam03",
-      "cam14",
-      "cam07",
-      "cam20",
-      "cam12",
-      "cam15"
+      "cam06",
+      "cam07"
     ],
-    "observation_count": 8,
-    "track_count": 8,
+    "observation_count": 2,
+    "track_count": 2,
     "best_consensus_score": 0.98,
     "average_consensus_score": 0.94,
     "status": "CONFIRMED",
     "timeline": [
       {
-        "camera_id": "cam30",
+        "camera_id": "cam06",
         "track_id": "TRK-SIM-0001",
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:55:42.176418+00:00",
+        "source_time": "2026-09-26T16:02:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:55:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T16:02:59.213547+00:00"
       },
       {
-        "camera_id": "cam01",
+        "camera_id": "cam07",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T19:20:23.073437+00:00",
+        "source_time": "2026-09-26T17:22:44.901967+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:20:23.073437+00:00"
-      },
-      {
-        "camera_id": "cam03",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T19:24:59.269914+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:24:59.269914+00:00"
-      },
-      {
-        "camera_id": "cam14",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T19:34:36.769729+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:34:36.769729+00:00"
-      },
-      {
-        "camera_id": "cam07",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T02:47:00.064927+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:47:00.064927+00:00"
-      },
-      {
-        "camera_id": "cam20",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T10:51:54.507422+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T10:51:54.507422+00:00"
-      },
-      {
-        "camera_id": "cam12",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T11:15:02.122158+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T11:15:02.122158+00:00"
-      },
-      {
-        "camera_id": "cam15",
-        "track_id": "TRK-SIM-0008",
-        "first_seen_pts_ms": 420000.0,
-        "recognition_pts_ms": 425000.0,
-        "last_seen_pts_ms": 435000.0,
-        "source_time": "2026-09-27T11:31:55.755567+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T11:31:55.755567+00:00"
+        "ingested_at_utc": "2026-09-26T17:22:44.901967+00:00"
       }
     ],
     "vehicle_details": {
-      "make_model": "Kia Seltos",
-      "color": "Red",
-      "class": "SUV"
+      "make_model": "GSRTC Express Bus",
+      "color": "Orange-White",
+      "class": "Bus"
     },
-    "total_distance_km": 946.81,
-    "avg_speed_kmh": 41.9,
+    "total_distance_km": 69.01,
+    "avg_speed_kmh": 51.9,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ03JK9705",
-    "registration_number": "GJ03JK9705",
-    "normalized_registration_number": "GJ03JK9705",
+    "vehicle_id": "VEH-GJ05RS2314",
+    "registration_number": "GJ05RS2314",
+    "normalized_registration_number": "GJ05RS2314",
     "first_seen": {
-      "camera_id": "cam26",
+      "camera_id": "cam09",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:05:42.176418+00:00",
+      "source_time": "2026-09-26T16:47:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
       "camera_id": "cam10",
-      "pts_ms": 420000.0,
-      "source_time": "2026-09-27T10:24:41.463832+00:00",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T16:50:29.213547+00:00",
       "source_time_status": "RESOLVED"
     },
-    "camera_count": 8,
+    "camera_count": 2,
     "cameras": [
-      "cam26",
-      "cam04",
-      "cam02",
-      "cam14",
-      "cam03",
-      "cam16",
-      "cam29",
+      "cam09",
       "cam10"
     ],
-    "observation_count": 8,
-    "track_count": 8,
+    "observation_count": 2,
+    "track_count": 2,
     "best_consensus_score": 0.98,
     "average_consensus_score": 0.94,
     "status": "CONFIRMED",
     "timeline": [
       {
-        "camera_id": "cam26",
+        "camera_id": "cam09",
         "track_id": "TRK-SIM-0001",
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:05:42.176418+00:00",
+        "source_time": "2026-09-26T16:47:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:05:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T16:47:59.213547+00:00"
       },
       {
-        "camera_id": "cam04",
+        "camera_id": "cam10",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T19:14:34.057515+00:00",
+        "source_time": "2026-09-26T16:50:29.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:14:34.057515+00:00"
+        "ingested_at_utc": "2026-09-26T16:50:29.213547+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Honda City",
+      "color": "Grey",
+      "class": "Sedan"
+    },
+    "total_distance_km": 2.08,
+    "avg_speed_kmh": 49.9,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ27PQ3783",
+    "registration_number": "GJ27PQ3783",
+    "normalized_registration_number": "GJ27PQ3783",
+    "first_seen": {
+      "camera_id": "cam07",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T14:34:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam08",
+      "pts_ms": 180000.0,
+      "source_time": "2026-09-26T16:38:16.188402+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 4,
+    "cameras": [
+      "cam07",
+      "cam09",
+      "cam10",
+      "cam08"
+    ],
+    "observation_count": 4,
+    "track_count": 4,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam07",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T14:34:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T14:34:59.213547+00:00"
       },
       {
-        "camera_id": "cam02",
+        "camera_id": "cam09",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:33:16.188402+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:33:16.188402+00:00"
+      },
+      {
+        "camera_id": "cam10",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T19:17:04.057515+00:00",
+        "source_time": "2026-09-26T16:35:46.188402+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:17:04.057515+00:00"
+        "ingested_at_utc": "2026-09-26T16:35:46.188402+00:00"
       },
       {
-        "camera_id": "cam14",
+        "camera_id": "cam08",
         "track_id": "TRK-SIM-0004",
         "first_seen_pts_ms": 180000.0,
         "recognition_pts_ms": 185000.0,
         "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T19:22:33.658791+00:00",
+        "source_time": "2026-09-26T16:38:16.188402+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.965,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:22:33.658791+00:00"
-      },
+        "ingested_at_utc": "2026-09-26T16:38:16.188402+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Tata Nexon",
+      "color": "Blue",
+      "class": "Compact SUV"
+    },
+    "total_distance_km": 71.2,
+    "avg_speed_kmh": 34.7,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ05PQ6575",
+    "registration_number": "GJ05PQ6575",
+    "normalized_registration_number": "GJ05PQ6575",
+    "first_seen": {
+      "camera_id": "cam06",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:20:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam11",
+      "pts_ms": 180000.0,
+      "source_time": "2026-09-26T16:28:38.856147+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 4,
+    "cameras": [
+      "cam06",
+      "cam10",
+      "cam08",
+      "cam11"
+    ],
+    "observation_count": 4,
+    "track_count": 4,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
       {
-        "camera_id": "cam03",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-26T19:33:11.637515+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:33:11.637515+00:00"
-      },
-      {
-        "camera_id": "cam16",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-26T19:35:41.637515+00:00",
+        "camera_id": "cam06",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:20:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:35:41.637515+00:00"
+        "ingested_at_utc": "2026-09-26T16:20:59.213547+00:00"
       },
       {
-        "camera_id": "cam29",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T02:59:24.821376+00:00",
+        "camera_id": "cam10",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:23:29.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:59:24.821376+00:00"
+        "ingested_at_utc": "2026-09-26T16:23:29.213547+00:00"
       },
       {
-        "camera_id": "cam10",
-        "track_id": "TRK-SIM-0008",
-        "first_seen_pts_ms": 420000.0,
-        "recognition_pts_ms": 425000.0,
-        "last_seen_pts_ms": 435000.0,
-        "source_time": "2026-09-27T10:24:41.463832+00:00",
+        "camera_id": "cam08",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T16:25:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T10:24:41.463832+00:00"
+        "ingested_at_utc": "2026-09-26T16:25:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam11",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T16:28:38.856147+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:28:38.856147+00:00"
       }
     ],
     "vehicle_details": {
@@ -2559,144 +3694,35 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
       "color": "White",
       "class": "Hatchback"
     },
-    "total_distance_km": 803.32,
-    "avg_speed_kmh": 39.5,
+    "total_distance_km": 3.7,
+    "avg_speed_kmh": 28.9,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ01GH3445",
-    "registration_number": "GJ01GH3445",
-    "normalized_registration_number": "GJ01GH3445",
-    "first_seen": {
-      "camera_id": "cam14",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:40:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam18",
-      "pts_ms": 240000.0,
-      "source_time": "2026-09-26T19:50:37.882010+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 5,
-    "cameras": [
-      "cam14",
-      "cam04",
-      "cam01",
-      "cam15",
-      "cam18"
-    ],
-    "observation_count": 5,
-    "track_count": 5,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam14",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:40:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:40:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam04",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T13:46:36.668913+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:46:36.668913+00:00"
-      },
-      {
-        "camera_id": "cam01",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T13:54:07.835104+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:54:07.835104+00:00"
-      },
-      {
-        "camera_id": "cam15",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T13:59:44.874462+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:59:44.874462+00:00"
-      },
-      {
-        "camera_id": "cam18",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-26T19:50:37.882010+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:50:37.882010+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Maruti Suzuki Swift",
-      "color": "Silver",
-      "class": "Hatchback"
-    },
-    "total_distance_km": 212.11,
-    "avg_speed_kmh": 34.4,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ01RS3321",
-    "registration_number": "GJ01RS3321",
-    "normalized_registration_number": "GJ01RS3321",
+    "vehicle_id": "VEH-GJ02AB9042",
+    "registration_number": "GJ02AB9042",
+    "normalized_registration_number": "GJ02AB9042",
     "first_seen": {
       "camera_id": "cam05",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:31:42.176418+00:00",
+      "source_time": "2026-09-26T16:06:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam20",
-      "pts_ms": 120000.0,
-      "source_time": "2026-09-26T22:53:06.998725+00:00",
+      "camera_id": "cam02",
+      "pts_ms": 180000.0,
+      "source_time": "2026-09-26T16:22:03.691870+00:00",
       "source_time_status": "RESOLVED"
     },
-    "camera_count": 3,
+    "camera_count": 4,
     "cameras": [
       "cam05",
-      "cam17",
-      "cam20"
+      "cam01",
+      "cam15",
+      "cam02"
     ],
-    "observation_count": 3,
-    "track_count": 3,
+    "observation_count": 4,
+    "track_count": 4,
     "best_consensus_score": 0.98,
     "average_consensus_score": 0.94,
     "status": "CONFIRMED",
@@ -2707,406 +3733,55 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:31:42.176418+00:00",
+        "source_time": "2026-09-26T16:06:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:31:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T16:06:59.213547+00:00"
       },
       {
-        "camera_id": "cam17",
+        "camera_id": "cam01",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T18:55:06.446006+00:00",
+        "source_time": "2026-09-26T16:12:08.619498+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:55:06.446006+00:00"
+        "ingested_at_utc": "2026-09-26T16:12:08.619498+00:00"
       },
-      {
-        "camera_id": "cam20",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T22:53:06.998725+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T22:53:06.998725+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Hyundai Creta",
-      "color": "White",
-      "class": "SUV"
-    },
-    "total_distance_km": 405.24,
-    "avg_speed_kmh": 48.5,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ06XY8816",
-    "registration_number": "GJ06XY8816",
-    "normalized_registration_number": "GJ06XY8816",
-    "first_seen": {
-      "camera_id": "cam30",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:23:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam04",
-      "pts_ms": 120000.0,
-      "source_time": "2026-09-27T03:18:23.951585+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 3,
-    "cameras": [
-      "cam30",
-      "cam28",
-      "cam04"
-    ],
-    "observation_count": 3,
-    "track_count": 3,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam30",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:23:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:23:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T20:29:35.816047+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:29:35.816047+00:00"
-      },
-      {
-        "camera_id": "cam04",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T03:18:23.951585+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T03:18:23.951585+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Hyundai Creta",
-      "color": "White",
-      "class": "SUV"
-    },
-    "total_distance_km": 642.95,
-    "avg_speed_kmh": 46.2,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ01GH4261",
-    "registration_number": "GJ01GH4261",
-    "normalized_registration_number": "GJ01GH4261",
-    "first_seen": {
-      "camera_id": "cam08",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:10:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam14",
-      "pts_ms": 120000.0,
-      "source_time": "2026-09-27T04:20:13.074840+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 3,
-    "cameras": [
-      "cam08",
-      "cam28",
-      "cam14"
-    ],
-    "observation_count": 3,
-    "track_count": 3,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam08",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:10:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:10:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T22:24:37.299899+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T22:24:37.299899+00:00"
-      },
-      {
-        "camera_id": "cam14",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T04:20:13.074840+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T04:20:13.074840+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Toyota Innova Crysta",
-      "color": "White",
-      "class": "MPV"
-    },
-    "total_distance_km": 529.99,
-    "avg_speed_kmh": 37.4,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ27EF3422",
-    "registration_number": "GJ27EF3422",
-    "normalized_registration_number": "GJ27EF3422",
-    "first_seen": {
-      "camera_id": "cam26",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:31:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam04",
-      "pts_ms": 180000.0,
-      "source_time": "2026-09-27T04:02:32.106431+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 4,
-    "cameras": [
-      "cam26",
-      "cam09",
-      "cam27",
-      "cam04"
-    ],
-    "observation_count": 4,
-    "track_count": 4,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam26",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:31:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:31:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T17:58:06.366633+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T17:58:06.366633+00:00"
-      },
-      {
-        "camera_id": "cam27",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T22:41:04.750767+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T22:41:04.750767+00:00"
-      },
-      {
-        "camera_id": "cam04",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T04:02:32.106431+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T04:02:32.106431+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Mahindra Scorpio-N",
-      "color": "Black",
-      "class": "SUV"
-    },
-    "total_distance_km": 804.37,
-    "avg_speed_kmh": 51.8,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ03XY1299",
-    "registration_number": "GJ03XY1299",
-    "normalized_registration_number": "GJ03XY1299",
-    "first_seen": {
-      "camera_id": "cam15",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:36:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam09",
-      "pts_ms": 240000.0,
-      "source_time": "2026-09-27T11:48:28.732237+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 5,
-    "cameras": [
-      "cam15",
-      "cam22",
-      "cam08",
-      "cam14",
-      "cam09"
-    ],
-    "observation_count": 5,
-    "track_count": 5,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
       {
         "camera_id": "cam15",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:36:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:36:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam22",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T17:18:36.109424+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T17:18:36.109424+00:00"
-      },
-      {
-        "camera_id": "cam08",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T00:09:27.301340+00:00",
+        "source_time": "2026-09-26T16:19:18.351538+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T00:09:27.301340+00:00"
+        "ingested_at_utc": "2026-09-26T16:19:18.351538+00:00"
       },
       {
-        "camera_id": "cam14",
+        "camera_id": "cam02",
         "track_id": "TRK-SIM-0004",
         "first_seen_pts_ms": 180000.0,
         "recognition_pts_ms": 185000.0,
         "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T06:45:55.059036+00:00",
+        "source_time": "2026-09-26T16:22:03.691870+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.965,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T06:45:55.059036+00:00"
-      },
-      {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T11:48:28.732237+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T11:48:28.732237+00:00"
+        "ingested_at_utc": "2026-09-26T16:22:03.691870+00:00"
       }
     ],
     "vehicle_details": {
@@ -3114,564 +3789,34 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
       "color": "Orange-White",
       "class": "Bus"
     },
-    "total_distance_km": 1025.01,
-    "avg_speed_kmh": 48.4,
+    "total_distance_km": 9.49,
+    "avg_speed_kmh": 37.8,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ01MN9660",
-    "registration_number": "GJ01MN9660",
-    "normalized_registration_number": "GJ01MN9660",
+    "vehicle_id": "VEH-GJ03CD4866",
+    "registration_number": "GJ03CD4866",
+    "normalized_registration_number": "GJ03CD4866",
     "first_seen": {
-      "camera_id": "cam28",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:11:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
       "camera_id": "cam16",
-      "pts_ms": 180000.0,
-      "source_time": "2026-09-27T07:40:12.771531+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 4,
-    "cameras": [
-      "cam28",
-      "cam06",
-      "cam27",
-      "cam16"
-    ],
-    "observation_count": 4,
-    "track_count": 4,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:11:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:11:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam06",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T18:57:03.188563+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:57:03.188563+00:00"
-      },
-      {
-        "camera_id": "cam27",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T00:48:26.989649+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T00:48:26.989649+00:00"
-      },
-      {
-        "camera_id": "cam16",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T07:40:12.771531+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:40:12.771531+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Honda City",
-      "color": "Grey",
-      "class": "Sedan"
-    },
-    "total_distance_km": 810.64,
-    "avg_speed_kmh": 46.4,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ01AB7554",
-    "registration_number": "GJ01AB7554",
-    "normalized_registration_number": "GJ01AB7554",
-    "first_seen": {
-      "camera_id": "cam11",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:12:42.176418+00:00",
+      "source_time": "2026-09-26T15:20:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam03",
-      "pts_ms": 360000.0,
-      "source_time": "2026-09-28T07:46:27.265557+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 7,
-    "cameras": [
-      "cam11",
-      "cam20",
-      "cam30",
-      "cam09",
-      "cam15",
-      "cam07",
-      "cam03"
-    ],
-    "observation_count": 7,
-    "track_count": 7,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam11",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:12:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:12:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam20",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T21:22:49.352102+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T21:22:49.352102+00:00"
-      },
-      {
-        "camera_id": "cam30",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T04:30:12.155163+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T04:30:12.155163+00:00"
-      },
-      {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T10:00:52.666304+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T10:00:52.666304+00:00"
-      },
-      {
-        "camera_id": "cam15",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T18:08:57.510098+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T18:08:57.510098+00:00"
-      },
-      {
-        "camera_id": "cam07",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-28T00:33:08.621516+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-28T00:33:08.621516+00:00"
-      },
-      {
-        "camera_id": "cam03",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-28T07:46:27.265557+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-28T07:46:27.265557+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Honda City",
-      "color": "Grey",
-      "class": "Sedan"
-    },
-    "total_distance_km": 1640.78,
-    "avg_speed_kmh": 39.5,
-    "is_watchlist_match": true
-  },
-  {
-    "vehicle_id": "VEH-GJ01MN8778",
-    "registration_number": "GJ01MN8778",
-    "normalized_registration_number": "GJ01MN8778",
-    "first_seen": {
-      "camera_id": "cam24",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:00:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam02",
-      "pts_ms": 360000.0,
-      "source_time": "2026-09-27T15:12:06.415444+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 7,
-    "cameras": [
-      "cam24",
-      "cam06",
-      "cam05",
-      "cam29",
-      "cam01",
-      "cam13",
-      "cam02"
-    ],
-    "observation_count": 7,
-    "track_count": 7,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam24",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:00:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:00:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam06",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T20:13:27.856502+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:13:27.856502+00:00"
-      },
-      {
-        "camera_id": "cam05",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T01:10:14.325821+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:10:14.325821+00:00"
-      },
-      {
-        "camera_id": "cam29",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T07:42:58.660372+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:42:58.660372+00:00"
-      },
-      {
-        "camera_id": "cam01",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T15:00:40.100505+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T15:00:40.100505+00:00"
-      },
-      {
-        "camera_id": "cam13",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T15:09:36.415444+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T15:09:36.415444+00:00"
-      },
-      {
-        "camera_id": "cam02",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T15:12:06.415444+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T15:12:06.415444+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Toyota Innova Crysta",
-      "color": "White",
-      "class": "MPV"
-    },
-    "total_distance_km": 1116.05,
-    "avg_speed_kmh": 44.3,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ06MN8615",
-    "registration_number": "GJ06MN8615",
-    "normalized_registration_number": "GJ06MN8615",
-    "first_seen": {
-      "camera_id": "cam04",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:00:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam05",
-      "pts_ms": 420000.0,
-      "source_time": "2026-09-28T07:00:19.226919+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 8,
-    "cameras": [
-      "cam04",
-      "cam10",
-      "cam30",
-      "cam13",
-      "cam28",
-      "cam11",
-      "cam20",
-      "cam05"
-    ],
-    "observation_count": 8,
-    "track_count": 8,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam04",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:00:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:00:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam10",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T21:41:21.873664+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T21:41:21.873664+00:00"
-      },
-      {
-        "camera_id": "cam30",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T02:26:20.494898+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:26:20.494898+00:00"
-      },
-      {
-        "camera_id": "cam13",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T09:22:24.521017+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T09:22:24.521017+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T16:20:52.921655+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T16:20:52.921655+00:00"
-      },
-      {
-        "camera_id": "cam11",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-28T00:45:53.712888+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-28T00:45:53.712888+00:00"
-      },
-      {
-        "camera_id": "cam20",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-28T06:51:05.832488+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-28T06:51:05.832488+00:00"
-      },
-      {
-        "camera_id": "cam05",
-        "track_id": "TRK-SIM-0008",
-        "first_seen_pts_ms": 420000.0,
-        "recognition_pts_ms": 425000.0,
-        "last_seen_pts_ms": 435000.0,
-        "source_time": "2026-09-28T07:00:19.226919+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-28T07:00:19.226919+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Royal Enfield Classic 350",
-      "color": "Black",
-      "class": "Two-Wheeler"
-    },
-    "total_distance_km": 1504.64,
-    "avg_speed_kmh": 36.7,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ03XY7402",
-    "registration_number": "GJ03XY7402",
-    "normalized_registration_number": "GJ03XY7402",
-    "first_seen": {
-      "camera_id": "cam26",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:31:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam29",
+      "camera_id": "cam13",
       "pts_ms": 300000.0,
-      "source_time": "2026-09-27T13:05:09.487958+00:00",
+      "source_time": "2026-09-26T15:40:29.161893+00:00",
       "source_time_status": "RESOLVED"
     },
     "camera_count": 6,
     "cameras": [
-      "cam26",
-      "cam04",
-      "cam11",
-      "cam20",
+      "cam16",
+      "cam05",
+      "cam01",
+      "cam15",
       "cam02",
-      "cam29"
+      "cam13"
     ],
     "observation_count": 6,
     "track_count": 6,
@@ -3680,60 +3825,60 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
     "status": "CONFIRMED",
     "timeline": [
       {
-        "camera_id": "cam26",
+        "camera_id": "cam16",
         "track_id": "TRK-SIM-0001",
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:31:42.176418+00:00",
+        "source_time": "2026-09-26T15:20:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:31:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T15:20:59.213547+00:00"
       },
       {
-        "camera_id": "cam04",
+        "camera_id": "cam05",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T19:41:10.136710+00:00",
+        "source_time": "2026-09-26T15:23:29.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:41:10.136710+00:00"
+        "ingested_at_utc": "2026-09-26T15:23:29.213547+00:00"
       },
       {
-        "camera_id": "cam11",
+        "camera_id": "cam01",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T01:46:54.300153+00:00",
+        "source_time": "2026-09-26T15:27:57.036672+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:46:54.300153+00:00"
+        "ingested_at_utc": "2026-09-26T15:27:57.036672+00:00"
       },
       {
-        "camera_id": "cam20",
+        "camera_id": "cam15",
         "track_id": "TRK-SIM-0004",
         "first_seen_pts_ms": 180000.0,
         "recognition_pts_ms": 185000.0,
         "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T07:44:25.382866+00:00",
+        "source_time": "2026-09-26T15:35:03.137226+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.965,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:44:25.382866+00:00"
+        "ingested_at_utc": "2026-09-26T15:35:03.137226+00:00"
       },
       {
         "camera_id": "cam02",
@@ -3741,58 +3886,643 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "first_seen_pts_ms": 240000.0,
         "recognition_pts_ms": 245000.0,
         "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T07:49:54.777622+00:00",
+        "source_time": "2026-09-26T15:37:59.161893+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.98,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:49:54.777622+00:00"
+        "ingested_at_utc": "2026-09-26T15:37:59.161893+00:00"
       },
       {
-        "camera_id": "cam29",
+        "camera_id": "cam13",
         "track_id": "TRK-SIM-0006",
         "first_seen_pts_ms": 300000.0,
         "recognition_pts_ms": 305000.0,
         "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T13:05:09.487958+00:00",
+        "source_time": "2026-09-26T15:40:29.161893+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T13:05:09.487958+00:00"
+        "ingested_at_utc": "2026-09-26T15:40:29.161893+00:00"
       }
     ],
     "vehicle_details": {
-      "make_model": "Toyota Innova Crysta",
+      "make_model": "Maruti Suzuki Baleno",
       "color": "White",
-      "class": "MPV"
+      "class": "Hatchback"
     },
-    "total_distance_km": 1056.38,
-    "avg_speed_kmh": 44.8,
+    "total_distance_km": 11.42,
+    "avg_speed_kmh": 35.1,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ05GH7382",
-    "registration_number": "GJ05GH7382",
-    "normalized_registration_number": "GJ05GH7382",
+    "vehicle_id": "VEH-GJ27AB3446",
+    "registration_number": "GJ27AB3446",
+    "normalized_registration_number": "GJ27AB3446",
     "first_seen": {
-      "camera_id": "cam17",
+      "camera_id": "cam03",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:40:42.176418+00:00",
+      "source_time": "2026-09-26T15:28:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 240000.0,
+      "source_time": "2026-09-26T15:45:06.839325+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 5,
+    "cameras": [
+      "cam03",
+      "cam01",
+      "cam15",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 5,
+    "track_count": 5,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam03",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:28:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:28:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T15:32:49.053600+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:32:49.053600+00:00"
+      },
+      {
+        "camera_id": "cam15",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T15:38:43.447210+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:38:43.447210+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T15:42:36.839325+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:42:36.839325+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-SIM-0005",
+        "first_seen_pts_ms": 240000.0,
+        "recognition_pts_ms": 245000.0,
+        "last_seen_pts_ms": 255000.0,
+        "source_time": "2026-09-26T15:45:06.839325+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.98,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:45:06.839325+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Tata Nexon",
+      "color": "Blue",
+      "class": "Compact SUV"
+    },
+    "total_distance_km": 10.65,
+    "avg_speed_kmh": 39.6,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ27GH7050",
+    "registration_number": "GJ27GH7050",
+    "normalized_registration_number": "GJ27GH7050",
+    "first_seen": {
+      "camera_id": "cam15",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:32:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 120000.0,
+      "source_time": "2026-09-26T16:38:57.423797+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 3,
+    "cameras": [
+      "cam15",
+      "cam02",
+      "cam04"
+    ],
+    "observation_count": 3,
+    "track_count": 3,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam15",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:32:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:32:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:36:27.423797+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:36:27.423797+00:00"
+      },
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T16:38:57.423797+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:38:57.423797+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Honda City",
+      "color": "Grey",
+      "class": "Sedan"
+    },
+    "total_distance_km": 3.77,
+    "avg_speed_kmh": 37.9,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ06MN8904",
+    "registration_number": "GJ06MN8904",
+    "normalized_registration_number": "GJ06MN8904",
+    "first_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:35:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam20",
+      "pts_ms": 60000.0,
+      "source_time": "2026-09-26T16:43:15.893995+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 2,
+    "cameras": [
+      "cam01",
+      "cam20"
+    ],
+    "observation_count": 2,
+    "track_count": 2,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:35:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:35:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam20",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:43:15.893995+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:43:15.893995+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Royal Enfield Classic 350",
+      "color": "Black",
+      "class": "Two-Wheeler"
+    },
+    "total_distance_km": 3.96,
+    "avg_speed_kmh": 32.7,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ03ZZ5514",
+    "registration_number": "GJ03ZZ5514",
+    "normalized_registration_number": "GJ03ZZ5514",
+    "first_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T14:50:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam12",
+      "pts_ms": 240000.0,
+      "source_time": "2026-09-26T15:19:19.470668+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 5,
+    "cameras": [
+      "cam02",
+      "cam15",
+      "cam01",
+      "cam05",
+      "cam12"
+    ],
+    "observation_count": 5,
+    "track_count": 5,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T14:50:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T14:50:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam15",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T14:54:06.796854+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T14:54:06.796854+00:00"
+      },
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T14:59:27.060966+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T14:59:27.060966+00:00"
+      },
+      {
+        "camera_id": "cam05",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T15:04:32.583022+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:04:32.583022+00:00"
+      },
+      {
+        "camera_id": "cam12",
+        "track_id": "TRK-SIM-0005",
+        "first_seen_pts_ms": 240000.0,
+        "recognition_pts_ms": 245000.0,
+        "last_seen_pts_ms": 255000.0,
+        "source_time": "2026-09-26T15:19:19.470668+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.98,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:19:19.470668+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Maruti Suzuki Baleno",
+      "color": "White",
+      "class": "Hatchback"
+    },
+    "total_distance_km": 17.37,
+    "avg_speed_kmh": 36.8,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ18PQ2287",
+    "registration_number": "GJ18PQ2287",
+    "normalized_registration_number": "GJ18PQ2287",
+    "first_seen": {
+      "camera_id": "cam13",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T17:21:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam01",
+      "pts_ms": 180000.0,
+      "source_time": "2026-09-26T17:34:13.437675+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 4,
+    "cameras": [
+      "cam13",
+      "cam02",
+      "cam15",
+      "cam01"
+    ],
+    "observation_count": 4,
+    "track_count": 4,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam13",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T17:21:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:21:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T17:24:41.234697+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:24:41.234697+00:00"
+      },
+      {
+        "camera_id": "cam15",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T17:27:11.234697+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:27:11.234697+00:00"
+      },
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T17:34:13.437675+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:34:13.437675+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Royal Enfield Classic 350",
+      "color": "Black",
+      "class": "Two-Wheeler"
+    },
+    "total_distance_km": 7.81,
+    "avg_speed_kmh": 38.3,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ06CD7548",
+    "registration_number": "GJ06CD7548",
+    "normalized_registration_number": "GJ06CD7548",
+    "first_seen": {
+      "camera_id": "cam04",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T15:21:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam16",
+      "pts_ms": 300000.0,
+      "source_time": "2026-09-26T15:40:06.668980+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 6,
+    "cameras": [
+      "cam04",
+      "cam02",
+      "cam15",
+      "cam01",
+      "cam05",
+      "cam16"
+    ],
+    "observation_count": 6,
+    "track_count": 6,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam04",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T15:21:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:21:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T15:24:29.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:24:29.213547+00:00"
+      },
+      {
+        "camera_id": "cam15",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T15:27:11.440657+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:27:11.440657+00:00"
+      },
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T15:32:28.570714+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:32:28.570714+00:00"
+      },
+      {
+        "camera_id": "cam05",
+        "track_id": "TRK-SIM-0005",
+        "first_seen_pts_ms": 240000.0,
+        "recognition_pts_ms": 245000.0,
+        "last_seen_pts_ms": 255000.0,
+        "source_time": "2026-09-26T15:37:36.668980+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.98,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:37:36.668980+00:00"
+      },
+      {
+        "camera_id": "cam16",
+        "track_id": "TRK-SIM-0006",
+        "first_seen_pts_ms": 300000.0,
+        "recognition_pts_ms": 305000.0,
+        "last_seen_pts_ms": 315000.0,
+        "source_time": "2026-09-26T15:40:06.668980+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T15:40:06.668980+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Honda City",
+      "color": "Grey",
+      "class": "Sedan"
+    },
+    "total_distance_km": 11.29,
+    "avg_speed_kmh": 37.4,
+    "is_watchlist_match": true
+  },
+  {
+    "vehicle_id": "VEH-GJ27RS5888",
+    "registration_number": "GJ27RS5888",
+    "normalized_registration_number": "GJ27RS5888",
+    "first_seen": {
+      "camera_id": "cam14",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T14:50:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
       "camera_id": "cam01",
       "pts_ms": 120000.0,
-      "source_time": "2026-09-27T00:41:39.296148+00:00",
+      "source_time": "2026-09-26T14:58:51.088650+00:00",
       "source_time_status": "RESOLVED"
     },
     "camera_count": 3,
     "cameras": [
-      "cam17",
-      "cam26",
+      "cam14",
+      "cam15",
       "cam01"
     ],
     "observation_count": 3,
@@ -3802,736 +4532,46 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
     "status": "CONFIRMED",
     "timeline": [
       {
-        "camera_id": "cam17",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:40:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:40:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam26",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T20:06:58.775323+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:06:58.775323+00:00"
-      },
-      {
-        "camera_id": "cam01",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T00:41:39.296148+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T00:41:39.296148+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Royal Enfield Classic 350",
-      "color": "Black",
-      "class": "Two-Wheeler"
-    },
-    "total_distance_km": 546.92,
-    "avg_speed_kmh": 49.6,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ05PQ4905",
-    "registration_number": "GJ05PQ4905",
-    "normalized_registration_number": "GJ05PQ4905",
-    "first_seen": {
-      "camera_id": "cam13",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:49:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam14",
-      "pts_ms": 120000.0,
-      "source_time": "2026-09-26T13:04:56.642235+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 3,
-    "cameras": [
-      "cam13",
-      "cam01",
-      "cam14"
-    ],
-    "observation_count": 3,
-    "track_count": 3,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam13",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:49:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:49:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam01",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T12:57:34.900963+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:57:34.900963+00:00"
-      },
-      {
         "camera_id": "cam14",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T13:04:56.642235+00:00",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T14:50:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
-        "consensus_score": 0.95,
+        "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:04:56.642235+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Toyota Innova Crysta",
-      "color": "White",
-      "class": "MPV"
-    },
-    "total_distance_km": 12.2,
-    "avg_speed_kmh": 48.0,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ03EF2971",
-    "registration_number": "GJ03EF2971",
-    "normalized_registration_number": "GJ03EF2971",
-    "first_seen": {
-      "camera_id": "cam01",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:47:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam28",
-      "pts_ms": 240000.0,
-      "source_time": "2026-09-27T10:28:22.770546+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 5,
-    "cameras": [
-      "cam01",
-      "cam15",
-      "cam18",
-      "cam22",
-      "cam28"
-    ],
-    "observation_count": 5,
-    "track_count": 5,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
+        "ingested_at_utc": "2026-09-26T14:50:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam15",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T14:54:12.043694+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T14:54:12.043694+00:00"
+      },
       {
         "camera_id": "cam01",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:47:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:47:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam15",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T14:51:47.354432+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:51:47.354432+00:00"
-      },
-      {
-        "camera_id": "cam18",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T20:30:26.304645+00:00",
+        "source_time": "2026-09-26T14:58:51.088650+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:30:26.304645+00:00"
-      },
-      {
-        "camera_id": "cam22",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T01:15:30.177215+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:15:30.177215+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T10:28:22.770546+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T10:28:22.770546+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Royal Enfield Classic 350",
-      "color": "Black",
-      "class": "Two-Wheeler"
-    },
-    "total_distance_km": 850.69,
-    "avg_speed_kmh": 43.2,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ05CD2776",
-    "registration_number": "GJ05CD2776",
-    "normalized_registration_number": "GJ05CD2776",
-    "first_seen": {
-      "camera_id": "cam29",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T15:00:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam23",
-      "pts_ms": 360000.0,
-      "source_time": "2026-09-27T20:25:51.198007+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 7,
-    "cameras": [
-      "cam29",
-      "cam02",
-      "cam12",
-      "cam25",
-      "cam10",
-      "cam16",
-      "cam23"
-    ],
-    "observation_count": 7,
-    "track_count": 7,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam29",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T15:00:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T15:00:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam02",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T21:36:26.685364+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T21:36:26.685364+00:00"
-      },
-      {
-        "camera_id": "cam12",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T21:56:46.223289+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T21:56:46.223289+00:00"
-      },
-      {
-        "camera_id": "cam25",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T03:44:06.966932+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T03:44:06.966932+00:00"
-      },
-      {
-        "camera_id": "cam10",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T10:11:28.383215+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T10:11:28.383215+00:00"
-      },
-      {
-        "camera_id": "cam16",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T18:30:34.195699+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T18:30:34.195699+00:00"
-      },
-      {
-        "camera_id": "cam23",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T20:25:51.198007+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T20:25:51.198007+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Mahindra Scorpio-N",
-      "color": "Black",
-      "class": "SUV"
-    },
-    "total_distance_km": 1154.55,
-    "avg_speed_kmh": 39.2,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ27ZZ8665",
-    "registration_number": "GJ27ZZ8665",
-    "normalized_registration_number": "GJ27ZZ8665",
-    "first_seen": {
-      "camera_id": "cam29",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:20:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam19",
-      "pts_ms": 360000.0,
-      "source_time": "2026-09-27T13:54:43.554037+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 7,
-    "cameras": [
-      "cam29",
-      "cam02",
-      "cam15",
-      "cam17",
-      "cam16",
-      "cam07",
-      "cam19"
-    ],
-    "observation_count": 7,
-    "track_count": 7,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam29",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:20:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:20:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam02",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T17:28:55.435033+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T17:28:55.435033+00:00"
-      },
-      {
-        "camera_id": "cam15",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T17:32:10.028165+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T17:32:10.028165+00:00"
-      },
-      {
-        "camera_id": "cam17",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T21:25:10.913445+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T21:25:10.913445+00:00"
-      },
-      {
-        "camera_id": "cam16",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T01:03:12.786266+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:03:12.786266+00:00"
-      },
-      {
-        "camera_id": "cam07",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T08:10:46.767901+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T08:10:46.767901+00:00"
-      },
-      {
-        "camera_id": "cam19",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T13:54:43.554037+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T13:54:43.554037+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Mahindra Scorpio-N",
-      "color": "Black",
-      "class": "SUV"
-    },
-    "total_distance_km": 1267.37,
-    "avg_speed_kmh": 49.6,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ01ZZ3937",
-    "registration_number": "GJ01ZZ3937",
-    "normalized_registration_number": "GJ01ZZ3937",
-    "first_seen": {
-      "camera_id": "cam21",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:36:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam13",
-      "pts_ms": 180000.0,
-      "source_time": "2026-09-27T02:17:21.476327+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 4,
-    "cameras": [
-      "cam21",
-      "cam26",
-      "cam05",
-      "cam13"
-    ],
-    "observation_count": 4,
-    "track_count": 4,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam21",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:36:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:36:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam26",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T21:28:09.401262+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T21:28:09.401262+00:00"
-      },
-      {
-        "camera_id": "cam05",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T02:05:11.266758+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:05:11.266758+00:00"
-      },
-      {
-        "camera_id": "cam13",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T02:17:21.476327+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:17:21.476327+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Kia Seltos",
-      "color": "Red",
-      "class": "SUV"
-    },
-    "total_distance_km": 625.62,
-    "avg_speed_kmh": 49.3,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ05AB2699",
-    "registration_number": "GJ05AB2699",
-    "normalized_registration_number": "GJ05AB2699",
-    "first_seen": {
-      "camera_id": "cam25",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:18:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam15",
-      "pts_ms": 300000.0,
-      "source_time": "2026-09-27T04:12:11.755542+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 6,
-    "cameras": [
-      "cam25",
-      "cam17",
-      "cam22",
-      "cam21",
-      "cam04",
-      "cam15"
-    ],
-    "observation_count": 6,
-    "track_count": 6,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam25",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:18:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:18:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam17",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T19:54:07.222467+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:54:07.222467+00:00"
-      },
-      {
-        "camera_id": "cam22",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T01:14:24.502707+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:14:24.502707+00:00"
-      },
-      {
-        "camera_id": "cam21",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T02:04:31.430980+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:04:31.430980+00:00"
-      },
-      {
-        "camera_id": "cam04",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T04:05:48.347824+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T04:05:48.347824+00:00"
-      },
-      {
-        "camera_id": "cam15",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T04:12:11.755542+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T04:12:11.755542+00:00"
+        "ingested_at_utc": "2026-09-26T14:58:51.088650+00:00"
       }
     ],
     "vehicle_details": {
@@ -4539,224 +4579,34 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
       "color": "Grey",
       "class": "Sedan"
     },
-    "total_distance_km": 699.73,
-    "avg_speed_kmh": 50.4,
+    "total_distance_km": 6.19,
+    "avg_speed_kmh": 47.2,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ27JK9798",
-    "registration_number": "GJ27JK9798",
-    "normalized_registration_number": "GJ27JK9798",
+    "vehicle_id": "VEH-GJ01EF2849",
+    "registration_number": "GJ01EF2849",
+    "normalized_registration_number": "GJ01EF2849",
     "first_seen": {
-      "camera_id": "cam16",
+      "camera_id": "cam12",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:10:42.176418+00:00",
+      "source_time": "2026-09-26T15:05:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam27",
-      "pts_ms": 120000.0,
-      "source_time": "2026-09-26T20:22:11.394319+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 3,
-    "cameras": [
-      "cam16",
-      "cam24",
-      "cam27"
-    ],
-    "observation_count": 3,
-    "track_count": 3,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam16",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:10:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:10:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam24",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T13:41:46.272812+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:41:46.272812+00:00"
-      },
-      {
-        "camera_id": "cam27",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T20:22:11.394319+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:22:11.394319+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "GSRTC Express Bus",
-      "color": "Orange-White",
-      "class": "Bus"
-    },
-    "total_distance_km": 291.9,
-    "avg_speed_kmh": 40.6,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ05ZZ2940",
-    "registration_number": "GJ05ZZ2940",
-    "normalized_registration_number": "GJ05ZZ2940",
-    "first_seen": {
-      "camera_id": "cam22",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:27:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam29",
-      "pts_ms": 240000.0,
-      "source_time": "2026-09-27T05:48:47.637615+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 5,
-    "cameras": [
-      "cam22",
-      "cam12",
-      "cam09",
-      "cam25",
-      "cam29"
-    ],
-    "observation_count": 5,
-    "track_count": 5,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam22",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:27:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:27:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam12",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T15:35:23.266711+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T15:35:23.266711+00:00"
-      },
-      {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T22:01:37.201197+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T22:01:37.201197+00:00"
-      },
-      {
-        "camera_id": "cam25",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T05:37:45.513023+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T05:37:45.513023+00:00"
-      },
-      {
-        "camera_id": "cam29",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T05:48:47.637615+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T05:48:47.637615+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Maruti Suzuki Swift",
-      "color": "Silver",
-      "class": "Hatchback"
-    },
-    "total_distance_km": 681.08,
-    "avg_speed_kmh": 41.7,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ05EF7572",
-    "registration_number": "GJ05EF7572",
-    "normalized_registration_number": "GJ05EF7572",
-    "first_seen": {
-      "camera_id": "cam02",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:37:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam09",
+      "camera_id": "cam04",
       "pts_ms": 300000.0,
-      "source_time": "2026-09-27T14:11:20.654826+00:00",
+      "source_time": "2026-09-26T15:31:53.088353+00:00",
       "source_time_status": "RESOLVED"
     },
     "camera_count": 6,
     "cameras": [
-      "cam02",
-      "cam10",
+      "cam12",
+      "cam05",
       "cam01",
-      "cam14",
-      "cam27",
-      "cam09"
+      "cam15",
+      "cam02",
+      "cam04"
     ],
     "observation_count": 6,
     "track_count": 6,
@@ -4765,32 +4615,32 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
     "status": "CONFIRMED",
     "timeline": [
       {
-        "camera_id": "cam02",
+        "camera_id": "cam12",
         "track_id": "TRK-SIM-0001",
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:37:42.176418+00:00",
+        "source_time": "2026-09-26T15:05:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:37:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T15:05:59.213547+00:00"
       },
       {
-        "camera_id": "cam10",
+        "camera_id": "cam05",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T19:35:42.927038+00:00",
+        "source_time": "2026-09-26T15:17:01.924877+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:35:42.927038+00:00"
+        "ingested_at_utc": "2026-09-26T15:17:01.924877+00:00"
       },
       {
         "camera_id": "cam01",
@@ -4798,510 +4648,55 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T01:35:20.588147+00:00",
+        "source_time": "2026-09-26T15:21:51.064499+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:35:20.588147+00:00"
+        "ingested_at_utc": "2026-09-26T15:21:51.064499+00:00"
       },
       {
-        "camera_id": "cam14",
+        "camera_id": "cam15",
         "track_id": "TRK-SIM-0004",
         "first_seen_pts_ms": 180000.0,
         "recognition_pts_ms": 185000.0,
         "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T01:45:19.469391+00:00",
+        "source_time": "2026-09-26T15:26:22.832625+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.965,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:45:19.469391+00:00"
+        "ingested_at_utc": "2026-09-26T15:26:22.832625+00:00"
       },
       {
-        "camera_id": "cam27",
+        "camera_id": "cam02",
         "track_id": "TRK-SIM-0005",
         "first_seen_pts_ms": 240000.0,
         "recognition_pts_ms": 245000.0,
         "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T06:37:03.280923+00:00",
+        "source_time": "2026-09-26T15:28:52.832625+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.98,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T06:37:03.280923+00:00"
-      },
-      {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T14:11:20.654826+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T14:11:20.654826+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Maruti Suzuki Baleno",
-      "color": "White",
-      "class": "Hatchback"
-    },
-    "total_distance_km": 1086.15,
-    "avg_speed_kmh": 46.1,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ02XY6160",
-    "registration_number": "GJ02XY6160",
-    "normalized_registration_number": "GJ02XY6160",
-    "first_seen": {
-      "camera_id": "cam08",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:49:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam24",
-      "pts_ms": 360000.0,
-      "source_time": "2026-09-27T07:29:11.394047+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 7,
-    "cameras": [
-      "cam08",
-      "cam13",
-      "cam20",
-      "cam17",
-      "cam10",
-      "cam03",
-      "cam24"
-    ],
-    "observation_count": 7,
-    "track_count": 7,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam08",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:49:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:49:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam13",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T19:33:30.475563+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:33:30.475563+00:00"
-      },
-      {
-        "camera_id": "cam20",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T19:40:23.893739+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T19:40:23.893739+00:00"
-      },
-      {
-        "camera_id": "cam17",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T23:24:15.546642+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T23:24:15.546642+00:00"
-      },
-      {
-        "camera_id": "cam10",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T01:20:06.806761+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:20:06.806761+00:00"
-      },
-      {
-        "camera_id": "cam03",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T06:55:24.024676+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T06:55:24.024676+00:00"
-      },
-      {
-        "camera_id": "cam24",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T07:29:11.394047+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:29:11.394047+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "GSRTC Express Bus",
-      "color": "Orange-White",
-      "class": "Bus"
-    },
-    "total_distance_km": 875.87,
-    "avg_speed_kmh": 52.6,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ02CD9519",
-    "registration_number": "GJ02CD9519",
-    "normalized_registration_number": "GJ02CD9519",
-    "first_seen": {
-      "camera_id": "cam29",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:33:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam27",
-      "pts_ms": 120000.0,
-      "source_time": "2026-09-27T00:44:17.489516+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 3,
-    "cameras": [
-      "cam29",
-      "cam04",
-      "cam27"
-    ],
-    "observation_count": 3,
-    "track_count": 3,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam29",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:33:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:33:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T15:28:52.832625+00:00"
       },
       {
         "camera_id": "cam04",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T18:57:39.594619+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:57:39.594619+00:00"
-      },
-      {
-        "camera_id": "cam27",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T00:44:17.489516+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T00:44:17.489516+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "GSRTC Express Bus",
-      "color": "Orange-White",
-      "class": "Bus"
-    },
-    "total_distance_km": 507.41,
-    "avg_speed_kmh": 41.7,
-    "is_watchlist_match": true
-  },
-  {
-    "vehicle_id": "VEH-GJ02GH4534",
-    "registration_number": "GJ02GH4534",
-    "normalized_registration_number": "GJ02GH4534",
-    "first_seen": {
-      "camera_id": "cam26",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:08:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam17",
-      "pts_ms": 120000.0,
-      "source_time": "2026-09-26T20:15:08.984486+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 3,
-    "cameras": [
-      "cam26",
-      "cam10",
-      "cam17"
-    ],
-    "observation_count": 3,
-    "track_count": 3,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam26",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:08:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:08:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam10",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T18:22:51.989735+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:22:51.989735+00:00"
-      },
-      {
-        "camera_id": "cam17",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T20:15:08.984486+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:15:08.984486+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "GSRTC Express Bus",
-      "color": "Orange-White",
-      "class": "Bus"
-    },
-    "total_distance_km": 374.94,
-    "avg_speed_kmh": 52.8,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ02GH8181",
-    "registration_number": "GJ02GH8181",
-    "normalized_registration_number": "GJ02GH8181",
-    "first_seen": {
-      "camera_id": "cam05",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:57:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam26",
-      "pts_ms": 420000.0,
-      "source_time": "2026-09-28T14:32:39.901242+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 8,
-    "cameras": [
-      "cam05",
-      "cam27",
-      "cam08",
-      "cam28",
-      "cam21",
-      "cam25",
-      "cam24",
-      "cam26"
-    ],
-    "observation_count": 8,
-    "track_count": 8,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam05",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:57:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:57:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam27",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T20:43:34.056632+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:43:34.056632+00:00"
-      },
-      {
-        "camera_id": "cam08",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T02:33:57.318081+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:33:57.318081+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T07:17:00.819717+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:17:00.819717+00:00"
-      },
-      {
-        "camera_id": "cam21",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T14:56:14.654235+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T14:56:14.654235+00:00"
-      },
-      {
-        "camera_id": "cam25",
         "track_id": "TRK-SIM-0006",
         "first_seen_pts_ms": 300000.0,
         "recognition_pts_ms": 305000.0,
         "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-28T00:17:29.309334+00:00",
+        "source_time": "2026-09-26T15:31:53.088353+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-28T00:17:29.309334+00:00"
-      },
-      {
-        "camera_id": "cam24",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-28T08:02:46.692632+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-28T08:02:46.692632+00:00"
-      },
-      {
-        "camera_id": "cam26",
-        "track_id": "TRK-SIM-0008",
-        "first_seen_pts_ms": 420000.0,
-        "recognition_pts_ms": 425000.0,
-        "last_seen_pts_ms": 435000.0,
-        "source_time": "2026-09-28T14:32:39.901242+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-28T14:32:39.901242+00:00"
+        "ingested_at_utc": "2026-09-26T15:31:53.088353+00:00"
       }
     ],
     "vehicle_details": {
@@ -5309,751 +4704,31 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
       "color": "Blue",
       "class": "Compact SUV"
     },
-    "total_distance_km": 2033.07,
-    "avg_speed_kmh": 41.8,
-    "is_watchlist_match": true
-  },
-  {
-    "vehicle_id": "VEH-GJ03JK2359",
-    "registration_number": "GJ03JK2359",
-    "normalized_registration_number": "GJ03JK2359",
-    "first_seen": {
-      "camera_id": "cam17",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:29:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam27",
-      "pts_ms": 360000.0,
-      "source_time": "2026-09-27T07:05:17.558459+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 7,
-    "cameras": [
-      "cam17",
-      "cam09",
-      "cam10",
-      "cam23",
-      "cam12",
-      "cam15",
-      "cam27"
-    ],
-    "observation_count": 7,
-    "track_count": 7,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam17",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:29:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:29:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T16:10:35.309952+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T16:10:35.309952+00:00"
-      },
-      {
-        "camera_id": "cam10",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T16:13:50.379251+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T16:13:50.379251+00:00"
-      },
-      {
-        "camera_id": "cam23",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T22:40:27.360249+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T22:40:27.360249+00:00"
-      },
-      {
-        "camera_id": "cam12",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T00:06:37.598223+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T00:06:37.598223+00:00"
-      },
-      {
-        "camera_id": "cam15",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T00:22:08.447980+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T00:22:08.447980+00:00"
-      },
-      {
-        "camera_id": "cam27",
-        "track_id": "TRK-SIM-0007",
-        "first_seen_pts_ms": 360000.0,
-        "recognition_pts_ms": 365000.0,
-        "last_seen_pts_ms": 375000.0,
-        "source_time": "2026-09-27T07:05:17.558459+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:05:17.558459+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Honda City",
-      "color": "Grey",
-      "class": "Sedan"
-    },
-    "total_distance_km": 774.54,
-    "avg_speed_kmh": 46.7,
+    "total_distance_km": 19.05,
+    "avg_speed_kmh": 44.1,
     "is_watchlist_match": false
   },
   {
-    "vehicle_id": "VEH-GJ05GH4882",
-    "registration_number": "GJ05GH4882",
-    "normalized_registration_number": "GJ05GH4882",
+    "vehicle_id": "VEH-GJ18RS5303",
+    "registration_number": "GJ18RS5303",
+    "normalized_registration_number": "GJ18RS5303",
     "first_seen": {
-      "camera_id": "cam11",
+      "camera_id": "cam20",
       "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:13:42.176418+00:00",
+      "source_time": "2026-09-26T17:26:59.213547+00:00",
       "source_time_status": "RESOLVED"
     },
     "last_seen": {
-      "camera_id": "cam17",
-      "pts_ms": 300000.0,
-      "source_time": "2026-09-27T09:05:47.711956+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 6,
-    "cameras": [
-      "cam11",
-      "cam08",
-      "cam29",
-      "cam28",
-      "cam02",
-      "cam17"
-    ],
-    "observation_count": 6,
-    "track_count": 6,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam11",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:13:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:13:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam08",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T14:16:24.025499+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:16:24.025499+00:00"
-      },
-      {
-        "camera_id": "cam29",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T20:35:41.880862+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:35:41.880862+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-26T20:38:11.880862+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:38:11.880862+00:00"
-      },
-      {
-        "camera_id": "cam02",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T03:40:25.424528+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T03:40:25.424528+00:00"
-      },
-      {
-        "camera_id": "cam17",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-27T09:05:47.711956+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T09:05:47.711956+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Honda City",
-      "color": "Grey",
-      "class": "Sedan"
-    },
-    "total_distance_km": 728.8,
-    "avg_speed_kmh": 38.6,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ18GH7957",
-    "registration_number": "GJ18GH7957",
-    "normalized_registration_number": "GJ18GH7957",
-    "first_seen": {
-      "camera_id": "cam09",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T14:36:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam16",
-      "pts_ms": 300000.0,
-      "source_time": "2026-09-28T00:05:35.070323+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 6,
-    "cameras": [
-      "cam09",
-      "cam26",
-      "cam01",
-      "cam08",
-      "cam28",
-      "cam16"
-    ],
-    "observation_count": 6,
-    "track_count": 6,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T14:36:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T14:36:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam26",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T22:38:01.420866+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T22:38:01.420866+00:00"
-      },
-      {
-        "camera_id": "cam01",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T05:35:21.694785+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T05:35:21.694785+00:00"
-      },
-      {
-        "camera_id": "cam08",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T12:34:46.858428+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T12:34:46.858428+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T17:49:31.341239+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T17:49:31.341239+00:00"
-      },
-      {
-        "camera_id": "cam16",
-        "track_id": "TRK-SIM-0006",
-        "first_seen_pts_ms": 300000.0,
-        "recognition_pts_ms": 305000.0,
-        "last_seen_pts_ms": 315000.0,
-        "source_time": "2026-09-28T00:05:35.070323+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-28T00:05:35.070323+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Toyota Innova Crysta",
-      "color": "White",
-      "class": "MPV"
-    },
-    "total_distance_km": 1350.9,
-    "avg_speed_kmh": 40.3,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ03JK8085",
-    "registration_number": "GJ03JK8085",
-    "normalized_registration_number": "GJ03JK8085",
-    "first_seen": {
-      "camera_id": "cam23",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:18:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam27",
-      "pts_ms": 240000.0,
-      "source_time": "2026-09-27T09:58:30.543649+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 5,
-    "cameras": [
-      "cam23",
-      "cam10",
-      "cam24",
-      "cam16",
-      "cam27"
-    ],
-    "observation_count": 5,
-    "track_count": 5,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam23",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:18:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:18:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam10",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T18:55:08.154684+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:55:08.154684+00:00"
-      },
-      {
-        "camera_id": "cam24",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-27T01:45:33.688549+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T01:45:33.688549+00:00"
-      },
-      {
-        "camera_id": "cam16",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T02:22:47.765853+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T02:22:47.765853+00:00"
-      },
-      {
-        "camera_id": "cam27",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T09:58:30.543649+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T09:58:30.543649+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Maruti Suzuki Baleno",
-      "color": "White",
-      "class": "Hatchback"
-    },
-    "total_distance_km": 934.79,
-    "avg_speed_kmh": 43.2,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ06EF4473",
-    "registration_number": "GJ06EF4473",
-    "normalized_registration_number": "GJ06EF4473",
-    "first_seen": {
-      "camera_id": "cam07",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:24:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam26",
-      "pts_ms": 240000.0,
-      "source_time": "2026-09-27T07:32:07.376623+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 5,
-    "cameras": [
-      "cam07",
-      "cam30",
-      "cam09",
-      "cam02",
-      "cam26"
-    ],
-    "observation_count": 5,
-    "track_count": 5,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam07",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:24:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:24:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam30",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T17:09:06.186703+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T17:09:06.186703+00:00"
-      },
-      {
-        "camera_id": "cam09",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T20:16:55.043693+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T20:16:55.043693+00:00"
-      },
-      {
-        "camera_id": "cam02",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T03:01:34.594662+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T03:01:34.594662+00:00"
-      },
-      {
-        "camera_id": "cam26",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T07:32:07.376623+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T07:32:07.376623+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Maruti Suzuki Baleno",
-      "color": "White",
-      "class": "Hatchback"
-    },
-    "total_distance_km": 950.17,
-    "avg_speed_kmh": 49.7,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ05RS7663",
-    "registration_number": "GJ05RS7663",
-    "normalized_registration_number": "GJ05RS7663",
-    "first_seen": {
-      "camera_id": "cam16",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T13:34:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam10",
-      "pts_ms": 240000.0,
-      "source_time": "2026-09-27T10:05:49.033319+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "camera_count": 5,
-    "cameras": [
-      "cam16",
-      "cam17",
-      "cam28",
-      "cam05",
-      "cam10"
-    ],
-    "observation_count": 5,
-    "track_count": 5,
-    "best_consensus_score": 0.98,
-    "average_consensus_score": 0.94,
-    "status": "CONFIRMED",
-    "timeline": [
-      {
-        "camera_id": "cam16",
-        "track_id": "TRK-SIM-0001",
-        "first_seen_pts_ms": 0.0,
-        "recognition_pts_ms": 5000.0,
-        "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T13:34:42.176418+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.92,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T13:34:42.176418+00:00"
-      },
-      {
-        "camera_id": "cam17",
-        "track_id": "TRK-SIM-0002",
-        "first_seen_pts_ms": 60000.0,
-        "recognition_pts_ms": 65000.0,
-        "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T17:49:21.349535+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.935,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T17:49:21.349535+00:00"
-      },
-      {
-        "camera_id": "cam28",
-        "track_id": "TRK-SIM-0003",
-        "first_seen_pts_ms": 120000.0,
-        "recognition_pts_ms": 125000.0,
-        "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T23:57:07.817576+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.95,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T23:57:07.817576+00:00"
-      },
-      {
-        "camera_id": "cam05",
-        "track_id": "TRK-SIM-0004",
-        "first_seen_pts_ms": 180000.0,
-        "recognition_pts_ms": 185000.0,
-        "last_seen_pts_ms": 195000.0,
-        "source_time": "2026-09-27T05:01:35.354294+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.965,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T05:01:35.354294+00:00"
-      },
-      {
-        "camera_id": "cam10",
-        "track_id": "TRK-SIM-0005",
-        "first_seen_pts_ms": 240000.0,
-        "recognition_pts_ms": 245000.0,
-        "last_seen_pts_ms": 255000.0,
-        "source_time": "2026-09-27T10:05:49.033319+00:00",
-        "source_time_status": "RESOLVED",
-        "status": "CONFIRMED",
-        "consensus_score": 0.98,
-        "evidence_image": null,
-        "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-27T10:05:49.033319+00:00"
-      }
-    ],
-    "vehicle_details": {
-      "make_model": "Hyundai Creta",
-      "color": "White",
-      "class": "SUV"
-    },
-    "total_distance_km": 1029.68,
-    "avg_speed_kmh": 50.2,
-    "is_watchlist_match": false
-  },
-  {
-    "vehicle_id": "VEH-GJ18ZZ1755",
-    "registration_number": "GJ18ZZ1755",
-    "normalized_registration_number": "GJ18ZZ1755",
-    "first_seen": {
-      "camera_id": "cam16",
-      "pts_ms": 0.0,
-      "source_time": "2026-09-26T12:41:42.176418+00:00",
-      "source_time_status": "RESOLVED"
-    },
-    "last_seen": {
-      "camera_id": "cam09",
+      "camera_id": "cam15",
       "pts_ms": 120000.0,
-      "source_time": "2026-09-26T18:31:04.801329+00:00",
+      "source_time": "2026-09-26T17:32:42.338973+00:00",
       "source_time_status": "RESOLVED"
     },
     "camera_count": 3,
     "cameras": [
-      "cam16",
-      "cam10",
-      "cam09"
+      "cam20",
+      "cam02",
+      "cam15"
     ],
     "observation_count": 3,
     "track_count": 3,
@@ -6062,55 +4737,165 @@ export const FALLBACK_VEHICLES: ObservedVehicle[] = ([
     "status": "CONFIRMED",
     "timeline": [
       {
-        "camera_id": "cam16",
+        "camera_id": "cam20",
         "track_id": "TRK-SIM-0001",
         "first_seen_pts_ms": 0.0,
         "recognition_pts_ms": 5000.0,
         "last_seen_pts_ms": 15000.0,
-        "source_time": "2026-09-26T12:41:42.176418+00:00",
+        "source_time": "2026-09-26T17:26:59.213547+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.92,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T12:41:42.176418+00:00"
+        "ingested_at_utc": "2026-09-26T17:26:59.213547+00:00"
       },
       {
-        "camera_id": "cam10",
+        "camera_id": "cam02",
         "track_id": "TRK-SIM-0002",
         "first_seen_pts_ms": 60000.0,
         "recognition_pts_ms": 65000.0,
         "last_seen_pts_ms": 75000.0,
-        "source_time": "2026-09-26T18:27:13.880974+00:00",
+        "source_time": "2026-09-26T17:30:12.338973+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.935,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:27:13.880974+00:00"
+        "ingested_at_utc": "2026-09-26T17:30:12.338973+00:00"
       },
       {
-        "camera_id": "cam09",
+        "camera_id": "cam15",
         "track_id": "TRK-SIM-0003",
         "first_seen_pts_ms": 120000.0,
         "recognition_pts_ms": 125000.0,
         "last_seen_pts_ms": 135000.0,
-        "source_time": "2026-09-26T18:31:04.801329+00:00",
+        "source_time": "2026-09-26T17:32:42.338973+00:00",
         "source_time_status": "RESOLVED",
         "status": "CONFIRMED",
         "consensus_score": 0.95,
         "evidence_image": null,
         "evidence_filename_pts_status": "MATCH",
-        "ingested_at_utc": "2026-09-26T18:31:04.801329+00:00"
+        "ingested_at_utc": "2026-09-26T17:32:42.338973+00:00"
       }
     ],
     "vehicle_details": {
-      "make_model": "Kia Seltos",
-      "color": "Red",
+      "make_model": "Mahindra Scorpio-N",
+      "color": "Black",
       "class": "SUV"
     },
-    "total_distance_km": 283.11,
-    "avg_speed_kmh": 48.6,
+    "total_distance_km": 5.2,
+    "avg_speed_kmh": 54.6,
+    "is_watchlist_match": false
+  },
+  {
+    "vehicle_id": "VEH-GJ03CD6427",
+    "registration_number": "GJ03CD6427",
+    "normalized_registration_number": "GJ03CD6427",
+    "first_seen": {
+      "camera_id": "cam16",
+      "pts_ms": 0.0,
+      "source_time": "2026-09-26T16:47:59.213547+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "last_seen": {
+      "camera_id": "cam02",
+      "pts_ms": 240000.0,
+      "source_time": "2026-09-26T17:01:36.505602+00:00",
+      "source_time_status": "RESOLVED"
+    },
+    "camera_count": 5,
+    "cameras": [
+      "cam16",
+      "cam05",
+      "cam01",
+      "cam15",
+      "cam02"
+    ],
+    "observation_count": 5,
+    "track_count": 5,
+    "best_consensus_score": 0.98,
+    "average_consensus_score": 0.94,
+    "status": "CONFIRMED",
+    "timeline": [
+      {
+        "camera_id": "cam16",
+        "track_id": "TRK-SIM-0001",
+        "first_seen_pts_ms": 0.0,
+        "recognition_pts_ms": 5000.0,
+        "last_seen_pts_ms": 15000.0,
+        "source_time": "2026-09-26T16:47:59.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.92,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:47:59.213547+00:00"
+      },
+      {
+        "camera_id": "cam05",
+        "track_id": "TRK-SIM-0002",
+        "first_seen_pts_ms": 60000.0,
+        "recognition_pts_ms": 65000.0,
+        "last_seen_pts_ms": 75000.0,
+        "source_time": "2026-09-26T16:50:29.213547+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.935,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:50:29.213547+00:00"
+      },
+      {
+        "camera_id": "cam01",
+        "track_id": "TRK-SIM-0003",
+        "first_seen_pts_ms": 120000.0,
+        "recognition_pts_ms": 125000.0,
+        "last_seen_pts_ms": 135000.0,
+        "source_time": "2026-09-26T16:54:27.036506+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.95,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:54:27.036506+00:00"
+      },
+      {
+        "camera_id": "cam15",
+        "track_id": "TRK-SIM-0004",
+        "first_seen_pts_ms": 180000.0,
+        "recognition_pts_ms": 185000.0,
+        "last_seen_pts_ms": 195000.0,
+        "source_time": "2026-09-26T16:59:06.505602+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.965,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T16:59:06.505602+00:00"
+      },
+      {
+        "camera_id": "cam02",
+        "track_id": "TRK-SIM-0005",
+        "first_seen_pts_ms": 240000.0,
+        "recognition_pts_ms": 245000.0,
+        "last_seen_pts_ms": 255000.0,
+        "source_time": "2026-09-26T17:01:36.505602+00:00",
+        "source_time_status": "RESOLVED",
+        "status": "CONFIRMED",
+        "consensus_score": 0.98,
+        "evidence_image": null,
+        "evidence_filename_pts_status": "MATCH",
+        "ingested_at_utc": "2026-09-26T17:01:36.505602+00:00"
+      }
+    ],
+    "vehicle_details": {
+      "make_model": "Royal Enfield Classic 350",
+      "color": "Black",
+      "class": "Two-Wheeler"
+    },
+    "total_distance_km": 9.61,
+    "avg_speed_kmh": 42.3,
     "is_watchlist_match": false
   }
 ]) as unknown as ObservedVehicle[]

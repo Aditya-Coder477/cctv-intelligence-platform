@@ -60,6 +60,10 @@ export const api = {
   getCamera: (id: string) => request<Camera>(`/api/cameras/${id}`),
   getCameraHealth: (id: string) => request<CameraHealth>(`/api/cameras/${id}/health`),
   getCameraStreams: (id: string) => request<StreamDescriptor[]>(`/api/cameras/${id}/streams`),
+  getCameraShortestPath: (fromCamera: string, toCamera: string) =>
+    request<any>(
+      `/api/cameras/shortest-path?from_camera=${encodeURIComponent(fromCamera)}&to_camera=${encodeURIComponent(toCamera)}`
+    ),
 
   // Vehicles
   getVehicles: (params?: { search?: string; cameraId?: string; minConsensus?: number; status?: string; limit?: number; offset?: number }) => {

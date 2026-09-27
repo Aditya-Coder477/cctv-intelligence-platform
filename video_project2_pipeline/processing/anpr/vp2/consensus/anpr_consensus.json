@@ -1,0 +1,3135 @@
+{
+  "camera_id": "vp2",
+  "total_tracks_processed": 30,
+  "total_plate_candidates_loaded": 55,
+  "candidates_eligible_for_ocr": 55,
+  "candidates_rejected_before_ocr": 0,
+  "rejection_reasons": {},
+  "total_ocr_invocations": 275,
+  "ocr_empty_count": 99,
+  "ocr_low_confidence_count": 34,
+  "ocr_valid_count": 142,
+  "recognition_counts": {
+    "CONFIRMED": 5,
+    "PROBABLE": 0,
+    "UNCERTAIN": 18,
+    "UNREADABLE": 7
+  },
+  "confirmed_count": 5,
+  "probable_count": 0,
+  "uncertain_count": 18,
+  "unreadable_count": 7,
+  "avg_ocr_latency_ms": 157.56,
+  "tracks": [
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0001",
+      "final_registration_number": "GJ06KP4520",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.7586,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 3633.0,
+      "last_seen_pts_ms": 4733.0,
+      "supporting_frame_ids": [
+        110
+      ],
+      "candidate_scores": {
+        "33LQJDGKP4520": 0.282,
+        "3LQJDGKP4520": 0.3181,
+        "EGJDGKP4520": 0.4285,
+        "1GJDGKP4520": 0.4111,
+        "SLGJOGKP4520": 0.3398,
+        "LQJDGKP4620": 0.2835,
+        "GJ06KP4520": 0.7586,
+        "UGJ0GKP45207": 0.2513,
+        "EGJOGKP45207": 0.2693,
+        "LQ09P4520": 0.4895,
+        "LQ404R4520": 0.2344,
+        "CQVE4P4520": 0.2437,
+        "LQVEKP4520": 0.2538,
+        "L0J06KP4520": 0.2504
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0001",
+          "frame_id": 110,
+          "pts_ms": 3633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282611.484,
+          "plate_bbox": [
+            543,
+            793,
+            719,
+            877
+          ],
+          "plate_detection_confidence": 0.7576,
+          "plate_quality_score": 0.3738,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "GJOGKP4520",
+            "confidence": 0.7223,
+            "character_confidences": [
+              0.7223
+            ],
+            "processing_time_ms": 328.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "GJOGKP4520",
+            "normalized_text": "GJ06KP4520",
+            "corrections": [
+              {
+                "original_char": "O",
+                "corrected_char": "0",
+                "position": 2,
+                "reason": "district_code_numeric_position_O_to_0"
+              },
+              {
+                "original_char": "G",
+                "corrected_char": "6",
+                "position": 3,
+                "reason": "district_code_numeric_position_G_to_6"
+              }
+            ],
+            "is_valid_format": true,
+            "format_name": "standard_indian_10"
+          },
+          "observation_score": 0.7586,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0001_frame000110_pts3633_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0002",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.5041,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 4,
+      "total_observations_examined": 20,
+      "first_seen_pts_ms": 433.0,
+      "last_seen_pts_ms": 566.0,
+      "supporting_frame_ids": [
+        18
+      ],
+      "candidate_scores": {
+        "DW": 0.5041,
+        "U4": 0.2423
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0002",
+          "frame_id": 18,
+          "pts_ms": 566.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282612.921,
+          "plate_bbox": [
+            77,
+            400,
+            155,
+            441
+          ],
+          "plate_detection_confidence": 0.7113,
+          "plate_quality_score": 0.4421,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "DW",
+            "confidence": 0.6777,
+            "character_confidences": [
+              0.6777
+            ],
+            "processing_time_ms": 93.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "DW",
+            "normalized_text": "DW",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.5041,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0002_frame000018_pts566_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0002",
+          "frame_id": 18,
+          "pts_ms": 566.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282612.921,
+          "plate_bbox": [
+            77,
+            400,
+            155,
+            441
+          ],
+          "plate_detection_confidence": 0.7113,
+          "plate_quality_score": 0.4421,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "DW",
+            "confidence": 0.5289,
+            "character_confidences": [
+              0.5289
+            ],
+            "processing_time_ms": 110.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "DW",
+            "normalized_text": "DW",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4446,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0002_frame000018_pts566_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0003",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 4733.0,
+      "last_seen_pts_ms": 5133.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0017",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.3,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 4100.0,
+      "last_seen_pts_ms": 4166.0,
+      "supporting_frame_ids": [
+        124
+      ],
+      "candidate_scores": {
+        "202360621111633841": 0.291,
+        "202360621111333841": 0.28,
+        "2023206211611333841": 0.2926,
+        "2023206211611333141": 0.279,
+        "521111333861": 0.3,
+        "5211511333841": 0.268,
+        "5211611333841": 0.291
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0017",
+          "frame_id": 124,
+          "pts_ms": 4100.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282618.64,
+          "plate_bbox": [
+            114,
+            2,
+            288,
+            28
+          ],
+          "plate_detection_confidence": 0.1244,
+          "plate_quality_score": 0.7698,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "521111333861",
+            "confidence": 0.2173,
+            "character_confidences": [
+              0.2173
+            ],
+            "processing_time_ms": 172.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "521111333861",
+            "normalized_text": "521111333861",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.2811,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0017_frame000124_pts4100_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0017",
+          "frame_id": 124,
+          "pts_ms": 4100.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282618.64,
+          "plate_bbox": [
+            114,
+            2,
+            288,
+            28
+          ],
+          "plate_detection_confidence": 0.1244,
+          "plate_quality_score": 0.7698,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "521111333861",
+            "confidence": 0.2646,
+            "character_confidences": [
+              0.2646
+            ],
+            "processing_time_ms": 156.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "521111333861",
+            "normalized_text": "521111333861",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.3,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0017_frame000124_pts4100_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0017",
+          "frame_id": 124,
+          "pts_ms": 4100.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282618.64,
+          "plate_bbox": [
+            114,
+            2,
+            288,
+            28
+          ],
+          "plate_detection_confidence": 0.1244,
+          "plate_quality_score": 0.7698,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "521111333861",
+            "confidence": 0.2247,
+            "character_confidences": [
+              0.2247
+            ],
+            "processing_time_ms": 172.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "521111333861",
+            "normalized_text": "521111333861",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.284,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0017_frame000124_pts4100_plate03.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0024",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.3262,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 6133.0,
+      "last_seen_pts_ms": 6133.0,
+      "supporting_frame_ids": [
+        185
+      ],
+      "candidate_scores": {
+        "QORO0": 0.2683,
+        "QDRO0": 0.2733,
+        "DO0": 0.3262,
+        "QDPOD": 0.2581,
+        "NPOU": 0.2543
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0024",
+          "frame_id": 185,
+          "pts_ms": 6133.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282621.421,
+          "plate_bbox": [
+            783,
+            522,
+            902,
+            582
+          ],
+          "plate_detection_confidence": 0.6938,
+          "plate_quality_score": 0.5022,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "DO0",
+            "confidence": 0.2171,
+            "character_confidences": [
+              0.2171
+            ],
+            "processing_time_ms": 203.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "DO0",
+            "normalized_text": "DO0",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3262,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0024_frame000185_pts6133_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0026",
+      "final_registration_number": "QU01PL9006",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.6124,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 6800.0,
+      "last_seen_pts_ms": 6899.0,
+      "supporting_frame_ids": [
+        205
+      ],
+      "candidate_scores": {
+        "LQ0119006": 0.3257,
+        "QU01PL9006": 0.6124,
+        "EQ01PL9006": 0.5739,
+        "EQJ0IPL9006": 0.2931,
+        "T": 0.1665
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0026",
+          "frame_id": 205,
+          "pts_ms": 6800.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282622.437,
+          "plate_bbox": [
+            726,
+            646,
+            870,
+            689
+          ],
+          "plate_detection_confidence": 0.6718,
+          "plate_quality_score": 0.6423,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "QU0IPL9006",
+            "confidence": 0.2881,
+            "character_confidences": [
+              0.2881
+            ],
+            "processing_time_ms": 157.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "QU0IPL9006",
+            "normalized_text": "QU01PL9006",
+            "corrections": [
+              {
+                "original_char": "I",
+                "corrected_char": "1",
+                "position": 3,
+                "reason": "district_code_numeric_position_I_to_1"
+              }
+            ],
+            "is_valid_format": true,
+            "format_name": "standard_indian_unrecognized_state"
+          },
+          "observation_score": 0.6124,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0026_frame000205_pts6800_plate07.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0049",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.3297,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 10766.0,
+      "last_seen_pts_ms": 11000.0,
+      "supporting_frame_ids": [
+        324
+      ],
+      "candidate_scores": {
+        "Q01L57": 0.2996,
+        "Q487567": 0.3044,
+        "EQU1QN4567": 0.2872,
+        "EQJI0R14567": 0.3002,
+        "E095": 0.2705,
+        "E6100190": 0.2636,
+        "06100196": 0.2638,
+        "E64I0614567": 0.2768,
+        "E6J10814567": 0.3297
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0049",
+          "frame_id": 324,
+          "pts_ms": 10766.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282631.609,
+          "plate_bbox": [
+            838,
+            511,
+            960,
+            571
+          ],
+          "plate_detection_confidence": 0.7007,
+          "plate_quality_score": 0.5968,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "E6J10814567",
+            "confidence": 0.1877,
+            "character_confidences": [
+              0.1877
+            ],
+            "processing_time_ms": 141.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "E6J10814567",
+            "normalized_text": "E6J10814567",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.3297,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0049_frame000324_pts10766_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0057",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.4885,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 12400.0,
+      "last_seen_pts_ms": 12400.0,
+      "supporting_frame_ids": [
+        373
+      ],
+      "candidate_scores": {
+        "EQUIBRI456Z": 0.2647,
+        "EQJIBRTL56Z": 0.3206,
+        "EGJIBRT4567": 0.4885,
+        "FGJIBRT4567": 0.365
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0057",
+          "frame_id": 373,
+          "pts_ms": 12400.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282635.468,
+          "plate_bbox": [
+            689,
+            853,
+            872,
+            929
+          ],
+          "plate_detection_confidence": 0.6961,
+          "plate_quality_score": 0.5402,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "EGJIBRT4567",
+            "confidence": 0.3576,
+            "character_confidences": [
+              0.3576
+            ],
+            "processing_time_ms": 312.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "EGJIBRT4567",
+            "normalized_text": "EGJIBRT4567",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.3885,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0057",
+          "frame_id": 373,
+          "pts_ms": 12400.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282635.468,
+          "plate_bbox": [
+            689,
+            853,
+            872,
+            929
+          ],
+          "plate_detection_confidence": 0.6961,
+          "plate_quality_score": 0.5402,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "FGJIBRT4567",
+            "confidence": 0.2988,
+            "character_confidences": [
+              0.2988
+            ],
+            "processing_time_ms": 329.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "FGJIBRT4567",
+            "normalized_text": "FGJIBRT4567",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.365,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0057_frame000373_pts12400_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0073",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.554,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 16366.0,
+      "last_seen_pts_ms": 16500.0,
+      "supporting_frame_ids": [
+        492
+      ],
+      "candidate_scores": {
+        "IQD": 0.2881,
+        "I002": 0.2806,
+        "IQ": 0.3246,
+        "E0405862621": 0.2827,
+        "EO40S47621": 0.2917,
+        "D0M": 0.3187,
+        "D00D": 0.2853,
+        "D00": 0.554,
+        "MD0W": 0.2827,
+        "EQJ0E0Q3": 0.2768
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0073",
+          "frame_id": 492,
+          "pts_ms": 16366.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282640.562,
+          "plate_bbox": [
+            843,
+            495,
+            959,
+            546
+          ],
+          "plate_detection_confidence": 0.6335,
+          "plate_quality_score": 0.7769,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "D0M",
+            "confidence": 0.1177,
+            "character_confidences": [
+              0.1177
+            ],
+            "processing_time_ms": 62.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "D0M",
+            "normalized_text": "D0M",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3187,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0073_frame000492_pts16366_plate04.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0073",
+          "frame_id": 492,
+          "pts_ms": 16366.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282640.562,
+          "plate_bbox": [
+            843,
+            495,
+            959,
+            546
+          ],
+          "plate_detection_confidence": 0.6335,
+          "plate_quality_score": 0.7769,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "D00D",
+            "confidence": 0.0343,
+            "character_confidences": [
+              0.0343
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "D00D",
+            "normalized_text": "D00D",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2853,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0073_frame000492_pts16366_plate04.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0073",
+          "frame_id": 492,
+          "pts_ms": 16366.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282640.562,
+          "plate_bbox": [
+            843,
+            495,
+            959,
+            546
+          ],
+          "plate_detection_confidence": 0.6335,
+          "plate_quality_score": 0.7769,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "D00",
+            "confidence": 0.2062,
+            "character_confidences": [
+              0.2062
+            ],
+            "processing_time_ms": 156.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "D00",
+            "normalized_text": "D00",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.354,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0073_frame000492_pts16366_plate04.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0100",
+      "final_registration_number": "GJ1M1214",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.6172,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 21666.0,
+      "last_seen_pts_ms": 21666.0,
+      "supporting_frame_ids": [
+        651
+      ],
+      "candidate_scores": {
+        "214": 0.3929,
+        "761214": 0.3372,
+        "0J214": 0.4208,
+        "6J11214": 0.4201,
+        "GJ1M1214": 0.6172
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0100",
+          "frame_id": 651,
+          "pts_ms": 21666.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282649.671,
+          "plate_bbox": [
+            789,
+            681,
+            922,
+            728
+          ],
+          "plate_detection_confidence": 0.7348,
+          "plate_quality_score": 0.9052,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "GJ1M1214",
+            "confidence": 0.178,
+            "character_confidences": [
+              0.178
+            ],
+            "processing_time_ms": 172.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "GJ1M1214",
+            "normalized_text": "GJ1M1214",
+            "corrections": [],
+            "is_valid_format": true,
+            "format_name": "short_indian_legacy"
+          },
+          "observation_score": 0.6172,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0100_frame000651_pts21666_plate03.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0104",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 21600.0,
+      "last_seen_pts_ms": 21600.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0106",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.4051,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 22400.0,
+      "last_seen_pts_ms": 22566.0,
+      "supporting_frame_ids": [
+        678
+      ],
+      "candidate_scores": {
+        "5": 0.4051,
+        "3133F": 0.1721,
+        "331LO": 0.1716,
+        "33L2": 0.1743
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0106",
+          "frame_id": 678,
+          "pts_ms": 22566.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282653.14,
+          "plate_bbox": [
+            183,
+            329,
+            201,
+            352
+          ],
+          "plate_detection_confidence": 0.2323,
+          "plate_quality_score": 0.5394,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "5",
+            "confidence": 0.5735,
+            "character_confidences": [
+              0.5735
+            ],
+            "processing_time_ms": 47.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "5",
+            "normalized_text": "5",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4051,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0106_frame000678_pts22566_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0112",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.5969,
+      "supporting_frame_count": 3,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 26200.0,
+      "last_seen_pts_ms": 26400.0,
+      "supporting_frame_ids": [
+        787,
+        791,
+        793
+      ],
+      "candidate_scores": {
+        "3M": 0.2178,
+        "S": 0.2104,
+        "LMLT3": 0.2171,
+        "IJ": 0.2596,
+        "1TF": 0.2153,
+        "2": 0.5969,
+        "22": 0.2206,
+        "F5": 0.215,
+        "ALI": 0.2886,
+        "122F": 0.2034,
+        "N": 0.1967,
+        "OD2D": 0.2053,
+        "41": 0.192
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0112",
+          "frame_id": 791,
+          "pts_ms": 26333.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282655.437,
+          "plate_bbox": [
+            1766,
+            714,
+            1854,
+            738
+          ],
+          "plate_detection_confidence": 0.3476,
+          "plate_quality_score": 0.6428,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "S",
+            "confidence": 0.0047,
+            "character_confidences": [
+              0.0047
+            ],
+            "processing_time_ms": 172.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "S",
+            "normalized_text": "S",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2104,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0112_frame000791_pts26333_plate05.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0112",
+          "frame_id": 787,
+          "pts_ms": 26200.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282655.39,
+          "plate_bbox": [
+            1742,
+            685,
+            1827,
+            717
+          ],
+          "plate_detection_confidence": 0.3935,
+          "plate_quality_score": 0.5965,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "2",
+            "confidence": 0.221,
+            "character_confidences": [
+              0.221
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "2",
+            "normalized_text": "2",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2969,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0112_frame000787_pts26200_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0112",
+          "frame_id": 787,
+          "pts_ms": 26200.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282655.39,
+          "plate_bbox": [
+            1742,
+            685,
+            1827,
+            717
+          ],
+          "plate_detection_confidence": 0.3935,
+          "plate_quality_score": 0.5965,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "22",
+            "confidence": 0.0303,
+            "character_confidences": [
+              0.0303
+            ],
+            "processing_time_ms": 110.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "22",
+            "normalized_text": "22",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2206,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0112_frame000787_pts26200_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0112",
+          "frame_id": 793,
+          "pts_ms": 26400.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282655.375,
+          "plate_bbox": [
+            1780,
+            731,
+            1875,
+            758
+          ],
+          "plate_detection_confidence": 0.2246,
+          "plate_quality_score": 0.6246,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "N",
+            "confidence": 0.0232,
+            "character_confidences": [
+              0.0232
+            ],
+            "processing_time_ms": 110.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "N",
+            "normalized_text": "N",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.1967,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0112_frame000793_pts26400_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0116",
+      "final_registration_number": "GJ11A1234",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.7028,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 26266.0,
+      "last_seen_pts_ms": 27000.0,
+      "supporting_frame_ids": [
+        789
+      ],
+      "candidate_scores": {
+        "61141234": 0.381,
+        "61141214": 0.3747,
+        "GJ11A1234": 0.7028,
+        "0J111234": 0.5314,
+        "611A1234": 0.5326,
+        "GJ11441234": 0.3714,
+        "6J111234": 0.5007
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0116",
+          "frame_id": 789,
+          "pts_ms": 26266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282656.468,
+          "plate_bbox": [
+            715,
+            804,
+            887,
+            863
+          ],
+          "plate_detection_confidence": 0.7427,
+          "plate_quality_score": 0.8123,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "6J11A1234",
+            "confidence": 0.4238,
+            "character_confidences": [
+              0.4238
+            ],
+            "processing_time_ms": 235.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "6J11A1234",
+            "normalized_text": "GJ11A1234",
+            "corrections": [
+              {
+                "original_char": "6",
+                "corrected_char": "G",
+                "position": 0,
+                "reason": "state_code_alpha_position_6_to_G"
+              }
+            ],
+            "is_valid_format": true,
+            "format_name": "short_indian_legacy"
+          },
+          "observation_score": 0.7028,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0116_frame000789_pts26266_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0121",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.2163,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 29233.0,
+      "last_seen_pts_ms": 29233.0,
+      "supporting_frame_ids": [
+        878
+      ],
+      "candidate_scores": {
+        "D": 0.2163
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0121",
+          "frame_id": 878,
+          "pts_ms": 29233.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282659.0,
+          "plate_bbox": [
+            500,
+            482,
+            533,
+            508
+          ],
+          "plate_detection_confidence": 0.4032,
+          "plate_quality_score": 0.3764,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "D",
+            "confidence": 0.0983,
+            "character_confidences": [
+              0.0983
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "D",
+            "normalized_text": "D",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2163,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0121_frame000878_pts29233_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0129",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.6396,
+      "supporting_frame_count": 2,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 32433.0,
+      "last_seen_pts_ms": 32500.0,
+      "supporting_frame_ids": [
+        974,
+        976
+      ],
+      "candidate_scores": {
+        "L": 0.2436,
+        "IC": 0.2512,
+        "J0E": 0.2453,
+        "E": 0.3727,
+        "C4": 0.2375,
+        "D": 0.6396
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0129",
+          "frame_id": 976,
+          "pts_ms": 32500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282660.921,
+          "plate_bbox": [
+            1575,
+            239,
+            1640,
+            273
+          ],
+          "plate_detection_confidence": 0.6378,
+          "plate_quality_score": 0.3794,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "L",
+            "confidence": 0.0776,
+            "character_confidences": [
+              0.0776
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "L",
+            "normalized_text": "L",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2436,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0129_frame000976_pts32500_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0129",
+          "frame_id": 974,
+          "pts_ms": 32433.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282660.968,
+          "plate_bbox": [
+            1650,
+            244,
+            1721,
+            279
+          ],
+          "plate_detection_confidence": 0.5953,
+          "plate_quality_score": 0.374,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "E",
+            "confidence": 0.4183,
+            "character_confidences": [
+              0.4183
+            ],
+            "processing_time_ms": 125.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "E",
+            "normalized_text": "E",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3727,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0129_frame000974_pts32433_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0129",
+          "frame_id": 974,
+          "pts_ms": 32433.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282660.968,
+          "plate_bbox": [
+            1650,
+            244,
+            1721,
+            279
+          ],
+          "plate_detection_confidence": 0.5953,
+          "plate_quality_score": 0.374,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "D",
+            "confidence": 0.5854,
+            "character_confidences": [
+              0.5854
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "D",
+            "normalized_text": "D",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4396,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0129_frame000974_pts32433_plate03.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0131",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.4739,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 36766.0,
+      "last_seen_pts_ms": 37266.0,
+      "supporting_frame_ids": [
+        1104
+      ],
+      "candidate_scores": {
+        "46J100R67294041": 0.2533,
+        "46J100R67244411": 0.2682,
+        "I26J100R6729J711": 0.3128,
+        "26J100R6729": 0.4739,
+        "2GJ100R6729": 0.3855,
+        "26J100R672447111": 0.4739,
+        "L26J100R67244": 0.4523,
+        "396J100R6724Y": 0.4591
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0131",
+          "frame_id": 1104,
+          "pts_ms": 36766.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282661.765,
+          "plate_bbox": [
+            1405,
+            800,
+            1641,
+            998
+          ],
+          "plate_detection_confidence": 0.7431,
+          "plate_quality_score": 0.3136,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "26J100R672447111",
+            "confidence": 0.6152,
+            "character_confidences": [
+              0.681,
+              0.5493
+            ],
+            "processing_time_ms": 297.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "26J100R672447111",
+            "normalized_text": "26J100R672447111",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4646,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0131_frame001104_pts36766_plate02.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0131",
+          "frame_id": 1104,
+          "pts_ms": 36766.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282661.765,
+          "plate_bbox": [
+            1405,
+            800,
+            1641,
+            998
+          ],
+          "plate_detection_confidence": 0.7431,
+          "plate_quality_score": 0.3136,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "26J100R672447111",
+            "confidence": 0.5938,
+            "character_confidences": [
+              0.681,
+              0.5067
+            ],
+            "processing_time_ms": 297.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "26J100R672447111",
+            "normalized_text": "26J100R672447111",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.456,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0131_frame001104_pts36766_plate02.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0131",
+          "frame_id": 1104,
+          "pts_ms": 36766.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282661.765,
+          "plate_bbox": [
+            1405,
+            800,
+            1641,
+            998
+          ],
+          "plate_detection_confidence": 0.7431,
+          "plate_quality_score": 0.3136,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "26J100R672447111",
+            "confidence": 0.6385,
+            "character_confidences": [
+              0.6538,
+              0.6233
+            ],
+            "processing_time_ms": 1000.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "26J100R672447111",
+            "normalized_text": "26J100R672447111",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4739,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0131_frame001104_pts36766_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0135",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.6968,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 36866.0,
+      "last_seen_pts_ms": 36933.0,
+      "supporting_frame_ids": [
+        1109
+      ],
+      "candidate_scores": {
+        "T1": 0.2402,
+        "T": 0.3226,
+        "C": 0.6968,
+        "U1": 0.24
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0135",
+          "frame_id": 1109,
+          "pts_ms": 36933.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282664.546,
+          "plate_bbox": [
+            1656,
+            242,
+            1728,
+            282
+          ],
+          "plate_detection_confidence": 0.6543,
+          "plate_quality_score": 0.3834,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "T",
+            "confidence": 0.2674,
+            "character_confidences": [
+              0.2674
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "T",
+            "normalized_text": "T",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3226,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0135",
+          "frame_id": 1109,
+          "pts_ms": 36933.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282664.546,
+          "plate_bbox": [
+            1656,
+            242,
+            1728,
+            282
+          ],
+          "plate_detection_confidence": 0.6543,
+          "plate_quality_score": 0.3834,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "C",
+            "confidence": 0.953,
+            "character_confidences": [
+              0.953
+            ],
+            "processing_time_ms": 140.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "C",
+            "normalized_text": "C",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.5968,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0135_frame001109_pts36933_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0137",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.6107,
+      "supporting_frame_count": 3,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 38000.0,
+      "last_seen_pts_ms": 38333.0,
+      "supporting_frame_ids": [
+        1141,
+        1146,
+        1151
+      ],
+      "candidate_scores": {
+        "DD": 0.6107,
+        "DO": 0.3969,
+        "QO": 0.3011,
+        "QMQ": 0.281,
+        "TWW": 0.3221,
+        "TWWS": 0.3275,
+        "DWG": 0.298,
+        "DWI": 0.3422
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1146,
+          "pts_ms": 38166.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.421,
+          "plate_bbox": [
+            1221,
+            404,
+            1330,
+            453
+          ],
+          "plate_detection_confidence": 0.7381,
+          "plate_quality_score": 0.5513,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "DD",
+            "confidence": 0.4349,
+            "character_confidences": [
+              0.4349
+            ],
+            "processing_time_ms": 63.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "DD",
+            "normalized_text": "DD",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4274,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1146,
+          "pts_ms": 38166.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.421,
+          "plate_bbox": [
+            1221,
+            404,
+            1330,
+            453
+          ],
+          "plate_detection_confidence": 0.7381,
+          "plate_quality_score": 0.5513,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "DD",
+            "confidence": 0.4342,
+            "character_confidences": [
+              0.4342
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "DD",
+            "normalized_text": "DD",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4271,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1146,
+          "pts_ms": 38166.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.421,
+          "plate_bbox": [
+            1221,
+            404,
+            1330,
+            453
+          ],
+          "plate_detection_confidence": 0.7381,
+          "plate_quality_score": 0.5513,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "DO",
+            "confidence": 0.29,
+            "character_confidences": [
+              0.29
+            ],
+            "processing_time_ms": 156.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "DO",
+            "normalized_text": "DO",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3694,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0137_frame001146_pts38166_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1151,
+          "pts_ms": 38333.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.453,
+          "plate_bbox": [
+            1198,
+            414,
+            1309,
+            465
+          ],
+          "plate_detection_confidence": 0.7234,
+          "plate_quality_score": 0.5528,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "DD",
+            "confidence": 0.0832,
+            "character_confidences": [
+              0.0832
+            ],
+            "processing_time_ms": 93.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "DD",
+            "normalized_text": "DD",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2847,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0137_frame001151_pts38333_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1151,
+          "pts_ms": 38333.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.453,
+          "plate_bbox": [
+            1198,
+            414,
+            1309,
+            465
+          ],
+          "plate_detection_confidence": 0.7234,
+          "plate_quality_score": 0.5528,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "DD",
+            "confidence": 0.38,
+            "character_confidences": [
+              0.38
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "DD",
+            "normalized_text": "DD",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4034,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0137_frame001151_pts38333_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1151,
+          "pts_ms": 38333.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.453,
+          "plate_bbox": [
+            1198,
+            414,
+            1309,
+            465
+          ],
+          "plate_detection_confidence": 0.7234,
+          "plate_quality_score": 0.5528,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "DD",
+            "confidence": 0.0539,
+            "character_confidences": [
+              0.0539
+            ],
+            "processing_time_ms": 172.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "DD",
+            "normalized_text": "DD",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.273,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0137_frame001151_pts38333_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1141,
+          "pts_ms": 38000.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.437,
+          "plate_bbox": [
+            1242,
+            395,
+            1348,
+            443
+          ],
+          "plate_detection_confidence": 0.7047,
+          "plate_quality_score": 0.5544,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "DD",
+            "confidence": 0.2472,
+            "character_confidences": [
+              0.2472
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "DD",
+            "normalized_text": "DD",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3478,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0137_frame001141_pts38000_plate02.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1141,
+          "pts_ms": 38000.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.437,
+          "plate_bbox": [
+            1242,
+            395,
+            1348,
+            443
+          ],
+          "plate_detection_confidence": 0.7047,
+          "plate_quality_score": 0.5544,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "DD",
+            "confidence": 0.143,
+            "character_confidences": [
+              0.143
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "DD",
+            "normalized_text": "DD",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3061,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0137_frame001141_pts38000_plate02.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0137",
+          "frame_id": 1141,
+          "pts_ms": 38000.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282665.437,
+          "plate_bbox": [
+            1242,
+            395,
+            1348,
+            443
+          ],
+          "plate_detection_confidence": 0.7047,
+          "plate_quality_score": 0.5544,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "DO",
+            "confidence": 0.1798,
+            "character_confidences": [
+              0.1798
+            ],
+            "processing_time_ms": 125.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "DO",
+            "normalized_text": "DO",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3208,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0137_frame001141_pts38000_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0138",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.5709,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 39666.0,
+      "last_seen_pts_ms": 39800.0,
+      "supporting_frame_ids": [
+        1191
+      ],
+      "candidate_scores": {
+        "IUL": 0.3291,
+        "IU": 0.3649,
+        "MQ": 0.2429,
+        "QQ": 0.2632,
+        "L9": 0.2356,
+        "M4": 0.2722,
+        "04": 0.5709
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0138",
+          "frame_id": 1191,
+          "pts_ms": 39666.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282666.218,
+          "plate_bbox": [
+            107,
+            377,
+            182,
+            413
+          ],
+          "plate_detection_confidence": 0.5767,
+          "plate_quality_score": 0.531,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "M4",
+            "confidence": 0.1151,
+            "character_confidences": [
+              0.1151
+            ],
+            "processing_time_ms": 109.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "M4",
+            "normalized_text": "M4",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.2722,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0138_frame001191_pts39666_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0138",
+          "frame_id": 1191,
+          "pts_ms": 39666.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282666.218,
+          "plate_bbox": [
+            107,
+            377,
+            182,
+            413
+          ],
+          "plate_detection_confidence": 0.5767,
+          "plate_quality_score": 0.531,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "04",
+            "confidence": 0.6119,
+            "character_confidences": [
+              0.6119
+            ],
+            "processing_time_ms": 110.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "04",
+            "normalized_text": "04",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4709,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0138_frame001191_pts39666_plate03.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0152",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 2,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 38600.0,
+      "last_seen_pts_ms": 39100.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0168",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 42100.0,
+      "last_seen_pts_ms": 42100.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0177",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.6059,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 49233.0,
+      "last_seen_pts_ms": 49233.0,
+      "supporting_frame_ids": [
+        1478
+      ],
+      "candidate_scores": {
+        "EGJZHG": 0.4366,
+        "QZHE": 0.6059,
+        "GJOZHE": 0.365
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0177",
+          "frame_id": 1478,
+          "pts_ms": 49233.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282678.093,
+          "plate_bbox": [
+            788,
+            679,
+            911,
+            722
+          ],
+          "plate_detection_confidence": 0.7396,
+          "plate_quality_score": 0.9039,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "QZHE",
+            "confidence": 0.4149,
+            "character_confidences": [
+              0.4149
+            ],
+            "processing_time_ms": 140.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "QZHE",
+            "normalized_text": "QZHE",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4725,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0177",
+          "frame_id": 1478,
+          "pts_ms": 49233.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282678.093,
+          "plate_bbox": [
+            788,
+            679,
+            911,
+            722
+          ],
+          "plate_detection_confidence": 0.7396,
+          "plate_quality_score": 0.9039,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "QZHE",
+            "confidence": 0.7485,
+            "character_confidences": [
+              0.7485
+            ],
+            "processing_time_ms": 125.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "QZHE",
+            "normalized_text": "QZHE",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.6059,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0177_frame001478_pts49233_plate02.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0186",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.8131,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 10,
+      "first_seen_pts_ms": 49266.0,
+      "last_seen_pts_ms": 49266.0,
+      "supporting_frame_ids": [
+        1479
+      ],
+      "candidate_scores": {
+        "6GJOZ": 0.3868,
+        "FGJOZ": 0.4245,
+        "GJOZ": 0.8131
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0186",
+          "frame_id": 1479,
+          "pts_ms": 49266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282682.062,
+          "plate_bbox": [
+            592,
+            276,
+            758,
+            395
+          ],
+          "plate_detection_confidence": 0.236,
+          "plate_quality_score": 0.9068,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "6GJOZ",
+            "confidence": 0.3884,
+            "character_confidences": [
+              0.3884
+            ],
+            "processing_time_ms": 141.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "6GJOZ",
+            "normalized_text": "6GJOZ",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.3868,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0186",
+          "frame_id": 1479,
+          "pts_ms": 49266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282682.062,
+          "plate_bbox": [
+            592,
+            276,
+            758,
+            395
+          ],
+          "plate_detection_confidence": 0.236,
+          "plate_quality_score": 0.9068,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "FGJOZ",
+            "confidence": 0.4828,
+            "character_confidences": [
+              0.4828
+            ],
+            "processing_time_ms": 125.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "FGJOZ",
+            "normalized_text": "FGJOZ",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.4245,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0186",
+          "frame_id": 1479,
+          "pts_ms": 49266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282682.062,
+          "plate_bbox": [
+            592,
+            276,
+            758,
+            395
+          ],
+          "plate_detection_confidence": 0.236,
+          "plate_quality_score": 0.9068,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "GJOZ",
+            "confidence": 0.9219,
+            "character_confidences": [
+              0.9219
+            ],
+            "processing_time_ms": 375.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "GJOZ",
+            "normalized_text": "GJOZ",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.6002,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0186",
+          "frame_id": 1479,
+          "pts_ms": 49266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282682.062,
+          "plate_bbox": [
+            592,
+            276,
+            758,
+            395
+          ],
+          "plate_detection_confidence": 0.236,
+          "plate_quality_score": 0.9068,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "GJOZ",
+            "confidence": 0.9541,
+            "character_confidences": [
+              0.9541
+            ],
+            "processing_time_ms": 359.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "GJOZ",
+            "normalized_text": "GJOZ",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.6131,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0186",
+          "frame_id": 1479,
+          "pts_ms": 49266.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282682.062,
+          "plate_bbox": [
+            592,
+            276,
+            758,
+            395
+          ],
+          "plate_detection_confidence": 0.236,
+          "plate_quality_score": 0.9068,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "GJOZ",
+            "confidence": 0.8668,
+            "character_confidences": [
+              0.8668
+            ],
+            "processing_time_ms": 344.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "GJOZ",
+            "normalized_text": "GJOZ",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "incomplete_text"
+          },
+          "observation_score": 0.5782,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0186_frame001479_pts49266_plate07.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0192",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 44600.0,
+      "last_seen_pts_ms": 44600.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0195",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.7928,
+      "supporting_frame_count": 2,
+      "total_frames_examined": 3,
+      "total_observations_examined": 15,
+      "first_seen_pts_ms": 45100.0,
+      "last_seen_pts_ms": 45933.0,
+      "supporting_frame_ids": [
+        1366,
+        1379
+      ],
+      "candidate_scores": {
+        "GJIIAAI": 0.5448,
+        "EGJTIAAT": 0.3235,
+        "GJIIAAT": 0.7928,
+        "IGJTIA": 0.4516,
+        "IGJIIA": 0.5189,
+        "GJIIAAL": 0.4532
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1379,
+          "pts_ms": 45933.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.921,
+          "plate_bbox": [
+            701,
+            256,
+            845,
+            330
+          ],
+          "plate_detection_confidence": 0.262,
+          "plate_quality_score": 0.8465,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "GJIIAAI",
+            "confidence": 0.5175,
+            "character_confidences": [
+              0.5175
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "GJIIAAI",
+            "normalized_text": "GJIIAAI",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4333,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1379,
+          "pts_ms": 45933.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.921,
+          "plate_bbox": [
+            701,
+            256,
+            845,
+            330
+          ],
+          "plate_detection_confidence": 0.262,
+          "plate_quality_score": 0.8465,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "GJIIAAI",
+            "confidence": 0.5175,
+            "character_confidences": [
+              0.5175
+            ],
+            "processing_time_ms": 93.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "GJIIAAI",
+            "normalized_text": "GJIIAAI",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4333,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1379,
+          "pts_ms": 45933.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.921,
+          "plate_bbox": [
+            701,
+            256,
+            845,
+            330
+          ],
+          "plate_detection_confidence": 0.262,
+          "plate_quality_score": 0.8465,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "GJIIAAI",
+            "confidence": 0.7962,
+            "character_confidences": [
+              0.7962
+            ],
+            "processing_time_ms": 219.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "GJIIAAI",
+            "normalized_text": "GJIIAAI",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.5448,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1379,
+          "pts_ms": 45933.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.921,
+          "plate_bbox": [
+            701,
+            256,
+            845,
+            330
+          ],
+          "plate_detection_confidence": 0.262,
+          "plate_quality_score": 0.8465,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "GJIIAAT",
+            "confidence": 0.7543,
+            "character_confidences": [
+              0.7543
+            ],
+            "processing_time_ms": 234.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "GJIIAAT",
+            "normalized_text": "GJIIAAT",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.528,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0195_frame001379_pts45933_plate04.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1366,
+          "pts_ms": 45500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.89,
+          "plate_bbox": [
+            702,
+            249,
+            846,
+            328
+          ],
+          "plate_detection_confidence": 0.1831,
+          "plate_quality_score": 0.8339,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "GJIIAAL",
+            "confidence": 0.4989,
+            "character_confidences": [
+              0.4989
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "GJIIAAL",
+            "normalized_text": "GJIIAAL",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4121,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1366,
+          "pts_ms": 45500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.89,
+          "plate_bbox": [
+            702,
+            249,
+            846,
+            328
+          ],
+          "plate_detection_confidence": 0.1831,
+          "plate_quality_score": 0.8339,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "GJIIAAL",
+            "confidence": 0.4989,
+            "character_confidences": [
+              0.4989
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "GJIIAAL",
+            "normalized_text": "GJIIAAL",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4121,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1366,
+          "pts_ms": 45500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.89,
+          "plate_bbox": [
+            702,
+            249,
+            846,
+            328
+          ],
+          "plate_detection_confidence": 0.1831,
+          "plate_quality_score": 0.8339,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "GJIIAAL",
+            "confidence": 0.6016,
+            "character_confidences": [
+              0.6016
+            ],
+            "processing_time_ms": 266.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "GJIIAAL",
+            "normalized_text": "GJIIAAL",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4532,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1366,
+          "pts_ms": 45500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.89,
+          "plate_bbox": [
+            702,
+            249,
+            846,
+            328
+          ],
+          "plate_detection_confidence": 0.1831,
+          "plate_quality_score": 0.8339,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "GJIIAAT",
+            "confidence": 0.726,
+            "character_confidences": [
+              0.726
+            ],
+            "processing_time_ms": 266.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "GJIIAAT",
+            "normalized_text": "GJIIAAT",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.503,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0195",
+          "frame_id": 1366,
+          "pts_ms": 45500.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282686.89,
+          "plate_bbox": [
+            702,
+            249,
+            846,
+            328
+          ],
+          "plate_detection_confidence": 0.1831,
+          "plate_quality_score": 0.8339,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "GJIIAAT",
+            "confidence": 0.4743,
+            "character_confidences": [
+              0.4743
+            ],
+            "processing_time_ms": 265.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "GJIIAAT",
+            "normalized_text": "GJIIAAT",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4023,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0195_frame001366_pts45500_plate03.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0200",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 45933.0,
+      "last_seen_pts_ms": 45933.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0205",
+      "final_registration_number": null,
+      "recognition_status": "UNCERTAIN",
+      "consensus_score": 0.7064,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 46633.0,
+      "last_seen_pts_ms": 46633.0,
+      "supporting_frame_ids": [
+        1400
+      ],
+      "candidate_scores": {
+        "4A1234": 0.5879,
+        "AA1234": 0.7064
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0205",
+          "frame_id": 1400,
+          "pts_ms": 46633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282690.781,
+          "plate_bbox": [
+            802,
+            291,
+            902,
+            327
+          ],
+          "plate_detection_confidence": 0.139,
+          "plate_quality_score": 0.9378,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "4A1234",
+            "confidence": 0.8504,
+            "character_confidences": [
+              0.8504
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "4A1234",
+            "normalized_text": "4A1234",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.5617,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0205",
+          "frame_id": 1400,
+          "pts_ms": 46633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282690.781,
+          "plate_bbox": [
+            802,
+            291,
+            902,
+            327
+          ],
+          "plate_detection_confidence": 0.139,
+          "plate_quality_score": 0.9378,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "4A1234",
+            "confidence": 0.8184,
+            "character_confidences": [
+              0.8184
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "4A1234",
+            "normalized_text": "4A1234",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.5489,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0205",
+          "frame_id": 1400,
+          "pts_ms": 46633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282690.781,
+          "plate_bbox": [
+            802,
+            291,
+            902,
+            327
+          ],
+          "plate_detection_confidence": 0.139,
+          "plate_quality_score": 0.9378,
+          "variant_name": "upscaled",
+          "raw_ocr": {
+            "raw_text": "AA1234",
+            "confidence": 0.9621,
+            "character_confidences": [
+              0.9621
+            ],
+            "processing_time_ms": 125.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "upscaled"
+          },
+          "normalized_ocr": {
+            "original_text": "AA1234",
+            "normalized_text": "AA1234",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.6064,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\upscaled\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0205",
+          "frame_id": 1400,
+          "pts_ms": 46633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282690.781,
+          "plate_bbox": [
+            802,
+            291,
+            902,
+            327
+          ],
+          "plate_detection_confidence": 0.139,
+          "plate_quality_score": 0.9378,
+          "variant_name": "contrast",
+          "raw_ocr": {
+            "raw_text": "4A1234",
+            "confidence": 0.5258,
+            "character_confidences": [
+              0.5258
+            ],
+            "processing_time_ms": 125.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "contrast"
+          },
+          "normalized_ocr": {
+            "original_text": "4A1234",
+            "normalized_text": "4A1234",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4318,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\contrast\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0205",
+          "frame_id": 1400,
+          "pts_ms": 46633.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282690.781,
+          "plate_bbox": [
+            802,
+            291,
+            902,
+            327
+          ],
+          "plate_detection_confidence": 0.139,
+          "plate_quality_score": 0.9378,
+          "variant_name": "sharpened",
+          "raw_ocr": {
+            "raw_text": "4A1234",
+            "confidence": 0.9159,
+            "character_confidences": [
+              0.9159
+            ],
+            "processing_time_ms": 109.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "sharpened"
+          },
+          "normalized_ocr": {
+            "original_text": "4A1234",
+            "normalized_text": "4A1234",
+            "corrections": [],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.5879,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\sharpened\\vp2_TRK-0205_frame001400_pts46633_plate01.jpg"
+        }
+      ]
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0212",
+      "final_registration_number": null,
+      "recognition_status": "UNREADABLE",
+      "consensus_score": 0.0,
+      "supporting_frame_count": 0,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 47066.0,
+      "last_seen_pts_ms": 47066.0,
+      "supporting_frame_ids": [],
+      "candidate_scores": {},
+      "evidence_chain": []
+    },
+    {
+      "camera_id": "vp2",
+      "track_id": "TRK-0230",
+      "final_registration_number": "QJ02HE1010",
+      "recognition_status": "CONFIRMED",
+      "consensus_score": 0.6933,
+      "supporting_frame_count": 1,
+      "total_frames_examined": 1,
+      "total_observations_examined": 5,
+      "first_seen_pts_ms": 50233.0,
+      "last_seen_pts_ms": 50233.0,
+      "supporting_frame_ids": [
+        1508
+      ],
+      "candidate_scores": {
+        "QJ02HE1010": 0.6933,
+        "QJ02HE110": 0.4171,
+        "QJOZHETN": 0.396,
+        "GJOZHE": 0.4954,
+        "GJ02HET1N": 0.408
+      },
+      "evidence_chain": [
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0230",
+          "frame_id": 1508,
+          "pts_ms": 50233.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282699.75,
+          "plate_bbox": [
+            755,
+            709,
+            885,
+            757
+          ],
+          "plate_detection_confidence": 0.7487,
+          "plate_quality_score": 0.8651,
+          "variant_name": "original",
+          "raw_ocr": {
+            "raw_text": "QJOZHE1010",
+            "confidence": 0.128,
+            "character_confidences": [
+              0.128
+            ],
+            "processing_time_ms": 94.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "original"
+          },
+          "normalized_ocr": {
+            "original_text": "QJOZHE1010",
+            "normalized_text": "QJ02HE1010",
+            "corrections": [
+              {
+                "original_char": "O",
+                "corrected_char": "0",
+                "position": 2,
+                "reason": "district_code_numeric_position_O_to_0"
+              },
+              {
+                "original_char": "Z",
+                "corrected_char": "2",
+                "position": 3,
+                "reason": "district_code_numeric_position_Z_to_2"
+              }
+            ],
+            "is_valid_format": true,
+            "format_name": "standard_indian_unrecognized_state"
+          },
+          "observation_score": 0.5933,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg"
+        },
+        {
+          "camera_id": "vp2",
+          "track_id": "TRK-0230",
+          "frame_id": 1508,
+          "pts_ms": 50233.0,
+          "has_valid_pts": true,
+          "local_receive_monotonic": 282699.75,
+          "plate_bbox": [
+            755,
+            709,
+            885,
+            757
+          ],
+          "plate_detection_confidence": 0.7487,
+          "plate_quality_score": 0.8651,
+          "variant_name": "grayscale",
+          "raw_ocr": {
+            "raw_text": "QJOZHE110",
+            "confidence": 0.2876,
+            "character_confidences": [
+              0.2876
+            ],
+            "processing_time_ms": 78.0,
+            "engine_name": "easyocr",
+            "engine_version": "1.7.2",
+            "variant_name": "grayscale"
+          },
+          "normalized_ocr": {
+            "original_text": "QJOZHE110",
+            "normalized_text": "QJ02HE110",
+            "corrections": [
+              {
+                "original_char": "O",
+                "corrected_char": "0",
+                "position": 2,
+                "reason": "district_code_numeric_position_O_to_0"
+              },
+              {
+                "original_char": "Z",
+                "corrected_char": "2",
+                "position": 3,
+                "reason": "district_code_numeric_position_Z_to_2"
+              }
+            ],
+            "is_valid_format": false,
+            "format_name": "unrecognized_format"
+          },
+          "observation_score": 0.4171,
+          "image_crop_path": "C:\\Users\\ADRAJ\\Downloads\\CCTV Platform\\video_project2_pipeline\\processing\\snapshots\\vp2\\plates_processed\\grayscale\\vp2_TRK-0230_frame001508_pts50233_plate01.jpg"
+        }
+      ]
+    }
+  ]
+}
