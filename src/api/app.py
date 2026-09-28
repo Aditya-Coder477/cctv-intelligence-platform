@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import os
 from pathlib import Path
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -28,19 +29,32 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# CORS configuration for local React Vite development
+# CORS configuration for production Vercel frontend, Render backend, and local development
+cors_origins = [
+    "https://cctv-intelligence-platform.vercel.app",
+    "https://cctv-intelligence-platform-backend.onrender.com",
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+    "http://localhost:4173",
+    "http://127.0.0.1:4173",
+]
+
+env_cors = os.getenv("CORS_ORIGINS", "")
+if env_cors:
+    cors_origins.extend([origin.strip() for origin in env_cors.split(",") if origin.strip()])
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-        "http://localhost:8000",
-        "http://127.0.0.1:8000",
-        "http://localhost:3000",
-    ],
+    allow_origins=cors_origins,
+    allow_origin_regex=r"https://.*\.vercel\.app|https://.*\.onrender\.com",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"],
 )
 
 # Mount data directory as static evidence endpoint
