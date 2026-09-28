@@ -20,8 +20,8 @@ logger = get_logger("anpr_normalizer")
 _CLEAN_RE = re.compile(r"[^A-Z0-9]")
 
 # Common OCR confusion mappings
-_ALPHA_TO_NUMERIC = {"O": "0", "I": "1", "Z": "2", "S": "5", "B": "8", "G": "6", "Q": "0"}
-_NUMERIC_TO_ALPHA = {"0": "O", "1": "I", "2": "Z", "5": "S", "8": "B", "6": "G"}
+_ALPHA_TO_NUMERIC = {"O": "0", "I": "1", "Z": "2", "S": "5", "B": "8", "G": "6", "Q": "0", "L": "4", "A": "4", "D": "0", "E": "6"}
+_NUMERIC_TO_ALPHA = {"0": "O", "1": "I", "2": "Z", "5": "S", "8": "B", "6": "G", "4": "A"}
 
 
 def normalize_raw_text(text: str) -> str:
@@ -124,10 +124,11 @@ def normalize_with_audit(
                     ))
 
     normalized_final = "".join(final_chars)
+    is_valid = bool(re.match(r"^[A-Z]{2}[0-9]{2}[A-Z]{1,3}[0-9]{4}$", normalized_final))
 
     return NormalizedOCRResult(
         original_text=raw_text,
         normalized_text=normalized_final,
         corrections=corrections,
-        is_valid_format=False,
+        is_valid_format=is_valid,
     )

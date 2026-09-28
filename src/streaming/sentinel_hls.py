@@ -16,6 +16,10 @@ from src.common.logging import get_logger, mask_sensitive
 from src.common.time import get_monotonic_time
 from src.streaming.health import StreamHealth
 
+import threading
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
+
 load_dotenv()
 logger = get_logger("sentinel_hls")
 
@@ -38,6 +42,26 @@ class SentinelHLSReader:
 
     _cached_cookie: Optional[str] = None
     _cookie_timestamp: float = 0.0
+    _auth_lock = threading.Lock()
+    _shared_session: Optional[requests.Session] = None
+
+    @classmethod
+    def get_shared_session(cls) -> requests.Session:
+        if cls._shared_session is None:
+            session = requests.Session()
+            session.headers.update(cls.BROWSER_HEADERS)
+            retries = Retry(total=2, backoff_factor=0.3, status_forcelist=[500, 502, 504])
+            adapter = HTTPAdapter(pool_connections=30, pool_maxsize=30, max_retries=retries)
+            session.mount("https://", adapter)
+            session.mount("http://", adapter)
+            cls._shared_session = session
+        return cls._shared_session
+
+    @classmethod
+    def invalidate_cookie(cls):
+        with cls._auth_lock:
+            cls._cached_cookie = None
+            cls._cookie_timestamp = 0.0
 
     def __init__(
         self,
@@ -67,44 +91,50 @@ class SentinelHLSReader:
     @classmethod
     def get_auth_cookie(cls, email: Optional[str] = None, password: Optional[str] = None, base_url: str = DEFAULT_BASE_URL) -> Optional[str]:
         """Authenticate with Sentinel portal and return session cookie."""
-        now = time.time()
-        # Reuse cookie if fresh (within 4 hours)
-        if cls._cached_cookie and (now - cls._cookie_timestamp) < 14400:
-            return cls._cached_cookie
+        # Direct cookie override from env if present
+        direct_cookie = os.getenv("SENTINEL_AUTH_COOKIE")
+        if direct_cookie and direct_cookie.strip():
+            return direct_cookie.strip()
 
-        email = email or os.getenv("SENTINEL_AUTH_EMAIL")
-        password = password or os.getenv("SENTINEL_AUTH_PASSWORD")
-        if not email or not password:
-            logger.warning("No email or password provided for Sentinel authentication.")
-            return None
+        with cls._auth_lock:
+            now = time.time()
+            # Reuse cookie if fresh (within 4 hours)
+            if cls._cached_cookie and (now - cls._cookie_timestamp) < 14400:
+                return cls._cached_cookie
 
-        login_url = f"{base_url}/auth/login"
-        session = requests.Session()
-        session.headers.update(cls.BROWSER_HEADERS)
-
-        try:
-            logger.info("Authenticating with Sentinel portal for email: %s", email)
-            resp = session.post(
-                login_url,
-                data={"email": email, "password": password},
-                timeout=12,
-                allow_redirects=False,
-            )
-            cookie_val = session.cookies.get("sentinel")
-            if not cookie_val and resp.status_code in [200, 302, 303]:
-                cookie_val = resp.cookies.get("sentinel")
-
-            if cookie_val:
-                cls._cached_cookie = cookie_val
-                cls._cookie_timestamp = now
-                logger.info("Successfully acquired Sentinel session cookie.")
-                return cookie_val
-            else:
-                logger.error("Failed to acquire Sentinel session cookie (status %d)", resp.status_code)
+            load_dotenv(override=True)
+            email = email or os.getenv("SENTINEL_AUTH_EMAIL")
+            password = password or os.getenv("SENTINEL_AUTH_PASSWORD")
+            if not email or not password:
+                logger.warning("No email or password provided for Sentinel authentication.")
                 return None
-        except Exception as e:
-            logger.error("Sentinel authentication request failed: %s", mask_sensitive(str(e)))
-            return None
+
+            login_url = f"{base_url}/auth/login"
+            session = cls.get_shared_session()
+
+            try:
+                logger.info("Authenticating with Sentinel portal for email: %s", email)
+                resp = session.post(
+                    login_url,
+                    data={"email": email, "password": password},
+                    timeout=15,
+                    allow_redirects=False,
+                )
+                cookie_val = session.cookies.get("sentinel")
+                if not cookie_val and resp.status_code in [200, 302, 303]:
+                    cookie_val = resp.cookies.get("sentinel")
+
+                if cookie_val:
+                    cls._cached_cookie = cookie_val
+                    cls._cookie_timestamp = now
+                    logger.info("Successfully acquired Sentinel session cookie.")
+                    return cookie_val
+                else:
+                    logger.error("Failed to acquire Sentinel session cookie (status %d)", resp.status_code)
+                    return None
+            except Exception as e:
+                logger.error("Sentinel authentication request failed: %s", mask_sensitive(str(e)))
+                return None
 
     def _build_ffmpeg_headers(self) -> str:
         """Build newline-delimited headers string for FFmpeg."""

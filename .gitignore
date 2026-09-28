@@ -5,6 +5,8 @@
 # 1. Environment & Secrets (CRITICAL: Never commit credentials or API keys)
 .env
 *.env
+.evv
+*.evv
 *.pem
 *.key
 .env.local
@@ -63,6 +65,8 @@ data/snapshots/
 data/detections/
 data/footage/
 data/synthetic_cache/
+data/analysis/
+scratch/
 *.jpg
 *.jpeg
 *.png

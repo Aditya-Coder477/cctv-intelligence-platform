@@ -190,6 +190,43 @@ def get_camera_stream(camera_id: str):
     )
 
 
+import re
+from dotenv import load_dotenv
+from fastapi.responses import StreamingResponse, FileResponse
+
+load_dotenv()
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent.parent
+SYNTHETIC_DIR = PROJECT_ROOT / "Synthetic Dataset"
+PUBLIC_DIR = PROJECT_ROOT / "frontend" / "public"
+
+
+def _get_camera_video_path(camera_id: str) -> Optional[Path]:
+    """Map camera_id (e.g. cam01..cam30) to synthetic dataset video clips or local sample."""
+    m = re.search(r"\d+", camera_id)
+    idx = int(m.group()) if m else 1
+    video_num = ((idx - 1) % 8) + 1
+    v_path = SYNTHETIC_DIR / f"{video_num}.mp4"
+    if v_path.exists():
+        return v_path
+    v_upload = SYNTHETIC_DIR / "uploads" / "Video_Project_2.mp4"
+    if v_upload.exists():
+        return v_upload
+    fallback = PUBLIC_DIR / "sample_cctv.mp4"
+    if fallback.exists():
+        return fallback
+    return None
+
+
+@router.get("/{camera_id}/video")
+def get_camera_video(camera_id: str):
+    """Serve playable camera video footage (synthetic CCTV feed fallback)."""
+    v_path = _get_camera_video_path(camera_id)
+    if not v_path or not v_path.exists():
+        raise HTTPException(status_code=404, detail=f"No video footage available for {camera_id}")
+    return FileResponse(v_path, media_type="video/mp4")
+
+
 @router.get("/{camera_id}/streams", response_model=List[StreamDescriptorSchema])
 def get_camera_streams(camera_id: str):
     """Return list of available stream descriptors for camera."""
@@ -198,35 +235,61 @@ def get_camera_streams(camera_id: str):
 
 @router.get("/{camera_id}/hls/{file_path:path}")
 def proxy_camera_hls(camera_id: str, file_path: str):
-    """Proxy authorized HLS stream segments from Sentinel Cloud."""
+    """Proxy authorized HLS stream segments from Sentinel Cloud with auto-reauth and session pooling."""
     base_url = "https://cctv.corp8.cloud"
     target_url = f"{base_url}/{camera_id}/{file_path}"
     if file_path == "enc.key":
         target_url = f"{base_url}/enc.key"
 
+    session = SentinelHLSReader.get_shared_session()
     cookie = SentinelHLSReader.get_auth_cookie()
-    headers = {
-        "User-Agent": SentinelHLSReader.BROWSER_HEADERS["User-Agent"],
-        "Referer": f"{base_url}/",
-        "Origin": base_url,
-    }
+
+    headers = dict(SentinelHLSReader.BROWSER_HEADERS)
+    headers["Referer"] = f"{base_url}/"
+    headers["Origin"] = base_url
     if cookie:
         headers["Cookie"] = f"sentinel={cookie}"
 
-    try:
-        resp = requests.get(target_url, headers=headers, timeout=12, stream=True)
-        if resp.status_code != 200:
-            raise HTTPException(status_code=resp.status_code, detail="Stream gateway refused request")
+    def do_fetch():
+        return session.get(target_url, headers=headers, timeout=15, stream=True)
 
+    try:
+        resp = do_fetch()
         content_type = resp.headers.get("Content-Type", "application/octet-stream")
+
+        # Check for expired/invalid auth session (redirect or HTML login page returned)
         if file_path.endswith(".m3u8"):
-            # Rewrite relative key and segment URLs so the browser requests through our proxy
             text = resp.text
-            # Replace /enc.key with /api/cameras/{camera_id}/hls/enc.key
-            text = text.replace('URI="/enc.key"', f'URI="/api/cameras/{camera_id}/hls/enc.key"')
+            if resp.status_code != 200 or not text.strip().startswith("#EXTM3U") or "text/html" in content_type:
+                logger.info("Session expired or unauthenticated for %s. Re-authenticating...", camera_id)
+                SentinelHLSReader.invalidate_cookie()
+                new_cookie = SentinelHLSReader.get_auth_cookie()
+                if new_cookie:
+                    headers["Cookie"] = f"sentinel={new_cookie}"
+                    resp = do_fetch()
+                    text = resp.text
+                    content_type = resp.headers.get("Content-Type", "application/octet-stream")
+
+            if resp.status_code != 200 or not text.strip().startswith("#EXTM3U") or "text/html" in content_type:
+                logger.warning("Remote Sentinel gateway offline or refused HLS stream for %s (status %d)", camera_id, resp.status_code)
+                raise HTTPException(status_code=503, detail="Remote CCTV HLS gateway requires authentication or is offline.")
+
+            # Rewrite relative key URLs so the browser requests the key through our proxy
+            text = re.sub(r'URI="[^"]*enc\.key"', f'URI="/api/cameras/{camera_id}/hls/enc.key"', text)
             return Response(content=text, media_type="application/vnd.apple.mpegurl")
 
+        if file_path == "enc.key":
+            if resp.status_code != 200:
+                raise HTTPException(status_code=resp.status_code, detail="Failed to retrieve encryption key")
+            return Response(content=resp.content, media_type="application/octet-stream")
+
+        if resp.status_code != 200:
+            raise HTTPException(status_code=resp.status_code, detail="Stream gateway refused segment request")
+
         return StreamingResponse(resp.iter_content(chunk_size=65536), media_type=content_type)
+    except HTTPException:
+        raise
     except Exception as e:
         logger.error("HLS stream proxy error for %s (%s): %s", camera_id, file_path, e)
         raise HTTPException(status_code=502, detail=f"Failed to stream from CCTV gateway: {e}")
+

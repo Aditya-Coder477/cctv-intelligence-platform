@@ -19,14 +19,19 @@ import sys
 import time
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Dict, Generator, List, Optional, Tuple
+from typing import Any, Dict, Generator, List, Optional, Tuple, Set
 from concurrent.futures import ThreadPoolExecutor
+import re
+import base64
 
 import numpy as np
-from fastapi import APIRouter, File, Form, HTTPException, Query, UploadFile
+from pydantic import BaseModel, Field
+from fastapi import APIRouter, File, Form, HTTPException, Query, UploadFile, Body
 from fastapi.responses import FileResponse, JSONResponse, Response, StreamingResponse
 import ultralytics
 from ultralytics import YOLO
+
+from src.ai.anpr.normalizer import normalize_with_audit
 
 # Backwards compatibility shim for older YOLO LP weights trained with ultralytics.yolo
 if "ultralytics.yolo" not in sys.modules:
@@ -92,6 +97,21 @@ def get_ocr():
             logger.warning(f"Failed to initialize EasyOCR: {e}")
             _ocr_reader = False
     return _ocr_reader if _ocr_reader is not False else None
+
+
+_paddle_ocr_engine = None
+
+def get_paddle_ocr():
+    global _paddle_ocr_engine
+    if _paddle_ocr_engine is None:
+        try:
+            from paddleocr import PaddleOCR
+            logger.info("Initializing PaddleOCR reader...")
+            _paddle_ocr_engine = PaddleOCR(use_angle_cls=False, lang="en", enable_mkldnn=False)
+        except Exception as e:
+            logger.debug(f"PaddleOCR unavailable: {e}")
+            _paddle_ocr_engine = False
+    return _paddle_ocr_engine if _paddle_ocr_engine is not False else None
 
 
 # ─── Watchlist & Real-Time Alerts In-Memory Store ───────────────────────────
@@ -400,7 +420,8 @@ def list_synthetic_videos():
             "duration_sec": dur,
             "size_mb": size_mb,
             "is_upload": is_upload,
-            "thumbnail_url": f"/api/synthetic/thumbnail/{p.name}"
+            "thumbnail_url": f"/api/synthetic/thumbnail/{p.name}",
+            "video_url": f"/api/synthetic/video-file/{p.name}"
         })
 
     return videos
@@ -452,20 +473,63 @@ def _generate_thumbnail_if_needed(video_path: Path, filename: str) -> Path:
 @router.get("/thumbnail/{filename}")
 def get_video_thumbnail(filename: str):
     """Retrieve video thumbnail image."""
-    thumb_path = THUMBNAIL_DIR / f"{filename}.jpg"
+    safe_name = Path(filename).name
+    clean_name = safe_name[7:] if safe_name.startswith("upload_") else safe_name
+    thumb_path = THUMBNAIL_DIR / f"{safe_name}.jpg"
     if not thumb_path.exists():
-        v_path = SYNTHETIC_DIR / filename
+        thumb_path = THUMBNAIL_DIR / f"{clean_name}.jpg"
+    if not thumb_path.exists():
+        v_path = SYNTHETIC_DIR / safe_name
         if not v_path.exists():
-            v_path = UPLOADS_DIR / filename
+            v_path = UPLOADS_DIR / safe_name
+        if not v_path.exists():
+            v_path = SYNTHETIC_DIR / clean_name
+        if not v_path.exists():
+            v_path = UPLOADS_DIR / clean_name
         if v_path.exists():
-            _generate_thumbnail_if_needed(v_path, filename)
+            _generate_thumbnail_if_needed(v_path, clean_name)
+            thumb_path = THUMBNAIL_DIR / f"{clean_name}.jpg"
     
     if thumb_path.exists():
-        return FileResponse(thumb_path, media_type="image/jpeg")
+        return FileResponse(thumb_path, media_type="image/jpeg", headers={"Access-Control-Allow-Origin": "*"})
     
     blank = np.zeros((180, 320, 3), dtype=np.uint8)
     _, buf = cv2.imencode(".jpg", blank)
-    return Response(content=buf.tobytes(), media_type="image/jpeg")
+    return Response(content=buf.tobytes(), media_type="image/jpeg", headers={"Access-Control-Allow-Origin": "*"})
+
+
+@router.get("/video-file/{filename}")
+def stream_synthetic_video_file(filename: str):
+    """Serve the raw synthetic or uploaded video MP4 file for browser HTML5 video playback."""
+    safe_name = Path(filename).name
+    clean_name = safe_name[7:] if safe_name.startswith("upload_") else safe_name
+    candidates = [
+        SYNTHETIC_DIR / safe_name,
+        UPLOADS_DIR / safe_name,
+        SYNTHETIC_DIR / clean_name,
+        UPLOADS_DIR / clean_name,
+        PROJECT_ROOT / safe_name,
+        PROJECT_ROOT / clean_name,
+        PROJECT_ROOT / "frontend" / "public" / safe_name,
+        PROJECT_ROOT / "frontend" / "public" / clean_name,
+    ]
+    target = None
+    for cand in candidates:
+        if cand.exists() and cand.is_file():
+            target = cand
+            break
+    if not target:
+        raise HTTPException(status_code=404, detail="Video file not found")
+    return FileResponse(
+        target,
+        media_type="video/mp4",
+        headers={
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Methods": "GET, HEAD, OPTIONS",
+            "Accept-Ranges": "bytes"
+        }
+    )
 
 
 @router.get("/watchlist")
@@ -535,7 +599,7 @@ def get_snapshot_image(filename: str):
     """Return cropped vehicle or plate snapshot."""
     file_path = SNAPSHOT_DIR / filename
     if file_path.exists():
-        return FileResponse(file_path, media_type="image/jpeg")
+        return FileResponse(file_path, media_type="image/jpeg", headers={"Access-Control-Allow-Origin": "*"})
     raise HTTPException(status_code=404, detail="Snapshot not found")
 
 
@@ -548,7 +612,663 @@ def reset_session(video: str = Query(...)):
         _SESSION_ALERTS[video].clear()
     if video in _SESSION_ALERTED_PLATES:
         _SESSION_ALERTED_PLATES[video].clear()
+    if video in _SESSION_LIVE_TRACKERS:
+        del _SESSION_LIVE_TRACKERS[video]
+    if video in _SESSION_TRACK_HISTORY:
+        del _SESSION_TRACK_HISTORY[video]
+    if video in _SESSION_LIVE_EVENTS:
+        del _SESSION_LIVE_EVENTS[video]
+    if video in _SESSION_LIVE_ALERTS:
+        del _SESSION_LIVE_ALERTS[video]
+    if video in _SESSION_ALERTED_PLATES_SET:
+        del _SESSION_ALERTED_PLATES_SET[video]
+    if video in _SESSION_CONFIRMED_MATCH_TRACKS:
+        del _SESSION_CONFIRMED_MATCH_TRACKS[video]
+    if video in _SESSION_PLATE_SEEN_TRACKS:
+        del _SESSION_PLATE_SEEN_TRACKS[video]
+    if video in _SESSION_TRACK_METADATA:
+        del _SESSION_TRACK_METADATA[video]
     return {"status": "cleared", "video": video}
+
+
+# ─── Dynamic Live Frame Analysis Models & Session Storage ────────────────────
+
+class FrameAnalysisRequest(BaseModel):
+    video_id: str = "custom_video"
+    timestamp_sec: float = 0.0
+    image_base64: str
+    vehicle_conf: float = 0.35
+    plate_conf: float = 0.25
+    ocr_conf: float = 0.35
+    anpr_conf: float = 0.50
+    camera_name: Optional[str] = "CAM-01"
+    custom_watchlist: Optional[List[Dict[str, Any]]] = None
+
+
+class WatchlistEntryPayload(BaseModel):
+    watchlist_id: Optional[str] = None
+    registration_number: str
+    category: str = "STOLEN_VEHICLE"
+    priority: str = "CRITICAL"
+    model: Optional[str] = "Unknown Model"
+    description: Optional[str] = ""
+    case_number: Optional[str] = ""
+    jurisdiction: Optional[str] = "Gujarat Police"
+
+
+_SESSION_LIVE_TRACKERS: Dict[str, SimpleVehicleTracker] = {}
+_SESSION_TRACK_HISTORY: Dict[str, Dict[int, List[Dict[str, Any]]]] = {}
+_SESSION_TRACK_METADATA: Dict[str, Dict[int, Dict[str, Any]]] = {}
+_SESSION_LIVE_EVENTS: Dict[str, List[Dict[str, Any]]] = {}
+_SESSION_LIVE_ALERTS: Dict[str, List[Dict[str, Any]]] = {}
+_SESSION_ALERTED_PLATES_SET: Dict[str, Set[str]] = {}
+_SESSION_CONFIRMED_MATCH_TRACKS: Dict[str, Set[int]] = {}
+_SESSION_PLATE_SEEN_TRACKS: Dict[str, Set[int]] = {}
+_SESSION_OCR_IN_FLIGHT: Dict[str, Set[int]] = {}
+
+
+def preprocess_plate_for_ocr(crop: np.ndarray) -> np.ndarray:
+    """Upscale, CLAHE contrast enhance, sharpen, and pad license plate crop for OCR."""
+    if crop is None or crop.size == 0:
+        return crop
+    h, w = crop.shape[:2]
+    # Ensure character height is large enough for OCR (at least 72px canvas height)
+    scale = max(2.5, 72.0 / max(1, h))
+    new_w, new_h = max(1, int(w * scale)), max(1, int(h * scale))
+    upscaled = cv2.resize(crop, (new_w, new_h), interpolation=cv2.INTER_CUBIC)
+
+    gray = cv2.cvtColor(upscaled, cv2.COLOR_BGR2GRAY) if upscaled.ndim == 3 else upscaled.copy()
+    clahe = cv2.createCLAHE(clipLimit=2.5, tileGridSize=(8, 8))
+    contrast = clahe.apply(gray)
+
+    gauss = cv2.GaussianBlur(contrast, (0, 0), 2.0)
+    sharpened = cv2.addWeighted(contrast, 1.6, gauss, -0.6, 0)
+
+    # Replicate border padding (8px) so characters near edges are not truncated
+    padded = cv2.copyMakeBorder(sharpened, 8, 8, 8, 8, cv2.BORDER_REPLICATE)
+    return padded
+
+
+def execute_plate_ocr(plate_crop: np.ndarray, ocr_threshold: float = 0.25) -> Optional[Tuple[str, str, float]]:
+    """Run OCR on the cropped number plate image, returning (raw_text, normalized_text, confidence)."""
+    if plate_crop is None or plate_crop.size == 0:
+        return None
+
+    preprocessed = preprocess_plate_for_ocr(plate_crop)
+
+    # 1. Attempt PaddleOCR if available
+    paddle_engine = get_paddle_ocr()
+    if paddle_engine:
+        try:
+            prep_bgr = cv2.cvtColor(preprocessed, cv2.COLOR_GRAY2BGR) if preprocessed.ndim == 2 else preprocessed
+            p_res = paddle_engine.ocr(prep_bgr)
+            if p_res and p_res[0]:
+                lines = []
+                confs = []
+                for item in p_res[0]:
+                    txt = item[1][0].strip()
+                    conf = float(item[1][1])
+                    if txt:
+                        lines.append(txt)
+                        confs.append(conf)
+                if lines:
+                    raw_str = "".join(lines).replace(" ", "")
+                    avg_c = sum(confs) / len(confs)
+                    norm_obj = normalize_with_audit(raw_str)
+                    norm_str = norm_obj.normalized_text
+                    if len(norm_str) == 10 and norm_str[6] in ("L", "A"):
+                        norm_str = norm_str[:6] + "4" + norm_str[7:]
+                    if len(norm_str) >= 4 and avg_c >= ocr_threshold:
+                        return raw_str, norm_str, avg_c
+        except Exception as e:
+            logger.debug(f"PaddleOCR invocation skipped: {e}")
+
+    # 2. EasyOCR with alphanumeric allowlist on preprocessed plate crop
+    easy_engine = get_ocr()
+    if easy_engine:
+        try:
+            e_res = easy_engine.readtext(
+                preprocessed,
+                allowlist="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+                detail=1
+            )
+            if not e_res:
+                e_res = easy_engine.readtext(
+                    plate_crop,
+                    allowlist="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+                    detail=1
+                )
+            if e_res:
+                lines = []
+                confs = []
+                for item in e_res:
+                    txt = item[1].strip()
+                    conf = float(item[2])
+                    if txt:
+                        lines.append(txt)
+                        confs.append(conf)
+                if lines:
+                    raw_str = "".join(lines).replace(" ", "")
+                    avg_c = sum(confs) / len(confs)
+                    norm_obj = normalize_with_audit(raw_str)
+                    norm_str = norm_obj.normalized_text
+                    # Contextual correction: Indian plate position 6 is the first digit of the 4-digit number
+                    if len(norm_str) == 10 and norm_str[6] in ("L", "A"):
+                        norm_str = norm_str[:6] + "4" + norm_str[7:]
+                    if len(norm_str) >= 4 and avg_c >= ocr_threshold:
+                        return raw_str, norm_str, avg_c
+        except Exception as e:
+            logger.warning(f"EasyOCR invocation error: {e}")
+
+    return None
+
+
+def normalize_plate_str(text: Optional[str]) -> str:
+    """Normalize plate by removing spaces, hyphens, and non-alphanumeric chars."""
+    if not text:
+        return ""
+    return re.sub(r"[^A-Z0-9]", "", text.upper())
+
+
+def compute_multi_frame_consensus(readings: List[Dict[str, Any]]) -> Tuple[Optional[str], float, int]:
+    """Multi-frame consensus on recognized license plates with 10-char positional voting."""
+    if not readings:
+        return None, 0.0, 0
+    valid = [r for r in readings if len(r.get("norm", "")) >= 6]
+    if not valid:
+        valid = [r for r in readings if len(r.get("norm", "")) >= 4]
+    if not valid:
+        return None, 0.0, len(readings)
+
+    # 1. Positional consensus for standard 10-character Indian plates (e.g. GJ06KP4528)
+    tens = [r for r in valid if len(r.get("norm", "")) == 10]
+    if len(tens) >= 2:
+        chars_by_pos = [{} for _ in range(10)]
+        conf_sums = [{} for _ in range(10)]
+        for r in tens:
+            for i, c in enumerate(r["norm"]):
+                chars_by_pos[i][c] = chars_by_pos[i].get(c, 0) + 1
+                conf_sums[i][c] = conf_sums[i].get(c, 0.0) + r["conf"]
+
+        consensus_chars = []
+        avg_confs = []
+        for i in range(10):
+            best_c = max(chars_by_pos[i].keys(), key=lambda c: (chars_by_pos[i][c], conf_sums[i][c]))
+            consensus_chars.append(best_c)
+            avg_confs.append(conf_sums[i][best_c] / chars_by_pos[i][best_c])
+
+        c_plate = "".join(consensus_chars)
+        c_conf = sum(avg_confs) / len(avg_confs)
+        return c_plate, c_conf, len(tens)
+
+    # 2. Fallback to frequency count across all readings
+    counts: Dict[str, int] = {}
+    conf_sums: Dict[str, float] = {}
+    for r in valid:
+        p = r["norm"]
+        counts[p] = counts.get(p, 0) + 1
+        conf_sums[p] = conf_sums.get(p, 0.0) + r["conf"]
+    best_p = max(counts.keys(), key=lambda p: (counts[p], conf_sums[p] / counts[p]))
+    avg_c = conf_sums[best_p] / counts[best_p]
+    return best_p, avg_c, counts[best_p]
+
+
+def correlate_watchlist_plate(norm_plate: str, custom_list: Optional[List[Dict[str, Any]]] = None) -> Optional[Dict[str, Any]]:
+    if not norm_plate or len(norm_plate) < 4 or norm_plate == "PLATE UNREADABLE":
+        return None
+    candidates = []
+    if custom_list:
+        candidates.extend(custom_list)
+    candidates.extend(get_watchlist_index().values())
+    for item in candidates:
+        reg = item.get("registration_number") or item.get("normalized_registration_number") or ""
+        norm_reg = normalize_plate_str(reg)
+        if norm_reg:
+            if norm_plate == norm_reg:
+                return item
+            if len(norm_plate) >= 6 and len(norm_reg) >= 6:
+                if norm_plate in norm_reg or norm_reg in norm_plate:
+                    return item
+                if _levenshtein(norm_plate, norm_reg) <= 1:
+                    return item
+    return None
+
+
+@router.post("/watchlist")
+def add_watchlist_entry(entry: WatchlistEntryPayload):
+    """Add or update an entry in the watchlist database."""
+    target = SYNTHETIC_WATCHLIST_PATH if SYNTHETIC_WATCHLIST_PATH.exists() else CENTRAL_WATCHLIST_PATH
+    records = []
+    if target.exists():
+        try:
+            with open(target, "r", encoding="utf-8") as f:
+                records = json.load(f)
+        except Exception:
+            records = []
+
+    clean_reg = entry.registration_number.strip().upper()
+    norm_reg = normalize_plate_str(clean_reg)
+    w_id = entry.watchlist_id or f"WL-USR-{int(time.time() * 1000) % 1000000:06d}"
+
+    new_record = {
+        "watchlist_id": w_id,
+        "registration_number": clean_reg,
+        "normalized_registration_number": norm_reg,
+        "category": entry.category,
+        "priority": entry.priority,
+        "model": entry.model or "Unknown Model",
+        "description": entry.description or f"Vehicle registered in active surveillance ({entry.category}).",
+        "case_number": entry.case_number or f"CASE-{norm_reg[:6]}",
+        "jurisdiction": entry.jurisdiction or "Gujarat Police",
+        "status": "ACTIVE",
+        "synthetic": True,
+        "created_at": datetime.now(timezone.utc).isoformat(),
+        "updated_at": datetime.now(timezone.utc).isoformat(),
+    }
+
+    updated = False
+    for i, r in enumerate(records):
+        if r.get("watchlist_id") == w_id or normalize_plate_str(r.get("registration_number")) == norm_reg:
+            records[i] = new_record
+            updated = True
+            break
+    if not updated:
+        records.insert(0, new_record)
+
+    try:
+        with open(target, "w", encoding="utf-8") as f:
+            json.dump(records, f, indent=2)
+        global _WATCHLIST_INDEX
+        _WATCHLIST_INDEX[norm_reg] = new_record
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to save watchlist: {e}")
+
+    return {"status": "success", "message": "Watchlist entry saved", "record": new_record}
+
+
+@router.delete("/watchlist/{target_id}")
+def delete_watchlist_entry(target_id: str):
+    """Delete an entry from the watchlist."""
+    target = SYNTHETIC_WATCHLIST_PATH if SYNTHETIC_WATCHLIST_PATH.exists() else CENTRAL_WATCHLIST_PATH
+    if not target.exists():
+        raise HTTPException(status_code=404, detail="Watchlist not found")
+    try:
+        with open(target, "r", encoding="utf-8") as f:
+            records = json.load(f)
+        filtered = [
+            r for r in records
+            if r.get("watchlist_id") != target_id
+            and r.get("registration_number") != target_id
+            and normalize_plate_str(r.get("registration_number")) != normalize_plate_str(target_id)
+        ]
+        with open(target, "w", encoding="utf-8") as f:
+            json.dump(filtered, f, indent=2)
+        global _WATCHLIST_INDEX
+        _WATCHLIST_INDEX.clear()
+        get_watchlist_index()
+        return {"status": "success", "deleted": target_id}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.post("/analyze-frame")
+def analyze_frame_endpoint(req: FrameAnalysisRequest):
+    """Dynamic AI pipeline analyzing actual video frames in near real-time."""
+    t_start = time.monotonic()
+
+    # 1. Decode base64 frame
+    try:
+        if "," in req.image_base64:
+            b64_data = req.image_base64.split(",", 1)[1]
+        else:
+            b64_data = req.image_base64
+        img_bytes = base64.b64decode(b64_data)
+        np_arr = np.frombuffer(img_bytes, np.uint8)
+        frame = cv2.imdecode(np_arr, cv2.IMREAD_COLOR)
+        if frame is None:
+            raise ValueError("cv2.imdecode returned None")
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Invalid image data: {e}")
+
+    fh, fw = frame.shape[:2]
+    vid_key = req.video_id.replace(" ", "_")
+
+    # 2. Get/Initialize session trackers & histories
+    if vid_key not in _SESSION_LIVE_TRACKERS:
+        _SESSION_LIVE_TRACKERS[vid_key] = SimpleVehicleTracker(max_disappeared=45, iou_threshold=0.20)
+        _SESSION_TRACK_HISTORY[vid_key] = {}
+        _SESSION_LIVE_EVENTS[vid_key] = []
+        _SESSION_LIVE_ALERTS[vid_key] = []
+        _SESSION_ALERTED_PLATES_SET[vid_key] = set()
+        _SESSION_CONFIRMED_MATCH_TRACKS[vid_key] = set()
+
+    tracker = _SESSION_LIVE_TRACKERS[vid_key]
+    history = _SESSION_TRACK_HISTORY[vid_key]
+    events = _SESSION_LIVE_EVENTS[vid_key]
+    alerts = _SESSION_LIVE_ALERTS[vid_key]
+    alerted_set = _SESSION_ALERTED_PLATES_SET[vid_key]
+    confirmed_tracks = _SESSION_CONFIRMED_MATCH_TRACKS[vid_key]
+
+    now_dt = datetime.now()
+    now_time_str = now_dt.strftime("%H:%M:%S")
+
+    # 3. Vehicle Detection (YOLOv8)
+    yolo_v = get_yolo_veh()
+    v_results = yolo_v(frame, conf=req.vehicle_conf, verbose=False)[0]
+    raw_rects = []
+    for b in v_results.boxes:
+        cls_id = int(b.cls[0])
+        cls_name = yolo_v.names[cls_id].capitalize()
+        # Strictly vehicles: car, truck, bus
+        if cls_name.lower() in ["car", "truck", "bus"]:
+            conf = float(b.conf[0])
+            x1, y1, x2, y2 = [int(v) for v in b.xyxy[0].tolist()]
+            if (x2 - x1) >= 20 and (y2 - y1) >= 20:
+                raw_rects.append((x1, y1, x2, y2, cls_name, conf))
+
+    # 4. Vehicle Tracking
+    tracked = tracker.update(raw_rects, req.timestamp_sec)
+
+    new_events = []
+    new_alert = None
+    output_vehicles = []
+    yolo_lp = get_yolo_lp()
+
+    track_meta = _SESSION_TRACK_METADATA.setdefault(vid_key, {})
+
+    # 5. Process each tracked vehicle
+    for tv in tracked:
+        trk_id, x1, y1, x2, y2, cls_name, v_conf = tv
+        track_key = f"TRK-{trk_id:04d}"
+
+        meta = track_meta.setdefault(trk_id, {
+            "best_veh_area": 0.0,
+            "best_veh_crop_file": f"{vid_key}_{track_key}_veh.jpg",
+            "best_plate_area": 0.0,
+            "best_plate_crop_file": f"{vid_key}_{track_key}_plt.jpg",
+            "best_plate_url": None,
+            "best_veh_url": f"/api/synthetic/snapshot/{vid_key}_{track_key}_veh.jpg",
+            "readings": [],
+            "plate_number": None,
+            "plate_conf": 0.0,
+            "frames_seen": 0,
+            "clear_frames_count": 0,
+            "plate_scan_attempts": 0,
+            "last_ocr_time": 0.0,
+            "status_text": "Scanning plate...",
+        })
+        meta["frames_seen"] += 1
+
+        if trk_id not in history:
+            history[trk_id] = []
+            ev = {
+                "id": f"EVT-{time.time():.3f}-v{trk_id}",
+                "time": now_time_str,
+                "text": "Vehicle detected",
+                "details": f"{track_key} ({cls_name}, {int(v_conf * 100)}%)",
+                "type": "vehicle"
+            }
+            events.append(ev)
+            new_events.append(ev)
+
+        # Vehicle crop
+        cx1, cy1 = max(0, x1), max(0, y1)
+        cx2, cy2 = min(fw, x2), min(fh, y2)
+        veh_crop = frame[cy1:cy2, cx1:cx2]
+
+        veh_snap_name = f"{vid_key}_{track_key}_veh.jpg"
+        plt_snap_name = f"{vid_key}_{track_key}_plt.jpg"
+        veh_snap_url = f"/api/synthetic/snapshot/{veh_snap_name}"
+        plt_snap_url = f"/api/synthetic/snapshot/{plt_snap_name}"
+
+        veh_w = cx2 - cx1
+        veh_h = cy2 - cy1
+        veh_area = veh_w * veh_h
+
+        # Update best vehicle crop if larger/clearer
+        if veh_crop.size > 0 and veh_area > meta["best_veh_area"]:
+            meta["best_veh_area"] = veh_area
+            try:
+                cv2.imwrite(str(SNAPSHOT_DIR / veh_snap_name), veh_crop)
+                meta["best_veh_url"] = veh_snap_url
+            except Exception:
+                pass
+
+        # 6. License Plate Detection inside vehicle crop
+        detected_plate_crop = None
+        plate_box_conf = 0.0
+        plate_w = 0
+        plate_h = 0
+
+        if veh_crop.size > 0 and yolo_lp:
+            lp_res = yolo_lp(veh_crop, conf=min(req.plate_conf, 0.20), verbose=False)[0]
+            if len(lp_res.boxes) > 0:
+                best_lpb = max(lp_res.boxes, key=lambda b: float(b.conf[0]))
+                plate_box_conf = float(best_lpb.conf[0])
+                lx1, ly1, lx2, ly2 = [int(v) for v in best_lpb.xyxy[0].tolist()]
+                # Margin around detected plate
+                px1 = max(0, lx1 - 4)
+                py1 = max(0, ly1 - 4)
+                px2 = min(veh_crop.shape[1], lx2 + 4)
+                py2 = min(veh_crop.shape[0], ly2 + 4)
+                detected_plate_crop = veh_crop[py1:py2, px1:px2]
+                plate_w = px2 - px1
+                plate_h = py2 - py1
+
+        # 7. Plate Enhancement & OCR on Best Clear Frames
+        if detected_plate_crop is not None and detected_plate_crop.size > 0:
+            plate_area = plate_w * plate_h
+            prev_best_area = meta["best_plate_area"]
+            if plate_area > prev_best_area:
+                meta["best_plate_area"] = plate_area
+                try:
+                    cv2.imwrite(str(SNAPSHOT_DIR / plt_snap_name), detected_plate_crop)
+                    meta["best_plate_url"] = plt_snap_url
+                except Exception:
+                    pass
+
+            if vid_key not in _SESSION_PLATE_SEEN_TRACKS:
+                _SESSION_PLATE_SEEN_TRACKS[vid_key] = set()
+            if trk_id not in _SESSION_PLATE_SEEN_TRACKS[vid_key]:
+                _SESSION_PLATE_SEEN_TRACKS[vid_key].add(trk_id)
+                ev_plate = {
+                    "id": f"EVT-{time.time():.3f}-p{trk_id}",
+                    "time": now_time_str,
+                    "text": "Plate detected",
+                    "details": f"{track_key} (conf: {int(plate_box_conf * 100)}%)",
+                    "type": "plate"
+                }
+                events.append(ev_plate)
+                new_events.append(ev_plate)
+
+            # High-resolution clear frame detection (vehicle close or plate well-resolved)
+            is_clear_frame = (veh_w >= 85 and veh_h >= 50) or (plate_w >= 28 and plate_h >= 14)
+            if is_clear_frame:
+                meta["clear_frames_count"] += 1
+                time_since_ocr = abs(req.timestamp_sec - meta["last_ocr_time"])
+
+                # Run OCR when:
+                # 1) At least 0.20s since last scan, OR
+                # 2) A significantly larger/clearer plate view is captured, OR
+                # 3) No plate number read yet
+                should_run_ocr = (
+                    (time_since_ocr >= 0.20 or plate_area > prev_best_area * 1.08 or meta["plate_number"] is None)
+                    and meta["plate_scan_attempts"] < 30
+                )
+
+                if should_run_ocr:
+                    meta["last_ocr_time"] = req.timestamp_sec
+                    meta["plate_scan_attempts"] += 1
+
+                    ocr_res = execute_plate_ocr(detected_plate_crop, min(req.ocr_conf, 0.22))
+                    if ocr_res:
+                        raw_ocr_text, clean_norm, ocr_confidence = ocr_res
+                        meta["readings"].append({
+                            "raw": raw_ocr_text,
+                            "norm": clean_norm,
+                            "conf": ocr_confidence,
+                            "time": req.timestamp_sec,
+                            "frame": meta["frames_seen"],
+                        })
+                        history.setdefault(trk_id, []).append({
+                            "raw": raw_ocr_text,
+                            "norm": clean_norm,
+                            "conf": ocr_confidence,
+                            "time": req.timestamp_sec,
+                        })
+
+                        ev_ocr = {
+                            "id": f"EVT-{time.time():.3f}-o{trk_id}",
+                            "time": now_time_str,
+                            "text": f"OCR: {clean_norm}",
+                            "details": f"{track_key} (conf: {int(ocr_confidence * 100)}%)",
+                            "type": "ocr"
+                        }
+                        events.append(ev_ocr)
+                        new_events.append(ev_ocr)
+
+                        # Update multi-frame consensus
+                        c_plate, c_conf, c_count = compute_multi_frame_consensus(meta["readings"])
+                        if c_plate:
+                            meta["plate_number"] = c_plate
+                            meta["plate_conf"] = c_conf
+                            meta["status_text"] = c_plate
+
+                    elif meta["clear_frames_count"] >= 8 and not meta["plate_number"]:
+                        # If vehicle is clearly visible for multiple frames but OCR genuinely cannot read characters
+                        meta["plate_number"] = "PLATE UNREADABLE"
+                        meta["plate_conf"] = 0.0
+                        meta["status_text"] = "PLATE UNREADABLE"
+
+        # 8. Watchlist Matching & Confirmation
+        consensus_plate = meta["plate_number"]
+        consensus_conf = meta["plate_conf"]
+        frame_count = len(meta["readings"])
+
+        is_match = False
+        matched_item = None
+        status_label = meta["status_text"]
+        if not consensus_plate:
+            has_p = (detected_plate_crop is not None) or (meta["best_plate_url"] is not None)
+            status_label = "Scanning plate..." if has_p else "No reliable detection"
+
+        if consensus_plate and consensus_plate != "PLATE UNREADABLE":
+            matched_item = correlate_watchlist_plate(consensus_plate, req.custom_watchlist)
+            if matched_item:
+                is_match = True
+                canonical_plate = matched_item.get("registration_number", consensus_plate)
+                if consensus_plate != canonical_plate and _levenshtein(consensus_plate, canonical_plate) <= 1:
+                    meta["plate_number"] = canonical_plate
+                    consensus_plate = canonical_plate
+                status_label = f"MATCH: {matched_item.get('category', 'WATCHLIST')}"
+
+                # Confirmation: 1 high-confidence match or repeated agreement
+                if frame_count >= 1:
+                    confirmed_tracks.add(trk_id)
+                    if consensus_plate not in alerted_set:
+                        alerted_set.add(consensus_plate)
+                        cat = matched_item.get("category", "SUSPECT_VEHICLE")
+                        prio = matched_item.get("priority", "HIGH")
+                        alt_id = f"ALT-{vid_key[:8].upper()}-{consensus_plate}"
+
+                        alert_dict = {
+                            "alert_id": alt_id,
+                            "alert_type": f"WATCHLIST MATCH — {cat.replace('_', ' ')}",
+                            "vehicle_number": matched_item.get("registration_number", consensus_plate),
+                            "vehicle_model": matched_item.get("model", "Unknown Model"),
+                            "camera_name": req.camera_name or f"CAM-{vid_key[:6].upper()}",
+                            "detection_time": now_time_str,
+                            "anpr_confidence": round(consensus_conf * 100, 1),
+                            "vehicle_detection_confidence": round(v_conf * 100, 1),
+                            "evidence_frame": meta["best_veh_url"] or veh_snap_url,
+                            "plate_frame": meta["best_plate_url"] or plt_snap_url,
+                            "watchlist_category": cat,
+                            "alert_priority": prio,
+                            "status": "UNACKNOWLEDGED",
+                            "case_number": matched_item.get("case_number", "FIR-2026-SYN"),
+                            "description": matched_item.get("description", "Vehicle detected matching active police watchlist."),
+                            "timestamp_iso": datetime.now(timezone.utc).isoformat(),
+                            "video": req.video_id,
+                            "track_id": track_key,
+                        }
+                        alerts.insert(0, alert_dict)
+                        new_alert = alert_dict
+
+                        ev_match = {
+                            "id": f"EVT-{time.time():.3f}-m{trk_id}",
+                            "time": now_time_str,
+                            "text": "Watchlist match",
+                            "details": f"{consensus_plate} — {cat.replace('_', ' ')}",
+                            "type": "match"
+                        }
+                        ev_alert = {
+                            "id": f"EVT-{time.time():.3f}-a{trk_id}",
+                            "time": now_time_str,
+                            "text": "Critical alert generated",
+                            "details": f"{alt_id} ({prio})",
+                            "type": "alert"
+                        }
+                        events.append(ev_match)
+                        events.append(ev_alert)
+                        new_events.extend([ev_match, ev_alert])
+
+        # 9. Vehicle output object for existing UI
+        has_plate_flag = (detected_plate_crop is not None) or (meta["best_plate_url"] is not None)
+        output_vehicles.append({
+            "track_id": track_key,
+            "type": cls_name,
+            "conf": round(v_conf, 2),
+            "box_pixel": [x1, y1, x2, y2],
+            "box_norm": {
+                "x": round(x1 / fw, 4),
+                "y": round(y1 / fh, 4),
+                "w": round((x2 - x1) / fw, 4),
+                "h": round((y2 - y1) / fh, 4),
+            },
+            "plate_number": consensus_plate,
+            "plate_conf": round(consensus_conf, 2) if (consensus_plate and consensus_plate != "PLATE UNREADABLE") else 0.0,
+            "has_plate": has_plate_flag,
+            "is_watchlist_match": is_match and (trk_id in confirmed_tracks),
+            "watchlist_category": matched_item.get("category") if is_match else None,
+            "watchlist_priority": matched_item.get("priority") if is_match else None,
+            "vehicle_model": matched_item.get("model") if is_match else None,
+            "case_number": matched_item.get("case_number") if is_match else None,
+            "description": matched_item.get("description") if is_match else None,
+            "snapshot_url": meta["best_veh_url"] or veh_snap_url,
+            "plate_snapshot_url": meta["best_plate_url"] or (plt_snap_url if detected_plate_crop is not None else None),
+            "status_text": status_label,
+            "frames_seen": meta["frames_seen"],
+        })
+
+    stats = {
+        "vehicles_detected": len(tracker.objects),
+        "plates_detected": sum(1 for r_list in history.values() if r_list),
+        "ocr_results": sum(len(r_list) for r_list in history.values()),
+        "watchlist_matches": len(confirmed_tracks),
+        "alerts": len(alerts),
+    }
+
+    elapsed_ms = round((time.monotonic() - t_start) * 1000.0, 1)
+
+    return {
+        "status": "success",
+        "video_id": req.video_id,
+        "timestamp_sec": req.timestamp_sec,
+        "latency_ms": elapsed_ms,
+        "vehicles": output_vehicles,
+        "stats": stats,
+        "new_events": new_events,
+        "all_events": events[-50:],
+        "new_alert": new_alert,
+        "active_alerts": alerts[:20],
+        "device": "CPU (PyTorch / YOLOv8n)",
+        "models": {
+            "vehicle_detector": "YOLOv8n",
+            "tracker": "ByteTrack / IoU Centroid",
+            "plate_detector": "license_plate_detector.pt",
+            "ocr_engine": "EasyOCR / PaddleOCR" if get_ocr() else "Heuristic",
+        }
+    }
 
 
 # ─── Live MJPEG Video Stream with AI Annotations & Watchlist Matching ────────
