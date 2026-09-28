@@ -14,9 +14,11 @@ import {
 export const API_BASE = (
   import.meta.env.VITE_API_URL ||
   import.meta.env.VITE_API_BASE_URL ||
-  (typeof window !== "undefined" && window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1"
-    ? "https://cctv-intelligence-platform-backend.onrender.com"
-    : "")
+  (typeof window !== "undefined" && window.location.hostname.endsWith(".vercel.app")
+    ? ""
+    : typeof window !== "undefined" && window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1"
+      ? "https://cctv-intelligence-platform-backend.onrender.com"
+      : "")
 ).replace(/\/$/, "")
 
 export function getEvidenceUrl(url?: string): string | undefined {
@@ -26,8 +28,9 @@ export function getEvidenceUrl(url?: string): string | undefined {
 }
 
 async function request<T>(endpoint: string, options?: RequestInit): Promise<T> {
+  const isCrossOrigin = Boolean(API_BASE && typeof window !== "undefined" && !API_BASE.startsWith(window.location.origin))
   const res = await fetch(`${API_BASE}${endpoint}`, {
-    credentials: API_BASE ? "include" : "same-origin",
+    credentials: isCrossOrigin ? "include" : "same-origin",
     headers: {
       "Content-Type": "application/json",
       ...options?.headers,
