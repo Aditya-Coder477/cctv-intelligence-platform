@@ -1,0 +1,52 @@
+services:
+  # ─── CCTV Backend Service (FastAPI + YOLO + ANPR) ──────────────────────────
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cctv-intelligence-backend:latest
+    container_name: cctv-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PORT=8000
+      - SENTINEL_AUTH_EMAIL=${SENTINEL_AUTH_EMAIL:-adityarajsf315.00@gmail.com}
+      - SENTINEL_AUTH_PASSWORD=${SENTINEL_AUTH_PASSWORD:-LMUS-8KLY-RJDE}
+      - RTSP_AUTH_PASSWORD=${RTSP_AUTH_PASSWORD:-LMUS-8KLY-RJDE}
+    volumes:
+      - ./data:/app/data
+      - cctv_uploads:/app/Synthetic Dataset/uploads
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/health"]
+      interval: 15s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    networks:
+      - cctv-network
+
+  # ─── CCTV Frontend Service (React + Vite + Nginx Reverse Proxy) ───────────
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: cctv-intelligence-frontend:latest
+    container_name: cctv-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "5173:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - cctv-network
+
+networks:
+  cctv-network:
+    driver: bridge
+
+volumes:
+  cctv_uploads:
